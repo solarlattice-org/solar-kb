@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from solar_kb.violation import Violation
-from solar_kb.yamlio import FrontMatterError, split_front_matter
+from solar_kb.yamlio import FrontMatterError, drop_nulls, split_front_matter
 
 # type-dir -> (record type, id prefix)
 TYPE_DIRS: dict[str, tuple[str, str]] = {
@@ -26,7 +26,7 @@ TYPE_DIRS: dict[str, tuple[str, str]] = {
 }
 TYPE_PREFIX: dict[str, str] = {t: p for t, p in TYPE_DIRS.values()}
 TYPE_DIR: dict[str, str] = {t: d for d, (t, _) in TYPE_DIRS.items()}
-OVERLAY_ONLY_TYPES = frozenset({"Case"})
+OVERLAY_ONLY_TYPES = frozenset({"Case", "DataExample"})
 LAYERS = ("public", "overlay")
 
 
@@ -80,7 +80,7 @@ def _load_root(root: Path, layer: str, corpus: Corpus) -> None:
             except (FrontMatterError, UnicodeDecodeError) as exc:
                 corpus.load_errors.append(Violation("parse", str(path), str(exc)))
                 continue
-            record = Record(data=data, body=body, path=path, layer=layer, type_dir=type_dir.name)
+            record = Record(data=drop_nulls(data), body=body, path=path, layer=layer, type_dir=type_dir.name)
             rid = record.id
             if rid is None:
                 corpus.load_errors.append(Violation("parse", str(path), "missing string 'id'"))
@@ -98,5 +98,9 @@ def load_corpus(root: Path, overlay: Path | None = None) -> Corpus:
     corpus = Corpus()
     _load_root(Path(root), "public", corpus)
     if overlay is not None:
+        if not (Path(overlay) / "records").is_dir():
+            corpus.load_errors.append(
+                Violation("layout", str(overlay), "overlay has no records/ directory")
+            )
         _load_root(Path(overlay), "overlay", corpus)
     return corpus

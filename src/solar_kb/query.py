@@ -1,6 +1,7 @@
 """Read-only queries over build/graph.sqlite (used by the CLI and, later, the MCP server)."""
 from __future__ import annotations
 
+import datetime
 import difflib
 import json
 import sqlite3
@@ -80,6 +81,8 @@ class Graph:
         return {"source": row["record_id"], "rel": row["rel"], "target": row["target"],
                 "claim_id": row["claim_id"], "review": row["review"], "by": row["by_method"],
                 "conditions": row["conditions"], "note": row["note"],
+                "superseded_by": row["superseded_by"], "valid_from": row["valid_from"],
+                "valid_to": row["valid_to"],
                 "cite": self._citations(row["record_id"], row["claim_id"])}
 
     def neighbors(self, record_id: str, rel: str | None = None, direction: str = "out",
@@ -101,48 +104,74 @@ class Graph:
         return [self._edge(r) for r in rows if REVIEW_RANK[r["review"]] >= floor]
 
     def differential(self, observations: Iterable[str], min_review: str = "drafted", k: int = 5,
-                     field_evidence: Mapping[tuple[str, str], int] | None = None) -> dict:
-        """Spec §8.1: rank FailureModes by matched observations; return discriminating tests."""
+                     field_evidence: Mapping[tuple[str, str], int] | None = None,
+                     as_of: str | None = None) -> dict:
+        """Spec §8.1: rank FailureModes by matched observations; return discriminating tests.
+
+        Only current claims count: superseded claims, and claims whose validity window does not
+        contain `as_of` (default: today, ISO date), are ignored. Each candidate lists the claims
+        supporting each match; disputed claims filtered out by `min_review` are reported in
+        `disputed_matches` so they are surfaced rather than silently dropped.
+        """
         if k < 1:
             raise ValueError("k must be >= 1")
         floor = _rank(min_review)
+        as_of = as_of or datetime.date.today().isoformat()
         field_evidence = field_evidence or {}
         obs = list(dict.fromkeys(observations))
         types = dict(self._con.execute("SELECT id, type FROM nodes WHERE status='active'").fetchall())
         known = [o for o in obs if types.get(o) in ("Symptom", "Measurement")]
         unknown = [o for o in obs if o not in known]
 
-        def edges(rel: str) -> list[tuple[str, str]]:
-            rows = self._con.execute(
-                "SELECT record_id, target, review FROM claims WHERE rel=?", (rel,)).fetchall()
-            return [(r["record_id"], r["target"]) for r in rows
-                    if REVIEW_RANK[r["review"]] >= floor and r["record_id"] in types
-                    and r["target"] in types]
+        def current(row: sqlite3.Row) -> bool:
+            return (row["superseded_by"] is None
+                    and (row["valid_from"] is None or row["valid_from"] <= as_of)
+                    and (row["valid_to"] is None or row["valid_to"] >= as_of)
+                    and row["record_id"] in types and row["target"] in types)
 
-        observed_as: dict[str, set[str]] = {}
-        for symptom, measurement in edges("observed_as"):
-            observed_as.setdefault(symptom, set()).add(measurement)
-        reach: dict[str, set[str]] = {}
-        for fm, symptom in edges("presents_as"):
-            reach.setdefault(fm, set()).update({symptom, *observed_as.get(symptom, ())})
+        def claims(rel: str) -> list[sqlite3.Row]:
+            rows = self._con.execute(
+                "SELECT * FROM claims WHERE rel=? ORDER BY record_id, claim_id", (rel,)).fetchall()
+            return [r for r in rows if current(r)]
+
+        def ref(row: sqlite3.Row) -> dict:
+            return {"record_id": row["record_id"], "claim_id": row["claim_id"], "review": row["review"]}
+
+        observed_as: dict[str, list[tuple[str, dict]]] = {}
+        for row in claims("observed_as"):
+            if REVIEW_RANK[row["review"]] >= floor:
+                observed_as.setdefault(row["record_id"], []).append((row["target"], ref(row)))
+
+        reach: dict[str, dict[str, list[dict]]] = {}
+        disputed_matches = []
+        for row in claims("presents_as"):
+            fm, symptom = row["record_id"], row["target"]
+            reached = [(symptom, [ref(row)])] + [(m, [ref(row), r]) for m, r in observed_as.get(symptom, [])]
+            if REVIEW_RANK[row["review"]] < floor:
+                disputed_matches += [{"failure_mode": fm, "observation": o, "record_id": fm,
+                                      "claim_id": row["claim_id"]}
+                                     for o, _ in reached if o in known and row["review"] == "disputed"]
+                continue
+            for o, path in reached:
+                support = reach.setdefault(fm, {}).setdefault(o, [])
+                support += [r for r in path if r not in support]
 
         candidates = []
-        for fm, reachable in reach.items():
-            matched = [o for o in known if o in reachable]
+        for fm, support in reach.items():
+            matched = [o for o in known if o in support]
             if not matched:
                 continue
             fe = sum(field_evidence.get((o, fm), 0) for o in matched)
             candidates.append({"id": fm, "name": self._name(fm), "score": len(matched),
                                "matched": matched, "unmatched": [o for o in known if o not in matched],
-                               "field_evidence": fe})
+                               "field_evidence": fe,
+                               "support": [{"observation": o, "claims": support[o]} for o in matched]})
         candidates.sort(key=lambda c: (-c["score"], -c["field_evidence"], c["id"]))
         top = candidates[:k]
         top_ids = {c["id"] for c in top}
 
         discriminators = []
-        rows = self._con.execute(
-            "SELECT * FROM claims WHERE rel='distinguished_from' ORDER BY record_id, claim_id")
-        for row in rows:
+        for row in claims("distinguished_from"):
             if REVIEW_RANK[row["review"]] < floor:
                 continue
             if row["record_id"] in top_ids and row["target"] in top_ids:
@@ -150,8 +179,10 @@ class Graph:
                 method = self.get_entity(row["by_method"]) if row["by_method"] else None
                 edge["by_tool_ids"] = (method or {}).get("data", {}).get("tool_ids", [])
                 discriminators.append(edge)
-        return {"candidates": top, "discriminators": discriminators,
-                "unknown_observations": unknown, "kb_version": self.kb_version}
+        return {"candidates": top, "total_candidates": len(candidates),
+                "truncated": len(candidates) > k, "discriminators": discriminators,
+                "disputed_matches": disputed_matches, "unknown_observations": unknown,
+                "as_of": as_of, "kb_version": self.kb_version}
 
     def _name(self, record_id: str) -> str:
         return self._con.execute("SELECT name FROM nodes WHERE id=?", (record_id,)).fetchone()[0]

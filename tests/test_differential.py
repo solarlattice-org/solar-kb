@@ -18,7 +18,9 @@ def test_differential_counts_measurements_reached_through_symptoms(mini_graph):
     assert result["candidates"][1] == {
         "id": "fm:soiling", "name": "Soiling", "score": 1,
         "matched": ["symptom:uniform-power-loss"], "unmatched": ["meas:el-negative-end-darkening"],
-        "field_evidence": 0}
+        "field_evidence": 0,
+        "support": [{"observation": "symptom:uniform-power-loss",
+                     "claims": [{"record_id": "fm:soiling", "claim_id": "c1", "review": "drafted"}]}]}
 
 
 def test_differential_field_evidence_breaks_ties(mini_graph):

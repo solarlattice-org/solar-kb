@@ -18,7 +18,8 @@ CREATE TABLE aliases (norm TEXT NOT NULL, id TEXT NOT NULL REFERENCES nodes(id))
 CREATE TABLE claims (
     record_id TEXT NOT NULL REFERENCES nodes(id), claim_id TEXT NOT NULL,
     rel TEXT, attr TEXT, target TEXT, by_method TEXT, value_json TEXT,
-    conditions TEXT, note TEXT, review TEXT NOT NULL, data_json TEXT NOT NULL,
+    conditions TEXT, note TEXT, review TEXT NOT NULL,
+    superseded_by TEXT, valid_from TEXT, valid_to TEXT, data_json TEXT NOT NULL,
     PRIMARY KEY (record_id, claim_id)
 );
 CREATE TABLE citations (
@@ -56,11 +57,12 @@ def build_graph(corpus: Corpus, db_path: Path, kb_version: str) -> None:
                 con.execute("INSERT INTO aliases VALUES (?,?)", (norm, rid))
             for claim in record.claims():
                 con.execute(
-                    "INSERT INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                    "INSERT INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (rid, claim["claim_id"], claim.get("rel"), claim.get("attr"),
                      claim.get("target"), claim.get("by"),
                      json.dumps(claim["value"]) if "value" in claim else None,
                      claim.get("conditions"), claim.get("note"), claim["review"],
+                     claim.get("superseded_by"), claim.get("valid_from"), claim.get("valid_to"),
                      json.dumps(claim, sort_keys=True)),
                 )
                 for cite in claim["cite"]:

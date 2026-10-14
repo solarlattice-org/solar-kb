@@ -91,6 +91,9 @@ def rule_claim_shape(corpus: Corpus) -> list[Violation]:
                 out.append(_v("claim-shape", record, "'by' is only valid on distinguished_from", claim))
             if "keep" in claim and claim.get("review") != "drafted":
                 out.append(_v("claim-shape", record, "'keep: drafted' requires review: drafted", claim))
+            if claim.get("conflicts_with") and claim.get("review") != "disputed":
+                out.append(_v("claim-shape", record, "a claim with conflicts_with must be review: disputed",
+                              claim))
             quote = claim.get("quote")
             if isinstance(quote, str) and len(quote.split()) > MAX_QUOTE_WORDS:
                 out.append(_v("claim-shape", record, f"quote exceeds {MAX_QUOTE_WORDS} words", claim))
@@ -118,7 +121,9 @@ def rule_public_citations(corpus: Corpus) -> list[Violation]:
                 source = corpus.records.get(cite.get("src")) if isinstance(cite.get("src"), str) else None
                 if source is None or source.type != "Source":
                     continue  # reported by rule_sources_exist
-                if source.layer != "public" or source.data.get("tier") not in PUBLIC_CITABLE_TIERS:
+                tier = source.data.get("tier")
+                if source.layer != "public" or not isinstance(tier, str) \
+                        or tier not in PUBLIC_CITABLE_TIERS:
                     out.append(_v("public-citations", record,
                                   f"public claim cites non-public source {source.id}", claim))
     return out
@@ -194,7 +199,9 @@ def rule_claim_refs(corpus: Corpus) -> list[Violation]:
                 if not m:
                     continue  # schema pattern reports malformed refs
                 target = corpus.records.get(m.group(1))
-                if target is None or m.group(2) not in {c.get("claim_id") for c in target.claims()}:
+                claim_ids = {c["claim_id"] for c in target.claims() if isinstance(c.get("claim_id"), str)} \
+                    if target is not None else set()
+                if m.group(2) not in claim_ids:
                     out.append(_v("claim-refs", record, f"claim reference {ref} does not exist", claim))
     return out
 
@@ -210,6 +217,11 @@ def rule_layers(corpus: Corpus) -> list[Violation]:
         refs: list[object] = []
         for claim in record.claims():
             refs += [claim.get("target"), claim.get("by")]
+            conflicts = claim.get("conflicts_with")
+            for ref in [*(conflicts if isinstance(conflicts, list) else []), claim.get("superseded_by")]:
+                m = CLAIM_REF_RE.match(ref) if isinstance(ref, str) else None
+                if m:
+                    refs.append(m.group(1))
         for ref in refs:
             target = corpus.records.get(ref) if isinstance(ref, str) else None
             if target is not None and target.layer != "public":
