@@ -99,3 +99,59 @@ class Graph:
             params["rel"] = rel
         rows = self._con.execute(sql + " ORDER BY record_id, claim_id", params).fetchall()
         return [self._edge(r) for r in rows if REVIEW_RANK[r["review"]] >= floor]
+
+    def differential(self, observations: Iterable[str], min_review: str = "drafted", k: int = 5,
+                     field_evidence: Mapping[tuple[str, str], int] | None = None) -> dict:
+        """Spec §8.1: rank FailureModes by matched observations; return discriminating tests."""
+        if k < 1:
+            raise ValueError("k must be >= 1")
+        floor = _rank(min_review)
+        field_evidence = field_evidence or {}
+        obs = list(dict.fromkeys(observations))
+        types = dict(self._con.execute("SELECT id, type FROM nodes WHERE status='active'").fetchall())
+        known = [o for o in obs if types.get(o) in ("Symptom", "Measurement")]
+        unknown = [o for o in obs if o not in known]
+
+        def edges(rel: str) -> list[tuple[str, str]]:
+            rows = self._con.execute(
+                "SELECT record_id, target, review FROM claims WHERE rel=?", (rel,)).fetchall()
+            return [(r["record_id"], r["target"]) for r in rows
+                    if REVIEW_RANK[r["review"]] >= floor and r["record_id"] in types
+                    and r["target"] in types]
+
+        observed_as: dict[str, set[str]] = {}
+        for symptom, measurement in edges("observed_as"):
+            observed_as.setdefault(symptom, set()).add(measurement)
+        reach: dict[str, set[str]] = {}
+        for fm, symptom in edges("presents_as"):
+            reach.setdefault(fm, set()).update({symptom, *observed_as.get(symptom, ())})
+
+        candidates = []
+        for fm, reachable in reach.items():
+            matched = [o for o in known if o in reachable]
+            if not matched:
+                continue
+            fe = sum(field_evidence.get((o, fm), 0) for o in matched)
+            candidates.append({"id": fm, "name": self._name(fm), "score": len(matched),
+                               "matched": matched, "unmatched": [o for o in known if o not in matched],
+                               "field_evidence": fe})
+        candidates.sort(key=lambda c: (-c["score"], -c["field_evidence"], c["id"]))
+        top = candidates[:k]
+        top_ids = {c["id"] for c in top}
+
+        discriminators = []
+        rows = self._con.execute(
+            "SELECT * FROM claims WHERE rel='distinguished_from' ORDER BY record_id, claim_id")
+        for row in rows:
+            if REVIEW_RANK[row["review"]] < floor:
+                continue
+            if row["record_id"] in top_ids and row["target"] in top_ids:
+                edge = self._edge(row)
+                method = self.get_entity(row["by_method"]) if row["by_method"] else None
+                edge["by_tool_ids"] = (method or {}).get("data", {}).get("tool_ids", [])
+                discriminators.append(edge)
+        return {"candidates": top, "discriminators": discriminators,
+                "unknown_observations": unknown, "kb_version": self.kb_version}
+
+    def _name(self, record_id: str) -> str:
+        return self._con.execute("SELECT name FROM nodes WHERE id=?", (record_id,)).fetchone()[0]
