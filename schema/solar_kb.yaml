@@ -1,0 +1,182 @@
+id: https://solarlattice.org/kb/schema
+name: solar_kb
+title: Solar Lattice knowledge schema
+version: 0.1.0
+license: CC-BY-4.0
+description: >-
+  Typed records and cited claims for solar PV domain knowledge.
+  Every relation and every quantity is a Claim that cites evidence.
+prefixes:
+  linkml: https://w3id.org/linkml/
+  skos: http://www.w3.org/2004/02/skos/core#
+  kb: https://solarlattice.org/kb/
+  fm: https://solarlattice.org/kb/fm/
+  stressor: https://solarlattice.org/kb/stressor/
+  symptom: https://solarlattice.org/kb/symptom/
+  meas: https://solarlattice.org/kb/meas/
+  method: https://solarlattice.org/kb/method/
+  mit: https://solarlattice.org/kb/mit/
+  comp: https://solarlattice.org/kb/comp/
+  src: https://solarlattice.org/kb/src/
+  case: https://solarlattice.org/kb/case/
+  dex: https://solarlattice.org/kb/dex/
+  unit: http://qudt.org/vocab/unit/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+
+classes:
+  Record:
+    abstract: true
+    description: Common fields of every knowledge record.
+    slots: [id, type, name, aliases, status, close_mappings, exact_mappings, claims]
+  FailureMode:
+    is_a: Record
+    description: What went wrong.
+  Stressor:
+    is_a: Record
+    description: Why it went wrong (environmental, electrical, mechanical, workmanship).
+  Symptom:
+    is_a: Record
+    description: An observable condition.
+  Measurement:
+    is_a: Record
+    description: The data signature of a symptom.
+    slots: [signals]
+  DetectionMethod:
+    is_a: Record
+    description: How a cause is confirmed.
+    slots: [tool_ids]
+  Mitigation:
+    is_a: Record
+    description: A corrective or preventive action.
+  Component:
+    is_a: Record
+    description: A physical part of a PV system.
+  Source:
+    is_a: Record
+    description: A bibliographic source; doubles as its public manifest entry.
+    slots: [tier, license, tdm_ok, origin_url, sha256, publisher, edition_or_date, collection]
+    slot_usage:
+      tier: {required: true}
+      tdm_ok: {required: true}
+  Case:
+    is_a: Record
+    description: One work order. Private overlay only.
+    slots: [observed, diagnosis, fix, outcome]
+  DataExample:
+    is_a: Record
+    description: Reserved. A labeled monitoring/register data window for ML training.
+    slots: [dataset, window, label, labeler, anonymized]
+
+  Claim:
+    description: One relation or quantity, with citations and review state.
+    slots: [claim_id, rel, target, by, attr, value, conditions, note, quote, cite,
+            review, verified_by, verified_at, review_note, keep, conflicts_with,
+            valid_from, valid_to, superseded_by]
+  Citation:
+    slots: [src, loc]
+  QuantityValue:
+    slots: [min, max, nominal, unit]
+    slot_usage:
+      unit: {required: true}
+  Signal:
+    description: A monitoring channel named by SunSpec model point.
+    slots: [point, unit, pattern]
+    slot_usage:
+      point: {required: true}
+      pattern: {required: true}
+
+slots:
+  id: {identifier: true, range: uriorcurie, required: true}
+  type: {designates_type: true, range: string, required: true}
+  name: {required: true}
+  aliases: {multivalued: true}
+  status: {range: RecordStatus}
+  close_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:closeMatch}
+  exact_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:exactMatch}
+  claims: {range: Claim, multivalued: true, inlined_as_list: true}
+  signals: {range: Signal, multivalued: true, inlined_as_list: true}
+  tool_ids: {multivalued: true, description: IDs of deterministic tools (sub-project 2).}
+  tier: {range: Tier}
+  license: {}
+  tdm_ok: {range: TdmOk}
+  origin_url: {range: uri}
+  sha256: {pattern: "^[0-9a-f]{64}$"}
+  publisher: {}
+  edition_or_date: {}
+  collection: {}
+  observed: {multivalued: true, range: uriorcurie}
+  diagnosis: {range: uriorcurie}
+  fix: {}
+  outcome: {}
+  dataset: {}
+  window: {}
+  label: {range: uriorcurie}
+  labeler: {}
+  anonymized: {range: boolean}
+  claim_id: {required: true, pattern: "^c[0-9]+$"}
+  rel: {range: Relation}
+  target: {range: uriorcurie}
+  by: {range: uriorcurie}
+  attr: {pattern: "^[a-z][a-z0-9_]*$"}
+  value: {range: QuantityValue, inlined: true}
+  conditions: {}
+  note: {}
+  quote: {}
+  cite: {range: Citation, multivalued: true, inlined_as_list: true, required: true, minimum_cardinality: 1}
+  review: {range: ReviewState, required: true}
+  verified_by: {}
+  verified_at: {range: date}
+  review_note: {}
+  keep: {range: KeepState}
+  conflicts_with: {multivalued: true, pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
+  valid_from: {range: date}
+  valid_to: {range: date}
+  superseded_by: {pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
+  src: {range: uriorcurie, required: true}
+  loc:
+    required: true
+    pattern: "^(sec=[0-9A-Za-z][0-9A-Za-z.]*|p=[0-9]+|tbl=[0-9]+(\\.r[0-9]+)?|fig=[0-9]+|t=[0-9]{1,3}:[0-5][0-9]-[0-9]{1,3}:[0-5][0-9])$"
+  min: {range: float}
+  max: {range: float}
+  nominal: {range: float}
+  unit: {pattern: "^unit:[A-Za-z0-9_-]+$"}
+  point: {pattern: "^model_[0-9]+\\.[A-Za-z0-9_]+$"}
+  pattern: {}
+
+enums:
+  RecordStatus:
+    permissible_values:
+      proposed: {description: Stub created by the compiler; not yet approved.}
+      active: {}
+  Relation:
+    permissible_values:
+      caused_by: {}
+      affects: {}
+      presents_as: {}
+      observed_as: {}
+      produces: {}
+      detected_by: {}
+      mitigated_by: {}
+      leads_to: {}
+      distinguished_from: {}
+  ReviewState:
+    permissible_values:
+      drafted: {description: Passed automated checks; a lead.}
+      verified: {description: Approved by a human; a fact.}
+      disputed: {description: Flagged or conflicting; must be surfaced.}
+  KeepState:
+    permissible_values:
+      drafted: {description: Reviewer keeps the claim as drafted through merge.}
+  Tier:
+    permissible_values:
+      open: {}
+      reference: {}
+      private: {}
+  TdmOk:
+    permissible_values:
+      "yes": {}
+      "no": {}
+      unknown: {}
