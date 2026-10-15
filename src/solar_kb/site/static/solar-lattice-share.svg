@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f1e9"/>
+  <path d="M0 16h1200" stroke="#242a25" stroke-width="6"/>
+  <path d="M782 0v630M860 0v630M938 0v630M1016 0v630M1094 0v630M1172 0v630" stroke="#e9e5da" stroke-width="1"/>
+  <path d="M782 78h418M782 156h418M782 234h418M782 312h418M782 390h418M782 468h418M782 546h418" stroke="#e9e5da" stroke-width="1"/>
+  <g fill="none" stroke="#242a25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M88 85h46v46H88zM103 85v46M119 85v46M88 108h46" stroke-width="2"/>
+    <path d="M88 108h15l4-9 7 18 4-9h16" stroke="#c68b20" stroke-width="3"/>
+  </g>
+  <text x="88" y="237" fill="#416b59" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">SOLAR PV / OPEN KNOWLEDGE</text>
+  <text x="84" y="330" fill="#242a25" font-family="Georgia, serif" font-size="70">A field guide to</text>
+  <text x="84" y="410" fill="#242a25" font-family="Georgia, serif" font-size="70">what systems tell you.</text>
+  <path d="M88 468h480" stroke="#c9c8bb" stroke-width="2"/>
+  <text x="88" y="516" fill="#71776e" font-family="Arial, sans-serif" font-size="20">CITED · TYPED · INSPECTABLE</text>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M802 399h96l25-59 43 121 38-93 34 31h154" stroke="#c68b20" stroke-width="4"/>
+    <path d="M1043 399h83v-90M1043 399h83v90" stroke="#416b59" stroke-width="2" stroke-dasharray="7 9"/>
+  </g>
+  <circle cx="1043" cy="399" r="9" fill="#c68b20"/>
+  <text x="802" y="575" fill="#416b59" font-family="monospace" font-size="16" letter-spacing="2">SIGNAL → CLAIM → SOURCE</text>
+</svg>

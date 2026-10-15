@@ -26,7 +26,7 @@ solar-kb = "solar_kb.cli:app"
 where = ["src"]
 
 [tool.setuptools.package-data]
-"solar_kb.site" = ["templates/*.j2", "static/*.css"]
+"solar_kb.site" = ["templates/*.j2", "static/*.css", "static/*.svg"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]
