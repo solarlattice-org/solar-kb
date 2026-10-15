@@ -9,6 +9,7 @@ import math
 import re
 from collections.abc import Callable, Iterator
 
+from solar_kb.iri import expand
 from solar_kb.records import OVERLAY_ONLY_TYPES, TYPE_DIRS, Corpus, Record
 from solar_kb.violation import Violation
 
@@ -329,6 +330,24 @@ def rule_locators(corpus: Corpus) -> list[Violation]:
                 problem = _locator_problem(loc) if isinstance(loc, str) else None
                 if problem:
                     out.append(_v("locators", record, f"locator {loc!r}: {problem}", claim))
+    return out
+
+
+def rule_mapping_prefixes(corpus: Corpus, prefixes: dict[str, str]) -> list[Violation]:
+    """close/exact mappings must expand to an IRI: absolute http(s), or a prefix the schema declares. The JSON-LD
+    export writes them as IRIs, so an undeclared prefix would otherwise crash the build."""
+    out = []
+    for record in corpus.records.values():
+        for key in ("close_mappings", "exact_mappings"):
+            values = record.data.get(key)
+            for value in values if isinstance(values, list) else []:
+                if not isinstance(value, str):
+                    continue
+                try:
+                    expand(value, prefixes)
+                except ValueError:
+                    out.append(_v("mapping-prefixes", record, f"{key} entry {value!r} uses an undeclared prefix; "
+                                                              "use an absolute IRI or add the prefix to the schema"))
     return out
 
 

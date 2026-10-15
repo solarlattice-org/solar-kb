@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "solar-kb"
-version = "0.2.0"
+version = "0.3.0"
 description = "Solar Lattice: open, cited, typed knowledge for solar PV agents."
 readme = "README.md"
 license = {text = "Apache-2.0"}
@@ -17,12 +17,16 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "rdflib>=7"]
+site = ["jinja2>=3.1", "markdown-it-py>=3"]
 
 [project.scripts]
 solar-kb = "solar_kb.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"solar_kb.site" = ["templates/*.j2", "static/*.css"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]

@@ -1,0 +1,22 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import link %}
+{% block main %}
+<h1>Solar Lattice ontology</h1>
+<dl class="meta">
+<dt>IRI</dt><dd><code>{{ canonical }}</code></dd>
+<dt>Version</dt><dd>{{ schema_version }}</dd>
+<dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd>
+</dl>
+<p>{{ description }}</p>
+<p>Download: <a href="{{ rel('kb/solar_kb.owl.ttl') }}">OWL (Turtle)</a> · <a href="{{ rel('kb/solar_kb.context.jsonld') }}">JSON-LD context</a> · <a href="{{ rel('kb/solar_kb.schema.json') }}">JSON Schema</a> · <a href="{{ rel('kb/solar_kb.yaml') }}">LinkML source</a></p>
+{% for heading, rows in sections %}
+<h2>{{ heading }}</h2>
+<table>
+<tbody>
+{% for ref, description in rows %}
+<tr><td>{{ link(ref) }}</td><td>{{ description }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endfor %}
+{% endblock %}

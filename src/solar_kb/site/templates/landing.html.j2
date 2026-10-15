@@ -1,0 +1,26 @@
+{% extends "base.html.j2" %}
+{% block main %}
+<h1>Solar Lattice</h1>
+<p class="lede">Open, cited, typed knowledge about solar PV, for people and for AI agents.</p>
+<p>Solar Lattice is a knowledge graph of how photovoltaic systems fail: the stressors behind each failure, how it shows up in monitoring data and in the field, how to confirm it, and what to do about it. Every relation and every number is a <strong>claim</strong> that cites the passage it came from and carries a review state:
+<span class="badge verified">verified · fact</span> <span class="badge drafted">drafted · lead</span> <span class="badge disputed">disputed</span></p>
+<h2>Browse</h2>
+{% if total %}
+<ul>
+{% for t in types %}
+<li><a href="{{ t.href }}">{{ t.label }}</a> ({{ t.count }})</li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="empty">No records have been published yet. Records arrive through reviewed pull requests, and each claim cites its evidence. The <a href="{{ rel('kb/schema.html') }}">ontology</a> is available now.</p>
+{% endif %}
+<h2>For agents and tools</h2>
+<ul>
+<li>Every record has a stable IRI, such as <code>https://solarlattice.org/kb/fm/pid</code>. The IRI serves a page with the record's JSON-LD embedded; add <code>.jsonld</code> for the data alone.</li>
+<li>Ontology: <a href="{{ rel('kb/solar_kb.owl.ttl') }}">OWL (Turtle)</a>, <a href="{{ rel('kb/solar_kb.context.jsonld') }}">JSON-LD context</a>, <a href="{{ rel('kb/solar_kb.schema.json') }}">JSON Schema</a>, <a href="{{ rel('kb/solar_kb.yaml') }}">LinkML source</a>.</li>
+<li>All records in one file: <a href="{{ rel('kb/records.jsonld') }}">records.jsonld</a>.</li>
+<li>Tools: clone <a href="https://github.com/solarlattice-org/solar-kb">solar-kb</a>, run <code>pip install -e .</code>, then <code>solar-kb build</code> and <code>solar-kb query</code>.</li>
+</ul>
+<h2>Licences</h2>
+<p>Code is Apache-2.0. The schema and the records are <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+{% endblock %}

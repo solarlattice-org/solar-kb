@@ -24,6 +24,14 @@ solar-kb query resolve "PID"
 solar-kb query differential symptom:uniform-power-loss
 ```
 
+## Website
+
+`solar-kb site --out _site` builds [solarlattice.org](https://solarlattice.org) from the public records: a page at
+every record IRI (`https://solarlattice.org/kb/fm/pid`) and schema-term IRI (`https://solarlattice.org/kb/FailureMode`),
+with the record's JSON-LD embedded in the page and alongside it (`/kb/fm/pid.jsonld`), plus the exports under `/kb/`.
+It never reads the private overlay. `.github/workflows/pages.yml` deploys it on every push to `main`.
+Install the extra first: `pip install -e ".[site]"`.
+
 ## Licenses
 
 Code: Apache-2.0 (`LICENSE`). Schema and records: CC BY 4.0 (`LICENSE-CONTENT`).

@@ -1,0 +1,18 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import link %}
+{% block main %}
+<p class="kind"><a href="{{ term_href }}">{{ type }}</a></p>
+<h1>{{ label }}</h1>
+{% if description %}
+<p>{{ description }}</p>
+{% endif %}
+{% if records %}
+<ul>
+{% for ref in records %}
+<li>{{ link(ref) }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="empty">No {{ label|lower }} yet.</p>
+{% endif %}
+{% endblock %}
