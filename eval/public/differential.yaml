@@ -1,0 +1,362 @@
+# Public differential-diagnosis benchmark (spec §7.3, reframed 2026-10-15): triage cases drawn from the cited PV
+# literature (open/reference sources only, original wording). Drafted and maintainer-reviewed 2026-10-15.
+# Format: src/solar_kb/benchmark.py. Run: solar-kb eval differential (needs compiled records, Plan 4).
+
+# Group A: module- and cell-level failure modes (22 cases).
+# Differential groups:
+#   G1 IR/IV triple ......... cell-cracks-dendritic-after-snow / module-hotspot-isolated-overheated-cell / bypass-diode-failure-low-voc-unshaded
+#   G2 open-substring pair .. bypass-diode-failure-burn-marks-under-shade / cell-interconnection-failure-permanent-step
+#   G3 PID vs LID ........... potential-induced-degradation-negative-end / light-induced-degradation-commissioning / light-induced-degradation-hot-site-drift
+#   G4 fill-factor triple ... potential-induced-degradation-low-light-dew / severe-metallization-corrosion-end-of-life / cell-interconnection-failure-rounded-knee
+#   G5 point heat location .. connector-defect-hot-coupling / cable-defect-warm-section-mid-run / junction-box-failure-hot-enclosure
+#   G6 wet-morning iso faults cable-defect-gnawed-sheath-iso-fault / glass-breakage-thin-rear-pane
+#   G7 warm substring ....... junction-box-failure-batch-intermittent-substring vs bypass-diode-failure-low-voc-unshaded
+
+- id: cell-cracks-dendritic-after-snow
+  observations:
+    - text: after a winter with unusually heavy snow, the lowest module row of a fixed-tilt array delivers a few percent less string current than the upper rows
+    - text: night-time EL of the lower-row modules shows branching, tree-like dark lines running across many cells, with a few small cell fragments completely dark
+    - text: the dark-line shapes are irregular and differ from cell to cell instead of repeating in the same spot along each cell string
+    - text: IV trace of the worst module shows reduced current and a slightly lower fill factor but no step, and the front glass is intact
+  expected: fm:cell-cracks
+  source: {cite: "src:iea-pvps-t13-01-2014#sec=6.2.2", h: "17668c52ed6f"}
+
+- id: module-hotspot-isolated-overheated-cell
+  observations:
+    - text: drone IR flown on a clear, stable day at high irradiance shows a single cell in one module more than 20 K warmer than the cells around it
+    - text: nothing is shading or soiling that cell and the glass is intact; night EL of the cell shows no dark lines or dark fragments
+    - text: the rest of that substring sits at normal temperature and the module IV curve shows a small power deficit with normal Voc and no step
+    - text: a handful of other modules from the same delivery batch show the same pattern of one isolated overheated cell
+  expected: fm:module-hotspot
+  source: {cite: "src:iea-pvps-t13-ir-el-imaging-2018#sec=2.3.1.2", h: "2b3d785ac281"}
+
+- id: bypass-diode-failure-low-voc-unshaded
+  observations:
+    - text: during a string Voc sweep one module reads roughly a third below its neighbours, and the shortfall is the same at midday with no shade anywhere on the array
+    - text: the module IV curve is smooth but shifted to lower voltage, and EL shows no dark or inactive cell areas
+    - text: IR under load shows one of the three cell groups uniformly warmer than the other two, with the rear enclosure of that module slightly warm
+  expected: fm:bypass-diode-failure
+  source: {cite: "src:pv-root-cause-bypass-diode-failure#sec=h7", h: "698184845b6b"}
+
+- id: bypass-diode-failure-burn-marks-under-shade
+  observations:
+    - text: carport array about four years old, partly shaded during the day by streetlights, trees and neighbouring rows
+    - text: rear-side walk-down finds brown scorch marks following cell edges on the backsheet, confined to one or two cell groups of the affected modules
+    - text: outdoor IV with one cell group deliberately shaded gives a clean one-third voltage step for the unmarked group, but shading a scorched group collapses the current with no voltage step
+  expected: fm:bypass-diode-failure
+  source: {cite: "src:iea-pvps-t13-01-2014#sec=6.2.7", h: "0b77a26fe336"}
+
+- id: cell-interconnection-failure-permanent-step
+  observations:
+    - text: in a six-year-old system one module's IV curve shows a permanent step, with power 40 to 50 percent below nameplate even with no shade on the array
+    - text: IR shows a small, very hot point at the joint between two cells, with the rest of that cell group running warm
+    - text: the backsheet directly behind the hot point has a brown scorch mark, while the remaining cell groups and the rear enclosure look normal
+  expected: fm:cell-interconnection-failure
+  source: {cite: "src:iea-pvps-t13-01-2014#sec=6.2.6", h: "31f745f3dabf"}
+
+- id: potential-induced-degradation-negative-end
+  observations:
+    - text: clear-sky IR during operation shows warmer cells clustered along the bottom frame edge of modules, plus a scattered patchwork of warm cells
+    - text: the pattern is strongest in the modules nearest the negative end of each string and fades towards the positive end
+    - text: flash tests of modules removed in string order show power rising steadily from the negative end towards the positive end
+  expected: fm:potential-induced-degradation
+  source: {cite: "src:iea-pvps-t13-ir-el-imaging-2018#sec=2.3.2", h: "9b2ddc8cc5ec"}
+
+- id: potential-induced-degradation-low-light-dew
+  observations:
+    - text: the performance-ratio deficit on one inverter is largest on overcast days and on dewy mornings, and shrinks at high irradiance
+    - text: module IV traces show lower Voc and fill factor and a steeper slope near short circuit, while Isc is almost unchanged
+    - text: the losses started within the first year after commissioning and vary a lot from module to module, with no visible defects on any of them
+  expected: fm:potential-induced-degradation
+  source: {cite: "src:pv-root-cause-potential-induced-degradation#sec=h6", h: "a0a9f72d8381"}
+
+- id: light-induced-degradation-commissioning
+  observations:
+    - text: new plant with boron-doped p-type mono modules; IV checks after the first few days of sun show power 2 to 3 percent below the factory flash values
+    - text: the shortfall is about the same for every module regardless of string position or inverter, with Isc and Voc both slightly lower
+    - text: no visual defects and nothing remarkable in EL or IR; the shortfall does not grow over the following months
+  expected: fm:light-induced-degradation
+  source: {cite: "src:iea-pvps-t13-30-2025-annex#sec=h46", h: "1ff4ba1a643e"}
+
+- id: light-induced-degradation-hot-site-drift
+  observations:
+    - text: p-type PERC plant at a hot desert site where module temperatures regularly exceed 60 C
+    - text: weather-corrected yield drifted down over the first two to three years to roughly 6 to 8 percent below expectation, then began a slow partial recovery
+    - text: the loss is spread evenly across strings and string positions, with no link to polarity or voltage to ground, and no visual defects
+  expected: fm:light-induced-degradation
+  source: {cite: "src:iea-pvps-t13-30-2025#sec=2.2.2", h: "193ba134def2"}
+
+- id: connector-defect-hot-coupling
+  observations:
+    - text: IR under load shows a single point about 40 K above ambient right at a plug-and-socket coupling between two modules, while the cable on either side is at normal temperature
+    - text: the string's current is only marginally below its neighbours and the cells in that string look normal in IR
+    - text: months later the inverter starts logging intermittent low-insulation warnings on humid days on that string
+  expected: fm:connector-defect
+  source: {cite: "src:pv-root-cause-connector-defect#sec=h6", h: "e7691a95e9d7"}
+
+- id: connector-defect-string-open-field-crimp
+  observations:
+    - text: one string's current dropped abruptly to zero about three years after commissioning, while each module in the string still shows normal Voc when checked on its own
+    - text: continuity testing locates the open at the joint where module leads meet the field extension cable, which was fitted on site with hand-crimped plugs of two different makes
+    - text: the plastic housing at that joint is melted and charred, and it sits against the timber roof batten
+  expected: fm:connector-defect
+  source: {cite: "src:iea-pvps-t13-01-2014#sec=4.3.3", h: "d4cfbb5bab27"}
+
+- id: cable-defect-gnawed-sheath-iso-fault
+  observations:
+    - text: the inverter trips on insulation-resistance faults after rain and on dewy mornings, then reconnects by early afternoon
+    - text: insulation tests of the isolated strings find one string with low resistance to earth; module output and couplings test normal
+    - text: the walk-down under that table finds bitten and stripped outer sheath on the string run where it lies along the ground, with bare insulation exposed
+  expected: fm:cable-defect
+  source: {cite: "src:pv-root-cause-cable-defect#sec=h4", h: "a1676e6a5b93"}
+
+- id: cable-defect-warm-section-mid-run
+  observations:
+    - text: IR shows an elongated warm section along a DC string run partway between the array and the combiner, well away from any coupling or termination, which are all at normal temperature
+    - text: the jacket over the warm section is brittle and cracked, with greenish deposits on the exposed copper
+    - text: the string's IV curve shows a slightly lower fill factor than its sibling strings, with normal Isc and Voc
+  expected: fm:cable-defect
+  source: {cite: "src:pv-root-cause-cable-defect#sec=h6", h: "2f6cadabed98"}
+
+- id: junction-box-failure-batch-intermittent-substring
+  observations:
+    - text: within 18 months of commissioning, IR shows a few percent of modules from one delivery batch with one outer cell group 5 to 10 K warmer than the rest of the module
+    - text: the same modules sometimes deliver full power and at other times drop to about two thirds of normal voltage
+    - text: a night-time string test with 3 to 5 percent of rated Isc injected in reverse finds some strings with unusually high reverse voltage, and night IR locates slightly warmed cell groups in modules that looked normal by day
+  expected: fm:junction-box-failure
+  source: {cite: "src:iea-pvps-t13-30-2025#sec=2.4.2", h: "a48c6a4339a6"}
+
+- id: junction-box-failure-hot-enclosure
+  observations:
+    - text: IR shows the rear terminal enclosure of one module much hotter than the same enclosure on its neighbours, while the module leads and couplings are at normal temperature
+    - text: seen from the front, the cells directly over the enclosure are browner than the rest of the module
+    - text: the backsheet around the enclosure is lifting and the lid is warped
+    - text: the module's IV curve still shows all three cell groups contributing with normal Voc, only with a slightly reduced fill factor, and the heating persists with no shade
+  expected: fm:junction-box-failure
+  source: {cite: "src:pv-root-cause-junction-box-failure#sec=h6", h: "9e4d1b1adbd8"}
+
+- id: module-hotspot-persistent-across-inspections
+  observations:
+    - text: two annual IR inspections at similar irradiance both show the same cell in the same module running about 25 K above its neighbours
+    - text: no shading object, soiling or debris is found on that cell during either visit
+    - text: the string current shows only a modest loss, but this year several other modules in the same string show similar single-cell anomalies
+  expected: fm:module-hotspot
+  source: {cite: "src:pv-root-cause-module-hotspot#sec=h6", h: "4629f9b5656e"}
+
+- id: cell-interconnection-failure-rounded-knee
+  observations:
+    - text: a five-year-old module's IV curve has a rounded knee and a lower fill factor, with Isc and Voc close to nameplate
+    - text: the shortfall against neighbouring modules is larger on bright sunny days than on cloudy days
+    - text: IR shows one cell warmer in a narrow band along one of its ribbons, and EL shows a darker region in the matching part of that cell
+  expected: fm:cell-interconnection-failure
+  source: {cite: "src:pv-root-cause-cell-interconnection-failure#sec=h5", h: "5f9cbfc08864"}
+
+- id: severe-metallization-corrosion-end-of-life
+  observations:
+    - text: 22-year-old modules in a warm, humid climate; slow power loss has accelerated over the last few years
+    - text: IV traces show a strongly reduced fill factor (high series resistance) and Isc starting to fall, while Voc still matches the nameplate
+    - text: the losses are similar in every string regardless of position, and visual inspection shows yellowed encapsulant, delaminated patches and brownish discolouration along the gridlines
+  expected: fm:severe-metallization-corrosion
+  source: {cite: "src:pv-root-cause-severe-metallization-corrosion#sec=h5", h: "2237827da77c"}
+
+- id: severe-metallization-corrosion-coastal-cell-edges
+  observations:
+    - text: plant a few hundred metres from the sea; EL shows dark bands at cell borders spreading inward from the gaps between cells
+    - text: visual inspection finds white to greenish powdery deposits at solder bonds and on ribbons, with brown-tinged fingers
+    - text: IV traces show rising series resistance, and in one module a cell group has started to drop out as a step
+  expected: fm:severe-metallization-corrosion
+  source: {cite: "src:iea-pvps-t13-30-2025-annex#sec=h34", h: "57cc697f982e"}
+
+- id: glass-breakage-thin-rear-pane
+  observations:
+    - text: bifacial glass-glass modules with 2 mm panes, on trackers, less than a year in service
+    - text: the inverter logs isolation faults on wet mornings, while string production stays in line with the rest of the plant
+    - text: a walk-down from behind the rows finds a network of fine lines across the rear pane of several modules, while their front panes look intact
+  expected: fm:glass-breakage
+  source: {cite: "src:iea-pvps-t13-30-2025#sec=2.5.8", h: "9bffd3173386"}
+
+- id: glass-breakage-frameless-clamp-edges
+  observations:
+    - text: frameless glass-glass modules on a rooftop show fine lines radiating from the points where the edge clamps grip the laminate
+    - text: the clamps are short with sharp edges, and installation records show the screws were torqued well above the manufacturer's value
+    - text: IR of the affected modules shows hot cells next to the clamp points, and the array's insulation resistance drops in wet weather
+  expected: fm:glass-breakage
+  source: {cite: "src:iea-pvps-t13-01-2014#sec=4.3.1", h: "1fd87ffa8010"}
+
+- id: cell-cracks-snail-trails-early
+  observations:
+    - text: six to nine months after installation, grey-brown lines show up on many modules along cell edges and as thin lines crossing individual cells
+    - text: night EL shows that each visible line follows a dark line inside the cell, with a few small isolated cell fragments dark
+    - text: power checks on the most affected modules show little or no loss so far
+  expected: fm:cell-cracks
+  source: {cite: "src:pv-root-cause-cell-cracks#sec=h7", h: "8b69da4daaac"}
+
+# Group B: environmental, system-level and design failure modes.
+# Differential groups (discriminator in brackets):
+#   1. snow vs granular dust vs grid curtailment [abrupt post-storm drop and uneven melt recovery
+#      vs slow dry-period slide that steps up after rain vs flat plateau with healthy equipment]
+#   2. grid curtailment vs inverter voltage floor [plant-wide flat AC plateau vs hot-weather deficit
+#      with DC voltage pinned at the inverter minimum and no AC plateau]
+#   3. granular dust vs fungal soiling [rain recovery in a dry climate vs no rain recovery in a humid
+#      subtropical climate, only manual washing helps]
+#   4. tracker twist vs wind stow vs terrain undulation [single rows with end-to-end angle mismatch vs
+#      site-wide gust-correlated dips vs motor-block/grade-break clustering repeatable by sun position]
+#   5. flawed PAN file vs system-vs-module degradation vs spectral effect [constant gap since COD vs
+#      widening gap year over year vs residual that tracks air mass and atmospheric water]
+
+- id: snow-accumulation-losses-post-storm-uneven-recovery
+  observations:
+    - text: plant output dropped to a few percent of expected on the first clear morning after an overnight winter storm with sub-freezing temperatures
+    - text: plane-of-array irradiance sensors read normal clear-sky values and every inverter reports online with no fault codes
+    - text: over the next two to three days output climbs back gradually, with strings on the same inverter recovering at very different times
+    - text: the daily power curve keeps a normal bell shape with no flat plateau, just scaled down
+  expected: fm:snow-accumulation-losses
+  source: {cite: "src:pv-root-cause-snow-accumulation-losses#sec=h4", h: "0f32a669be34"}
+
+- id: snow-accumulation-losses-fixed-tilt-persistent-winter
+  observations:
+    - text: a 30-degree fixed-tilt utility plant in a cold continental climate delivered roughly a tenth of modelled energy in January and February
+    - text: ambient temperature stayed below freezing for most of both months and the ground was continuously white per site camera
+    - text: inverter availability for those months was above 99 percent and the same plant meets its model from April through October
+  expected: fm:snow-accumulation-losses
+  source: {cite: "src:iea-pvps-t13-33-2025#sec=4.2.2", h: "a4a2b1de57d4"}
+
+- id: granular-dust-soiling-losses-dry-season-slide
+  observations:
+    - text: irradiance-normalized production slides slowly but steadily over six rainless weeks in an arid site, a fraction of a percent per day
+    - text: the shape of the daily power curve is unchanged and there is no flat plateau at any time of day
+    - text: the deficit is broad across all inverter blocks, slightly worse on rows next to an unpaved access road
+    - text: after the first heavy rain of the season the performance index steps back up to near its baseline
+  expected: fm:granular-dust-soiling-losses
+  source: {cite: "src:pv-root-cause-granular-dust-soiling-losses#sec=h4", h: "dea316ba61e1"}
+
+- id: granular-dust-soiling-losses-after-sandstorm
+  observations:
+    - text: energy yield fell by more than half relative to measured irradiance on the day a regional sandstorm passed over a desert site
+    - text: on the following days the sky cleared and irradiance returned to normal, but yield stayed well below the irradiance-supported level
+    - text: the soiling station's clean and uncleaned reference devices diverged sharply over the same days
+    - text: output was restored only after the array was washed
+  expected: fm:granular-dust-soiling-losses
+  acceptable: [fm:soiling-losses]
+  source: {cite: "src:iea-pvps-t13-33-2025#sec=5.2.1", h: "20bb92e55be0"}
+
+- id: fungal-soiling-losses-rain-does-not-recover
+  observations:
+    - text: a ground-mount plant in the humid subtropical southeastern US runs a persistent 5 to 8 percent deficit in weather-normalized production
+    - text: several heavy rain events over the summer produced no visible recovery in the performance index
+    - text: each manual wash produces a clear, repeatable step-up in normalized output that slowly erodes again over the following months
+    - text: close inspection of the glass with a handheld magnifier shows small dark specks and patches that do not wipe off with a dry cloth
+  expected: fm:fungal-soiling-losses
+  source: {cite: "src:pv-root-cause-fungal-soiling-losses#sec=h8", h: "d54a5f534d87"}
+
+- id: fungal-soiling-losses-blamed-on-pollen
+  observations:
+    - text: a spring drop in normalized output at a North Carolina solar farm was logged as seasonal pollen
+    - text: the deficit did not clear after the pollen season ended and was still present in late autumn despite frequent rainfall
+    - text: blocks that received a contracted manual cleaning recovered about 5 to 10 percent while uncleaned blocks did not
+  expected: fm:fungal-soiling-losses
+  source: {cite: "src:pv-root-cause-fungal-soiling-losses#sec=h4", h: "52ca8426fce1"}
+
+- id: soiling-losses-temperate-rooftop-edge-strip
+  observations:
+    - text: a rooftop array in a rainy temperate town, a short distance from a busy railway line, lost performance gradually over a dry, sunny autumn and the following winter
+    - text: the loss reached about 10 percent and was not removed by the region's frequent rain
+    - text: technicians see a compact band of deposit along the lower frame edge of landscape-mounted modules, where cells sit close to the frame
+    - text: string I-V sweeps taken just before and after a manual wash show a gain of several percent
+  expected: fm:soiling-losses
+  source: {cite: "src:iea-pvps-t13-21-2022#sec=5.3", h: "42d2f2c6274f"}
+
+- id: grid-curtailment-losses-midday-plateau
+  observations:
+    - text: on clear days the plant meter output rises normally in the morning, then sits on a dead-flat line through the middle of the day well below the summed inverter AC ratings
+    - text: the plateau starts and ends abruptly and appears at the same instant on every inverter in the plant
+    - text: irradiance-based available-power estimates run well above the plateau, and inverters and trackers report full availability with no alarms
+    - text: the plateau level changes from day to day and is absent on some clear days entirely
+  expected: fm:grid-curtailment-losses
+  source: {cite: "src:pv-root-cause-grid-curtailment-losses#sec=h4", h: "576525a653a1"}
+
+- id: inverter-voltage-floor-losses-hot-afternoons
+  observations:
+    - text: several central inverters underproduce their irradiance-based expectation only on the hottest summer days, with no deficit on cool clear days
+    - text: during the deficit the inverter DC input voltage sits flat at the bottom of its permitted operating range instead of following irradiance and temperature
+    - text: there is no flat plateau at the AC rating, and AC power still moves up and down with irradiance, just below expectation
+    - text: string I-V sweeps at the same timestamps show a maximum-power voltage below the voltage the inverter is holding
+  expected: fm:inverter-voltage-floor-losses
+  source: {cite: "src:pv-root-cause-inverter-voltage-floor-losses#sec=h4", h: "7023830f6e10"}
+
+- id: inverter-voltage-floor-losses-reactive-power-dispatch
+  observations:
+    - text: warm-afternoon underproduction on one feeder lines up with periods when the utility requests reactive power support and the collector bus voltage runs high
+    - text: the affected inverters show DC voltage pinned at a fixed lower value during those intervals while unaffected periods track normally
+    - text: an in-situ I-V tracer shows the array's maximum-power point at a lower voltage and higher power than the inverter is operating at
+  expected: fm:inverter-voltage-floor-losses
+  source: {cite: "src:pv-root-cause-inverter-voltage-floor-losses#sec=h6", h: "1a2c2578fa31"}
+
+- id: spectral-effect-losses-capacity-test-window
+  observations:
+    - text: a capacity test run during a hazy, humid week came in about 2 percent below guarantee even after irradiance and temperature correction
+    - text: a repeat test on the same plant in dry, clear weather passed with margin
+    - text: residuals of the test regression trend with air mass and precipitable water rather than with module temperature
+    - text: inverter availability, clipping and soiling-station readings were clean in both test windows
+  expected: fm:spectral-effect-losses
+  source: {cite: "src:pv-root-cause-spectral-effect-losses#sec=h4", h: "eb8006cfb637"}
+
+- id: spectral-effect-losses-thin-film-seasonal-bias
+  observations:
+    - text: an amorphous-silicon array's ratio of current to measured broadband irradiance swings far more than that of a nearby crystalline array
+    - text: the swing correlates with air mass and with the share of diffuse light, not with temperature
+    - text: a performance model fitted to July data shows a growing bias when applied to winter months, with no step change or trend across years
+  expected: fm:spectral-effect-losses
+  source: {cite: "src:iea-pvps-t13-d2-3-analytical-monitoring#sec=3.2.2", h: "cc128f301ebe"}
+
+- id: flawed-pan-file-losses-constant-gap-since-cod
+  observations:
+    - text: since commissioning the plant has delivered a steady 3 to 4 percent less energy than the pre-construction PVsyst estimate, with no growth in the gap over three years
+    - text: the gap is similar across seasons and irradiance bins and does not correlate with air mass or humidity
+    - text: availability, clipping, export limits, soiling station data and sensor calibration have all been reviewed and explain none of it
+    - text: flash tests on a sample of delivered modules match the datasheet, but the low-light and temperature behaviour measured on site is less favourable than the energy model assumed
+  expected: fm:flawed-pan-file-losses
+  source: {cite: "src:pv-root-cause-flawed-pan-file-losses#sec=h4", h: "88a270e92419"}
+
+- id: system-vs-module-degradation-widening-gap
+  observations:
+    - text: weather-normalized annual energy has fallen faster than the module warranty degradation rate over eight years, and the shortfall widens a little each year
+    - text: lab flash tests of a module sample show average power loss within warranty, but with a wide spread between the strongest and weakest modules
+    - text: string I-V curves increasingly show steps and fill-factor loss even on clean modules under uniform irradiance
+  expected: fm:system-vs-module-degradation
+  source: {cite: "src:pv-root-cause-system-vs-module-degradation#sec=h5", h: "994460afbabc"}
+
+- id: terrain-undulation-yield-losses-motor-block-clusters
+  observations:
+    - text: underperformance on a single-axis tracker site clusters in a handful of motor blocks laid over rolling ground, swales and grade breaks
+    - text: the deficit appears every clear morning and late afternoon during backtracking and is negligible around solar noon, regardless of wind
+    - text: tracker telemetry shows every row in the affected blocks following its commanded angle, and angle surveys along each row are uniform end to end
+    - text: drone imagery at low sun shows rows casting shadows onto neighbours only where local grade departs from the design slope
+  expected: fm:terrain-undulation-yield-losses
+  source: {cite: "src:pv-root-cause-terrain-undulation-yield-losses#sec=h4", h: "7ebb164fa9e1"}
+
+- id: tracker-twist-performance-loss-single-row-angle-mismatch
+  observations:
+    - text: individual tracker rows, scattered rather than grouped by block, show lower normalized current than their direct neighbours
+    - text: the deficit is worst in morning and afternoon positions and on windy days, and the row looks normal near solar noon
+    - text: drone imagery shows the row-end shadow line offset from adjacent rows, and inclinometer readings at the free end differ by several degrees from the drive end under the same command
+    - text: inspection finds a slipped coupler and loose torque-tube joint on one affected row
+  expected: fm:tracker-twist-performance-loss
+  source: {cite: "src:pv-root-cause-tracker-twist-performance-loss#sec=h6", h: "3c47e2464233"}
+
+- id: tracker-wind-stow-losses-gusty-afternoon-dips
+  observations:
+    - text: on clear but gusty spring afternoons the whole plant shows repeated output dips of 15 to 40 minutes while irradiance stays high
+    - text: during each dip every tracker row moves together to the same steep fixed angle, then resumes tracking once the wind eases
+    - text: the dips line up with the site anemometer crossing a fixed speed and are absent on calm clear days
+    - text: inverters stay online with no alarms and no flat power plateau during the dips
+  expected: fm:tracker-wind-stow-losses
+  source: {cite: "src:pv-root-cause-tracker-wind-stow-losses#sec=h4", h: "65b80c7f6952"}
+
+- id: tracker-wind-stow-losses-hourly-model-gap
+  observations:
+    - text: annual energy at a single-axis tracker plant runs about 3 percent below the bankable model, with the shortfall concentrated in windy months
+    - text: the hourly typical-year wind data used in the model never exceeds the tracker controller's protective threshold
+    - text: the site met mast's three-second gust record crosses that threshold hundreds of times a year, and controller logs show matching protective-angle events
+  expected: fm:tracker-wind-stow-losses
+  source: {cite: "src:pv-root-cause-tracker-wind-stow-losses#sec=h5", h: "3f9ef9562906"}
