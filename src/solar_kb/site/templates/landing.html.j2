@@ -1,26 +1,51 @@
 {% extends "base.html.j2" %}
 {% block main %}
-<h1>Solar Lattice</h1>
-<p class="lede">Open, cited, typed knowledge about solar PV, for people and for AI agents.</p>
-<p>Solar Lattice is a knowledge graph of how photovoltaic systems fail: the stressors behind each failure, how it shows up in monitoring data and in the field, how to confirm it, and what to do about it. Every relation and every number is a <strong>claim</strong> that cites the passage it came from and carries a review state:
-<span class="badge verified">verified · fact</span> <span class="badge drafted">drafted · lead</span> <span class="badge disputed">disputed</span></p>
-<h2>Browse</h2>
+<section class="atlas-intro" aria-labelledby="hero-title">
+<div class="atlas-copy">
+<div class="eyebrow"><span class="eyebrow-rule"></span> Solar PV / open knowledge</div>
+<h1 id="hero-title">A field guide to what photovoltaic systems are telling you.</h1>
+<p class="lede">Solar Lattice connects failure modes, field symptoms, evidence, and mitigations in a cited knowledge graph built for people and machines.</p>
+<div class="hero-links"><a class="text-link" href="{{ rel('kb/index.html') }}">Enter the knowledge base <span aria-hidden="true">↗</span></a><a class="text-link muted-link" href="{{ rel('kb/schema.html') }}">Read the ontology</a></div>
+</div>
+<figure class="diagnostic-figure" aria-labelledby="diagnostic-caption">
+<div class="figure-label top-label">FIG. 01 / SIGNAL PATH</div>
+<svg viewBox="0 0 520 390" role="img" aria-label="A solar module grid with a diagnostic signal passing through it and branching into evidence and action">
+<defs><pattern id="cell-grid" width="47" height="47" patternUnits="userSpaceOnUse"><rect width="47" height="47" fill="none" stroke="currentColor" stroke-width=".7"/></pattern></defs>
+<path class="sun-arc" d="M84 326A188 188 0 0 1 433 112"/>
+<path class="sun-ray" d="M83 326 126 277M83 326l-4-62M83 326l57 2"/>
+<rect class="module" x="157" y="76" width="220" height="220" rx="1" fill="url(#cell-grid)"/>
+<path class="signal" d="M129 187h52l13-31 23 63 20-49 18 17h80"/>
+<circle class="signal-node" cx="315" cy="187" r="5"/>
+<path class="branch" d="M335 187h71v-49M335 187h71v49"/>
+<circle class="branch-node" cx="406" cy="138" r="3"/><circle class="branch-node" cx="406" cy="236" r="3"/>
+<text x="414" y="134">evidence</text><text x="414" y="249">action</text>
+<text class="module-label" x="157" y="319">PV MODULE / OBSERVED RESPONSE</text>
+</svg>
+<figcaption id="diagnostic-caption"><span>Signal → claim → source</span><span>Every link is inspectable.</span></figcaption>
+</figure>
+</section>
+
+<section class="manifesto" aria-labelledby="about-title">
+<div class="section-number">00 / WHY THIS EXISTS</div>
+<div><h2 id="about-title">Useful knowledge<br>should show its work.</h2><p>Every relation and every number in Solar Lattice is a claim with a source locator, a text hash, and a review state. Drafted leads, verified facts, and disputed claims stay visible as they move through review.</p><div class="status-line"><span><i class="status-dot verified"></i> verified / fact</span><span><i class="status-dot drafted"></i> drafted / lead</span><span><i class="status-dot disputed"></i> disputed</span></div></div>
+</section>
+
+<section class="index-section" aria-labelledby="browse-title">
+<div class="index-heading"><div class="section-number">01 / THE INDEX</div><h2 id="browse-title">Browse the lattice</h2><p>Start with the part of the system you can see, or the one you need to explain.</p></div>
 {% if total %}
-<ul>
+<ul class="index-list">
 {% for t in types %}
-<li><a href="{{ t.href }}">{{ t.label }}</a> ({{ t.count }})</li>
+<li><a href="{{ t.href }}"><span class="index-count">{{ '%02d'|format(t.count) }}</span><span class="index-name">{{ t.label }}</span><span class="index-arrow" aria-hidden="true">↗</span></a></li>
 {% endfor %}
 </ul>
 {% else %}
 <p class="empty">No records have been published yet. Records arrive through reviewed pull requests, and each claim cites its evidence. The <a href="{{ rel('kb/schema.html') }}">ontology</a> is available now.</p>
 {% endif %}
-<h2>For agents and tools</h2>
-<ul>
-<li>Every record has a stable IRI, such as <code>https://solarlattice.org/kb/fm/pid</code>. The IRI serves a page with the record's JSON-LD embedded; add <code>.jsonld</code> for the data alone.</li>
-<li>Ontology: <a href="{{ rel('kb/solar_kb.owl.ttl') }}">OWL (Turtle)</a>, <a href="{{ rel('kb/solar_kb.context.jsonld') }}">JSON-LD context</a>, <a href="{{ rel('kb/solar_kb.schema.json') }}">JSON Schema</a>, <a href="{{ rel('kb/solar_kb.yaml') }}">LinkML source</a>.</li>
-<li>All records in one file: <a href="{{ rel('kb/records.jsonld') }}">records.jsonld</a>.</li>
-<li>Tools: clone <a href="https://github.com/solarlattice-org/solar-kb">solar-kb</a>, run <code>pip install -e .</code>, then <code>solar-kb build</code> and <code>solar-kb query</code>.</li>
-</ul>
-<h2>Licences</h2>
-<p>Code is Apache-2.0. The schema and the records are <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</section>
+
+<section class="access-section" aria-labelledby="access-title">
+<div class="section-number">02 / FOR MACHINES</div>
+<div class="access-content"><h2 id="access-title">Open at every layer.</h2><p>Human-readable pages, stable IRIs, embedded JSON-LD, and downloadable ontology exports live side by side.</p><a class="text-link" href="https://github.com/solarlattice-org/solar-kb">Inspect the source on GitHub <span aria-hidden="true">↗</span></a></div>
+<div class="access-spec"><div><span>FORMAT</span><strong>JSON-LD</strong></div><div><span>SCHEMA</span><strong>LinkML</strong></div><div><span>LICENSE</span><strong>CC BY 4.0</strong></div></div>
+</section>
 {% endblock %}
