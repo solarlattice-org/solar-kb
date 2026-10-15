@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+{% block main %}
+<h1>Knowledge base</h1>
+<p>Typed records under <code>https://solarlattice.org/kb/</code>. Schema version {{ schema_version }}.</p>
+<table>
+<thead><tr><th>Type</th><th>Records</th><th>IRI prefix</th></tr></thead>
+<tbody>
+{% for t in types %}
+<tr><td><a href="{{ t.href }}">{{ t.label }}</a></td><td>{{ t.count }}</td><td><code>{{ t.prefix }}:</code> <a href="{{ t.term_href }}">{{ t.type }}</a></td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% if not total %}
+<p class="empty">No records have been published yet. Records arrive through reviewed pull requests from the compiler, and each claim cites its evidence.</p>
+{% endif %}
+<h2>Downloads</h2>
+<table>
+<tbody>
+{% for d in downloads %}
+<tr><td><a href="{{ d.href }}">{{ d.name }}</a></td><td>{{ d.label }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+<p>The same files are attached to each <a href="https://github.com/solarlattice-org/solar-kb/releases">release</a>.</p>
+{% endblock %}

@@ -1,0 +1,4 @@
+{% macro link(ref) -%}
+{%- if ref.href %}<a href="{{ ref.href }}">{{ ref.label }}</a>{% else %}{{ ref.label }}{% endif %}
+{%- if ref.proposed %} <span class="badge proposed">proposed</span>{% endif -%}
+{%- endmacro %}
