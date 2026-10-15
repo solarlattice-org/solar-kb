@@ -38,7 +38,7 @@ class Graph:
 
     def _citations(self, record_id: str, claim_id: str) -> list[dict]:
         rows = self._con.execute(
-            "SELECT src, loc FROM citations WHERE record_id=? AND claim_id=? ORDER BY rowid",
+            "SELECT src, loc, h FROM citations WHERE record_id=? AND claim_id=? ORDER BY rowid",
             (record_id, claim_id),
         )
         return [dict(r) for r in rows]

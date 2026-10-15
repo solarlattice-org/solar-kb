@@ -26,7 +26,7 @@ def claim_record(root, claim: str, slug="probe", type_dir="failure-modes", rtype
                  f"id: {prefix}:{slug}\ntype: {rtype}\nname: Probe\nclaims:\n" + claim)
 
 
-CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: drafted\n'
+CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n'
 
 
 @pytest.mark.parametrize("claim, rule", [
@@ -37,7 +37,7 @@ CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: dra
     ("  - claim_id: c1\n    rel: distinguished_from\n    target: fm:pid\n    by: mit:pid-recovery\n"
      + CITE, "distinguished-by"),
     ("  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n"
-     '    cite: [{src: "src:nowhere", loc: "sec=1"}]\n    review: drafted\n', "sources-exist"),
+     '    cite: [{src: "src:nowhere", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n', "sources-exist"),
     ("  - claim_id: c1\n    attr: typical_power_loss\n    value: {min: 5, unit: unit:PERCENT}\n"
      + CITE, "quantities"),
     ("  - claim_id: c1\n    attr: typical_power_loss\n    value: {min: 9, max: 2, unit: unit:PERCENT}\n"
@@ -54,7 +54,7 @@ CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: dra
     ("  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n    quote: "
      + " ".join(["word"] * 26) + "\n" + CITE, "claim-shape"),
     ("  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n    keep: drafted\n"
-     '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: verified\n', "claim-shape"),
+     '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: verified\n', "claim-shape"),
     ("  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n    conflicts_with: [\"fm:pid#c99\"]\n"
      + CITE, "claim-refs"),
     ("  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n    superseded_by: \"fm:gone#c1\"\n"
@@ -88,7 +88,7 @@ def test_id_rules(tmp_path, type_dir, front, expected):
 def test_public_claim_citing_private_source(tmp_path):
     root = copy_fixture(tmp_path, "mini")
     claim_record(root, "  - claim_id: c1\n    rel: caused_by\n    target: fm:pid\n"
-                 '    cite: [{src: "src:omnidian-work-orders", loc: "p=1"}]\n    review: drafted\n')
+                 '    cite: [{src: "src:omnidian-work-orders", loc: "p=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n')
     assert ("public-citations", "fm:probe", "c1") in hits(root, FIXTURES / "overlay")
 
 

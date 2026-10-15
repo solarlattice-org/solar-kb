@@ -14,7 +14,7 @@ def test_reports_load_schema_and_rule_violations_together(tmp_path):
     write_record(root, "failure-modes", "typo", "id: fm:typo\ntype: FailureMode\nname: T\nstatuss: active")
     write_record(root, "failure-modes", "dangling", "id: fm:dangling\ntype: FailureMode\nname: D\n"
                  "claims:\n  - claim_id: c1\n    rel: leads_to\n    target: fm:nowhere\n"
-                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: drafted')
+                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted')
     found = rules_hit(validate_corpus(load_corpus(root), SCHEMA))
     assert {"parse", "schema", "targets"} <= found
 

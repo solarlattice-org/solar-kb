@@ -62,7 +62,7 @@ def test_get_entity(mini_graph):
 def test_neighbors_directions_and_review_floor(mini_graph):
     out = mini_graph.neighbors("fm:pid", rel="presents_as")
     assert [e["target"] for e in out] == ["symptom:uniform-power-loss", "symptom:darkened-cells-in-el"]
-    assert out[0]["cite"] == [{"src": "src:iea-t13-failures", "loc": "sec=4.3"}]
+    assert out[0]["cite"] == [{"src": "src:iea-t13-failures", "loc": "sec=4.3", "h": "a1b2c3d4e5f6"}]
     incoming = mini_graph.neighbors("symptom:uniform-power-loss", direction="in")
     assert {e["source"] for e in incoming} == {"fm:pid", "fm:soiling"}
     verified_in = mini_graph.neighbors("symptom:uniform-power-loss", direction="in",

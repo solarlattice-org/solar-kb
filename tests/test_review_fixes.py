@@ -11,7 +11,7 @@ from solar_kb.validate import validate_corpus
 from solar_kb.yamlio import load_yaml
 from tests.helpers import FIXTURES, SCHEMA, copy_fixture, write_record
 
-CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: drafted\n'
+CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n'
 
 
 def run_rules(corpus):
@@ -29,7 +29,7 @@ def test_unhashable_claim_id_in_referenced_record_does_not_crash(tmp_path):
     write_record(root, "failure-modes", "probe", "id: fm:probe\ntype: FailureMode\nname: P\nclaims:\n"
                  "  - claim_id: c1\n    rel: leads_to\n    target: fm:pid\n"
                  '    conflicts_with: ["fm:odd#c1"]\n    review: disputed\n'
-                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n')
+                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n')
     assert validate_corpus(load_corpus(root), SCHEMA)
 
 
@@ -38,7 +38,7 @@ def test_unhashable_source_tier_does_not_crash(tmp_path):
     write_record(root, "sources", "odd", "id: src:odd\ntype: Source\nname: O\ntier: [open]\ntdm_ok: 'yes'")
     write_record(root, "failure-modes", "probe", "id: fm:probe\ntype: FailureMode\nname: P\nclaims:\n"
                  "  - claim_id: c1\n    rel: leads_to\n    target: fm:pid\n"
-                 '    cite: [{src: "src:odd", loc: "sec=1"}]\n    review: drafted\n')
+                 '    cite: [{src: "src:odd", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n')
     assert validate_corpus(load_corpus(root), SCHEMA)
 
 
@@ -69,10 +69,10 @@ def test_public_claim_ref_into_overlay_is_a_layer_violation(tmp_path, field):
     overlay = copy_fixture(tmp_path, "overlay")
     write_record(overlay, "failure-modes", "private-fm", "id: fm:private-fm\ntype: FailureMode\n"
                  "name: Private\nclaims:\n  - claim_id: c1\n    rel: leads_to\n    target: fm:pid\n"
-                 '    cite: [{src: "src:omnidian-work-orders", loc: "p=1"}]\n    review: disputed\n')
+                 '    cite: [{src: "src:omnidian-work-orders", loc: "p=1", h: "a1b2c3d4e5f6"}]\n    review: disputed\n')
     write_record(root, "failure-modes", "probe", "id: fm:probe\ntype: FailureMode\nname: P\nclaims:\n"
                  f"  - claim_id: c1\n    rel: leads_to\n    target: fm:pid\n    {field}\n"
-                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: disputed\n')
+                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: disputed\n')
     assert ("layers", "fm:probe") in {(v.rule, v.record_id) for v in run_rules(load_corpus(root, overlay))}
 
 

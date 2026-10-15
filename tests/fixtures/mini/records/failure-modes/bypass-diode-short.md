@@ -6,6 +6,6 @@ claims:
   - claim_id: c1
     rel: presents_as
     target: symptom:string-power-step-loss
-    cite: [{src: "src:iea-t13-failures", loc: "sec=5.2"}]
+    cite: [{src: "src:iea-t13-failures", loc: "sec=5.2", h: "a1b2c3d4e5f6"}]
     review: verified
 ---
