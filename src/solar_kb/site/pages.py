@@ -6,7 +6,9 @@ from dataclasses import dataclass
 from solar_kb.iri import KB
 from solar_kb.records import Corpus, Record
 from solar_kb.site import views
-from solar_kb.site.paths import PUBLIC_TYPES, href, term_path, type_index_path
+from solar_kb.site.jsonld import record_document, script_json, to_json
+from solar_kb.site.paths import (PUBLIC_TYPES, alias_ids, href, record_jsonld_path, record_path, term_path,
+                                 type_index_path)
 from solar_kb.site.render import Renderer
 from solar_kb.site.terms import Term
 
@@ -88,3 +90,18 @@ def render_term_pages(r: Renderer, corpus: Corpus, terms: list[Term], ontology_i
                parent=_term_ref(term.is_a, by_name, page) if term.is_a else None,
                range=_term_ref(term.range, by_name, page) if term.range else None,
                slots=[_term_ref(s, by_name, page) for s in term.slots], records=records)
+
+
+def render_record_pages(r: Renderer, corpus: Corpus, prefixes: dict[str, str]) -> None:
+    """For every record: its page (JSON-LD embedded), its .jsonld file, and a redirect stub per former id."""
+    incoming, cited = views.incoming(corpus), views.cited_by(corpus)
+    for record in sorted(corpus.records.values(), key=lambda rec: rec.id):
+        page = record_path(record.id)
+        doc = record_document(record, prefixes)
+        r.write(record_jsonld_path(record.id), to_json(doc))
+        view = views.record_view(record, corpus, prefixes, incoming, cited)
+        r.page("record.html.j2", page, title=view.name, canonical=view.iri, view=view, jsonld=script_json(doc))
+        for old_id in alias_ids(record.id, record.data.get("aliases") or []):
+            stub = record_path(old_id)
+            r.page("redirect.html.j2", stub, title=view.name, canonical=view.iri, target=href(stub, page),
+                   old_id=old_id, new_id=record.id, name=view.name)
