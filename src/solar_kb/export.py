@@ -24,8 +24,10 @@ def export_all(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[Path]:
         warnings.simplefilter("ignore")
         outputs = {
             "solar_kb.schema.json": JsonSchemaGenerator(schema).serialize(),
+            # use_native_uris=False makes slot_uri count, so OWL and the JSON-LD context mint the same IRIs.
             "solar_kb.owl.ttl": OwlSchemaGenerator(
                 schema,
+                use_native_uris=False,
                 skip_vacuous_min_zero_cardinality_axioms=True,
                 skip_vacuous_local_range_axioms=True,
                 consolidate_cardinality_axioms=True,
