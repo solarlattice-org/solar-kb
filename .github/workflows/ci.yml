@@ -14,7 +14,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[dev,site]"
       - run: pytest -q
       - run: solar-kb validate
       - run: solar-kb build --out build
+      - run: solar-kb site --out _site

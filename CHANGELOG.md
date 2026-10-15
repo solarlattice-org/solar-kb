@@ -19,3 +19,7 @@
 ### Validation
 - New rule `mapping-prefixes`: a `close_mappings`/`exact_mappings` entry is an absolute http(s) IRI or uses a
   prefix the schema declares.
+
+### Website
+- `solar-kb site --out _site` builds solarlattice.org: a page at every record and schema-term IRI, per-record
+  JSON-LD, and the exports. `.github/workflows/pages.yml` deploys it on every push to `main`.

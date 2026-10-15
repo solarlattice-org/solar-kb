@@ -74,6 +74,50 @@ def build(root: Path = ROOT, overlay: Optional[Path] = OVERLAY,
         shutil.rmtree(staging, ignore_errors=True)
 
 
+def _site_out_problem(out: Path, root: Path) -> str | None:
+    """--out is replaced wholesale, so only an empty directory or a previous site build may be replaced."""
+    if out == root or root.is_relative_to(out):
+        return f"--out {out} contains the repository root"
+    if out.exists() and (not out.is_dir() or (any(out.iterdir()) and not (out / "CNAME").is_file())):
+        return f"--out {out} exists and is not a previous site build (no CNAME); refusing to replace it"
+    return None
+
+
+@app.command()
+def site(root: Path = ROOT, out: Path = typer.Option(Path("_site"), help="Output directory (replaced).")) -> None:
+    """Validate the public records, then build the solarlattice.org site. Never reads the private overlay."""
+    try:
+        from solar_kb.site.build import SiteError, build_site
+    except ImportError as exc:  # jinja2 / markdown-it-py come from the optional [site] extra
+        typer.echo(f"error: {exc}; install with: pip install -e '.[site]'", err=True)
+        raise typer.Exit(2)
+    root, out = root.resolve(), out.resolve()
+    problem = _site_out_problem(out, root)
+    if problem:
+        typer.echo(f"error: {problem}", err=True)
+        raise typer.Exit(2)
+    corpus = _validated(root, None)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    staging = Path(tempfile.mkdtemp(prefix=".site-", dir=out.parent))
+    try:
+        written = build_site(corpus, _schema(root), staging)
+        staging.chmod(0o755)  # mkdtemp makes it 0700; Pages needs it readable
+        old = None
+        if out.exists():  # swap, then delete: the previous build is never gone before the new one is in place
+            old = out.with_name(f".{out.name}.old")
+            shutil.rmtree(old, ignore_errors=True)
+            os.replace(out, old)
+        os.replace(staging, out)
+        if old is not None:
+            shutil.rmtree(old, ignore_errors=True)
+    except SiteError as exc:
+        typer.echo(f"error: {exc}", err=True)
+        raise typer.Exit(1)
+    finally:
+        shutil.rmtree(staging, ignore_errors=True)
+    typer.echo(f"wrote {len(written)} files to {out}")
+
+
 def _print(obj) -> None:
     typer.echo(json.dumps(obj, indent=2))
 
