@@ -11,7 +11,9 @@ TERMS = list(load_ontology(SCHEMA).terms)
 def test_landing_kb_home_and_type_index(tmp_path):
     render_index_pages(Renderer(tmp_path, "0.3.0"), load_corpus(FIXTURES / "mini"), TERMS)
     landing = (tmp_path / "index.html").read_text()
-    assert 'href="kb/"' in landing and 'href="static/style.css"' in landing and "Failure modes</a> (3)" in landing
+    assert 'href="kb/"' in landing and 'href="static/style.css"' in landing
+    assert 'class="atlas-intro"' in landing and 'class="index-list"' in landing
+    assert "Failure modes</span><span class=\"index-arrow\"" in landing
     kb = (tmp_path / "kb/index.html").read_text()
     assert 'href="fm/"' in kb and 'href="solar_kb.owl.ttl"' in kb and "Schema version 0.3.0" in kb
     fm = (tmp_path / "kb/fm/index.html").read_text()
