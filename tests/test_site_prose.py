@@ -59,3 +59,9 @@ def test_wikilink_to_a_proposed_stub_is_tagged():
     assert '<a href="pid">Potential-induced degradation</a>.' in out  # an active record gets no tag
     assert out.count('class="badge proposed"') == 1
 
+
+
+def test_images_become_links_and_load_nothing():
+    out = render_prose("![tracking *pixel*](https://tracker.example/p.gif)", "kb/fm/pid.html", NAMES)
+    assert "<img" not in out
+    assert '<a href="https://tracker.example/p.gif">tracking pixel</a>' in out

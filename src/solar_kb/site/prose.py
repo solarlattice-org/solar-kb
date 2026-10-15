@@ -65,5 +65,13 @@ def _link(match: re.Match, page_path: str, names: Mapping[str, str], proposed: C
     return f'<a href="{html.escape(href(page_path, record_path(rid)))}">{html.escape(label)}</a>{tag}'
 
 
+def _image_as_link(self, tokens: list[Token], idx: int, options, env) -> str:
+    """A markdown image becomes a plain link with its alt text: nothing third-party loads with the page."""
+    token = tokens[idx]
+    alt = self.renderInlineAsText(token.children or [], options, env)
+    return f'<a href="{html.escape(token.attrGet("src") or "")}">{html.escape(alt)}</a>'
+
+
 _MD = MarkdownIt("commonmark", {"html": False})
 _MD.core.ruler.before("text_join", "wikilinks", _wikilinks)
+_MD.add_render_rule("image", _image_as_link)
