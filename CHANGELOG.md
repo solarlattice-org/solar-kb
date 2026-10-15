@@ -15,6 +15,8 @@
   claim references and units are links between nodes. Source records get their correct IRIs
   (`https://solarlattice.org/kb/src/<slug>`; before, `src:<slug>`).
 - `solar_kb.context.jsonld` is now the exact context `records.jsonld` uses.
+- Each claim is a JSON-LD node with its claim IRI (`https://solarlattice.org/kb/fm/pid#c3`), so `superseded_by` and
+  `conflicts_with` link to real nodes.
 
 ### Validation
 - New rule `mapping-prefixes`: a `close_mappings`/`exact_mappings` entry is an absolute http(s) IRI or uses a

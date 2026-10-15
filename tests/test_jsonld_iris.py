@@ -56,3 +56,21 @@ def test_mapping_with_undeclared_prefix_is_a_violation(tmp_path):
                  "close_mappings: ['mds:Inverter', 'https://example.org/onto/Inverter', 'skos:Concept']")
     hits = [v for v in validate_corpus(load_corpus(root), SCHEMA) if v.rule == "mapping-prefixes"]
     assert len(hits) == 1 and "mds:Inverter" in hits[0].message
+
+
+def test_claims_are_nodes_that_claim_references_point_at(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    write_record(root, "failure-modes", "pid-variant", "id: fm:pid-variant\ntype: FailureMode\nname: PID variant\n"
+                 "claims:\n  - claim_id: c1\n    attr: typical_power_loss\n"
+                 "    value: {min: 5, max: 15, unit: 'unit:PERCENT'}\n    conditions: n-type modules\n"
+                 "    conflicts_with: ['fm:pid#c8']\n    superseded_by: 'fm:pid#c8'\n"
+                 '    cite: [{src: "src:nrel-pid-guide", loc: "p=3", h: "a1b2c3d4e5f6"}]\n    review: disputed')
+    corpus = load_corpus(root)
+    assert validate_corpus(corpus, SCHEMA) == []
+    export_all(corpus, SCHEMA, tmp_path / "out")
+    g = rdflib.Graph().parse(tmp_path / "out" / "records.jsonld", format="json-ld")
+    c8 = rdflib.URIRef(KB + "fm/pid#c8")
+    assert (rdflib.URIRef(KB + "fm/pid"), rdflib.URIRef(KB + "claims"), c8) in g
+    assert str(g.value(c8, rdflib.URIRef(KB + "claim_id"))) == "c8"
+    for pred in ("conflicts_with", "superseded_by"):
+        assert set(g.objects(None, rdflib.URIRef(KB + pred))) == {c8}

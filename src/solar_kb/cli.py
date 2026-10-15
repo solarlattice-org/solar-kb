@@ -74,12 +74,13 @@ def build(root: Path = ROOT, overlay: Optional[Path] = OVERLAY,
         shutil.rmtree(staging, ignore_errors=True)
 
 
-def _site_out_problem(out: Path, root: Path) -> str | None:
-    """--out is replaced wholesale, so only an empty directory or a previous site build may be replaced."""
+def _site_out_problem(out: Path, root: Path, sentinel: str) -> str | None:
+    """--out is replaced wholesale, so only an empty directory or a previous site build (it holds `sentinel`) may be
+    replaced. A CNAME is not proof: every Pages repo with a custom domain has one."""
     if out == root or root.is_relative_to(out):
         return f"--out {out} contains the repository root"
-    if out.exists() and (not out.is_dir() or (any(out.iterdir()) and not (out / "CNAME").is_file())):
-        return f"--out {out} exists and is not a previous site build (no CNAME); refusing to replace it"
+    if out.exists() and (not out.is_dir() or (any(out.iterdir()) and not (out / sentinel).is_file())):
+        return f"--out {out} exists and is not a previous site build (no {sentinel}); refusing to replace it"
     return None
 
 
@@ -87,12 +88,12 @@ def _site_out_problem(out: Path, root: Path) -> str | None:
 def site(root: Path = ROOT, out: Path = typer.Option(Path("_site"), help="Output directory (replaced).")) -> None:
     """Validate the public records, then build the solarlattice.org site. Never reads the private overlay."""
     try:
-        from solar_kb.site.build import SiteError, build_site
+        from solar_kb.site.build import SENTINEL, SiteError, build_site
     except ImportError as exc:  # jinja2 / markdown-it-py come from the optional [site] extra
         typer.echo(f"error: {exc}; install with: pip install -e '.[site]'", err=True)
         raise typer.Exit(2)
     root, out = root.resolve(), out.resolve()
-    problem = _site_out_problem(out, root)
+    problem = _site_out_problem(out, root, SENTINEL)
     if problem:
         typer.echo(f"error: {problem}", err=True)
         raise typer.Exit(2)

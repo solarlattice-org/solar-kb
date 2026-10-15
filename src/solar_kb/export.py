@@ -59,7 +59,10 @@ def record_node(record: Record, prefixes: dict[str, str]) -> dict:
         if isinstance(data.get(key), list):
             data[key] = [expand(v, prefixes) for v in data[key]]
     if isinstance(data.get("claims"), list):
-        data["claims"] = [_expand_claim(c, prefixes) for c in data["claims"]]
+        # Each claim is a node with its claim IRI (<record IRI>#<claim_id>), so superseded_by / conflicts_with land on it.
+        data["claims"] = [dict(_expand_claim(c, prefixes), **{"@id": f"{data['id']}#{c['claim_id']}"})
+                          if isinstance(c.get("claim_id"), str) else _expand_claim(c, prefixes)
+                          for c in data["claims"]]
     if isinstance(data.get("signals"), list):
         data["signals"] = [dict(s, unit=expand(s["unit"], prefixes)) if isinstance(s.get("unit"), str) else s
                            for s in data["signals"]]

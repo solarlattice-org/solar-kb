@@ -38,3 +38,14 @@ def test_wikilinks_in_code_are_left_alone():
 def test_unresolved_wikilink_raises():
     with pytest.raises(ValueError, match="does not resolve"):
         render_prose("[[failure-modes/nope]]", "kb/fm/pid.html", NAMES)
+
+
+def test_escaped_or_entity_brackets_stay_literal_text():
+    body = r"\[\[not-a-link\]\] and &#91;&#91;failure-modes/nope&#93;&#93; and \[\[failure-modes/pid\]\]"
+    out = render_prose(body, "kb/fm/soiling.html", NAMES)
+    assert "<a " not in out and out.count("[[") == 3
+
+
+def test_wikilink_text_inside_an_attribute_is_left_alone():
+    out = render_prose('[t](https://e.com "[[failure-modes/pid|y]]")', "kb/fm/soiling.html", NAMES)
+    assert out.count("<a ") == 1 and 'title="[[failure-modes/pid|y]]"' in out

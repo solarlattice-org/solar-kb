@@ -6,7 +6,8 @@ from typer.testing import CliRunner
 from solar_kb.cli import app
 from solar_kb.iri import KB
 from solar_kb.records import load_corpus
-from solar_kb.site.build import SiteError, build_site
+from solar_kb.site.build import SENTINEL, SiteError, build_site
+from solar_kb.validate import validate_corpus
 from solar_kb.site.linkcheck import broken_links
 from solar_kb.site.paths import iri_to_path
 from tests.helpers import FIXTURES, REPO, SCHEMA, copy_fixture, write_record
@@ -55,7 +56,7 @@ def test_alias_that_is_another_records_id_is_a_collision(tmp_path):
 def test_cli_site_replaces_a_previous_build(tmp_path):
     root, out = _repo(tmp_path), tmp_path / "_site"
     out.mkdir()
-    (out / "CNAME").write_text("solarlattice.org\n")
+    (out / SENTINEL).write_text("previous build\n")
     (out / "stale.html").write_text("old")
     result = runner.invoke(app, ["site", "--root", str(root), "--out", str(out)])
     assert result.exit_code == 0, result.output
@@ -74,7 +75,7 @@ def test_cli_site_with_no_records(tmp_path):
 def test_cli_site_failure_keeps_the_previous_build(tmp_path):
     root, out = _repo(tmp_path), tmp_path / "_site"
     out.mkdir()
-    (out / "CNAME").write_text("solarlattice.org\n")
+    (out / SENTINEL).write_text("previous build\n")
     (out / "index.html").write_text("previous")
     write_record(root, "failure-modes", "bad", "id: fm:bad\ntype: FailureMode\nname: B\nclaims:\n"
                  "  - claim_id: c1\n    rel: leads_to\n    target: fm:missing\n"
@@ -95,3 +96,31 @@ def test_cli_site_refuses_to_replace_the_repo_or_a_foreign_directory(tmp_path):
     result = runner.invoke(app, ["site", "--root", str(root), "--out", str(other)])
     assert result.exit_code == 2 and "not a previous site build" in result.output
     assert (other / "notes.md").read_text() == "keep me"
+
+
+def test_cli_site_refuses_a_foreign_pages_repo_with_a_cname(tmp_path):
+    root, other = _repo(tmp_path), tmp_path / "blog"
+    (other / "posts").mkdir(parents=True)
+    (other / "CNAME").write_text("example.com\n")
+    (other / "posts" / "a.md").write_text("keep me")
+    result = runner.invoke(app, ["site", "--root", str(root), "--out", str(other)])
+    assert result.exit_code == 2 and "not a previous site build" in result.output
+    assert (other / "posts" / "a.md").read_text() == "keep me"
+
+
+def test_bodies_that_validate_always_build(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    soiling = root / "records/failure-modes/soiling.md"
+    soiling.write_text(soiling.read_text() + "Literal: \\[\\[not-a-link\\]\\] and &#91;&#91;failure-modes/nope&#93;&#93;\n")
+    corpus = load_corpus(root)
+    assert validate_corpus(corpus, SCHEMA) == []
+    build_site(corpus, SCHEMA, tmp_path / "site")
+    assert "[[not-a-link]]" in (tmp_path / "site/kb/fm/soiling.html").read_text()
+
+
+def test_an_unresolvable_wikilink_is_a_site_error_not_a_traceback(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    soiling = root / "records/failure-modes/soiling.md"
+    soiling.write_text(soiling.read_text() + "See [[failure-modes/nope]].\n")
+    with pytest.raises(SiteError, match="does not resolve"):
+        build_site(load_corpus(root), SCHEMA, tmp_path / "site")

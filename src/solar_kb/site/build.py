@@ -15,6 +15,8 @@ from solar_kb.site.render import Renderer
 from solar_kb.site.terms import load_ontology
 
 DOMAIN = "solarlattice.org"
+# Marks a directory as a site build, so `solar-kb site --out` may replace it. Hidden: Pages never publishes it.
+SENTINEL = ".solar-kb-site"
 
 
 class SiteError(RuntimeError):
@@ -35,11 +37,15 @@ def build_site(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[str]:
     ontology = load_ontology(schema_path)
     terms = list(ontology.terms)
     r = Renderer(out_dir, schema_version=ontology.version)
-    render_index_pages(r, corpus, terms)
-    render_term_pages(r, corpus, terms, ontology.iri, ontology.description)
-    render_record_pages(r, corpus, load_prefixes(schema_path))
+    try:
+        render_index_pages(r, corpus, terms)
+        render_term_pages(r, corpus, terms, ontology.iri, ontology.description)
+        render_record_pages(r, corpus, load_prefixes(schema_path))
+    except ValueError as exc:  # e.g. a wikilink to a missing record in a corpus that skipped validation
+        raise SiteError(str(exc)) from exc
     r.write("static/style.css", files("solar_kb.site").joinpath("static/style.css").read_text(encoding="utf-8"))
     r.write("CNAME", f"{DOMAIN}\n")
+    r.write(SENTINEL, "Built by `solar-kb site`; it may replace this directory.\n")
     written += r.written
     clashes = collisions(written)
     if clashes:
