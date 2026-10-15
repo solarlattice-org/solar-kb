@@ -49,8 +49,9 @@ def test_alias_that_is_another_records_id_is_a_collision(tmp_path):
     root = copy_fixture(tmp_path, "mini")
     pid = root / "records/failure-modes/pid.md"
     pid.write_text(pid.read_text().replace("aliases: [PID, PID-s]", "aliases: [PID, 'fm:soiling']"))
-    with pytest.raises(SiteError, match="collide: kb/fm/soiling.html vs kb/fm/soiling.html"):
+    with pytest.raises(SiteError, match="collide: kb/fm/soiling.html") as exc:
         build_site(load_corpus(root), SCHEMA, tmp_path / "site")
+    assert "record fm:soiling" in str(exc.value) and "alias fm:soiling of fm:pid" in str(exc.value)
 
 
 def test_cli_site_replaces_a_previous_build(tmp_path):
