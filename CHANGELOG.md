@@ -11,3 +11,11 @@
 ### Exports
 - The OWL export honours `slot_uri` (`use_native_uris=False`). `close_mappings` and `exact_mappings` are now
   `skos:closeMatch` and `skos:exactMatch`, as in the JSON-LD context.
+- JSON-LD writes identifier fields as absolute IRIs typed `@id`, so relation targets, `by`, citation sources,
+  claim references and units are links between nodes. Source records get their correct IRIs
+  (`https://solarlattice.org/kb/src/<slug>`; before, `src:<slug>`).
+- `solar_kb.context.jsonld` is now the exact context `records.jsonld` uses.
+
+### Validation
+- New rule `mapping-prefixes`: a `close_mappings`/`exact_mappings` entry is an absolute http(s) IRI or uses a
+  prefix the schema declares.

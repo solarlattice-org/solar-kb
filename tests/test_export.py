@@ -15,8 +15,9 @@ def test_exports_are_written_and_parse(tmp_path):
     rdflib.Graph().parse(tmp_path / "solar_kb.owl.ttl", format="turtle")
     records = json.loads((tmp_path / "records.jsonld").read_text())
     ids = {r["id"] for r in records["@graph"]}
-    assert "fm:pid" in ids
-    assert not any(i.startswith("case:") or i == "src:omnidian-work-orders" for i in ids)
+    assert "https://solarlattice.org/kb/fm/pid" in ids
+    assert not any(i.startswith("https://solarlattice.org/kb/case/")
+                   or i == "https://solarlattice.org/kb/src/omnidian-work-orders" for i in ids)
     assert records["@context"]["body"] == "skos:note"
 
 
