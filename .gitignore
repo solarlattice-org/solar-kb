@@ -1,5 +1,7 @@
 build/
 _site/
+.site-*/
+._site.old/
 *.egg-info/
 __pycache__/
 .pytest_cache/

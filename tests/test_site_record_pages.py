@@ -56,13 +56,15 @@ def test_proposed_stub_has_a_page_and_links_to_it_are_tagged(tmp_path):
     write_record(root, "failure-modes", "cell-crack",
                  "id: fm:cell-crack\ntype: FailureMode\nname: Cell crack\nclaims:\n  - claim_id: c1\n"
                  "    rel: leads_to\n    target: fm:hotspot\n"
-                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=4.1", h: "a1b2c3d4e5f6"}]\n    review: drafted')
+                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=4.1", h: "a1b2c3d4e5f6"}]\n    review: drafted',
+                 body="Cracks can grow into a [[failure-modes/hotspot]].\n")
     corpus = load_corpus(root)
     assert validate_corpus(corpus, SCHEMA) == []
     out = _render(corpus, tmp_path / "site")
     assert "not yet reviewed" in (out / "kb/fm/hotspot.html").read_text()
     crack = (out / "kb/fm/cell-crack.html").read_text()
     assert '<a href="hotspot">Hotspot</a> <span class="badge proposed">proposed</span>' in crack
+    assert crack.count('<a href="hotspot">Hotspot</a> <span class="badge proposed">proposed</span>') == 2  # claim + prose
 
 
 def test_former_id_alias_gets_a_redirect_stub(tmp_path):
@@ -84,3 +86,11 @@ def test_hostile_prose_and_origin_url_are_neutralised(tmp_path):
     page = (_render(load_corpus(root), tmp_path / "site") / "kb/src/evil.html").read_text()
     assert "<script>alert" not in page and 'href="javascript:' not in page and "<i>source</i>" not in page
     assert "<dd>javascript:alert(1)</dd>" in page
+
+
+def test_record_header_shows_status(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    write_record(root, "failure-modes", "hotspot", "id: fm:hotspot\ntype: FailureMode\nname: Hotspot\nstatus: proposed")
+    out = _render(load_corpus(root), tmp_path / "site")
+    assert "<dt>Status</dt><dd>active</dd>" in (out / "kb/fm/pid.html").read_text()
+    assert "<dt>Status</dt><dd>proposed</dd>" in (out / "kb/fm/hotspot.html").read_text()

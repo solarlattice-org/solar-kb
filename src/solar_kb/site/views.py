@@ -181,6 +181,7 @@ def record_view(record: Record, corpus: Corpus, prefixes: dict[str, str], incomi
         heading = claim.get("rel") or claim.get("attr") or "claim"
         groups.setdefault(heading, []).append(_claim_view(corpus, claim, page, prefixes))
     names = {rid: r.data["name"] for rid, r in corpus.records.items()}
+    proposed = {rid for rid, r in corpus.records.items() if r.data.get("status") == "proposed"}
     manifest = tuple((label, str(data[key]), _web_link(str(data[key])) if key == "origin_url" else None)
                      for key, label in MANIFEST_FIELDS if record.type == "Source" and data.get(key) is not None)
     mappings = tuple((label, value, expand(value, prefixes))
@@ -190,7 +191,7 @@ def record_view(record: Record, corpus: Corpus, prefixes: dict[str, str], incomi
         id=record.id, iri=expand(record.id, prefixes), name=data["name"], type=record.type,
         type_href=href(page, term_path(KB + record.type)), status=data.get("status", "active"),
         aliases=tuple(a for a in data.get("aliases") or [] if isinstance(a, str)),
-        prose=render_prose(record.body, page, names) if record.body.strip() else "",
+        prose=render_prose(record.body, page, names, proposed) if record.body.strip() else "",
         manifest=manifest, groups=tuple((h, tuple(c)) for h, c in groups.items()),
         referenced_by=_incoming_views(corpus, incoming_index.get(record.id, []), page),
         cited_by=_incoming_views(corpus, cited_index.get(record.id, []), page),

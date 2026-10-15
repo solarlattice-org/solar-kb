@@ -86,7 +86,7 @@ def render_term_pages(r: Renderer, corpus: Corpus, terms: list[Term], ontology_i
         records = None
         if term.name in public:
             records = [views.record_ref(corpus, rec.id, page) for rec in _records_of(corpus, term.name)]
-        r.page("term.html.j2", page, title=term.name, canonical=term.iri, term=term,
+        r.page("term.html.j2", page, origin=f"term {term.name}", title=term.name, canonical=term.iri, term=term,
                parent=_term_ref(term.is_a, by_name, page) if term.is_a else None,
                range=_term_ref(term.range, by_name, page) if term.range else None,
                slots=[_term_ref(s, by_name, page) for s in term.slots], records=records)
@@ -98,10 +98,10 @@ def render_record_pages(r: Renderer, corpus: Corpus, prefixes: dict[str, str]) -
     for record in sorted(corpus.records.values(), key=lambda rec: rec.id):
         page = record_path(record.id)
         doc = record_document(record, prefixes)
-        r.write(record_jsonld_path(record.id), to_json(doc))
+        r.write(record_jsonld_path(record.id), to_json(doc), origin=f"record {record.id}")
         view = views.record_view(record, corpus, prefixes, incoming, cited)
-        r.page("record.html.j2", page, title=view.name, canonical=view.iri, view=view, jsonld=script_json(doc))
+        r.page("record.html.j2", page, origin=f"record {record.id}", title=view.name, canonical=view.iri, view=view, jsonld=script_json(doc))
         for old_id in alias_ids(record.id, record.data.get("aliases") or []):
             stub = record_path(old_id)
-            r.page("redirect.html.j2", stub, title=view.name, canonical=view.iri, target=href(stub, page),
+            r.page("redirect.html.j2", stub, origin=f"alias {old_id} of {record.id}", title=view.name, canonical=view.iri, target=href(stub, page),
                    old_id=old_id, new_id=record.id, name=view.name)

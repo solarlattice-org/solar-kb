@@ -1,4 +1,6 @@
 """The whole site: `solar-kb site`, output safety, and every IRI resolving (site spec §3.1, §5)."""
+import sys
+
 import pytest
 import rdflib
 from typer.testing import CliRunner
@@ -49,8 +51,9 @@ def test_alias_that_is_another_records_id_is_a_collision(tmp_path):
     root = copy_fixture(tmp_path, "mini")
     pid = root / "records/failure-modes/pid.md"
     pid.write_text(pid.read_text().replace("aliases: [PID, PID-s]", "aliases: [PID, 'fm:soiling']"))
-    with pytest.raises(SiteError, match="collide: kb/fm/soiling.html vs kb/fm/soiling.html"):
+    with pytest.raises(SiteError, match="collide: kb/fm/soiling.html") as exc:
         build_site(load_corpus(root), SCHEMA, tmp_path / "site")
+    assert "record fm:soiling" in str(exc.value) and "alias fm:soiling of fm:pid" in str(exc.value)
 
 
 def test_cli_site_replaces_a_previous_build(tmp_path):
@@ -124,3 +127,38 @@ def test_an_unresolvable_wikilink_is_a_site_error_not_a_traceback(tmp_path):
     soiling.write_text(soiling.read_text() + "See [[failure-modes/nope]].\n")
     with pytest.raises(SiteError, match="does not resolve"):
         build_site(load_corpus(root), SCHEMA, tmp_path / "site")
+
+
+def test_cli_site_failure_after_staging_keeps_the_previous_build_and_cleans_up(tmp_path):
+    root, out = _repo(tmp_path), tmp_path / "_site"
+    out.mkdir()
+    (out / SENTINEL).write_text("previous build\n")
+    (out / "index.html").write_text("previous")
+    pid = root / "records/failure-modes/pid.md"  # valid records, but the build itself fails (path collision)
+    pid.write_text(pid.read_text().replace("aliases: [PID, PID-s]", "aliases: [PID, 'fm:soiling']"))
+    result = runner.invoke(app, ["site", "--root", str(root), "--out", str(out)])
+    assert result.exit_code == 1 and "collide" in result.output
+    assert (out / "index.html").read_text() == "previous"
+    assert not list(tmp_path.glob(".site-*")) and not list(tmp_path.glob("._site.old"))
+
+
+def _forget_site_modules(monkeypatch):
+    for name in [m for m in sys.modules if m == "solar_kb.site" or m.startswith("solar_kb.site.")]:
+        monkeypatch.delitem(sys.modules, name)
+
+
+def test_cli_site_missing_extra_gives_the_install_hint(tmp_path, monkeypatch):
+    root = _repo(tmp_path)
+    _forget_site_modules(monkeypatch)
+    monkeypatch.setitem(sys.modules, "jinja2", None)  # as if the [site] extra were not installed
+    result = runner.invoke(app, ["site", "--root", str(root), "--out", str(tmp_path / "_site")])
+    assert result.exit_code == 2 and "pip install -e '.[site]'" in result.output
+
+
+def test_cli_site_does_not_disguise_an_internal_import_error(tmp_path, monkeypatch):
+    root = _repo(tmp_path)
+    _forget_site_modules(monkeypatch)
+    monkeypatch.setitem(sys.modules, "solar_kb.site.build", None)  # a broken module of our own
+    result = runner.invoke(app, ["site", "--root", str(root), "--out", str(tmp_path / "_site")])
+    assert isinstance(result.exception, ModuleNotFoundError) and result.exception.name == "solar_kb.site.build"
+    assert "pip install" not in result.output

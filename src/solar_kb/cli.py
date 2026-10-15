@@ -25,6 +25,7 @@ app.add_typer(eval_app, name="eval")
 ROOT = typer.Option(Path("."), help="solar-kb repository root.")
 OVERLAY = typer.Option(None, help="Private overlay root (solar-brain/overlay).")
 DB = typer.Option(Path("build/graph.sqlite"), help="Graph database.")
+SITE_EXTRA_MODULES = ("jinja2", "markdown_it")  # what the optional [site] extra installs
 
 
 def _schema(root: Path) -> Path:
@@ -91,7 +92,9 @@ def site(root: Path = ROOT, out: Path = typer.Option(Path("_site"), help="Output
     """Validate the public records, then build the solarlattice.org site. Never reads the private overlay."""
     try:
         from solar_kb.site.build import SENTINEL, SiteError, build_site
-    except ImportError as exc:  # jinja2 / markdown-it-py come from the optional [site] extra
+    except ModuleNotFoundError as exc:
+        if (exc.name or "").split(".")[0] not in SITE_EXTRA_MODULES:
+            raise  # a broken module of our own, not a missing extra
         typer.echo(f"error: {exc}; install with: pip install -e '.[site]'", err=True)
         raise typer.Exit(2)
     root, out = root.resolve(), out.resolve()

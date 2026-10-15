@@ -25,3 +25,7 @@
 ### Website
 - `solar-kb site --out _site` builds solarlattice.org: a page at every record and schema-term IRI, per-record
   JSON-LD, and the exports. `.github/workflows/pages.yml` deploys it on every push to `main`.
+- Record pages show the record's status; wikilinks to `proposed` stubs carry the *proposed* tag.
+- Markdown images in record prose render as links, so no third-party content loads with a page.
+- Build errors name the record or alias behind a colliding path; only a missing `[site]` extra gets the
+  install hint.

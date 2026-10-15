@@ -49,3 +49,19 @@ def test_escaped_or_entity_brackets_stay_literal_text():
 def test_wikilink_text_inside_an_attribute_is_left_alone():
     out = render_prose('[t](https://e.com "[[failure-modes/pid|y]]")', "kb/fm/soiling.html", NAMES)
     assert out.count("<a ") == 1 and 'title="[[failure-modes/pid|y]]"' in out
+
+
+def test_wikilink_to_a_proposed_stub_is_tagged():
+    names = dict(NAMES, **{"fm:hotspot": "Hotspot"})
+    out = render_prose("See [[failure-modes/hotspot]] and [[failure-modes/pid]].", "kb/fm/x.html", names,
+                       proposed={"fm:hotspot"})
+    assert '<a href="hotspot">Hotspot</a> <span class="badge proposed">proposed</span>' in out
+    assert '<a href="pid">Potential-induced degradation</a>.' in out  # an active record gets no tag
+    assert out.count('class="badge proposed"') == 1
+
+
+
+def test_images_become_links_and_load_nothing():
+    out = render_prose("![tracking *pixel*](https://tracker.example/p.gif)", "kb/fm/pid.html", NAMES)
+    assert "<img" not in out
+    assert '<a href="https://tracker.example/p.gif">tracking pixel</a>' in out

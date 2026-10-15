@@ -46,10 +46,12 @@ def build_site(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[str]:
     r.write("static/style.css", files("solar_kb.site").joinpath("static/style.css").read_text(encoding="utf-8"))
     r.write("CNAME", f"{DOMAIN}\n")
     r.write(SENTINEL, "Built by `solar-kb site`; it may replace this directory.\n")
+    origins = {path: ["export"] for path in written} | r.origins  # what wrote each path, for the error below
     written += r.written
     clashes = collisions(written)
     if clashes:
-        raise SiteError("output paths collide: " + "; ".join(" vs ".join(c) for c in clashes))
+        raise SiteError("output paths collide: " + "; ".join(
+            " vs ".join(f"{p} ({'; '.join(origins.get(p, ['?']))})" for p in sorted(set(c))) for c in clashes))
     dead = broken_links(out_dir)
     if dead:
         raise SiteError("dead links:\n" + "\n".join(f"  {page}: {link}" for page, link in dead))
