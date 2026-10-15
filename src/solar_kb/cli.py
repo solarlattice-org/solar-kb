@@ -125,7 +125,8 @@ def q_differential(observations: list[str], db: Path = DB, k: int = 5,
 
 @eval_app.command("differential")
 def eval_differential(cases: Path = typer.Option(Path("eval/public/differential.yaml")), db: Path = DB,
-                      min_review: str = "drafted", details: bool = False) -> None:
+                      min_review: str = "drafted", details: bool = False,
+                      exact_only: bool = typer.Option(False, help="Accept only exact observation matches.")) -> None:
     """Score `differential` on the triage benchmark: top-1 / top-3 accuracy (spec §7.3 target: top-3 >= 0.80)."""
     from dataclasses import asdict
 
@@ -136,7 +137,7 @@ def eval_differential(cases: Path = typer.Option(Path("eval/public/differential.
     except (CaseError, OSError) as exc:
         typer.echo(f"cases error: {exc}", err=True)
         raise typer.Exit(2)
-    report = _run(lambda: run_benchmark(_graph(db), loaded, min_review=min_review))
+    report = _run(lambda: run_benchmark(_graph(db), loaded, min_review=min_review, exact_only=exact_only))
     out = report.summary()
     if details:
         out["results"] = [asdict(r) for r in report.results]
