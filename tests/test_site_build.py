@@ -125,3 +125,16 @@ def test_an_unresolvable_wikilink_is_a_site_error_not_a_traceback(tmp_path):
     soiling.write_text(soiling.read_text() + "See [[failure-modes/nope]].\n")
     with pytest.raises(SiteError, match="does not resolve"):
         build_site(load_corpus(root), SCHEMA, tmp_path / "site")
+
+
+def test_cli_site_failure_after_staging_keeps_the_previous_build_and_cleans_up(tmp_path):
+    root, out = _repo(tmp_path), tmp_path / "_site"
+    out.mkdir()
+    (out / SENTINEL).write_text("previous build\n")
+    (out / "index.html").write_text("previous")
+    pid = root / "records/failure-modes/pid.md"  # valid records, but the build itself fails (path collision)
+    pid.write_text(pid.read_text().replace("aliases: [PID, PID-s]", "aliases: [PID, 'fm:soiling']"))
+    result = runner.invoke(app, ["site", "--root", str(root), "--out", str(out)])
+    assert result.exit_code == 1 and "collide" in result.output
+    assert (out / "index.html").read_text() == "previous"
+    assert not list(tmp_path.glob(".site-*")) and not list(tmp_path.glob("._site.old"))
