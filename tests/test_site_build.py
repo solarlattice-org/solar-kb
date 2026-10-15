@@ -39,9 +39,10 @@ def test_every_iri_resolves_and_no_link_is_dead(tmp_path):
     assert (site / "CNAME").read_text() == "solarlattice.org\n"
     assert (site / "static/solar-lattice-mark.svg").is_file()
     assert (site / "static/solar-lattice-share.svg").is_file()
+    assert (site / "static/solar-lattice-share.png").is_file()
     landing = (site / "index.html").read_text()
     assert 'rel="icon" type="image/svg+xml" href="static/solar-lattice-mark.svg"' in landing
-    assert 'property="og:image" content="https://solarlattice.org/static/solar-lattice-share.svg"' in landing
+    assert 'property="og:image" content="https://solarlattice.org/static/solar-lattice-share.png"' in landing
     assert all((site / "kb" / name).is_file() for name in EXPORTS)
 
 
