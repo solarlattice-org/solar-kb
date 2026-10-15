@@ -17,6 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "rdflib>=7"]
+site = ["jinja2>=3.1", "markdown-it-py>=3"]
 
 [project.scripts]
 solar-kb = "solar_kb.cli:app"
