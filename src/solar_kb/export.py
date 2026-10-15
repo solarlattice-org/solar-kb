@@ -34,7 +34,8 @@ def export_all(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[Path]:
         }
     context = json.loads(outputs["solar_kb.context.jsonld"])["@context"]
     context["body"] = "skos:note"
-    graph = [dict(r.data, body=r.body) for _, r in sorted(corpus.records.items())
+    # "@type" links each record to its OWL class (kb:FailureMode, ...); "type" alone is only a literal.
+    graph = [dict(r.data, body=r.body, **{"@type": f"kb:{r.type}"}) for _, r in sorted(corpus.records.items())
              if r.layer == "public"]
     outputs["records.jsonld"] = json.dumps({"@context": context, "@graph": graph}, indent=2,
                                            sort_keys=True)

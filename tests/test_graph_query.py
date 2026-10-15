@@ -30,7 +30,8 @@ def test_missing_db_has_actionable_error(tmp_path):
 
 def test_resolve_exact_alias_and_fuzzy(mini_graph):
     assert mini_graph.resolve("PID")[0] == {"id": "fm:pid", "type": "FailureMode",
-                                            "name": "Potential-induced degradation", "score": 1.0}
+                                            "name": "Potential-induced degradation", "score": 1.0,
+                                            "match": "exact"}
     assert mini_graph.resolve("potential induced degradation")[0]["id"] == "fm:pid"
     assert mini_graph.resolve("electroluminesence imaging")[0]["id"] == "method:el-imaging"
     assert mini_graph.resolve("EL", types=["FailureMode"]) == []

@@ -59,14 +59,15 @@ class Graph:
             if row["status"] == "proposed" and not include_proposed:
                 continue
             if row["norm"] == norm:
-                score = 1.0
+                score, match = 1.0, "exact"
             else:
+                match = "fuzzy"
                 score = difflib.SequenceMatcher(None, norm, row["norm"]).ratio()
                 if score < FUZZY_CUTOFF:
                     continue
             if row["id"] not in best or score > best[row["id"]]["score"]:
                 best[row["id"]] = {"id": row["id"], "type": row["type"], "name": row["name"],
-                                   "score": round(score, 3)}
+                                   "score": round(score, 3), "match": match}
         return sorted(best.values(), key=lambda m: (-m["score"], m["id"]))[:limit]
 
     def get_entity(self, record_id: str) -> dict | None:
@@ -100,7 +101,7 @@ class Graph:
         if rel is not None:
             sql += " AND rel = :rel"
             params["rel"] = rel
-        rows = self._con.execute(sql + " ORDER BY record_id, claim_id", params).fetchall()
+        rows = self._con.execute(sql + " ORDER BY record_id, rowid", params).fetchall()
         return [self._edge(r) for r in rows if REVIEW_RANK[r["review"]] >= floor]
 
     def differential(self, observations: Iterable[str], min_review: str = "drafted", k: int = 5,
@@ -131,7 +132,7 @@ class Graph:
 
         def claims(rel: str) -> list[sqlite3.Row]:
             rows = self._con.execute(
-                "SELECT * FROM claims WHERE rel=? ORDER BY record_id, claim_id", (rel,)).fetchall()
+                "SELECT * FROM claims WHERE rel=? ORDER BY record_id, rowid", (rel,)).fetchall()
             return [r for r in rows if current(r)]
 
         def ref(row: sqlite3.Row) -> dict:

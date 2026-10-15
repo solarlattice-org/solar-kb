@@ -20,7 +20,8 @@ Links in prose are Obsidian path links: `[[<directory>/<slug>|label]]`, e.g.
 `[[detection-methods/el-imaging|EL imaging]]`. Open this `records/` folder as an Obsidian vault
 and the graph view shows the same graph agents query.
 
-Rules (enforced by `solar-kb validate`): every claim cites ≥1 source; public claims cite only
+Rules (enforced by `solar-kb validate`): every claim cites ≥1 source, and every citation has
+`src`, `loc` and `h` (the cited unit's content hash from the evidence layer); public claims cite only
 `open`/`reference` sources; numbers carry a QUDT unit and conditions; relation targets exist and
 have the right type; `distinguished_from` names the DetectionMethod that tells the two apart;
 every `[[link]]` in prose resolves.

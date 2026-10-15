@@ -16,12 +16,13 @@ def test_missing_records_dir_is_an_empty_corpus(tmp_path):
     assert corpus.records == {} and corpus.load_errors == []
 
 
-def test_non_md_files_and_readme_dirs_are_ignored(tmp_path):
+def test_top_level_readme_and_dotfiles_are_ignored_but_stray_files_reported(tmp_path):
     root = copy_fixture(tmp_path, "mini")
-    (root / "records" / "failure-modes" / "notes.txt").write_text("not a record")
     (root / "records" / "README.md").write_text("# layout")
-    corpus = load_corpus(root)
-    assert corpus.load_errors == []
+    (root / "records" / "failure-modes" / ".gitkeep").write_text("")
+    assert load_corpus(root).load_errors == []
+    (root / "records" / "failure-modes" / "notes.txt").write_text("not a record")
+    assert [v.rule for v in load_corpus(root).load_errors] == ["layout"]
 
 
 def test_unknown_directory_parse_error_missing_id_and_duplicate(tmp_path):
