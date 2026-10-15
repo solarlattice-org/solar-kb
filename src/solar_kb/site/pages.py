@@ -57,3 +57,34 @@ def render_index_pages(r: Renderer, corpus: Corpus, terms: list[Term]) -> None:
                term_href=href(page, term_path(KB + type_name)), description=descriptions.get(type_name, ""),
                records=[views.record_ref(corpus, rec.id, page) for rec in _records_of(corpus, type_name)])
     r.page("404.html.j2", None, title="Not found")
+
+
+def _term_ref(name: str, by_name: dict[str, Term], page: str) -> views.Ref:
+    """A schema term as a link: its page when the IRI is ours, its external IRI otherwise (skos:), and plain text
+    for a linkml built-in type such as string."""
+    term = by_name.get(name)
+    if term is None:
+        return views.Ref(name)
+    return views.Ref(name, href(page, term_path(term.iri)) if term.local else term.iri)
+
+
+def render_term_pages(r: Renderer, corpus: Corpus, terms: list[Term], ontology_iri: str, description: str) -> None:
+    """kb/schema.html (the ontology IRI) and one page per kb: term."""
+    by_name = {t.name: t for t in terms}
+    public = {t for t, _, _ in PUBLIC_TYPES}
+    page = term_path(ontology_iri)
+    sections = [(heading, [(_term_ref(t.name, by_name, page), t.description) for t in terms if t.kind == kind])
+                for heading, kind in (("Classes", "class"), ("Slots", "slot"), ("Enums", "enum"))]
+    r.page("schema.html.j2", page, title="Ontology", canonical=ontology_iri, description=description,
+           sections=sections)
+    for term in terms:
+        if not term.local:
+            continue
+        page = term_path(term.iri)
+        records = None
+        if term.name in public:
+            records = [views.record_ref(corpus, rec.id, page) for rec in _records_of(corpus, term.name)]
+        r.page("term.html.j2", page, title=term.name, canonical=term.iri, term=term,
+               parent=_term_ref(term.is_a, by_name, page) if term.is_a else None,
+               range=_term_ref(term.range, by_name, page) if term.range else None,
+               slots=[_term_ref(s, by_name, page) for s in term.slots], records=records)

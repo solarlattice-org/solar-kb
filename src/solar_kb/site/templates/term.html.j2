@@ -1,0 +1,52 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import link %}
+{% block main %}
+<p class="kind">{{ term.kind }}{% if term.abstract %} · abstract{% endif %}</p>
+<h1>{{ term.name }}</h1>
+<dl class="meta">
+<dt>IRI</dt><dd><code>{{ term.iri }}</code></dd>
+{% if term.iri_name != term.name %}
+<dt>In records</dt><dd>the key is <code>{{ term.name }}</code></dd>
+{% endif %}
+{% if parent %}
+<dt>Subclass of</dt><dd>{{ link(parent) }}</dd>
+{% endif %}
+{% if range %}
+<dt>Range</dt><dd>{{ link(range) }}{% if term.multivalued %} (list){% endif %}</dd>
+{% endif %}
+</dl>
+{% if term.description %}
+<p>{{ term.description }}</p>
+{% endif %}
+{% if slots %}
+<h2>Slots</h2>
+<ul>
+{% for ref in slots %}
+<li>{{ link(ref) }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if term.values %}
+<h2>Values</h2>
+<table>
+<tbody>
+{% for value, description in term.values %}
+<tr id="{{ value }}"><td><code>{{ value }}</code></td><td>{{ description }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if records is not none %}
+<h2>Records</h2>
+{% if records %}
+<ul>
+{% for ref in records %}
+<li>{{ link(ref) }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="empty">None yet.</p>
+{% endif %}
+{% endif %}
+<p>Defined in the <a href="{{ rel('kb/schema.html') }}">Solar Lattice ontology</a> · <a href="{{ rel('kb/solar_kb.owl.ttl') }}">OWL</a></p>
+{% endblock %}
