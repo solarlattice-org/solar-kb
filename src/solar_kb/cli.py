@@ -19,6 +19,8 @@ from solar_kb.validate import validate_corpus
 app = typer.Typer(no_args_is_help=True, help="Solar Lattice knowledge layer tools.")
 query_app = typer.Typer(no_args_is_help=True, help="Query a built graph.")
 app.add_typer(query_app, name="query")
+eval_app = typer.Typer(no_args_is_help=True, help="Benchmarks.")
+app.add_typer(eval_app, name="eval")
 
 ROOT = typer.Option(Path("."), help="solar-kb repository root.")
 OVERLAY = typer.Option(None, help="Private overlay root (solar-brain/overlay).")
@@ -119,3 +121,23 @@ def q_neighbors(record_id: str, db: Path = DB, rel: Optional[str] = None,
 def q_differential(observations: list[str], db: Path = DB, k: int = 5,
                    min_review: str = "drafted") -> None:
     _print(_run(lambda: _graph(db).differential(observations, min_review=min_review, k=k)))
+
+
+@eval_app.command("differential")
+def eval_differential(cases: Path = typer.Option(Path("eval/public/differential.yaml")), db: Path = DB,
+                      min_review: str = "drafted", details: bool = False) -> None:
+    """Score `differential` on the triage benchmark: top-1 / top-3 accuracy (spec §7.3 target: top-3 >= 0.80)."""
+    from dataclasses import asdict
+
+    from solar_kb.benchmark import CaseError, load_cases, run_benchmark
+
+    try:
+        loaded = load_cases(cases)
+    except (CaseError, OSError) as exc:
+        typer.echo(f"cases error: {exc}", err=True)
+        raise typer.Exit(2)
+    report = _run(lambda: run_benchmark(_graph(db), loaded, min_review=min_review))
+    out = report.summary()
+    if details:
+        out["results"] = [asdict(r) for r in report.results]
+    _print(out)
