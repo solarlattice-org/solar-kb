@@ -21,7 +21,7 @@ def test_validate_ok_and_failure(tmp_path):
     assert result.exit_code == 0 and "0 violations" in result.output
     write_record(root, "failure-modes", "bad", "id: fm:bad\ntype: FailureMode\nname: B\nclaims:\n"
                  "  - claim_id: c1\n    rel: leads_to\n    target: fm:missing\n"
-                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1"}]\n    review: drafted')
+                 '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted')
     result = runner.invoke(app, ["validate", "--root", str(root)])
     assert result.exit_code == 1 and "[targets] fm:bad#c1" in result.output
 

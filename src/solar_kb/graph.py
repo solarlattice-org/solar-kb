@@ -23,7 +23,7 @@ CREATE TABLE claims (
     PRIMARY KEY (record_id, claim_id)
 );
 CREATE TABLE citations (
-    record_id TEXT NOT NULL, claim_id TEXT NOT NULL, src TEXT NOT NULL, loc TEXT NOT NULL
+    record_id TEXT NOT NULL, claim_id TEXT NOT NULL, src TEXT NOT NULL, loc TEXT NOT NULL, h TEXT NOT NULL
 );
 CREATE INDEX claims_target ON claims(target);
 CREATE INDEX claims_rel ON claims(rel);
@@ -45,12 +45,13 @@ def build_graph(corpus: Corpus, db_path: Path, kb_version: str) -> None:
     try:
         con.executescript(SCHEMA_SQL)
         con.execute("INSERT INTO meta VALUES ('kb_version', ?)", (kb_version,))
+        con.execute("INSERT INTO meta VALUES ('layers', ?)", ("+".join(corpus.layers) or "public",))
         for rid, record in sorted(corpus.records.items()):
             data = record.data
             con.execute(
                 "INSERT INTO nodes VALUES (?,?,?,?,?,?,?,?)",
                 (rid, record.type, data["name"], data.get("status", "active"), record.layer,
-                 str(record.path), record.body, json.dumps(data, sort_keys=True)),
+                 record.rel_path, record.body, json.dumps(data, sort_keys=True)),
             )
             names = {data["name"], rid, rid.partition(":")[2], *data.get("aliases", [])}
             for norm in sorted({normalize(n) for n in names} - {""}):
@@ -66,8 +67,8 @@ def build_graph(corpus: Corpus, db_path: Path, kb_version: str) -> None:
                      json.dumps(claim, sort_keys=True)),
                 )
                 for cite in claim["cite"]:
-                    con.execute("INSERT INTO citations VALUES (?,?,?,?)",
-                                (rid, claim["claim_id"], cite["src"], cite["loc"]))
+                    con.execute("INSERT INTO citations VALUES (?,?,?,?,?)",
+                                (rid, claim["claim_id"], cite["src"], cite["loc"], cite["h"]))
         con.commit()
     finally:
         con.close()

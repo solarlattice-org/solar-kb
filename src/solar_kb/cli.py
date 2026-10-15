@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import json
+import os
+import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 from typing import Optional
 
@@ -56,26 +59,50 @@ def validate(root: Path = ROOT, overlay: Optional[Path] = OVERLAY) -> None:
 @app.command()
 def build(root: Path = ROOT, overlay: Optional[Path] = OVERLAY,
           out: Path = typer.Option(Path("build"), help="Output directory.")) -> None:
-    """Validate, then write graph.sqlite and the public exports."""
+    """Validate, then write graph.sqlite and the public exports. All outputs are generated into a temporary
+    directory first and only then moved into place, so a failure leaves the previous build untouched."""
     corpus = _validated(root, overlay)
-    build_graph(corpus, out / "graph.sqlite", _kb_version(root))
-    for path in export_all(corpus, _schema(root), out):
-        typer.echo(f"wrote {path}")
-    typer.echo(f"wrote {out / 'graph.sqlite'}")
+    out.mkdir(parents=True, exist_ok=True)
+    staging = Path(tempfile.mkdtemp(prefix=".build-", dir=out))
+    try:
+        build_graph(corpus, staging / "graph.sqlite", _kb_version(root))
+        export_all(corpus, _schema(root), staging)
+        for path in sorted(staging.iterdir()):
+            os.replace(path, out / path.name)
+            typer.echo(f"wrote {out / path.name}")
+    finally:
+        shutil.rmtree(staging, ignore_errors=True)
 
 
 def _print(obj) -> None:
     typer.echo(json.dumps(obj, indent=2))
 
 
+def _graph(db: Path) -> Graph:
+    try:
+        return Graph(db)
+    except FileNotFoundError as exc:
+        typer.echo(str(exc), err=True)
+        raise typer.Exit(2)
+
+
+def _run(fn):
+    """Run a query; invalid arguments (ValueError) become a one-line error and exit code 2."""
+    try:
+        return fn()
+    except ValueError as exc:
+        typer.echo(f"error: {exc}", err=True)
+        raise typer.Exit(2)
+
+
 @query_app.command("resolve")
 def q_resolve(text: str, db: Path = DB, limit: int = 5) -> None:
-    _print(Graph(db).resolve(text, limit=limit))
+    _print(_run(lambda: _graph(db).resolve(text, limit=limit)))
 
 
 @query_app.command("entity")
 def q_entity(record_id: str, db: Path = DB) -> None:
-    entity = Graph(db).get_entity(record_id)
+    entity = _graph(db).get_entity(record_id)
     if entity is None:
         typer.echo(f"no such record: {record_id}", err=True)
         raise typer.Exit(1)
@@ -85,10 +112,10 @@ def q_entity(record_id: str, db: Path = DB) -> None:
 @query_app.command("neighbors")
 def q_neighbors(record_id: str, db: Path = DB, rel: Optional[str] = None,
                 direction: str = "out", min_review: str = "drafted") -> None:
-    _print(Graph(db).neighbors(record_id, rel=rel, direction=direction, min_review=min_review))
+    _print(_run(lambda: _graph(db).neighbors(record_id, rel=rel, direction=direction, min_review=min_review)))
 
 
 @query_app.command("differential")
 def q_differential(observations: list[str], db: Path = DB, k: int = 5,
                    min_review: str = "drafted") -> None:
-    _print(Graph(db).differential(observations, min_review=min_review, k=k))
+    _print(_run(lambda: _graph(db).differential(observations, min_review=min_review, k=k)))

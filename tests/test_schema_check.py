@@ -37,5 +37,5 @@ def test_locator_grammar_is_enforced():
     for loc in good + ["page 4", "sec=", "t=12:4-13:30", "tbl=3.5"]:
         data = {"id": "fm:x", "type": "FailureMode", "name": "X",
                 "claims": [{"claim_id": "c1", "rel": "caused_by", "target": "stressor:y",
-                            "cite": [{"src": "src:a", "loc": loc}], "review": "drafted"}]}
+                            "cite": [{"src": "src:a", "loc": loc, "h": "a1b2c3d4e5f6"}], "review": "drafted"}]}
         assert (checker.check(_record(data)) == []) == (loc in good), loc

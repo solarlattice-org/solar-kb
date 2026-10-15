@@ -37,6 +37,12 @@ class Record:
     path: Path
     layer: str
     type_dir: str
+    root: Path | None = None  # the repo/overlay root the record was loaded from
+
+    @property
+    def rel_path(self) -> str:
+        """Path relative to its root (stable across machines), e.g. records/failure-modes/pid.md."""
+        return str(self.path.relative_to(self.root)) if self.root is not None else str(self.path)
 
     @property
     def id(self) -> str | None:
@@ -59,6 +65,7 @@ class Record:
 class Corpus:
     records: dict[str, Record] = field(default_factory=dict)
     load_errors: list[Violation] = field(default_factory=list)
+    layers: tuple[str, ...] = ()  # which roots were loaded: ("public",) or ("public", "overlay")
 
     def by_layer(self, layer: str) -> list[Record]:
         return [r for r in self.records.values() if r.layer == layer]
@@ -74,13 +81,22 @@ def _load_root(root: Path, layer: str, corpus: Corpus) -> None:
                 Violation("layout", str(type_dir), f"unknown record directory '{type_dir.name}'")
             )
             continue
-        for path in sorted(type_dir.glob("*.md")):
+        for path in sorted(type_dir.iterdir()):
+            if path.name.startswith("."):
+                continue  # .gitkeep, editor/OS files
+            if path.is_dir():
+                corpus.load_errors.append(Violation("layout", str(path), "nested directories are not loaded"))
+                continue
+            if path.suffix != ".md":
+                corpus.load_errors.append(Violation("layout", str(path), "records must be .md files"))
+                continue
             try:
                 data, body = split_front_matter(path.read_text(encoding="utf-8"))
-            except (FrontMatterError, UnicodeDecodeError) as exc:
+            except (FrontMatterError, UnicodeDecodeError, OSError) as exc:
                 corpus.load_errors.append(Violation("parse", str(path), str(exc)))
                 continue
-            record = Record(data=drop_nulls(data), body=body, path=path, layer=layer, type_dir=type_dir.name)
+            record = Record(data=drop_nulls(data), body=body, path=path, layer=layer, type_dir=type_dir.name,
+                            root=root)
             rid = record.id
             if rid is None:
                 corpus.load_errors.append(Violation("parse", str(path), "missing string 'id'"))
@@ -95,7 +111,7 @@ def _load_root(root: Path, layer: str, corpus: Corpus) -> None:
 
 
 def load_corpus(root: Path, overlay: Path | None = None) -> Corpus:
-    corpus = Corpus()
+    corpus = Corpus(layers=("public",) if overlay is None else ("public", "overlay"))
     _load_root(Path(root), "public", corpus)
     if overlay is not None:
         if not (Path(overlay) / "records").is_dir():

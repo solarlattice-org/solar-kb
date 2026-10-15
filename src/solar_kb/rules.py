@@ -5,6 +5,7 @@ so every field access here is defensive.
 """
 from __future__ import annotations
 
+import math
 import re
 from collections.abc import Callable, Iterator
 
@@ -87,6 +88,13 @@ def rule_claim_shape(corpus: Corpus) -> list[Violation]:
                 out.append(_v("claim-shape", record, "relation claim needs 'target'", claim))
             if has_attr and "value" not in claim:
                 out.append(_v("claim-shape", record, "quantity claim needs 'value'", claim))
+            if has_rel and not has_attr and "value" in claim:
+                out.append(_v("claim-shape", record, "a relation claim cannot carry a 'value'", claim))
+            if has_attr and not has_rel and "target" in claim:
+                out.append(_v("claim-shape", record, "a quantity claim cannot carry a 'target'", claim))
+            start, end = claim.get("valid_from"), claim.get("valid_to")
+            if isinstance(start, str) and isinstance(end, str) and start > end:
+                out.append(_v("claim-shape", record, "valid_from is after valid_to", claim))
             if "by" in claim and claim.get("rel") != "distinguished_from":
                 out.append(_v("claim-shape", record, "'by' is only valid on distinguished_from", claim))
             if "keep" in claim and claim.get("review") != "drafted":
@@ -139,6 +147,9 @@ def rule_quantities(corpus: Corpus) -> list[Violation]:
             value = claim.get("value")
             if isinstance(value, dict) and not any(k in value for k in ("min", "max", "nominal")):
                 out.append(_v("quantities", record, "value needs min, max or nominal", claim))
+            if isinstance(value, dict) and any(isinstance(value.get(k), float) and not math.isfinite(value[k])
+                                               for k in ("min", "max", "nominal")):
+                out.append(_v("quantities", record, "value must be a finite number (no nan/inf)", claim))
             if isinstance(value, dict) and isinstance(value.get("min"), (int, float)) \
                     and isinstance(value.get("max"), (int, float)) and value["min"] > value["max"]:
                 out.append(_v("quantities", record, "value min is greater than max", claim))
@@ -251,7 +262,8 @@ def rule_body_links(corpus: Corpus) -> list[Violation]:
     out = []
     for record in corpus.records.values():
         for target in WIKILINK_RE.findall(record.body):
-            type_dir, _, slug = target.strip().partition("/")
+            path = re.split(r"[#^]", target, maxsplit=1)[0]  # Obsidian heading/block links: [[a/b#Heading]]
+            type_dir, _, slug = path.strip().partition("/")
             prefix = TYPE_DIRS.get(type_dir, (None, None))[1]
             linked = corpus.records.get(f"{prefix}:{slug}") if prefix else None
             if linked is None:
@@ -262,8 +274,66 @@ def rule_body_links(corpus: Corpus) -> list[Violation]:
     return out
 
 
+ID_FIELDS = ("claim_id", "target", "by", "superseded_by")
+CITE_FIELDS = ("src", "loc", "h")
+LOC_NUMBERS = re.compile(r"^(?:p|tbl|fig)=(\d+)(?:\.r(\d+))?$")
+LOC_TIME = re.compile(r"^t=(\d+):(\d\d)-(\d+):(\d\d)$")
+
+
+def _bad_text(value: object) -> bool:
+    return isinstance(value, str) and (value != value.strip() or "\n" in value)
+
+
+def rule_field_format(corpus: Corpus) -> list[Violation]:
+    """Identifier-like strings have no newlines or padding (schema patterns let a trailing newline through:
+    `$` matches before it); names are not blank."""
+    out = []
+    for record in corpus.records.values():
+        if _bad_text(record.id):
+            out.append(_v("field-format", record, "id has whitespace or a newline"))
+        name = record.data.get("name")
+        if isinstance(name, str) and not name.strip():
+            out.append(_v("field-format", record, "name is blank"))
+        for claim in record.claims():
+            refs = [claim.get(k) for k in ID_FIELDS]
+            conflicts = claim.get("conflicts_with")
+            refs += conflicts if isinstance(conflicts, list) else []
+            value = claim.get("value")
+            if isinstance(value, dict):
+                refs.append(value.get("unit"))
+            refs += [cite.get(k) for cite in _citations(claim) for k in CITE_FIELDS]
+            if any(_bad_text(r) for r in refs):
+                out.append(_v("field-format", record, "an identifier field has whitespace or a newline", claim))
+    return out
+
+
+def _locator_problem(loc: str) -> str | None:
+    m = LOC_NUMBERS.match(loc)
+    if m and (int(m.group(1)) < 1 or (m.group(2) is not None and int(m.group(2)) < 1)):
+        return "page/table/figure/row numbers start at 1"
+    m = LOC_TIME.match(loc)
+    if m and int(m.group(1)) * 60 + int(m.group(2)) >= int(m.group(3)) * 60 + int(m.group(4)):
+        return "video segment must end after it starts"
+    if loc.startswith("sec=") and (".." in loc or loc.endswith(".")):
+        return "section path has an empty segment"
+    return None
+
+
+def rule_locators(corpus: Corpus) -> list[Violation]:
+    """Locators that match the grammar but cannot point at anything (p=0, t=10:00-00:05, sec=4..3)."""
+    out = []
+    for record in corpus.records.values():
+        for claim in record.claims():
+            for cite in _citations(claim):
+                loc = cite.get("loc")
+                problem = _locator_problem(loc) if isinstance(loc, str) else None
+                if problem:
+                    out.append(_v("locators", record, f"locator {loc!r}: {problem}", claim))
+    return out
+
+
 ALL_RULES: list[Rule] = [
     rule_ids, rule_claim_shape, rule_sources_exist, rule_public_citations, rule_quantities,
     rule_targets, rule_distinguished_by, rule_claim_refs, rule_layers, rule_case_links,
-    rule_body_links,
+    rule_body_links, rule_field_format, rule_locators,
 ]

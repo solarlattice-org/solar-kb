@@ -30,7 +30,8 @@ def test_missing_db_has_actionable_error(tmp_path):
 
 def test_resolve_exact_alias_and_fuzzy(mini_graph):
     assert mini_graph.resolve("PID")[0] == {"id": "fm:pid", "type": "FailureMode",
-                                            "name": "Potential-induced degradation", "score": 1.0}
+                                            "name": "Potential-induced degradation", "score": 1.0,
+                                            "match": "exact"}
     assert mini_graph.resolve("potential induced degradation")[0]["id"] == "fm:pid"
     assert mini_graph.resolve("electroluminesence imaging")[0]["id"] == "method:el-imaging"
     assert mini_graph.resolve("EL", types=["FailureMode"]) == []
@@ -62,7 +63,7 @@ def test_get_entity(mini_graph):
 def test_neighbors_directions_and_review_floor(mini_graph):
     out = mini_graph.neighbors("fm:pid", rel="presents_as")
     assert [e["target"] for e in out] == ["symptom:uniform-power-loss", "symptom:darkened-cells-in-el"]
-    assert out[0]["cite"] == [{"src": "src:iea-t13-failures", "loc": "sec=4.3"}]
+    assert out[0]["cite"] == [{"src": "src:iea-t13-failures", "loc": "sec=4.3", "h": "a1b2c3d4e5f6"}]
     incoming = mini_graph.neighbors("symptom:uniform-power-loss", direction="in")
     assert {e["source"] for e in incoming} == {"fm:pid", "fm:soiling"}
     verified_in = mini_graph.neighbors("symptom:uniform-power-loss", direction="in",
