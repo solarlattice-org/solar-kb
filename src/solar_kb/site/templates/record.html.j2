@@ -13,6 +13,7 @@
 <dl class="meta">
 <dt>ID</dt><dd><code>{{ view.id }}</code></dd>
 <dt>IRI</dt><dd><code>{{ view.iri }}</code></dd>
+<dt>Status</dt><dd>{{ view.status }}</dd>
 {% if view.aliases %}
 <dt>Also known as</dt><dd>{{ view.aliases|join(", ") }}</dd>
 {% endif %}

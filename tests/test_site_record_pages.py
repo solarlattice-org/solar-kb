@@ -84,3 +84,11 @@ def test_hostile_prose_and_origin_url_are_neutralised(tmp_path):
     page = (_render(load_corpus(root), tmp_path / "site") / "kb/src/evil.html").read_text()
     assert "<script>alert" not in page and 'href="javascript:' not in page and "<i>source</i>" not in page
     assert "<dd>javascript:alert(1)</dd>" in page
+
+
+def test_record_header_shows_status(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    write_record(root, "failure-modes", "hotspot", "id: fm:hotspot\ntype: FailureMode\nname: Hotspot\nstatus: proposed")
+    out = _render(load_corpus(root), tmp_path / "site")
+    assert "<dt>Status</dt><dd>active</dd>" in (out / "kb/fm/pid.html").read_text()
+    assert "<dt>Status</dt><dd>proposed</dd>" in (out / "kb/fm/hotspot.html").read_text()
