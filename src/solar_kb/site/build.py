@@ -43,7 +43,13 @@ def build_site(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[str]:
         render_record_pages(r, corpus, load_prefixes(schema_path))
     except ValueError as exc:  # e.g. a wikilink to a missing record in a corpus that skipped validation
         raise SiteError(str(exc)) from exc
-    r.write("static/style.css", files("solar_kb.site").joinpath("static/style.css").read_text(encoding="utf-8"))
+    for asset in ("style.css", "solar-lattice-mark.svg", "solar-lattice-share.svg"):
+        r.write(f"static/{asset}", files("solar_kb.site").joinpath("static", asset).read_text(encoding="utf-8"))
+    share_png = Path(str(files("solar_kb.site").joinpath("static", "solar-lattice-share.png")))
+    target_png = out_dir / "static/solar-lattice-share.png"
+    target_png.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(share_png, target_png)
+    r.written.append("static/solar-lattice-share.png")
     r.write("CNAME", f"{DOMAIN}\n")
     r.write(SENTINEL, "Built by `solar-kb site`; it may replace this directory.\n")
     origins = {path: ["export"] for path in written} | r.origins  # what wrote each path, for the error below

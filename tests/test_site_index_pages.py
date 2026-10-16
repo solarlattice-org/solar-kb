@@ -13,6 +13,7 @@ def test_landing_kb_home_and_type_index(tmp_path):
     landing = (tmp_path / "index.html").read_text()
     assert 'href="kb/"' in landing and 'href="static/style.css"' in landing
     assert 'class="atlas-intro"' in landing and 'class="index-list"' in landing
+    assert 'class="signal-halo"' in landing and 'class="signal"' in landing
     assert "Failure modes</span><span class=\"index-arrow\"" in landing
     kb = (tmp_path / "kb/index.html").read_text()
     assert 'href="fm/"' in kb and 'href="solar_kb.owl.ttl"' in kb and "Schema version 0.3.0" in kb
