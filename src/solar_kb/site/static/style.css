@@ -39,6 +39,7 @@ a { color: var(--moss); text-decoration-thickness: .07em; text-underline-offset:
 .sun-arc { fill: none; stroke: var(--sun); stroke-width: 1; stroke-dasharray: 2 6; }
 .sun-ray { fill: none; stroke: var(--sun); stroke-width: 1; }
 .module { fill: var(--paper-deep); stroke: var(--moss); stroke-width: 1.3; }
+.signal-halo { fill: none; stroke: var(--paper); stroke-width: 7; stroke-linecap: round; }
 .signal { fill: none; stroke: var(--sun); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .signal-node, .branch-node { fill: var(--sun); }
 .branch { fill: none; stroke: var(--moss); stroke-width: 1; stroke-dasharray: 3 4; }
