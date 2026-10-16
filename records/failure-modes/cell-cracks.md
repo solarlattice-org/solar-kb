@@ -357,13 +357,13 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
   review_note: 'support check: partial - Recombination effect ''remains under 2.5%'' is an upper bound,
     not a typical 2.5% value.; possible conflict with c32 (same source; check the conditions); possible
-    conflict with c33 (same source; check the conditions)'
-  conflicts_with:
-  - fm:cell-cracks#c34
-  - fm:cell-cracks#c35
+    conflict with c33 (same source; check the conditions); reviewer 2026-10-16: the compiler-flagged conflicts
+    are different scenarios, not disagreement'
 - claim_id: c30
   attr: typical_power_loss
   value:
@@ -406,14 +406,12 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  conflicts_with:
-  - fm:cell-cracks#c28
-  - fm:cell-cracks#c30
-  - fm:cell-cracks#c34
-  - fm:cell-cracks#c35
-  review_note: possible conflict with c29 (same source; check the conditions); possible conflict with
-    c31 (same source; check the conditions); possible conflict with c33 (same source; check the conditions)
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
+  review_note: 'possible conflict with c29 (same source; check the conditions); possible conflict with
+    c31 (same source; check the conditions); possible conflict with c33 (same source; check the conditions);
+    reviewer 2026-10-16: the compiler-flagged conflicts are different scenarios, not disagreement'
 - claim_id: c33
   attr: typical_power_loss
   value:
@@ -442,14 +440,11 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: disputed
-  review_note: possible conflict with c28 (same source; check the conditions)
-  conflicts_with:
-  - fm:cell-cracks#c29
-  - fm:cell-cracks#c30
-  - fm:cell-cracks#c31
-  - fm:cell-cracks#c32
-  - fm:cell-cracks#c33
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
+  review_note: 'possible conflict with c28 (same source; check the conditions); reviewer 2026-10-16: the
+    compiler-flagged conflicts are different scenarios, not disagreement'
 - claim_id: c35
   attr: typical_power_loss
   value:
