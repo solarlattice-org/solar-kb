@@ -3,6 +3,7 @@
   <g fill="none" stroke="#242a25" stroke-linecap="round" stroke-linejoin="round">
     <path d="M13 13h38v38H13z" stroke-width="2.2"/>
     <path d="M25.67 13v38M38.33 13v38M13 32h38" stroke-width="1.5"/>
-    <path d="M13 32h12.67l3.1-7.4 5.7 14.8 2.85-7.4H51" stroke="#c68b20" stroke-width="2.8"/>
+    <path d="M13 44c7.1 0 11.2-20 19-20s11.9 20 19 20" stroke="#f4f1e9" stroke-width="7"/>
+    <path d="M13 44c7.1 0 11.2-20 19-20s11.9 20 19 20" stroke="#c68b20" stroke-width="3.8"/>
   </g>
 </svg>

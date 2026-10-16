@@ -11,7 +11,8 @@ header.site { display: flex; justify-content: space-between; align-items: center
 .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; font-family: Georgia, serif; font-size: 1.05rem; }
 .brand strong { font-weight: 700; }
 .brand-mark { width: 2rem; height: 2rem; fill: none; stroke: var(--ink); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.35; }
-.brand-signal { stroke: var(--sun); stroke-width: 2; }
+.brand-signal-halo { fill: none; stroke: var(--paper); stroke-linecap: round; stroke-width: 4.8; }
+.brand-signal { fill: none; stroke: var(--sun); stroke-linecap: round; stroke-width: 2.4; }
 nav { display: flex; gap: 1.7rem; }
 nav a, .text-link { color: var(--ink); text-decoration: none; }
 nav a { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
