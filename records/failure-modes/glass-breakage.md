@@ -43,7 +43,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: fig=3
     h: 87440da9cb8a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c5
   rel: caused_by
   target: stressor:installation-error
@@ -55,7 +57,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: fig=4
     h: 0692124bccf0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: caused_by
   target: stressor:transport-damage
@@ -188,7 +192,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: sec=h6
     h: da22d4046811
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c19
   rel: presents_as
   target: symptom:cracked-glass
@@ -198,7 +204,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=32.r1
     h: 9a033fb55157
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c20
   rel: presents_as
   target: symptom:hotspot-ir-image
@@ -365,7 +373,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: sec=front
     h: fbd89f70605e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c33
   rel: mitigated_by
   target: mit:module-replacement
@@ -389,7 +399,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: sec=h7
     h: 9a7ad0612a0a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c35
   rel: mitigated_by
   target: mit:root-cause-investigation
@@ -401,7 +413,9 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: sec=h2
     h: 226b4cbee592
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c36
   attr: typical_power_loss
   value:

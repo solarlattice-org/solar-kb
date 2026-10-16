@@ -55,7 +55,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h4
     h: 3710145a6f87
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c6
   rel: caused_by
   target: stressor:thermal-cycling
@@ -80,7 +82,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h4
     h: 3710145a6f87
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: caused_by
   target: fm:severe-metallization-corrosion
@@ -129,7 +133,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h8
     h: 9f1fbad653f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: presents_as
   target: symptom:series-resistance-increase
@@ -170,7 +176,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h5
     h: 5f9cbfc08864
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: presents_as
   target: symptom:burn-marks
@@ -207,7 +215,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h7
     h: 14013caaf10f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: leads_to
   target: fm:arc-fault
@@ -233,7 +243,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=33.r2
     h: dad17d1f52d0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c23
   rel: detected_by
   target: method:ir-thermography
@@ -295,7 +307,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=33.r2
     h: dad17d1f52d0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c28
   rel: mitigated_by
   target: mit:module-replacement
@@ -315,7 +329,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h8
     h: 9f1fbad653f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c30
   rel: mitigated_by
   target: mit:mechanical-stress-reduction
@@ -331,7 +347,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h2
     h: cc879c2d8fb5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c32
   attr: typical_power_loss
   value:
@@ -343,7 +361,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h5
     h: 5f9cbfc08864
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c33 (same source; check the conditions)
 - claim_id: c33
   attr: typical_power_loss
@@ -356,7 +376,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h5
     h: 5f9cbfc08864
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c32 (same source; check the conditions)
 ---
 Cell interconnection failure is a broken or high-resistance joint in the busbars or string ribbons that link the cells in a module. It usually starts with poor soldering or other manufacturing faults, or with transport stress, and gets worse with thermal stress, wind load, hail and corrosion. In early stages series resistance goes up, so fill factor drops and the IV curve knee becomes rounder. When the current is fully blocked, the bypass diode takes over the cell string. You can rarely see it with the naked eye. Use IR thermography to find hotspots, EL imaging to find dark areas at the failed joints, and IV curves to find the loss. Advanced stages can cause burn marks, glass breakage, early bypass diode failure, electric arcs and even fire. Monitor affected modules closely. Replace a module when the failure is electrically active or burn marks are visible.

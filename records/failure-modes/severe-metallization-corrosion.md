@@ -71,7 +71,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h6
     h: ab4b4f0e5fd4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c7
   rel: caused_by
   target: fm:glass-breakage
@@ -132,7 +134,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h7
     h: 7c7e8aa5f488
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c13
   rel: presents_as
   target: symptom:isc-reduction
@@ -155,7 +159,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h2
     h: f411297a4a32
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: detected_by
   target: method:visual-inspection
@@ -210,7 +216,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h2
     h: f411297a4a32
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c19
   rel: leads_to
   target: fm:module-hotspot
@@ -228,7 +236,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h6
     h: ab4b4f0e5fd4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: leads_to
   target: fm:cell-interconnection-failure
@@ -237,7 +247,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h6
     h: ab4b4f0e5fd4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c22
   rel: mitigated_by
   target: mit:module-replacement
@@ -273,7 +285,9 @@ claims:
   - src: src:pv-root-cause-severe-metallization-corrosion
     loc: sec=h2
     h: f411297a4a32
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c25
   rel: mitigated_by
   target: mit:proper-installation

@@ -74,7 +74,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=7.r1
     h: 790734be7823
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c7
   rel: presents_as
   target: symptom:el-dark-lines
@@ -83,7 +85,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.4
     h: 1fb2586fa36b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:snail-tracks
@@ -158,7 +162,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: presents_as
   target: symptom:fill-factor-reduction
@@ -178,7 +184,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.2
     h: 17668c52ed6f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: detected_by
   target: method:el-imaging
@@ -226,7 +234,9 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h8
     h: ec36b7bfbdb3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c20
   rel: detected_by
   target: method:iv-curve-tracing
@@ -258,7 +268,9 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=front
     h: a37d82d92ad0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c23
   rel: mitigated_by
   target: mit:close-monitoring
@@ -275,7 +287,9 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=front
     h: a37d82d92ad0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c25
   rel: mitigated_by
   target: mit:multi-busbar-cells

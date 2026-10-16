@@ -13,7 +13,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.1.3
     h: fe63e32ab7ec
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: affects
   target: comp:bypass-diode
@@ -43,7 +45,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=36.r3
     h: b816426a98a2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:manufacturing-defect
@@ -109,7 +113,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=36.r3
     h: b816426a98a2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: caused_by
   target: stressor:thermal-cycling
@@ -142,7 +148,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h4
     h: d298ad6bbdd3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: caused_by
   target: fm:delamination
@@ -188,7 +196,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: presents_as
   target: symptom:cracked-housing
@@ -211,7 +221,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=36.r3
     h: b816426a98a2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: presents_as
   target: symptom:damaged-seal
@@ -248,7 +260,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: presents_as
   target: symptom:burn-marks
@@ -257,7 +271,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h6
     h: 9e4d1b1adbd8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c22
   rel: presents_as
   target: symptom:substring-loss
@@ -266,7 +282,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c23
   rel: presents_as
   target: symptom:open-circuit
@@ -306,7 +324,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h6
     h: 9e4d1b1adbd8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c26
   rel: leads_to
   target: fm:insulation-loss
@@ -394,7 +414,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c35
   rel: distinguished_from
   target: fm:bypass-diode-failure
@@ -405,7 +427,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c36
   rel: mitigated_by
   target: mit:module-replacement
@@ -426,7 +450,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h2
     h: 631415923f8a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c38
   rel: mitigated_by
   target: mit:proper-installation
@@ -435,7 +461,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c39
   rel: mitigated_by
   target: mit:surge-protection
@@ -483,7 +511,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c44
   attr: temperature_rise
   value:
