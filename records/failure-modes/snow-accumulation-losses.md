@@ -58,7 +58,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h4
     h: 0f32a669be34
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c6
   rel: presents_as
   target: symptom:gradual-production-recovery
@@ -67,7 +69,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h4
     h: 0f32a669be34
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:low-output-despite-irradiance
@@ -148,7 +152,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h6
     h: 0935b66311ac
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: detected_by
   target: method:snow-loss-model-comparison
@@ -163,7 +169,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h6
     h: 0935b66311ac
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: mitigated_by
   target: mit:seasonal-residual-tracking
@@ -179,7 +187,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h5
     h: 7b6f8fb933e9
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: mitigated_by
   target: mit:tilt-optimization
@@ -203,7 +213,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h2
     h: cf13e86d6896
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: distinguished_from
   target: fm:grid-curtailment-losses
@@ -230,7 +242,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h2
     h: cf13e86d6896
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Tracking winter residuals separately from generic soiling is
     stated, but not weather-normalized comparison as a distinguishing method nor explicitly seasonal tied
     to recovery intervals in these passages.'

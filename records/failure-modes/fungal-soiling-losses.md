@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -33,7 +35,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h7
     h: e287af93bef3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: caused_by
   target: stressor:fungal-biofilm-growth
@@ -61,7 +65,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Humid climate is listed as a recurrence factor and humid subtropical
     regions are where it''s reported, but nothing about humidity causing growth or deposits coming back
     specifically beyond ''suggest recurrence''.'
@@ -73,7 +79,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h9
     h: 58157da0d37b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: caused_by
   target: stressor:water-proximity
@@ -82,7 +90,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h9
     h: 58157da0d37b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: affects
   target: comp:module-glass
@@ -94,7 +104,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:dark-surface-deposits
@@ -124,7 +136,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: presents_as
   target: symptom:post-cleaning-step-change
@@ -133,7 +147,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h8
     h: d54a5f534d87
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: detected_by
   target: method:weather-normalized-comparison
@@ -224,7 +240,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: mitigated_by
   target: mit:cleaning-validation
@@ -236,7 +254,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: mitigated_by
   target: mit:forecast-update

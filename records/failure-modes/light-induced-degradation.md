@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h4
     h: c8bc75bb2d8d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: stressor:boron-oxygen-defects
@@ -38,7 +40,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: affects
   target: comp:solar-cell
@@ -51,7 +55,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: presents_as
   target: symptom:stc-power-drop
@@ -91,7 +97,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:fill-factor-reduction
@@ -99,7 +107,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h6
     h: 0189f40b9ccf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:el-nonuniform-pattern
@@ -269,7 +279,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages say manufacturers adapted production to stabilise cells
     in-line, but this is described mainly for LeTID rather than clearly for LID.'
 - claim_id: c21
@@ -359,9 +371,10 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h4
     h: c8bc75bb2d8d
-  review: disputed
-  conflicts_with:
-  - fm:light-induced-degradation#c25
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c28
   attr: typical_power_loss
   value:

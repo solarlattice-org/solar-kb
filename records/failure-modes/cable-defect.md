@@ -44,7 +44,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=27.r3
     h: 091be96f279b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c4
   rel: caused_by
   target: stressor:installation-error
@@ -57,7 +59,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=27.r3
     h: 091be96f279b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: caused_by
   target: stressor:mechanical-stress
@@ -98,7 +102,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: fig=1
     h: 7ede5cd7e80d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: leads_to
   target: fm:insulation-loss
@@ -114,7 +120,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h6
     h: 2f6cadabed98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: leads_to
   target: fm:arc-fault
@@ -134,7 +142,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h2
     h: ecd061f4ac98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: presents_as
   target: symptom:open-circuit
@@ -143,7 +153,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h6
     h: 2f6cadabed98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: presents_as
   target: symptom:string-current-low
@@ -154,7 +166,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=front
     h: b8e06ac4915e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - String-level power losses and string current comparison are mentioned,
     but reduced string current output isn''t explicitly stated.'
 - claim_id: c13
@@ -186,7 +200,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r1
     h: 64afea9d2672
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: presents_as
   target: symptom:burn-marks
@@ -194,7 +210,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r1
     h: 64afea9d2672
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: presents_as
   target: symptom:cracked-insulation
@@ -203,7 +221,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r1
     h: 64afea9d2672
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: presents_as
   target: symptom:whitened-insulation
@@ -270,7 +290,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h2
     h: ecd061f4ac98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c23
   rel: detected_by
   target: method:string-current-measurement
@@ -294,7 +316,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h2
     h: ecd061f4ac98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c25
   rel: mitigated_by
   target: mit:cable-replacement
@@ -317,7 +341,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h2
     h: ecd061f4ac98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c27
   rel: mitigated_by
   target: mit:cable-strain-relief
@@ -340,7 +366,9 @@ claims:
   - src: src:pv-root-cause-cable-defect
     loc: sec=h2
     h: ecd061f4ac98
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c29
   rel: mitigated_by
   target: mit:post-repair-verification

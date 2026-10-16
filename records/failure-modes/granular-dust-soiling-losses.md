@@ -47,7 +47,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c5
   rel: caused_by
   target: stressor:unpaved-roads-exposed-soil
@@ -56,7 +58,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Roads and exposed soil are named as causing spatial unevenness,
     but the passages don''t state they raise local deposition.'
 - claim_id: c6
@@ -70,7 +74,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h2
     h: 5d4993c87d37
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: affects
   target: comp:solar-cell
@@ -82,7 +88,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h5
     h: 43575746a7d7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:gradual-performance-decline
@@ -92,7 +100,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: presents_as
   target: symptom:recovery-after-rain
@@ -110,7 +120,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Recovery after washing is stated, but a ''step change'' in production
     is not explicitly described.'
 - claim_id: c11
@@ -140,7 +152,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h5
     h: 43575746a7d7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c13
   rel: detected_by
   target: method:performance-ratio-trend
@@ -173,7 +187,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: detected_by
   target: method:rainfall-response-review
@@ -188,7 +204,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: detected_by
   target: method:cleaning-log-review
@@ -202,7 +220,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: detected_by
   target: method:weather-normalized-comparison
@@ -217,7 +237,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: detected_by
   target: method:soiling-model-residuals
@@ -240,7 +262,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c20
   rel: mitigated_by
   target: mit:cleaning-schedule-optimization
