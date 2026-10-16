@@ -28,7 +28,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h4
     h: 88a270e92419
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c3
   rel: detected_by
   target: method:pan-file-comparison
@@ -59,7 +61,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h6
     h: d98419e6bd80
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: detected_by
   target: method:model-sensitivity-analysis
@@ -90,7 +94,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h6
     h: d98419e6bd80
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:validated-module-files
@@ -117,7 +123,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h7
     h: acd2a7ec2ad2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:model-sensitivity-review
@@ -128,7 +136,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h2
     h: 10747fe38d64
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:forecast-update
@@ -140,7 +150,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h2
     h: 10747fe38d64
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: distinguished_from
   target: fm:soiling-losses
@@ -170,7 +182,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h6
     h: d98419e6bd80
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Gap persisting after curtailment and clipping are reviewed is
     stated, but curtailment as real operational loss and explicit differentiation method are not stated.'
 ---

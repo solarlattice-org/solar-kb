@@ -14,7 +14,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: stressor:high-temperature
@@ -27,7 +29,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: caused_by
   target: stressor:reactive-power-demand
@@ -42,7 +46,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:ac-voltage-hysteresis
@@ -51,7 +57,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: caused_by
   target: stressor:module-degradation
@@ -60,7 +68,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: caused_by
   target: stressor:insufficient-string-voltage-margin
@@ -72,7 +82,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h7
     h: 0329d3a61473
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: caused_by
   target: stressor:inverter-settings
@@ -81,7 +93,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:expected-vs-measured-gap
@@ -91,7 +105,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h4
     h: 7023830f6e10
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The gap between available and harvested power is stated, but
     ''persistent'' is not stated.'
 - claim_id: c9
@@ -105,7 +121,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: presents_as
   target: symptom:dc-voltage-at-minimum
@@ -114,7 +132,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: presents_as
   target: symptom:operating-voltage-above-vmp
@@ -127,7 +147,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: detected_by
   target: method:iv-curve-tracing
@@ -166,7 +188,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: detected_by
   target: method:inverter-settings-review
@@ -175,7 +199,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=front
     h: 568e994d4904
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: distinguished_from
   target: fm:inverter-clipping
@@ -215,7 +241,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h7
     h: 0329d3a61473
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c19
   rel: mitigated_by
   target: mit:voltage-control-strategy
@@ -247,7 +275,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h7
     h: 0329d3a61473
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c22
   rel: mitigated_by
   target: mit:mppt-recovery-retest
@@ -259,7 +289,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h7
     h: 0329d3a61473
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c23
   attr: typical_power_loss
   value:
@@ -271,7 +303,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Inverter voltage floor losses happen when the array's maximum power point voltage falls below the inverter's minimum DC input voltage. The inverter stays online but cannot track the true Vmp, so some available energy is never harvested. It shows up mostly in hot weather, because module voltage drops as cells heat up. Degraded modules, a tight string design margin, or high reactive power demand make it worse. In monitoring data it can look like clipping or general underperformance. Inverter DC voltage sits at its minimum while output is lower than irradiance would support. To confirm it, compare the inverter operating voltage with an IV-derived Vmp from IV tracers or a temperature-corrected model. It is a voltage floor event if the operating voltage stays above Vmp and the operating power stays below Pmp. Rule out outages, curtailment, clipping, soiling and sensor faults first. Then check AC voltage and reactive power dispatch at the same timestamps. Work out fixes with the inverter supplier and the plant electrical engineer. Options include transformer tap changes, inverter parameter or voltage control changes, and more string voltage margin in future designs. After making changes, retest MPPT recovery in hot conditions against IV-derived Vmp and Pmp, and confirm reactive power obligations are still met.
 

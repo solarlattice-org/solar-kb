@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h4
     h: eb8006cfb637
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
   review_note: 'support check: partial - Passage says the signature correlates with atmospheric water
     content, but doesn''t explicitly state water vapor causes it.'
 - claim_id: c3
@@ -31,7 +33,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h4
     h: eb8006cfb637
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says the signature correlates with aerosol conditions,
     but doesn''t explicitly state aerosols cause it.'
 - claim_id: c4
@@ -44,7 +48,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h5
     h: cc75dd4a8e8e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:expected-vs-measured-gap
@@ -54,7 +60,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h4
     h: eb8006cfb637
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:capacity-test-bias
@@ -69,7 +77,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h4
     h: eb8006cfb637
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: detected_by
   target: method:spectral-irradiance-measurement
@@ -84,7 +94,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h2
     h: 3f9d65519ecf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: detected_by
   target: method:capacity-test-method-review
@@ -108,7 +120,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h6
     h: 172487c8868e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:loss-factor-separation
@@ -120,7 +134,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h2
     h: 3f9d65519ecf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: distinguished_from
   target: fm:soiling-losses
@@ -134,7 +150,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=front
     h: 50540480df25
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages say to remove soiling then compare residuals against
     air mass, PW, AOD, season, but don''t explicitly say a remaining residual tracking these points to
     spectral cause.'

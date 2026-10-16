@@ -12,7 +12,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h4
     h: 3675d15ba302
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
   review_note: 'support check: partial - Passage says system and module degradation differ and mismatch
     arises from uneven aging, but doesn''t state system degradation is caused by module degradation in
     general.'
@@ -34,7 +36,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: presents_as
   target: symptom:gradual-performance-decline
@@ -44,7 +48,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h5
     h: 994460afbabc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: detected_by
   target: method:normalized-output-trend
@@ -57,7 +63,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=front
     h: ff0c8c5f07cc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: detected_by
   target: method:string-inverter-trend
@@ -68,7 +76,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=front
     h: ff0c8c5f07cc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: detected_by
   target: method:iv-curve-tracing
@@ -141,6 +151,8 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Module degradation is the power an individual module loses over time. System degradation is the energy the whole PV plant loses over time, and the two are not always equal. Modules in the field age at different rates. The weaker ones limit the current of the strings or substrings around them, so the extra mismatch makes the system lose more than the average module does. In practice the plant can show a larger drop in energy even while the average module is still within its warranty. To confirm it, compare long-term normalized plant output and string or inverter trends with IV curve data and module test results. This separates average module degradation from degradation caused by mismatch. Model degradation at the system level and include the spread between modules, not only the module warranty rate.
