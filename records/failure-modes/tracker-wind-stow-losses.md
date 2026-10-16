@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h5
     h: 3f9ef9562906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: affects
   target: comp:single-axis-tracker
@@ -25,7 +27,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h4
     h: 65b80c7f6952
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: presents_as
   target: symptom:low-output-despite-irradiance
@@ -34,7 +38,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h4
     h: 65b80c7f6952
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: detected_by
   target: method:wind-gust-data-review
@@ -47,7 +53,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h6
     h: 733de3a75bd0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: detected_by
   target: method:performance-monitoring
@@ -73,7 +81,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h7
     h: 47f98047fafd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:forecast-update
@@ -82,7 +92,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h7
     h: 47f98047fafd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: mitigated_by
   target: mit:tracker-stow-strategy
@@ -95,7 +107,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h7
     h: 47f98047fafd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:loss-factor-separation
@@ -108,7 +122,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h7
     h: 47f98047fafd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: distinguished_from
   target: fm:inverter-clipping
@@ -119,7 +135,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h6
     h: 733de3a75bd0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: distinguished_from
   target: fm:grid-curtailment-losses
@@ -130,7 +148,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h6
     h: 733de3a75bd0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Separation from curtailment via aligned logs is stated, but the
     specific signature (curtailment shows in inverter or grid status without stow events) is not.'
 - claim_id: c12
@@ -144,6 +164,8 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h5
     h: 3f9ef9562906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Wind stow losses happen when single-axis trackers move to a protective safe angle because measured wind is above the controller threshold. While the rows are off-angle they capture less sunlight. In the data you see intermittent output dips during gusty weather even though irradiance is good. These losses are easy to miss when they get lumped in with availability, curtailment or weather variance. Energy models built on hourly wind data can understate this loss, because controllers react to short gusts that hourly averages smooth out. Counting gust-driven stow can raise annual production losses by up to 4%. To confirm it, pull the tracker controller logs showing stow commands, return-to-track events, wind speed and the active threshold. Line these up with SCADA production, irradiance and inverter status so you can rule out clipping, curtailment, outages and sensor faults. Where you can, use high-frequency wind data such as three-second gusts or met mast records instead of hourly averages. Check the wind thresholds and the return-to-track logic. Do not lower stow thresholds to win back energy unless the tracker supplier and the structural engineer confirm the change stays within the design limits. Compare actual stow hours with the energy model assumptions, then update forecasts and variance reporting so the loss is tracked in its own category.

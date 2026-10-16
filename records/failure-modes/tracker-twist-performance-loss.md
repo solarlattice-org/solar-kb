@@ -11,7 +11,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h4
     h: 47d9eb5061f6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: stressor:mounting-structure-defect
@@ -27,7 +29,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages mention loose/deformed/slipping hardware (couplers,
     bearings, joints, dampers, actuator mounts) as things to inspect and bent/loose members to repair,
     but don''t explicitly state twist is caused by a mounting structure defect; they also list controller
@@ -43,7 +47,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h5
     h: 38a22f4e3727
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: presents_as
   target: symptom:sun-position-repeatable-loss
@@ -56,7 +62,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:string-current-low
@@ -66,7 +74,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h4
     h: 47d9eb5061f6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:inter-row-shading
@@ -78,7 +88,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h5
     h: 38a22f4e3727
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:uneven-string-current
@@ -88,7 +100,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h5
     h: 38a22f4e3727
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: detected_by
   target: method:performance-monitoring
@@ -101,7 +115,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: detected_by
   target: method:tracker-command-log-review
@@ -110,7 +126,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=front
     h: 64eaf1450156
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: detected_by
   target: method:drone-inspection
@@ -122,7 +140,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: detected_by
   target: method:row-angle-survey
@@ -135,7 +155,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: mitigated_by
   target: mit:tracker-geometry-correction
@@ -147,7 +169,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h2
     h: 7af38c6dc2bd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c13
   rel: mitigated_by
   target: mit:actuator-calibration
@@ -158,7 +182,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h2
     h: 7af38c6dc2bd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: mitigated_by
   target: mit:structural-hardware-repair
@@ -170,7 +196,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h2
     h: 7af38c6dc2bd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: mitigated_by
   target: mit:backtracking-tuning
@@ -182,7 +210,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h2
     h: 7af38c6dc2bd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: mitigated_by
   target: mit:root-cause-investigation
@@ -192,7 +222,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h7
     h: 497a3230089b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: mitigated_by
   target: mit:post-repair-verification
@@ -205,7 +237,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h7
     h: 497a3230089b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: distinguished_from
   target: fm:terrain-undulation-yield-losses
@@ -216,7 +250,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h5
     h: 38a22f4e3727
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - u7 supports the terrain-following vs twist distinction and tolerance
     criterion, but doesn''t name terrain undulation yield losses or explicitly say a row angle survey
     is the discriminating method (measured sections are mentioned).'

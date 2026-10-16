@@ -18,7 +18,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h5
     h: 206561d63ce8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: stressor:oversized-motor-block
@@ -31,7 +33,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h7
     h: e0c095063407
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: caused_by
   target: stressor:inaccurate-model-input
@@ -44,7 +48,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:low-sun-angle
@@ -53,7 +59,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Low sun angle is stated as when losses are strongest, not as
     a cause of the loss.'
 - claim_id: c5
@@ -67,7 +75,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=front
     h: 52c6d93eccc6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:spatially-uneven-loss
@@ -80,7 +90,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:sun-position-repeatable-loss
@@ -92,7 +104,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=front
     h: 52c6d93eccc6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: presents_as
   target: symptom:inter-row-shading
@@ -104,7 +118,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h5
     h: 206561d63ce8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: presents_as
   target: symptom:nonuniform-tracker-angles
@@ -113,7 +129,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: detected_by
   target: method:topographic-survey-comparison
@@ -126,7 +144,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=front
     h: 52c6d93eccc6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: detected_by
   target: method:string-inverter-trend
@@ -139,7 +159,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=front
     h: 52c6d93eccc6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: detected_by
   target: method:constrained-interval-classification
@@ -148,7 +170,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h6
     h: c071b96206e3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c13
   rel: detected_by
   target: method:drone-inspection
@@ -156,7 +180,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h6
     h: c071b96206e3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: detected_by
   target: method:row-angle-survey
@@ -165,7 +191,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h6
     h: c071b96206e3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: detected_by
   target: method:tracker-command-log-review
@@ -177,7 +205,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h7
     h: e0c095063407
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c16
   rel: detected_by
   target: method:shade-model-comparison
@@ -186,7 +216,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=front
     h: 52c6d93eccc6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: mitigated_by
   target: mit:backtracking-tuning
@@ -198,7 +230,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h2
     h: 0eaaad46eb44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: mitigated_by
   target: mit:motor-block-sizing-review
@@ -209,7 +243,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h2
     h: 0eaaad46eb44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c19
   rel: mitigated_by
   target: mit:grading-correction
@@ -221,7 +257,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h2
     h: 0eaaad46eb44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c20
   rel: mitigated_by
   target: mit:tracker-geometry-correction
@@ -233,7 +271,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h2
     h: 0eaaad46eb44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: mitigated_by
   target: mit:energy-model-update
@@ -245,6 +285,8 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h2
     h: 0eaaad46eb44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Terrain undulation losses happen when rolling ground makes the real tracker rows differ from the simple geometry assumed by backtracking and yield models. Trackers can be working and following their commands, yet the command itself causes inter-row shading or drives rows further off sun than needed. Large motor blocks make it worse because one command angle is applied across rows sitting on different terrain. Expect losses that repeat with sun position, peak at low sun angles, and cluster around motor block boundaries, grade breaks and swales. To confirm, map underperformance by tracker block, row and time of day, and compare it with topographic survey, as-builts and the terrain used in the energy model. Separate backtracking periods from curtailment, clipping, outages and inverter limits, then use drone imagery, row-end angle surveys, tracker command logs and normalized string or inverter output to tie losses to terrain rather than equipment faults. Fixes include tuning backtracking per terrain zone, checking motor block sizing, correcting grading or tracker geometry where practical, and updating energy models with measured row behavior.
