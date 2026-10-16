@@ -82,7 +82,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r3
     h: 091be96f279b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c6
   rel: caused_by
   target: stressor:moisture-exposure
@@ -98,7 +100,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r3
     h: 091be96f279b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c7
   rel: caused_by
   target: stressor:component-aging
@@ -108,7 +112,9 @@ claims:
   - src: src:pv-root-cause-connector-defect
     loc: sec=h4
     h: 3be1d95ede61
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c8
   rel: leads_to
   target: fm:arc-fault
@@ -153,7 +159,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=45.r1
     h: 64afea9d2672
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c12
   rel: presents_as
   target: symptom:cracked-housing
@@ -337,7 +345,9 @@ claims:
   - src: src:pv-root-cause-connector-defect
     loc: sec=h2
     h: ffc071d1e172
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c26
   rel: mitigated_by
   target: mit:proper-installation
@@ -345,7 +355,9 @@ claims:
   - src: src:pv-root-cause-connector-defect
     loc: sec=h6
     h: e7691a95e9d7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
   review_note: 'support check: partial - Passage emphasizes need for proper installation to prevent damage,
     but it is a generic statement rather than a stated mitigation for this defect in detail.'
 - claim_id: c27

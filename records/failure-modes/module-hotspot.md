@@ -14,7 +14,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: stressor:partial-shading
@@ -90,7 +92,9 @@ claims:
   - src: src:pv-root-cause-module-hotspot
     loc: sec=h2
     h: f89fa075e5e7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c9
   rel: detected_by
   target: method:ir-thermography
@@ -106,7 +110,9 @@ claims:
   - src: src:pv-root-cause-module-hotspot
     loc: sec=h5
     h: dbed0f83b34d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
   review_note: 'support check: partial - Drone IR scan conditions and neighbour comparison are stated,
     and the screening-only note appears in the notes, but the evidence cited for it is limited to u6 which
     is not listed here.'
@@ -123,7 +129,9 @@ claims:
   - src: src:pv-root-cause-module-hotspot
     loc: sec=h5
     h: dbed0f83b34d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c11
   rel: detected_by
   target: method:visual-inspection
@@ -184,7 +192,9 @@ claims:
   - src: src:pv-root-cause-module-hotspot
     loc: sec=h2
     h: f89fa075e5e7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c16
   rel: mitigated_by
   target: mit:bypass-diode-integration
@@ -193,7 +203,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c17
   rel: mitigated_by
   target: mit:cell-current-binning
@@ -201,7 +213,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c18
   rel: mitigated_by
   target: mit:cell-shunt-screening
@@ -209,7 +223,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c19
   rel: mitigated_by
   target: mit:shade-resistant-modules
@@ -219,7 +235,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c20
   rel: leads_to
   target: fm:cell-interconnection-failure
@@ -259,7 +277,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c24
   rel: leads_to
   target: fm:encapsulant-discoloration
@@ -293,7 +313,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c28
   rel: distinguished_from
   target: fm:hot-cell

@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=front
     h: 4921d46d666f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c2
   rel: caused_by
   target: fm:leakage-current
@@ -92,7 +94,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: tbl=1.r1
     h: f5b8d9f781ff
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c8
   rel: affects
   target: comp:module-glass
@@ -125,7 +129,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c11
   rel: presents_as
   target: symptom:hotspot-ir-image
@@ -176,7 +182,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c15
   rel: presents_as
   target: symptom:dark-cells-el
@@ -185,7 +193,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=15.r1
     h: 6e2cec50e730
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c16
   rel: detected_by
   target: method:el-imaging
@@ -200,7 +210,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c17
   rel: detected_by
   target: method:ir-thermography
@@ -252,7 +264,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c21
   rel: leads_to
   target: fm:encapsulant-discoloration
@@ -297,7 +311,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h2
     h: ff7ac62c1dc0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c25
   rel: mitigated_by
   target: mit:system-grounding
@@ -338,7 +354,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h9
     h: 1a8ef7f958ed
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c29
   rel: mitigated_by
   target: mit:low-sodium-glass
@@ -367,7 +385,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h2
     h: ff7ac62c1dc0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c32
   attr: typical_power_loss
   value:
@@ -378,7 +398,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h4
     h: 21df64fc133e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c33
   attr: typical_power_loss
   value:
@@ -403,7 +425,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
   review_note: 'support check: partial - Source says losses of 20 percent and more within 1 year; 20%
     is a lower bound, not typical.'
 ---

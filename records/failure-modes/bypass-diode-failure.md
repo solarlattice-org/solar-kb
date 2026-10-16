@@ -60,7 +60,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r4
     h: 0da0e147b72b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c5
   rel: caused_by
   target: stressor:electrostatic-discharge
@@ -87,7 +89,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h5
     h: 23f6264b1f6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c7
   rel: caused_by
   target: stressor:high-temperature
@@ -116,7 +120,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r4
     h: 0da0e147b72b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c9
   rel: caused_by
   target: stressor:manufacturing-defect
@@ -164,7 +170,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h6
     h: bfcbbd1f5824
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c13
   rel: caused_by
   target: stressor:component-aging
@@ -240,7 +248,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r6
     h: c1a079fd37d5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c18
   rel: presents_as
   target: symptom:substring-loss
@@ -265,7 +275,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r6
     h: c1a079fd37d5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c20
   rel: presents_as
   target: symptom:uneven-cell-heating
@@ -312,7 +324,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c25
   rel: detected_by
   target: method:visual-inspection
@@ -335,7 +349,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=front
     h: 44eaacc73841
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c27
   rel: mitigated_by
   target: mit:module-replacement
@@ -358,7 +374,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c29
   rel: mitigated_by
   target: mit:avoid-partial-shading
@@ -369,7 +387,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c30
   rel: mitigated_by
   target: mit:post-repair-verification
@@ -380,7 +400,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=front
     h: 44eaacc73841
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c31
   rel: mitigated_by
   target: mit:close-monitoring
@@ -398,7 +420,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c33
   rel: leads_to
   target: fm:module-hotspot
@@ -414,7 +438,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r6
     h: c1a079fd37d5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
   review_note: 'support check: partial - Open diode with mismatch causing heat and hotspots is stated,
     but the detail of driving cells into reverse bias with current forced through the string is a mix
     across passages.'
@@ -431,7 +457,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r6
     h: c1a079fd37d5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c35
   rel: leads_to
   target: fm:arc-fault
@@ -446,7 +474,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h6
     h: bfcbbd1f5824
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c36
   rel: leads_to
   target: fm:leakage-current
@@ -461,7 +491,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=38.r6
     h: c1a079fd37d5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c37
   attr: time_to_onset
   value:

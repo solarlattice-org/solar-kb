@@ -83,7 +83,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=3.1
     h: 1bd67b0ecb1e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c8
   rel: detected_by
   target: method:optical-soiling-sensor
@@ -92,7 +94,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: tbl=5.r2
     h: 2e85ddcb867f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c9
   rel: detected_by
   target: method:performance-ratio-trend
@@ -110,7 +114,9 @@ claims:
   - src: src:alsoenergy-kb-pv-model-losses
     loc: sec=front
     h: 10001d881d82
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c11
   rel: detected_by
   target: method:weather-normalized-comparison
@@ -118,7 +124,9 @@ claims:
   - src: src:pv-root-cause-soiling-losses
     loc: sec=front
     h: 8b3204cccd40
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c12
   rel: detected_by
   target: method:visual-inspection
@@ -152,7 +160,9 @@ claims:
   - src: src:pv-root-cause-soiling-losses
     loc: sec=front
     h: 8b3204cccd40
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-16
 - claim_id: c15
   rel: mitigated_by
   target: mit:cleaning-schedule-optimization
