@@ -2,6 +2,7 @@
 id: fm:connector-defect
 type: FailureMode
 name: Connector Defect
+category: Wiring
 claims:
 - claim_id: c1
   rel: affects

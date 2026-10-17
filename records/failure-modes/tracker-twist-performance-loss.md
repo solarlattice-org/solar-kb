@@ -2,6 +2,7 @@
 id: fm:tracker-twist-performance-loss
 type: FailureMode
 name: Performance Loss from Tracker Twist
+category: Trackers
 claims:
 - claim_id: c1
   rel: affects

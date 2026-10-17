@@ -2,6 +2,7 @@
 id: fm:soiling-losses
 type: FailureMode
 name: Soiling Losses
+category: Soiling
 claims:
 - claim_id: c1
   rel: affects

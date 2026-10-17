@@ -2,6 +2,7 @@
 id: fm:fungal-soiling-losses
 type: FailureMode
 name: Widespread Fungal Soiling Losses
+category: Soiling
 claims:
 - claim_id: c1
   attr: typical_power_loss

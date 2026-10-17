@@ -2,6 +2,7 @@
 id: fm:module-hotspot
 type: FailureMode
 name: Module Hotspot from Cell Damage
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by

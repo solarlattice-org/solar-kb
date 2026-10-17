@@ -4,6 +4,7 @@ type: FailureMode
 name: Light Induced Degradation (LID)
 aliases:
 - LID
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by
@@ -344,9 +345,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: disputed
-  conflicts_with:
-  - fm:light-induced-degradation#c27
+  review: drafted
+  review_note: 'reviewer 2026-10-17: the compiler-flagged conflict is a different technology (amorphous
+    vs crystalline silicon), not disagreement'
 - claim_id: c26
   attr: typical_power_loss
   value:

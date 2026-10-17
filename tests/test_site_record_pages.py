@@ -25,6 +25,8 @@ def test_record_page_claims_badges_and_citations(tmp_path):
     assert 'href="../src/nrel-pid-guide"' in page and "<code>tbl=2.r3</code>" in page and "h=a1b2c3d4e5f6" in page
     assert "10–30" in page and '<a href="http://qudt.org/vocab/unit/PERCENT">PERCENT</a>' in page
     assert "told apart by" in page and "verified by: reviewer" in page
+    assert "<dt>Category</dt><dd>Modules</dd>" in page  # the category slot (2026-10-17)
+    assert "<dt>Category</dt>" not in (tmp_path / "kb/method/el-imaging.html").read_text()  # absent when unset
     assert '<link rel="canonical" href="https://solarlattice.org/kb/fm/pid">' in page
     assert '<link rel="alternate" type="application/ld+json" href="pid.jsonld">' in page
     assert 'href="../FailureMode"' in page and 'href="../records.jsonld"' in page

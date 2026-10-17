@@ -41,4 +41,4 @@ def test_schema_page_lists_every_term(tmp_path):
     page = (tmp_path / "kb/schema.html").read_text()
     assert '<link rel="canonical" href="https://solarlattice.org/kb/schema">' in page
     assert '<a href="FailureMode">FailureMode</a>' in page and '<a href="cites_source">src</a>' in page
-    assert sum(1 for t in ONTOLOGY.terms if t.local) == 74
+    assert sum(1 for t in ONTOLOGY.terms if t.local) == 75  # +category (2026-10-17)
