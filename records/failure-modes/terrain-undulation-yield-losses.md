@@ -2,6 +2,7 @@
 id: fm:terrain-undulation-yield-losses
 type: FailureMode
 name: Terrain Undulation Yield Losses
+category: Trackers
 claims:
 - claim_id: c1
   rel: caused_by

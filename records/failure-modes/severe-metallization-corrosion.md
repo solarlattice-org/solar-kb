@@ -2,6 +2,7 @@
 id: fm:severe-metallization-corrosion
 type: FailureMode
 name: Severe Metallization Corrosion
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by

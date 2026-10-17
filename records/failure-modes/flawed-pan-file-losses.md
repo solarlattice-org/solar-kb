@@ -2,6 +2,7 @@
 id: fm:flawed-pan-file-losses
 type: FailureMode
 name: Flawed PAN File Yield Losses
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by

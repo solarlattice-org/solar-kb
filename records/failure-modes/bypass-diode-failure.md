@@ -2,6 +2,7 @@
 id: fm:bypass-diode-failure
 type: FailureMode
 name: Bypass Diode Failure
+category: Modules
 claims:
 - claim_id: c1
   rel: affects

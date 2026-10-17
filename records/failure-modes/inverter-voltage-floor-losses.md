@@ -2,6 +2,7 @@
 id: fm:inverter-voltage-floor-losses
 type: FailureMode
 name: Inverter Voltage Floor Losses
+category: Inverters
 claims:
 - claim_id: c1
   rel: affects

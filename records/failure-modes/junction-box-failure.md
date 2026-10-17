@@ -2,6 +2,7 @@
 id: fm:junction-box-failure
 type: FailureMode
 name: Junction Box Failure
+category: Modules
 claims:
 - claim_id: c1
   rel: affects

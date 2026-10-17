@@ -2,6 +2,7 @@
 id: fm:spectral-effect-losses
 type: FailureMode
 name: Spectral Effect Yield Losses
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by

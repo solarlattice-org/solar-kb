@@ -4,6 +4,7 @@ type: FailureMode
 name: Potential Induced Degradation (PID)
 aliases:
 - PID
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by

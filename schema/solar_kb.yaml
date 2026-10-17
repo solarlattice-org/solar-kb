@@ -30,7 +30,7 @@ classes:
   Record:
     abstract: true
     description: Common fields of every knowledge record.
-    slots: [id, type, name, aliases, status, close_mappings, exact_mappings, claims]
+    slots: [id, type, name, aliases, category, status, close_mappings, exact_mappings, claims]
   FailureMode:
     is_a: Record
     description: What went wrong.
@@ -96,6 +96,7 @@ slots:
   type: {designates_type: true, range: string, required: true}
   name: {required: true}
   aliases: {multivalued: true}
+  category: {description: "Coarse grouping for browsing and export (e.g. Modules, Wiring, Soiling, Grid, Inverters, Trackers); from the pv-root-cause taxonomy for compiled failure modes."}
   status: {range: RecordStatus}
   close_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:closeMatch}
   exact_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:exactMatch}

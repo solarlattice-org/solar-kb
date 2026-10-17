@@ -2,6 +2,7 @@
 id: fm:tracker-wind-stow-losses
 type: FailureMode
 name: Tracker Wind Stow Production Losses
+category: Trackers
 claims:
 - claim_id: c1
   rel: caused_by

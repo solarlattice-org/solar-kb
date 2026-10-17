@@ -2,6 +2,7 @@
 id: fm:cell-interconnection-failure
 type: FailureMode
 name: Cell Interconnection Failure
+category: Modules
 claims:
 - claim_id: c1
   rel: affects

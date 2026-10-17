@@ -2,6 +2,7 @@
 id: fm:cable-defect
 type: FailureMode
 name: Cable Defect
+category: Wiring
 claims:
 - claim_id: c1
   rel: affects
