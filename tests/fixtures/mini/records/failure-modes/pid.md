@@ -3,6 +3,7 @@ id: fm:pid
 type: FailureMode
 name: Potential-induced degradation
 aliases: [PID, PID-s]
+category: Modules
 status: active
 claims:
   - claim_id: c1

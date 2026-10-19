@@ -81,6 +81,7 @@ class RecordView:
     type_href: str
     status: str
     aliases: tuple[str, ...]
+    category: str  # "" when the record has none
     prose: str
     manifest: tuple[tuple[str, str, str | None], ...]  # (label, value, link or None)
     groups: tuple[tuple[str, tuple[ClaimView, ...]], ...]  # (rel or attr, claims)
@@ -191,6 +192,7 @@ def record_view(record: Record, corpus: Corpus, prefixes: dict[str, str], incomi
         id=record.id, iri=expand(record.id, prefixes), name=data["name"], type=record.type,
         type_href=href(page, term_path(KB + record.type)), status=data.get("status", "active"),
         aliases=tuple(a for a in data.get("aliases") or [] if isinstance(a, str)),
+        category=str(data.get("category") or ""),
         prose=render_prose(record.body, page, names, proposed) if record.body.strip() else "",
         manifest=manifest, groups=tuple((h, tuple(c)) for h, c in groups.items()),
         referenced_by=_incoming_views(corpus, incoming_index.get(record.id, []), page),

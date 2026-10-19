@@ -2,6 +2,7 @@
 id: fm:grid-curtailment-losses
 type: FailureMode
 name: Grid Curtailment Yield Losses
+category: Grid
 claims:
 - claim_id: c1
   rel: caused_by

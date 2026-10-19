@@ -2,6 +2,7 @@
 id: fm:granular-dust-soiling-losses
 type: FailureMode
 name: Granular Dust Soiling Losses
+category: Soiling
 claims:
 - claim_id: c1
   rel: caused_by

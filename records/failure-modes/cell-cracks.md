@@ -2,6 +2,7 @@
 id: fm:cell-cracks
 type: FailureMode
 name: Cell Cracks
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by
@@ -340,13 +341,13 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=7.r5
     h: 0a21fb8dc566
-  review: disputed
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
   review_note: 'support check: partial - Passages say ''typically below 2.5%'' (an upper bound), not a
-    typical value of 2.5%.; possible conflict with c34 (same source; check the conditions)'
-  conflicts_with:
-  - fm:cell-cracks#c32
-  - fm:cell-cracks#c33
-  - fm:cell-cracks#c35
+    typical value of 2.5%.; possible conflict with c34 (same source; check the conditions); reviewer 2026-10-17:
+    the compiler-flagged conflicts are different scenarios (STC full-crack test, per-half-cell value,
+    inactive-area simulations, one field survey), not disagreement'
 - claim_id: c29
   attr: typical_power_loss
   value:
@@ -374,12 +375,11 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=7.r5
     h: 0a21fb8dc566
-  review: disputed
-  conflicts_with:
-  - fm:cell-cracks#c32
-  - fm:cell-cracks#c33
-  - fm:cell-cracks#c34
-  - fm:cell-cracks#c35
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
+  review_note: 'reviewer 2026-10-17: the compiler-flagged conflicts are different scenarios (STC full-crack
+    test, per-half-cell value, inactive-area simulations, one field survey), not disagreement'
 - claim_id: c31
   attr: typical_power_loss
   value:
@@ -390,12 +390,13 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  review_note: possible conflict with c32 (same source; check the conditions); possible conflict with
-    c33 (same source; check the conditions)
-  conflicts_with:
-  - fm:cell-cracks#c34
-  - fm:cell-cracks#c35
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
+  review_note: 'possible conflict with c32 (same source; check the conditions); possible conflict with
+    c33 (same source; check the conditions); reviewer 2026-10-17: the compiler-flagged conflicts are different
+    scenarios (STC full-crack test, per-half-cell value, inactive-area simulations, one field survey),
+    not disagreement'
 - claim_id: c32
   attr: typical_power_loss
   value:
@@ -422,13 +423,13 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  conflicts_with:
-  - fm:cell-cracks#c28
-  - fm:cell-cracks#c30
-  - fm:cell-cracks#c34
-  review_note: possible conflict with c29 (same source; check the conditions); possible conflict with
-    c31 (same source; check the conditions); possible conflict with c32 (same source; check the conditions)
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
+  review_note: 'possible conflict with c29 (same source; check the conditions); possible conflict with
+    c31 (same source; check the conditions); possible conflict with c32 (same source; check the conditions);
+    reviewer 2026-10-17: the compiler-flagged conflicts are different scenarios (STC full-crack test,
+    per-half-cell value, inactive-area simulations, one field survey), not disagreement'
 - claim_id: c34
   attr: typical_power_loss
   value:
@@ -455,13 +456,11 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.2
     h: 17668c52ed6f
-  review: disputed
-  conflicts_with:
-  - fm:cell-cracks#c28
-  - fm:cell-cracks#c29
-  - fm:cell-cracks#c30
-  - fm:cell-cracks#c31
-  - fm:cell-cracks#c32
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
+  review_note: 'reviewer 2026-10-17: the compiler-flagged conflicts are different scenarios (STC full-crack
+    test, per-half-cell value, inactive-area simulations, one field survey), not disagreement'
 - claim_id: c36
   attr: degradation_rate
   value:
@@ -485,10 +484,12 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  review_note: possible conflict with c36 (same source; check the conditions)
-  conflicts_with:
-  - fm:cell-cracks#c38
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
+  review_note: 'possible conflict with c36 (same source; check the conditions); reviewer 2026-10-17: 8
+    %/yr is the rate of the affected part, up to 7 %/yr is a mean over full-cell modules; different statistics
+    from the same T13 work, not disagreement'
 - claim_id: c38
   attr: degradation_rate
   value:
@@ -499,11 +500,12 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=7.r5
     h: 0a21fb8dc566
-  review: disputed
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
   review_note: 'support check: partial - Source says ''up to 7%/y'', a high bound on mean rates, not a
-    typical 7%.'
-  conflicts_with:
-  - fm:cell-cracks#c37
+    typical 7%.; reviewer 2026-10-17: 8 %/yr is the rate of the affected part, up to 7 %/yr is a mean
+    over full-cell modules; different statistics from the same T13 work, not disagreement'
 - claim_id: c39
   attr: time_to_onset
   value:

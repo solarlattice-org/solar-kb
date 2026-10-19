@@ -17,6 +17,9 @@
 {% if view.aliases %}
 <dt>Also known as</dt><dd>{{ view.aliases|join(", ") }}</dd>
 {% endif %}
+{% if view.category %}
+<dt>Category</dt><dd>{{ view.category }}</dd>
+{% endif %}
 </dl>
 {% if view.prose %}
 <section class="prose">

@@ -2,6 +2,7 @@
 id: fm:snow-accumulation-losses
 type: FailureMode
 name: Snow Accumulation Yield Losses
+category: Soiling
 claims:
 - claim_id: c1
   rel: caused_by

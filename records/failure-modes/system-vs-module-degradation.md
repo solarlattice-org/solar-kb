@@ -2,6 +2,7 @@
 id: fm:system-vs-module-degradation
 type: FailureMode
 name: System Degradation vs Module Degradation
+category: Modules
 claims:
 - claim_id: c1
   rel: caused_by
