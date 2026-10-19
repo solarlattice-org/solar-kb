@@ -10,4 +10,7 @@ signals:
 - point: model_160.DCV
   unit: unit:V
   pattern: voltage step down when a substring is shorted
+- point: model_103.DCW
+  unit: unit:W
+  pattern: DC power falls at inverter level while irradiance stays the same
 ---
