@@ -188,3 +188,10 @@ def test_cli_exit_2_on_yaml_syntax_error(tmp_path):
     (tmp_path / "c.yaml").write_text("- id: a\n  observations: [{text: x}\n")
     result = CliRunner().invoke(app, ["eval", "differential", "--cases", str(tmp_path / "c.yaml"), "--db", str(db)])
     assert result.exit_code == 2 and "cases error" in result.output
+
+
+def test_fault_code_observation_is_pinned_and_expanded(tmp_path, graph):
+    text = (f"- id: code\n  observations: [{{text: inverter shows IsolationErr, id: fc:chint-sca-50-60ktl-isolationerr}}]\n"
+            f"  expected: fm:insulation-loss\n  acceptable: [fm:leakage-current]\n  source: {SRC}")
+    [r] = _report(tmp_path, graph, text).results
+    assert r.rank == 1 and r.unknown_ids == () and r.resolved[0]["match"] == "pinned" and r.tied == 2

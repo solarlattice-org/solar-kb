@@ -8,6 +8,7 @@ import sqlite3
 from collections.abc import Iterable, Mapping
 from pathlib import Path
 
+from solar_kb.codes import parse_code, query_code
 from solar_kb.graph import normalize
 
 REVIEW_RANK = {"disputed": 0, "drafted": 1, "verified": 2}
@@ -104,6 +105,45 @@ class Graph:
         rows = self._con.execute(sql + " ORDER BY record_id, rowid", params).fetchall()
         return [self._edge(r) for r in rows if REVIEW_RANK[r["review"]] >= floor]
 
+    def resolve_code(self, text: str, make: str | None = None, family: str | None = None,
+                     limit: int = 20) -> list[dict]:
+        """Plan 4d: FaultCode records for a printed or spoken code ("3701", "event 3501", "Protect0090", "CRIT-7").
+
+        The v1 `lookup_fault_code` order: the exact code_key; else a printed range containing the number under the
+        same vendor prefix; else the bare number under any prefix. The first step with a hit wins (`match` names it).
+        Within it, records of the given make rank first, then of the given family; neither filters, so a code of
+        another make is still found, lower down."""
+        key = query_code(text or "")
+        if not key.key or limit < 1:
+            return []
+        rows = self._con.execute(
+            "SELECT f.*, n.name, n.data_json FROM fault_codes f JOIN nodes n ON n.id = f.record_id ORDER BY f.record_id"
+        ).fetchall()
+        attempts = [("exact", lambda r: r["code_key"] == key.key)]
+        if key.number is not None and key.number_end is None:
+            attempts.append(("range", lambda r: r["code_from"] is not None and r["code_from"] <= key.number <= r["code_to"]
+                             and parse_code(r["code_key"]).prefix == key.prefix))
+            attempts.append(("number", lambda r: r["code_from"] is None and parse_code(r["code_key"]).number == key.number))
+        for match, test in attempts:
+            hits = [r for r in rows if test(r)]
+            if hits:
+                break
+        else:
+            return []
+
+        def rank(r: sqlite3.Row) -> tuple:
+            return (0 if make and r["make"] == make else 1, 0 if family and r["model_family"] == family else 1,
+                    r["record_id"])
+
+        out = []
+        for r in sorted(hits, key=rank)[:limit]:
+            data = json.loads(r["data_json"])
+            out.append({"id": r["record_id"], "type": "FaultCode", "name": r["name"], "make": r["make"],
+                        "make_name": data.get("make_name"), "model_family": r["model_family"],
+                        "family_name": data.get("family_name"), "code": data.get("code"), "code_key": r["code_key"],
+                        "display_message": data.get("display_message"), "match": match, "query_key": key.key})
+        return out
+
     def differential(self, observations: Iterable[str], min_review: str = "drafted", k: int = 5,
                      field_evidence: Mapping[tuple[str, str], int] | None = None,
                      as_of: str | None = None) -> dict:
@@ -113,16 +153,16 @@ class Graph:
         contain `as_of` (default: today, ISO date), are ignored. Each candidate lists the claims
         supporting each match; disputed claims filtered out by `min_review` are reported in
         `disputed_matches` so they are surfaced rather than silently dropped.
+
+        A FaultCode observation (Plan 4d) is expanded through its `reports` claims at or above `min_review` into the
+        Symptoms it reports, listed in `via_code`; `indicates` is never scored, so §8.1 scoring is unchanged.
         """
         if k < 1:
             raise ValueError("k must be >= 1")
         floor = _rank(min_review)
         as_of = as_of or datetime.date.today().isoformat()
         field_evidence = field_evidence or {}
-        obs = list(dict.fromkeys(observations))
         types = dict(self._con.execute("SELECT id, type FROM nodes WHERE status='active'").fetchall())
-        known = [o for o in obs if types.get(o) in ("Symptom", "Measurement")]
-        unknown = [o for o in obs if o not in known]
 
         def current(row: sqlite3.Row) -> bool:
             return (row["superseded_by"] is None
@@ -137,6 +177,20 @@ class Graph:
 
         def ref(row: sqlite3.Row) -> dict:
             return {"record_id": row["record_id"], "claim_id": row["claim_id"], "review": row["review"]}
+
+        via_code: dict[str, list[str]] = {}
+        obs: list[str] = []
+        for o in dict.fromkeys(observations):
+            if types.get(o) == "FaultCode":
+                reported = [r["target"] for r in claims("reports")
+                            if r["record_id"] == o and REVIEW_RANK[r["review"]] >= floor]
+                via_code[o] = list(dict.fromkeys(reported))
+                obs += via_code[o]
+            else:
+                obs.append(o)
+        obs = list(dict.fromkeys(obs))
+        known = [o for o in obs if types.get(o) in ("Symptom", "Measurement")]
+        unknown = [o for o in obs if o not in known]
 
         observed_as: dict[str, list[tuple[str, dict]]] = {}
         for row in claims("observed_as"):
@@ -182,7 +236,7 @@ class Graph:
                 discriminators.append(edge)
         return {"candidates": top, "total_candidates": len(candidates),
                 "truncated": len(candidates) > k, "discriminators": discriminators,
-                "disputed_matches": disputed_matches, "unknown_observations": unknown,
+                "disputed_matches": disputed_matches, "unknown_observations": unknown, "via_code": via_code,
                 "as_of": as_of, "kb_version": self.kb_version}
 
     def _name(self, record_id: str) -> str:

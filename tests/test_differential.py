@@ -43,3 +43,25 @@ def test_differential_with_no_matches_or_no_input(mini_graph):
     assert mini_graph.differential(["nonsense"])["unknown_observations"] == ["nonsense"]
     with pytest.raises(ValueError):
         mini_graph.differential(["symptom:uniform-power-loss"], k=0)
+
+
+# --- Plan 4d: fault-code observations expand through `reports` ---------------------------------------------------
+def test_differential_expands_a_fault_code_through_reports_only(mini_graph):
+    result = mini_graph.differential(["fc:chint-sca-50-60ktl-isolationerr"])
+    assert result["via_code"] == {"fc:chint-sca-50-60ktl-isolationerr": ["symptom:low-insulation-resistance"]}
+    # `indicates fm:insulation-loss` is not scored: both failure modes present the symptom and tie
+    assert [(c["id"], c["score"]) for c in result["candidates"]] == [("fm:insulation-loss", 1), ("fm:leakage-current", 1)]
+    assert result["candidates"][0]["matched"] == ["symptom:low-insulation-resistance"]
+    assert result["unknown_observations"] == []
+    assert {(d["source"], d["target"]) for d in result["discriminators"]} == {("fm:insulation-loss", "fm:leakage-current")}
+    assert result["discriminators"][0]["by"] == "method:insulation-resistance-test"
+
+
+def test_differential_fault_code_review_floor_and_a_code_without_reports(mini_graph):
+    # the 36KTL record's `reports` claim is only drafted
+    verified = mini_graph.differential(["fc:chint-sca-36ktl-isolationerr"], min_review="verified")
+    assert verified["via_code"] == {"fc:chint-sca-36ktl-isolationerr": []} and verified["candidates"] == []
+    result = mini_graph.differential(["fc:sma-stp-core1-us-6002-6412", "symptom:uniform-power-loss"])
+    assert result["via_code"] == {"fc:sma-stp-core1-us-6002-6412": []}
+    assert [c["id"] for c in result["candidates"]] == ["fm:pid", "fm:soiling"]
+    assert mini_graph.differential(["symptom:uniform-power-loss"])["via_code"] == {}

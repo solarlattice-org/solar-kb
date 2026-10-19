@@ -36,6 +36,11 @@ def test_build_then_query(tmp_path):
     assert resolved[0]["id"] == "fm:pid"
     diff = runner.invoke(app, ["query", "differential", "symptom:uniform-power-loss", "--db", db])
     assert json.loads(diff.output)["candidates"][0]["id"] == "fm:pid"
+    code = json.loads(runner.invoke(app, ["query", "resolve-code", "event 3501", "--db", db]).output)
+    assert code[0]["id"] == "fc:sma-stp-core1-us-3501" and code[0]["match"] == "exact"
+    ranked = json.loads(runner.invoke(app, ["query", "resolve-code", "IsolationErr", "--db", db,
+                                            "--family", "sca-50-60ktl"]).output)
+    assert ranked[0]["id"] == "fc:chint-sca-50-60ktl-isolationerr"
     missing = runner.invoke(app, ["query", "entity", "fm:nope", "--db", db])
     assert missing.exit_code == 1
 

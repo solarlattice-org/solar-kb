@@ -29,7 +29,7 @@ import yaml
 
 ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 FM = re.compile(r"^fm:[a-z0-9]+(-[a-z0-9]+)*$")
-OBS_ID = re.compile(r"^(symptom|meas):[a-z0-9]+(-[a-z0-9]+)*$")
+OBS_ID = re.compile(r"^(symptom|meas|fc):[a-z0-9]+(-[a-z0-9]+)*$")  # fc: expands through `reports` (Plan 4d)
 CITE = re.compile(r"^src:[a-z0-9]+(-[a-z0-9]+)*#\S+$")
 HASH = re.compile(r"^[0-9a-f]{12}$")
 _CASE_KEYS = {"id", "observations", "expected", "acceptable", "source", "notes"}
@@ -82,7 +82,7 @@ def load_cases(path: Path) -> list[Case]:
                     or set(o) - {"text", "id"}:
                 raise CaseError(f"{cid}: each observation needs 'text' (and optionally 'id')")
             if "id" in o and not (isinstance(o["id"], str) and OBS_ID.match(o["id"])):
-                raise CaseError(f"{cid}: observation id must be symptom:<slug> or meas:<slug>")
+                raise CaseError(f"{cid}: observation id must be symptom:<slug>, meas:<slug> or fc:<slug>")
             observations.append(Observation(o["text"].strip(), o.get("id")))
         expected, acceptable = raw.get("expected"), raw.get("acceptable") or []
         if not isinstance(expected, str) or not FM.match(expected):
