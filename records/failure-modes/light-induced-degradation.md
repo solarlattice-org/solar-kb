@@ -345,7 +345,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
   review_note: 'reviewer 2026-10-17: the compiler-flagged conflict is a different technology (amorphous
     vs crystalline silicon), not disagreement'
 - claim_id: c26
