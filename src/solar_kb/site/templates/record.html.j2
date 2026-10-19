@@ -26,6 +26,18 @@
 {{ view.prose|safe }}
 </section>
 {% endif %}
+{% if view.signals %}
+<h2>Signals</h2>
+<p class="help">Monitoring channels where this signature appears, named by SunSpec model point.</p>
+<table class="signals">
+<thead><tr><th>Point</th><th>Unit</th><th>Pattern</th></tr></thead>
+<tbody>
+{% for point, unit, unit_iri, pattern in view.signals %}
+<tr><td><code>{{ point }}</code></td><td>{% if unit_iri %}<a href="{{ unit_iri }}">{{ unit }}</a>{% else %}{{ unit }}{% endif %}</td><td>{{ pattern }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
 {% if view.manifest %}
 <h2>Source</h2>
 <dl class="meta">
