@@ -89,9 +89,12 @@ def collisions(paths: Iterable[str]) -> list[tuple[str, ...]]:
     return sorted(clashes)
 
 
+_FORMER_ID = re.compile(r"^(fm|stressor|symptom|meas|method|mit|comp):[a-z0-9]+(-[a-z0-9]+)*$")
+
+
 def alias_ids(rid: str, aliases: Iterable[object]) -> list[str]:
-    """Aliases that are former ids of this record (same prefix, valid slug). Each gets a redirect stub
-    (spec rule 4.5.7). Free-text aliases such as 'PID' are names, not ids, and get nothing."""
-    prefix = rid.partition(":")[0]
-    pattern = re.compile(rf"^{re.escape(prefix)}:[a-z0-9]+(-[a-z0-9]+)*$")
-    return sorted({a for a in aliases if isinstance(a, str) and pattern.match(a) and a != rid})
+    """Aliases that are former ids of this record (a record-type prefix and a valid slug). Each gets a redirect
+    stub (spec rule 4.5.7). The prefix may differ from the record's own: a stub merged into a record of another
+    type (a "stressor" that was really a failure mode) keeps its old address. Free-text aliases such as 'PID' are
+    names, not ids, and get nothing."""
+    return sorted({a for a in aliases if isinstance(a, str) and _FORMER_ID.match(a) and a != rid})

@@ -1,6 +1,6 @@
 ---
 id: symptom:substring-loss
 type: Symptom
-name: Substring loss
+name: Bypassed substring
 status: proposed
 ---

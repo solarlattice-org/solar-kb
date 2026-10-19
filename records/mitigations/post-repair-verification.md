@@ -1,6 +1,6 @@
 ---
 id: mit:post-repair-verification
 type: Mitigation
-name: Post-repair string verification
+name: Post-repair verification
 status: proposed
 ---

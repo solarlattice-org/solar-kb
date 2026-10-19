@@ -1,6 +1,6 @@
 ---
 id: mit:glass-resealing
 type: Mitigation
-name: Crack resealing
+name: Glass crack resealing
 status: proposed
 ---

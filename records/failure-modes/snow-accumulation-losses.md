@@ -175,7 +175,7 @@ claims:
   verified_at: *id001
 - claim_id: c15
   rel: mitigated_by
-  target: mit:seasonal-residual-tracking
+  target: mit:loss-factor-separation
   note: Track winter residuals separately from generic soiling so snow losses are not hidden in monthly
     weather variance.
   cite:
@@ -191,6 +191,7 @@ claims:
   review: verified
   verified_by: joshuahamsa
   verified_at: *id001
+  review_note: 'reviewer 2026-10-19: target mit:seasonal-residual-tracking merged into mit:loss-factor-separation'
 - claim_id: c16
   rel: mitigated_by
   target: mit:tilt-optimization

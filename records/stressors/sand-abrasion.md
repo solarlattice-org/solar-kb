@@ -1,6 +1,6 @@
 ---
 id: stressor:sand-abrasion
 type: Stressor
-name: Sandstorm abrasion
+name: Sand abrasion
 status: proposed
 ---

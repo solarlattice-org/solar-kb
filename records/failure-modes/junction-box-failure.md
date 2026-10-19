@@ -2,6 +2,8 @@
 id: fm:junction-box-failure
 type: FailureMode
 name: Junction Box Failure
+aliases:
+- stressor:junction-box-corrosion
 category: Modules
 claims:
 - claim_id: c1

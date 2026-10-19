@@ -142,7 +142,7 @@ claims:
   verified_at: *id001
 - claim_id: c13
   rel: mitigated_by
-  target: mit:separate-curtailment-tracking
+  target: mit:loss-factor-separation
   note: Book curtailment apart from equipment losses.
   cite:
   - src: src:pv-root-cause-grid-curtailment-losses
@@ -152,6 +152,7 @@ claims:
     loc: sec=front
     h: 874f05be8763
   review: drafted
+  review_note: 'reviewer 2026-10-19: target mit:separate-curtailment-tracking merged into mit:loss-factor-separation'
 - claim_id: c14
   rel: mitigated_by
   target: mit:available-power-estimation
