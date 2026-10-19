@@ -19,7 +19,8 @@ def test_record_type_and_term_paths():
     assert term_path(KB + "schema") == "kb/schema.html"
     with pytest.raises(ValueError):
         term_path(KB + "fm/pid")
-    assert [p for _, p, _ in PUBLIC_TYPES] == ["fm", "stressor", "symptom", "meas", "method", "mit", "comp", "src"]
+    assert [p for _, p, _ in PUBLIC_TYPES] == ["fm", "stressor", "symptom", "meas", "method", "mit", "comp", "fc", "ec",
+                                               "src"]
 
 
 def test_iri_to_path_mirrors_pages():

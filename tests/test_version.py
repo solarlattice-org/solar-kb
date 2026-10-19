@@ -2,4 +2,4 @@ import solar_kb
 
 
 def test_version():
-    assert solar_kb.__version__ == "0.3.0"
+    assert solar_kb.__version__ == "0.4.0"
