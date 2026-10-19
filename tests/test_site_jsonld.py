@@ -27,3 +27,13 @@ def test_record_document_references_the_published_context():
 def test_script_json_cannot_close_the_script_tag():
     out = script_json({"body": "</script><script>alert(1)</script>"})
     assert "</script" not in out and json.loads(out)["body"] == "</script><script>alert(1)</script>"
+
+
+def test_fault_code_document_links_the_defining_source_and_the_concepts():
+    record = load_corpus(FIXTURES / "mini").records["fc:chint-sca-50-60ktl-isolationerr"]
+    doc = record_document(record, load_prefixes(SCHEMA), context=jsonld_context(SCHEMA))
+    g = rdflib.Graph().parse(data=json.dumps(doc), format="json-ld")
+    assert (URIRef(KB + "fc/chint-sca-50-60ktl-isolationerr"), RDF.type, URIRef(KB + "FaultCode")) in g
+    targets = set(g.objects(None, URIRef(KB + "target")))
+    assert {URIRef(KB + "src/chint-fault-manual"), URIRef(KB + "ec/fault"), URIRef(KB + "symptom/low-insulation-resistance")} <= targets
+    assert doc["code_key"] == "isolationerr" and doc["page"] == 6

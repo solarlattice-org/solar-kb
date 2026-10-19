@@ -1,0 +1,28 @@
+{% extends "base.html.j2" %}
+{% block head %}
+<script src="{{ lookup_href }}" defer></script>
+{% endblock %}
+{% block main %}
+<p class="kind"><a href="{{ term_href }}">{{ type }}</a></p>
+<h1>{{ label }}</h1>
+{% if description %}
+<p>{{ description }}</p>
+{% endif %}
+<form class="fc-lookup" data-fc-lookup data-codes="{{ codes_href }}" hidden>
+<label>Find a code <input type="search" name="code" placeholder="3701, CRIT-7, Protect0090, event 3501" autocomplete="off"></label>
+<ul class="fc-results" aria-live="polite"></ul>
+</form>
+{% if makes %}
+<table class="codes">
+<thead><tr><th>Make</th><th>Codes</th><th>Families</th></tr></thead>
+<tbody>
+{% for m in makes %}
+<tr><td><a href="{{ m.href }}">{{ m.name }}</a></td><td>{{ m.count }}</td><td>{% for f in m.families %}<a href="{{ f.href }}">{{ f.name }}</a> ({{ f.count }}){% if not loop.last %} · {% endif %}{% endfor %}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+<p class="help">Each code is one record per make, model family and code: what it reports, whether production stops or is reduced, what clears it, and the manual row that defines it. The manufacturer's own cause and corrective text is never reproduced.</p>
+{% else %}
+<p class="empty">No {{ label|lower }} yet.</p>
+{% endif %}
+{% endblock %}

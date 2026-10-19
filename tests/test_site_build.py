@@ -168,3 +168,17 @@ def test_cli_site_does_not_disguise_an_internal_import_error(tmp_path, monkeypat
     result = runner.invoke(app, ["site", "--root", str(root), "--out", str(tmp_path / "_site")])
     assert isinstance(result.exception, ModuleNotFoundError) and result.exception.name == "solar_kb.site.build"
     assert "pip install" not in result.output
+
+
+def test_site_has_fault_code_pages_the_lookup_script_and_codes_json(tmp_path):
+    site = tmp_path / "site"
+    written = build_site(load_corpus(FIXTURES / "mini"), SCHEMA, site)
+    for path in ("kb/fc/index.html", "kb/fc/chint.html", "kb/fc/sma.html", "kb/fc/codes.json", "static/fc-lookup.js",
+                 "kb/ec/index.html", "kb/ec/trip.html", "kb/fc/chint-sca-50-60ktl-isolationerr.jsonld"):
+        assert (site / path).is_file() and path in written, path
+    assert broken_links(site) == []
+    for iri in (KB + "fc/", KB + "fc/chint-sca-50-60ktl-isolationerr#c3", KB + "ec/fault", KB + "EventAxis#recovery"):
+        path, fragment = iri_to_path(iri)
+        assert (site / path).is_file(), iri
+        if fragment:
+            assert f'id="{fragment}"' in (site / path).read_text(), iri

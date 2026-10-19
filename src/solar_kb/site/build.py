@@ -9,7 +9,7 @@ from solar_kb.export import export_all
 from solar_kb.iri import load_prefixes
 from solar_kb.records import Corpus
 from solar_kb.site.linkcheck import broken_links
-from solar_kb.site.pages import render_index_pages, render_record_pages, render_term_pages
+from solar_kb.site.pages import render_fault_code_indexes, render_index_pages, render_record_pages, render_term_pages
 from solar_kb.site.paths import collisions
 from solar_kb.site.render import Renderer
 from solar_kb.site.terms import load_ontology
@@ -17,6 +17,7 @@ from solar_kb.site.terms import load_ontology
 DOMAIN = "solarlattice.org"
 # Marks a directory as a site build, so `solar-kb site --out` may replace it. Hidden: Pages never publishes it.
 SENTINEL = ".solar-kb-site"
+TEXT_ASSETS = ("style.css", "fc-lookup.js", "solar-lattice-mark.svg", "solar-lattice-share.svg")
 
 
 class SiteError(RuntimeError):
@@ -41,9 +42,10 @@ def build_site(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[str]:
         render_index_pages(r, corpus, terms)
         render_term_pages(r, corpus, terms, ontology.iri, ontology.description)
         render_record_pages(r, corpus, load_prefixes(schema_path))
+        render_fault_code_indexes(r, corpus)
     except ValueError as exc:  # e.g. a wikilink to a missing record in a corpus that skipped validation
         raise SiteError(str(exc)) from exc
-    for asset in ("style.css", "solar-lattice-mark.svg", "solar-lattice-share.svg"):
+    for asset in TEXT_ASSETS:
         r.write(f"static/{asset}", files("solar_kb.site").joinpath("static", asset).read_text(encoding="utf-8"))
     share_png = Path(str(files("solar_kb.site").joinpath("static", "solar-lattice-share.png")))
     target_png = out_dir / "static/solar-lattice-share.png"

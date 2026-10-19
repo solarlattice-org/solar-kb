@@ -103,3 +103,18 @@ th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--
   footer.site { flex-direction: column; margin-top: 4rem; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+/* fault codes (Plan 4d) */
+.crumbs a { color: var(--muted); text-decoration: none; }.crumbs a:hover { color: var(--moss); }
+.axis-card { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; margin: 1.5rem 0; padding: 1rem 1.25rem; border: 1px solid var(--rule); border-radius: 2px; background: var(--white); }
+.axis { display: flex; flex-direction: column; gap: .15rem; min-width: 9rem; }
+.axis .label { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+.axis a { font-family: Georgia, serif; font-size: 1.25rem; }
+.muted { color: var(--muted); }
+.decoded { font-size: 1.1rem; line-height: 1.6; }
+table.codes td:first-child { white-space: nowrap; }
+.fc-lookup { margin: 1.25rem 0; }
+.fc-lookup label { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; color: var(--muted); font-size: .9rem; }
+.fc-lookup input { flex: 1 1 16rem; max-width: 28rem; padding: .45rem .7rem; border: 1px solid var(--rule); border-radius: 2px; background: var(--white); color: var(--ink); font: inherit; }
+.fc-lookup input:focus { outline: 2px solid var(--sun); outline-offset: 1px; }
+.fc-results { margin: .5rem 0 0; padding-left: 1.25rem; }
+.defined-in > li { margin-bottom: .5rem; }
