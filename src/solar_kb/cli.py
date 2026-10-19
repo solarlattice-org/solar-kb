@@ -197,3 +197,7 @@ def eval_differential(cases: Path = typer.Option(Path("eval/public/differential.
     if details:
         out["results"] = [asdict(r) for r in report.results]
     _print(out)
+
+
+if __name__ == "__main__":  # `python -m solar_kb.cli ...` behaves like the `solar-kb` console script
+    app()
