@@ -1,6 +1,6 @@
 ---
 id: mit:cable-protection
 type: Mitigation
-name: Exposed cable protection
+name: Cable protection
 status: proposed
 ---

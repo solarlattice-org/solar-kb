@@ -48,8 +48,10 @@ def test_collisions():
     assert collisions(["kb/fm/pid.html", "kb/fm/pid.html"]) == [("kb/fm/pid.html", "kb/fm/pid.html")]
 
 
-def test_alias_ids_takes_only_former_ids_of_the_same_type():
-    assert alias_ids("fm:pid", ["PID", "PID-s", "fm:old-pid", "stressor:pid", "fm:pid", "fm:Bad"]) == ["fm:old-pid"]
+def test_alias_ids_takes_former_ids_of_any_record_type():
+    # a cross-type merge (2026-10-19: stressor:junction-box-corrosion into fm:junction-box-failure) keeps its old address
+    assert alias_ids("fm:pid", ["PID", "PID-s", "fm:old-pid", "stressor:pid", "fm:pid", "fm:Bad", "src:x", "nope:x"]) == [
+        "fm:old-pid", "stressor:pid"]
 
 
 def test_term_pages_cover_exactly_the_owl_kb_iris(tmp_path):

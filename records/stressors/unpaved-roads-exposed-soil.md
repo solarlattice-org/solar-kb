@@ -1,6 +1,6 @@
 ---
 id: stressor:unpaved-roads-exposed-soil
 type: Stressor
-name: Roads and exposed soil
+name: Unpaved roads and exposed soil
 status: proposed
 ---

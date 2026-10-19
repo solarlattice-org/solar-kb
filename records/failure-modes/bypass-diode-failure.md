@@ -163,7 +163,7 @@ claims:
   review: drafted
 - claim_id: c12
   rel: caused_by
-  target: stressor:junction-box-corrosion
+  target: fm:junction-box-failure
   cite:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h5
@@ -171,9 +171,10 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h6
     h: bfcbbd1f5824
-  review: verified
-  verified_by: joshuahamsa
-  verified_at: 2026-10-16
+  review: drafted
+  note: Corrosion inside the junction box can weaken the diode.
+  review_note: 'reviewer 2026-10-19: target stressor:junction-box-corrosion merged into fm:junction-box-failure;
+    re-verify against the cited passages'
 - claim_id: c13
   rel: caused_by
   target: stressor:component-aging
