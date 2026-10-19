@@ -159,3 +159,147 @@ def test_public_body_link_into_overlay(tmp_path):
     write_record(root, "failure-modes", "probe", "id: fm:probe\ntype: FailureMode\nname: P",
                  "Seen in [[cases/wo-1001]].")
     assert ("layers", "fm:probe", None) in hits(root, overlay)
+
+
+# --- Plan 4d: FaultCode and EventConcept rules (schema 0.4.0) -------------------------------------------------------
+FC_SLUG = "chint-sca-50-60ktl-probe90"
+FC_FRONT = """id: fc:chint-sca-50-60ktl-probe90
+type: FaultCode
+name: CPS SCA50-60KTL Probe0090
+category: Inverters
+make: chint
+make_name: CPS
+model_family: sca-50-60ktl
+family_name: CPS SCA50/60KTL-DO/US-480
+code: Probe0090
+code_key: probe90
+"""
+FC_CITE = '    cite: [{src: "src:chint-fault-manual", loc: "tbl=3.r2", h: "1a2b3c4d5e6f"}]\n    review: drafted\n'
+DEFINED_IN = "  - claim_id: c1\n    rel: defined_in\n    target: src:chint-fault-manual\n" + FC_CITE
+DERATE = "  - claim_id: c2\n    rel: has_production_effect\n    target: ec:derate\n" + FC_CITE
+OUTPUT_LIMIT = ("  - claim_id: c3\n    attr: output_limit\n    value: {max: 50, unit: unit:PERCENT}\n"
+                "    conditions: basis=rated_power; while the fan fault persists\n" + FC_CITE)
+RECOVERY = "  - claim_id: c4\n    rel: has_recovery\n    target: ec:manual-reset\n" + FC_CITE
+RECOVERY_2 = "  - claim_id: c5\n    rel: has_recovery\n    target: ec:service-required\n" + FC_CITE
+
+
+def fault_code(root, front=FC_FRONT, claims=DEFINED_IN, body="", slug=FC_SLUG):
+    write_record(root, "fault-codes", slug, front + "claims:\n" + claims, body)
+
+
+def fc_rules(root, rid="fc:" + FC_SLUG):
+    return {r for r, x, _ in hits(root) if x == rid}
+
+
+def test_fixture_fault_codes_pass_and_a_minimal_record_is_clean(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, body="<!-- review notes: nothing to add -->\n")
+    assert fc_rules(root) == set()
+
+
+@pytest.mark.parametrize("front, message", [
+    (FC_FRONT.replace("code_key: probe90", "code_key: probe0090"), "code_key must be 'probe90'"),
+    (FC_FRONT.replace("make_name: CPS\n", ""), "missing required slot(s): make_name"),
+    (FC_FRONT + "display_message: one two three four five six seven eight nine\n", "display_message exceeds 8"),
+])
+def test_fault_code_slot_clauses(tmp_path, front, message):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, front=front)
+    found = [v for v in run_rules(load_corpus(root)) if v.record_id == "fc:" + FC_SLUG and v.rule == "fault-code"]
+    assert found and any(message in v.message for v in found)
+
+
+def test_fault_code_id_is_recomputed_from_the_slots(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    front = FC_FRONT.replace("id: fc:chint-sca-50-60ktl-probe90", "id: fc:chint-sca-36ktl-probe90")
+    fault_code(root, front=front, slug="chint-sca-36ktl-probe90")  # a wrong family in the id
+    found = [v.message for v in run_rules(load_corpus(root)) if v.record_id == "fc:chint-sca-36ktl-probe90"]
+    assert any("id must be fc:chint-sca-50-60ktl-probe90" in m for m in found)
+
+
+def test_fault_code_vendor_severity_and_display_message_word_caps(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, front=FC_FRONT + "vendor_severity: one two three four\n"
+                                      "display_message: one two three four five six seven eight\n")
+    found = [v.message for v in run_rules(load_corpus(root)) if v.record_id == "fc:" + FC_SLUG]
+    assert any("vendor_severity" in m for m in found) and not any("display_message" in m for m in found)
+
+
+@pytest.mark.parametrize("body, bad", [("Some drafted prose.\n", True), ("<!-- review notes -->\n\n", False), ("", False)])
+def test_fault_code_body_is_empty_apart_from_html_comments(tmp_path, body, bad):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, body=body)
+    assert ("fault-code" in fc_rules(root)) is bad
+
+
+@pytest.mark.parametrize("claims, rules", [
+    (DEFINED_IN.replace("review: drafted", "quote: never on a code\n    review: drafted"), {"fault-code"}),
+    (DEFINED_IN.replace("review: drafted", "note: " + " ".join(["w"] * 26) + "\n    review: drafted"), {"fault-code"}),
+    (DEFINED_IN.replace("review: drafted", "conditions: " + " ".join(["w"] * 26) + "\n    review: drafted"),
+     {"fault-code"}),
+    (RECOVERY, {"fault-code"}),                                                   # no defined_in at all
+    (DEFINED_IN.replace("tbl=3.r2", "p=12"), {"fault-code"}),                      # defined_in cites a page
+    (DEFINED_IN.replace("tbl=3.r2", "sec=4.3"), {"fault-code"}),                   # or a numbered section
+    (DEFINED_IN.replace("tbl=3.r2", "sec=h7"), set()),                             # a heading unit is fine
+    (DEFINED_IN.replace("tbl=3.r2", "tbl=3"), set()),                              # so is a whole table (promoted row)
+    (DEFINED_IN + OUTPUT_LIMIT, {"fault-code"}),                                   # output_limit without ec:derate
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power; ", ""), {"fault-code"}),  # no basis=
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power", "basis=curve"), {"fault-code"}),
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT, set()),
+    (DEFINED_IN + OUTPUT_LIMIT.replace("attr: output_limit", "attr: typical_power_loss"), {"fault-code"}),
+    (DEFINED_IN + RECOVERY + RECOVERY_2, {"fault-code"}),                          # two claims on one axis
+    (DEFINED_IN + RECOVERY + RECOVERY_2.replace("review: drafted", "conflicts_with: ['fc:chint-sca-50-60ktl-probe90#c4']\n    review: disputed"), set()),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: has_recovery\n    target: ec:fault\n" + FC_CITE, {"event-axes"}),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: has_event_class\n    target: ec:trip\n" + FC_CITE, {"event-axes"}),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: has_production_effect\n    target: ec:auto-reset\n" + FC_CITE,
+     {"event-axes"}),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: affects\n    target: comp:dc-cable\n" + FC_CITE, set()),  # widened
+    (DEFINED_IN + "  - claim_id: c2\n    rel: mitigated_by\n    target: mit:pid-recovery\n" + FC_CITE, set()),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: detected_by\n    target: method:el-imaging\n" + FC_CITE, set()),
+    (DEFINED_IN + "  - claim_id: c2\n    rel: presents_as\n    target: symptom:ground-fault\n" + FC_CITE, {"targets"}),
+])
+def test_fault_code_claim_clauses(tmp_path, claims, rules):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, claims=claims)
+    assert fc_rules(root) == rules
+
+
+@pytest.mark.parametrize("extra, bad", [
+    ("code_from: 10\n", True),                                   # from without to
+    ("code_from: 20\ncode_to: 10\n", True),                      # from >= to
+    ("code_from: 10\ncode_to: 20\n", True),                      # Probe0090 is not a printed range
+])
+def test_fault_code_range_bounds_on_a_single_code(tmp_path, extra, bad):
+    root = copy_fixture(tmp_path, "mini")
+    fault_code(root, front=FC_FRONT + extra)
+    assert ("fault-code" in fc_rules(root)) is bad
+
+
+@pytest.mark.parametrize("bounds, bad", [("code_from: 10\ncode_to: 20\n", False), ("code_from: 10\ncode_to: 21\n", True),
+                                         ("", False)])
+def test_fault_code_range_record(tmp_path, bounds, bad):
+    root = copy_fixture(tmp_path, "mini")
+    front = (FC_FRONT.replace("probe90", "probe10-20").replace("code: Probe0090", "code: Probe0010-0020")
+             .replace("name: CPS SCA50-60KTL Probe0090", "name: CPS SCA50-60KTL Probe0010-0020") + bounds)
+    fault_code(root, front=front, slug="chint-sca-50-60ktl-probe10-20")
+    assert ("fault-code" in fc_rules(root, "fc:chint-sca-50-60ktl-probe10-20")) is bad
+
+
+def test_reports_from_a_failure_mode_and_event_concept_with_claims(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    claim_record(root, "  - claim_id: c1\n    rel: reports\n    target: symptom:uniform-power-loss\n" + CITE)
+    write_record(root, "event-concepts", "probe", "id: ec:probe\ntype: EventConcept\nname: Probe\naxis: recovery\n"
+                 "claims:\n  - claim_id: c1\n    rel: has_recovery\n    target: ec:manual-reset\n" + CITE)
+    found = hits(root)
+    assert ("targets", "fm:probe", "c1") in found
+    assert ("event-axes", "ec:probe", None) in found
+
+
+def test_fault_code_rules_survive_garbage_shapes(tmp_path):
+    root = copy_fixture(tmp_path, "mini")
+    write_record(root, "fault-codes", "garbage", "id: fc:garbage\ntype: FaultCode\nname: G\nmake: [1]\ncode: 5\n"
+                 "code_key: {a: 1}\ncode_from: x\ncode_to: 3\ndisplay_message: 7\nclaims:\n  - claim_id: c1\n"
+                 "    rel: defined_in\n    cite: [{loc: 3}, nope]\n    note: [1]\n  - attr: output_limit\n"
+                 "    conditions: 5\n    cite: nope\n")
+    write_record(root, "event-concepts", "garbage", "id: ec:garbage\ntype: EventConcept\nname: G\naxis: 3\nclaims: 5")
+    run_rules(load_corpus(root))  # must not raise
