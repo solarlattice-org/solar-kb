@@ -26,6 +26,10 @@ def test_record_page_claims_badges_and_citations(tmp_path):
     assert "10–30" in page and '<a href="http://qudt.org/vocab/unit/PERCENT">PERCENT</a>' in page
     assert "told apart by" in page and "verified by: reviewer" in page
     assert "<dt>Category</dt><dd>Modules</dd>" in page  # the category slot (2026-10-17)
+    meas = (tmp_path / "kb/meas/iv-curve-step.html").read_text()  # Measurement signals (2026-10-19)
+    assert "<h2>Signals</h2>" in meas and "<code>model_160.DCA</code>" in meas
+    assert '<a href="http://qudt.org/vocab/unit/A">A</a>' in meas and "one third" in meas
+    assert "<h2>Signals</h2>" not in page
     assert "<dt>Category</dt>" not in (tmp_path / "kb/method/el-imaging.html").read_text()  # absent when unset
     assert '<link rel="canonical" href="https://solarlattice.org/kb/fm/pid">' in page
     assert '<link rel="alternate" type="application/ld+json" href="pid.jsonld">' in page
