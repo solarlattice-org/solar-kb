@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h4
     h: 65b80c7f6952
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
   review_note: 'support check: partial - Passages support aligning stow commands with production/irradiance
     and separating from clipping etc., but the specific signals (model_103.W, model_302.POAI, model_307.WndSpd,
     gusts at or above threshold) are only loosely supported.'
@@ -41,7 +43,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h5
     h: 206561d63ce8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Command logs/angle surveys/normalized output showing alignment
     with motor block boundaries and strongest losses at low sun are stated, but the specific string-current
     signal during morning/afternoon backtracking windows is not explicitly stated.'

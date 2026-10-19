@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.1.2
     h: 567ebeacf6c2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-19
 ---
 Visual inspection means looking over PV modules and other parts by eye to find defects. It is described as the quickest and most effective way to find module failures. In laboratory testing under IEC 61215 and 61646, modules are inspected before and after stress tests, under more than 1000 lux of light, and only defects visible to the bare eye count. Record every visible defect with its position and size. Take photos without reflections and describe defects in clear, standard terms. In the field, a harmonised checklist is used so that inspection data stay uniform and can be compared between sites. The lab method itself does not suit weathered modules well. It finds burn marks from hot spots, delamination, yellowed encapsulant, blistered backsheets, junction box failures and cracked cells. It also finds discoloured or burned cable connections and fuses in combiner boxes, and defective DC connectors and cables. It helps confirm bypass diode failure, cable and connector defects, and cell interconnection failure. For fungal soiling, a close look or a handheld microscope confirms biofilms; check several parts of the array, because the deposits can be patchy. Its limit is that many performance changes leave no visible trace and need more advanced tools. It is usually paired with infrared thermography, insulation-resistance testing or electroluminescence. Inspect connectors only after the circuit has been safely isolated. Treat burned or overheated parts as a fire and arcing hazard.
 

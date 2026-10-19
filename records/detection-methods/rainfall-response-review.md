@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-07-2017
     loc: sec=2.4.5
     h: e62247f13b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
 - claim_id: c2
   rel: produces
   target: meas:no-recovery-after-rain
@@ -32,7 +34,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=front
     h: c791ea65d1df
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -48,7 +52,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=front
     h: c791ea65d1df
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Rainfall response review compares rain records with normalized production to see if a soiling loss clears when it rains. Line up rainfall, cleaning logs, SCADA output and irradiance-normalized or weather-normalized production over dry spells and the rain events that end them. Granular dust soiling shows up as a slow drop in normalized output during dry periods, followed by partial or full recovery after heavy rain or washing. Widespread fungal soiling shows up as a lasting deficit that rain does not fix but manual cleaning does, so this review helps tell biological soiling apart from ordinary dust. Before blaming soiling, rule out availability losses, clipping, curtailment and irradiance sensor problems, and do not rely on a single dirty irradiance sensor. Check the result against soiling station data and reference blocks, and confirm biofilms with close visual inspection or handheld microscopy at several array areas, because the deposits can be patchy.
 

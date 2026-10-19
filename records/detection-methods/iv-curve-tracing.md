@@ -18,7 +18,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h8
     h: 9f1fbad653f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
 - claim_id: c2
   rel: produces
   target: meas:iv-curve-step
@@ -28,7 +30,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h8
     h: 9f1fbad653f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: produces
   target: meas:low-voc
@@ -44,7 +48,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: produces
   target: meas:fill-factor-reduction
@@ -57,7 +63,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: tbl=8.r3
     h: 7631a4db55e2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: produces
   target: meas:pmax-below-rated
@@ -69,7 +77,9 @@ claims:
   - src: src:iea-pvps-t13-07-2017
     loc: sec=5.3.2
     h: 5cd9bad228fd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Comparison with nameplate rating is stated, and a modeled (GPR)
     expected curve is used in another passage, but it is not framed as the same Pmax comparison.'
 - claim_id: c6
@@ -81,7 +91,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   attr: typical_power_loss
   value:
@@ -93,7 +105,9 @@ claims:
   - src: src:iea-pvps-t13-07-2017
     loc: sec=5.3.2
     h: 5cd9bad228fd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The 38 W loss for string 2 found via GPR comparison is stated,
     but ''typical'' is not supported since it is a single instance.'
 ---

@@ -25,7 +25,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
   review_note: 'support check: partial - Hot spots as bi-/multi-modal histograms and severe defects (>15
     °C) correlating with reduced string current are stated, but ''much warmer than surrounding normally
     operating cells'' is only loosely supported (multiples of 10 K vs. vicinity).'
@@ -41,7 +43,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Warmer sub-string, bypass diode SC, internal SC, power loss and
     Voc reduction are in u20, but the ''activated diode'' cause is only in u10 generally and the input-voltage
     signal is not stated.'
@@ -56,7 +60,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.3.1.1
     h: 767c056a514a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: produces
   target: meas:ir-cold-area
@@ -65,7 +71,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: produces
   target: meas:ir-hot-connection
@@ -77,7 +85,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=47.r1
     h: c0df59a521bc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Connector defects cause resistance heating and IR inspection
     under load is recommended, but IR image of a hot connection is not explicitly stated for cable interconnections
     beyond combiner-box thermal damage.'
@@ -93,7 +103,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says ΔT >15 °C (above 15) for severe cell defects correlating
     with reduced string current in a plant of over ten thousand modules via aerial IRT; ''drone'' is implied
     by UAV, and strict ''>'' vs ''at least'' is a minor difference.; possible conflict with c7 (same source;
@@ -109,10 +121,11 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: disputed
-  review_note: possible conflict with c6 (same source; check the conditions)
-  conflicts_with:
-  - method:ir-thermography#c8
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c6 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or technology, not disagreement'
 - claim_id: c8
   attr: temperature_rise
   value:
@@ -127,9 +140,10 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.3.1
     h: 4a9513426868
-  review: disputed
-  conflicts_with:
-  - method:ir-thermography#c7
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 Infrared thermography is a non-destructive, contactless imaging method. It maps temperature differences across PV modules and can be used on single modules or to scan large plants while they operate. For outdoor work, measure on a sunny, cloudless day with at least 700 W/m2 on the array, ideally with low ambient temperature and low wind. The modules must be in steady state. Keep the viewing angle close to 90 degrees and never below 60 degrees to the glass. Set the correct ambient temperature and emissivity in the camera, and watch for reflections from buildings, clouds or yourself. Comparing images taken at short circuit, open circuit and maximum power point helps tell defects apart. Drone-mounted cameras allow fast surveys of large plants. The method reveals hot spots, hot cells and warm substrings. It can point to bypass diode failure, cell cracks, cell interconnection failure, glass breakage, and overheated connectors, cables or combiner box parts. Not every failure raises temperature, so thermography misses some defects. An open-circuit bypass diode, for example, is hard to see unless the module is strongly mismatched. Combining thermography with electroluminescence imaging finds the most defects. Illuminated thermography works best for crystalline modules, while dark thermography suits thin-film modules. In dark thermography of thin-film modules, keep the injected current below 30 percent above Isc to avoid thermal damage. Inspect connectors with infrared while they are under load, but do visual and tactile checks only after safe isolation.
 

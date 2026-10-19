@@ -27,7 +27,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h5
     h: 38a22f4e3727
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
 - claim_id: c2
   rel: produces
   target: meas:row-shadow-line-offset
@@ -37,7 +39,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: produces
   target: meas:motor-block-aligned-loss
@@ -47,7 +51,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h6
     h: c071b96206e3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A tracker row angle survey measures the real tilt of single-axis tracker rows and compares it with the angle the controller commanded. Take angle measurements with an inclinometer at the drive end, the center and the free end while the row is held at several fixed commanded positions. Before going to the field, compare row-end shadow lines in drone imagery against neighbouring rows to find suspect rows, and check SCADA angle telemetry. Treat it as tracker twist when sections of the same row disagree beyond the site tolerance under the same command. Grade changes from normal terrain-following design are not a defect on their own. On undulating terrain, row-end angle surveys help show whether losses follow grade breaks or motor block boundaries rather than an equipment fault. Controller offsets, failed calibration, bent torque tubes, foundation settlement and loose clamps can produce similar losses, so verify the mechanical geometry before blaming the controls. After a repair, repeat the angle survey and compare normalized power against unaffected rows under stable irradiance.
 

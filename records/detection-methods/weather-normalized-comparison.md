@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=front
     h: c791ea65d1df
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
 - claim_id: c2
   rel: produces
   target: meas:snow-production-residual
@@ -36,7 +38,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=front
     h: ef48f3c9a102
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: produces
   target: meas:performance-index-below-unity
@@ -49,7 +53,9 @@ claims:
   - src: src:iea-pvps-t13-07-2017
     loc: sec=h29
     h: 6f1b20e5a0bf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages say expected values come from measured weather and an
     agreed model and indices should be near unity, but do not state that falling below 1 is the signal/ratio
     definition explicitly.'

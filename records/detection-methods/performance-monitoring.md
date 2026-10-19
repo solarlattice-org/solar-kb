@@ -14,7 +14,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-19
   review_note: 'support check: partial - Passages support screening for DC voltage near the minimum threshold
     with lower-than-expected output, but not the specific signals (high-temperature periods, normal POAI,
     model IDs).'
@@ -27,7 +29,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage supports comparing operating voltage to IV-derived Vmp
     and power below Pmp indicating voltage floor, but not the module temperature lowering Vmp or specific
     signals.'
@@ -44,7 +48,9 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: produces
   target: meas:performance-ratio-decline
@@ -57,7 +63,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h2
     h: 5d4993c87d37
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages say to compare performance ratio trends, rain and cleaning
     records, and normalized output over dry accumulation periods, but do not describe the gradual fall
     and recovery after rain/cleaning pattern explicitly.'
@@ -70,7 +78,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says monitoring may detect performance loss from short/open-circuit
     junction box failures, but not the string current to zero or voltage step down signals.'
 ---
