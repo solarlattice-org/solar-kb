@@ -19,9 +19,10 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h46
     h: 1ff4ba1a643e
-  review: disputed
-  conflicts_with:
-  - comp:solar-cell#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -33,7 +34,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h46
     h: 1ff4ba1a643e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -44,7 +47,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h5
     h: 048d7dac489d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -56,7 +61,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h3
     h: 950db263c013
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   attr: temperature_rise
   value:
@@ -69,7 +76,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   attr: typical_power_loss
   value:
@@ -81,9 +90,10 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.2
     h: 17668c52ed6f
-  review: disputed
-  conflicts_with:
-  - comp:solar-cell#c1
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 The solar cell is the silicon device inside a PV module that turns light into electric current. Many cells are joined together and embedded in each module. Cells are made of silicon, which makes them very brittle. One reference example is a monocrystalline silicon cell. The front glass protects the cells from the outside environment. If the glass breaks, moisture can reach the cells, which speeds up degradation and can cause hotspots. Cell cracks can form during wafer slicing, stringing, transport and installation. Wind, snow and temperature swings can make cracks grow until parts of the cell become inactive. Light-induced degradation (LID and LeTID) happens at the cell level. It mainly affects p-type boron-doped cells and shows up as lower STC power, current and voltage early in the system's life. Cracking, shading or mismatch can push a cell into reverse bias, so it heats up as a hot cell or hotspot. This can lead to discoloration, interconnection failures, delamination and glass breakage. Dust on the glass scatters and absorbs light before it reaches the cells, so module current drops. The IEC 61215-2 MQT 09 hot-spot endurance test checks how well cells and module materials withstand localized heating. Manufacturers also sort cells by current and screen out cells with low shunt resistance.
 

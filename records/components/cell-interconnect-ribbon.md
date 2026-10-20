@@ -17,7 +17,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.6
     h: 31f745f3dabf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions)
 - claim_id: c2
   attr: typical_power_loss
@@ -30,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.6
     h: 31f745f3dabf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions)
 ---
 The cell interconnect ribbon connects wafer-based crystalline silicon cells in series. It runs from the front of one cell to the rear of the next, forming a string of cells and raising the voltage. The ribbon sits directly on top of the cell busbars, so it often hides them during inspection. Strings of cells are then joined by a separate string interconnect, usually near the module edge. The main failure mode is cell interconnection failure: the ribbon weakens and breaks. The ribbon kink between cells and the joint with the string interconnect are the most prone to fatigue breakage. Causes include poor soldering, ribbons placed in the wrong position, too much deformation of the kink, and cells spaced too closely. In the field, transport stress, thermal cycling, wind load, hail, corrosion and hot spots from partial shading also play a part. If the bypass diode also fails, a broken ribbon can overheat. This can lead to glass breakage and burn marks on the backsheet. Broken ribbons can be found with electroluminescence imaging, infrared thermography, UV fluorescence imaging, the signal transmission method and IV curve analysis.

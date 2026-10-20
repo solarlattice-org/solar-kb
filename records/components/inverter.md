@@ -17,7 +17,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 The IEA failure catalogue treats the inverter as one of the main PV system components, together with modules, cables and connectors, and mounting. Field surveys distinguish central inverters, string inverters and module inverters, each with or without a transformer. Failure modes listed for the inverter are overheating with temperature derating, incorrect installation, and complete failure where the unit stops operating. A complete inverter failure is usually found through monitoring, then confirmed with visual inspection, IV curves or open-circuit voltage checks. Inverter voltage floor losses happen when array Vmp drops below the inverter's minimum DC input voltage. The inverter stays online but cannot hold the array at its maximum power point. This voltage floor problem is most likely in hot weather and can get worse with high reactive power demand. Check DC voltage, AC voltage, reactive power and IV-derived Vmp together. Some inverters include an anti-PID or PID repair function that shifts the array potential relative to ground to suppress or reverse potential induced degradation.
 
