@@ -19,7 +19,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=15.r1
     h: 6e2cec50e730
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:el-intensity-shift
@@ -42,7 +44,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=3.3.1
     h: 1f95caadc75d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Cracks as dark lines and large electrically inactive areas versus
     PID edge darkening are stated, but ''differential pattern'' and its usefulness for telling them apart
     is only implied by the contrast.'

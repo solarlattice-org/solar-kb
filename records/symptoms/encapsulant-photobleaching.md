@@ -45,7 +45,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: tbl=10
     h: f95eb9235f8d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c3
   rel: observed_as
   target: meas:el-crack-pattern

@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:post-cleaning-production-step
@@ -50,7 +52,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - 5-11% persistent losses in North Carolina recovered only by manual
     cleaning are stated, but ''typical'' is not used; they are reported losses.'
 ---

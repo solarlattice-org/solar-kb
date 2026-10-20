@@ -59,7 +59,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: sec=10.3.3
     h: 93b69af74ce8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: observed_as
   target: meas:dc-voltage-outside-mppt-range

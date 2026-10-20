@@ -34,7 +34,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=29.r1
     h: c0df59a521bc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 Melted plastic is seen on DC connectors and cables, often together with burned, brittle, cracked or whitened material. The same signs can show up at combiner box terminals and fuses, and on the junction box housing or lid on the back of the module. Damaged connectors often run hot before they melt, so an IR scan under load can find them early. Melting at a connector or a cable points to a Connector Defect or a Cable Defect, and both can lead to arcing, ground faults and fire. If the melting is on the junction box housing, suspect a junction box defect instead. Check the housing, the lid and the seals. Start with a visual inspection, then take IR images. Open connectors only after the circuit has been safely isolated, and look for corrosion inside. Compare string currents and run an insulation resistance test to check whether the damage has caused an insulation fault or lost production.
 

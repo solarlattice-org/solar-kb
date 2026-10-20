@@ -86,7 +86,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c7
   attr: typical_power_loss
   value:

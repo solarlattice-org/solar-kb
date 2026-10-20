@@ -49,7 +49,9 @@ claims:
   - src: src:tesla-controls-and-comms-manual-ci-v1-3
     loc: tbl=176.r1
     h: 14b129a5c9bc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages show grid overvoltage faults where voltage exceeds the
     set protection value and the inverter reconnects after normalization, but the specific signal behaviors
     (power falling to zero while disconnected, voltage rising before the trip) are not stated.'

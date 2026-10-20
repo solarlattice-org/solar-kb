@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - One warmer cell, causes (shading, defect, delaminated) and the
     monocrystalline homogeneous heating are stated, but the TmpBOM signal pattern is not in the passages
     (not judged), and ''hot cell effect'' is described as associated with mono cells generally.'

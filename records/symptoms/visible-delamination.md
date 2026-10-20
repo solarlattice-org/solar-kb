@@ -32,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h59
     h: 2b796b8e0a00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c3
   rel: observed_as
   target: meas:iv-low-isc

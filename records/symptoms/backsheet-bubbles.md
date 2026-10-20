@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-16-2021
     loc: sec=h57
     h: 6959b882ad79
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passage says profilometry with ML finds outliers that are cracks,
     bubbles or delamination, but doesn''t mention ''ripples'' or the lab/survey-not-monitoring note, and
     bubbles are only one of the outlier types.'

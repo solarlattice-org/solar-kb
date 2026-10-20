@@ -75,6 +75,8 @@ claims:
   - src: src:pv-root-cause-tracker-twist-performance-loss
     loc: sec=h6
     h: 3c47e2464233
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 This symptom is a production loss that comes back each day at the same sun positions. It is usually worst at low sun angles and during backtracking. Shading at a specific site is a typical cause of losses that cut power at fixed times of day. Compare irradiance-normalized row, string or inverter output across the morning, solar-noon and afternoon windows. First remove intervals affected by clipping, curtailment, outages and inverter limits. With terrain undulation, the losses cluster at grade breaks, swales, rolling ground and motor block boundaries, even while the trackers follow their commands correctly. With tracker twist, one end or section of a row sits at a different tilt from the rest. That row shows lower normalized current than its neighbors, and the effect can also show up in windy intervals. To tell them apart, check angles at the drive end, center and free end with the row commanded to several fixed positions. Twist means sections of one row disagree beyond the site tolerance under the same command. A terrain-following design can be intentional and still hold a common plane. Drone imagery of row-end shadow lines, tracker command logs and topographic survey comparisons help locate the cause. Also check for controller offsets, bent torque tubes, foundation settlement or loose clamps.

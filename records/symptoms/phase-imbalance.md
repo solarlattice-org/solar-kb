@@ -50,7 +50,9 @@ claims:
   - src: src:sel-735-im-20250228
     loc: sec=h559
     h: bf4e428b2cda
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: observed_as
   target: meas:phase-voltage-spread-alert
@@ -59,7 +61,9 @@ claims:
   - src: src:alsoenergy-powertrackuserguide-reva-1-25
     loc: tbl=12.r10
     h: cec53a327f7b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: observed_as
   target: meas:grid-voltage-imbalance-fault

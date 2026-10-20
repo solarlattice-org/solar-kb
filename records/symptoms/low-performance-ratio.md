@@ -30,7 +30,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=4.1.1
     h: d5ee0a10b7d9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages mention PR over time and long-term degradation, but
     not explicitly a declining PR from AC energy vs POA irradiation as a signature.'
 - claim_id: c3
@@ -57,7 +59,9 @@ claims:
   - src: src:alsoenergy-kb-grouping-and-advanced-search
     loc: sec=h1
     h: ad50c4b37958
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - PI alerts trigger on low measured-to-modeled power ratio, but
     ''below unity'' and ''sustained period'' (only time thresholds implied) are not exactly stated.'
 - claim_id: c5

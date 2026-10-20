@@ -52,7 +52,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.3.2
     h: 9b2ddc8cc5ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: observed_as
   target: meas:el-dim-cell

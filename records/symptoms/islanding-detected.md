@@ -15,7 +15,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The manual says islanding means no AC voltage and production
     ceases until the event ends, but the passage does not state power returns when the grid returns or
     specific signal behavior beyond that.'

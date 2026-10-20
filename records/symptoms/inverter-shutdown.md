@@ -26,7 +26,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: sec=6.7
     h: 297ee1f2537c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:low-insulation-resistance-alarm

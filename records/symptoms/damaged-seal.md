@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=36.r1
     h: 2f54f0d00dad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:jbox-terminal-corrosion

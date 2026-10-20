@@ -43,6 +43,8 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=front
     h: c791ea65d1df
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 This symptom is a clear, repeatable rise in weather-normalized production right after the array is cleaned. You find it by lining up cleaning records against SCADA, irradiance and normalized output. If the deficit stayed in place through rain but went away after manual cleaning, suspect widespread fungal soiling (sub-aerial biofilms) rather than ordinary dust. Granular dust soiling looks different. Output declines gradually through dry periods, then recovers partly or fully after meaningful rain as well as after washing. Bio-soiling is easy to mistake for dust, pollen or a weather-normalization error. In North Carolina it caused persistent losses of 5-11%. Before blaming soiling, check the dry-period decline against availability, clipping, curtailment and irradiance sensor problems. Do not rely on one dirty irradiance sensor to measure the loss. If the contaminant type matters, inspect closely or use a handheld microscope, and check several areas of the array, because biological deposits can be patchy. Where the step after cleaning keeps recurring, update the soiling model and production forecasts using the site's actual cleaning results, not the assumption that rain resets the loss.

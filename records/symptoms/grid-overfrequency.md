@@ -22,7 +22,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: sec=h162
     h: bd3d762be238
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 The inverter raises a grid overfrequency fault when the grid frequency it measures goes above its upper limit. While the frequency is out of range, the inverter disconnects from the grid and stops exporting power. Usually the inverter reconnects by itself once the grid is back to normal. Some controllers use a separate overfrequency threshold that the grid must meet before reconnection is allowed. If the fault keeps coming back, first turn the DC switch off and measure the actual grid frequency at the inverter test points. If the grid really is high, contact the local utility. Next, check the grid standard and the overfrequency protection settings. Example defaults are 60.5 Hz on one SMA model, and 61.2 Hz and 62 Hz for the two Solis stages. Only raise the upper limit with the utility's permission. If the frequency you measure is normal but the inverter display still shows it as high, the inverter's measurement circuit may be faulty, and the inverter may need replacing. Some controllers expose the grid frequency reading over Modbus, so you can trend it in monitoring and compare it with the trip times.
 

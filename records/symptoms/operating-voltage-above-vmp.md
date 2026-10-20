@@ -52,6 +52,8 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 When this happens, the inverter keeps the array at a DC voltage above the array's true maximum power point voltage, so it harvests less than the available DC power. It is the typical sign of inverter voltage floor losses: array Vmp has dropped below the inverter's minimum DC input voltage, which can be caused by high module temperature, degraded modules, tight string design margin or reactive power operation. Watch for it during hot periods, because module voltage falls as cell temperature rises. The inverter stays online and irradiance looks normal. Start by finding intervals where the inverter DC voltage is at or close to its minimum threshold while output is lower than irradiance would support. First rule out outages, curtailment, clipping, soiling and sensor faults. To confirm it, compare the operating voltage with an independent Vmp estimate from in-situ or string IV sweeps or a temperature-corrected module model. Voltage flooring is supported when the operating voltage stays above Vmp and the power stays below Pmp. Do not mistake it for clipping. Clipping is a power ceiling, while this is an MPPT limit set by the DC voltage window. Also check AC voltage and reactive power dispatch at the same timestamps, because the root cause may be plant voltage control, transformer tap position or inverter settings rather than module degradation.

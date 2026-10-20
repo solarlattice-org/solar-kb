@@ -31,7 +31,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h37
     h: abafe13c83d7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passage links resistive heating in the junction box to discolouration
     behind/around it and IR-detectable heat, but is about junction box interconnection failure, not yellow-brown
     discoloration generally.'
@@ -49,7 +51,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h34
     h: 57cc697f982e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:el-dark-cell-edges

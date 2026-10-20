@@ -18,7 +18,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h37
     h: abafe13c83d7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages state corroded parts in the junction box (solder joints,
     wires, diodes, ribbons) and that potting can hide them until removed, but ''loose or corroded terminals''
     as a visible observation is only loosely matched.'

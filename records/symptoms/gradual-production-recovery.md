@@ -28,7 +28,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h6
     h: 0935b66311ac
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages mention camera/drone/field observations of module cover
     aligned with residuals, but not specifically checking during the recovery period.'
 - claim_id: c3

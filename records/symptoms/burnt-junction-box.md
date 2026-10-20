@@ -46,7 +46,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h4
     h: d298ad6bbdd3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 Look on the back of the module for a junction box whose housing or lid is warped, melted or burnt. One common cause is a failed bypass diode: the heat it gives off inside the box can deform the box or burn it. Internal arcing can also burn the box, for example an arc at an input lead. Bad solder contacts are one cause of these arcs, and they can start a fire. Bad contacts, corrosion from moisture getting in, and loose connections all raise resistance and heat the box. An infrared camera shows this as a hot junction box. Check the diodes and run an IV curve or open-circuit voltage measurement. These help tell a diode or interconnection fault from a contact or arcing problem, and short circuits show up in the open-circuit measurement. If the box or backsheet is burnt through, expect insulation faults and leakage current. Run insulation checks and isolate the module for safety first. Replace the module instead of repairing the box, because repaired junction boxes can easily start new fires.
 

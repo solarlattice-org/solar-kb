@@ -75,7 +75,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: tbl=12
     h: f12a39856dc6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c6
   rel: observed_as
   target: meas:low-voc
