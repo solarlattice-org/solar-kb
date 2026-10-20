@@ -18,7 +18,9 @@ claims:
   - src: src:alsoenergy-kb-string-performance-alerts
     loc: sec=h2
     h: 4ec2fde2d167
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 The inverter flags a string whose current is abnormal. On the Sungrow CX-US units, codes 580 to 587 map to strings 17 to 24. In monitoring data, one string's current moves away from the mean of similar strings, or falls well below the best string on the same inverter or combiner. Before comparing strings, normalize for different string sizes and group inputs that share the same shading, orientation and module type. This avoids false alarms. Check first whether the string's modules are shaded or dirty, and clean or remove the obstruction if so. Next, look at the modules for abnormal aging, check for loose wiring, and check whether the DC fuse is blown. A cable defect or a module hotspot can also show up as a string current that does not match its neighbours. Confirm with IR thermography, an IV curve, insulation testing and visual inspection. For a manual check, measure each string with a clip-on ammeter under stable irradiance. Identical strings should read nearly the same. Only open the DC switch to work on a string once its current has fallen below 0.5 A.
 

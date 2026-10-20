@@ -38,7 +38,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=56.r2
     h: '176220009679'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:spd-alarm-status-register

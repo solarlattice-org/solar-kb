@@ -18,7 +18,9 @@ claims:
   - src: src:sma-sma-stp-33-us-iom
     loc: sec=h79
     h: e0da560c67b6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Event 9035 discharge confirmation and the <30 V within 30 s requirement
     are stated, but the passages say nothing about the specific signal behaviors (collapse shortly after
     initiation, all MPPT inputs falling simultaneously).'

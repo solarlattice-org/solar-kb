@@ -24,7 +24,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: sec=h214
     h: 059ce03933b4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: observed_as
   target: meas:no-dhcp-message
@@ -33,7 +35,9 @@ claims:
   - src: src:solaredge-se-commercial-3ph-inverter-w-synergy-tech-installation-guide-pn-sexxk
     loc: tbl=10
     h: 92bd7cab887c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:network-comm-alert

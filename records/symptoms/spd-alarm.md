@@ -25,7 +25,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: sec=h198
     h: 3b4b16a8ddf5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:spd-red-status-led
@@ -53,7 +55,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=8.r3
     h: 6ac33fcf20dc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:spd-surge-event-record

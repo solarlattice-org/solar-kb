@@ -17,7 +17,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: sec=h300
     h: a1c2873a3c05
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:bad-packet-counter-increment

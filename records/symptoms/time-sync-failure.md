@@ -22,7 +22,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=23
     h: f5135afff656
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - SMA event 10110 and both checks are stated, but the SEL-735 TSOK/IRIGOK
     note is not in the cited passages for the NTP measurement, and the statement mixes the two.'
 - claim_id: c2
@@ -38,7 +40,9 @@ claims:
   - src: src:sel-735-im-20250228
     loc: tbl=436
     h: 29064759d4e1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - TSOK and IRIGOK assert definitions are given, but the passages
     don''t state that cleared bits mean the meter is unsynchronized or that time-sync failure is observed
     that way.'

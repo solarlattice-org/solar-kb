@@ -69,7 +69,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: sec=h159
     h: 00db0741c1e5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: observed_as
   target: meas:zero-sequence-imbalance
@@ -87,7 +89,9 @@ claims:
   - src: src:tesla-controls-and-comms-manual-ci-v1-3
     loc: tbl=176.r1
     h: 14b129a5c9bc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: observed_as
   target: meas:zero-ac-output

@@ -15,7 +15,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=1.r1
     h: 306820081df5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:zero-ac-output
@@ -27,7 +29,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=3
     h: 24edda8a20dd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This symptom is an inverter whose status lights stay dark: the Power LED and sometimes also the display. On some inverters an unlit grid status light means the internal power supply is not working, which points to an internal power supply fault. An unlit POWER light can also just mean there is no DC power or too little DC power at the input, so check the PV input voltage first. If the POWER light is lit but the OPERATION light is off, the inverter is getting DC but has stopped producing power. The CPS troubleshooting steps are: open the external AC breaker, switch the DC switch off, then check PV input voltage and polarity. Don't mix up dark LEDs with normal states. On some inverters a blinking or flickering power LED means no production, for example at night or while the inverter is switched off. In normal operation on some central inverters, the Ready, Network and Communications, and Power LEDs are lit and the fault LEDs are off. If those normal LEDs are dark, the inverter needs attention.
 

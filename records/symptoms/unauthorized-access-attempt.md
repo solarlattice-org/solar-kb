@@ -38,7 +38,9 @@ claims:
   - src: src:sel-735-im-20250228
     loc: sec=h1252
     h: df534e8fdb65
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 Some inverters raise a dedicated event when someone tries to get into the inverter network without authorization. Repeated failed logins can also appear as a login lockout message, which blocks login for a limited time. On connected meters, a device alarm bit pulses when a login fails or the settings change, and the settings-change log shows whether any unauthorized changes were made. First, check whether there were malicious attempts to access the inverter network, and review the device logs for settings or password changes. Devices exposed to the internet are at risk of their data being accessed and changed, so keep them on a trusted network behind a firewall. Close unused ports and protocols, avoid port forwarding, use a VPN only if remote access is truly needed, and keep system components on a separate network segment. Replace default passwords with private ones at installation, because leaving the defaults in place can allow unauthorized access.
 
