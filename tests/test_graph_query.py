@@ -112,7 +112,9 @@ def test_resolve_code_range_containment_then_bare_number(mini_graph):
     assert mini_graph.resolve_code("crit 6100") == []  # a range only contains numbers under its own prefix
     [hit] = mini_graph.resolve_code("90")  # no exact or range hit: the bare number finds Protect0090
     assert hit["id"] == "fc:chint-sca-50-60ktl-protect90" and hit["match"] == "number"
-    assert mini_graph.resolve_code("6002") == [] or mini_graph.resolve_code("6002")[0]["match"] == "range"
+    for bound in ("6002", "6412"):  # containment is inclusive: both printed bounds find the range record
+        [hit] = mini_graph.resolve_code(bound)
+        assert hit["id"] == "fc:sma-stp-core1-us-6002-6412" and hit["match"] == "range"
 
 
 @pytest.mark.parametrize("text", ["", "   ", "event", "99999"])
