@@ -24,7 +24,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: sec=5.4.4
     h: f90171d02e8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: affects
   target: comp:inverter
@@ -36,7 +38,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: sec=5.4.4
     h: f90171d02e8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: caused_by
   target: stressor:poor-connector-contact
@@ -48,7 +52,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: tbl=42
     h: 2a25ca716edf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Poor contact or damage of Arcboard is a listed cause, but the
     statement attributes it to generic poor connector contact, which is only partly the same (damage is
     another cause).'
@@ -60,7 +66,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r3
     h: c279ec78fba0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:inverter-shutdown
@@ -72,7 +80,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: sec=5.4.4
     h: f90171d02e8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: detected_by
   target: method:inverter-display-check
@@ -120,7 +130,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: tbl=42.r7
     h: efe8b49b988f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:arc-board-replacement
@@ -135,7 +147,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=63.r3
     h: 99d70367a788
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -149,7 +163,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r3
     h: c279ec78fba0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: mitigated_by
   target: mit:inverter-restart
@@ -175,6 +191,8 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: sec=5.4.4
     h: f90171d02e8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This fault is in the inverter's arc detection board, which watches the PV lines for arcing and signals the control board to take the inverter off the grid. When the board fails, the display shows an arc board error and the inverter will not connect to the grid until the board works again. Likely causes are poor contact at the arc board or a damaged board. Some models also report it as a failed internal self-check of the board. First make sure the logic connector to the arc board is secure and the board looks to be in good condition. Then run the Arc Fault Test from the Settings menu, or clear the fault with the ARCFaultClear command. If the alarm comes back, contact the manufacturer's service team to replace the arc board or the wiring box. Do not mix this up with the ARC Protect alarm. That alarm means an actual arc was detected in the PV input.

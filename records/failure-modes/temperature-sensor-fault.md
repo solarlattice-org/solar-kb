@@ -34,7 +34,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r2
     h: '498497530e79'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: affects
   target: comp:inverter
@@ -43,7 +45,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - u16 mentions an internal temperature sensor with poor contact,
     but the passage doesn''t state the fault affects the inverter beyond raising an alarm.'
 - claim_id: c3
@@ -72,7 +76,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: presents_as
   target: symptom:abnormal-temperature-reading
@@ -135,7 +141,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart
@@ -171,7 +179,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r2
     h: '498497530e79'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -195,7 +205,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r2
     h: '498497530e79'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The inverter raises a TempSensorErr alarm, also listed as Warn0050, when it detects an abnormal temperature reading. The usual causes are poor contact at the temperature sensor's socket connector or a damaged sensor. One manual also lists a sensor reading of -25C as a possible cause. To confirm it, look at the temperature value on the inverter display and check whether it makes sense. Turn the external AC disconnect off and back on to reboot the inverter, and see whether the alarm clears. If the alarm stays after the reboot, contact the manufacturer's service team.
 

@@ -16,7 +16,9 @@ claims:
   - src: src:yaskawa-solectria-power-supply-board
     loc: sec=h1
     h: c4863c26213d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The service table lists replacing the 24 VDC power supply for
     inverter controls as an inverter repair, but nothing states an ''internal power supply fault'' affects
     the inverter as a fault relation.'
@@ -37,7 +39,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: tbl=26.r9
     h: 3baf059af7f2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: detected_by
   target: method:inverter-display-check
@@ -47,7 +51,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=23
     h: 668ffb1b036a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: mitigated_by
   target: mit:power-supply-replacement
@@ -60,7 +66,9 @@ claims:
   - src: src:yaskawa-solectria-power-supply-board
     loc: sec=h1
     h: c4863c26213d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The service table shows an inverter specialist replaces the 24
     VDC supply as needed, and a power supply board replacement instruction is cited, but the passage doesn''t
     state it mitigates a fault or give the manufacturer instructions'' content.'

@@ -16,7 +16,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: sec=h314
     h: d241890c1ecd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: affects
   target: comp:inverter
@@ -28,7 +30,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: sec=h314
     h: d241890c1ecd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: mitigated_by
   target: mit:firmware-update

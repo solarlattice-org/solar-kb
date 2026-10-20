@@ -26,7 +26,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=57.r3
     h: 432cb92c3d99
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: affects
   target: comp:inverter
@@ -58,7 +60,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-36tl
     loc: tbl=33.r8
     h: e319683e4bbb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:component-aging
@@ -100,7 +104,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-36tl
     loc: tbl=33.r8
     h: e319683e4bbb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: leads_to
   target: fm:inverter-overheating
@@ -112,7 +118,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=33.r3
     h: e1cf6ecb59de
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:fan-fault-alarm
@@ -148,7 +156,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=2.r1
     h: 2884c89a5021
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - u1 mentions ''by visual check'', u2 says to check for foreign
     objects on the blades, and u9 says to check whether the fan is spinning. The passages do not explicitly
     describe visual inspection as a detection method.'
@@ -248,7 +258,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: sec=7.2
     h: 08034ea4d7bf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c15
   rel: mitigated_by
   target: mit:inverter-replacement
@@ -263,7 +275,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=55.r1
     h: 2884c89a5021
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -277,7 +291,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=57.r3
     h: 432cb92c3d99
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Fan failure means the inverter's cooling fan has stopped working properly. Common causes are a blocked fan, a fan at the end of its service life, or poor contact at the fan socket connector. The inverter shows a fan alarm on its display: ExtFanErr on CPS units or Fan Fail on Solis units. Without working fans the inverter is not cooled properly, which can lead to temperature derating. First, wait about 5 minutes to see if the alarm clears by itself. Then check the fan blades for foreign objects and reboot the inverter using the external AC disconnect. If the alarm stays on while the fan is spinning, the sensing circuit is faulty and the inverter should be replaced. If the fan is not spinning, measure the voltage between the red and black wire pins at the fan connector. Below 6 VDC means the inverter should be replaced. Above 6 V means the fan should be replaced. Before you clean or replace a fan, switch off the grid, the AC power and the DC switch, then wait at least 15 minutes before removing the fan assembly. If none of these steps clears the fault, contact the manufacturer's after-sales service.
 

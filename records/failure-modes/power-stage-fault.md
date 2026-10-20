@@ -14,7 +14,9 @@ claims:
   - src: src:doe-femp-om-small-pv
     loc: sec=h29
     h: ecaae89914de
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages list IGBT driver and IGBT matrix replacement as inverter
     repairs, but never mention a ''power stage fault'' as such.'
 - claim_id: c2
@@ -52,19 +54,6 @@ claims:
     loc: sec=h29
     h: ecaae89914de
   review: drafted
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:inverter-restart
-  note: A start/stop reboot is listed for clearing unknown inverter errors. It is not specific to power
-    stage faults.
-  cite:
-  - src: src:nrel-om-best-practices-pv-ess
-    loc: sec=h236
-    h: fdc8d39f282f
-  - src: src:doe-femp-om-small-pv
-    loc: sec=h29
-    h: ecaae89914de
-  review: drafted
 ---
 A power stage fault is an inverter repair case where the switching hardware, such as the IGBT driver board or the IGBT matrix, has to be diagnosed and replaced. On some inverters a red Power Fault light comes on. It means there is a power fault that needs service and may be a hazard. Use the inverter fault code to find out which board has failed before you replace anything. Restarting the inverter can clear an unknown error, but a fault that stays needs an inverter specialist.
 
@@ -72,4 +61,8 @@ A power stage fault is an inverter repair case where the switching hardware, suc
 - sentence 1: support check: partial - IGBT driver and matrix replacement are inverter repairs, but the passages never define a power stage fault or tie these replacements to it.
 - sentence 3: support check: partial - The passages say to diagnose with the fault code when replacing the IGBT driver and other boards, but not explicitly to identify which board failed before replacing anything.
 - sentence 4: support check: partial - The passages list the reboot to clear an unknown error and inverter specialists for board repairs, but don't say a persisting fault needs a specialist.
+-->
+
+<!-- review workflow 2026-10-20: dropped as unsupported
+- c5 mitigated_by mit:inverter-restart: The only restart text is "Start/stop inverter (reboot to clear unknown error)"; nothing links a reboot to IGBT/power-stage faults (which the same table says to "diagnose with fault code" and repair by board replacement), and the note itself concedes it "is not specific to power stage faults".
 -->
