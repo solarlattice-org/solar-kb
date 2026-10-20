@@ -25,12 +25,15 @@ Plan 4d step FC0 (a): fault-code records from manufacturer manuals. Additive: ev
 
 ### Validation
 - New rule `fault-code`: the id is recomputed from `make`, `model_family` and `code_key` and must match;
-  `code_key == solar_kb.codes.code_key(code)`; `code_from`/`code_to` come together, ordered, only on a printed range
-  and equal to its bounds; `display_message` ≤ 8 words and `vendor_severity` ≤ 3; the body is empty apart from
-  HTML comments; no claim carries `quote`; `note` and `conditions` ≤ 25 words; at least one `defined_in` claim,
-  each citation a table row (`tbl=N.rM`), table (`tbl=N`) or heading unit (`sec=hK`); at most one non-disputed
-  claim per axis; the only quantity is `output_limit`, allowed only with a `has_production_effect → ec:derate`
-  claim and with `conditions` starting `basis=rated_power|current_power|absolute`.
+  `code_key == solar_kb.codes.code_key(code)`; `code_from`/`code_to` are present exactly when `parse_code(code)`
+  sees a printed range (a hyphenated single code such as `CRIT-4` or `OV-G-V` takes none), ordered and equal to the
+  printed bounds; `name` is `{make_name} … {code}` and ≤ 8 words, every alias ≤ 8 words, `display_message` ≤ 8 words
+  and `vendor_severity` ≤ 3 (the only vendor text a public code carries); the body is empty apart from HTML
+  comments; no claim carries `quote`; `note`, `conditions` and `review_note` ≤ 25 words; at least one `defined_in`
+  claim, one per source, each citation pointing into its own target at a table row (`tbl=N.rM`), table (`tbl=N`)
+  or heading unit (`sec=hK`); at most one non-disputed claim per axis; the only quantity is `output_limit`, a
+  single `nominal` or `max` in `unit:PERCENT`, `unit:KiloW` or `unit:W`, allowed only with a
+  `has_production_effect → ec:derate` claim and with `conditions` starting `basis=rated_power|current_power|absolute`.
 - New rule `event-axes`: `has_event_class` / `has_production_effect` / `has_recovery` point at an EventConcept on
   that axis; an EventConcept carries no claims.
 
@@ -42,7 +45,12 @@ Plan 4d step FC0 (a): fault-code records from manufacturer manuals. Additive: ev
   ranked by make match then family match.
 - `differential` accepts `fc:` observations and expands each through its `reports` claims (at or above
   `min_review`) into Symptoms before ranking, reported in `via_code`; `indicates` is never scored, so §8.1 scoring
-  is unchanged. The benchmark accepts `{id: fc:...}` observations.
+  is unchanged. Nothing vanishes in the expansion: a reported Symptom that is only a proposed stub is listed in
+  `unknown_observations` as it would be when given directly, a disputed `reports` claim below the floor is a
+  `disputed_matches` entry (`failure_mode` null, `symptom` the target), and a code that reports nothing at the floor
+  is itself an unknown observation. The result also carries `known_observations` (the Symptom/Measurement ids that
+  were scored). The benchmark accepts `{id: fc:...}` observations and derives its `unresolved` reason from
+  `known_observations`, so a pinned code the KB cannot use is a KB gap, never a ranking miss.
 - `solar_kb.codes`: `code_key`, `parse_code`, `query_code`, copied from solar-brain and equality-tested so the
   compiler's key is the key the public graph looks up.
 
@@ -58,7 +66,10 @@ Plan 4d step FC0 (a): fault-code records from manufacturer manuals. Additive: ev
 - `kb/fc/` lists makes with code counts and families, with a "Find a code" box (`static/fc-lookup.js`, dependency-free
   progressive enhancement over `kb/fc/codes.json`, also in Downloads); `kb/fc/<make>` has one table per family
   (Code | Shown as | Class | Production | Clears | Reports | Page) sorted by vendor prefix and number, filterable
-  with the same code-key grammar. EventConcept pages list their referencing codes in a table grouped by make.
+  with the same code-key grammar; an axis whose only claims are a disputed pair shows every contested value with a
+  disputed marker, never the first as settled. EventConcept pages list their referencing codes in a table grouped
+  by make. A code page prints its page number on the Defined-in line only while one source defines the code (the
+  meta row always carries it), since `page` belongs to one defining unit.
   Former `fc:`/`ec:` ids in `aliases` get redirect stubs like any record.
 
 ## 0.3.0 (unreleased)
