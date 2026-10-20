@@ -47,7 +47,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r6
     h: ae8f6533c032
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:string-configuration-correction

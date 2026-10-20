@@ -32,7 +32,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: reports
   target: symptom:ground-fault
@@ -48,7 +50,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: affects
   target: comp:dc-cable
@@ -56,7 +60,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Solution says physically check cables, implying DC cables, but
     the cable type isn''t specified as the affected component.'
 - claim_id: c6
@@ -67,7 +73,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: detected_by
   target: method:visual-inspection
@@ -86,7 +94,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15
     h: cb7b6f9ed265
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Listed in the ''Fault messages'' table, but the row doesn''t
     state the device behavior; classification only implied by table title.'
 - claim_id: c9
@@ -97,7 +107,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Solution includes reset inverter and replace inverter, but the
     passage doesn''t say reset is required to clear it or that…'
 ---

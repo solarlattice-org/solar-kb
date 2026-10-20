@@ -30,7 +30,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r4
     h: b4f347f61cee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: affects
   target: comp:dc-cable
@@ -56,7 +58,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r4
     h: b4f347f61cee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: detected_by
   target: method:visual-inspection
@@ -64,7 +68,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r4
     h: b4f347f61cee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: detected_by
   target: method:junction-box-inspection
@@ -72,7 +78,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r4
     h: b4f347f61cee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: mitigated_by
   target: mit:dc-wiring-check
@@ -91,7 +99,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15
     h: cb7b6f9ed265
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Listed in the ''Fault messages'' table, but the row doesn''t
     state device behavior; classification only implied by table title.'
 - claim_id: c10
@@ -102,7 +112,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r4
     h: b4f347f61cee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Reset inverter and replace inverter are listed in the solution,
     but the passage doesn''t say it clears by manual reset specifically.'
 ---

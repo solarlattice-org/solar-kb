@@ -32,7 +32,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r2
     h: 98bb900b2b7d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: affects
   target: comp:inverter
@@ -48,7 +50,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r2
     h: 98bb900b2b7d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:clear-ventilation-blockage
@@ -77,7 +81,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15
     h: cb7b6f9ed265
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Table is titled ''Fault messages'' and lists OV-TEM, but the
     row doesn''t state device behavior (stop/trip); classification only implied by…'
 ---

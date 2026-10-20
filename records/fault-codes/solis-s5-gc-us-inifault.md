@@ -40,7 +40,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - DSP mismatch implies control board, but the component is not
     named in the passage.'
 - claim_id: c4
@@ -50,7 +52,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: has_event_class
   target: ec:fault
@@ -61,7 +65,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15
     h: cb7b6f9ed265
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Listed under ''Fault messages'' table and requires intervention,
     but the row doesn''t explicitly classify it; reasonably implied.'
 - claim_id: c6

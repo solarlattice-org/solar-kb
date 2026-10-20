@@ -40,7 +40,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=14.r5
     h: dc004aa7f58f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: detected_by
   target: method:waveform-spectrum-analysis
@@ -49,7 +51,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=14.r5
     h: dc004aa7f58f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:impedance-matching
@@ -57,5 +61,7 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=14.r5
     h: dc004aa7f58f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

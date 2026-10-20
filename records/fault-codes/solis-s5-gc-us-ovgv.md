@@ -32,7 +32,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=13.r3
     h: 52c3fd63f040
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: detected_by
   target: method:grid-voltage-measurement
@@ -60,5 +62,7 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=13.r3
     h: 52c3fd63f040
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
