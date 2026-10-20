@@ -2,5 +2,10 @@
 id: mit:material-compatibility-testing
 type: Mitigation
 name: Material compatibility testing
-status: proposed
 ---
+Material compatibility testing checks whether a new encapsulant, backsheet or other polymer film works together with the layers next to it. It is done during product development, before the material combination goes into production modules. It targets problems that come from incompatible materials, such as additive migration between layers that causes adhesion loss, delamination or discoloration. Incompatible backsheet and encapsulant combinations are also named as a main cause of early backsheet degradation, including cracking. Each material is tested alone and also together in the complete laminate, using accelerated ageing with irradiation, temperature and humidity, applied one at a time and combined. The tests look for reactions or additive migration at the encapsulant-backsheet interface and measure adhesion to the glass and backsheet after the stress. For conductive backsheets, the laminate with the intended encapsulant, cells and connectors should go through the IEC 61215-2 thermal cycling, humidity freeze and damp heat tests. Standard qualification tests never reproduced the backsheet cracks seen in the field. Newly designed combined or sequential stress tests can reproduce them and can be used to screen new backsheets. The limits are that accelerated tests may not trigger the same degradation mechanisms as real outdoor exposure, and some effects seen only in the lab, such as yellowing in damp heat, do not happen in the field because sunlight bleaches the discoloration. Long-term outdoor experience with newer polyolefin encapsulants is still lacking.
+
+<!-- review notes
+- sentence 3: support check: partial - The passage says incompatible backsheet-encapsulant combinations cause most premature degradation failures, but it doesn't name them a main cause of cracking specifically, only listing them among backsheet degradation causes.
+- sentence 6: support check: partial - Cracks never seen in IEC 61215-2 tests and reproduced by new combined/sequential tests used for new backsheets, but reproduction is stated only for similar PA backsheet cracks, not all field cracks.
+-->

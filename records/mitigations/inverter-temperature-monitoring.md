@@ -2,5 +2,5 @@
 id: mit:inverter-temperature-monitoring
 type: Mitigation
 name: Inverter temperature monitoring
-status: proposed
 ---
+Inverter temperature monitoring means logging the inverter's internal temperature in the plant monitoring system so that overheating can be spotted. It is listed as an optional preventive action for Inverter Overheating and for Inverter Incorrect Installation. Overheating and temperature derating can come from improper installation, a failed fan, dust blocking the heat dissipation path, or wrong inverter programming. When monitored internal parts reach their maximum operating temperature, the inverter lowers its output step by step and in extreme cases shuts off. It returns to normal operation once those parts cool down. If the inverter does not report its own temperature, fit a temperature sensor to the enclosure. Extra sensors for ambient, enclosure and heat sink temperatures also add useful detail to fault logs. Keeping a record of inverter temperature also lets you judge how well the ventilation is working. Inverters do not always send a derating or power reduction message, so also compare power against irradiance curves to catch derating. Measurements built into the inverter may not be very precise, but they are still useful for fault diagnosis and for spotting changes over time.
