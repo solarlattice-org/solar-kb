@@ -42,7 +42,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=8.r2
     h: aa54fddbab59
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: affects
   target: comp:dc-cable
@@ -50,7 +52,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=8.r2
     h: aa54fddbab59
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - PV wiring/strings are checked for leakage, but DC cable isn''t
     explicitly named.'
 - claim_id: c5
@@ -68,5 +72,7 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=8.r2
     h: aa54fddbab59
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---

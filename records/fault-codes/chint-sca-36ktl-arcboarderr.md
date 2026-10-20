@@ -40,7 +40,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=10.r3
     h: 99d70367a788
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Arcboard Err name suggests arc board failure and replacement
     is suggested, but no explicit failure statement.'
 - claim_id: c4
@@ -76,6 +78,8 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=10.r3
     h: 99d70367a788
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Operator actions stated, but manual reset clearing not explicit.'
 ---

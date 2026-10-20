@@ -42,7 +42,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=11.r5
     h: 647e672a17f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Grid relay fault implies relay failure, but not stated as failure
     explicitly.'
 - claim_id: c4

@@ -41,7 +41,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=4.r2
     h: 1772b17b4f0d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-restart

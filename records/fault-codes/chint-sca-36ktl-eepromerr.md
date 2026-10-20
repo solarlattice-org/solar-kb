@@ -49,7 +49,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=5.r1
     h: f94a58942f56
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Defined as internal alarm; warning classification is not stated
     in this passage (u6 elsewhere says Warning but not cited).'
 - claim_id: c4
@@ -59,7 +61,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=5.r3
     h: 609d6ef144dc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset

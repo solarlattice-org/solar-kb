@@ -58,7 +58,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=10.r2
     h: bdd8e4eb27f4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-manufacturer-service

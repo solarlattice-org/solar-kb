@@ -42,7 +42,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6.r7
     h: 25366f44879a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: affects
   target: comp:cooling-fan
@@ -67,7 +69,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6.r7
     h: 25366f44879a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Checks for blocked inlet/fan are listed, but clearing the blockage
     is not explicitly stated.'
 - claim_id: c7
@@ -89,7 +93,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6
     h: a184c25be254
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Protection type, but stopping production is not explicitly stated.'
 - claim_id: c9
   rel: has_recovery
@@ -99,5 +105,7 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6.r7
     h: 25366f44879a
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---

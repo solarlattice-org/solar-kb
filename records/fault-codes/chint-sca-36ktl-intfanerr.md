@@ -48,7 +48,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=2.r2
     h: dbbc0d063b61
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Replace inverter implies service-required, but it is a warning
     and ''clears by'' is not stated; replacement is implied repair.'
 ---

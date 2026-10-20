@@ -50,7 +50,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=8.r1
     h: 616d37333b43
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: affects
   target: comp:dc-cable
@@ -69,7 +71,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=8.r1
     h: 616d37333b43
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c7
   rel: mitigated_by
   target: mit:dc-wiring-check

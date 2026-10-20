@@ -42,7 +42,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=11.r4
     h: de8c8c13b8b3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: affects
   target: comp:dc-cable

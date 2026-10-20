@@ -42,7 +42,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=7.r2
     h: 54c836d019f7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-parameter-change
@@ -51,7 +53,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=7.r2
     h: 54c836d019f7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-replacement

@@ -40,7 +40,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6.r4
     h: ae10c12f715d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: mitigated_by
   target: mit:grid-settings-check
@@ -69,7 +71,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=6
     h: a184c25be254
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Row is a Protection type with restart instruction, but trip/stop
     is only implied, not stated.'
 - claim_id: c7

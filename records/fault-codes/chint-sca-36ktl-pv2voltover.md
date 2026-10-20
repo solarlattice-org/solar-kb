@@ -32,7 +32,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r5
     h: eaece40dc7e2
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Overvoltage is implied by the name and 1000V limit, but the passage
     doesn''t explicitly say it reports DC overvoltage; reasonably implied.'
 - claim_id: c3
