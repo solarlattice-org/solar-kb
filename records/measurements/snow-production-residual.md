@@ -13,4 +13,7 @@ signals:
 - point: model_303.TmpBOM
   unit: unit:DEG_C
   pattern: module temperature used alongside residuals to follow melt
+- point: model_307.TmpAmb
+  unit: unit:DEG_C
+  pattern: cold conditions that slow snow clearing
 ---
