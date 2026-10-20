@@ -10,4 +10,7 @@ signals:
 - point: model_302.GHI
   unit: unit:W-PER-M2
   pattern: sufficient irradiance at the same time
+- point: model_302.POAI
+  unit: unit:W-PER-M2
+  pattern: irradiance remains present while inverter output is zero
 ---
