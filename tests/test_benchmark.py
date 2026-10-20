@@ -161,7 +161,7 @@ def test_ties_are_visible_and_pessimistic_top3_is_reported(tmp_path, graph):
 
 @pytest.mark.parametrize("text, message", [
     ("- id: a\n  observations: [{text: x}\n", "YAML"),
-    (f"- id: a\n  observations: [{{text: x}}]\n  expected: fm:pid\n  source: {{cite: 'src:a#p=1', h: 123456789012}}",
+    ("- id: a\n  observations: [{text: x}]\n  expected: fm:pid\n  source: {cite: 'src:a#p=1', h: 123456789012}",
      "quote"),
 ])
 def test_yaml_errors_and_unquoted_hashes_are_case_errors(tmp_path, text, message):
