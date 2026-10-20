@@ -20,6 +20,8 @@ TYPE_DIRS: dict[str, tuple[str, str]] = {
     "detection-methods": ("DetectionMethod", "method"),
     "mitigations": ("Mitigation", "mit"),
     "components": ("Component", "comp"),
+    "fault-codes": ("FaultCode", "fc"),
+    "event-concepts": ("EventConcept", "ec"),
     "sources": ("Source", "src"),
     "cases": ("Case", "case"),
     "data-examples": ("DataExample", "dex"),

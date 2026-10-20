@@ -12,9 +12,17 @@ followed by original prose. File name = id slug; directory = type.
 | detection-methods | DetectionMethod | method: |
 | mitigations | Mitigation | mit: |
 | components | Component | comp: |
+| fault-codes | FaultCode (one vendor code per make, model family and `code_key`) | fc: |
+| event-concepts | EventConcept (a value on the event_class, production_effect or recovery axis) | ec: |
 | sources | Source (also the public manifest entry) | src: |
 
 `Case` and `DataExample` records live only in the private overlay.
+
+A `FaultCode` has no prose: its id is `fc:<make>-<model_family>-<code_key>`, its only vendor text is the
+short `display_message` and `vendor_severity`, and what it means is carried by claims (`reports`, `indicates`,
+`has_event_class`, `has_production_effect`, `has_recovery`, `affects`, `detected_by`, `mitigated_by`,
+`defined_in`) that cite the manual row. `EventConcept` records are hand-written vocabulary with a reading rule
+in the body and carry no claims.
 
 Links in prose are Obsidian path links: `[[<directory>/<slug>|label]]`, e.g.
 `[[detection-methods/el-imaging|EL imaging]]`. Open this `records/` folder as an Obsidian vault

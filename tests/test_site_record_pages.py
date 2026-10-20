@@ -100,3 +100,89 @@ def test_record_header_shows_status(tmp_path):
     out = _render(load_corpus(root), tmp_path / "site")
     assert "<dt>Status</dt><dd>active</dd>" in (out / "kb/fm/pid.html").read_text()
     assert "<dt>Status</dt><dd>proposed</dd>" in (out / "kb/fm/hotspot.html").read_text()
+
+
+# --- Plan 4d: fault-code and event-concept pages --------------------------------------------------------------------
+def test_fault_code_page_badges_decoded_differential_and_defined_in(tmp_path):
+    out = _render(load_corpus(FIXTURES / "mini"), tmp_path)
+    page = (out / "kb/fc/chint-sca-50-60ktl-isolationerr.html").read_text()
+    assert ('<a href="./">Fault codes</a> › <a href="chint">CPS</a> › '
+            '<a href="chint#sca-50-60ktl">CPS SCA50/60KTL-DO/US-480</a>') in page
+    assert "<dt>Code</dt><dd><code>IsolationErr</code></dd>" in page
+    assert "<dt>Shown as</dt><dd>Insulation resistance low</dd>" in page
+    assert "<dt>Vendor severity</dt><dd>PROTECTION</dd>" in page and "<dt>Page</dt><dd>6</dd>" in page
+    # the three axis badges, each a link to the concept with its claim's review badge; a silent axis says so
+    assert '<a href="../ec/fault">fault</a> <span class="badge drafted">drafted · lead</span>' in page
+    assert '<span class="label">Production</span>\n<span class="muted">not stated</span>' in page
+    assert '<a href="../ec/manual-reset">after a manual reset</a>' in page
+    # the deterministic Decoded sentence, built from the claims alone
+    assert ('<p class="decoded">Reports <a href="../symptom/low-insulation-resistance">low insulation resistance</a>; '
+            'may indicate <a href="../fm/insulation-loss">insulation loss</a>; look at <a href="../comp/dc-cable">DC cable</a>; '
+            'confirm with <a href="../method/insulation-resistance-test">insulation resistance test</a>.</p>') in page
+    # the derived differential: failure modes presenting the reported symptom and the test that tells them apart
+    assert "What can be behind" in page and '<a href="../fm/leakage-current">Leakage current</a>' in page
+    assert "told apart" not in page.split("<h2>Claims</h2>")[0] and "insulation loss measures low Riso dry" in page
+    assert ('<a href="../fm/insulation-loss">Insulation loss</a> vs <a href="../fm/leakage-current">Leakage current</a>'
+            ' <span class="badge drafted">drafted · lead</span></td><td><a href="../method/insulation-resistance-test">'
+            'Insulation resistance test</a></td>') in page
+    # defined in: source, publisher and edition, locator and hash, the fixed sentence
+    assert "<h2>Defined in</h2>" in page and 'href="../src/chint-fault-manual"' in page
+    assert "Chint Power Systems America · Rev 2.1" in page and "<code>tbl=8.r1</code>" in page and "page 6" in page
+    assert "The manufacturer's own cause and corrective text is not reproduced here." in page
+    assert "Same condition on other equipment" in page and "<dt>SMA</dt>" in page
+    assert 'href="sma-stp-core1-us-3501"' in page and 'href="chint-sca-36ktl-isolationerr"' in page
+    assert "Same code in other families" in page
+    assert "<h2>Claims</h2>" in page and 'id="c7"' in page and "<h2>Data</h2>" in page  # the standard tail follows
+    assert '<link rel="canonical" href="https://solarlattice.org/kb/fc/chint-sca-50-60ktl-isolationerr">' in page
+    assert 'href="../FaultCode"' not in page  # the breadcrumb replaces the type line
+
+
+def test_fault_code_page_derate_badge_and_a_code_with_only_defined_in(tmp_path):
+    out = _render(load_corpus(FIXTURES / "mini"), tmp_path)
+    fan = (out / "kb/fc/chint-sca-50-60ktl-extfanerr.html").read_text()
+    assert '<a href="../ec/derate">reduced to 50 % of rated power</a>' in fan and '<a href="../ec/warning">warning</a>' in fan
+    assert '<a href="../ec/service-required">needs service</a>' in fan
+    assert "<h2>Decoded</h2>" not in fan and "Same condition" not in fan  # nothing reported, nothing to decode
+    assert "<code>tbl=2.r3</code>" in fan and "<code>tbl=4.r1</code>" in fan  # both rows of the one defined_in claim
+    rng = (out / "kb/fc/sma-stp-core1-us-6002-6412.html").read_text()
+    assert "The manual lists this code without further explanation." in rng and 'class="axis-card"' not in rng
+    assert "<dt>Code</dt><dd><code>6002-6412</code></dd>" in rng and "SMA Solar Technology AG · BA-en-13" in rng
+    sma = (out / "kb/fc/sma-stp-core1-us-3501.html").read_text()
+    assert "<dt>Vendor severity</dt>" not in sma and "<code>sec=h12</code>" in sma
+    assert "<dt>CPS</dt><dd>" in sma and 'href="chint-sca-36ktl-isolationerr"' in sma and "Same code in other" not in sma
+
+
+def test_fault_code_page_shows_the_page_number_once_and_only_when_it_is_unambiguous(tmp_path):
+    """`page` is page_start of ONE defining unit: shown on the single source's line, never beside every citation of
+    every source (a second manual's rows are on other pages)."""
+    root = copy_fixture(tmp_path, "mini")
+    out = _render(load_corpus(root), tmp_path / "one")
+    fan = (out / "kb/fc/chint-sca-50-60ktl-extfanerr.html").read_text()
+    block = fan[fan.index("<h2>Defined in</h2>"):fan.index("<h2>Claims</h2>")]
+    assert block.count("page 4") == 1 and "<dt>Page</dt><dd>4</dd>" in fan  # one source, two rows: once
+    path = root / "records" / "fault-codes" / "chint-sca-50-60ktl-isolationerr.md"
+    path.write_text(path.read_text().replace("  - claim_id: c2\n", (
+        "  - claim_id: c8\n    rel: defined_in\n    target: src:sma-core1-manual\n"
+        '    cite: [{src: "src:sma-core1-manual", loc: "tbl=17.r4", h: "5e6f70819203"}]\n    review: drafted\n'
+        "  - claim_id: c2\n"), 1))
+    out = _render(load_corpus(root), tmp_path / "two")
+    page = (out / "kb/fc/chint-sca-50-60ktl-isolationerr.html").read_text()
+    block = page[page.index("<h2>Defined in</h2>"):page.index("<h2>Claims</h2>")]
+    assert 'href="../src/sma-core1-manual"' in block and "<code>tbl=17.r4</code>" in block
+    assert "page" not in block and "<dt>Page</dt><dd>6</dd>" in page  # two sources: the meta row alone carries it
+
+
+def test_event_concept_source_and_symptom_pages_list_the_codes(tmp_path):
+    out = _render(load_corpus(FIXTURES / "mini"), tmp_path)
+    concept = (out / "kb/ec/fault.html").read_text()
+    assert "<h2>Referenced by</h2>" in concept and "<h3>CPS</h3>" in concept and "<h3>SMA</h3>" in concept
+    assert ('<tr><td><a href="../fc/chint-sca-50-60ktl-isolationerr">CPS SCA50-60KTL IsolationErr</a></td>'
+            "<td>CPS SCA50/60KTL-DO/US-480</td><td>Insulation resistance low</td><td><code>has_event_class</code> "
+            '<a href="../fc/chint-sca-50-60ktl-isolationerr#c2">c2</a> <span class="badge drafted">drafted · lead</span></td></tr>') in concept
+    assert concept.count("<h3>CPS</h3>") == 1 and "Reading rule" in concept  # the body's reading rule renders
+    assert "<h3>" not in (out / "kb/ec/auto-reset.html").read_text().split("<h2>Data</h2>")[0]  # no codes: no table
+    source = (out / "kb/src/chint-fault-manual.html").read_text()
+    assert "<code>defined_in</code>" in source and 'href="../fc/chint-sca-50-60ktl-isolationerr#c1"' in source
+    assert "Cited by" in source and "<dt>Edition or date</dt><dd>Rev 2.1</dd>" in source
+    symptom = (out / "kb/symptom/low-insulation-resistance.html").read_text()
+    assert "<code>reports</code>" in symptom and 'href="../fc/sma-stp-core1-us-3501#c2"' in symptom

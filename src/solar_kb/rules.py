@@ -9,6 +9,7 @@ import math
 import re
 from collections.abc import Callable, Iterator
 
+from solar_kb.codes import code_key, parse_code
 from solar_kb.iri import expand
 from solar_kb.records import OVERLAY_ONLY_TYPES, TYPE_DIRS, Corpus, Record
 from solar_kb.violation import Violation
@@ -16,14 +17,25 @@ from solar_kb.violation import Violation
 # relation -> (allowed source types, allowed target types)
 RELATION_SIGNATURES: dict[str, tuple[frozenset[str], frozenset[str]]] = {
     "caused_by": (frozenset({"FailureMode"}), frozenset({"Stressor", "FailureMode"})),
-    "affects": (frozenset({"FailureMode"}), frozenset({"Component"})),
+    "affects": (frozenset({"FailureMode", "FaultCode"}), frozenset({"Component"})),
     "presents_as": (frozenset({"FailureMode"}), frozenset({"Symptom"})),
     "observed_as": (frozenset({"Symptom"}), frozenset({"Measurement"})),
     "produces": (frozenset({"DetectionMethod"}), frozenset({"Measurement"})),
-    "detected_by": (frozenset({"FailureMode"}), frozenset({"DetectionMethod"})),
-    "mitigated_by": (frozenset({"FailureMode"}), frozenset({"Mitigation"})),
+    "detected_by": (frozenset({"FailureMode", "FaultCode"}), frozenset({"DetectionMethod"})),
+    "mitigated_by": (frozenset({"FailureMode", "FaultCode"}), frozenset({"Mitigation"})),
     "leads_to": (frozenset({"FailureMode"}), frozenset({"FailureMode"})),
     "distinguished_from": (frozenset({"FailureMode"}), frozenset({"FailureMode"})),
+    # Plan 4d (schema 0.4.0): a FaultCode's meaning is carried by these claims, never by prose.
+    "reports": (frozenset({"FaultCode"}), frozenset({"Symptom"})),
+    "indicates": (frozenset({"FaultCode"}), frozenset({"FailureMode"})),
+    "has_event_class": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
+    "has_production_effect": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
+    "has_recovery": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
+    "defined_in": (frozenset({"FaultCode"}), frozenset({"Source"})),
+}
+# axis relation -> the EventAxis its target must be on
+AXIS_RELATIONS: dict[str, str] = {
+    "has_event_class": "event_class", "has_production_effect": "production_effect", "has_recovery": "recovery",
 }
 PUBLIC_CITABLE_TIERS = frozenset({"open", "reference"})
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
@@ -351,8 +363,170 @@ def rule_mapping_prefixes(corpus: Corpus, prefixes: dict[str, str]) -> list[Viol
     return out
 
 
+FAULT_CODE_REQUIRED = ("make", "make_name", "model_family", "family_name", "code", "code_key", "name", "category")
+DEFINED_IN_LOC_RE = re.compile(r"^(tbl=\d+(\.r\d+)?|sec=h\d+)$")
+BASIS_RE = re.compile(r"^basis=(rated_power|current_power|absolute)\b")
+HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
+MAX_DISPLAY_MESSAGE_WORDS = 8
+MAX_VENDOR_SEVERITY_WORDS = 3
+MAX_CODE_NOTE_WORDS = 25
+MAX_ALIAS_WORDS = MAX_DISPLAY_MESSAGE_WORDS  # display_message is the longest alias the plan allows
+MAX_NAME_WORDS = 8  # "{make_name} {family_short} {code}"
+CODE_FREE_TEXT = ("note", "conditions", "review_note")  # every other claim field is an id, a number or a citation
+DERATE = "ec:derate"
+OUTPUT_LIMIT = "output_limit"
+OUTPUT_LIMIT_UNITS = frozenset({"unit:PERCENT", "unit:KiloW", "unit:W"})
+
+
+def _words(value: object) -> int:
+    return len(value.split()) if isinstance(value, str) else 0
+
+
+def _range_problem(data: dict) -> str | None:
+    """code_from/code_to: present exactly when `code` is a printed range (parse_code sees a number_end, so a hyphenated
+    single code such as CRIT-4 or OV-G-V is not one), integers, from < to, and equal to the printed bounds. A range
+    without bounds would never be found by containment (`resolve_code`, the make page, codes.json)."""
+    lo, hi, code = data.get("code_from"), data.get("code_to"), data.get("code")
+    parsed = parse_code(code) if isinstance(code, str) else None
+    is_range = parsed is not None and parsed.number_end is not None
+    if (lo is None) != (hi is None):
+        return "code_from and code_to come together (a printed range) or not at all"
+    if lo is None:
+        if is_range:
+            return f"a printed range needs code_from and code_to ({parsed.number}, {parsed.number_end})"
+        return None
+    if not isinstance(lo, int) or not isinstance(hi, int) or isinstance(lo, bool) or isinstance(hi, bool):
+        return "code_from and code_to are integers"
+    if not is_range:
+        return "code_from/code_to are only for a printed range such as 6002-6412"
+    if lo >= hi:
+        return "code_from must be less than code_to"
+    if (lo, hi) != (parsed.number, parsed.number_end):
+        return f"code_from/code_to must be the printed range bounds ({parsed.number}, {parsed.number_end})"
+    return None
+
+
+def rule_fault_code(corpus: Corpus) -> list[Violation]:
+    """Plan 4d: a FaultCode's identity is recomputable from its slots, its only vendor text is the short display
+    message and severity word (name and aliases are deterministic and capped), its body is empty, and its claims cite
+    the manual row, carry no quote and no free text beyond a 25-word note, conditions or review_note."""
+    out = []
+    for record in corpus.records.values():
+        if record.type != "FaultCode":
+            continue
+        data = record.data
+        missing = [k for k in FAULT_CODE_REQUIRED if not isinstance(data.get(k), str) or not data[k].strip()]
+        if missing:
+            out.append(_v("fault-code", record, f"missing required slot(s): {', '.join(missing)}"))
+        make, family, key, code = data.get("make"), data.get("model_family"), data.get("code_key"), data.get("code")
+        if all(isinstance(x, str) for x in (make, family, key)):
+            expected = f"fc:{make}-{family}-{key}"
+            if record.id != expected:
+                out.append(_v("fault-code", record, f"id must be {expected} (fc:<make>-<model_family>-<code_key>)"))
+        if isinstance(code, str) and isinstance(key, str) and code_key(code) != key:
+            out.append(_v("fault-code", record, f"code_key must be {code_key(code)!r} for code {code!r}"))
+        # The public vendor text is exactly the code, display_message and vendor_severity: name and aliases are
+        # deterministic, so a sentence placed in either is a leak the word caps catch.
+        name, make_name = data.get("name"), data.get("make_name")
+        if isinstance(name, str) and isinstance(make_name, str) and isinstance(code, str) and name.strip() \
+                and not (name.startswith(make_name + " ") and name.endswith(" " + code)):
+            out.append(_v("fault-code", record, f"name is '{make_name} <family short name> {code}' (deterministic)"))
+        if _words(name) > MAX_NAME_WORDS:
+            out.append(_v("fault-code", record, f"name exceeds {MAX_NAME_WORDS} words"))
+        aliases = data.get("aliases")
+        for alias in aliases if isinstance(aliases, list) else []:
+            if _words(alias) > MAX_ALIAS_WORDS:
+                out.append(_v("fault-code", record, f"alias {alias[:40]!r}... exceeds {MAX_ALIAS_WORDS} words; aliases are "
+                                                    "the code, code_key, make_name + code and display_message"))
+        problem = _range_problem(data)
+        if problem:
+            out.append(_v("fault-code", record, problem))
+        if _words(data.get("display_message")) > MAX_DISPLAY_MESSAGE_WORDS:
+            out.append(_v("fault-code", record, f"display_message exceeds {MAX_DISPLAY_MESSAGE_WORDS} words"))
+        if _words(data.get("vendor_severity")) > MAX_VENDOR_SEVERITY_WORDS:
+            out.append(_v("fault-code", record, f"vendor_severity exceeds {MAX_VENDOR_SEVERITY_WORDS} words"))
+        if HTML_COMMENT_RE.sub("", record.body).strip():
+            out.append(_v("fault-code", record, "a FaultCode has no body; only an HTML comment is allowed"))
+        axes: dict[str, int] = {}
+        defined_in, derate, quantities = 0, False, []
+        defining_sources: set[object] = set()
+        for claim in record.claims():
+            rel = claim.get("rel")
+            if "quote" in claim:
+                out.append(_v("fault-code", record, "quote is forbidden on a FaultCode claim", claim))
+            for field_name in CODE_FREE_TEXT:
+                if _words(claim.get(field_name)) > MAX_CODE_NOTE_WORDS:
+                    out.append(_v("fault-code", record, f"{field_name} exceeds {MAX_CODE_NOTE_WORDS} words", claim))
+            if rel == "defined_in":
+                defined_in += 1
+                target = claim.get("target")
+                if target in defining_sources:
+                    out.append(_v("fault-code", record, f"one defined_in claim per source: {target} appears twice (several "
+                                                        "rows of one manual are several citations on one claim)", claim))
+                defining_sources.add(target)
+                for cite in _citations(claim):
+                    loc = cite.get("loc")
+                    if isinstance(loc, str) and not DEFINED_IN_LOC_RE.match(loc):
+                        out.append(_v("fault-code", record, f"defined_in cites the defining row (tbl=N.rM), table (tbl=N) "
+                                                            f"or heading unit (sec=hK), not {loc!r}", claim))
+                    if cite.get("src") != target:
+                        out.append(_v("fault-code", record, f"defined_in cites the row of its own target {target}, not "
+                                                            f"{cite.get('src')!r}", claim))
+            if rel in AXIS_RELATIONS and claim.get("review") != "disputed":
+                axes[rel] = axes.get(rel, 0) + 1
+            if rel == "has_production_effect" and claim.get("target") == DERATE:
+                derate = True
+            if "attr" in claim:
+                if claim.get("attr") != OUTPUT_LIMIT:
+                    out.append(_v("fault-code", record, f"the only quantity on a FaultCode is {OUTPUT_LIMIT}", claim))
+                    continue
+                quantities.append(claim)
+                conditions = claim.get("conditions")
+                if not isinstance(conditions, str) or not BASIS_RE.match(conditions):
+                    out.append(_v("fault-code", record, "output_limit conditions must start with basis=rated_power, "
+                                                        "basis=current_power or basis=absolute", claim))
+                value = claim.get("value")
+                if isinstance(value, dict):  # rule_quantities reports the shape otherwise
+                    if value.get("unit") not in OUTPUT_LIMIT_UNITS:
+                        out.append(_v("fault-code", record, f"output_limit unit is one of {', '.join(sorted(OUTPUT_LIMIT_UNITS))}, "
+                                                            f"not {value.get('unit')!r}", claim))
+                    if "min" in value or not any(k in value for k in ("nominal", "max")):
+                        out.append(_v("fault-code", record, "output_limit is a single reduced output: nominal or max, "
+                                                            "never min", claim))
+        if defined_in == 0:
+            out.append(_v("fault-code", record, "needs at least one defined_in claim citing the manual row"))
+        for rel, n in axes.items():
+            if n > 1:
+                out.append(_v("fault-code", record, f"at most one non-disputed {rel} claim per record; a second value "
+                                                    "on the same axis is a disputed pair (conflicts_with)"))
+        if not derate:
+            for claim in quantities:
+                out.append(_v("fault-code", record, f"{OUTPUT_LIMIT} needs a has_production_effect -> {DERATE} claim",
+                              claim))
+    return out
+
+
+def rule_event_axes(corpus: Corpus) -> list[Violation]:
+    """Plan 4d: has_event_class / has_production_effect / has_recovery point at an EventConcept on that axis, and an
+    EventConcept carries no claims (it is vocabulary, not knowledge)."""
+    out = []
+    for record in corpus.records.values():
+        if record.type == "EventConcept" and record.data.get("claims"):
+            out.append(_v("event-axes", record, "an EventConcept carries no claims"))
+        for claim in record.claims():
+            rel = claim.get("rel")
+            axis = AXIS_RELATIONS.get(rel) if isinstance(rel, str) else None
+            target = corpus.records.get(claim.get("target")) if isinstance(claim.get("target"), str) else None
+            if axis is None or target is None or target.type != "EventConcept":
+                continue  # rule_targets reports a missing or mistyped target
+            if target.data.get("axis") != axis:
+                out.append(_v("event-axes", record, f"{rel} must point at an EventConcept on the {axis} axis; "
+                                                    f"{target.id} is on {target.data.get('axis')!r}", claim))
+    return out
+
+
 ALL_RULES: list[Rule] = [
     rule_ids, rule_claim_shape, rule_sources_exist, rule_public_citations, rule_quantities,
     rule_targets, rule_distinguished_by, rule_claim_refs, rule_layers, rule_case_links,
-    rule_body_links, rule_field_format, rule_locators,
+    rule_body_links, rule_field_format, rule_locators, rule_fault_code, rule_event_axes,
 ]

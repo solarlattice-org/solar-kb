@@ -76,3 +76,48 @@ def test_neighbors_directions_and_review_floor(mini_graph):
 def test_neighbors_rejects_bad_arguments(mini_graph, kwargs):
     with pytest.raises(ValueError):
         mini_graph.neighbors("fm:pid", **kwargs)
+
+
+# --- Plan 4d: fault codes ------------------------------------------------------------------------------------------
+def test_fault_codes_table_and_code_aliases(tmp_path):
+    db = tmp_path / "g.sqlite"
+    build_graph(load_corpus(FIXTURES / "mini"), db, "t")
+    con = sqlite3.connect(db)
+    rows = con.execute("SELECT record_id, make, model_family, code_key, code_from, code_to FROM fault_codes "
+                       "ORDER BY record_id").fetchall()
+    assert ("fc:sma-stp-core1-us-6002-6412", "sma", "stp-core1-us", "6002-6412", 6002, 6412) in rows
+    assert ("fc:chint-sca-50-60ktl-isolationerr", "chint", "sca-50-60ktl", "isolationerr", None, None) in rows
+    assert len(rows) == 6
+    graph = Graph(db)
+    for alias in ("IsolationErr", "CPS IsolationErr", "Insulation resistance low"):  # generic aliases still resolve
+        assert graph.resolve(alias, types=["FaultCode"])[0]["id"].endswith("-isolationerr")
+
+
+def test_resolve_code_exact_zero_padding_filler_and_ranking(mini_graph):
+    hits = mini_graph.resolve_code("IsolationErr")
+    assert [h["id"] for h in hits] == ["fc:chint-sca-36ktl-isolationerr", "fc:chint-sca-50-60ktl-isolationerr"]
+    assert hits[0]["match"] == "exact" and hits[0]["code"] == "IsolationErr" and hits[0]["make_name"] == "CPS"
+    assert hits[0]["display_message"] == "Insulation resistance low" and hits[0]["query_key"] == "isolationerr"
+    assert mini_graph.resolve_code("isolation err", family="sca-50-60ktl")[0]["id"] == "fc:chint-sca-50-60ktl-isolationerr"
+    assert mini_graph.resolve_code("event 3501")[0]["id"] == "fc:sma-stp-core1-us-3501"
+    assert mini_graph.resolve_code("Error no. 003501")[0]["match"] == "exact"  # zero padding and filler words
+    assert mini_graph.resolve_code("3501", make="chint")[0]["id"] == "fc:sma-stp-core1-us-3501"  # ranked, not filtered
+    assert mini_graph.resolve_code("PROTECT 0090")[0]["id"] == "fc:chint-sca-50-60ktl-protect90"
+
+
+def test_resolve_code_range_containment_then_bare_number(mini_graph):
+    [hit] = mini_graph.resolve_code("6100")
+    assert hit["id"] == "fc:sma-stp-core1-us-6002-6412" and hit["match"] == "range" and hit["code"] == "6002-6412"
+    assert mini_graph.resolve_code("6002-6412")[0]["match"] == "exact"
+    assert mini_graph.resolve_code("crit 6100") == []  # a range only contains numbers under its own prefix
+    [hit] = mini_graph.resolve_code("90")  # no exact or range hit: the bare number finds Protect0090
+    assert hit["id"] == "fc:chint-sca-50-60ktl-protect90" and hit["match"] == "number"
+    for bound in ("6002", "6412"):  # containment is inclusive: both printed bounds find the range record
+        [hit] = mini_graph.resolve_code(bound)
+        assert hit["id"] == "fc:sma-stp-core1-us-6002-6412" and hit["match"] == "range"
+
+
+@pytest.mark.parametrize("text", ["", "   ", "event", "99999"])
+def test_resolve_code_junk_returns_empty(mini_graph, text):
+    assert mini_graph.resolve_code(text) == []
+    assert mini_graph.resolve_code("3501", limit=0) == []

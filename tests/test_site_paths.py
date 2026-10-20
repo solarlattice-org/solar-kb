@@ -5,8 +5,8 @@ import rdflib
 from solar_kb.export import export_all
 from solar_kb.iri import KB
 from solar_kb.records import load_corpus
-from solar_kb.site.paths import (PUBLIC_TYPES, alias_ids, collisions, href, iri_to_path, record_jsonld_path,
-                                 record_path, term_path, type_index_path)
+from solar_kb.site.paths import (PUBLIC_TYPES, alias_ids, codes_json_path, collisions, href, iri_to_path,
+                                 make_index_path, record_jsonld_path, record_path, term_path, type_index_path)
 from solar_kb.site.terms import load_ontology
 from tests.helpers import FIXTURES, SCHEMA
 
@@ -19,7 +19,8 @@ def test_record_type_and_term_paths():
     assert term_path(KB + "schema") == "kb/schema.html"
     with pytest.raises(ValueError):
         term_path(KB + "fm/pid")
-    assert [p for _, p, _ in PUBLIC_TYPES] == ["fm", "stressor", "symptom", "meas", "method", "mit", "comp", "src"]
+    assert [p for _, p, _ in PUBLIC_TYPES] == ["fm", "stressor", "symptom", "meas", "method", "mit", "comp", "fc", "ec",
+                                               "src"]
 
 
 def test_iri_to_path_mirrors_pages():
@@ -75,4 +76,13 @@ def test_no_site_paths_collide_for_the_real_schema():
     paths = [term_path(t.iri) for t in ontology.terms if t.local] + [term_path(ontology.iri), "kb/index.html"]
     paths += [record_path(r) for r in load_corpus(FIXTURES / "mini").records]
     paths += [type_index_path(p) for _, p, _ in PUBLIC_TYPES]
+    paths += [make_index_path(m) for m in ("chint", "sma")] + [codes_json_path()]  # Plan 4d make pages
     assert collisions(paths) == []
+
+
+def test_fault_code_paths_and_former_ids():
+    assert make_index_path("chint") == "kb/fc/chint.html" and codes_json_path() == "kb/fc/codes.json"
+    assert href("kb/fc/chint-sca-50-60ktl-isolationerr.html", make_index_path("chint"), "sca-50-60ktl") == "chint#sca-50-60ktl"
+    assert alias_ids("fc:chint-sca-50-60ktl-isolationerr",
+                     ["IsolationErr", "fc:chint-sca-50-60ktl-isolation-err", "ec:alarm", "3701"]) == [
+        "ec:alarm", "fc:chint-sca-50-60ktl-isolation-err"]

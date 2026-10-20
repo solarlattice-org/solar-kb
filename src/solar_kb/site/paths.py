@@ -35,6 +35,17 @@ def type_index_path(prefix: str) -> str:
     return f"kb/{prefix}/index.html"
 
 
+def make_index_path(make: str) -> str:
+    """chint -> kb/fc/chint.html: one page per make listing its fault codes by family (Plan 4d). A flat file beside the
+    records; it cannot clash with a record because every fc: slug carries a family and a code."""
+    return f"kb/fc/{make}.html"
+
+
+def codes_json_path() -> str:
+    """The fault-code lookup table the static filter box reads (Plan 4d)."""
+    return "kb/fc/codes.json"
+
+
 def term_path(iri: str) -> str:
     """https://solarlattice.org/kb/FailureMode -> kb/FailureMode.html. Only flat kb: IRIs are terms."""
     name = iri[len(KB):] if iri.startswith(KB) else ""
@@ -89,7 +100,7 @@ def collisions(paths: Iterable[str]) -> list[tuple[str, ...]]:
     return sorted(clashes)
 
 
-_FORMER_ID = re.compile(r"^(fm|stressor|symptom|meas|method|mit|comp):[a-z0-9]+(-[a-z0-9]+)*$")
+_FORMER_ID = re.compile(r"^(fm|stressor|symptom|meas|method|mit|comp|fc|ec):[a-z0-9]+(-[a-z0-9]+)*$")
 
 
 def alias_ids(rid: str, aliases: Iterable[object]) -> list[str]:

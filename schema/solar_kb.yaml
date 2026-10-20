@@ -1,7 +1,7 @@
 id: https://solarlattice.org/kb/schema
 name: solar_kb
 title: Solar Lattice knowledge schema
-version: 0.3.0
+version: 0.4.0
 license: CC-BY-4.0
 description: >-
   Typed records and cited claims for solar PV domain knowledge.
@@ -18,6 +18,8 @@ prefixes:
   mit: https://solarlattice.org/kb/mit/
   comp: https://solarlattice.org/kb/comp/
   src: https://solarlattice.org/kb/src/
+  fc: https://solarlattice.org/kb/fc/
+  ec: https://solarlattice.org/kb/ec/
   case: https://solarlattice.org/kb/case/
   dex: https://solarlattice.org/kb/dex/
   unit: http://qudt.org/vocab/unit/
@@ -61,6 +63,31 @@ classes:
     slot_usage:
       tier: {required: true}
       tdm_ok: {required: true}
+  FaultCode:
+    is_a: Record
+    description: >-
+      A vendor fault, warning or event code as one make and model family prints it. Identity slots are
+      written deterministically from the cited manual row; what the code means is carried by ordinary cited
+      claims (reports, indicates, event-axis relations), never by drafted prose. The body stays empty.
+    slots: [make, make_name, model_family, family_name, code, code_key, code_from, code_to, display_message,
+            vendor_severity, page]
+    slot_usage:
+      make: {required: true}
+      make_name: {required: true}
+      model_family: {required: true}
+      family_name: {required: true}
+      code: {required: true}
+      code_key: {required: true}
+      category: {required: true}
+  EventConcept:
+    is_a: Record
+    description: >-
+      A normalized value on one fault-event axis (event class, production effect or recovery), with its
+      reading rule in the body. Hand-written; a FaultCode points at it through has_event_class,
+      has_production_effect or has_recovery.
+    slots: [axis]
+    slot_usage:
+      axis: {required: true}
   Case:
     is_a: Record
     description: One work order. Private overlay only.
@@ -120,6 +147,22 @@ slots:
   label: {range: uriorcurie}
   labeler: {}
   anonymized: {range: boolean}
+  make: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog manufacturer id (sma, chint, yaskawa-solectria)."}
+  make_name: {description: "Manufacturer display name (SMA, CPS, Yaskawa Solectria)."}
+  model_family: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog model-family slug (stp-core1-us, sca-50-60ktl)."}
+  family_name: {description: "Model-family display name (Sunny Tripower CORE1-US (STP 33/50/62-US-41))."}
+  code: {description: "The code as the manual prints it, trimmed (3701, Protect0090, CRIT-4, 6002-6412)."}
+  code_key:
+    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+    description: >-
+      Lookup key of the printed code: lowercase, whitespace removed, zero padding stripped from the number,
+      vendor prefix kept, ranges start-end, codes without digits reduced to alphanumerics (solar_kb.codes).
+  code_from: {range: integer, description: First number of a printed range; only with code_to.}
+  code_to: {range: integer, description: Last number of a printed range; only with code_from.}
+  display_message: {description: "The text the device shows, at most 8 words, an exact span of the cited row."}
+  vendor_severity: {description: "The vendor's severity word as printed, at most 3 words; never normalized."}
+  page: {range: integer, description: "Page of the defining row, for the technician holding the PDF."}
+  axis: {range: EventAxis, description: Which fault-event axis this concept is a value of.}
   claim_id: {required: true, pattern: "^c[0-9]+$"}
   rel: {range: Relation}
   target: {range: uriorcurie}
@@ -176,6 +219,17 @@ enums:
       mitigated_by: {}
       leads_to: {}
       distinguished_from: {}
+      reports: {description: FaultCode -> Symptom. The observation the code reports.}
+      indicates: {description: FaultCode -> FailureMode. The failed thing the manual names.}
+      has_event_class: {description: FaultCode -> EventConcept on the event_class axis.}
+      has_production_effect: {description: FaultCode -> EventConcept on the production_effect axis.}
+      has_recovery: {description: FaultCode -> EventConcept on the recovery axis.}
+      defined_in: {description: FaultCode -> Source. The manual whose row defines the code; the citation is that row.}
+  EventAxis:
+    permissible_values:
+      event_class: {description: "What kind of message it is (fault, warning, informational)."}
+      production_effect: {description: "What it does to energy (trip, derate, no production effect)."}
+      recovery: {description: "What clears it (auto-reset, auto-reset-limited, manual-reset, service-required)."}
   ReviewState:
     permissible_values:
       drafted: {description: Passed automated checks; a lead.}

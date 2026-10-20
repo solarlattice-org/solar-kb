@@ -25,9 +25,14 @@ CREATE TABLE claims (
 CREATE TABLE citations (
     record_id TEXT NOT NULL, claim_id TEXT NOT NULL, src TEXT NOT NULL, loc TEXT NOT NULL, h TEXT NOT NULL
 );
+CREATE TABLE fault_codes (
+    record_id TEXT PRIMARY KEY REFERENCES nodes(id), make TEXT NOT NULL, model_family TEXT NOT NULL,
+    code_key TEXT NOT NULL, code_from INTEGER, code_to INTEGER
+);
 CREATE INDEX claims_target ON claims(target);
 CREATE INDEX claims_rel ON claims(rel);
 CREATE INDEX aliases_norm ON aliases(norm);
+CREATE INDEX fault_codes_key ON fault_codes(code_key);
 """
 
 
@@ -56,6 +61,10 @@ def build_graph(corpus: Corpus, db_path: Path, kb_version: str) -> None:
             names = {data["name"], rid, rid.partition(":")[2], *data.get("aliases", [])}
             for norm in sorted({normalize(n) for n in names} - {""}):
                 con.execute("INSERT INTO aliases VALUES (?,?)", (norm, rid))
+            if record.type == "FaultCode":  # Plan 4d: the lookup table behind Graph.resolve_code
+                con.execute("INSERT INTO fault_codes VALUES (?,?,?,?,?,?)",
+                            (rid, data["make"], data["model_family"], data["code_key"],
+                             data.get("code_from"), data.get("code_to")))
             for claim in record.claims():
                 con.execute(
                     "INSERT INTO claims VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",

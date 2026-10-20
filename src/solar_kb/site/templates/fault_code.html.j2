@@ -1,0 +1,96 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import link %}
+{% block head %}
+<link rel="alternate" type="application/ld+json" href="{{ view.jsonld_href }}">
+<script type="application/ld+json">{{ jsonld|safe }}</script>
+{% endblock %}
+{% block main %}
+{% set fc = view.fault_code %}
+<p class="kind crumbs"><a href="{{ fc.fc_index_href }}">Fault codes</a> › <a href="{{ fc.make_href }}">{{ fc.make_name }}</a> › <a href="{{ fc.make_href }}#{{ fc.family }}">{{ fc.family_name }}</a></p>
+<h1>{{ view.name }}</h1>
+<dl class="meta">
+<dt>Code</dt><dd><code>{{ fc.code }}</code></dd>
+{% if fc.display_message %}
+<dt>Shown as</dt><dd>{{ fc.display_message }}</dd>
+{% endif %}
+{% if fc.vendor_severity %}
+<dt>Vendor severity</dt><dd>{{ fc.vendor_severity }}</dd>
+{% endif %}
+{% if fc.page %}
+<dt>Page</dt><dd>{{ fc.page }}</dd>
+{% endif %}
+<dt>ID</dt><dd><code>{{ view.id }}</code></dd>
+<dt>IRI</dt><dd><code>{{ view.iri }}</code></dd>
+<dt>Status</dt><dd>{{ view.status }}</dd>
+{% if view.aliases %}
+<dt>Also known as</dt><dd>{{ view.aliases|join(", ") }}</dd>
+{% endif %}
+{% if view.category %}
+<dt>Category</dt><dd>{{ view.category }}</dd>
+{% endif %}
+</dl>
+{% if fc.only_defined %}
+<p class="empty">The manual lists this code without further explanation.</p>
+{% else %}
+<section class="axis-card" aria-label="What the code does">
+{% for b in fc.badges %}
+<div class="axis"><span class="label">{{ b.axis }}</span>
+{% if b.concept %}<a href="{{ b.concept.href }}">{{ b.label }}</a> <span class="badge {{ b.review }}">{{ b.review_label }}</span>{% else %}<span class="muted">not stated</span>{% endif %}
+</div>
+{% endfor %}
+</section>
+{% if fc.decoded %}
+<h2>Decoded</h2>
+<p class="decoded">{% for part in fc.decoded %}{{ part.lead }} {% for t in part.targets %}{{ link(t) }}{% if not loop.last %}, {% endif %}{% endfor %}{% if loop.last %}.{% else %}; {% endif %}{% endfor %}</p>
+{% endif %}
+{% endif %}
+{% for d in fc.differential %}
+<h2>What can be behind {{ link(d.symptom) }}</h2>
+<p class="help">Failure modes that present as the reported condition, and the tests that tell them apart.</p>
+<ul>
+{% for fm, review, review_label in d.failure_modes %}
+<li>{{ link(fm) }} <span class="badge {{ review }}">{{ review_label }}</span></li>
+{% endfor %}
+</ul>
+{% if d.tests %}
+<table>
+<thead><tr><th>Tell apart</th><th>By</th><th>How</th></tr></thead>
+<tbody>
+{% for t in d.tests %}
+<tr><td>{{ link(t.a) }} vs {{ link(t.b) }} <span class="badge {{ t.review }}">{{ t.review_label }}</span></td><td>{% if t.by %}{{ link(t.by) }}{% endif %}</td><td>{{ t.note or "" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% endfor %}
+<h2>Defined in</h2>
+<ul class="defined-in">
+{% for d in fc.defined_in %}
+<li>{{ link(d.source) }}{% if d.details %} — {{ d.details }}{% endif %}{% if fc.page and fc.defined_in|length == 1 %} · page {{ fc.page }}{% endif %} <span class="badge {{ d.review }}">{{ d.review_label }}</span>
+<ul class="cites">
+{% for loc, h in d.citations %}
+<li><code>{{ loc }}</code> <code title="content hash of the cited passage">h={{ h }}</code></li>
+{% endfor %}
+</ul>
+</li>
+{% endfor %}
+</ul>
+<p class="help">The manufacturer's own cause and corrective text is not reproduced here.</p>
+{% if fc.same_condition %}
+<h2>Same condition on other equipment</h2>
+<dl class="meta">
+{% for make_name, refs in fc.same_condition %}
+<dt>{{ make_name }}</dt><dd>{% for ref in refs %}{{ link(ref) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+{% endfor %}
+</dl>
+{% endif %}
+{% if fc.same_code %}
+<h2>Same code in other families</h2>
+<ul>
+{% for ref in fc.same_code %}
+<li>{{ link(ref) }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% include "_claims.html.j2" %}
+{% endblock %}

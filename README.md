@@ -12,7 +12,9 @@ source can never silently re-point a citation at different text:
 
 - `schema/solar_kb.yaml` — the LinkML schema (the open ontology). Exports to JSON Schema, OWL, JSON-LD.
 - `records/` — one markdown file per entity. Open `records/` as an Obsidian vault to browse the graph.
-- `src/solar_kb/` — validator, graph build, queries (`resolve`, `neighbors`, `differential`), exports.
+  Vendor fault codes (`fc:`) are records too: identity slots from the manual row, meaning as cited claims, no
+  drafted prose (see `records/README.md`).
+- `src/solar_kb/` — validator, graph build, queries (`resolve`, `resolve-code`, `neighbors`, `differential`), exports.
 
 ## Quick start
 
@@ -21,7 +23,9 @@ pip install -e ".[dev]"
 solar-kb validate            # schema + rules; exits 1 on any violation
 solar-kb build               # build/graph.sqlite + build/*.jsonld, *.ttl, *.schema.json
 solar-kb query resolve "PID"
+solar-kb query resolve-code "event 3501" --make sma   # a printed or spoken code -> fc: records
 solar-kb query differential symptom:uniform-power-loss
+solar-kb query differential fc:chint-sca-50-60ktl-isolationerr   # a code counts as the symptoms it reports
 ```
 
 ## Website
@@ -29,6 +33,7 @@ solar-kb query differential symptom:uniform-power-loss
 `solar-kb site --out _site` builds [solarlattice.org](https://solarlattice.org) from the public records: a page at
 every record IRI (`https://solarlattice.org/kb/fm/pid`) and schema-term IRI (`https://solarlattice.org/kb/FailureMode`),
 with the record's JSON-LD embedded in the page and alongside it (`/kb/fm/pid.jsonld`), plus the exports under `/kb/`.
+Fault codes get their own pages (`/kb/fc/`, one table per make and family, a "Find a code" box over `/kb/fc/codes.json`).
 It never reads the private overlay. `.github/workflows/pages.yml` deploys it on every push to `main`.
 Install the extra first: `pip install -e ".[site]"`.
 

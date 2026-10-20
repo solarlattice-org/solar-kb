@@ -150,6 +150,13 @@ def q_resolve(text: str, db: Path = DB, limit: int = 5) -> None:
     _print(_run(lambda: _graph(db).resolve(text, limit=limit)))
 
 
+@query_app.command("resolve-code")
+def q_resolve_code(text: str, db: Path = DB, make: Optional[str] = None, family: Optional[str] = None,
+                   limit: int = 20) -> None:
+    """FaultCode records for a printed or spoken code ("3701", "event 3501", "Protect0090", "CRIT-7")."""
+    _print(_run(lambda: _graph(db).resolve_code(text, make=make, family=family, limit=limit)))
+
+
 @query_app.command("entity")
 def q_entity(record_id: str, db: Path = DB) -> None:
     entity = _graph(db).get_entity(record_id)
@@ -190,3 +197,7 @@ def eval_differential(cases: Path = typer.Option(Path("eval/public/differential.
     if details:
         out["results"] = [asdict(r) for r in report.results]
     _print(out)
+
+
+if __name__ == "__main__":  # `python -m solar_kb.cli ...` behaves like the `solar-kb` console script
+    app()
