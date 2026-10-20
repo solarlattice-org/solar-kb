@@ -31,7 +31,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages support losses clustering around grade breaks, swales
     and rolling sections and repeating by sun position, but not the specific string current or inverter
     signal wording or morning/afternoon backtracking windows.'

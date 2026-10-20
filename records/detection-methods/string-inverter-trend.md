@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h6
     h: c071b96206e3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:ac-power-step-drop
@@ -25,7 +27,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=3.1
     h: 9e7ebfc02859
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - u17 gives a sudden AC power decrease equal to the disconnected
     string''s power, but does not mention irradiance being unchanged.'
 - claim_id: c3

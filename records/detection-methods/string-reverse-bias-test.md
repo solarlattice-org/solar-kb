@@ -17,7 +17,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:ir-warm-substring

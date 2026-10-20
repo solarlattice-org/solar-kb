@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h2
     h: cf13e86d6896
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Site camera observation means using cameras on site to see whether snow is covering the modules. The images are lined up in time with weather data, such as snowfall, snow depth, temperature, wind and irradiance, and with production residuals from SCADA. Together these data confirm snow accumulation losses: the plant is available and sensors show usable sunlight, but snow-covered modules produce no current. Camera views also show how fast the array clears during melt or slide-off, so you can compare that recovery with the snow-loss assumptions in the energy model. The visible snow cover does not always match the energy lost, because partial clearing can leave current uneven across strings and substrings. Also check for cold-weather inverter behavior, clipping, curtailment, frozen tracker stow, sensor icing and albedo effects before blaming snow.
 

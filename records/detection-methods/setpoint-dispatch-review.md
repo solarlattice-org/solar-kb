@@ -18,7 +18,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h2
     h: 5fdb7733fc7c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Setpoint and dispatch review checks whether low plant output was caused by an imposed limit rather than an equipment problem. The reviewer compares plant setpoints, inverter active power limits, grid operator dispatch and meter output with the available power supported by irradiance, plus battery charging behavior and curtailment flags. Available power is first rebuilt from irradiance, temperature, inverter status, clipping state and modeled plant capability, then checked against meter output and plant controller limits. Each constrained interval is then given a cause: grid dispatch, export limit, economic curtailment, plant controller behavior, battery charging limit, outage or telemetry error. The method confirms grid curtailment yield losses, which show up as a flat or controlled output level below the power the plant could produce. Without this review, curtailment is easy to mistake for underperformance because inverter and tracker availability can look normal. On frequently constrained plants, curtailment-aware performance measures help crews avoid chasing equipment faults that do not exist.
 

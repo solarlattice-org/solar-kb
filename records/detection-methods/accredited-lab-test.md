@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=39
     h: 6442f10b15ac
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Accredited laboratory testing means sending modules to an accredited PV test laboratory, which confirms whether they really produce less power than they should. It is listed as a corrective action: once the lab confirms the underperformance, the owner can claim for the missing power. Light induced degradation is a power loss caused by exposure to light, and it can be large enough to justify lab confirmation. An optional preventive step is independent third-party testing of sample modules at the factory gate or when they arrive on site, backed by a contractual agreement. Accredited labs also test non-standard mounting setups, such as facade mounting. Accurate IV measurements need test equipment and irradiance reference devices calibrated by, or traceable to, an accredited laboratory. Even in a lab, the certified accuracy of a module IV measurement has limits, and most PV laboratories find it hard to do better than a few percent.
 

@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h6
     h: 08e6be358742
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Available power reconstruction estimates how much power the plant could have produced at a given time, so that this can be compared with what it actually exported. The estimate is built from irradiance, temperature, inverter status, clipping state and the modeled capability of the plant. The result is then compared with meter output and with plant controller limits, plant setpoints, inverter active power limits, grid operator dispatch and curtailment flags. It is the main way to confirm grid curtailment losses, where exported power is held below what the plant could deliver even though availability and equipment health are normal. Once constrained intervals are found, each one should be given a cause: grid dispatch, export limit, economic curtailment, plant controller behavior, battery charging limit, outage or telemetry error. At sites with storage, also check whether the curtailed PV energy was used to charge the battery, was clipped, or was lost. Without this check, a low performance ratio during curtailed hours can be mistaken for a fault in the modules, inverters or trackers, and teams may end up chasing equipment problems that do not exist.
 

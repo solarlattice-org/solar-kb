@@ -37,7 +37,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.3.1
     h: 3a65ff4976bc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passage says ''almost 10%'' under -1200 V combined stress flash
     tested from front, not ''up to 10%'' as a typical value; also a field-like combined test.; possible
     conflict with c3 (same source; check the conditions)'
@@ -52,7 +54,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.3.1
     h: 3a65ff4976bc
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions)
 ---
 The PID susceptibility lab test checks how sensitive a module is to Potential Induced Degradation (PID) by putting a high voltage on the shorted module leads while the outer surfaces of the module are grounded. In the chamber method the module is held at about 60°C and 85% relative humidity for 96 hours under its rated system voltage and polarity, and the humidity itself provides the path to ground. Another method grounds the module face with a conductive electrode such as metal foil, typically at 25°C for 168 hours. This method skips frame features like edge clips or rear rails that would slow PID in the field. Power is measured before and after the stress. A module that loses more than 5% fails, and modules that failed the 60°C test also degraded from PID outdoors. Testing for polarization-type PID (PID-p) calls for UV illumination through a transparent electrode. In bifacial PERC modules the loss shows up much more strongly when the rear side is flash tested. Leakage current can be logged during the test to check that it is stable, but it is a weak indicator of how much the module has degraded. Limits: the test has not been shown to match field behavior for SHJ modules, chamber temperature and humidity must be kept uniform, and long tests at 85°C can set off other degradation mechanisms.

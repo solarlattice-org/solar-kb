@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-spectral-effect-losses
     loc: sec=h4
     h: eb8006cfb637
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Residual vs air mass/season/time of day after removing effects,
     and the overstating of broadband irradiance, are supported, but the passages never say spectral irradiance
     measurement itself produces this residual, and the signal point details are not stated.'

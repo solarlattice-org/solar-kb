@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h6
     h: d98419e6bd80
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Independent test data validation checks the module parameters in an energy model file, such as a PAN file, against test data that does not come from the module maker. First find the exact PAN file used for the energy estimate, including its source, its version and any manual edits. Run sensitivity cases to see whether PAN parameters can plausibly explain a lasting gap between expected and measured output. This is the main check for flawed PAN file yield losses. A PAN problem is a modeling loss, not a fault in the field. Keep it apart from real operating losses so nobody tries to repair a defect that does not exist. Independent third-party testing of module samples at the factory gate or when they arrive on site is an optional way to get independent data. Treat the source of the PAN file as a controlled input, and update forecasts if independent testing shows material differences in the parameters.
 

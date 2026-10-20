@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-terrain-undulation-yield-losses
     loc: sec=h4
     h: 7ebb164fa9e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages support repeatable, low-sun-angle losses clustered at
     motor block boundaries, grade breaks and swales, and comparison of shade-model output with production;
     the specific signal claims (inverter W below shade-model expectation, InDCA lower in rows) are only
@@ -37,7 +39,9 @@ claims:
   - src: src:alsoenergy-kb-pv-shading-model
     loc: sec=front
     h: 11ff663ce925
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Shade model comparison checks the output of a shading model against measured row or inverter production. Its purpose is to show whether the losses come from shading geometry. Shading models are usually built during site design. They can be a simple layout of rectangular rows or a full 3D physical model, and a shade table exported from PVsyst can be loaded into the monitoring platform. For terrain undulation yield losses, compare the terrain-following design data, the motor block boundaries, the backtracking settings and the shade-model output. Check these against normalized production in the morning and afternoon windows. A typical finding is a loss that repeats with sun position, is strongest at low sun angles, and clusters near motor block boundaries, grade breaks and swales. Do not assume a tracker is fine just because it follows its commanded angle. On rolling ground, the command itself can cause the loss if the terrain model, the backtracking algorithm or the motor block layout is too coarse. The model calculates shade loss as a percentage of irradiance. It ignores how partially shaded modules interact electrically and how the wiring and inverters respond, so the energy-loss result is only approximate. A shade record made at commissioning gives a baseline for later comparisons. It also confirms whether the design shading assumptions match the built system.
 

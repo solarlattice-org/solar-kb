@@ -23,7 +23,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=3.2.2
     h: 7b13bcc8687f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages say optical sensors convert transmission loss into equivalent
     short-circuit current and power loss and that metrics are soiling ratio/rate, but never state the
     ratio is below unity.'

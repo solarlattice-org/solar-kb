@@ -14,7 +14,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=3.2.2
     h: 7b13bcc8687f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The passage says the soiling ratio is computed from clean and
     soiled Isc with temperature coefficients, but it never says the ratio is below unity (the formula
     is also not shown).'
@@ -27,7 +29,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=3.2.2
     h: 7b13bcc8687f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A clean/dirty reference comparison is one of the recommended ways to detect soiling losses, alongside soiling stations, performance ratio trends, visual inspection and weather-normalized production comparison. Two PV devices sit side by side: one is cleaned regularly and the other is left to soil naturally. Their current or power outputs are then compared to calculate a soiling ratio. The pair can be two reference cells, two modules, or a cell with a module. A cell pair is cheap, but the cell may soil differently from the modules and will miss non-uniform soiling. A module pair captures non-uniform soiling but costs more to maintain. The clean device should ideally be cleaned every morning, because most dust settles at night. Cleaning it too rarely can make the soiling ratio look much better than it really is. Calculations normally use clear-sky data from the middle of the day, and data is dropped when passing clouds make the short-circuit current change quickly. Logging power as well as short-circuit current is best, because non-uniform soiling can cut power and fill factor more than it cuts current. Do not measure dust soiling with a single dirty irradiance sensor. Sensor drift, poor cleaning or a local obstruction can produce a false soiling signal that does not represent the array.
 

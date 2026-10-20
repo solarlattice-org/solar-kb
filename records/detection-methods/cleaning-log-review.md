@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Cleaning log review means checking the site's records of when modules were washed or cleaned against the plant's production data. Line up the cleaning dates with normalized production trends, SCADA, irradiance and weather data, along with soiling station readings, rainfall and nearby reference blocks if the site has them. Granular dust soiling shows as a slow drop in normalized output during dry periods, followed by partial or full recovery after a real rain or a wash. The key evidence is a repeatable jump in production after cleaning, especially where rain had not brought output back, which points to biological soiling rather than ordinary dust. Use the logged recoveries to check whether the assumed soiling model fits, and update the local buildup and wash-off assumptions before using the model to plan cleaning costs. First rule out other causes of the decline, such as availability problems, clipping, curtailment and irradiance sensor issues. Do not rely on one dirty irradiance sensor: sensor drift, poor cleaning practice and local obstructions can create fake soiling signatures that do not represent the array.
 

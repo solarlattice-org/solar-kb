@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h2
     h: 5d4993c87d37
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages support looking for dry-period output decline without
     availability/clipping/curtailment/irradiance sensor issues, but not the specific signals (rain absence,
     POAI drift check) or that it is framed as a residual-analysis output.'
@@ -41,7 +43,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h6
     h: d8fc1b85b960
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage covers testing model against recovery after cleaning
     and updating accumulation assumptions, but not the step on the cleaning date or specific signal.'
 - claim_id: c4
@@ -70,7 +74,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=24.r2
     h: 9396b4336aaa
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Row gives periodic cleaning 4.1% with 2 precipitation and 12
     cleaning events, but no link to residual analysis or ''typical''.; possible conflict with c4 (same
     source; check the conditions); possible conflict with c6 (same source; check the conditions)'
@@ -85,7 +91,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=24.r3
     h: f39cb9b31f82
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Row gives triggered cleaning 2.3% with 2 precipitation and 20
     cleaning events, but no link to residual analysis or ''typical''.; possible conflict with c4 (same
     source; check the conditions); possible conflict with c5 (same source; check the conditions)'

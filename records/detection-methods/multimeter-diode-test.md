@@ -16,7 +16,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:open-diode-reading
@@ -26,7 +28,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h7
     h: 698184845b6b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 The multimeter diode test checks a bypass diode directly, with the meter set to diode mode or ohmmeter mode. It is the best way to find out whether a bypass diode has failed short-circuited or open-circuited, so it confirms Bypass Diode Failure. It is especially useful for open-circuited diodes, which are hard to spot by other means unless the module has a significant mismatch. Open-circuit voltage measurement, IV curves and infrared thermography can point to a suspect diode. The direct diode check then confirms the fault. When hotspots or burn marks are found, check the bypass diodes to make sure they still activate. This helps prevent worse degradation. The check can be used across a whole fleet. One survey counted how many modules of one type had one or more defective bypass diodes after about four years in the field. A bypass diode functionality test is also used as a final measurement step in laboratory test sequences.
 

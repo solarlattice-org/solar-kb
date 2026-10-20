@@ -32,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: tbl=24.r2
     h: efef0762eda5
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: produces
   target: meas:stm-signal-on-shaded-submodule
@@ -45,6 +47,8 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: tbl=24.r3
     h: af88837daede
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 The signal transmission method uses a small, light, low-cost device with two parts. A transmitter injects a small alternating test current into the circuit, and a receiver senses the magnetic flux that current creates. The device was first made for general electrical work, such as finding earth-leakage points and tracing wires inside walls. Applied to the DC circuit of a PV array, it can find interconnect ribbon disconnections and open-circuit bypass diodes. Stop the PV system first. Then connect the transmitter to the target string at the combiner box and move the receiver along the interconnect ribbons on the front or back of each module. For Cell Interconnection Failure: if one ribbon is disconnected, there is no signal at the break. If all ribbons of a cell are disconnected, there is no signal anywhere on that submodule, because the current goes through its bypass diode. To check for Bypass Diode Failure, shade one submodule with something like a rubber sheet so its diode turns on. A healthy diode carries the signal around the submodule, so if the signal still shows up on the shaded submodule, the diode is open-circuit. In one field example, the results of this method fully matched an EL image showing two cells with disconnected ribbons. Compared with EL imaging, which is mostly done indoors and costs a lot, this method is cheap and easy to use in the field, and the modules stay installed.

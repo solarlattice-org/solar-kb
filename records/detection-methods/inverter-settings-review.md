@@ -13,7 +13,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h6
     h: 1a2c2578fa31
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:operating-voltage-above-iv-vmp
@@ -26,7 +28,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -40,7 +44,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 An inverter settings review checks the inverter's DC voltage limits and other parameters against how the plant actually runs. It is used to confirm whether the inverter's minimum DC input voltage is stopping maximum power point tracking. Start by finding intervals where the inverter DC voltage sits at or near its minimum threshold while output is lower than the irradiance supports. Rule out outages, curtailment, clipping, soiling and sensor faults first. Compare the operating voltage with an independent Vmp estimate from in-situ IV tracers, string IV sweeps or a temperature-corrected module model. Operation above Vmp with power below Pmp points to inverter voltage floor losses. Do not mistake this for clipping. Clipping is a power ceiling, while voltage flooring is an MPPT limit set by the DC voltage window, and the two need different fixes. Monitor control settings on both the DC and AC sides, and set alarms that trigger when a parameter is changed wrongly or goes outside a set limit. Measure and store the input DC voltage and current separately so MPP-tracking problems can be analysed. Wrong parameter settings can cause inverter faults, so only qualified personnel should change settings. Agree any changes with the inverter supplier and the plant electrical engineer. After a change, compare the recovered operation with the IV-derived Vmp and Pmp. Also confirm the plant still meets its reactive power obligations.
 

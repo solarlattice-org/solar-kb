@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h6
     h: 0935b66311ac
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The comparison of recovery curves with snow-loss assumptions
     and slower clearing needing a revised factor is stated, but the specific signal patterns (POAI present
     with negative residual, low module temperature aligned with slow melt) are not stated in the passages.'
@@ -36,7 +38,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=4.2.4
     h: 5ddca0c6f3d8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Marion model max of 42% for a few Arctic Circle stations, near
     zero in warmer regions, and much lower Townsend and Powers losses are stated, but 42% is a maximum,
     not a typical value.'
