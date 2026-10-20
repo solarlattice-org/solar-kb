@@ -2,5 +2,5 @@
 id: mit:compatible-mounting-structure
 type: Mitigation
 name: Compatible mounting structure
-status: proposed
 ---
+Using a compatible mounting structure is a recommended preventive action against an inappropriate or defective mounting structure. Ground, mounting structure and modules must all suit one another, and the installer should follow the manufacturer's mounting instructions. Before choosing the structure, check the local wind, snow and other loads. Structures often fail because they were not designed for the loads typical at the site or because their anchorage to the ground or roof is weak. Other causes this action should avoid are corrosive or poor-quality materials and installation errors such as missing parts or screws that are too tight or too loose. Where two different metals touch, for example an aluminium frame on a steel structure, insulate them from each other in humid or coastal areas to prevent galvanic corrosion. When modules are replaced during repowering, check that the new modules fit the mounting system. Heavier or larger modules need a check of structural loads, and in extreme cases a new mounting structure is needed. Supporting measures are regular system inspections and accredited lab testing of non-standard configurations such as facade mounting. A structure that already poses a direct safety risk must be repaired or replaced.

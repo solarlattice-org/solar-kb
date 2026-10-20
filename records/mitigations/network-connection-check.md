@@ -2,5 +2,11 @@
 id: mit:network-connection-check
 type: Mitigation
 name: Network connection check
-status: proposed
 ---
+A network connection check is a troubleshooting step for inverters, gateways and data loggers that report a network fault or have lost contact with the monitoring server. Start with the physical link: make sure the Ethernet plugs are firmly seated, the cable and connectors are not damaged, and the cable pin-out is correct. Check the status LEDs. The link LED on the router or switch should be lit. On the logger's Ethernet port, a solid green LED means a persistent connection and a flashing yellow LED means data is moving. For wireless links, the Wi-Fi antennas should be mounted vertically and the Wi-Fi username and password must match the router. If a cellular modem shows weak signal, move its antenna to a better spot. Then check the configuration: the IP, DHCP or static address settings, and the router. A static address, subnet mask and gateway should match the single-line diagram. Also check that a firewall is not blocking traffic. To find out whether the problem is the site network rather than the device, plug a laptop into the router and test the internet connection. Some loggers also have a built-in quick test that tries to reach the server. This check only covers the device side. If the physical link is fine but the fault stays, contact the site network IT team or the internet provider. Repeated outages can point to faulty network hardware, wrong settings or unreliable internet access. To prevent problems, use shielded communication cables and keep them apart from power cables and out of direct sunlight. For larger plants, a backup mobile or satellite link is advised in case the main connection fails.
+
+<!-- review notes
+- sentence 2: support check: partial - Seated Ethernet connections, undamaged cable/connectors and cable pin-out are each stated, but 'start with' ordering is not stated.
+- sentence 7: support check: partial - Contacting network IT/internet provider and repeated outages indicating network hardware, configuration or unreliable internet are stated, but 'this check only covers the device side' is not stated.
+- sentence 8: support check: partial - Shielded cables, separation from power cables, sunlight shielding are stated, but backup mobile/satellite link is advised only for plants larger than 1MW, not generically 'larger plants' as stated (roughly fits), and the statement is framed as prevention; mostly supported but threshold unspecified.
+-->

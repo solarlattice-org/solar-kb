@@ -2,5 +2,5 @@
 id: mit:direct-sun-avoidance
 type: Mitigation
 name: Direct sunlight avoidance
-status: proposed
 ---
+Direct sunlight avoidance means mounting the inverter in a shaded place so the sun does not shine directly on it. It is part of installing the inverter correctly. Mounting an inverter in direct sun goes against the instruction manual and is one cause of incorrect inverter installation. Incorrect installation can lead to inverter overheating. Direct sun on the inverter can limit its power output and reduce energy yield. It can also wear out electrical parts, gaskets and the user interface early. Choose shaded spots or walls that do not face the sun. One manufacturer recommends mounting the inverter facing north to keep sun exposure low. If there is no shade, build a simple shade structure above the inverter. Some manufacturers require their shade cover accessory when the inverter is mounted tilted backward outdoors. Keep air moving around the inverter so it can shed heat. If a metal back sheet sits in direct sun, leave 30 cm between it and the inverter, because less clearance can make the inverter start derating early. Some inverters are rated to run in direct sun and rain, but shading is still recommended for best performance and a longer life. Inverters mounted on indoor walls with no sun exposure do not need special clearance.
