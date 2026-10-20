@@ -1,0 +1,70 @@
+---
+id: fc:sungrow-sg250hx-100-105
+type: FaultCode
+name: Sungrow SG250HX 100-105
+aliases:
+- 100-105
+- Sungrow 100-105
+- System Fault
+category: Inverters
+make: sungrow
+make_name: Sungrow
+model_family: sg250hx
+family_name: Sungrow SG250HX
+code: 100-105
+code_key: 100-105
+code_from: 100
+code_to: 105
+display_message: System Fault
+page: 95
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sungrow-sg250hx-us-uen-ver17-202203
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=43.r4
+    h: d22720cf1a21
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:fault
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=43.r4
+    h: d22720cf1a21
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: sec=9.1
+    h: 7e543aeb5157
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
+- claim_id: c3
+  rel: has_recovery
+  target: ec:auto-reset
+  note: Normally clears on its own; otherwise power-cycle AC and DC after 15 minutes, then contact service.
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=43.r4
+    h: d22720cf1a21
+  review: drafted
+- claim_id: c4
+  rel: mitigated_by
+  target: mit:inverter-restart
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=43.r4
+    h: d22720cf1a21
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the fault persists after restart.
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=43.r4
+    h: d22720cf1a21
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+---
