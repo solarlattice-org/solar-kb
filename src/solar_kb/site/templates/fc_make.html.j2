@@ -1,5 +1,8 @@
 {% extends "base.html.j2" %}
 {% from "_macros.html.j2" import link %}
+{% macro axis_cell(badges) -%}
+{%- for b in badges %}{{ link(b.concept) }}{% if b.review == "disputed" %} <span class="badge disputed">disputed</span>{% endif %}{% if not loop.last %} / {% endif %}{% endfor -%}
+{%- endmacro %}
 {% block head %}
 <script src="{{ lookup_href }}" defer></script>
 {% endblock %}
@@ -18,9 +21,9 @@
 {% for row in f.rows %}
 <tr data-key="{{ row.code_key }}"{% if row.code_from is not none %} data-from="{{ row.code_from }}" data-to="{{ row.code_to }}"{% endif %}>
 <td>{{ link(row.code) }}</td><td>{{ row.display_message }}</td>
-<td>{% if row.event_class %}{{ link(row.event_class) }}{% endif %}</td>
-<td>{% if row.production %}{{ link(row.production) }}{% endif %}</td>
-<td>{% if row.recovery %}{{ link(row.recovery) }}{% endif %}</td>
+<td>{{ axis_cell(row.event_class) }}</td>
+<td>{{ axis_cell(row.production) }}</td>
+<td>{{ axis_cell(row.recovery) }}</td>
 <td>{% for ref in row.reports %}{{ link(ref) }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
 <td>{{ row.page }}</td>
 </tr>

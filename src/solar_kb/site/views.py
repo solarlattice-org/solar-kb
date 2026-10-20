@@ -309,15 +309,16 @@ class ConceptUse:
 
 @dataclass(frozen=True)
 class CodeRow:
-    """One row of a make page's family table."""
+    """One row of a make page's family table. Each axis cell holds the settled value (one at most, by the validator) or,
+    when the record only has a disputed pair, every contested value tagged disputed; empty when the axis is not stated."""
     code: Ref
     code_key: str
     code_from: int | None
     code_to: int | None
     display_message: str
-    event_class: Ref | None
-    production: Ref | None
-    recovery: Ref | None
+    event_class: tuple[AxisBadge, ...]
+    production: tuple[AxisBadge, ...]
+    recovery: tuple[AxisBadge, ...]
     reports: tuple[Ref, ...]
     page: str
 
@@ -501,25 +502,38 @@ def code_order(code_key: str) -> tuple:
     return (parsed.prefix, parsed.number if parsed.number is not None else float("inf"), code_key)
 
 
+def _axis_cells(corpus: Corpus, record: Record, page: str) -> dict[str, tuple[AxisBadge, ...]]:
+    """Per axis relation, what a make-page cell shows: the non-disputed claim when there is one, else every disputed
+    claim (so a contested class is never printed as settled)."""
+    out = {}
+    for rel, axis, labels in AXIS_BADGES:
+        claims = [c for c in record.claims() if c.get("rel") == rel and isinstance(c.get("target"), str)]
+        settled = [c for c in claims if c.get("review") != "disputed"]
+        cells = []
+        for claim in settled[:1] or claims:
+            review, review_label = _review(claim)
+            ref = record_ref(corpus, claim["target"], page)
+            cells.append(AxisBadge(axis, _badge_label(corpus, record, claim["target"], labels),
+                                   Ref(_badge_label(corpus, record, claim["target"], labels), ref.href, ref.proposed),
+                                   review, review_label, str(claim.get("claim_id", ""))))
+        out[rel] = tuple(cells)
+    return out
+
+
 def code_rows(corpus: Corpus, records: list[Record], page: str) -> tuple[CodeRow, ...]:
     """The rows of one family's table on a make page, sorted by `code_order`."""
     rows = []
     for record in records:
         data = record.data
-        concepts: dict[str, Ref] = {}
-        for rel, _axis, labels in AXIS_BADGES:
-            targets = _targets(record, rel)
-            if targets:
-                ref = record_ref(corpus, targets[0], page)
-                concepts[rel] = Ref(_badge_label(corpus, record, targets[0], labels), ref.href, ref.proposed)
+        concepts = _axis_cells(corpus, record, page)
         rows.append(CodeRow(
             code=Ref(str(data.get("code") or ""), href(page, record_path(record.id))),
             code_key=str(data.get("code_key") or ""),
             code_from=data.get("code_from") if isinstance(data.get("code_from"), int) else None,
             code_to=data.get("code_to") if isinstance(data.get("code_to"), int) else None,
             display_message=str(data.get("display_message") or ""),
-            event_class=concepts.get("has_event_class"), production=concepts.get("has_production_effect"),
-            recovery=concepts.get("has_recovery"),
+            event_class=concepts["has_event_class"], production=concepts["has_production_effect"],
+            recovery=concepts["has_recovery"],
             reports=tuple(record_ref(corpus, s, page) for s in _targets(record, "reports")),
             page=str(data.get("page") or ""),
         ))
