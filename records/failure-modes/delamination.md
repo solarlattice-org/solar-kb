@@ -63,7 +63,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.2
     h: 5147bca98d09
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c5
   rel: caused_by
   target: stressor:uv-exposure
@@ -126,7 +128,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.2
     h: 5147bca98d09
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: affects
   target: comp:backsheet
@@ -140,7 +144,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h60
     h: 6cc7189f11a4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c11
   rel: affects
   target: comp:cell-interconnect-ribbon
@@ -268,7 +274,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.2
     h: 5147bca98d09
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: detected_by
   target: method:scanning-acoustic-microscopy
@@ -365,7 +373,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h60
     h: 6cc7189f11a4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c29
   rel: mitigated_by
   target: mit:module-replacement
@@ -439,7 +449,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.2
     h: 5147bca98d09
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c32 (same source; check the conditions)
 ---
 Delamination is a loss of adhesion between the layers of a module, such as glass, encapsulant, cells and backsheet. Its main causes are poor raw materials, manufacturing problems and exposure to heat, UV and moisture in service. Transport and installation do not cause it. The air gaps reflect more light, which lowers module current and power. A large mismatch can switch on bypass diodes. Delamination also lets moisture in more quickly, which can lead to corrosion of metal contacts. Delamination near the edge or the junction box is a safety risk, because it can cause insulation faults, leakage currents or a loose junction box. It is usually easy to see during a visual inspection from the front. Thermography can find delamination that is not visible, and insulation testing only flags severe cases. Replace modules that have lost insulation resistance or electrical safety, or that have an active bypass diode. Monitor the rest with regular visual inspections and ground fault detection.

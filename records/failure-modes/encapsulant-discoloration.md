@@ -61,7 +61,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.1
     h: 2cb68650cddf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c5
   rel: presents_as
   target: symptom:gradual-performance-decline
@@ -191,7 +193,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h24
     h: 017575ddabf4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: leads_to
   target: fm:backsheet-cracking
@@ -260,7 +264,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h24
     h: 017575ddabf4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c19
   attr: degradation_rate
   value:

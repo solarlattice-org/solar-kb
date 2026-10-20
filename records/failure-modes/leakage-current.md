@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h4
     h: 21df64fc133e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: caused_by
   target: fm:bypass-diode-failure
@@ -37,7 +39,9 @@ claims:
   - src: src:pv-root-cause-bypass-diode-failure
     loc: sec=h6
     h: bfcbbd1f5824
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: caused_by
   target: stressor:high-system-voltage
@@ -56,7 +60,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: tbl=26.r2
     h: 1223ddfd18c3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:humid-climate
@@ -68,7 +74,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.5
     h: c440122cb9d9
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: caused_by
   target: stressor:high-temperature
@@ -156,7 +164,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=19.r5
     h: 7604ad2cfcc4
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: affects
   target: comp:backsheet

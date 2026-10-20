@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=35.r5
     h: 60bbe86a9d13
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: affects
   target: comp:anti-reflective-coating
@@ -49,7 +51,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=16.r3
     h: b0be2238bf5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:atmospheric-pollutants
@@ -89,7 +93,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=16.r3
     h: b0be2238bf5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: presents_as
   target: symptom:hazy-glass
@@ -192,7 +198,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=35.r2
     h: 9f71f14c12d8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c15
   rel: detected_by
   target: method:reflectance-measurement
@@ -202,6 +210,8 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h80
     h: 8aab36b70d06
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Glass corrosion or abrasion is damage to the front glass of a module or to its anti-reflective or anti-soiling coatings. It reduces or removes the benefit those coatings give. Corrosion comes from humidity or dew acting with pollutants, salt or ammonia on soda lime glass. Abrasion comes mostly from wind-blown sand and dust in deserts, and from harsh cleaning methods or cleaning agents. Affected glass changes colour and transparency, evenly or in patches, and can look hazy, milky or rougher than undamaged areas. Lower glass transmission causes a power loss that is usually a few percent and levels off over time. Losses can be larger if the glass starts to soil more easily. Confirm it mainly by visual inspection. IV curve tracing can help as a secondary check, showing lower Pmax and Isc. A reflectance measurement with a hand-held spectrometer can show whether a coating has been worn off. Damage to the glass can also raise operation and maintenance costs.

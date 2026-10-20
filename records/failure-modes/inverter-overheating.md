@@ -17,7 +17,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=7.r28
     h: 36ac9eb68a94
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: caused_by
   target: stressor:installation-error
@@ -64,7 +66,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=51.r3
     h: f67d18849d2b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:inverter-power-derating
@@ -124,7 +128,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=51.r1
     h: 52f99f2ab326
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: detected_by
   target: method:iv-curve-tracing
@@ -136,7 +142,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=51.r2
     h: b5cf1d2ea841
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - IV is listed in parentheses after MON, but the passages do not
     explicitly say it is secondary.'
 - claim_id: c11

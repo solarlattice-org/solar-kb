@@ -174,7 +174,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=11.r8
     h: d4da399f6da7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c13
   rel: mitigated_by
   target: mit:accelerated-weathering-screening

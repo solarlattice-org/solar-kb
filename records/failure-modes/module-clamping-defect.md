@@ -140,7 +140,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=30.r8
     h: 6bc860aa6245
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 - claim_id: c13
   rel: mitigated_by
   target: mit:regular-inspections

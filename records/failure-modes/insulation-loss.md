@@ -43,7 +43,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=46.r5
     h: a680b50f7520
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: caused_by
   target: fm:glass-breakage
@@ -75,7 +77,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h6
     h: 9e4d1b1adbd8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: caused_by
   target: fm:delamination

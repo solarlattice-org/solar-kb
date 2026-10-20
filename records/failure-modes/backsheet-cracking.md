@@ -41,7 +41,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.5.1
     h: 4dfb46bec383
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: caused_by
   target: stressor:thermal-cycling
@@ -151,7 +153,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.5.2
     h: 5c74523d4701
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: caused_by
   target: fm:module-hotspot
@@ -219,7 +223,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.5.2
     h: 5c74523d4701
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: presents_as
   target: symptom:backsheet-bubbles
@@ -234,7 +240,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.5.2
     h: 5c74523d4701
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: leads_to
   target: fm:insulation-loss
@@ -273,7 +281,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=30.r5
     h: 585ab08017de
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: detected_by
   target: method:visual-inspection
@@ -403,7 +413,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=30.r8
     h: cf377b6ef813
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c31
   rel: mitigated_by
   target: mit:regular-inspections

@@ -168,7 +168,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=h61
     h: 2898339d54b0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c13
   rel: mitigated_by
   target: mit:arc-fault-circuit-interrupter
@@ -177,7 +179,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=2.9
     h: 6199cd73a1f7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c14
   rel: mitigated_by
   target: mit:safety-isolation
@@ -186,7 +190,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=front
     h: a85dc942aaf6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 An arc fault is a sudden high-power discharge between two conductors. It can occur in series within a string or in parallel between strings. Arcs usually cause destructive fires, and they have likely started grass fires on site. Common origins are weak or badly crimped connectors, internal arcs in junction boxes, and broken cell interconnections where an open bypass diode cannot carry the current. Look for burnt connectors and burnt junction boxes, especially at the input leads. Arcs are transient and hard to catch. Detection relies on spectrum analysis of string current and voltage, which shows a high-frequency noise pattern. Arc fault circuit interrupters installed on individual strings protect the system. Where arcing or burn evidence is found, isolate the circuit safely first. Then replace the damaged connectors, modules or junction-box assemblies.
 

@@ -28,7 +28,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=37.r1
     h: 3aa67d44d717
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: affects
   target: comp:cell-interconnect-ribbon
@@ -101,7 +103,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=37.r3
     h: 69aa96116e44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c9
   rel: caused_by
   target: stressor:mechanical-stress
@@ -113,7 +117,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=37.r3
     h: 69aa96116e44
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c10
   rel: caused_by
   target: fm:junction-box-failure
@@ -200,7 +206,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h37
     h: abafe13c83d7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c18
   rel: detected_by
   target: method:ir-thermography
@@ -238,7 +246,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c22
   rel: detected_by
   target: method:voc-measurement

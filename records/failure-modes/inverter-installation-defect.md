@@ -103,7 +103,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h57
     h: 6ee6caf78272
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c8
   rel: mitigated_by
   target: mit:adequate-cooling
@@ -150,7 +152,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=52.r5
     h: 46c42be6ee70
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c12
   rel: mitigated_by
   target: mit:direct-sun-avoidance

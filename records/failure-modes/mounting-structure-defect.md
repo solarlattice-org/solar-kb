@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=49.r3
     h: 37b0c9de0af8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: caused_by
   target: stressor:snow-load
@@ -59,7 +61,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=49.r3
     h: 37b0c9de0af8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: caused_by
   target: stressor:installation-error
@@ -90,7 +94,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h51
     h: a44e0a777296
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passages say galvanic corrosion matters in humid or coastal areas,
     but don''t frame humid climate as a cause of the defect generally.'
 - claim_id: c8
@@ -186,7 +192,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h51
     h: a44e0a777296
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c17
   rel: mitigated_by
   target: mit:structural-hardware-repair
@@ -233,7 +241,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=31
     h: cc9fed5e1ebd
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c21
   rel: mitigated_by
   target: mit:regular-inspections

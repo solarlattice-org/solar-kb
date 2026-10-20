@@ -47,7 +47,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h25
     h: bb6b0316efb1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: caused_by
   target: stressor:thermal-cycling
@@ -94,7 +96,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h25
     h: bb6b0316efb1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   rel: caused_by
   target: stressor:moisture-exposure
