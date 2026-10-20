@@ -26,7 +26,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The passage gives persistent 5-11% losses from fungal bio-soiling
     in humid subtropical regions that may not recover after rain, but doesn''t state this as the loss
     recovered by cleaning (the production step after cleaning).'
@@ -42,7 +44,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.6
     h: a3dffa29110f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The passage gives 5-20% annual energy yield losses from soiling,
     depending on location, and says soiling is mostly removable by cleaning, but it doesn''t describe
     this as a step in production after cleaning.'

@@ -19,7 +19,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=3.1.1
     h: 06ce46a9a853
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The 8.7 % power loss module is stated, but the passages say the
     higher-loss module shifts (to lower intensities/right), and ''Lower EL intensity distribution'' as
     a label for the 8.7 % module is not what the passages state; ''typical'' is also a framing.; possible
@@ -40,7 +42,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=3.1.1
     h: 06ce46a9a853
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions)
 ---
 This signature is found by counting how many pixels in an EL image fall into each intensity range, then turning that histogram into a probability density function of EL intensity. In general, modules with higher power losses have their intensity distribution shifted toward lower EL intensities. The intensity distribution has not yet been clearly correlated with specific types of defect or cell damage, so the shift shows that power has been lost but not why. EL images are taken with the module in forward bias from a DC power supply, ideally in darkness. In the field this usually means at sunset or at night, or under a curtain. PID-p in an n-type TOPCon bifacial module showed a uniform and strong drop in luminescence compared with an undegraded module. The drop was seen at both Isc and 0.1 Isc and did not depend on the bias current. Mean substring EL intensity from aligned images can be tracked over time, for example during damp-heat exposure, as a quantitative measure of degradation.

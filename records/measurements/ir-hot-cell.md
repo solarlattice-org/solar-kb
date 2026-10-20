@@ -17,7 +17,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: temperature_rise
   value:
@@ -30,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=h58
     h: df4b70555c37
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c4 (same source; check the conditions)
 - claim_id: c3
   attr: temperature_rise
@@ -43,7 +47,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c4 (same source; check the conditions)
 - claim_id: c4
   attr: temperature_rise
@@ -56,7 +62,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.1.3
     h: 73bb98342b5b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions)
 ---

@@ -25,7 +25,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 This signature is a normalized-production deficit that stays in place after rain instead of recovering. To check for it, compare irradiance-normalized or weather-normalized production before and after rain events, and line it up with rainfall data and cleaning records. Ordinary granular dust soiling usually works the other way: output falls during dry spells, then partly or fully recovers after meaningful rain or washing. If the deficit survives rain but improves after manual cleaning, biological soiling such as fungal biofilm is more likely than ordinary dust. Strong supporting evidence is a repeatable step up in production after cleaning, especially where rain had not brought output back to the expected level. Biological deposits can be patchy, so inspect several array areas closely or with a handheld microscope rather than relying on one module. If module glass is still visibly dirty after a rain event, for example after smoke exposure, a cleaning protocol is advised.
 

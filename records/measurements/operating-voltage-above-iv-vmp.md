@@ -29,6 +29,8 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 In this signature, the inverter's measured DC operating voltage sits above the array maximum power point voltage (Vmp) taken from an IV curve, and the operating power is below the Pmp from the IV curve. It points to inverter voltage floor losses: array Vmp has dropped below the inverter's minimum DC input voltage, so the inverter has to run above the true maximum power point. The inverter stays online and irradiance can look normal, but some of the available DC power is not harvested. Look for it during hot periods, because module voltage drops as cell temperature rises. Degraded modules, a tight string design margin or reactive power operation can also push Vmp under the floor. Check AC voltage and reactive power dispatch at the same timestamps, along with DC voltage limits, module temperature and SCADA operating points. Before blaming voltage flooring, rule out outages, curtailment, clipping, soiling and sensor faults. In production data alone, this loss can look like clipping or general underperformance.

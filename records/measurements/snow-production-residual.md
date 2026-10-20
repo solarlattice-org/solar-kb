@@ -28,7 +28,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passage says losses are ''most often less than 10%'' yearly;
     the statement frames this as ''up to 10%'' typical, which is roughly equivalent but an upper bound
     rather than typical.; possible conflict with c2 (same source; check the conditions); possible conflict
@@ -45,7 +47,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c7 (same source;
@@ -61,7 +65,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c7 (same source;
@@ -77,7 +83,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c7 (same source;
@@ -94,7 +102,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c7 (same source; check the conditions)
@@ -109,7 +119,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says daily losses could be almost 100% in Konya Jan 2017;
     ''typical'' up to 100% is slightly overstated but the note acknowledges it.'
 - claim_id: c7
@@ -122,7 +134,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c4 (same source; check the conditions); possible conflict with c5 (same source;

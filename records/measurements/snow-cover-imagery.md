@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c7 (same source; check the conditions)
@@ -30,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.1
     h: bc5cf195e596
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c7 (same source; check the conditions)
@@ -44,7 +48,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c6 (same source;
@@ -59,7 +65,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c6 (same source;
@@ -74,7 +82,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c4 (same source; check the conditions); possible conflict with c6 (same source;
@@ -90,7 +100,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c7 (same source; check the conditions)
@@ -105,7 +117,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=5.7.4
     h: 0de438523b95
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c4 (same source; check the conditions); possible conflict with c5 (same source;

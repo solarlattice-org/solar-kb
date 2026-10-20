@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.5
     h: da5687053a7f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 The image is taken in the dark, usually at night, with UV light below 400 nm shining on the modules. The camera records the visible fluorescence of the encapsulant, and the modules stay connected and unpowered. Brightness in the image follows how many fluorescent molecules (lumophores) are in the encapsulant. So brighter or darker zones across a cell show areas that have aged or been heated differently. The pattern needs time to build up. The module must have had enough sun exposure, and the result depends on how long it has operated, the climate, and the encapsulant and backsheet types. If part of a cell is isolated by a crack, reverse bias on the part that is still connected raises its fluorescence. Under Cell Cracks, the two areas then look different. With a Cell Interconnection Failure, current flows through only one ribbon. That side of the cell heats more and forms more lumophores, so one side of the cell fluoresces more strongly than the other. Fluorescence fades (photobleaches) along cell edges and cracks where oxygen reaches the encapsulant. Grey zones can also show along the interconnector, which makes nearby cracks hard to read. Very new damage may not show yet, because the signal has had no time to bleach. Modules with UVA-transparent EVA also give weaker results, so check against EL imaging.
 
