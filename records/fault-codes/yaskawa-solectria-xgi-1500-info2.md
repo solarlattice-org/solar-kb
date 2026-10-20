@@ -53,7 +53,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=23.r2
     h: 069df80c5ce8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: has_production_effect
   target: ec:derate

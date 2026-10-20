@@ -59,7 +59,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r5
     h: 96e51e5f36fe
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Row lists observing for auto-clear first, then service; installer
     inspection is stated but the clearing is not purely service-required.'
 ---

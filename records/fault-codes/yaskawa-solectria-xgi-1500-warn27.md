@@ -61,7 +61,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=22.r1
     h: 1114cf32932e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c6
   rel: has_production_effect
   target: ec:trip
@@ -81,7 +83,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=22.r1
     h: 1114cf32932e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The power cycle instruction implies an operator restart, but
     manual reset isn''t explicitly stated and section 9.1.2 says warnings can self-recover.'
 ---

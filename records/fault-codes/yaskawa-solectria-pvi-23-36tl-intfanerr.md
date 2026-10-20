@@ -49,7 +49,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r5
     h: 820d5c711ec3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: indicates
   target: fm:fan-failure
@@ -60,7 +62,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r5
     h: 820d5c711ec3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: affects
   target: comp:cooling-fan

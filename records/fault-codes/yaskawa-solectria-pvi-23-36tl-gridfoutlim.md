@@ -51,7 +51,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19
     h: 2eb036f0fe1b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The passages say to verify grid frequency but do not state a
     measurement method as the detection means.'
 - claim_id: c5

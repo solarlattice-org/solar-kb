@@ -102,7 +102,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r6
     h: aa0995381f56
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Observe 30 min for auto-clear and then service are stated; ''once
     cooled'' is not stated.'
 ---

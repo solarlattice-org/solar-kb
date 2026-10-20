@@ -48,7 +48,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: indicates
   target: fm:temperature-sensor-fault

@@ -61,7 +61,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=23.r1
     h: 67ef32086053
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c6
   rel: mitigated_by
   target: mit:adequate-cooling

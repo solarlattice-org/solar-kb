@@ -59,7 +59,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r3
     h: c279ec78fba0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: affects
   target: comp:arc-fault-detector

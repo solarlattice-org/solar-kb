@@ -43,7 +43,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=22.r5
     h: a82464b1d23a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-parameter-change

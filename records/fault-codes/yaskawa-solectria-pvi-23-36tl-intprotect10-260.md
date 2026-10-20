@@ -45,7 +45,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=20
     h: 01dd772813e8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: affects
   target: comp:inverter
@@ -61,7 +63,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=20
     h: 01dd772813e8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-manufacturer-service
