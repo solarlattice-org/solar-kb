@@ -40,7 +40,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r9
     h: 9888d3b90b8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c4
   rel: affects
   target: comp:energy-meter

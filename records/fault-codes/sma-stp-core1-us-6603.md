@@ -42,5 +42,7 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r10
     h: 2cc675d4ac77
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---

@@ -41,7 +41,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=12.r5
     h: 7d6d4cbeb862
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Redundant discharge not ensured is stated, but classification
     as rapid shutdown failure symptom is inferred.'
 - claim_id: c4

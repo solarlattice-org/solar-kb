@@ -41,16 +41,7 @@ claims:
     loc: tbl=15.r8
     h: c5550759f780
   review: drafted
-- claim_id: c4
-  rel: has_production_effect
-  target: ec:no-production-effect
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=26.r8
-    h: c5550759f780
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=15.r8
-    h: c5550759f780
-  review: drafted
-  review_note: 'support check: partial - Row is a status message, but no production effect is stated.'
 ---
+<!-- review workflow 2026-10-20: dropped as unsupported
+- c4 has_production_effect ec:no-production-effect: Row reads only 'Set parameter. The parameter changes are being adopted'; nothing in any cited passage speaks to feed-in or production, unlike 7102's 'The inverter continues to feed in', so a no-production-effect attribute is not stated.
+-->

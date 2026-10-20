@@ -51,7 +51,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r3
     h: 6022b2728800
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: has_production_effect
   target: ec:no-production-effect

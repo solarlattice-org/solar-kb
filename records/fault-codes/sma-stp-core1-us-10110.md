@@ -51,7 +51,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=12.r8
     h: f12fd6a968ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:network-connection-check

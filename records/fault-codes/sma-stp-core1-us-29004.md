@@ -41,7 +41,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r15
     h: 1851894a0a87
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Row states that grid parameters can''t be changed, but its message-type
     is not clearly informational (could be a warning).'
 ---

@@ -40,7 +40,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r4
     h: 941ab92a0300
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: has_recovery
   target: ec:manual-reset
@@ -52,5 +54,7 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r4
     h: 941ab92a0300
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -40,7 +40,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r4
     h: b52d03895a68
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: has_event_class
   target: ec:warning
@@ -62,7 +64,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r4
     h: b52d03895a68
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:grid-settings-check

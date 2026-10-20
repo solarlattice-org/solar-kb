@@ -51,7 +51,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c5
   rel: has_event_class
   target: ec:fault
@@ -62,7 +64,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_production_effect
   target: ec:trip
@@ -74,5 +78,7 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

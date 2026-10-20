@@ -73,7 +73,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r2
     h: bcf0d1913bc2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c7
   rel: mitigated_by
   target: mit:contact-manufacturer-service
