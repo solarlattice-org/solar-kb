@@ -260,6 +260,11 @@ def test_fault_code_body_is_empty_apart_from_html_comments(tmp_path, body, bad):
     (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power; ", ""), {"fault-code"}),  # no basis=
     (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power", "basis=curve"), {"fault-code"}),
     (DEFINED_IN + DERATE + OUTPUT_LIMIT, set()),
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("{max: 50, unit: unit:PERCENT}", "{min: 400, unit: unit:V}"), {"fault-code"}),
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("unit:PERCENT", "unit:V"), {"fault-code"}),      # a voltage is not an output
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("{max: 50", "{min: 10, max: 50"), {"fault-code"}),  # a single value, no floor
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("{max: 50, unit: unit:PERCENT}", "{nominal: 20, unit: unit:KiloW}"), set()),
+    (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("{max: 50, unit: unit:PERCENT}", "{max: 500, unit: unit:W}"), set()),
     (DEFINED_IN + OUTPUT_LIMIT.replace("attr: output_limit", "attr: typical_power_loss"), {"fault-code"}),
     (DEFINED_IN + RECOVERY + RECOVERY_2, {"fault-code"}),                          # two claims on one axis
     (DEFINED_IN + RECOVERY + RECOVERY_2.replace("review: drafted", "conflicts_with: ['fc:chint-sca-50-60ktl-probe90#c4']\n    review: disputed"), set()),

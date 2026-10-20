@@ -375,6 +375,7 @@ MAX_NAME_WORDS = 8  # "{make_name} {family_short} {code}"
 CODE_FREE_TEXT = ("note", "conditions", "review_note")  # every other claim field is an id, a number or a citation
 DERATE = "ec:derate"
 OUTPUT_LIMIT = "output_limit"
+OUTPUT_LIMIT_UNITS = frozenset({"unit:PERCENT", "unit:KiloW", "unit:W"})
 
 
 def _words(value: object) -> int:
@@ -484,6 +485,14 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
                 if not isinstance(conditions, str) or not BASIS_RE.match(conditions):
                     out.append(_v("fault-code", record, "output_limit conditions must start with basis=rated_power, "
                                                         "basis=current_power or basis=absolute", claim))
+                value = claim.get("value")
+                if isinstance(value, dict):  # rule_quantities reports the shape otherwise
+                    if value.get("unit") not in OUTPUT_LIMIT_UNITS:
+                        out.append(_v("fault-code", record, f"output_limit unit is one of {', '.join(sorted(OUTPUT_LIMIT_UNITS))}, "
+                                                            f"not {value.get('unit')!r}", claim))
+                    if "min" in value or not any(k in value for k in ("nominal", "max")):
+                        out.append(_v("fault-code", record, "output_limit is a single reduced output: nominal or max, "
+                                                            "never min", claim))
         if defined_in == 0:
             out.append(_v("fault-code", record, "needs at least one defined_in claim citing the manual row"))
         for rel, n in axes.items():
