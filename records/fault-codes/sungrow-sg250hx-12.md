@@ -34,7 +34,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r5
     h: 843ebdc64972
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: has_event_class
   target: ec:fault
@@ -45,7 +47,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: sec=9.1
     h: 7e543aeb5157
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passages show it is a listed fault code in the troubleshooting
     table, but they give no explicit fault classification.'
 - claim_id: c4

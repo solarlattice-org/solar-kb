@@ -34,7 +34,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c3
   rel: affects
   target: comp:pv-array

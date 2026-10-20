@@ -47,7 +47,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r2
     h: 51764d4962cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:arc-board-connector-check

@@ -31,7 +31,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=43.r3
     h: 52e99e7ea7b1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c3
   rel: mitigated_by
   target: mit:communication-cable-check

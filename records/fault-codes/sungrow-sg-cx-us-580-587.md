@@ -34,7 +34,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=55.r4
     h: 694087bdfee9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - String output current anomaly is stated and the mapping is 17
     to 24, but the row gives it as 580…'
 - claim_id: c3

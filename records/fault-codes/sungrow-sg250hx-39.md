@@ -53,7 +53,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r3
     h: 99f23921c8b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages say to check resistance to ground of string/DC cable,
     but don''t state the fault is detected by insulation resistance…'
 - claim_id: c5
@@ -90,7 +92,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r3
     h: 99f23921c8b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: has_recovery
   target: ec:auto-reset

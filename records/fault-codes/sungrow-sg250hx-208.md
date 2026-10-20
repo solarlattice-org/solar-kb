@@ -49,7 +49,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=40.r2
     h: ef214f6e526a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:string-configuration-correction

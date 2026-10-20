@@ -45,7 +45,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: sec=9.1
     h: 7e543aeb5157
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The passages show it is a listed fault code in the troubleshooting
     table, but they give no explicit fault classification.'
 - claim_id: c4

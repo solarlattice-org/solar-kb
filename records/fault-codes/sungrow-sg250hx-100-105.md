@@ -36,7 +36,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: sec=9.1
     h: 7e543aeb5157
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: has_recovery
   target: ec:auto-reset
@@ -62,5 +64,7 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=43.r4
     h: d22720cf1a21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

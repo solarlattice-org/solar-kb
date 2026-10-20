@@ -58,7 +58,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=50.r1
     h: e9dc9b740d24
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Reconnection after the grid returns to normal implies the inverter
     disconnected, but the passages don''t explicitly state that production stops.'
 - claim_id: c5

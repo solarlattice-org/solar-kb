@@ -31,7 +31,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r3
     h: c8a06567896b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: has_event_class
   target: ec:fault
@@ -52,7 +54,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r3
     h: c8a06567896b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Reconnecting to the grid after it returns to normal implies it
     disconnects, but a trip is not explicitly stated.'
 - claim_id: c5

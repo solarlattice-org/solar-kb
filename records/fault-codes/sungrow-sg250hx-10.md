@@ -58,7 +58,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: 'support check: partial - A grid outage followed by reconnection implies the inverter stops
     feeding in, but the passages don''t explicitly state a trip.'
 - claim_id: c5

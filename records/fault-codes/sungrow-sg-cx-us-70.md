@@ -32,7 +32,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: indicates
   target: fm:fan-failure
@@ -82,5 +84,7 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

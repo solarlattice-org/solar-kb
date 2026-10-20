@@ -57,7 +57,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r2
     h: 9e64adaac1e9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-restart

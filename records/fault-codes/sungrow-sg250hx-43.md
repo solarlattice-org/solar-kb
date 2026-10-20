@@ -67,5 +67,7 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r1
     h: a5b9c9505cd8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
