@@ -18,7 +18,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.2.4
     h: 9ce8dc98ece9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 An anti-reflective coating is a thin layer that cuts reflection. Most manufacturers put one on the module front glass to improve efficiency and appearance. Coated modules can deliver about 1-3% more power than modules with uncoated glass. The coating is affected by glass corrosion or abrasion. Humidity combined with pollutants, salt or ammonia, unsuitable cleaning methods or agents, and wind-blown sand in deserts can reduce the coating's benefit or remove it completely. In brush cleaning tests, coated glass lost coating and its reflectance rose, while uncoated glass showed no measurable effect. Reflectance measurement, in the lab or with a hand-held spectrometer in the field, can detect this loss. Power loss from a corroded coating is usually limited to about the gain the coating first gave, around 4%. At cell level, the anti-reflective layer's thickness, uniformity and Si/N ratio affect potential induced degradation. A higher refractive index of silicon nitride lowers this degradation but increases reflection losses. Discolored anti-reflection layers are listed among cell defects. Abrasion of coated glass has been tested with brushes following ASTM D2486. A cleaning test standard, DINspec4867, is being developed from ISO 20566.
 

@@ -18,7 +18,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h24
     h: 017575ddabf4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: degradation_rate
   value:
@@ -30,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h24
     h: 017575ddabf4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The backsheet is the rear layer of a PV module. It shields the electrical parts from the environment and keeps the module safe to operate at high DC voltage. Backsheets also give the module mechanical strength and electrical insulation, so if they degrade and crack, the insulation can fail and create a serious hazard. A common build is a UV-resistant fluoropolymer outer layer, an inner PET layer for insulation and an EVA layer for adhesion. Some variants add an aluminium foil as a moisture barrier. Other backsheet types on the market include PVF-PET-PVF (Tedlar), PVDF-PET-PVDF, polyamide-based, pure PET and polyolefin-based films. Some modules use glass or a transparent backsheet on the rear instead. Failure modes that affect the backsheet include delamination, cracking, chalking and discolouration. Delamination can show up as bubbles, ripples or peeling layers, and chalking leaves a white powder that comes off when wiped. Cracks that go through the whole backsheet let moisture in and can make the insulation resistance collapse, especially in wet conditions. This can cause insulation faults that stop inverters from starting in the morning. Local overheating from hot cells can crack the backsheet or make it bubble and deform. In extreme cases the junction box can come off. Inspection is mainly visual, and insulation testing is used for delamination and cracking. Recommended checks include confirming the IEC 61215 certification and the bill of materials, plus continuous ground fault detection.
 
