@@ -2,5 +2,5 @@
 id: meas:stm-signal-on-shaded-submodule
 type: Measurement
 name: Test signal on shaded submodule
-status: proposed
 ---
+This signature comes from the signal transmission method. A transmitter connected to the module string sends a small alternating test current, and a handheld receiver picks up the magnetic flux that current creates. To check bypass diodes, first stop the PV system and connect the transmitter to the string at the combiner box. Then cover one submodule with something like a rubber sheet so that its bypass diode turns on. Next, move the receiver along the interconnect ribbons on the back of the covered module. With a working bypass diode, the test current flows through the diode, so no signal is found on the shaded submodule. If the test signal can still be picked up anywhere on the shaded submodule, the bypass diode is open-circuit. An open bypass diode matters because a working diode and good substring connections in the junction box prevent heavy power loss in shaded cells. If a defect is present, a shaded module can heat up fast and may char or burn. The method is cheap and simple to use in the field without removing modules, unlike most EL imaging, which has to be done indoors.
