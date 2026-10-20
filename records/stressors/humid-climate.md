@@ -23,7 +23,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -35,7 +37,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h7
     h: e287af93bef3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: degradation_rate
   value:
@@ -48,7 +52,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=3.3.3
     h: 5f7204e75e16
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A humid climate exposes PV equipment to long periods of high humidity, dew and high surface conductivity, which can trigger hydrolytic degradation of module materials. Moisture that gets into the module, together with acetic acid released when EVA encapsulant hydrolyses, corrodes the cell metallization and causes severe metallization corrosion that shows up as dark areas in EL images. In humid subtropical regions, fungal biofilms grow on module surfaces and cause widespread fungal soiling losses that may not recover after rain. Deep backsheet cracking is often followed by moisture ingress and corrosion, and this happens more often and more severely in hot and humid conditions. Where dissimilar metals touch, such as an aluminium frame on a steel structure, galvanic corrosion forms around fastening screws in humid areas, so the metals should be insulated from each other. Field data from Florida showed modules in a hot, humid subtropical climate degrading almost twice as fast as the same modules at dry or cool sites. To limit losses, include bio-soiling in cleaning schedules and check that cleaning actually restores output, and do not assume rainfall resets the loss. Install modules only within the humidity limits set by the manufacturer; one installation manual specifies below 85 RH%.
 

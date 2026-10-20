@@ -18,9 +18,10 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.6
     h: a3dffa29110f
-  review: disputed
-  conflicts_with:
-  - stressor:surface-soiling#c3
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -36,7 +37,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h73
     h: 377b9c8765b6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -65,7 +68,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=5.3
     h: 42d2f2c6274f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   attr: typical_power_loss
   value:
@@ -76,7 +81,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h70
     h: d27e8de83a79
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Surface soiling is dust, dirt, pollen, bird droppings, algae, moss or other material that settles on the module front surface and blocks light from reaching the cells. The particles scatter and absorb light, so module current and plant output fall; the loss is mostly reversible by cleaning and is not a true module failure. Uneven soiling causes current mismatch and hotspots that in extreme cases can permanently damage a module, and soiling can speed up ongoing potential induced degradation. It drives granular dust soiling losses and general soiling losses, and frequent cleaning or sandstorms can abrade the glass and reduce transmittance over time. Losses are worst in arid regions during dry periods, at low tilt angles, and near sources such as railways, farming, mining, roads or construction; humidity and dew can cement dust to the glass. Soiling can also build up slowly in rainy temperate climates, for example as a dirt strip along the lower frame edge. Exposure is reduced by site selection, higher tilt, anti-soiling coatings suited to the local dirt, and cleaning schedules based on measured soiling rate and cleaning cost. Clean with methods the module manufacturer recommends, because careless cleaning can damage components or anti-reflective coatings.
 

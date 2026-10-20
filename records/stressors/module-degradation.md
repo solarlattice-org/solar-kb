@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Module degradation is the gradual loss of power in an individual PV module over time. Every module degrades to some degree during its operating life. Common causes are hotspots, potential induced degradation, cell cracks, delamination, bubbles, and yellowing or browning of the EVA layer. High levels of water vapour and acetic acid inside the module speed up nearly all degradation modes. The choice of encapsulant and backsheet affects how fast this happens. In a real plant, modules age at different rates. The weaker modules limit the current of the strings or substrings around them, so the whole system can lose more energy than the average module degradation rate suggests. Degraded modules can also push the array maximum power point voltage below the inverter's minimum DC input voltage. This is most likely in hot weather and leads to inverter voltage floor losses. Degradation happens slowly and does not show up in short-term data. Checking whether it exceeds the warranty needs at least two years of data. To limit the impact, model degradation at the system level, allow for spread between modules, and update long-term energy assumptions using field, IV and string-level measurements.
 

@@ -27,7 +27,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h4
     h: 52ca8426fce1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -39,7 +41,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h7
     h: e287af93bef3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 Fungal biofilm growth means colonies of microbes, mainly black fungi, growing in sub-aerial biofilms on the module front glass. As the biofilm grows it forms dark masses and catches other particles. This absorbs and scatters incoming light and cuts how much passes through the glass. The biofilm can also pit and etch the glass and give more dust a surface to stick to, so soiling builds up further. The main failure mode it causes is widespread fungal soiling losses. Unlike ordinary dust, these losses often stay after rain and can be mistaken for pollen, dust or a weather-normalization error. Growth is most likely in humid places, such as tropical and humid subtropical climates. Condensation from big swings between day and night temperatures supplies the water the biofilm needs. Expect it to recur at sites with a humid climate, nearby vegetation or nearby water. Usually only targeted or manual cleaning removes the deposits, and some studies suggest adding an anti-fungal agent to the cleaning routine. Treat cleaning as required maintenance at affected sites and check production after each cleaning to confirm it worked.
 

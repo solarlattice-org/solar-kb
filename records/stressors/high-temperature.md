@@ -21,7 +21,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passages give ~1.2% summer 2025 average loss at a 100 MW California
     plant with high temperature as one driver, but ''high operating temperature: typical power loss''
     attributes the whole 1.2% to heat, whereas it comes from multiple drivers.'

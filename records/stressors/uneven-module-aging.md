@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Uneven module aging means that modules in the same plant lose power at different rates over time, instead of all at once at the same rate. Because the plant is an electrical network, weaker modules can hold down the current of the strings or substrings around them. This creates mismatch. It drives the failure mode System Degradation vs Module Degradation: the system loses energy faster than the nameplate module degradation rate suggests. The average module may still be within its warranty while the system shows a larger energy decline. Some spread is present from the start, because even identical parts such as cells, ribbons and bypass diodes vary in initial quality.
 

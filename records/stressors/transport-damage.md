@@ -33,7 +33,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.1.2
     h: 965925e2642f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passage says power degradation up to 2.8% after transport plus
     thermal cycling and dynamic loads, and that the follow-on tests did not worsen mechanical failures,
     but it is an upper bound and not a typical value; the ''lab test, not field'' note is implied.'

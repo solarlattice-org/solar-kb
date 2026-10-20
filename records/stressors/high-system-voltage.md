@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h4
     h: 21df64fc133e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -32,7 +34,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 The voltage between a module's cells and its grounded frame grows as more modules are wired in series in a string. This voltage to ground drives leakage currents through the front glass and encapsulant, which causes Potential Induced Degradation (PID) and can sharply cut module and string power. In the shunting form of PID, sodium ions move from the glass into the cell and create shunts. In the polarization form, negative surface charges build up on the cell. Modules with p-type cells degrade in strings at negative polarity, and modules with n-type cells degrade in strings at positive polarity. Damage is worst in modules near one end of the string and in cells close to the frame. Exposure has grown because maximum system voltage has risen from 600 V to 1500 V. Transformerless inverters also often prevent grounding either end of the string. Heat, humidity, rain, condensation and soiling all speed up the damage, because they raise leakage current. To reduce the stress, use system grounding or offset strategies, choose PID-resistant modules, clean off conductive soiling, and consider qualified regeneration where appropriate.
 

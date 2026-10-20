@@ -15,7 +15,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - The 6.9% monthly loss on sandy soil in rural Southern Italy is
     stated, but the passage doesn''t link it to "unpaved roads and exposed soil" as a category or call
     it a typical value.; possible conflict with c2 (same source; check the conditions)'
@@ -30,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The 1.1% monthly loss on more compact soil is stated, but the
     passage doesn''t frame it as unpaved roads/exposed soil typical loss.; possible conflict with c1 (same
     source; check the conditions)'

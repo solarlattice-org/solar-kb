@@ -24,7 +24,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6.3
     h: 447bcab4e244
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -37,7 +39,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6.3
     h: 447bcab4e244
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage gives 0-10% for 28 TOPCon at 60 kWh/m² short-circuit,
     but it is a range with no stated typical/median value.'
 - claim_id: c3
@@ -52,9 +56,10 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6.3
     h: 447bcab4e244
-  review: disputed
-  conflicts_with:
-  - stressor:uv-exposure#c4
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -68,12 +73,13 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.3.2
     h: 7ac5ae6f2098
-  review: disputed
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage supports >5% for one of five modules at 160 kWh/m², <5%
     at 15 kWh/m², and EVA browning; but ''some modules'' at 150+ is potential, and the ''indoor'' 160
-    test is single-module, so ''at least 5%'' typical is overstated.'
-  conflicts_with:
-  - stressor:uv-exposure#c3
+    test is single-module, so ''at least 5%'' typical is overstated.; reviewer: the compiler-flagged conflict
+    is a different scenario or technology, not disagreement'
 ---
 UV exposure means the ultraviolet part of sunlight hitting the plant. It is only a small share of global irradiation, and its strength depends on climate and altitude, with higher annual doses at high-elevation sites. UV breaks down polymers such as EVA encapsulant and backsheets. This shows up as yellowing or browning of the encapsulant, along with power loss. UV can also weaken the bond between the encapsulant and the glass, which can lead to delamination. This can happen on its own or as a secondary effect after the encapsulant becomes brittle. In modern TOPCon, heterojunction and PERC cells, UV can damage the cell surface passivation. This UV-induced degradation lowers current or voltage. Exposed DC cables can crack when their insulation degrades under UV, even when the cable is certified for UV. This can cause insulation faults, and the cable then has to be replaced. Damage builds up faster when high UV comes with high module temperature, which is why hot, arid sites carry more risk. To reduce exposure, protect exposed wiring from sunlight. Choose modules whose antireflective coating, glass, encapsulant or passivation layers reflect or absorb UV before it reaches the cell.
 

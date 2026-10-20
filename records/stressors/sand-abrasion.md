@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.6
     h: a3dffa29110f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Sand abrasion happens when wind carries sand and dust against the module, wearing and frosting the front glass surface. It is mostly found at desert sites and where sandstorms are frequent. Abrasion wears away anti-reflective and anti-soiling coatings on the glass, which weakens or removes their benefit. The main failure mode it drives is glass corrosion or abrasion. This lowers optical transmittance and therefore module output, but it is not normally a safety or reliability risk for the glass. Depending on how the modules are installed and how often sandstorms occur, the rear side can also be abraded. Polymer backsheets weather more than glass and may then pose safety and reliability risks. Cleaning while sand is on the glass also causes abrasion. In tests, fine sand wore coatings more than coarse sand, and coated glass was affected much more than uncoated glass. Abrasion is found by visual inspection, with IV checks as support. Short-circuit current follows optical transmittance, so it is a useful measure of the loss. Sand can also get into inverters and damage them. Keep enclosures tightly closed, do not open them during dust storms, and use rain-tight or liquid-tight conduit fittings.
 

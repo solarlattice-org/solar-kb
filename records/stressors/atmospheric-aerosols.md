@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-33-2025
     loc: sec=5.2
     h: 8c6ea50ee97c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c3 (same source; check the conditions)
 - claim_id: c2
   attr: typical_power_loss
@@ -29,7 +31,9 @@ claims:
   - src: src:iea-pvps-t13-33-2025
     loc: sec=5.2
     h: 8c6ea50ee97c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -43,7 +47,9 @@ claims:
   - src: src:iea-pvps-t13-33-2025
     loc: sec=5.3.1
     h: 17978c0f428f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions)
 ---
 Atmospheric aerosols are particles suspended in the air, such as dust, smoke and other particulates, that absorb, reflect and scatter sunlight before it reaches the modules. They change the light spectrum reaching the module, so aerosol conditions are one of the drivers of Spectral Effect Yield Losses, which can make a plant appear to underperform or overperform after normal corrections. During dust and sandstorms the suspended particles can cut global and direct irradiance strongly, and the particles that settle on the glass cause soiling losses that last after the sky clears. Over the long term, the loss from aerosols attenuating light in the air is much smaller than the loss from aerosols deposited on the panels as soiling. Aerosol load is tracked with aerosol optical depth and dust optical depth from ground networks, satellites or reanalysis data, and PM10 and PM2.5 indices can also flag dust storms. When analysing underperformance, compare residuals against aerosol optical depth, air mass and water vapour, and do not use spectral correction as a catch-all explanation. You cannot prevent the airborne effect, but you can reduce deposition with high stow angles away from the wind, anti-soiling coatings and cleaning, and after a storm several cleaning runs may be needed.

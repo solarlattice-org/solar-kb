@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Insufficient string voltage margin means the strings are designed with too little room between their operating voltage and the inverter's DC input voltage window. When the margin is too small, array Vmp can drop below the inverter's minimum input voltage. The inverter then has to run above the maximum power point, and available DC power goes unharvested. This is the failure mode called Inverter Voltage Floor Losses. The problem is most likely in hot periods, because module voltage falls as cell temperature rises. Degraded modules and high reactive power demand can make it worse. At the other extreme, low ambient temperatures raise string voltage and can damage the inverter. If a measured string Voc is close to the inverter's maximum, check the string length. When sizing strings, use the NEC 690.7 temperature factors or the module maker's temperature coefficient. This keeps string voltage below the inverter limit at the minimum design temperature. A string with fewer modules than the others on the same inverter can cause a string current reflux fault. The fix is to correct the module configuration. To reduce exposure, future string designs should keep voltage margin at both low and high temperatures. Any changes should be confirmed with the inverter supplier and checked against IV-derived Vmp.
 

@@ -22,7 +22,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Cell reverse bias happens when one cell makes less current than the rest of its string, for example because of shading, cracks or mismatch. The other cells then force it to run in reverse, so it absorbs power and heats up instead of producing power. It drives module hotspots and hot cells. In multicrystalline cells the heat collects at local junction breakdown points, while in monocrystalline cells the whole cell area warms evenly. Thin-film and perovskite cells are very sensitive to reverse bias. Junction breakdown forms shunt paths, and the current crowding into them causes point heating that can badly damage the module. Bypass diodes limit how far a cell can be driven into reverse. If a diode fails open, a cell can see a higher reverse voltage than it was designed for, which can cause hotspots, browning, burn marks or even fire. Crystalline silicon cells tolerate reverse bias when the bypass diode protection is well designed. For thin-film modules, bypass diodes may not be able to limit the reverse voltage. Exposure is reduced by sorting cells into current bins, screening out cells with low shunt resistance, fitting bypass diodes, and putting fewer cells on each diode. For thin-film modules, avoid cleaning tools that cast shadows and avoid running a module in short circuit. Look for reverse bias heating with infrared scans under stable, high irradiance while the inverter is running. Then confirm with string current, IV curve shape and a visual check.
 
