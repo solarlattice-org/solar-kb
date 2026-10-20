@@ -49,7 +49,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
@@ -82,7 +84,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
@@ -97,7 +101,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c7 (same source;
