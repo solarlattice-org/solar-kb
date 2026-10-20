@@ -195,3 +195,31 @@ def test_fault_code_observation_is_pinned_and_expanded(tmp_path, graph):
             f"  expected: fm:insulation-loss\n  acceptable: [fm:leakage-current]\n  source: {SRC}")
     [r] = _report(tmp_path, graph, text).results
     assert r.rank == 1 and r.unknown_ids == () and r.resolved[0]["match"] == "pinned" and r.tied == 2
+
+
+def test_fault_code_that_reports_nothing_usable_is_unresolved_not_a_graph_miss(tmp_path, graph):
+    """A KB gap (the code maps to no scorable Symptom) must not be counted as a ranking miss (no_candidates)."""
+    text = (f"- id: silent\n  observations: [{{text: event 6100, id: fc:sma-stp-core1-us-6002-6412}}]\n"
+            f"  expected: fm:pid\n  source: {SRC}\n"
+            f"- id: drafted-only\n  observations: [{{text: IsolationErr, id: fc:chint-sca-36ktl-isolationerr}}]\n"
+            f"  expected: fm:insulation-loss\n  source: {SRC}\n"
+            f"- id: mixed\n  observations: [{{text: event 6100, id: fc:sma-stp-core1-us-6002-6412}}, "
+            f"{{text: uniform loss, id: symptom:uniform-power-loss}}]\n  expected: fm:bypass-diode-short\n  source: {SRC}")
+    r = {x.id: x for x in _report(tmp_path, graph, text, min_review="verified").results}
+    assert r["silent"].reason == "unresolved" and r["silent"].unknown_ids == ("fc:sma-stp-core1-us-6002-6412",)
+    assert r["drafted-only"].reason == "unresolved" and r["drafted-only"].unknown_ids == ("fc:chint-sca-36ktl-isolationerr",)
+    # the symptom beside the silent code is scored (fm:pid is verified), so this case is a graph miss, not unresolved
+    assert r["mixed"].reason == "ranked_out" and r["mixed"].unknown_ids == ("fc:sma-stp-core1-us-6002-6412",)
+
+
+def test_fault_code_reporting_a_proposed_symptom_is_unresolved(tmp_path):
+    from solar_kb.query import Graph
+    from tests.helpers import copy_fixture
+    root = copy_fixture(tmp_path, "mini")
+    path = root / "records" / "symptoms" / "low-insulation-resistance.md"
+    path.write_text(path.read_text().replace("aliases: [Riso low, isolation fault]", "status: proposed"))
+    build_graph(load_corpus(root), tmp_path / "g.sqlite", "bench-1")
+    text = (f"- id: stub\n  observations: [{{text: IsolationErr, id: fc:chint-sca-50-60ktl-isolationerr}}]\n"
+            f"  expected: fm:insulation-loss\n  source: {SRC}")
+    [r] = _report(tmp_path, Graph(tmp_path / "g.sqlite"), text).results
+    assert r.reason == "unresolved" and r.unknown_ids == ("symptom:low-insulation-resistance",)

@@ -58,10 +58,51 @@ def test_differential_expands_a_fault_code_through_reports_only(mini_graph):
 
 
 def test_differential_fault_code_review_floor_and_a_code_without_reports(mini_graph):
-    # the 36KTL record's `reports` claim is only drafted
+    # the 36KTL record's `reports` claim is only drafted: at the verified floor the code reports nothing usable
     verified = mini_graph.differential(["fc:chint-sca-36ktl-isolationerr"], min_review="verified")
     assert verified["via_code"] == {"fc:chint-sca-36ktl-isolationerr": []} and verified["candidates"] == []
+    assert verified["unknown_observations"] == ["fc:chint-sca-36ktl-isolationerr"]  # surfaced, not silent
+    assert verified["known_observations"] == [] and verified["disputed_matches"] == []  # drafted is not disputed
     result = mini_graph.differential(["fc:sma-stp-core1-us-6002-6412", "symptom:uniform-power-loss"])
     assert result["via_code"] == {"fc:sma-stp-core1-us-6002-6412": []}
+    assert result["unknown_observations"] == ["fc:sma-stp-core1-us-6002-6412"]
+    assert result["known_observations"] == ["symptom:uniform-power-loss"]
     assert [c["id"] for c in result["candidates"]] == ["fm:pid", "fm:soiling"]
     assert mini_graph.differential(["symptom:uniform-power-loss"])["via_code"] == {}
+
+
+def _graph(root, tmp_path):
+    from solar_kb.graph import build_graph
+    from solar_kb.query import Graph
+    from solar_kb.records import load_corpus
+    build_graph(load_corpus(root), tmp_path / "g.sqlite", "t")
+    return Graph(tmp_path / "g.sqlite")
+
+
+def test_differential_fault_code_disputed_reports_claim_is_surfaced(tmp_path):
+    from tests.helpers import copy_fixture
+    root = copy_fixture(tmp_path, "mini")
+    path = root / "records" / "fault-codes" / "chint-sca-36ktl-isolationerr.md"
+    text = path.read_text()
+    assert text.count("review: drafted") == 3
+    path.write_text(text.replace("    review: drafted\n---", "    review: disputed\n---"))  # c3, the reports claim
+    result = _graph(root, tmp_path).differential(["fc:chint-sca-36ktl-isolationerr"])
+    assert result["via_code"] == {"fc:chint-sca-36ktl-isolationerr": []} and result["candidates"] == []
+    assert result["unknown_observations"] == ["fc:chint-sca-36ktl-isolationerr"]
+    assert result["disputed_matches"] == [{"failure_mode": None, "observation": "fc:chint-sca-36ktl-isolationerr",
+                                           "symptom": "symptom:low-insulation-resistance",
+                                           "record_id": "fc:chint-sca-36ktl-isolationerr", "claim_id": "c3"}]
+
+
+def test_differential_fault_code_reporting_a_proposed_symptom_matches_the_direct_case(tmp_path):
+    """The seed vocabulary ships as proposed stubs: a code reporting one must say so, not expand to nothing."""
+    from tests.helpers import copy_fixture
+    root = copy_fixture(tmp_path, "mini")
+    path = root / "records" / "symptoms" / "low-insulation-resistance.md"
+    path.write_text(path.read_text().replace("aliases: [Riso low, isolation fault]", "status: proposed"))
+    graph = _graph(root, tmp_path)
+    via = graph.differential(["fc:chint-sca-50-60ktl-isolationerr"])
+    direct = graph.differential(["symptom:low-insulation-resistance"])
+    assert via["via_code"] == {"fc:chint-sca-50-60ktl-isolationerr": ["symptom:low-insulation-resistance"]}
+    assert via["unknown_observations"] == direct["unknown_observations"] == ["symptom:low-insulation-resistance"]
+    assert via["known_observations"] == direct["known_observations"] == [] and via["candidates"] == []

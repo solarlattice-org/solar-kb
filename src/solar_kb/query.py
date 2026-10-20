@@ -152,10 +152,15 @@ class Graph:
         Only current claims count: superseded claims, and claims whose validity window does not
         contain `as_of` (default: today, ISO date), are ignored. Each candidate lists the claims
         supporting each match; disputed claims filtered out by `min_review` are reported in
-        `disputed_matches` so they are surfaced rather than silently dropped.
+        `disputed_matches` so they are surfaced rather than silently dropped. `known_observations` are the
+        Symptom/Measurement ids that were scored; everything else given (or reached) is in `unknown_observations`.
 
         A FaultCode observation (Plan 4d) is expanded through its `reports` claims at or above `min_review` into the
-        Symptoms it reports, listed in `via_code`; `indicates` is never scored, so §8.1 scoring is unchanged.
+        Symptoms it reports, listed in `via_code`; `indicates` is never scored, so §8.1 scoring is unchanged. Nothing
+        vanishes in the expansion: a reported Symptom that is only a proposed stub is listed in `unknown_observations`
+        exactly as it would be when given directly, a disputed `reports` claim below the floor is a `disputed_matches`
+        entry (`failure_mode` None, `symptom` the target), and a code that reports nothing at this floor is itself an
+        unknown observation, so a pinned code the KB cannot use is told apart from a KB that lacks the failure mode.
         """
         if k < 1:
             raise ValueError("k must be >= 1")
@@ -164,30 +169,41 @@ class Graph:
         field_evidence = field_evidence or {}
         types = dict(self._con.execute("SELECT id, type FROM nodes WHERE status='active'").fetchall())
 
-        def current(row: sqlite3.Row) -> bool:
+        def current(row: sqlite3.Row, target_active: bool = True) -> bool:
             return (row["superseded_by"] is None
                     and (row["valid_from"] is None or row["valid_from"] <= as_of)
                     and (row["valid_to"] is None or row["valid_to"] >= as_of)
-                    and row["record_id"] in types and row["target"] in types)
+                    and row["record_id"] in types and (not target_active or row["target"] in types))
 
-        def claims(rel: str) -> list[sqlite3.Row]:
+        def claims(rel: str, target_active: bool = True) -> list[sqlite3.Row]:
             rows = self._con.execute(
                 "SELECT * FROM claims WHERE rel=? ORDER BY record_id, rowid", (rel,)).fetchall()
-            return [r for r in rows if current(r)]
+            return [r for r in rows if current(r, target_active)]
 
         def ref(row: sqlite3.Row) -> dict:
             return {"record_id": row["record_id"], "claim_id": row["claim_id"], "review": row["review"]}
 
         via_code: dict[str, list[str]] = {}
+        disputed_matches: list[dict] = []
         obs: list[str] = []
+        reports: list[sqlite3.Row] | None = None
         for o in dict.fromkeys(observations):
-            if types.get(o) == "FaultCode":
-                reported = [r["target"] for r in claims("reports")
-                            if r["record_id"] == o and REVIEW_RANK[r["review"]] >= floor]
-                via_code[o] = list(dict.fromkeys(reported))
-                obs += via_code[o]
-            else:
+            if types.get(o) != "FaultCode":
                 obs.append(o)
+                continue
+            if reports is None:
+                reports = claims("reports", target_active=False)  # a proposed Symptom surfaces as unknown, not silence
+            reported = []
+            for row in reports:
+                if row["record_id"] != o:
+                    continue
+                if REVIEW_RANK[row["review"]] >= floor:
+                    reported.append(row["target"])
+                elif row["review"] == "disputed":
+                    disputed_matches.append({"failure_mode": None, "observation": o, "symptom": row["target"],
+                                             "record_id": o, "claim_id": row["claim_id"]})
+            via_code[o] = list(dict.fromkeys(reported))
+            obs += via_code[o] or [o]  # a code that reports nothing at this floor is itself an unknown observation
         obs = list(dict.fromkeys(obs))
         known = [o for o in obs if types.get(o) in ("Symptom", "Measurement")]
         unknown = [o for o in obs if o not in known]
@@ -198,7 +214,6 @@ class Graph:
                 observed_as.setdefault(row["record_id"], []).append((row["target"], ref(row)))
 
         reach: dict[str, dict[str, list[dict]]] = {}
-        disputed_matches = []
         for row in claims("presents_as"):
             fm, symptom = row["record_id"], row["target"]
             reached = [(symptom, [ref(row)])] + [(m, [ref(row), r]) for m, r in observed_as.get(symptom, [])]
@@ -236,8 +251,8 @@ class Graph:
                 discriminators.append(edge)
         return {"candidates": top, "total_candidates": len(candidates),
                 "truncated": len(candidates) > k, "discriminators": discriminators,
-                "disputed_matches": disputed_matches, "unknown_observations": unknown, "via_code": via_code,
-                "as_of": as_of, "kb_version": self.kb_version}
+                "disputed_matches": disputed_matches, "known_observations": known, "unknown_observations": unknown,
+                "via_code": via_code, "as_of": as_of, "kb_version": self.kb_version}
 
     def _name(self, record_id: str) -> str:
         return self._con.execute("SELECT name FROM nodes WHERE id=?", (record_id,)).fetchone()[0]

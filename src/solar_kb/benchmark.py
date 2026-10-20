@@ -14,8 +14,9 @@ eval/public/differential.yaml:
 
 Failure-mode ids follow the compiler's worklist convention: fm:<pv-root-cause slug> for the seeded causes.
 An observation without an `id` is resolved with Graph.resolve (Symptom/Measurement, best match; every resolution
-is recorded with its exact/fuzzy match and score). Unresolved observations and unknown pinned ids are counted,
-each miss carries a reason (unresolved | no_candidates | ranked_out), and `top3_resolved` scores only cases whose
+is recorded with its exact/fuzzy match and score). Unresolved observations and unknown pinned ids are counted (a
+pinned fc: id that reports nothing usable counts as unknown, as does a proposed Symptom it reports), each miss
+carries a reason (unresolved | no_candidates | ranked_out), and `top3_resolved` scores only cases whose
 observations all resolved, so a weak resolver is never mistaken for a weak graph. Alphabetical tie-breaking is
 made visible through `tied` and `top3_pessimistic` (the worst rank within a tie group).
 """
@@ -106,7 +107,7 @@ class CaseResult:
     rank: int | None  # 1-based rank of the expected (or an acceptable) failure mode, else None
     candidates: tuple[str, ...]
     unresolved: tuple[str, ...]  # observation texts that matched no Symptom/Measurement
-    unknown_ids: tuple[str, ...] = ()  # pinned ids that are not active Symptom/Measurement records
+    unknown_ids: tuple[str, ...] = ()  # pinned ids (or what a pinned fc: reports) that are not active Symptom/Measurement records
     resolved: tuple[dict, ...] = ()  # {"text", "id", "match": pinned|exact|fuzzy, "score"} per observation used
     tied: int = 0  # candidates sharing the hit's score (1 = no tie); 0 when there is no hit
     pessimistic_rank: int | None = None  # worst rank within the hit's tie group
@@ -164,7 +165,7 @@ def run_benchmark(graph, cases: list[Case], min_review: str = "drafted", exact_o
             else:
                 unresolved.append(obs.text)
         result = graph.differential(ids, min_review=min_review, k=10_000) if ids else \
-            {"candidates": [], "unknown_observations": []}
+            {"candidates": [], "known_observations": [], "unknown_observations": []}
         unknown = tuple(result.get("unknown_observations", []))
         scored = [(c["id"], c["score"]) for c in result["candidates"]]
         correct = {case.expected, *case.acceptable}
@@ -176,7 +177,7 @@ def run_benchmark(graph, cases: list[Case], min_review: str = "drafted", exact_o
             tied, pessimistic = len(group), max(group)
         if rank is not None and rank <= 3:
             reason = "hit"
-        elif not ids or len(unknown) == len(ids):
+        elif not result["known_observations"]:  # nothing was scored: every id unknown, or a code that reports nothing
             reason = "unresolved"
         elif not scored:
             reason = "no_candidates"
