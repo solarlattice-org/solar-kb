@@ -152,6 +152,26 @@ def test_fault_code_page_derate_badge_and_a_code_with_only_defined_in(tmp_path):
     assert "<dt>CPS</dt><dd>" in sma and 'href="chint-sca-36ktl-isolationerr"' in sma and "Same code in other" not in sma
 
 
+def test_fault_code_page_shows_the_page_number_once_and_only_when_it_is_unambiguous(tmp_path):
+    """`page` is page_start of ONE defining unit: shown on the single source's line, never beside every citation of
+    every source (a second manual's rows are on other pages)."""
+    root = copy_fixture(tmp_path, "mini")
+    out = _render(load_corpus(root), tmp_path / "one")
+    fan = (out / "kb/fc/chint-sca-50-60ktl-extfanerr.html").read_text()
+    block = fan[fan.index("<h2>Defined in</h2>"):fan.index("<h2>Claims</h2>")]
+    assert block.count("page 4") == 1 and "<dt>Page</dt><dd>4</dd>" in fan  # one source, two rows: once
+    path = root / "records" / "fault-codes" / "chint-sca-50-60ktl-isolationerr.md"
+    path.write_text(path.read_text().replace("  - claim_id: c2\n", (
+        "  - claim_id: c8\n    rel: defined_in\n    target: src:sma-core1-manual\n"
+        '    cite: [{src: "src:sma-core1-manual", loc: "tbl=17.r4", h: "5e6f70819203"}]\n    review: drafted\n'
+        "  - claim_id: c2\n"), 1))
+    out = _render(load_corpus(root), tmp_path / "two")
+    page = (out / "kb/fc/chint-sca-50-60ktl-isolationerr.html").read_text()
+    block = page[page.index("<h2>Defined in</h2>"):page.index("<h2>Claims</h2>")]
+    assert 'href="../src/sma-core1-manual"' in block and "<code>tbl=17.r4</code>" in block
+    assert "page" not in block and "<dt>Page</dt><dd>6</dd>" in page  # two sources: the meta row alone carries it
+
+
 def test_event_concept_source_and_symptom_pages_list_the_codes(tmp_path):
     out = _render(load_corpus(FIXTURES / "mini"), tmp_path)
     concept = (out / "kb/ec/fault.html").read_text()

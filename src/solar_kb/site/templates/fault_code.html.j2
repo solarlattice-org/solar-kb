@@ -66,10 +66,10 @@
 <h2>Defined in</h2>
 <ul class="defined-in">
 {% for d in fc.defined_in %}
-<li>{{ link(d.source) }}{% if d.details %} — {{ d.details }}{% endif %} <span class="badge {{ d.review }}">{{ d.review_label }}</span>
+<li>{{ link(d.source) }}{% if d.details %} — {{ d.details }}{% endif %}{% if fc.page and fc.defined_in|length == 1 %} · page {{ fc.page }}{% endif %} <span class="badge {{ d.review }}">{{ d.review_label }}</span>
 <ul class="cites">
 {% for loc, h in d.citations %}
-<li><code>{{ loc }}</code> <code title="content hash of the cited passage">h={{ h }}</code>{% if fc.page %} · page {{ fc.page }}{% endif %}</li>
+<li><code>{{ loc }}</code> <code title="content hash of the cited passage">h={{ h }}</code></li>
 {% endfor %}
 </ul>
 </li>
