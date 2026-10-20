@@ -14,7 +14,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.1.1
     h: bc3b4163c337
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 Ultrasonic scanning uses an ultrasonic scanner to check a PV module for areas where its internal layers have come apart. It is used to detect delamination, where the layers of glass, encapsulant, cells and backsheet lose their bond. It is most useful for less obvious delaminations. It shows them at higher resolution than a visual check, which only finds delamination that is easy to see. Like X-ray tomography, it takes longer per examination than visual inspection or thermography. Pulse and lock-in thermography can also find delaminations that are not visible, so they are faster options to consider before a detailed ultrasonic scan.
 

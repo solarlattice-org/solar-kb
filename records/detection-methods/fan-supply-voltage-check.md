@@ -25,7 +25,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=31
     h: e78dae227e3f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:fan-supply-voltage-normal
@@ -47,7 +49,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=31
     h: e78dae227e3f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 First, see whether the fan is turning. If the fan spins while the warning is active, the fan-sensing circuit is at fault and the inverter should be replaced. If the fan is not spinning, remove the six bolts that hold the two external fans. Then open the white snap-on connector and measure the voltage between the pins on the red and black wires. A reading below 6 VDC means the inverter is not supplying the fan, and the inverter should be replaced. A reading above 6 V means the fan itself has failed and should be replaced. The same alarm can also come from a blocked fan, a fan at the end of its service life, or poor contact at the fan socket connector. Check for foreign objects on the blades before taking measurements. Before taking the fans apart, the manual suggests watching for 5 minutes to see if the alarm clears by itself. If it does not, switch the external AC disconnect off and back on to reboot. Contact post-sales service if the fault remains.
 

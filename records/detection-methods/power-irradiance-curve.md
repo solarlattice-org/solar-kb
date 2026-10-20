@@ -17,7 +17,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=33.r1
     h: 44fc567b4d48
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:power-irradiance-plateau
@@ -48,7 +50,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h17
     h: 5714454c65c6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -60,7 +64,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=4.2.2
     h: baaa36bbb1c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c5 (same source; check the conditions)
 - claim_id: c5
   attr: typical_power_loss

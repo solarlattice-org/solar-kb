@@ -17,7 +17,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: sec=5.4.1.1.1
     h: c4548edebd52
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:low-voc
@@ -28,7 +30,9 @@ claims:
   - src: src:iec-62446-1
     loc: sec=6.4
     h: c2c39f38b7e7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A string polarity measurement uses a multimeter or voltmeter to confirm that the positive and negative conductors of each PV string are wired the right way round. Connect the meter's positive lead to the string's positive cable and its negative lead to the negative cable. A negative reading on the display means the string is connected in reverse polarity. Measure each string on its own, before it is connected to other strings or the inverter. Do the check before any other tests and before switches are closed or string fuses are inserted. When a CPS inverter reports a PVxReverse fault, turn the DC switch off and open the fuse holders to isolate the strings. Then use the meter to find the reversed string and correct its wiring. An open-circuit voltage well below the expected value can also point to modules wired with the wrong polarity inside a string. The inverter does not protect against a reversed string. It is very dangerous: under strong sunlight it can blow a fuse and start a fire. If you find a reversed string on a system that was already connected, check its modules and bypass diodes for damage. Record the result for each string on the test report sheet.
 

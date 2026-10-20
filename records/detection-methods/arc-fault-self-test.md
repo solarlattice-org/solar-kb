@@ -31,7 +31,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r1
     h: a3b3ba978302
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: produces
   target: meas:afci-self-test-pass
@@ -44,7 +46,9 @@ claims:
   - src: src:yaskawa-solectria-solectria-pvi-3800-7600tl-manual-0527-2014-rev-d-feb2018
     loc: sec=h118
     h: 76995e5e9a6e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The arc fault self-test is a built-in inverter function that checks whether the DC arc fault detection circuit (AFCI) is working. On CPS inverters, run it from the System Setting, OtherCmd menu. The inverter stops while it tests, then shows TestFinish if the circuit passes or AFCI Fault if it fails. On Solectria PVI-TL inverters, switch the AFCI Self Test option from disabled to enabled. If the circuit passes, the display shows a pass message and the inverter shuts down, then restarts into normal operation. For CPS ARC Protect and Arcboard Err alarms, first check that the logic connector to the arc board is secure, then run the test. If the alarm comes back, contact CPS Service to replace the arc board or the wiring box. This makes the test a way to confirm an arc detection board failure. The listed cause of Arcboard Err is poor contact or damage on the arc board. An ARC Protect stop can only be cleared by hand, using the ARCFaultClear command, so a passed self-test does not restart a tripped CPS inverter by itself. On SMA inverters, a self-test error that reports the interference level as too high or too low cannot be fixed in the field. Service must find the cause.
 
