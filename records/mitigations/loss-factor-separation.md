@@ -2,8 +2,10 @@
 id: mit:loss-factor-separation
 type: Mitigation
 name: Loss factor separation
-aliases:
-- mit:seasonal-residual-tracking
-- mit:separate-curtailment-tracking
-status: proposed
 ---
+Loss factor separation means booking each yield loss category on its own. Curtailment, snow, spectral effects and wind stow are kept apart from equipment faults and from generic weather or availability variance. For grid curtailment, track the curtailed energy apart from equipment loss. A low performance ratio during curtailed hours can reflect grid instructions rather than poor module, inverter or tracker health. If curtailment is not separated on frequently constrained plants, teams may chase false equipment problems and miss real gains in dispatch, controls or storage use. For snow, track winter residuals apart from generic soiling. Before estimating recoverable loss, first filter out cold-weather inverter behavior, clipping, curtailment, trackers frozen in stow, sensor icing and albedo effects. For spectral effects, separate them from temperature, soiling, degradation and irradiance sensor bias. Check residuals against air mass, precipitable water and time of day only after removing clipping, curtailment and availability effects. For wind stow, line up the tracker controller logs with SCADA production, irradiance and inverter status. This separates stow loss from clipping, curtailment, outages and sensor faults. Recurring stow should be tracked as a defined tracker operating mode in forecasts and variance reporting. Monitoring platforms can support this by calculating separate losses for clipping, soiling, snow, downtime and curtailment. Users generally prefer this to lowering a whole month's expected production with derate factors.
+
+<!-- review notes
+- sentence 5: support check: partial - Separation from temperature, soiling, degradation and sensor bias, and residual checks after removing clipping/curtailment/availability are supported, but the passages also list temperature and soiling removal and other variables (aerosol, season), and say 'start by' checking whether a correction was applied; 'only after' framing is slightly stronger.
+- sentence 7: support check: partial - The PowerTrack passage says it characterizes additional losses for clipping, soiling, snow, downtime and curtailment and that typically users avoid monthly derates preferring to see deviation, but 'generally prefer' is roughly supported while the statement is about monitoring platforms generally rather than this one product.
+-->
