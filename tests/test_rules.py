@@ -193,14 +193,22 @@ def fc_rules(root, rid="fc:" + FC_SLUG):
 
 def test_fixture_fault_codes_pass_and_a_minimal_record_is_clean(tmp_path):
     root = copy_fixture(tmp_path, "mini")
-    fault_code(root, body="<!-- review notes: nothing to add -->\n")
+    fault_code(root, front=FC_FRONT + "aliases: [Probe0090, probe90, CPS Probe0090, Bus over voltage]\n"
+                                      "display_message: Bus over voltage\n", body="<!-- review notes: nothing to add -->\n")
     assert fc_rules(root) == set()
+
+
+LONG = " ".join(["word"] * 31)  # a paraphrased vendor troubleshooting sentence
 
 
 @pytest.mark.parametrize("front, message", [
     (FC_FRONT.replace("code_key: probe90", "code_key: probe0090"), "code_key must be 'probe90'"),
     (FC_FRONT.replace("make_name: CPS\n", ""), "missing required slot(s): make_name"),
     (FC_FRONT + "display_message: one two three four five six seven eight nine\n", "display_message exceeds 8"),
+    (FC_FRONT + f"aliases: [Probe0090, '{LONG}']\n", "exceeds 8 words; aliases are the code"),
+    (FC_FRONT.replace("name: CPS SCA50-60KTL Probe0090", f"name: CPS {LONG} Probe0090"), "name exceeds 8 words"),
+    (FC_FRONT.replace("name: CPS SCA50-60KTL Probe0090", "name: Bus over voltage protection"),
+     "name is 'CPS <family short name> Probe0090'"),
 ])
 def test_fault_code_slot_clauses(tmp_path, front, message):
     root = copy_fixture(tmp_path, "mini")
@@ -237,6 +245,9 @@ def test_fault_code_body_is_empty_apart_from_html_comments(tmp_path, body, bad):
     (DEFINED_IN.replace("review: drafted", "note: " + " ".join(["w"] * 26) + "\n    review: drafted"), {"fault-code"}),
     (DEFINED_IN.replace("review: drafted", "conditions: " + " ".join(["w"] * 26) + "\n    review: drafted"),
      {"fault-code"}),
+    (DEFINED_IN.replace("review: drafted", "review_note: " + " ".join(["w"] * 26) + "\n    review: drafted"),
+     {"fault-code"}),                                                             # review_note renders on the page too
+    (DEFINED_IN.replace("review: drafted", "review_note: code printed in the table header line\n    review: drafted"), set()),
     (RECOVERY, {"fault-code"}),                                                   # no defined_in at all
     (DEFINED_IN.replace("tbl=3.r2", "p=12"), {"fault-code"}),                      # defined_in cites a page
     (DEFINED_IN.replace("tbl=3.r2", "sec=4.3"), {"fault-code"}),                   # or a numbered section

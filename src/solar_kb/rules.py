@@ -370,6 +370,9 @@ HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
 MAX_DISPLAY_MESSAGE_WORDS = 8
 MAX_VENDOR_SEVERITY_WORDS = 3
 MAX_CODE_NOTE_WORDS = 25
+MAX_ALIAS_WORDS = MAX_DISPLAY_MESSAGE_WORDS  # display_message is the longest alias the plan allows
+MAX_NAME_WORDS = 8  # "{make_name} {family_short} {code}"
+CODE_FREE_TEXT = ("note", "conditions", "review_note")  # every other claim field is an id, a number or a citation
 DERATE = "ec:derate"
 OUTPUT_LIMIT = "output_limit"
 
@@ -404,7 +407,8 @@ def _range_problem(data: dict) -> str | None:
 
 def rule_fault_code(corpus: Corpus) -> list[Violation]:
     """Plan 4d: a FaultCode's identity is recomputable from its slots, its only vendor text is the short display
-    message and severity word, its body is empty, and its claims cite the manual row and carry no quote."""
+    message and severity word (name and aliases are deterministic and capped), its body is empty, and its claims cite
+    the manual row, carry no quote and no free text beyond a 25-word note, conditions or review_note."""
     out = []
     for record in corpus.records.values():
         if record.type != "FaultCode":
@@ -420,6 +424,19 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
                 out.append(_v("fault-code", record, f"id must be {expected} (fc:<make>-<model_family>-<code_key>)"))
         if isinstance(code, str) and isinstance(key, str) and code_key(code) != key:
             out.append(_v("fault-code", record, f"code_key must be {code_key(code)!r} for code {code!r}"))
+        # The public vendor text is exactly the code, display_message and vendor_severity: name and aliases are
+        # deterministic, so a sentence placed in either is a leak the word caps catch.
+        name, make_name = data.get("name"), data.get("make_name")
+        if isinstance(name, str) and isinstance(make_name, str) and isinstance(code, str) and name.strip() \
+                and not (name.startswith(make_name + " ") and name.endswith(" " + code)):
+            out.append(_v("fault-code", record, f"name is '{make_name} <family short name> {code}' (deterministic)"))
+        if _words(name) > MAX_NAME_WORDS:
+            out.append(_v("fault-code", record, f"name exceeds {MAX_NAME_WORDS} words"))
+        aliases = data.get("aliases")
+        for alias in aliases if isinstance(aliases, list) else []:
+            if _words(alias) > MAX_ALIAS_WORDS:
+                out.append(_v("fault-code", record, f"alias {alias[:40]!r}... exceeds {MAX_ALIAS_WORDS} words; aliases are "
+                                                    "the code, code_key, make_name + code and display_message"))
         problem = _range_problem(data)
         if problem:
             out.append(_v("fault-code", record, problem))
@@ -436,7 +453,7 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
             rel = claim.get("rel")
             if "quote" in claim:
                 out.append(_v("fault-code", record, "quote is forbidden on a FaultCode claim", claim))
-            for field_name in ("note", "conditions"):
+            for field_name in CODE_FREE_TEXT:
                 if _words(claim.get(field_name)) > MAX_CODE_NOTE_WORDS:
                     out.append(_v("fault-code", record, f"{field_name} exceeds {MAX_CODE_NOTE_WORDS} words", claim))
             if rel == "defined_in":
