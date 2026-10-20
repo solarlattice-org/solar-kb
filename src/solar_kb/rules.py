@@ -365,7 +365,6 @@ def rule_mapping_prefixes(corpus: Corpus, prefixes: dict[str, str]) -> list[Viol
 
 FAULT_CODE_REQUIRED = ("make", "make_name", "model_family", "family_name", "code", "code_key", "name", "category")
 DEFINED_IN_LOC_RE = re.compile(r"^(tbl=\d+(\.r\d+)?|sec=h\d+)$")
-RANGE_CODE_RE = re.compile(r"^\S+\s*[-–]\s*\S+$")
 BASIS_RE = re.compile(r"^basis=(rated_power|current_power|absolute)\b")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
 MAX_DISPLAY_MESSAGE_WORDS = 8
@@ -380,20 +379,25 @@ def _words(value: object) -> int:
 
 
 def _range_problem(data: dict) -> str | None:
-    """code_from/code_to: both or neither, from < to, only on a printed range, and equal to its bounds."""
+    """code_from/code_to: present exactly when `code` is a printed range (parse_code sees a number_end, so a hyphenated
+    single code such as CRIT-4 or OV-G-V is not one), integers, from < to, and equal to the printed bounds. A range
+    without bounds would never be found by containment (`resolve_code`, the make page, codes.json)."""
     lo, hi, code = data.get("code_from"), data.get("code_to"), data.get("code")
+    parsed = parse_code(code) if isinstance(code, str) else None
+    is_range = parsed is not None and parsed.number_end is not None
     if (lo is None) != (hi is None):
         return "code_from and code_to come together (a printed range) or not at all"
     if lo is None:
+        if is_range:
+            return f"a printed range needs code_from and code_to ({parsed.number}, {parsed.number_end})"
         return None
     if not isinstance(lo, int) or not isinstance(hi, int) or isinstance(lo, bool) or isinstance(hi, bool):
         return "code_from and code_to are integers"
+    if not is_range:
+        return "code_from/code_to are only for a printed range such as 6002-6412"
     if lo >= hi:
         return "code_from must be less than code_to"
-    if not isinstance(code, str) or not RANGE_CODE_RE.match(code):
-        return "code_from/code_to are only for a printed range such as 6002-6412"
-    parsed = parse_code(code)
-    if parsed.number_end is not None and (lo, hi) != (parsed.number, parsed.number_end):
+    if (lo, hi) != (parsed.number, parsed.number_end):
         return f"code_from/code_to must be the printed range bounds ({parsed.number}, {parsed.number_end})"
     return None
 

@@ -275,14 +275,31 @@ def test_fault_code_range_bounds_on_a_single_code(tmp_path, extra, bad):
     assert ("fault-code" in fc_rules(root)) is bad
 
 
-@pytest.mark.parametrize("bounds, bad", [("code_from: 10\ncode_to: 20\n", False), ("code_from: 10\ncode_to: 21\n", True),
-                                         ("", False)])
-def test_fault_code_range_record(tmp_path, bounds, bad):
+@pytest.mark.parametrize("bounds, message", [
+    ("code_from: 10\ncode_to: 20\n", None),
+    ("code_from: 10\ncode_to: 21\n", "must be the printed range bounds (10, 20)"),
+    ("", "a printed range needs code_from and code_to (10, 20)"),  # else containment lookup can never find it
+    ("code_from: 10\n", "come together"),
+])
+def test_fault_code_range_record(tmp_path, bounds, message):
     root = copy_fixture(tmp_path, "mini")
     front = (FC_FRONT.replace("probe90", "probe10-20").replace("code: Probe0090", "code: Probe0010-0020")
              .replace("name: CPS SCA50-60KTL Probe0090", "name: CPS SCA50-60KTL Probe0010-0020") + bounds)
     fault_code(root, front=front, slug="chint-sca-50-60ktl-probe10-20")
-    assert ("fault-code" in fc_rules(root, "fc:chint-sca-50-60ktl-probe10-20")) is bad
+    found = [v.message for v in run_rules(load_corpus(root)) if v.record_id == "fc:chint-sca-50-60ktl-probe10-20"]
+    assert found == [] if message is None else any(message in m for m in found)
+
+
+@pytest.mark.parametrize("code, key", [("CRIT-4", "crit4"), ("OV-G-V", "ovgv"), ("Protect0090", "protect90")])
+def test_fault_code_hyphenated_single_codes_take_no_bounds(tmp_path, code, key):
+    """A dash in the printed code does not make it a range: only parse_code's number_end does (CRIT-4 is number 4 under
+    prefix crit). Bounds on such a code would make resolve_code match every number in between."""
+    root = copy_fixture(tmp_path, "mini")
+    front = (FC_FRONT.replace("probe90", key).replace("code: Probe0090", f"code: {code}")
+             .replace("name: CPS SCA50-60KTL Probe0090", f"name: CPS SCA50-60KTL {code}") + "code_from: 1\ncode_to: 999\n")
+    fault_code(root, front=front, slug=f"chint-sca-50-60ktl-{key}")
+    found = [v.message for v in run_rules(load_corpus(root)) if v.record_id == f"fc:chint-sca-50-60ktl-{key}"]
+    assert any("only for a printed range" in m for m in found)
 
 
 def test_reports_from_a_failure_mode_and_event_concept_with_claims(tmp_path):
