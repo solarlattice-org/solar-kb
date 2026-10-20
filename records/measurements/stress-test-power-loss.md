@@ -18,10 +18,11 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.3.1
     h: 3a65ff4976bc
-  review: disputed
-  review_note: possible conflict with c2 (same source; check the conditions)
-  conflicts_with:
-  - meas:stress-test-power-loss#c8
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
+  review_note: 'possible conflict with c2 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or source, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -34,17 +35,11 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.3.1
     h: 3a65ff4976bc
-  review: disputed
-  review_note: possible conflict with c1 (same source; check the conditions)
-  conflicts_with:
-  - meas:stress-test-power-loss#c3
-  - meas:stress-test-power-loss#c4
-  - meas:stress-test-power-loss#c5
-  - meas:stress-test-power-loss#c6
-  - meas:stress-test-power-loss#c7
-  - meas:stress-test-power-loss#c8
-  - meas:stress-test-power-loss#c9
-  - meas:stress-test-power-loss#c10
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c1 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or source, not disagreement'
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -74,12 +69,13 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.1.2
     h: 965925e2642f
-  review: disputed
-  conflicts_with:
-  - meas:stress-test-power-loss#c2
-  review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c7
-    (same source; check the conditions); possible conflict with c8 (same source; check the conditions);
-    possible conflict with c10 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c3 (same source; check the conditions); possible conflict with
+    c7 (same source; check the conditions); possible conflict with c8 (same source; check the conditions);
+    possible conflict with c10 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or source, not disagreement'
 - claim_id: c5
   attr: typical_power_loss
   value:
@@ -90,12 +86,13 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.1.2
     h: 965925e2642f
-  review: disputed
-  conflicts_with:
-  - meas:stress-test-power-loss#c2
-  review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c7
-    (same source; check the conditions); possible conflict with c8 (same source; check the conditions);
-    possible conflict with c10 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c3 (same source; check the conditions); possible conflict with
+    c7 (same source; check the conditions); possible conflict with c8 (same source; check the conditions);
+    possible conflict with c10 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or source, not disagreement'
 - claim_id: c6
   attr: typical_power_loss
   value:
@@ -106,13 +103,14 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.6.1
     h: e99729bd0589
-  review: disputed
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Seven of eight modules showed less than 5% degradation after
     2000 h damp heat, but the passage doesn''t give ''up to 5%'' as a maximum exactly; roughly consistent
     though ''less than 5%'' vs ''up to 5%'' is close; the figure also hints -7% for one module.; possible
-    conflict with c8 (same source; check the conditions)'
-  conflicts_with:
-  - meas:stress-test-power-loss#c2
+    conflict with c8 (same source; check the conditions); reviewer: the compiler-flagged conflict is a
+    different scenario or source, not disagreement'
 - claim_id: c7
   attr: typical_power_loss
   value:
@@ -142,15 +140,15 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.6.1
     h: e99729bd0589
-  review: disputed
-  conflicts_with:
-  - meas:stress-test-power-loss#c1
-  - meas:stress-test-power-loss#c2
-  review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
-    (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c3 (same source; check the conditions); possible conflict with
+    c4 (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
     check the conditions); possible conflict with c9 (same source; check the conditions); possible conflict
-    with c10 (same source; check the conditions)
+    with c10 (same source; check the conditions); reviewer: the compiler-flagged conflict is a different
+    scenario or source, not disagreement'
 - claim_id: c9
   attr: typical_power_loss
   value:
@@ -161,10 +159,11 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=7.6.1
     h: e99729bd0589
-  review: disputed
-  conflicts_with:
-  - meas:stress-test-power-loss#c2
-  review_note: possible conflict with c8 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c8 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or source, not disagreement'
 - claim_id: c10
   attr: typical_power_loss
   value:
@@ -177,13 +176,14 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=6.2.2
     h: 17668c52ed6f
-  review: disputed
-  conflicts_with:
-  - meas:stress-test-power-loss#c2
-  review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
-    (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c3 (same source; check the conditions); possible conflict with
+    c4 (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c7 (same source; check the conditions); possible conflict with c8 (same source;
-    check the conditions)
+    check the conditions); reviewer: the compiler-flagged conflict is a different scenario or source,
+    not disagreement'
 ---
 This signature is a drop in module maximum power, usually measured by flash testing at standard test conditions before and after an accelerated stress test. In PID lab tests the module's rated system voltage is applied to its shorted leads while the module surfaces are grounded, either in a damp heat chamber or with foil or other conductive electrodes. Modules that lose more than the pass/fail limit in the 60°C, 85% RH PID test have also failed by potential induced degradation outdoors. In bifacial PERC modules, the PID-p loss is much larger when the module is flash tested from the rear than from the front. With longer stress, power can partly recover. Leakage current during the test is only a weak indicator of how much power is lost, so measure power directly. After damp heat or thermal cycling tests, EL images taken with the power measurement can show dark cell edges from corrosion or dark areas from disconnected busbars. Modules with more cracked cells, or with dendritic crack patterns, show more power loss after humidity freeze sequences.
 

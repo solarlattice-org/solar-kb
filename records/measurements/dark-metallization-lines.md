@@ -36,6 +36,8 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h7
     h: 8b69da4daaac
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 This signature is a grey to black discoloration of the silver front-side metallization on screen-printed cells, and you can see it with the naked eye through the front glass. It runs along cell edges and along cell cracks that are normally invisible, which gives the snail track look. Inspection forms record whether fingers, busbars, ribbons and string interconnects look like new, lightly discolored or darkly discolored, and estimate how much of the area is affected. Do not confuse it with photobleaching of browned EVA along cracks, which takes several years to appear. The discoloration itself is reported not to cause a measurable power loss, but the cracks it reveals can reduce module power. Modules with snail tracks tend to show high leakage current in wet leakage testing. Light yellow to dark discoloration of electrical parts often accompanies metallization corrosion, which can lead to cell interconnection failure.

@@ -22,7 +22,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=4.2.2
     h: baaa36bbb1c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions)
 - claim_id: c2
   attr: typical_power_loss

@@ -28,7 +28,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.2.4
     h: 9ce8dc98ece9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -40,7 +42,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=5.2.4
     h: 9ce8dc98ece9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This signature is a short-circuit current on the IV curve that is lower than expected. The expected value can come from the cell area, technology and layout, from the label or flash report, or from an earlier curve measured under comparable conditions. Isc mainly reflects optical influences, so a low Isc points to light not reaching the cells, and the effect resembles a reduction in irradiance. Typical causes are loss of encapsulant transparency from yellowing or browning, glass corrosion, and delamination that optically uncouples the layers. Uniform cases lower Isc and Pmax only. Non-uniform cases also give a sloped region near Isc and steps in the curve. Severe metallization corrosion lowers Isc together with fill factor, because series resistance rises. Light-induced degradation lowers Isc, fill factor and Voc. In bifacial PERC and TOPCon modules affected by PID-p, STC IV curves have shown a significant drop in Isc but no noticeable drop in shunt resistance. String Isc can be taken from an IV curve trace on an isolated string. Before reading a deviation as a fault, check for measurement errors, instrument set-up problems, wrongly entered module data, shading and soiling.
 

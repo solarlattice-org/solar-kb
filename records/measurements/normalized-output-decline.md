@@ -35,7 +35,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c2
@@ -51,7 +53,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions)
 - claim_id: c3
@@ -82,7 +86,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions)
 - claim_id: c5
@@ -97,7 +103,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This signature is a slow drop in plant output over months or years, after the output has been normalized for irradiance. The decline is usually expressed as a performance loss rate in percent per year, either as a single linear rate or as rates over several time segments. The trend includes permanent module degradation as well as losses that can be reversed or avoided with good O&M. With granular dust soiling, normalized output falls during dry periods while the plant stays online, then recovers partly or fully after rain or washing. Before blaming soiling, rule out availability losses, clipping, curtailment and irradiance sensor problems, then compare the trend with soiling station data, rainfall, cleaning logs and reference blocks. When modules age at different rates, the extra mismatch can make system degradation higher than the nameplate module degradation rate. To separate average module degradation from mismatch-driven loss, compare the long-term normalized output with string or inverter trends, IV curve data and module test results. Clean and filter the data carefully, because the filtering choices change the result: high irradiance threshold filters tend to give a lower reported loss rate.
 

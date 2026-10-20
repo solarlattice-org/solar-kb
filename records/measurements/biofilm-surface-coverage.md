@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=front
     h: c791ea65d1df
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-20
 ---
 This signature is the share of the module glass covered by biological growth, measured by imaging the surface directly with a handheld digital microscope. In one large microscope image dataset, average coverage was a few percent, but some spots ranged from well under one percent to about a third of the surface. Bio-soiling was found in eight climate zones. The deposits are mostly sub-aerial biofilms, especially black fungi, which grow as dark masses on the glass and trap other particles. High coverage points to widespread fungal soiling losses, which lower glass transmittance and cause a loss that does not wash off in rain the way ordinary dust does. Growth is patchy, so check modules in several parts of the array rather than relying on one module as representative. Use microscopy to confirm the cause after monitoring shows a production deficit that persists after rain but recovers after manual cleaning. Biofilms grow most readily in humid climates where condensation forms on the modules.
 
