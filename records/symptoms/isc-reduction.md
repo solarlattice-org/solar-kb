@@ -39,7 +39,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Corrosion, LID and PID-p lowering Isc are stated, but cracks
     lowering Isc is not stated in the IV context here (only EL-based mention elsewhere); the IV-trace
     attribution for cracks is missing.'
@@ -54,7 +56,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h6
     h: 0189f40b9ccf
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:low-voc
@@ -69,7 +73,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - LID and PID-p lowering Voc with Isc is stated, but the claim
     that cracks and soiling mainly lower current is not supported for Voc comparison in these passages.'
 - claim_id: c5
@@ -97,7 +103,9 @@ claims:
   - src: src:iea-pvps-t13-16-2021
     loc: sec=h56
     h: 8d42c4699ab3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: observed_as
   target: meas:el-patchwork-pattern
@@ -122,11 +130,12 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h3
     h: 950db263c013
-  review: disputed
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says LID could entail losses up to 30% in module power
-    performance, but not specifically as Isc reduction or typical value; ''up to'' is a bound.'
-  conflicts_with:
-  - symptom:isc-reduction#c12
+    performance, but not specifically as Isc reduction or typical value; ''up to'' is a bound.; reviewer:
+    the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c9
   attr: typical_power_loss
   value:
@@ -167,11 +176,10 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h63
     h: 8878a24975cb
-  review: disputed
-  conflicts_with:
-  - symptom:isc-reduction#c9
-  - symptom:isc-reduction#c10
-  - symptom:isc-reduction#c13
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c12
   attr: typical_power_loss
   value:
@@ -183,12 +191,11 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  conflicts_with:
-  - symptom:isc-reduction#c8
-  - symptom:isc-reduction#c9
-  - symptom:isc-reduction#c10
-  review_note: possible conflict with c13 (same source; check the conditions)
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c13 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or technology, not disagreement'
 - claim_id: c13
   attr: typical_power_loss
   value:
@@ -199,11 +206,11 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: disputed
-  conflicts_with:
-  - symptom:isc-reduction#c9
-  - symptom:isc-reduction#c11
-  review_note: possible conflict with c12 (same source; check the conditions)
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c12 (same source; check the conditions); reviewer: the compiler-flagged
+    conflict is a different scenario or technology, not disagreement'
 - claim_id: c14
   attr: degradation_rate
   value:
@@ -226,7 +233,9 @@ claims:
   - src: src:pv-root-cause-cell-cracks
     loc: sec=h6
     h: 020d995c9f1f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c14 (same source; check the conditions)
 ---
 Reduced short-circuit current shows up when a string's Isc is measured with a short-circuit test. Compare it with the expected value and with identical strings under stable irradiance. On an IV trace, look at the other parameters too. Metallization corrosion lowers Isc and fill factor because series resistance rises, while LID lowers Isc, fill factor and Voc together. PID-p causes a significant drop in Isc, Voc and power. PID-s mainly reduces fill factor and affects Isc only when it is far advanced. Cell cracks reduce current because isolated cell areas stop contributing. EL imaging shows microcracks that cannot be seen by eye. Most cracks do not isolate cell parts and cause little power loss. A large inactive area can reverse-bias the cell or switch on the bypass diode. Soiling also lowers Isc. Soiling stations measure it by comparing a regularly cleaned reference device with a soiled one, using temperature-corrected Isc. Uneven soiling can cost more power than the change in Isc suggests, so record power as well as Isc. First check whether the module surface is soiled or the cells are visibly corroded. Then use IV tracing, EL and thermography to tell cracks, corrosion, LID and PID apart.

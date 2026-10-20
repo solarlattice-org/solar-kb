@@ -35,7 +35,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=31.r2
     h: cd9064922320
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Burn marks are burnt, blackened areas on a module. They can come with bubbled or melted encapsulant, broken glass or a hole in the backsheet. They are found on the backsheet along cell edges or busbars, along metallic interconnections and ribbons, and above or inside the junction box. Most burn marks can be identified by visual inspection, but marks on the backsheet may not show from the front. If the back of the module cannot be reached, use an IR camera. An IR image taken under illumination or partial shading shows whether the area is still heating or whether current has stopped flowing in that part of the circuit. An area that is no longer heating may not show up in IR. Marks along cell edges in shaded sub-modules point to open-circuited bypass diodes, because reverse current is then driven through cell shunts. Check the diodes of the affected sub-module first, for example with an IV curve under partial shading. Marks along ribbons or solder joints point to solder bond or interconnection failure, where rising resistance heats the joint. Burning together with broken glass can mean cell interconnection failure at an advanced stage. Marks at the junction box or on its housing suggest junction box failure or failed bypass diodes in the box. Other possible causes are cracked cells or shunting defects that force cells into reverse bias. Treat burn marks as a safety risk because arcing and fire can follow. Replacing the module is advised when burn marks are visible.
 

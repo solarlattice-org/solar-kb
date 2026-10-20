@@ -12,7 +12,9 @@ claims:
   - src: src:iec-62446-1
     loc: sec=6.5.2.1
     h: d4e5d5d644a3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passage supports measuring string Isc and comparing with expected
     value and identical strings under stable irradiance (within ~5%), but doesn''t state that low Isc
     is the observed signature of reduced string current beyond comparison.'

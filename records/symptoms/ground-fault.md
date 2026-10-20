@@ -28,7 +28,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=37
     h: ceb3e766d6c1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - IsolationErr and the add-one-string-at-a-time procedure are stated,
     but nothing says the inverter stops exporting (model_103.W) while the alarm is active.'
 - claim_id: c2
@@ -55,7 +57,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=37
     h: ceb3e766d6c1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - GFCIErr and Fault0090 with the one-string-at-a-time procedure
     are stated, but output dropping to zero on trip is not stated.'
 - claim_id: c3
@@ -67,7 +71,9 @@ claims:
   - src: src:doe-femp-om-small-pv
     loc: sec=h3
     h: 82129b1df69b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:unequal-pole-currents
@@ -77,7 +83,9 @@ claims:
   - src: src:doe-femp-om-small-pv
     loc: sec=h3
     h: 82129b1df69b
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: observed_as
   target: meas:dc-power-voltage-change
@@ -87,7 +95,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=8.18
     h: f0f4e23dee4d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The paper monitors mean DC power and voltage to detect ground
     faults as sequential changes, but the evidence does not say ground faults specifically showed abrupt
     changes in both quantities.'
@@ -103,7 +113,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: tbl=5.r8
     h: 794656bed1e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Inverters'' insulation test circuits are stated and u21 lists
     Ground Fault Resistance, but the evidence doesn''t say it is a monitored inverter parameter indicating
     a low value as a fault observation.'

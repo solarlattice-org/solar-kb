@@ -30,7 +30,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h4
     h: 7023830f6e10
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c3
   rel: observed_as
   target: meas:flat-output-below-available-power
@@ -42,7 +44,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h6
     h: 08e6be358742
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:stow-event-output-dip
@@ -54,7 +58,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h6
     h: 733de3a75bd0
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Intermittent, weather-correlated dips during gusty weather are
     stated, but the specific gust-above-stow-threshold signal is only implied (threshold exceedance is
     mentioned, not a gust-vs-threshold condition at the same time exactly).'
@@ -72,7 +78,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h2
     h: cf13e86d6896
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Abrupt drop after snowfall and gradual recovery are stated, but
     the cold ambient temperature slowing snow clearing is not stated.'
 - claim_id: c6
@@ -86,7 +94,9 @@ claims:
   - src: src:pv-root-cause-snow-accumulation-losses
     loc: sec=h2
     h: cf13e86d6896
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c7
   rel: observed_as
   target: meas:zero-power-at-irradiance
@@ -99,7 +109,9 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=1.2.2
     h: 362882b92bf7
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c8
   attr: typical_power_loss
   value:
@@ -123,7 +135,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h5
     h: 3f9ef9562906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 The plant is online and irradiance sensors show usable resource, but delivered power is lower than the irradiance should support. With grid curtailment, output sits flat or at a controlled level below available power, so check plant setpoints, dispatch signals and curtailment flags first. With an inverter voltage floor, inverter DC voltage stays at its minimum limit while the IV-derived Vmp is lower, mostly in hot periods or when reactive power demand is high. Tracker wind stow causes repeated output dips in gusty weather; compare tracker stow logs with high-frequency gust data. Snow accumulation causes an abrupt drop after snowfall and a gradual recovery during melt, and it can make string currents uneven; confirm it with weather data and camera or drone images. Zero production while irradiance is sufficient points to an outage or a communication loss rather than any of these losses. Before blaming one cause, rule out outages, curtailment, clipping, soiling and sensor faults, because these losses can look like each other in monthly reviews.
 

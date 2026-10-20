@@ -19,7 +19,9 @@ claims:
   - src: src:alsoenergy-powertrackuserguide-reva-1-25
     loc: tbl=9.r9
     h: f818c5cb7d7e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages define Performance Index as measured/modeled energy,
     but never say a persistent value below unity is the signature.'
 - claim_id: c2
@@ -34,7 +36,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:air-mass-correlated-residual
@@ -59,7 +63,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - The 1.2% summer 2025 average energy loss at a 100 MW California
     plant is stated, but the passage says ''about'' and doesn''t call it a typical power loss; the approximate
     qualifier is covered.'

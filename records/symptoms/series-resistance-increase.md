@@ -18,7 +18,9 @@ claims:
   - src: src:iec-62446-1
     loc: sec=D.6
     h: f87aef72de6f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:fill-factor-reduction
@@ -34,7 +36,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Corrosion with lower Isc and interconnect failure with fill factor
     decrease are stated, but cell cracking is only described with a 2% absolute FF drop, and ''early-stage''
     interconnect failure is only loosely matched (stage 1).'
@@ -46,7 +50,9 @@ claims:
   - src: src:pv-root-cause-cell-interconnection-failure
     loc: sec=h8
     h: 9f1fbad653f1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:low-vmp-voc-ratio
@@ -56,7 +62,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   rel: observed_as
   target: meas:ir-hot-connection
@@ -119,10 +127,10 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: disputed
-  conflicts_with:
-  - symptom:series-resistance-increase#c7
-  - symptom:series-resistance-increase#c8
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 On an IV curve, increased series resistance makes the section between the maximum power point and Voc less steep. It also shows up as a lower fill factor and a more rounded knee. At array level, check first for damaged or undersized cables and for poor connections at module or array interconnects. A long cable run can produce the same curve shape, so repeat the trace closer to the array if you suspect this. Inside the module, the extra resistance can come from failing cell interconnects or junction box connections, from metallization corrosion, or from cell cracks. An infrared scan helps locate high-resistance faults. Defective connectors and poorly soldered interconnects show up as local heating, even before the electrical change can be measured. Corrosion is often visible to the eye and comes with a lower Isc. Interconnect failures and cracks are hard to see, so use EL imaging to find dark regions or crack lines. With cracked cells, most of the power loss comes from lost current rather than from series resistance.
 

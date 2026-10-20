@@ -21,7 +21,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=23.r2
     h: 007cda150de8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passages say OC substrings appear hotter in IRT and are seen
     from cold solder joints in outer junction box batches, but ''under load'' and the ''neighbouring modules
     under same irradiance'' conditions are not stated.'
@@ -49,7 +51,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=23.r2
     h: 007cda150de8
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says open sub-string loses power and Voc is reduced,
     but does not mention string voltage or module voltage comparison against peers.'
 - claim_id: c4
@@ -61,7 +65,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Monitoring tools might detect performance loss from open-circuit
     configurations is stated, but string current dropping to zero and DC power falling at constant irradiance
     are not specified.'

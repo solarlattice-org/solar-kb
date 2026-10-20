@@ -51,7 +51,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=h54
     h: e6e5453ce084
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c4
   rel: observed_as
   target: meas:ir-hot-connection
@@ -67,7 +69,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=5
     h: fc0f2dc6c73f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A hotspot is a part of a module, connection or other component that shows up hotter than its surroundings in an infrared image taken while the system is under load. Scan in clear, stable weather with high irradiance and the inverter running. Avoid reflections from clouds and nearby objects, then compare the module with its neighbours in the same string. A hot cell or a hot localized area points to cracked cells, broken front glass, solder bond or cell interconnection faults, or mismatch that forces cells into reverse bias. Hot junction box terminals, connectors, cables or fuse clamps usually mean a loose or poor electrical connection, not a fault in the cells. A warm substring or a heated bypass diode suggests the diode is conducting. Check first for shading or debris on that module, and suspect a bad module or a shorted diode if none is found. Treat one thermal image as a screening result only. Confirm it with string current, the IV curve shape and visual inspection, and add EL imaging where cell damage is suspected. Raise the priority when the hotspot appears again on later inspections, when several modules in one string show it, or when there is a safety risk, because strong hotspots can lead to smouldering fires.
 

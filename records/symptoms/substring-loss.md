@@ -19,7 +19,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: temperature_rise
   value:
@@ -32,7 +34,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:low-voc
@@ -45,7 +49,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:high-string-reverse-voltage
@@ -56,7 +62,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.2
     h: a48c6a4339a6
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A bypassed or lost substring means one section of a module no longer delivers power. The current either flows through the bypass diode or the substring is cut off, and the module loses that share of its output. In infrared images, a whole substring looks warmer than its neighbours. Open-circuit substrings from bad junction box connections typically run 5 to 10 K hotter than active ones. In electrical data and IV traces, module open-circuit voltage is lower. Affected modules can show only about two thirds of normal voltage and power. Possible causes include a shorted or open bypass diode, cold solder joints or other junction box failures, and broken cell interconnections that block current in a cell string and force the diode to conduct. Snow or soiling covering part of the array can also cause substring mismatch. In that case the loss follows the weather: it starts abruptly after snowfall and fades as the snow melts or slides off. To find the cause, compare IR, EL, IV curves and a visual check of the junction box for burn marks. An open diode or failure mode A does not show in normal IR, so run a night string reverse-bias test and look for unusually high reverse voltage. Treat one confirmed junction box connection failure as a fleet risk. These defects tend to affect a whole production batch and can lead to arcing or fire, so test all modules.
 

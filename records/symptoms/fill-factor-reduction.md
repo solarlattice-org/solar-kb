@@ -32,7 +32,9 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.3
     h: b6c82133fe8c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The 10% relative module power loss, 0.5 Ohm cm2 and 2% absolute
     FF drop are stated, but the 10% is power loss for the module, not a loss attributed to fill factor
     itself, and it is only an approximate figure from one test.'

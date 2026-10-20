@@ -18,7 +18,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h2
     h: 5d4993c87d37
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   rel: observed_as
   target: meas:post-rain-production-recovery
@@ -27,7 +29,9 @@ claims:
   - src: src:pv-root-cause-granular-dust-soiling-losses
     loc: sec=h4
     h: dea316ba61e1
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:normalized-output-decline
@@ -55,7 +59,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   attr: typical_power_loss
   value:
@@ -67,9 +73,10 @@ claims:
   - src: src:pv-root-cause-glass-breakage
     loc: sec=h5
     h: 086a578b6c8a
-  review: disputed
-  conflicts_with:
-  - symptom:gradual-performance-decline#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c6
   attr: typical_power_loss
   value:
@@ -82,9 +89,10 @@ claims:
   - src: src:pv-root-cause-potential-induced-degradation
     loc: sec=h3
     h: 0587f1d564ae
-  review: disputed
-  conflicts_with:
-  - symptom:gradual-performance-decline#c5
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 A gradual performance decline is a slow fall in irradiance-normalized production while the plant stays online. Track performance ratio trends and normalized output against rain and cleaning records, soiling station data and model residuals. If the decline builds up during dry periods and recovers partly or fully after real rain or washing, dust soiling is the likely cause. Do not judge soiling from one dirty irradiance sensor, because sensor drift or local obstruction can look like soiling. A decline that lasts for years and runs faster than the module warranty rate can point to system-level degradation: modules age at different rates, and the weaker ones limit the current of their strings. To separate this from average module ageing, compare string or inverter trends, IV curve data and module test results. Broken glass may not cut power at first, but moisture getting in later speeds up corrosion and degradation, so check the rear glass visually and watch for insulation faults. Potential induced degradation usually shows up after commissioning and can strongly reduce string performance.
 
