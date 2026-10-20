@@ -16,4 +16,7 @@ signals:
 - point: model_103.TmpCab
   unit: unit:DEG_C
   pattern: High cabinet temperature at the same time as the stepwise power reduction
+- point: model_302.POAI
+  unit: unit:W-PER-M2
+  pattern: plane-of-array irradiance stays high while power is reduced
 ---
