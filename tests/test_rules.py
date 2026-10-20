@@ -242,6 +242,9 @@ def test_fault_code_body_is_empty_apart_from_html_comments(tmp_path, body, bad):
     (DEFINED_IN.replace("tbl=3.r2", "sec=4.3"), {"fault-code"}),                   # or a numbered section
     (DEFINED_IN.replace("tbl=3.r2", "sec=h7"), set()),                             # a heading unit is fine
     (DEFINED_IN.replace("tbl=3.r2", "tbl=3"), set()),                              # so is a whole table (promoted row)
+    (DEFINED_IN.replace("target: src:chint-fault-manual", "target: src:sma-core1-manual"), {"fault-code"}),  # cite != target
+    (DEFINED_IN + DEFINED_IN.replace("c1", "c2"), {"fault-code"}),                   # two defined_in claims for one source
+    (DEFINED_IN + DEFINED_IN.replace("c1", "c2").replace("src:chint-fault-manual", "src:sma-core1-manual"), set()),
     (DEFINED_IN + OUTPUT_LIMIT, {"fault-code"}),                                   # output_limit without ec:derate
     (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power; ", ""), {"fault-code"}),  # no basis=
     (DEFINED_IN + DERATE + OUTPUT_LIMIT.replace("basis=rated_power", "basis=curve"), {"fault-code"}),

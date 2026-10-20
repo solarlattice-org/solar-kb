@@ -431,6 +431,7 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
             out.append(_v("fault-code", record, "a FaultCode has no body; only an HTML comment is allowed"))
         axes: dict[str, int] = {}
         defined_in, derate, quantities = 0, False, []
+        defining_sources: set[object] = set()
         for claim in record.claims():
             rel = claim.get("rel")
             if "quote" in claim:
@@ -440,11 +441,19 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
                     out.append(_v("fault-code", record, f"{field_name} exceeds {MAX_CODE_NOTE_WORDS} words", claim))
             if rel == "defined_in":
                 defined_in += 1
+                target = claim.get("target")
+                if target in defining_sources:
+                    out.append(_v("fault-code", record, f"one defined_in claim per source: {target} appears twice (several "
+                                                        "rows of one manual are several citations on one claim)", claim))
+                defining_sources.add(target)
                 for cite in _citations(claim):
                     loc = cite.get("loc")
                     if isinstance(loc, str) and not DEFINED_IN_LOC_RE.match(loc):
                         out.append(_v("fault-code", record, f"defined_in cites the defining row (tbl=N.rM), table (tbl=N) "
                                                             f"or heading unit (sec=hK), not {loc!r}", claim))
+                    if cite.get("src") != target:
+                        out.append(_v("fault-code", record, f"defined_in cites the row of its own target {target}, not "
+                                                            f"{cite.get('src')!r}", claim))
             if rel in AXIS_RELATIONS and claim.get("review") != "disputed":
                 axes[rel] = axes.get(rel, 0) + 1
             if rel == "has_production_effect" and claim.get("target") == DERATE:
