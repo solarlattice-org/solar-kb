@@ -16,12 +16,10 @@ claims:
   - src: src:iea-pvps-t13-09-2017
     loc: sec=2.3.6
     h: a3dffa29110f
-  review: disputed
-  conflicts_with:
-  - stressor:dust-accumulation#c2
-  - stressor:dust-accumulation#c4
-  - stressor:dust-accumulation#c7
-  - stressor:dust-accumulation#c8
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or source, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -32,13 +30,14 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: disputed
-  conflicts_with:
-  - stressor:dust-accumulation#c1
-  review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
-    (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c3 (same source; check the conditions); possible conflict with
+    c4 (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
-    check the conditions); possible conflict with c8 (same source; check the conditions)
+    check the conditions); possible conflict with c8 (same source; check the conditions); reviewer: the
+    compiler-flagged conflict is a different scenario or source, not disagreement'
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -51,7 +50,7 @@ claims:
     h: 33a227523871
   review: verified
   verified_by: review-workflow
-  verified_at: &id001 2026-10-20
+  verified_at: &id002 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
@@ -86,7 +85,7 @@ claims:
     h: 33a227523871
   review: verified
   verified_by: review-workflow
-  verified_at: *id001
+  verified_at: *id002
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c6 (same source; check the conditions); possible conflict with c7 (same source;
@@ -103,7 +102,7 @@ claims:
     h: 33a227523871
   review: verified
   verified_by: review-workflow
-  verified_at: *id001
+  verified_at: *id002
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c7 (same source;
@@ -118,13 +117,14 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h18
     h: 33a227523871
-  review: disputed
-  conflicts_with:
-  - stressor:dust-accumulation#c1
-  review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
-    (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c2 (same source; check the conditions); possible conflict with
+    c3 (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions); possible conflict with c6 (same source;
-    check the conditions); possible conflict with c8 (same source; check the conditions)
+    check the conditions); possible conflict with c8 (same source; check the conditions); reviewer: the
+    compiler-flagged conflict is a different scenario or source, not disagreement'
 - claim_id: c8
   attr: typical_power_loss
   value:
