@@ -14,4 +14,7 @@ signals:
 - point: model_307.Rain
   unit: unit:MilliM
   pattern: rain events that line up with recovery steps
+- point: model_303.TmpBOM
+  unit: unit:DEG_C
+  pattern: Module temperature used to correct PR so that seasonal swings are separated from a real trend
 ---

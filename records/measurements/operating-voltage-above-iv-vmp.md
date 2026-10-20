@@ -16,4 +16,7 @@ signals:
 - point: model_303.TmpBOM
   unit: unit:DEG_C
   pattern: high module temperature that lowers Vmp
+- point: model_160.DCW
+  unit: unit:W
+  pattern: MPPT input power below the IV-derived Pmp at the same timestamps
 ---
