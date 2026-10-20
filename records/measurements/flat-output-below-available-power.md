@@ -10,4 +10,7 @@ signals:
 - point: model_302.POAI
   unit: unit:W-PER-M2
   pattern: irradiance would support higher output
+- point: model_103.DCV
+  unit: unit:V
+  pattern: May move away from the MPP voltage while output is held down
 ---

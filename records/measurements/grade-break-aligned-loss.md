@@ -12,4 +12,8 @@ signals:
   unit: unit:W
   pattern: Repeatable time-of-day shortfall in normalized output for inverters serving rolling terrain
     sections
+- point: model_160.DCW
+  unit: unit:W
+  pattern: Normalized string or input power lower in rows on grade breaks or swales, repeatable by sun
+    position, worst in morning and afternoon
 ---
