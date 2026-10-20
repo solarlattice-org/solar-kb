@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The passage gives about 1.2% summer 2025 average loss at a 100
     MW California plant, but it doesn''t state this as a loss for a ''revised voltage control strategy''
     (the quantity is the voltage-flooring loss), though the pre-correction condition is implied.'

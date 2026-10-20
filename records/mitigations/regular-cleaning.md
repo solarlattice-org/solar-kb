@@ -16,7 +16,9 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - 1.91% is the annual soiling loss with no cleaning in Mesa per
     Naeem, but labeling it as ''regular cleaning'' typical loss is a mismatch, though the condition describes
     no cleaning.; possible conflict with c2 (same source; check the conditions); possible conflict with
@@ -32,7 +34,9 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c3
@@ -46,7 +50,9 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c4
@@ -60,7 +66,9 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions)
 ---

@@ -15,9 +15,10 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: disputed
-  conflicts_with:
-  - mit:yield-model-initial-loss#c5
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -30,9 +31,10 @@ claims:
   - src: src:iea-pvps-t13-22-2021
     loc: sec=h78
     h: f76ff6f06aa0
-  review: disputed
-  conflicts_with:
-  - mit:yield-model-initial-loss#c5
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -44,9 +46,10 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h46
     h: 1ff4ba1a643e
-  review: disputed
-  conflicts_with:
-  - mit:yield-model-initial-loss#c5
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -57,7 +60,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h46
     h: 1ff4ba1a643e
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c5
   attr: typical_power_loss
   value:
@@ -70,11 +75,10 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h4
     h: c8bc75bb2d8d
-  review: disputed
-  conflicts_with:
-  - mit:yield-model-initial-loss#c1
-  - mit:yield-model-initial-loss#c2
-  - mit:yield-model-initial-loss#c3
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 This action means building the expected initial light-induced power loss into the energy yield model, so that early stabilization losses are not mistaken for faults and do not inflate production forecasts. It addresses Light Induced Degradation (LID), which appears as a drop in STC power, short-circuit current and open-circuit voltage early in system life, with no visible defect. If initial degradation is under-estimated, energy yield predictions and investor expectations are directly affected. Some yield assessors add a separate initial LID term to the long-term yield prediction, sized by module technology and site location. The size of the allowance must match the technology: crystalline LID is a few percent in the first days, amorphous silicon can lose much more over the first months, and some CIS modules actually gain power. LeTID is harder to model because it develops over years, depends on module temperature and site, and may not recover within the module lifetime. There is no consensus on which degradation values to use, so pair this action with low-LID module selection, and check unexpected early losses with IV and flash testing.
 

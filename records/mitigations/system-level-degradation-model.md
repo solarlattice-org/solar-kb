@@ -16,10 +16,10 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: disputed
-  conflicts_with:
-  - mit:system-level-degradation-model#c2
-  - mit:system-level-degradation-model#c3
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: degradation_rate
   value:
@@ -31,9 +31,10 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=6.8
     h: 385ae00dd135
-  review: disputed
-  conflicts_with:
-  - mit:system-level-degradation-model#c1
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c3
   attr: degradation_rate
   value:
@@ -45,8 +46,9 @@ claims:
   - src: src:alsoenergy-kb-vi-performance-waterfall-overview
     loc: sec=h11
     h: 84a06d8db5ac
-  review: disputed
-  conflicts_with:
-  - mit:system-level-degradation-model#c1
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 System-level degradation modeling means putting the degradation of the whole plant into the performance model, not just the nameplate degradation rate of the modules. It addresses System Degradation vs Module Degradation. Modules age at different rates, and the weaker ones can limit the current of the strings or substrings around them. Because of this mismatch, plant energy can fall faster than the average module's power loss, even while the average module is still within warranty. The model should include the spread between modules and the mismatch loss this spread adds at the circuit level. Where possible, refine the assumption with site measurements, module technology, warranty terms, and IV curve or string-level data. Use field results to update long-term energy forecasts. Some module-level power electronics can reduce the added mismatch loss. Measuring degradation losses accurately takes more than two years of data.

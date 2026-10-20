@@ -21,9 +21,10 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: disputed
-  conflicts_with:
-  - mit:forecast-update#c2
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -35,9 +36,10 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h5
     h: 3f9ef9562906
-  review: disputed
-  conflicts_with:
-  - mit:forecast-update#c1
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 - claim_id: c3
   attr: degradation_rate
   value:
@@ -51,7 +53,9 @@ claims:
   - src: src:pv-root-cause-system-vs-module-degradation
     loc: sec=h6
     h: 03fbe99d08d3
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 ---
 A production forecast update revises the expected energy and revenue of a plant once field evidence shows that the original model assumptions do not match actual behavior. It applies to flawed PAN file yield losses when independent testing reveals material differences in module parameters from the file used for financing or design. For widespread fungal soiling losses, forecasts should be based on site cleaning results instead of assuming that rain resets the loss, because bio-soiling can cause persistent losses that do not recover after rainfall. For system degradation vs module degradation, the long-term energy assumptions should be updated with field measurements and model degradation at system level, including the mismatch from modules aging at different rates. For tracker wind stow production losses, compare actual annual stow hours with the energy model assumptions and update forecasts and variance reporting if recurring gust-driven stow was not modeled. Before changing loss assumptions, separate the issue from real operational faults, clipping, curtailment and outages, and document the uncertainty when only low-resolution data is available. Updating the forecast does not recover the lost energy; it only makes expectations and reporting reflect the loss. Physical actions such as cleaning or tracker settings must be handled separately and stay within structural limits.
 

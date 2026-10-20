@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=7.r5
     h: 0a21fb8dc566
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 This design puts more than three busbars on each cell, or uses multi-wire interconnection, instead of the older layout with 2 to 4 interconnect ribbons. It is a module design choice that limits the power lost to cell cracks. With more interconnecting ribbons, the cell keeps collecting current even when it is cracked, so series resistance and mismatch losses are lower. Because the contacts are closer together, a crack can only cut small pieces of the cell off from their busbar. Multi-wire and multi-busbar modules lose much less power from cracks than ribbon-based modules, and a typical figure for multi-wire PERC modules is 0.2% per half-cell with a dendritic crack. One limit is that modern high fill factor modules run with Impp close to Isc, so even small detached cell pieces can still cost power. For a module with a fill factor near 79%, only about 5% of the total cell area can be detached before power is affected, compared with 8% to 10% for older modules near 73%.
 

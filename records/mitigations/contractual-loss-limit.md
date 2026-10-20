@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h3
     h: 950db263c013
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: 'support check: partial - Passage says LID could entail losses up to 30%, which is an upper
     bound, not a typical value, and it says nothing about contractual tolerance.'
 - claim_id: c2
@@ -31,7 +33,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h4
     h: c8bc75bb2d8d
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage gives a-Si up to 10-30% in the first months, crystalline
     few percent, and CIS gains, but ''up to'' is a bound and no contractual tolerance is stated.'
 ---

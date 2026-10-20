@@ -20,7 +20,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.4.1
     h: 1046d0084f9f
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Shade-resistant module design means choosing module layouts that tolerate partial shading better. Examples include half-cell modules, shingled modules, back contact cells and modules with a diode built in for each cell. It is a preventive measure against hot cells and hotspots. These form when shading or cracked cells cause current mismatch and push weak cells into reverse bias. Hotspots from prolonged shading can lead to follow-up failures such as burn marks, bypass diode failure, glass breakage, arcing or fire. Shading-tolerant technologies are one way to reduce the final shading loss. Placing fewer cells on each bypass diode lowers the hot cell temperature, because the shaded cell runs at a less negative reverse voltage. In some back contact (IBC) cells, a built-in Zener diode acts as a bypass diode. In an indoor hot-spot test, these cells ran much cooler than PERC and SHJ modules. Shade-resistant design does not remove all hot cell risk. Bifacial modules and larger wafer formats can still produce higher hot cell temperatures. Shading should be addressed at the system planning stage, because later changes usually come too late.
 

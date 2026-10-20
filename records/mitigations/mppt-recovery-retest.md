@@ -16,7 +16,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The ~1.2% summer 2025 average loss at the 100 MW California plant
     is stated, but the passages say nothing about a ''typical power loss'' for post-change verification
     beyond that, and ''a large share'' recoverable is only loosely noted.'

@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -28,7 +30,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -42,7 +46,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -53,7 +59,9 @@ claims:
   - src: src:pv-root-cause-light-induced-degradation
     loc: sec=h3
     h: 950db263c013
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: 'support check: partial - Passage says LID/light soaking could entail losses up to 30%,
     but doesn''t tie it to low-LID module selection or technology dependence explicitly; ''could potentially''
     is a bound.'

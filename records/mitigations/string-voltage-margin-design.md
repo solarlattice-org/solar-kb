@@ -16,7 +16,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 String voltage margin design means sizing PV strings so the array voltage stays inside the inverter's DC input window, at both low and high module temperatures. It addresses inverter voltage floor losses, where array Vmp drops below the inverter's minimum DC input voltage and the inverter has to run above the maximum power point. Hot weather is the main risk on the low side, because module voltage falls as cell temperature rises. Cold weather is the risk on the high side, because string voltage rises and can damage the inverter. For manual sizing, apply the NEC 690.7 temperature factors or the module maker's temperature coefficient, and check that string voltage at the minimum design temperature stays below the inverter limit. The supplier's online string sizing tool can be used instead. In the field, measure each string's open-circuit voltage. If it is close to the inverter's maximum accepted value, check the string length. The source lists string redesign as a change for future designs only. For existing plants it names transformer tap adjustment, inverter parameter changes and a revised voltage control strategy. Check any change with the inverter supplier and the plant electrical engineer. Afterwards, compare the recovered operation with IV-derived Vmp and Pmp, and confirm that reactive power obligations are still met.
 

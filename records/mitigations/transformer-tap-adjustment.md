@@ -16,7 +16,9 @@ claims:
   - src: src:pv-root-cause-inverter-voltage-floor-losses
     loc: sec=h5
     h: 43c9f30df704
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
 ---
 Transformer tap adjustment changes the transformer winding tap to correct a deviation from nominal voltage. For PV plants, it is one of the candidate fixes for Inverter Voltage Floor Losses. It applies when degraded modules, high temperature, a thin string voltage margin or reactive power operation pull array Vmp below the inverter's minimum DC input voltage. The inverter then has to run above the maximum power point. Agree the tap or voltage setpoint change with the inverter supplier and the plant electrical engineer, and check the inverter settings and AC voltage behaviour first. Change taps only with the transformer de-energized, and grounded where the manual requires it. Set the handle or tap jumpers to a nameplate position, then lock or torque the connection. On three-phase units, every phase must be on the same tap. Never leave the tap changer between positions or in a position that is not marked on the nameplate. After re-energizing, check that the voltage is within the nameplate design range, typically +/-5% of nominal. Higher voltage can overheat the transformer and disturb the equipment it feeds. If the phases show different voltages or the ratio test does not match the nameplate, check that the tap changer is making good contact and that all phases are on the same position. At one plant, voltage or setting adjustments were estimated to recover a large share of the measured voltage-floor loss. After the change, retest MPPT recovery in hot conditions against Vmp and Pmp from IV curves, and confirm the plant still meets its reactive power obligations.
 

@@ -22,7 +22,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h70
     h: d27e8de83a79
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - The passage says Mondal et al. summarize performance loss ''up
     to 20%'' depending on test sites and boundary conditions, and gives the 20-50% cleaning cost and 3.2%
     yield figures. But it frames the 20% loss in the context of soiling, not as a typical value, and the

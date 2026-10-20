@@ -18,7 +18,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h54
     h: df63666c4734
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
   review_note: possible conflict with c2 (same source; check the conditions)
 - claim_id: c2
   attr: typical_power_loss
@@ -35,7 +37,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: sec=h54
     h: df63666c4734
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions)
 ---
 Avoiding partial shading is a preventive action that extends the life of bypass diodes. Partial shading can cause cell hotspots, and these can lead to burn marks and Bypass Diode Failure; prolonged shading can also lead to glass breakage, arcing or fire. Shading is best dealt with at the system planning stage, because it is usually too late to fix later. Run a basic shading analysis using a full year of sun and shade data to find the areas and times with heavy shading. Avoid areas shaded during the middle of the day or the sunny season, or apply a cost-effective shading mitigation measure. Shading can change over the life of a plant as vegetation grows or new structures are built. Inspect the system regularly, cut back trees or vegetation causing extra shading, and repair or replace modules that were damaged as a result. Other ways to reduce shading losses include better string and module layouts such as landscape mounting, module-level power electronics, inverter MPPT behaviour, and shade-tolerant modules such as half-cut or back-contact cells. Module-level power electronics have limits: shading still activates the bypass diode and creates a hotspot on the shaded cell, and the gain does not always outweigh the device's own losses. Note that partial shading of a thin-film module may void its warranty.

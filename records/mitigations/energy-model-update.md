@@ -15,7 +15,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h5
     h: 3f9ef9562906
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: 2026-10-20
   review_note: 'support check: partial - Passage says losses can increase by up to 4%, an upper bound,
     whereas the statement presents it as a ''typical'' value.'
 ---

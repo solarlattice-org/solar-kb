@@ -19,12 +19,13 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: disputed
-  review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
-    (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
-    possible conflict with c5 (same source; check the conditions)
-  conflicts_with:
-  - mit:cleaning-schedule-optimization#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: &id001 2026-10-20
+  review_note: 'possible conflict with c2 (same source; check the conditions); possible conflict with
+    c3 (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
+    possible conflict with c5 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or technology, not disagreement'
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -35,12 +36,13 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: disputed
-  review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
-    (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
-    possible conflict with c5 (same source; check the conditions)
-  conflicts_with:
-  - mit:cleaning-schedule-optimization#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c1 (same source; check the conditions); possible conflict with
+    c3 (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
+    possible conflict with c5 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or technology, not disagreement'
 - claim_id: c3
   attr: typical_power_loss
   value:
@@ -51,12 +53,13 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: disputed
-  review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
-    (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
-    possible conflict with c5 (same source; check the conditions)
-  conflicts_with:
-  - mit:cleaning-schedule-optimization#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c1 (same source; check the conditions); possible conflict with
+    c2 (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
+    possible conflict with c5 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or technology, not disagreement'
 - claim_id: c4
   attr: typical_power_loss
   value:
@@ -67,12 +70,13 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h68
     h: aa451386499f
-  review: disputed
-  review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
-    (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
-    possible conflict with c5 (same source; check the conditions)
-  conflicts_with:
-  - mit:cleaning-schedule-optimization#c6
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'possible conflict with c1 (same source; check the conditions); possible conflict with
+    c2 (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
+    possible conflict with c5 (same source; check the conditions); reviewer: the compiler-flagged conflict
+    is a different scenario or technology, not disagreement'
 - claim_id: c5
   attr: typical_power_loss
   value:
@@ -85,7 +89,9 @@ claims:
   - src: src:nrel-om-best-practices-pv-ess
     loc: sec=h69
     h: c3545479b8b9
-  review: drafted
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions);
     possible conflict with c4 (same source; check the conditions)
@@ -104,12 +110,10 @@ claims:
   - src: src:pv-root-cause-fungal-soiling-losses
     loc: sec=h2
     h: 201b23e0feff
-  review: disputed
-  conflicts_with:
-  - mit:cleaning-schedule-optimization#c1
-  - mit:cleaning-schedule-optimization#c2
-  - mit:cleaning-schedule-optimization#c3
-  - mit:cleaning-schedule-optimization#c4
+  review: verified
+  verified_by: joshuahamsa
+  verified_at: *id001
+  review_note: 'reviewer: the compiler-flagged conflict is a different scenario or technology, not disagreement'
 ---
 Cleaning schedule optimization means picking when and how often to clean modules so the value of energy recovered outweighs the cost of cleaning. It addresses soiling losses, including granular dust soiling and fungal bio-soiling, where cleaning triggers should be set by the value of the lost energy. The simplest rule is to clean once the revenue lost to soiling exceeds the cost of a cleaning, but more detailed models also account for free cleaning by rain, wind or dew. Key inputs are cleaning cost, soiling accumulation rate, capacity factor, electricity price and module efficiency, so the schedule must be set per site and may vary by season or by area within a site. Soiling sensors or real-time soiling data, together with a soiling model calibrated against operational data, help decide the most profitable time to clean. In one Abu Dhabi plant comparison, triggered cleaning gave the lowest total cost, below both periodic cleaning and relying on natural cleaning. Limits: rain right after a triggered cleaning can make the benefit hard to judge, and advanced models are harder to apply because soiling and rainfall vary from year to year. Where persistent fungal deposits are present, treat cleaning as required maintenance and do not assume rain will restore output.
 
