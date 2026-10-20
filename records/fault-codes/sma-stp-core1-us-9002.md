@@ -1,0 +1,68 @@
+---
+id: fc:sma-stp-core1-us-9002
+type: FaultCode
+name: SMA CORE1-US 9002
+aliases:
+- '9002'
+- SMA 9002
+category: Inverters
+make: sma
+make_name: SMA
+model_family: stp-core1-us
+family_name: Sunny Tripower CORE1-US (STP 33/50/62-US-41)
+code: '9002'
+code_key: '9002'
+page: 54
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-13
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r2
+    h: ac6479fb8aba
+  review: drafted
+- claim_id: c2
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ops-manual
+  cite:
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r2
+    h: ac6479fb8aba
+  review: drafted
+- claim_id: c3
+  rel: reports
+  target: symptom:configuration-error
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r2
+    h: ac6479fb8aba
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r2
+    h: ac6479fb8aba
+  review: drafted
+- claim_id: c4
+  rel: has_event_class
+  target: ec:informational
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r2
+    h: ac6479fb8aba
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r2
+    h: ac6479fb8aba
+  review: drafted
+  review_note: 'support check: partial - Row describes an incorrect code with parameters still protected,
+    but does not state it is merely informational; plausible but not stated.'
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:enter-access-code
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r2
+    h: ac6479fb8aba
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r2
+    h: ac6479fb8aba
+  review: drafted
+---
