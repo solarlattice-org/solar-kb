@@ -6,7 +6,7 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.7 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
 body::before { content: ""; display: block; height: 3px; background: var(--ink); }
-header.site, main, footer.site { max-width: 78rem; margin: 0 auto; padding-left: 3.5rem; padding-right: 3.5rem; }
+header.site, main, footer.site { max-width: 96rem; margin: 0 auto; padding-left: 3.5rem; padding-right: 3.5rem; }
 header.site { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding-top: 1.5rem; padding-bottom: 1.35rem; border-bottom: 1px solid var(--rule); }
 .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; font-family: Georgia, serif; font-size: 1.05rem; }
 .brand strong { font-weight: 700; }
@@ -24,6 +24,9 @@ h1 { max-width: 42rem; margin: 1.25rem 0 1.75rem; font-size: clamp(3rem, 6.3vw, 
 h2 { font-size: clamp(2rem, 4vw, 4rem); }
 p { max-width: 42rem; }
 a { color: var(--moss); text-decoration-thickness: .07em; text-underline-offset: .16em; }
+.record-page > h1 { max-width: 70rem; font-size: clamp(2.8rem, 5vw, 5.6rem); text-wrap: balance; }
+.record-page > .meta, .record-page > .prose, .record-page > h2, .record-page > h3, .record-page > .claim, .record-page > ul, .record-page > .banner { max-width: 70rem; }
+.record-page > .meta { grid-template-columns: minmax(5rem, max-content) minmax(0, 1fr); }
 .eyebrow, .section-number, .figure-label { color: var(--moss); font-size: .68rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: .65rem; }
 .eyebrow-rule { width: 2.5rem; height: 1px; background: var(--sun); }
@@ -95,6 +98,10 @@ th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--
   .manifesto, .index-section, .access-section { grid-template-columns: 1fr; gap: 1.5rem; padding: 4rem 0; }
   .index-list { grid-column: auto; margin-top: 0; }
   .access-section { gap: 2rem; }
+}
+@media (min-width: 1600px) {
+  header.site, main, footer.site { max-width: 112rem; }
+  .record-page > h1 { max-width: 84rem; }
 }
 @media (max-width: 520px) {
   header.site { align-items: flex-start; }.brand { font-size: .95rem; } nav { gap: .8rem; } nav a { font-size: .65rem; }

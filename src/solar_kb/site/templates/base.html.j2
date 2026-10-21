@@ -33,7 +33,7 @@
 </a>
 <nav aria-label="Primary navigation"><a href="{{ rel('kb/index.html') }}">Knowledge base</a><a href="{{ rel('kb/schema.html') }}">Ontology</a><a href="https://github.com/solarlattice-org/solar-kb">GitHub <span aria-hidden="true">↗</span></a></nav>
 </header>
-<main>
+<main class="{% block main_class %}site-page{% endblock %}">
 {% block main %}{% endblock %}
 </main>
 <footer class="site">
