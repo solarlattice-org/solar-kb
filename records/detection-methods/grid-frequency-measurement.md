@@ -25,11 +25,14 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=49.r1
     h: 3f4642d9acdb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 Grid frequency measurement means measuring the real grid frequency when an inverter reports a grid over-frequency, under-frequency or grid abnormal fault, and comparing it with the inverter's set protection range. On Solis inverters, turn the DC switch off, then check the frequency at the inverter test points and compare it with the LCD reading, because a faulty measurement circuit can give a false reading. At commissioning, measure the frequency of each phase to ground if your meter can do it, and confirm each value is within local grid standards and the inverter specifications. The inverter display also shows the grid frequency value for a quick comparison. Sungrow SG250HX-US and SG36CX-US/SG60CX-US inverters list a nominal grid frequency of 60 Hz and a grid frequency range of 55 to 65 Hz. If the measured frequency is outside the set range, contact the local utility; on Solis units, raise the upper limit only with the utility's permission. Also check that the protection parameters are set correctly in the app or on the LCD. If the fault continues after these causes are ruled out, contact the manufacturer's service team or replace the inverter.
 
 <!-- review notes
 - sentence 2: support check: partial - Passage lists DC switch off, check frequency at test points, and check LCD reading for a bad measurement circuit, but does not explicitly say to compare the two values.
 - sentence 4: support check: partial - The display shows F_Grid grid frequency value, but 'for quick comparison' purpose is not stated.
+- sentence 4: review: partial - The display row shows F_Grid as the grid frequency value, but the passage does not say it is there for a quick comparison.
 -->

@@ -15,7 +15,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=14
     h: 050063b1c3a4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: produces
   target: meas:meter-display-mismatch
@@ -36,6 +38,9 @@ claims:
     loc: tbl=14
     h: 050063b1c3a4
   review: drafted
+  review_note: 'review: partial - Only OV-DC links the LCD reading to a possible bad measurement circuit;
+    OV-BUS and UN-BUS just say to compare with the LCD and replace the inverter, so the note''s ''applies
+    to OV-DC, OV-BUS and UN-BUS'' scope goes beyond the passages.'
 - claim_id: c3
   rel: produces
   target: meas:zero-dc-voltage
@@ -44,7 +49,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=13
     h: e3da18e1612c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 For an OV-DC alarm, first check the DC voltage at the inverter test points with the DC switch off. If the reading is high, check the string configuration. Next, turn the DC switch on and compare your reading with the inverter LCD. If the two disagree, the inverter's measurement circuit may be bad and the inverter may need replacing. For OV-BUS and UN-BUS bus voltage alarms, measure both DC and AC voltages and compare them with the LCD. Possible causes are internal damage or a wire that came loose during shipping. To verify the DC configuration, note how many panels are in each string and record the string voltage. Inverter-level measurements of DC input voltage are typically accurate to within ±2%, so treat small differences with care. Safety: on units with the automatic PID function, the PID module applies 450 Vdc between PV negative and ground when the DC bus voltage drops below 50 Vdc.
 

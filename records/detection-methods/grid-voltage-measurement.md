@@ -18,7 +18,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=49.r3
     h: 8ede75869601
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: produces
   target: meas:zero-ac-grid-voltage
@@ -29,7 +31,9 @@ claims:
     h: 3fc18463c15a
   review: drafted
   review_note: 'support check: partial - NO-GRID says inverter doesn''t detect grid and to check AC L-L
-    and L-GND, but doesn''t explicitly say measurement shows zero voltage.'
+    and L-GND, but doesn''t explicitly say measurement shows zero voltage.; review: partial - The NO-GRID
+    row supports checking AC line-to-line and line-to-ground at the test points, but nothing in the passage
+    says the measurement shows zero AC voltage.'
 - claim_id: c3
   rel: produces
   target: meas:unequal-phase-voltages
@@ -39,7 +43,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=50.r1
     h: e9dc9b740d24
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Grid voltage measurement means checking the actual AC voltage at the inverter test points with a meter to confirm a grid voltage alarm. First measure with the DC switch off, line-to-line and line-to-ground, to see whether grid voltage is present and whether it is too high or too low. If the measured voltage really is out of range, contact the utility or power company. Only change the protection limits with the utility's permission. If the AC voltage measures high with the DC switch on and the inverter at full power, the cables between the inverter and the interconnect may be too small. Check the cable size and the voltage drop calculations. Compare the meter reading with the voltage shown on the LCD. If they disagree, the inverter's measurement circuit may be faulty and the inverter may need to be replaced. On three-phase systems, measure each phase. If the phase voltages differ greatly, the cause is grid imbalance and the power company should be contacted. For grid instability alarms, measure the AC voltage and test the AC line for harmonic distortion (THD), both with the DC switch off and with it on.
 
@@ -48,4 +54,5 @@ Grid voltage measurement means checking the actual AC voltage at the inverter te
 - sentence 5: support check: partial - Passages say compare with LCD and that the measurement circuit may be bad, with replace inverter listed, but don't explicitly tie disagreement to replacement.
 - sentence 6: support check: partial - Fault 017 says contact the power company if phase voltages differ greatly, but doesn't state to measure each phase or conclude the cause is grid imbalance definitively.
 - sentence 7: support check: partial - AC voltage measurement is only with DC off and THD test is with DC both off and on; the statement says both measurements in both states.
+- sentence 7: review: partial - GRID-INTF calls for measuring AC voltage and testing THD with the DC switch off, but only a THD test with it on, so 'both with the DC switch off and with it on' overstates the AC voltage measurement.
 -->
