@@ -15,7 +15,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r37
     h: 6316eb4991a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages give code 476 as ''Supply voltage for driver too low'',
     but don''t name Fronius Primo/Symo or say it is shown on the inverter fault code display.'
 ---

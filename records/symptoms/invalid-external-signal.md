@@ -22,11 +22,14 @@ claims:
   - src: src:fronius-fronius-symo-advanced-ul-operating-instructions-42-0410-0192
     loc: sec=h367
     h: 2f567690fb43
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 On a Fronius Symo this symptom shows up as State 568 on the inverter display, which means the multifunctional power interface has received an incorrect input signal. The code only appears when the signal input function is set to Ext. signal and the trigger type is set to Warning. In that case the inverter keeps running and only shows the warning. If the trigger type is set to Ext. Stop instead, the same input condition switches the inverter off and the display shows State 668. The input can be set up as normally closed or normally open. Check that this setting matches how the external contact is actually wired. To clear it, acknowledge the state code and then check the devices connected to the multifunctional power interface. On SMA devices, a failure tolerance time parameter sets how long an invalid input status can last before it is recorded as a fault.
 
 <!-- review notes
 - sentence 4: support check: partial - The N/C or N/O connection type setting is stated, but nothing in the passages says to check that it matches the external wiring.
 - sentence 6: support check: partial - Passages say failure tolerance time indicates the time as of which an invalid input status is recorded as a fault, but do not mention SMA devices or explicitly a duration it may last.
+- sentence 4: review: partial - The N/C and N/O connection-type options are stated, but the advice to check that the setting matches the actual wiring is not in the passages.
 -->

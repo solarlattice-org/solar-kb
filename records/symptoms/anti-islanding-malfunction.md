@@ -15,7 +15,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r27
     h: 78b3b6a48dd1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages give code 456 and the anti-islanding description, but
     don''t name Fronius Primo/Symo models or the ''inverter fault code display'' channel.'
 ---
@@ -25,4 +27,5 @@ This symptom shows up as status code 456 on Fronius Primo and Fronius Symo inver
 - sentence 1: support check: partial - Code 456 meaning is stated, but the passages don't mention Primo or Symo models.
 - sentence 2: support check: partial - The UL1741/IEEE1547 compliance claim is stated, but not that anti-islanding is a function inverters must have.
 - sentence 4: support check: partial - Passages give no cause or fix (consistent), but nothing in them recommends the manufacturer's documentation as the reference.
+- sentence 4: review: partial - The rows do list no cause or remedy for code 456, but the advice to use the manufacturer's status-code documentation as the reference is not in the passages.
 -->

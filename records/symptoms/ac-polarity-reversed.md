@@ -15,7 +15,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r34
     h: 2014e3ab07d3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 Fronius Primo and Symo inverters show status code 463 when they detect reversed AC polarity. Both manuals give the cause as an AC connector that was plugged in incorrectly, so this points to a wiring or installation fault on the AC side, not a failed part. Check first how the AC connector at the inverter is plugged in and which way it faces, then reconnect it correctly. Do not confuse this with reversed DC string polarity: the Fronius Symo reports that under its own status code, 311.
 

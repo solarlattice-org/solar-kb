@@ -41,4 +41,5 @@ A software version mismatch is reported by the inverter itself as an alarm or ev
 - sentence 1: support check: partial - Passages show these are alarm/event codes, but nothing says they are not reported as a loss of power in monitoring data.
 - sentence 3: support check: partial - Vsense Mismatch with wrong voltage sensing firmware and the Modbus fault are stated, but the passages don't name the Solectria SGI-XTM central inverter product explicitly.
 - sentence 5: support check: partial - Huawei check-for-recent-upgrade then re-upgrade is stated, but SMA only says update the firmware, with no check for a recent upgrade.
+- sentence 1: review: partial - The passages show the mismatch reported as alarm or event codes, but say nothing about it not showing up as a power loss in monitoring data.
 -->

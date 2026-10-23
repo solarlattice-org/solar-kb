@@ -82,4 +82,5 @@ SMA inverters log event 7113 when the memory card is full or write-protected. On
 - sentence 2: support check: partial - Event 7101 as SD card defective with not-formatted cause is stated, but the passages don't mention STP-TL-US units.
 - sentence 5: support check: partial - 7106 defective update file is stated, but 7105 'inverter continues feeding' appears only in the u19 version; the 'don't confuse' framing is not in the passages, though content matches.
 - sentence 7: support check: partial - Reformat and replace if necessary appear (for 7101), but the check-first-for-full/write-protected step and 'if event comes back' sequence for 7113 are not stated.
+- sentence 7: review: partial - The 7113 meaning and the reformat-then-replace remedy (given for 7101) are stated, but the order of checking full/write-protected first and replacing only if the event comes back is not.
 -->

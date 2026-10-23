@@ -27,4 +27,5 @@ On Fronius Galvo, Primo and Symo inverters, status code 733 means the inverter f
 
 <!-- review notes
 - sentence 4: support check: partial - Insert or check the drive and contact service if it persists are stated, but 'seated properly' is not explicitly stated (only 'insert or check').
+- sentence 4: review: partial - The rows say to insert or check the drive and to contact a Fronius-trained technician if the code persists, but they never say 'seated properly'.
 -->

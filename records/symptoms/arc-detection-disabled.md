@@ -52,7 +52,9 @@ claims:
     h: 8627ed66f2bf
   review: drafted
   review_note: 'support check: partial - Passages say Arc.det. Status shows the current arc detection/interruption
-    status, but don''t mention the Fronius INFO menu or that it reflects disabled state.'
+    status, but don''t mention the Fronius INFO menu or that it reflects disabled state.; review: partial
+    - The passages say Arc.det. Status shows the current status of arc detection/interruption, but they
+    never mention a Fronius INFO menu.'
 ---
 On Fronius Galvo, Primo and Symo inverters, a disabled arc detector shows up as status code 566 on the inverter display. The usual reason is that the internal Arc Detector was turned off on purpose, for example because arcs are monitored by external equipment. The code comes back every day until the Arc Detector is switched on again. The manufacturer says this is not an error, and you can confirm the code by pressing the Enter key. To check the current state of arc detection and interruption, open Arc.det. Status in the INFO menu. The Arc Detection setup item has a status view and a self-test start, so you can confirm the detector works after you turn it back on. On some other inverters, arc protection is turned on or off with a parameter that is enabled by default, so check that setting first.
 
@@ -60,4 +62,5 @@ On Fronius Galvo, Primo and Symo inverters, a disabled arc detector shows up as 
 - sentence 5: support check: partial - Arc.det. Status displays current status of arc detection/interruption, but the passages don't name the INFO menu.
 - sentence 6: support check: partial - Arc Detection setting has ArcDetector Status/Start Self-test options, but passages don't say it's used to confirm operation after re-enabling.
 - sentence 7: support check: partial - One passage shows an ARCEnable parameter enabled by default and arc detection enable/disable interface, but 'check that setting first' advice isn't stated and default applies to specific grid codes.
+- sentence 7: review: partial - The CHINT table shows an ARCEnable parameter that turns arc protection on or off and defaults to Enabled, but the passages never advise checking that setting first.
 -->

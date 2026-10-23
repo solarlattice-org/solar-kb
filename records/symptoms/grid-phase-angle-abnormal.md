@@ -31,4 +31,5 @@ Some inverters raise an alarm when the phase of the grid at their AC terminals l
 <!-- review notes
 - sentence 2: support check: partial - The passages say to inspect the installation and check that the grid wiring is connected properly, but they don't say a wiring error causes the alarm, and the cause is only given as 'abnormal phase of the grid'.
 - sentence 4: support check: partial - The solution list gives the steps in order (check wiring, check phase angle, restart, replace), but it doesn't say to replace the inverter only if the fault returns after a restart, and it doesn't call the inverter the likely cause.
+- sentence 4: review: partial - The passages list restart and then replace as steps after the wiring and phase-angle checks, but they never make replacement conditional on the fault returning or call the inverter the likely cause.
 -->

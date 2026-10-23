@@ -11,4 +11,7 @@ Auxiliary supply undervoltage means the low-voltage supply that powers control e
 - sentence 5: support check: partial - Three supply versions and orange connectors for the DC-only ones are listed, but the passage doesn't say to confirm the installed supply matches, and orange marks only the DC-only versions.
 - sentence 6: support check: partial - The 24 Vdc, 0.4 A max isolated auxiliary supply is stated, but the advice to check connected loads isn't in the passage.
 - sentence 7: support check: partial - A DC bus undervoltage message with its own code and troubleshooting exists, but the passage does not say it should not be confused with auxiliary undervoltage.
+- sentence 1: review: partial - The passage only says the 15 V or 24 V supply in the Multicluster Box is defective; it does not say this supply powers the control electronics or contrast it with the DC bus or the grid.
+- sentence 4: review: partial - The SEL-735 passage gives the input terminals (A01/A02) and the rated supply ranges, but it covers only that device and does not say to check these first.
+- sentence 7: review: partial - The Solis row shows a DC bus undervoltage alarm with its own code and troubleshooting step, but the warning not to confuse it with auxiliary undervoltage is editorial and not in the passage.
 -->

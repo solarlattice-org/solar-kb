@@ -47,4 +47,6 @@ A calibration failure is reported by the inverter as an event or error code, not
 - sentence 2: support check: partial - Event 9101 text and the Service-determined cause are stated, but the passages don't say it applies to SMA string inverters specifically.
 - sentence 4: support check: partial - The passage lists a current sensor offset calibration failed fault value, but doesn't say Yaskawa central inverters or that it points to the current measurement path (the latter is inferable).
 - sentence 5: support check: partial - All passages say to contact Service, but nothing states that the sources lack a field test or that you should record the exact code.
+- sentence 1: review: partial - The passages show calibration failures reported as inverter event/error codes, but nothing says the failure is not visible on the array itself.
+- sentence 4: review: partial - The row lists a 'Current Sensor Offset Calibration Failed' fault value, but it does not call it a hardware fault code or say it points to the current measurement path.
 -->

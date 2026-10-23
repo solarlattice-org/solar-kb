@@ -15,7 +15,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=37.r4
     h: 58b52105d499
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 On SMA Sunny Central CP XT inverters, this shows up as error 6461. It means the insulation monitoring device has not accepted its configured threshold. The related error 6448 means the insulation monitoring is returning values that are not permitted. The inverter treats it as a warning. Start by checking the insulation monitoring device itself and the cabling to it. Do not confuse this with a real insulation fault. In that case the device reports error 3504, and you should check the PV array for ground faults. On some inverters the insulation thresholds are set by the user. There is a warning threshold that leaves feed-in running and an error threshold that stops feed-in, so check the configured values as well.
 

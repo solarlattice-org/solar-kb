@@ -29,4 +29,5 @@ On a Fronius Symo, this condition appears on the display as state code 581. The 
 - sentence 3: support check: partial - Not an error and Enter confirmation are stated, but the advice to check the islanding deactivation was intended for the site is not in the passage.
 - sentence 4: support check: partial - Code 456 described as anti-islanding function stopped running properly, but the passages don't name Fronius or state it's a malfunction versus a deliberate setting (only implied).
 - sentence 7: support check: partial - Integrated anti-islanding protection and the 581 SPUI deactivation are in the passages, but the passages don't state the troubleshooting advice to look first at the setup configuration.
+- sentence 7: review: partial - The passages show that islanding protection is integrated on the Symo and that the SPUI setup (581) turns it off, but the advice to look first at the setup configuration is an inference that is not stated.
 -->

@@ -29,7 +29,9 @@ claims:
   - src: src:sma-kb-ereignis-9102
     loc: sec=h1
     h: 4c6511a06635
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Passages state feed-in stops and manual reset or setting mode
     back to Start is needed, but nothing about AC power falling to zero in daylight or irradiance remaining
     normal.'
@@ -66,7 +68,9 @@ claims:
   - src: src:sma-kb-ereignis-9102
     loc: sec=h1
     h: 4c6511a06635
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:arc-fault-alarm

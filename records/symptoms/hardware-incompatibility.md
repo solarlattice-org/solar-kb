@@ -34,7 +34,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=16.r11
     h: 07a411b9e6cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:zero-ac-output
@@ -57,4 +59,5 @@ Hardware incompatibility shows up as an inverter status code saying that one or 
 - sentence 3: support check: partial - No feed-in for stopping codes is stated, and 558 mentions possible error displays or malfunctions, but 'zero AC output even though there is sun' and 'without stopping production' are not stated.
 - sentence 4: support check: partial - Code 445 lists compatibility error and invalid power module configuration, but 'on some units the same code' and the advice to check recent swaps are not stated.
 - sentence 5: support check: partial - Firmware update then contact a technician appears for 436/480, but 558 evidence only says contact the system installer without a firmware step.
+- sentence 4: review: partial - Code 445 lists both a compatibility error and an invalid power module configuration, but the instruction to check for recently swapped boards or modules is not stated.
 -->

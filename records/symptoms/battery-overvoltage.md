@@ -70,4 +70,5 @@ Battery overvoltage is reported by the battery or hybrid inverter as a warning o
 - sentence 4: support check: partial - The corrective measure fragment mentions the country data set for stand-alone grid operation, but the text is truncated and does not say to check that setting.
 - sentence 5: support check: partial - OV-Vbatt-H is a battery overvoltage hardware failure/fault, but the passages don't name hybrid inverters specifically; Solis is implied by the message names.
 - sentence 6: support check: partial - The passages give breaker/fuse check, battery damage check and restart, but the order is partly from different rows and restart appears only in the u8/u11 rows, not alongside the damage check.
+- sentence 4: review: partial - The W210 corrective-measure text is cut off and mentions only the country data set for stand-alone grid operation, so the instruction to check that setting is inferred rather than stated.
 -->

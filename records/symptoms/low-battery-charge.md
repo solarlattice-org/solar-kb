@@ -36,7 +36,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=h647
     h: e5f88b74ad20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - The passages say the display shows state of charge in percent
     of capacity, but they don''t say a low value is a symptom.'
 - claim_id: c3
@@ -57,7 +59,8 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages give 1609/E501 as a grid request due to low battery
     state of charge, but they don''t say the device requests the grid, and the name ''Sunny Island'' appears
-    nowhere in them.'
+    nowhere in them.; review: partial - The rows support 1609/E501 GdSocOn as a grid request due to low
+    battery state of charge, but the passage text never names the device as Sunny Island.'
 - claim_id: c4
   rel: observed_as
   target: meas:low-state-of-energy-alarm
@@ -70,10 +73,13 @@ claims:
   - src: src:tesla-controls-and-communications-manual-ci-v1-5
     loc: tbl=88.r14
     h: 6b5a57f66a79
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The battery holds too little charge. On SMA storage inverters this is reported as an event saying the charge is too low for the start procedure. At this point the inverter can no longer recharge the battery by itself, so a qualified person must charge it right away. Check the state of charge on the device display, which shows the percentage of battery capacity, and compare it with the expected battery state. On off-grid systems a low state of charge can also show up as a grid request event or a battery undervoltage message. Reaching the lower SOC threshold opens the load contactor. Fix it by charging the battery, using emergency charge mode or an external charger, and by making sure DC loads are shed when the charge is low. For SMA batteries, contact SMA Service to have the battery charged manually. For other brands, contact the battery manufacturer. Do not leave a battery at a very low state of energy, because this can damage the cells.
 
 <!-- review notes
 - sentence 4: support check: partial - Grid request events, battery undervoltage and the load contactor opening at the lower SOC threshold are all stated. The passages don't say a low state of charge 'can also show up' as these on off-grid systems, and the undervoltage row names low battery voltage rather than low SOC.
+- sentence 4: review: partial - The grid request due to low battery state of charge and the load contactor opening at the lower SOC threshold are stated, but the undervoltage row names low battery voltage rather than low state of charge.
 -->

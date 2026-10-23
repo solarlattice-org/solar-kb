@@ -33,4 +33,5 @@ The inverter's display cannot show any information, and the inverter reports thi
 <!-- review notes
 - sentence 2: support check: partial - Events 8801 to 8803 are 'No display', but the passages don't mention Sunny Boy US specifically.
 - sentence 4: support check: partial - Continued feed-in is stated, but 'production data should look normal' is a mild inference not explicitly stated.
+- sentence 4: review: partial - The SMA KB says the inverter keeps feeding power into the grid, but the claim that production data should look normal is an inference the passage does not state.
 -->

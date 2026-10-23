@@ -50,7 +50,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=18.r24
     h: 5ab079e92f2b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 The inverter has lost its date and time. On Fronius units this shows up as status code 751, a warning on the display. A wrong system time directly corrupts data logging and the reported power generation values, so a monitoring record with odd time stamps can be the first sign of it. The usual cause is the clock's backup store running flat during a long power outage. Eaton names a drained supercap for this, and FIMER names the clock battery. Separate a simple time loss from a real-time clock failure by the code. A 751 warning only needs the time reset. A 758 means the clock module is in emergency mode and feed-in continues normally. A 757 is a clock hardware error, and the inverter stops feeding the grid. Check first by resetting the date and time on the inverter. If the code keeps coming back, contact a trained service technician. On a FIMER inverter, switch it fully off on both AC and DC, wait, and restart it. If the clock has gone back to 01/01/2000, replace the battery with the unit fully off and the polarity correct. Where the device supports it, use SNTP time sync to keep the clock right. Only move the time back when you have to, because that can overwrite system data already recorded.
 

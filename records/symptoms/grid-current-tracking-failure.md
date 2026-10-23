@@ -45,4 +45,5 @@ A grid current tracking failure shows up on the inverter as the alarm IGFOL-F. I
 <!-- review notes
 - sentence 1: support check: partial - IGFOL-F as the alarm is stated, but the passages do not mention Solis hybrid/string or CSI product families.
 - sentence 6: support check: partial - Contacting the installer and replacing the inverter appear as solutions, but the passages do not state the conditional sequence 'if it persists after restart and grid and wiring check out'.
+- sentence 1: review: partial - The passages support IGFOL-F as the grid current tracking failure alarm, but the passage text does not name Solis hybrid/string or CSI product families (they appear only in source ids).
 -->

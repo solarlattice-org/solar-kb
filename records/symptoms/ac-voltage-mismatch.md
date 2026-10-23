@@ -50,4 +50,5 @@ This symptom is a disagreement between the AC voltage the inverter measures on i
 <!-- review notes
 - sentence 2: support check: partial - The 6451/6452 descriptions match, but the passages don't name Sunny Central CP XT.
 - sentence 7: support check: partial - The table lists Voltage Sense Failure and Voltage Sensing Firmware Mismatch as hardware failure codes, but the advice to check the fault log is not stated.
+- sentence 7: review: partial - The table lists Voltage Sense Failure and Voltage Sensing Firmware Mismatch as hardware failure codes, but the advice to check the fault log is not in the passage.
 -->

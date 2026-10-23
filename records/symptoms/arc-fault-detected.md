@@ -57,7 +57,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-40-ba-en-13
     loc: sec=h72
     h: 609b66a0a612
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: observed_as
   target: meas:visible-burn-marks

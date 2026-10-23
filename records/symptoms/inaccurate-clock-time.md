@@ -16,7 +16,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=9.r7
     h: a4d4792734d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:clock-reset-to-default-date
@@ -29,7 +31,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=37.r3
     h: 521d4f5ca817
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Reset to 01/01/2000 after full shutdown/restart is stated and
     battery replacement is the remedy, but ''may come back'' as a symptom is okay; the passage doesn''t
     explicitly say the battery is the cause beyond replacing it, and the ''inaccurate clock time'' link
@@ -46,7 +50,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=37.r3
     h: 521d4f5ca817
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:inverter-fault-code-display

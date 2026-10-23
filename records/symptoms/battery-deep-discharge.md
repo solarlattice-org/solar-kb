@@ -29,7 +29,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h806
     h: 0aebb35044f4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:inverter-fault-code-display
@@ -39,7 +41,9 @@ claims:
   - src: src:sma-doc-259761
     loc: sec=h814
     h: c3887cb0a48f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 On SMA battery inverters, event 9394 is logged when the battery management system turns on deep discharge protection. For grid-connected systems this message is only an event and not a warning. A related battery fault message means the battery has reached either the deep discharge protection area or the deep discharge area, and a fuse at the grid-connection point may have tripped. Inside the deep discharge protection range, the system switches to energy-saving mode and tries to recharge the battery automatically from available PV energy. The protection ranges are set as a percentage of battery capacity, and the allowed limits differ between lead-acid and lithium-ion batteries. Check first whether a fuse has tripped at the grid-connection point and whether PV energy is available to recharge the battery. Then review the deep discharge range settings for the battery type.
 

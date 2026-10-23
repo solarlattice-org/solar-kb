@@ -21,7 +21,9 @@ claims:
   - src: src:kb-sma-stpsxxus-20-event-messages
     loc: sec=h73
     h: 3ee924ad3710
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 This symptom appears as event 9395 on SMA battery-capable inverters, logged with the message Battery separated externally. The event means the DC power connection between the inverter and the battery has been broken. The same event number and meaning appear in the documentation for several SMA inverter families, so read it the same way across them. Keep it separate from event 9308, which reports a communication error in the battery system, not a lost DC power connection.
 

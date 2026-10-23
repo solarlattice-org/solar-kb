@@ -38,11 +38,15 @@ claims:
   - src: src:kb-sma-sbsxx-us-10-event-messages
     loc: sec=h1
     h: a056be6df42b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 The inverter reports too much AC voltage on its backup or secure power supply (SPS) output, and it shows this as an event code on the display or in the event log. On SMA SB-US inverters, event 9202 (SPS AC overvoltage) means an outside AC source has been connected to the SPS outlet, so check the SPS connections first and correct them. SMA events 9204 and 9205 point to high voltage in the battery-backup grid or large load steps there; check for newer firmware and update it, and contact Service if none is available. On Solis hybrid inverters, check the wiring at the backup port, then restart the system and see whether the fault comes back. If a Solis backup overvoltage fault keeps coming back after a restart, the inverter may have to go back to the factory for repair.
 
 <!-- review notes
 - sentence 2: support check: partial - Passages say 9202 SPS AC overvoltage means an AC source is connected to the SPS outlet and to check/correct the SPS connections, but nothing specifies SB-US models or 'outside' source (the 'Contact Service' version also appears).
 - sentence 4: support check: partial - Passages give the OV-Vbackup steps (check backup port wiring, restart, confirm whether fault continues) but don't specify Solis hybrid inverters beyond the message name.
+- sentence 1: review: partial - The passages show backup/SPS AC overvoltage reported as event 9202 and as Solis alarm messages, but they never say where it is shown (the display or the event log).
+- sentence 4: review: partial - The OV-Vbackup rows support checking the backup port wiring, restarting, and seeing whether the fault continues, but the passages never call these Solis models hybrid inverters.
 -->

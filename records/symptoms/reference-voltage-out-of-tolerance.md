@@ -27,4 +27,6 @@ This symptom is reported by the inverter, not seen on the array: the inverter sh
 <!-- review notes
 - sentence 1: support check: partial - Passages show code 460 and its description but do not state it is shown on display or in event log, nor that it is not seen on the array.
 - sentence 4: support check: partial - The DSP reference source implies internal electronics, but the passages do not explicitly state it is not on the DC strings or grid connection.
+- sentence 1: review: partial - The passages give code 460 as an inverter status code, but nothing says it shows on the display or event log, or that it is not visible on the array.
+- sentence 4: review: partial - The DSP reference-source description points to the control electronics, but the passages never rule out the DC strings or the grid connection.
 -->

@@ -19,4 +19,5 @@ This symptom means the central inverter has found that its measured AC output po
 
 <!-- review notes
 - sentence 2: support check: partial - Error 6486 and S1/S2 = W are stated, but the passage doesn't name the Sunny Central CP XT model.
+- sentence 4: review: partial - The IEA table lists AC power and DC power as monitoring parameters, but neither passage says that comparing their trends is how the mismatch shows up in the data.
 -->

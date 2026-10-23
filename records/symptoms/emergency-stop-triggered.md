@@ -35,7 +35,9 @@ claims:
   - src: src:sungrow-sungrow-sg3150ud-mv-us-sg4400ud-mv-us-user-manual-ver23
     loc: sec=9.2
     h: 941dde951fd6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say DC switches and AC breakers trip and units disconnect
     from the grid, but nothing states AC power/current readings drop to zero.'
 ---

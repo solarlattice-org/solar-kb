@@ -32,7 +32,9 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=75.r4
     h: 47fd0b479faa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 The inverter reports that a contactor was commanded to open but did not open properly. On the Yaskawa SGI-XTM it shows on the user interface as DC Cont. Err and is also written to the event log. SMA equipment reports the same kind of fault as a tie contactor, tie switch or load-shedding contactor that will not open. Some inverters raise a general contactor failure, where the contactor can fail either open or closed. In that case a power cycle is the first step, and technical support is called if the error stays. A contactor that will not open cannot be fixed in the field. The manufacturers say to contact service and have an authorized provider inspect and repair the inverter.
 

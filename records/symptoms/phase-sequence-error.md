@@ -27,7 +27,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=31.r1
     h: e3cf56a7121a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:phase-sequence-register-acb
@@ -64,7 +66,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: sec=h62
     h: 1315812c9671
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: observed_as
   target: meas:negative-sequence-current-imbalance
@@ -80,4 +84,5 @@ An incorrect phase sequence means the inverter's three-phase AC output is wired 
 <!-- review notes
 - sentence 4: support check: partial - PLL error or odd readings pointing to rotation is stated, but the advice to check before suspecting a sensor fault is not in the passage.
 - sentence 6: support check: partial - Check phase position and fuses switched on are stated in u9, but 'at the inverter AC terminals' and 'first' ordering are not stated.
+- sentence 4: review: partial - The passage links a PLL error or odd frequency/voltage readings to phase rotation, but never says to check rotation before suspecting a sensor fault.
 -->

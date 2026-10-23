@@ -37,4 +37,5 @@ On SGI-XTM central inverters this symptom shows up as a Fan Life Reached message
 - sentence 1: support check: partial - UI text 'Fan Life Reached' and event log Y are stated, but the passage does not name SGI-XTM central inverters (only Solectria text).
 - sentence 2: support check: partial - Bit 11 and AC power produced Yes are stated, and the 'Informative Alarms' heading appears; Modbus context is implied, but it's roughly supported without explicit Modbus mention.
 - sentence 5: support check: partial - Other causes are listed, but the advice to check obstructions and reseat the connector before blaming fan age is not stated in the passages.
+- sentence 4: review: partial - Many passages list an expired fan service life as a possible cause of ExtFanErr, but none of them limits this to 'string inverters'.
 -->

@@ -18,7 +18,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=39.r1
     h: bdaed900d26c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Events 7709, 7710 and 7714 are in the passages, but they don''t
     mention the Sunny Central CP XT model or the inverter fault code display channel.'
 ---

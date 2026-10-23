@@ -26,4 +26,5 @@ On the Sunny Central CP XT, error 8702 means the inverter is receiving more than
 - sentence 4: support check: partial - The one-setpoint-per-input and adjustable priority statements are present, but the advice to check which sources write to each input is not in the passage.
 - sentence 5: support check: partial - Modbus active power setpoints go to setpoint input 2 and allow parallel operation with SMA system control, but the advice to check this path when two controllers send commands is not in the passage.
 - sentence 6: support check: partial - 8701 is accurate (below 2 mA, invalid, last valid value or Pmax after a day change), but 8703 flags only an invalid power factor of the reactive setpoint, and 8704 flags invalid active and reactive setpoints, so lumping them as 'invalid reactive power setpoints' is imprecise.
+- sentence 4: review: partial - The one-setpoint-per-input limit and the adjustable priority of external inputs are stated, but the advice to first check which sources write to each input is not in the passage.
 -->

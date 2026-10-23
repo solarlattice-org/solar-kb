@@ -22,7 +22,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=39.r7
     h: a330cf1d5cfe
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:setpoint-status-cominvalid
@@ -53,7 +55,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=39.r4
     h: 02e2835e142b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - 8701 states setpoints below 2 mA are invalid and last valid value/Pmax
     is used, but the passage doesn''t say ''analog'' explicitly nor mention AC power staying at that value
     as an observed signal; mostly inferred.'
@@ -81,4 +85,5 @@ An invalid power setpoint means the inverter has received an external active or 
 - sentence 1: support check: partial - Passages say external setpoints are invalid, but not explicitly that the inverter received a command and rejected it as unusable; 8701 notes fallback to last valid value.
 - sentence 4: support check: partial - ComFail is described as the expected signal absent for at least five minutes with communication/cabling measures, but the passages state this only for reactive power setpoint modes, and ComFail is not explicitly contrasted with ComInvalid.
 - sentence 5: support check: partial - 8701 supports below 2 mA being invalid and last valid value or Pmax after day change, but 'analog' is not stated for 8701 itself.
+- sentence 4: review: partial - The table says ComFail means a valid setpoint signal has been absent for at least five minutes and gives communication-unit and cabling measures, but it says this only for the reactive power modes VArCtlCom/PFCtlCom, and the sentence applies it to…
 -->

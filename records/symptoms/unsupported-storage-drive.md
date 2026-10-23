@@ -19,7 +19,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=18.r6
     h: 57eda22c1714
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 On Fronius Galvo, Primo and Symo inverters, status code 731 means an initialization error: the inverter does not support the USB drive plugged into it. It shows up as a warning message on the inverter display. Check the USB drive first, including its file system, and replace the drive if needed. It is also separate from code 732, which reports overcurrent at the USB drive. Codes 736 and 738 cover read or write errors and log files that could not be saved, for example because the drive is full or write-protected. On Galvo and Primo units, contact a Fronius-trained service technician if the code stays after the drive has been checked or replaced.
 

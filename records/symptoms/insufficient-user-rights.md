@@ -21,7 +21,9 @@ claims:
   - src: src:sma-doc-278742
     loc: tbl=72.r5
     h: 9d90d13712cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 This symptom shows up as SMA event 7349. It appears when someone tries to import a configuration file while logged in to a user group that does not have the rights to import one. The fix is to log in as Installer and then import the configuration file again. Guest and Standard user roles cannot import data. The Installer and System administrator roles can. The user rights decide which functions a user can reach in a system. A function the user is not allowed to use may simply not be shown, so a missing menu item can point to the same cause. In Sunny Portal, the account that registered the system gets administrator rights. Only the administrator can view user management and set user rights. Even with Installer rights, changing SMA Grid Guard parameters also needs the SMA Grid Guard code. So check which role you are logged in with, and whether a code is needed, before suspecting a device fault.
 

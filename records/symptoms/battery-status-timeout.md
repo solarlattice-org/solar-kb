@@ -33,4 +33,5 @@ The inverter logs event 9350 when it asks the battery to change state and the ba
 
 <!-- review notes
 - sentence 6: support check: partial - Event 9308 meaning and the check of battery communication parameters (e.g., IP address) are stated, but the 'do not confuse' with 9350 comparison is not in the passages.
+- sentence 7: review: partial - Both actions are in the passages, but battery maintenance is a general procedure step, not something done only when the cause cannot be found; only contacting Service carries that condition.
 -->

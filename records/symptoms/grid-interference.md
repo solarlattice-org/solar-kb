@@ -29,4 +29,5 @@ Grid interference shows up as an inverter alarm: Solis and CSI string inverters 
 <!-- review notes
 - sentence 1: support check: partial - The alarm message and description are present, but the passages don't identify Solis/CSI string inverters or the display.
 - sentence 3: support check: partial - Change power board as step 2 is stated, but the passages don't say it's conditional on the alarm persisting or that it indicates an internal hardware fault.
+- sentence 1: review: partial - The passages give GRID-INTF01/02 as the grid interference alarm, but they do not describe the inverters as Solis/CSI string inverters (the names appear only in source ids).
 -->

@@ -50,7 +50,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=53.r4
     h: 5b52ed835ea5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   attr: output_limit
   value:
@@ -87,7 +89,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=53.r4
     h: 5b52ed835ea5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c6 (same source; check the conditions)
 - claim_id: c6
@@ -100,7 +104,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=53.r4
     h: 5b52ed835ea5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions)
 ---
@@ -112,4 +118,6 @@ High ambient temperature around an inverter shows up as overtemperature alarms. 
 - sentence 5: support check: partial - The 45°C CPS derating and the Huawei 21.6 kW at 60°C are stated. 'Before a trip, derating often shows up' is not stated in the passages.
 - sentence 6: support check: partial - Sungrow says the inverter generally resumes when temperature normalizes, and Chint says to observe for 30 minutes. 'Usually clear by themselves' across all of these faults is a generalization.
 - sentence 7: support check: partial - The passage says higher ambient temperature around a cable reduces ampacity. The advice to check cable sizing on hot sites is not stated.
+- sentence 4: review: partial - Huawei says to contact support once ambient temperature and ventilation meet requirements, without checking the fan; the fan and inlet checks come from the Sungrow and Yaskawa lists, so the combined conditional sequence is not stated by any one passage.
+- sentence 7: review: partial - The passage says higher ambient temperature around a cable reduces ampacity, but the advice to check cable sizing on hot sites is not stated.
 -->

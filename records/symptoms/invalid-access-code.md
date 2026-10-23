@@ -57,7 +57,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-41-ba-en-12
     loc: sec=h422
     h: 7ba5aa81e7dc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 SMA inverters show this event when someone enters a wrong SMA Grid Guard code while trying to change protected settings. Look for event number 9002 in the inverter event log. Depending on the model and manual, it reads either SMA Grid Guard code invalid or Installer code invalid. Because the code was rejected, the operating parameters stay protected and the requested changes are not applied. This is an access problem with the entered code, not a hardware or production fault. To fix it, enter the correct SMA Grid Guard code and then make the parameter change again.
 
@@ -66,4 +68,5 @@ SMA inverters show this event when someone enters a wrong SMA Grid Guard code wh
 - sentence 2: support check: partial - Event 9002 with both message variants is stated, but the passages don't mention the event log or that the wording depends on model/manual.
 - sentence 4: support check: partial - Passages show an incorrect code issue with parameters protected, but don't explicitly say it is not a hardware or production fault.
 - sentence 5: support check: partial - Corrective measure to enter the correct code is stated, but the follow-up step of making the parameter change again is not.
+- sentence 4: review: partial - The passages show the problem is an incorrect code, but they never say it is not a hardware or production fault.
 -->

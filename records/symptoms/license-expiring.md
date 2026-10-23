@@ -28,4 +28,5 @@ The inverter raises a warning-level alarm saying the license has expired. This h
 - sentence 2: support check: partial - The row lists no production effect and is a license matter, but the 'not a hardware or PV array fault' characterization is an inference not stated.
 - sentence 4: support check: partial - Measures say apply for and load a new certificate; the license management screen has a load function for No license status, but loading the certificate from that screen for this alarm is not explicitly stated.
 - sentence 6: support check: partial - The passage says a notification appears at sign-in and redirects to SolrenPay to renew the RAP license, but 'monitoring portals can have their own licenses' generally is only exemplified by one portal; the core is stated.
+- sentence 4: review: partial - The alarm row says to apply for and load a new certificate, but the license management procedure shows loading only for the 'No license' status and does not say this is how to clear this alarm.
 -->
