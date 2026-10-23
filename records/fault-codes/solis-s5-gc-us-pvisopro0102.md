@@ -32,27 +32,64 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r4
+    h: 94307fcd8bf8
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=10.r13
+    h: 661ca549c0f6
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=14.r13
+    h: 661ca549c0f6
   review: verified
   verified_by: review-workflow
   verified_at: &id001 2026-10-20
 - claim_id: c3
-  rel: reports
-  target: symptom:ground-fault
+  rel: detected_by
+  target: method:insulation-resistance-test
+  note: Repeat under the same weather as the alarm if first result is normal.
   cite:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
-  review: drafted
-- claim_id: c4
-  rel: indicates
-  target: fm:insulation-loss
-  cite:
-  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
-    loc: tbl=15.r3
-    h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r4
+    h: 94307fcd8bf8
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=10.r13
+    h: 661ca549c0f6
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=14.r13
+    h: 661ca549c0f6
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c4
+  rel: detected_by
+  target: method:fault-localization
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r4
+    h: 94307fcd8bf8
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=10.r13
+    h: 661ca549c0f6
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=14.r13
+    h: 661ca549c0f6
+  review: drafted
 - claim_id: c5
   rel: affects
   target: comp:dc-cable
@@ -60,31 +97,74 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r3
     h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-  review_note: 'support check: partial - Solution says physically check cables, implying DC cables, but
-    the cable type isn''t specified as the affected component.'
 - claim_id: c6
-  rel: detected_by
-  target: method:insulation-resistance-test
-  note: Repeat in the same weather as when the alarm occurred.
+  rel: affects
+  target: comp:pv-array
   cite:
-  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
-    loc: tbl=15.r3
-    h: 7ee4aa6d1521
-  review: verified
-  verified_by: review-workflow
-  verified_at: *id001
-- claim_id: c7
-  rel: detected_by
-  target: method:visual-inspection
-  cite:
-  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
-    loc: tbl=15.r3
-    h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r4
+    h: 94307fcd8bf8
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=10.r13
+    h: 661ca549c0f6
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=14.r13
+    h: 661ca549c0f6
   review: drafted
+- claim_id: c7
+  rel: mitigated_by
+  target: mit:dc-wiring-check
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r3
+    h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
+  review: drafted
+  review_note: 'support check: partial - Passages say physically check cables, which is roughly a DC cable
+    check, but don''t say DC wiring specifically.'
 - claim_id: c8
+  rel: mitigated_by
+  target: mit:inverter-restart
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r3
+    h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
+  review: drafted
+- claim_id: c9
+  rel: mitigated_by
+  target: mit:inverter-replacement
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r3
+    h: 7ee4aa6d1521
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=14.r6
+    h: 01092224fc3d
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=13.r6
+    h: 01092224fc3d
+  review: drafted
+- claim_id: c10
   rel: has_event_class
   target: ec:fault
   cite:
@@ -97,9 +177,17 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-  review_note: 'support check: partial - Listed in the ''Fault messages'' table, but the row doesn''t
-    state the device behavior; classification only implied by table title.'
-- claim_id: c9
+- claim_id: c11
+  rel: indicates
+  target: fm:insulation-loss
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r3
+    h: 7ee4aa6d1521
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+- claim_id: c12
   rel: has_recovery
   target: ec:manual-reset
   note: Reset after inspection; replace inverter if insulation checks normal and fault persists.
@@ -108,8 +196,8 @@ claims:
     loc: tbl=15.r3
     h: 7ee4aa6d1521
   review: verified
-  verified_by: review-workflow
-  verified_at: *id001
   review_note: 'support check: partial - Solution includes reset inverter and replace inverter, but the
     passage doesn''t say reset is required to clear it or that…'
+  verified_by: review-workflow
+  verified_at: *id001
 ---
