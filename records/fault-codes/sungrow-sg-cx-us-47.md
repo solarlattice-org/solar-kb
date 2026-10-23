@@ -26,52 +26,57 @@ claims:
     h: 96a10b9de9c0
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r3
+    h: f23882490bec
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:configuration-error
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r3
     h: 96a10b9de9c0
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r3
+    h: f23882490bec
   review: drafted
-- claim_id: c3
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r3
     h: 96a10b9de9c0
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
-  review: drafted
-  review_note: 'support check: partial - The row describes a configuration abnormality, and u3 only says
-    fault codes are listed, so the fault class is implied…'
-- claim_id: c4
-  rel: has_recovery
-  target: ec:manual-reset
-  note: An operator shuts down the inverter and resets the PV input mode; contact service if the fault
-    persists.
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=52.r3
-    h: 96a10b9de9c0
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r3
+    h: f23882490bec
   review: drafted
 - claim_id: c5
-  rel: affects
-  target: comp:inverter
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=52.r3
-    h: 96a10b9de9c0
-  review: drafted
-  review_note: 'support check: partial - The row says to shut down and disconnect the inverter, but the
-    fault is a PV input configuration or mode…'
-- claim_id: c6
   rel: mitigated_by
   target: mit:inverter-parameter-change
+  note: PV input mode is reset with the inverter shut down.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r3
     h: 96a10b9de9c0
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r3
+    h: f23882490bec
+  review: drafted
+- claim_id: c6
+  rel: has_recovery
+  target: ec:manual-reset
+  note: Operator shuts down, corrects input mode; service if fault persists.
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r3
+    h: 96a10b9de9c0
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r3
+    h: f23882490bec
   review: drafted
 ---

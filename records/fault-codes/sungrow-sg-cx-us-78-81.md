@@ -28,6 +28,14 @@ claims:
     h: 8d971d4be264
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
+    h: 8d971d4be264
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:pv-input-abnormal
   note: Codes map to PV inputs 1 to 4.
@@ -35,48 +43,56 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r1
     h: 8d971d4be264
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
+    h: 8d971d4be264
   review: drafted
-- claim_id: c3
-  rel: affects
-  target: comp:pv-array
+- claim_id: c4
+  rel: has_event_class
+  target: ec:warning
+  note: Described as an alarm that may be ignored for unused inputs.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r1
     h: 8d971d4be264
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
+    h: 8d971d4be264
   review: drafted
-- claim_id: c4
+  review_note: 'support check: partial - Row says alarm may be ignored for unused strings; warning class
+    is implied but not explicit.'
+- claim_id: c5
   rel: mitigated_by
   target: mit:dc-wiring-check
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r1
     h: 8d971d4be264
-  review: drafted
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:fuse-replacement
-  note: When the corresponding DC fuse is damaged.
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=53.r1
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
     h: 8d971d4be264
   review: drafted
 - claim_id: c6
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if wiring and fuse checks do not resolve it.
+  target: mit:fuse-replacement
+  note: If the input's DC fuse is damaged.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r1
     h: 8d971d4be264
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
+    h: 8d971d4be264
   review: drafted
 - claim_id: c7
-  rel: has_event_class
-  target: ec:warning
-  note: Row treats it as an alarm that may be ignored for unused inputs.
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r1
+    h: 8d971d4be264
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r1
     h: 8d971d4be264
   review: drafted
 ---

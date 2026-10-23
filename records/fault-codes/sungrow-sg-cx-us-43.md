@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-43
 type: FaultCode
-name: Sungrow SG-CX-US 43
+name: Sungrow SG-CX-US 043
 aliases:
+- '043'
 - '43'
-- Sungrow 43
+- Sungrow 043
 - Low ambient temperature
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: '43'
+code: '043'
 code_key: '43'
 display_message: Low ambient temperature
 page: 95
@@ -25,47 +26,69 @@ claims:
     h: a5b9c9505cd8
   review: drafted
 - claim_id: c2
-  rel: reports
-  target: symptom:inverter-undertemperature
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=41.r3
-    h: eb9ec451e098
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=52.r1
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r1
     h: a5b9c9505cd8
   review: drafted
 - claim_id: c3
-  rel: has_event_class
-  target: ec:fault
+  rel: reports
+  target: symptom:inverter-undertemperature
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=41.r3
-    h: eb9ec451e098
-  review: drafted
-  review_note: 'support check: partial - The passage says to stop and disconnect the inverter, which implies
-    a fault, but doesn''t state the classification.'
-- claim_id: c4
-  rel: has_production_effect
-  target: ec:trip
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=41.r3
-    h: eb9ec451e098
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r1
     h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=32.r3
+    h: 1268b23bbfb3
+  review: drafted
+- claim_id: c4
+  rel: has_event_class
+  target: ec:fault
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=32.r3
+    h: 1268b23bbfb3
   review: drafted
 - claim_id: c5
+  rel: has_production_effect
+  target: ec:trip
+  note: Inverter cannot operate below its temperature range and is shut down.
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=32.r3
+    h: 1268b23bbfb3
+  review: drafted
+- claim_id: c6
   rel: has_recovery
   target: ec:manual-reset
   note: Operator restarts once ambient temperature is back within operating range.
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=41.r3
-    h: eb9ec451e098
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r1
     h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r1
+    h: a5b9c9505cd8
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=32.r3
+    h: 1268b23bbfb3
   review: drafted
 ---

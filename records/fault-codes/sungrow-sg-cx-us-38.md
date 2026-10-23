@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-38
 type: FaultCode
-name: Sungrow SG-CX-US 38
+name: Sungrow SG-CX-US 038
 aliases:
+- '038'
 - '38'
-- Sungrow 38
+- Sungrow 038
 - Device anomaly
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: '38'
+code: '038'
 code_key: '38'
 display_message: Device anomaly
 page: 94
@@ -25,59 +26,65 @@ claims:
     h: 9e64adaac1e9
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=37.r2
+    h: 9e64adaac1e9
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:internal-device-fault
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r2
     h: 9e64adaac1e9
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=37.r2
+    h: 9e64adaac1e9
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
   review: drafted
-- claim_id: c3
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
-  review: drafted
-- claim_id: c4
-  rel: has_recovery
-  target: ec:auto-reset
-  note: Normally clears on its own; otherwise power-cycle AC and DC after 15 minutes, then contact service.
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r2
     h: 9e64adaac1e9
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=37.r2
+    h: 9e64adaac1e9
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
+  review: drafted
+- claim_id: c5
+  rel: has_recovery
+  target: ec:auto-reset
+  note: 'Escalation: power-cycle after 15 minutes, then contact service.'
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=51.r2
+    h: 9e64adaac1e9
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=37.r2
+    h: 9e64adaac1e9
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:inverter-restart
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=51.r2
-    h: 9e64adaac1e9
-  review: drafted
-- claim_id: c6
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the fault persists after restart.
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
-  review: drafted
 ---

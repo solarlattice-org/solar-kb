@@ -1,0 +1,143 @@
+---
+id: fc:chint-sch-200-250k-t-protect230
+type: FaultCode
+name: CPS SCH200-250K-T Protect0230
+aliases:
+- Protect0230
+- protect230
+- CPS Protect0230
+- Mini MCU fault
+category: Inverters
+make: chint
+make_name: CPS
+model_family: sch-200-250k-t
+family_name: CPS SCH200K-T-US-480 / SCH250K-T-US-600
+code: Protect0230
+code_key: protect230
+display_message: Mini MCU fault
+vendor_severity: Protection
+page: 105
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+  cite:
+  - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+    loc: tbl=42.r4
+    h: 91a441492413
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:fault
+  note: from the code prefix
+  cite:
+  - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+    loc: tbl=42.r4
+    h: 91a441492413
+  review: drafted
+- claim_id: c3
+  rel: reports
+  target: symptom:self-test-failure
+  cite:
+  - src: src:chint-cps-sch100-125ktl-do-us-600-480-user-manual-rev-1-9
+    loc: tbl=36.r1
+    h: a985333dbde9
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r2
+    h: 8adbbd6a5fea
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52
+    h: a81a2643c1b9
+  review: drafted
+- claim_id: c4
+  rel: affects
+  target: comp:inverter
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r2
+    h: 8adbbd6a5fea
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:inverter-restart
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r2
+    h: 8adbbd6a5fea
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52
+    h: a81a2643c1b9
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:inverter-replacement
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r2
+    h: 8adbbd6a5fea
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52
+    h: a81a2643c1b9
+  review: drafted
+- claim_id: c7
+  rel: has_recovery
+  target: ec:manual-reset
+  note: Power cycle clears normal case; replace inverter if fault persists.
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r2
+    h: 8adbbd6a5fea
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52
+    h: a81a2643c1b9
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
+  review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
+    but nothing says it clears only by manual reset; plausibly implied…'
+---
