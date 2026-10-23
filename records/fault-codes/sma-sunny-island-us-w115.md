@@ -51,5 +51,7 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=142.r7
     h: 1ec4808c40c4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

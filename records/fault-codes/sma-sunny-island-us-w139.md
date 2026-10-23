@@ -59,7 +59,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=142.r19
     h: 699c9f3b2849
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c6
   rel: affects
   target: comp:transformer
@@ -67,7 +69,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=142.r19
     h: 699c9f3b2849
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: has_production_effect
   target: ec:derate

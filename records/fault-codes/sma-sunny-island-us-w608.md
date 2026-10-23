@@ -43,7 +43,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=149.r4
     h: 355d9785edcd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:transfer-relay
@@ -51,5 +53,7 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=149.r4
     h: 355d9785edcd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -42,7 +42,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=152.r25
     h: c026f33e7fc1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:digital-signal-processor
@@ -51,5 +53,7 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=152.r25
     h: c026f33e7fc1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

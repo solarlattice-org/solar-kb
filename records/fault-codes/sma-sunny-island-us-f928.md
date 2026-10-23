@@ -42,6 +42,6 @@ claims:
     loc: tbl=155.r10
     h: 46116b699209
   review: drafted
-  review_note: 'support check: partial - Row states SiCom charge-mode message but not that it is reported
-    by the battery management.'
+  review_note: 'review: partial - The row supports a SiCom message that the battery charging current in
+    charge mode is too high, but nothing in it says…'
 ---

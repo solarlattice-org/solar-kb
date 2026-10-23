@@ -37,4 +37,6 @@ claims:
     loc: tbl=131
     h: 5537eaf27082
   review: drafted
+  review_note: 'review: partial - Row ''Relay 2 slave 2 open'' is a plain relay state report, so the informational
+    class fits, but the note''s claim that…'
 ---

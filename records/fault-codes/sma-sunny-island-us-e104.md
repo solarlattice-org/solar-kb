@@ -33,7 +33,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=131.r4
     h: 787e1ec4e70b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: has_production_effect
   target: ec:no-production-effect

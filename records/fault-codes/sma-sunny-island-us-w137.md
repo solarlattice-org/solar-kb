@@ -51,8 +51,8 @@ claims:
     loc: tbl=142.r17
     h: 8ac6350ddbbb
   review: drafted
-  review_note: 'support check: partial - Derating due to temperature implies over-temperature but the
-    passage doesn''t state overtemperature explicitly.'
+  review_note: 'review: partial - The row says ''Derating due to temperature (heat sink or transformer)'',
+    which implies elevated temperature but never states an overtemperature condition.'
 - claim_id: c5
   rel: affects
   target: comp:heat-sink
@@ -60,7 +60,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=142.r17
     h: 8ac6350ddbbb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: affects
   target: comp:transformer
