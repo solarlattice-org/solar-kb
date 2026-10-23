@@ -13,4 +13,5 @@ The grid tie relay is the switch inside the inverter that connects its output to
 <!-- review notes
 - sentence 1: support check: partial - Passages mention a line tie relay with welded/open contacts and a grid relay switching status signal, but none define the grid tie relay as the internal switch connecting/disconnecting the inverter output to the grid.
 - sentence 3: support check: partial - The alarm describes contacts welded or open, but nothing says this is the main failure mode.
+- sentence 1: review: partial - The passages only imply the relay's role, through a line tie relay alarm and the SMA grid relay switching-status signal; neither defines the grid tie relay as the internal switch that connects the output to the grid and disconnects it.
 -->

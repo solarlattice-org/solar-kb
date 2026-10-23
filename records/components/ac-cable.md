@@ -9,4 +9,5 @@ The AC cable carries the inverter's AC output. On some inverters it lands in an 
 
 <!-- review notes
 - sentence 4: support check: partial - Copper, copper-clad aluminum and aluminum alloy cables and the grease note appear, but the grease is called 'NO-Oxidation grease' and the note is for a standard wire-box; the 'anti-oxidation' wording and the 'should' are close enough, but the conductor-type listing is only implied by the diameter table.
+- sentence 1: review: partial - The passages support the AC junction box where the AC cable and tracking system power cable connect, but nothing in them says the AC cable carries the inverter's AC output.
 -->
