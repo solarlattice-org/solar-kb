@@ -95,6 +95,6 @@ claims:
     loc: sec=h783
     h: 1bbc59405139
   review: drafted
-  review_note: 'support check: partial - Switching on secure power supply operation again is an operator
-    action, but the passages don''t explicitly say it is a…'
+  review_note: 'review: partial - The passages tell the operator to unplug the load and switch secure
+    power supply operation back on, which implies a manual restart,…'
 ---

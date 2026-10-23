@@ -73,8 +73,8 @@ claims:
     loc: sec=h450
     h: 5027c6815068
   review: drafted
-  review_note: 'support check: partial - Grid voltage checks are described, but a measurement method as
-    the detection is only implied.'
+  review_note: 'review: partial - The row says undervoltage is detected by redundant monitoring, and the
+    cited h210/h450 passages say to check the grid voltage, but those…'
 - claim_id: c6
   rel: mitigated_by
   target: mit:ac-connection-check
@@ -135,7 +135,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h449
     h: 5a2fda46a26b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c11
   rel: has_recovery
   target: ec:auto-reset

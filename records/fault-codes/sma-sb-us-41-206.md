@@ -37,7 +37,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h454
     h: 5a2fda46a26b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:grid-loss

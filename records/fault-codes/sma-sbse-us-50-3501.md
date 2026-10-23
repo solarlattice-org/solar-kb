@@ -191,7 +191,9 @@ claims:
   - src: src:sma-kb-event-3501-with-sunnyboy-smart-energy-sbse
     loc: sec=h1
     h: 05d7bba15124
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Inverter disconnects/does not operate, but ''Fault'' classification
     isn''t explicitly stated.'
 - claim_id: c16

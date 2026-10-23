@@ -114,7 +114,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h530
     h: 2f4e68d48aa0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say to ensure the PV array is correctly rated and wired
     if the message is frequent, but do not…'
 ---

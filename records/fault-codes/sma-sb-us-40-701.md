@@ -101,7 +101,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h306
     h: c704af31bf5e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:utility-consultation

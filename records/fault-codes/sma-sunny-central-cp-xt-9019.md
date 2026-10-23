@@ -45,5 +45,7 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=39.r11
     h: 7d76c721dadc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

@@ -65,7 +65,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-41-ba-en-12
     loc: sec=h314
     h: c0ac346a9e3b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_recovery
   target: ec:auto-reset

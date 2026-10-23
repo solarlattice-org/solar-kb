@@ -81,7 +81,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h301
     h: f7988acc8abf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Inverter detects DC in grid current, but no explicit measurement
     method is stated; monitoring threshold implies it.'
 - claim_id: c4

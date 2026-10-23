@@ -152,7 +152,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h373
     h: 9d464275e542
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: has_production_effect
   target: ec:trip

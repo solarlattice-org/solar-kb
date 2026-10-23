@@ -41,7 +41,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h179
     h: 06a2712e0fd4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:ac-cable
@@ -60,7 +62,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h179
     h: 06a2712e0fd4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_production_effect
   target: ec:trip

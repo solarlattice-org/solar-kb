@@ -42,7 +42,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: tbl=21.r1
     h: dca11bb38795
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: mitigated_by
   target: mit:enter-access-code

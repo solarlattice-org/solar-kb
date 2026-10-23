@@ -30,7 +30,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=36.r13
     h: 29a79d604337
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: indicates
   target: fm:internal-power-supply-fault

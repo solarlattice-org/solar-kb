@@ -88,7 +88,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: sec=5.4.3
     h: 162f559707eb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: detected_by
   target: method:grid-voltage-measurement

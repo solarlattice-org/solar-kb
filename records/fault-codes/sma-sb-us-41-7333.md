@@ -109,5 +109,7 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h382
     h: 6992dd0dc9f8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

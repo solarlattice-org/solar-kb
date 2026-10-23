@@ -29,7 +29,9 @@ claims:
   - src: src:sma-kb-shpxxx-xx-20-event-6128
     loc: sec=h1
     h: 9a7250093a96
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The article describes AC voltage briefly above the reconnection
     threshold at morning start-up, but the event is labeled a General…'
 - claim_id: c3

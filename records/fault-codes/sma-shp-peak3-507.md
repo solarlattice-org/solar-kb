@@ -103,7 +103,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h296
     h: 3f810abc1c00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-parameter-change

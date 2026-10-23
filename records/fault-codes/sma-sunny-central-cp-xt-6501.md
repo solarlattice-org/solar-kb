@@ -98,7 +98,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h341
     h: 1b4c87768301
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: mitigated_by
   target: mit:clear-heat-dissipation-path

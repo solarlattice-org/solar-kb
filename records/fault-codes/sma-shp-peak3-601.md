@@ -52,7 +52,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h300
     h: bdf5d0cb813c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:dc-injection-measurement

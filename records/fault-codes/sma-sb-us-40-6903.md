@@ -48,7 +48,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-40-ba-en-13
     loc: tbl=17.r5
     h: 3f1b8aab63a7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: mitigated_by
   target: mit:dc-wiring-check

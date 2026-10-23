@@ -170,7 +170,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h466
     h: ceee8640eb7c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The inverter reconnects implying it disconnected, but disconnecting
     is not explicitly stated.'
 - claim_id: c13

@@ -76,7 +76,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-40-ba-en-13
     loc: sec=h210
     h: dba4882bde4c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: detected_by
   target: method:insulation-resistance-test

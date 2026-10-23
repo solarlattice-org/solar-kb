@@ -67,7 +67,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h184
     h: ece357161bcb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Feed-in is interrupted, but fault versus warning is not stated.'
 - claim_id: c6
   rel: has_production_effect

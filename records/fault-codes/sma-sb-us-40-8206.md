@@ -123,5 +123,7 @@ claims:
   - src: src:sma-kb-stp-us-41-events-8206-8210
     loc: sec=h1
     h: 4223b7d41d2f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

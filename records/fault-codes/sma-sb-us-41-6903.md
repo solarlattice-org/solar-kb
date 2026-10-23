@@ -37,7 +37,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-41-ba-en-12
     loc: sec=h328
     h: f7315b8a64ea
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The passages say ''Polarity error'' with ''Input B defective'',
     which loosely supports reverse polarity but doesn''t state it explicitly.'
 - claim_id: c3

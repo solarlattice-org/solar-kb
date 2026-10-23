@@ -40,7 +40,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h388
     h: 9d464275e542
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:grid-impedance-high
@@ -54,7 +56,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h388
     h: 9d464275e542
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: has_event_class
   target: ec:fault
@@ -68,7 +72,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h388
     h: 9d464275e542
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: has_production_effect
   target: ec:trip

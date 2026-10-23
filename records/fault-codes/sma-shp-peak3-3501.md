@@ -149,7 +149,8 @@ claims:
     loc: sec=h454
     h: 736fbc74e526
   review: drafted
-  review_note: 'support check: partial - IR camera is only a tip for support, not a stated detection method.'
+  review_note: 'review: partial - The IR camera appears only as a tip to support the visual inspection
+    of the DC installation, not as a detection method…'
 - claim_id: c13
   rel: mitigated_by
   target: mit:dc-wiring-check

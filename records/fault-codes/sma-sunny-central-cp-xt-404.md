@@ -67,7 +67,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h409
     h: a59ad34e5713
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The passages only mention checking for frequency fluctuations,
     and the detection method is implied rather than stated.'
 - claim_id: c5

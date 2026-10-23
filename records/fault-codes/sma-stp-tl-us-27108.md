@@ -32,5 +32,7 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: tbl=21.r9
     h: 03d68e572566
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

@@ -83,7 +83,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h290
     h: 272c39d1e1c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c9
   rel: has_recovery
   target: ec:auto-reset

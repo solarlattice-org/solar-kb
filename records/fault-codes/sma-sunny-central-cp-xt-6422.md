@@ -65,7 +65,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h531
     h: 97b09800e944
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: has_recovery
   target: ec:manual-reset

@@ -132,6 +132,8 @@ claims:
     loc: sec=h467
     h: 10a07fe57d31
   review: drafted
+  review_note: 'review: partial - The passages say to check the PV system for ground faults and to ensure
+    the module frame is correctly grounded (h467), which…'
 - claim_id: c10
   rel: mitigated_by
   target: mit:dc-wiring-check

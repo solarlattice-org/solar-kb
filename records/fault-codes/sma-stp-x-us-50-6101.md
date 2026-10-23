@@ -37,7 +37,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h491
     h: 7270c7c2cd1e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: has_event_class
   target: ec:fault

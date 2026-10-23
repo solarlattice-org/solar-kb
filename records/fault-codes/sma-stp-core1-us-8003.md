@@ -51,7 +51,9 @@ claims:
   - src: src:sma-kb-event-8003-in-terms-of-sunny-tripower-core1-stp50-40-stp50-41
     loc: sec=h1
     h: 0bf710148ab2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:cooling-fan

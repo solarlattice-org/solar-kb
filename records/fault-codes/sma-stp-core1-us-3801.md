@@ -80,7 +80,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-41-ba-en-12
     loc: sec=h290
     h: f2d5a3b20f78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: has_production_effect
   target: ec:trip

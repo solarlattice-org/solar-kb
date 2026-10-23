@@ -40,7 +40,9 @@ claims:
   - src: src:sma-kb-error-message-3403-dc-overvoltage
     loc: sec=h1
     h: 17910a6f1c18
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array

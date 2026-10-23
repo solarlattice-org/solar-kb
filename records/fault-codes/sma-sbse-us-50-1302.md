@@ -96,7 +96,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h311
     h: 12ba84b8cd7e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:grid-settings-check

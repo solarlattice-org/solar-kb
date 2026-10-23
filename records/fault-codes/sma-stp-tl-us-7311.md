@@ -31,6 +31,8 @@ claims:
     loc: tbl=18.r6
     h: 49ebca7e1476
   review: drafted
+  review_note: 'review: partial - The row states only that updating the language table failed; the note
+    scopes this correctly, but calling it a ''firmware'' update failure…'
 - claim_id: c3
   rel: mitigated_by
   target: mit:retry-update

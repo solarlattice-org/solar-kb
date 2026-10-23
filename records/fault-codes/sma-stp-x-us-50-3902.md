@@ -148,8 +148,8 @@ claims:
     loc: sec=h477
     h: 95bb0df6a1e0
   review: drafted
-  review_note: 'support check: partial - Passages say to ensure the PV module is correctly rated when
-    frequent at medium irradiation, which is only loosely a…'
+  review_note: 'review: partial - The passages say to ensure the PV module is correctly rated when the
+    message appears often at medium irradiation; the scope in…'
 - claim_id: c9
   rel: mitigated_by
   target: mit:firmware-update

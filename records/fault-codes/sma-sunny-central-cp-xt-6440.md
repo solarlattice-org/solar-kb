@@ -29,7 +29,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=36.r20
     h: 64639d75024e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:mv-transformer

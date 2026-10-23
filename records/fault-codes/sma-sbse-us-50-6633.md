@@ -67,7 +67,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h656
     h: c87e8fc90a2c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service

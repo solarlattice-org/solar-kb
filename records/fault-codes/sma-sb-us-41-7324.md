@@ -68,7 +68,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h374
     h: 38838d9d831b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service

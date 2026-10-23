@@ -68,7 +68,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h540
     h: b3b29436b48d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: detected_by
   target: method:dc-voltage-measurement

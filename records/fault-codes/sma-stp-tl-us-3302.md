@@ -37,7 +37,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h524
     h: bf9b5386b1d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:insufficient-irradiance

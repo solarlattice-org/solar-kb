@@ -62,7 +62,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h753
     h: 3aa2c335ba4a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: has_production_effect
   target: ec:trip

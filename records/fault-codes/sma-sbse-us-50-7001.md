@@ -43,7 +43,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h358
     h: b75389760f61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:temperature-sensor

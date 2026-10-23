@@ -52,7 +52,9 @@ claims:
   - src: src:sma-shpxxx-us-21-be-en-11
     loc: sec=h345
     h: 84181f7ce1f3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:choke

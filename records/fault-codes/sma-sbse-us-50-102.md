@@ -40,7 +40,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=h378
     h: 9d464275e542
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Grid voltage or impedance too high; overvoltage is covered only
     as an alternative cause.'
 - claim_id: c3

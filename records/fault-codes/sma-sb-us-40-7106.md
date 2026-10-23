@@ -53,6 +53,8 @@ claims:
     loc: tbl=17.r7
     h: 8a58ca7a7ff2
   review: drafted
+  review_note: 'review: partial - Reformatting the memory card is stated only in tbl=17.r7, which is attributed
+    to c2, and no passage in the chunk is cited…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:update-file-recopy

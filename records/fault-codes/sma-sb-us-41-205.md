@@ -73,7 +73,9 @@ claims:
   - src: src:sma-sbxx-us-1xp-41-ba-en-12
     loc: sec=h214
     h: 5027c6815068
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:grid-settings-check

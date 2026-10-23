@@ -77,7 +77,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h568
     h: 0818fdbe4234
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:ground-conductor-check
