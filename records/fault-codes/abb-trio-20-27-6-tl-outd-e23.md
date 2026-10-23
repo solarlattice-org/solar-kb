@@ -84,5 +84,7 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=40.r5
     h: 12609ae2343d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

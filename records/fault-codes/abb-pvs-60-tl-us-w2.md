@@ -95,7 +95,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=35.r8
     h: 397eafc39e02
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Cause cites incorrect PV generator configuration, but no explicit
     statement that the code affects the PV array component.'
 - claim_id: c6

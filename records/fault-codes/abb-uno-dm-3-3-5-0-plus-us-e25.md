@@ -79,7 +79,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=40.r7
     h: c1518601ae36
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c6
   rel: affects
   target: comp:pv-array
@@ -152,7 +154,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=40.r7
     h: c1518601ae36
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: detected_by
   target: method:insulation-resistance-test

@@ -52,7 +52,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r2
     h: 7071c88636b1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array
@@ -121,7 +123,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r2
     h: 7071c88636b1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Reactivating the system after correcting strings and contacting
     assistance are stated, but manual-reset classification is only implied.'
 ---

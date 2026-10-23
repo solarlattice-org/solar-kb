@@ -132,7 +132,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=38.r3
     h: a644b87ba56c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Power cycle then contact service is stated, but clearing by manual
     reset is not stated.'
 ---

@@ -59,7 +59,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=47.r2
     h: 05b933b68f8a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - W027 is a latch alarm manual reset event, not an error; ''reports
     latched alarm reset'' fits, though it is a…'
 - claim_id: c5

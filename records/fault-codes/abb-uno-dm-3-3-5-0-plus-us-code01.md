@@ -37,8 +37,8 @@ claims:
     loc: tbl=53.r2
     h: 36d14076027d
   review: drafted
-  review_note: 'support check: partial - It is a power limitation due to over-frequency, but described
-    as a user-set derating rather than an actual grid overfrequency report.'
+  review_note: 'review: partial - The row ties the limitation to grid frequency exceeding certain limits,
+    but it describes a user-set over-frequency derating rather than stating that…'
 - claim_id: c3
   rel: has_production_effect
   target: ec:derate

@@ -151,7 +151,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=40.r2
     h: 68d6ef7f3a5e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - A power cycle is advised, but the passages never say the fault
     clears by manual reset. The only follow-up stated…'
 ---

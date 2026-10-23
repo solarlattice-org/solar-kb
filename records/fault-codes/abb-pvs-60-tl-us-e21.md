@@ -99,8 +99,8 @@ claims:
     loc: tbl=40.r3
     h: 24b72e3809f1
   review: drafted
-  review_note: 'support check: partial - The passages say the alarm occurs only before grid connection,
-    but they do not state that production stops or that…'
+  review_note: 'review: partial - The rows say the alarm occurs only before grid connection during internal
+    relay tests, but they never explicitly say that the inverter…'
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-restart

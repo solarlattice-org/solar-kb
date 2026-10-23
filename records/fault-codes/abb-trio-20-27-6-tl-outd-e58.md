@@ -112,7 +112,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=41.r3
     h: 7b9ff7c47725
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Restart is implied as a first step, but the passages don''t say
     it mitigates the fault.'
 - claim_id: c6

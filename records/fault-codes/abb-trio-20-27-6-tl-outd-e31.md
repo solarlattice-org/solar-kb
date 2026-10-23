@@ -103,7 +103,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=40.r2
     h: 6b7bf7963c51
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart

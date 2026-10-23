@@ -108,7 +108,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=37.r8
     h: 8dd0d5c5b1d5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - A power cycle is listed, but the passages do not say a manual
     reset clears the error.'
 ---

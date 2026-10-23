@@ -39,7 +39,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=42.r3
     h: ce5b66c1f3c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Limitation is due to overvoltage of average grid voltage, but
     it is a user-set derating rather than a direct grid…'
 - claim_id: c3
@@ -62,7 +64,9 @@ claims:
   - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
     loc: sec=h262
     h: ff3e2268fa02
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Power limitation with the inverter continuing is stated, but
     warning classification is only implied, not explicit.'
 - claim_id: c4

@@ -68,7 +68,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r11
     h: 87239aebbaf3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: affects
   target: comp:inverter
@@ -114,7 +116,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r11
     h: 87239aebbaf3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Restart is implied as a first step, but the passages don''t say
     it mitigates the fault.'
 - claim_id: c7

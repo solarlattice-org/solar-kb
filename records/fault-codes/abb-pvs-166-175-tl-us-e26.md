@@ -68,7 +68,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=40.r8
     h: 0495b376b60c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-restart

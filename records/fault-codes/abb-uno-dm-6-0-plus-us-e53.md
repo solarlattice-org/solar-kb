@@ -187,7 +187,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r5
     h: 43a11c14d441
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Power cycle then contact assistance is stated, but the passages
     don''t state that the code clears by manual reset.'
 ---

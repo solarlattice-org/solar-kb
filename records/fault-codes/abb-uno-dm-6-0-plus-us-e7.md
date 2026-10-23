@@ -108,8 +108,8 @@ claims:
     loc: tbl=37.r7
     h: a5ef159dc628
   review: drafted
-  review_note: 'support check: partial - The inverter attempts to resume normal operation, which implies
-    an interruption, but a production stop is not stated.'
+  review_note: 'review: partial - The row says active devices saturate and the inverter tries to return
+    to normal operation, which implies an interruption, but it never…'
 - claim_id: c7
   rel: has_recovery
   target: ec:auto-reset

@@ -155,7 +155,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=40.r5
     h: c6d520291519
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say switch off/on and contact assistance if it persists,
     but never state it clears by a manual reset classification…'
 ---

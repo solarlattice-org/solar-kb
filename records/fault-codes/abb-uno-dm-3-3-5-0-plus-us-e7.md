@@ -108,8 +108,8 @@ claims:
     loc: tbl=37.r7
     h: a5ef159dc628
   review: drafted
-  review_note: 'support check: partial - The inverter attempts to resume normal operation, which implies
-    an interruption, but a production stop is not stated.'
+  review_note: 'review: partial - The rows say that after IGBT saturation the inverter tries to return
+    to normal operation, which implies an interruption, but they never…'
 - claim_id: c7
   rel: has_recovery
   target: ec:auto-reset

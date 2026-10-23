@@ -59,7 +59,9 @@ claims:
   - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
     loc: sec=h262
     h: ff3e2268fa02
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - The device continues operating with a limitation (warning-like),
     but a warning class isn''t explicitly stated.'
 - claim_id: c4
@@ -79,7 +81,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=43.r1
     h: 9ae96d6226d6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service

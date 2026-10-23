@@ -93,7 +93,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=40.r8
     h: 14cf6e94d6c6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Detection is by voltage across grounding resistor; insulation
     measurement with megohmmeter is a troubleshooting step, not the detection method.'
 - claim_id: c7

@@ -94,7 +94,9 @@ claims:
   - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
     loc: tbl=49.r9
     h: c047ef4e4a9b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Power cycle then contact assistance stated, but manual-reset
     clearing not explicit.'
 ---

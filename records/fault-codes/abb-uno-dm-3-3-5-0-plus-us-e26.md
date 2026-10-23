@@ -101,7 +101,9 @@ claims:
   - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
     loc: tbl=48.r4
     h: 4bfe04b40583
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: has_recovery
   target: ec:manual-reset

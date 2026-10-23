@@ -102,8 +102,8 @@ claims:
     loc: tbl=40.r1
     h: e25692e30293
   review: drafted
-  review_note: 'support check: partial - The passages say the alarm occurs only before grid connection.
-    They do not state that the inverter trips or does…'
+  review_note: 'review: partial - The passages say the self-test runs before grid connection and the alarm
+    only occurs then, but they never say the inverter is…'
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-restart

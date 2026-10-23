@@ -54,7 +54,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=45.r5
     h: 8883ba67bd06
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: detected_by
   target: method:grid-frequency-measurement
