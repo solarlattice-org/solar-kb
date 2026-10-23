@@ -75,7 +75,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: sec=7.1.2
     h: 796c028bf931
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The inverter shuts down on faults such as grid overvoltage/undervoltage,
     which implies a trip, but the row itself doesn''t say…'
 - claim_id: c8

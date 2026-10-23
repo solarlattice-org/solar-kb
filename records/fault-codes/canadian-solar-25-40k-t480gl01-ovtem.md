@@ -55,7 +55,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=10.r2
     h: 98bb900b2b7d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: detected_by
   target: method:ambient-temperature-check

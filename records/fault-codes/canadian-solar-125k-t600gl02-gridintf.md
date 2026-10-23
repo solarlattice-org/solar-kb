@@ -92,7 +92,9 @@ claims:
   - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=8
     h: b80e6cf9a87a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - It is in the Table 8.1 Fault messages, but the passage does not
     state the device behavior (stops or needs…'
 ---

@@ -33,7 +33,9 @@ claims:
   - src: src:csi-csi-manual-50-66ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=9.r2
     h: 4c094ee77fda
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:digital-signal-processor

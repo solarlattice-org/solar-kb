@@ -48,7 +48,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=28.r1
     h: d52a5f9167e8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The cause is poor contact at the terminal block connectors of
     the internal communication wires, which only loosely maps to…'
 - claim_id: c5

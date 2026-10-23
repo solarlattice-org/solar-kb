@@ -134,4 +134,6 @@ claims:
     loc: tbl=10.r3
     h: 7ee4aa6d1521
   review: drafted
+  review_note: 'review: partial - The cited rows list ''Replace inverter'' as the last step after the
+    insulation and cable checks, but they never say it applies…'
 ---

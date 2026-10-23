@@ -32,7 +32,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=13.r2
     h: 818653051fdb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:digital-signal-processor
@@ -56,7 +58,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=13.r2
     h: 818653051fdb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_event_class
   target: ec:fault

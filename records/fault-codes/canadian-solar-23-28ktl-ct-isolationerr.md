@@ -40,7 +40,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=30.r4
     h: c3524b17b912
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array

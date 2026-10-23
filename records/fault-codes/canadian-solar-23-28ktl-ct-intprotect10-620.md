@@ -42,7 +42,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=31.r3
     h: 59a050772ba7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:inverter
@@ -62,7 +64,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: sec=7.1.2
     h: 796c028bf931
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The general text says the inverter shuts down automatically on
     failure and the row is a protection-type fault. The row…'
 - claim_id: c6

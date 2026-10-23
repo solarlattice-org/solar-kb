@@ -78,8 +78,8 @@ claims:
     loc: sec=7.1.2
     h: 796c028bf931
   review: drafted
-  review_note: 'support check: partial - The general text says the inverter shuts down on faults, but
-    the row does not explicitly state a trip.'
+  review_note: 'review: partial - Section 7.1.2 says the inverter shuts down automatically on system faults,
+    and protection is one of the fault types, but the GFCIErr…'
 - claim_id: c8
   rel: has_recovery
   target: ec:auto-reset

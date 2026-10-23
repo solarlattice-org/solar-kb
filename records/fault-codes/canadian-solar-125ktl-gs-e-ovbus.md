@@ -63,7 +63,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=12.r10
     h: 29b90f8a67cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passage says check inverter inductor connection, which implies
     but does not state the choke is affected.'
 - claim_id: c5

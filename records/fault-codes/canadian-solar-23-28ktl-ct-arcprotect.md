@@ -48,7 +48,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=31.r1
     h: 130d15b275c1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: affects
   target: comp:dc-cable

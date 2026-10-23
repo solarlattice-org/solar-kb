@@ -38,7 +38,9 @@ claims:
   - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
     loc: tbl=11.r6
     h: bb5d5cfa2d3d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-disconnect-switch

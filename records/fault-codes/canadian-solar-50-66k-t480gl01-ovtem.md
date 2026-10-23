@@ -100,7 +100,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=12.r18
     h: 828829faa49d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:direct-sun-avoidance

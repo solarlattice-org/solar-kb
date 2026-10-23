@@ -102,5 +102,7 @@ claims:
   - src: src:csi-csi-installation-manual-50-66k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=13.r4
     h: d72ef23dec5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

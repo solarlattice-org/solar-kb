@@ -41,7 +41,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=12.r10
     h: 29b90f8a67cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:dc-voltage-measurement
@@ -102,5 +104,7 @@ claims:
   - src: src:csi-csi-installation-manual-50-66k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=13.r4
     h: d72ef23dec5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

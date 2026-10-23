@@ -78,6 +78,6 @@ claims:
     loc: sec=7.1.2
     h: 796c028bf931
   review: drafted
-  review_note: 'support check: partial - The general text says the inverter shuts down on faults, but
-    the row does not state production stops for this code.'
+  review_note: 'review: partial - Only the general section 7.1.2 text says the inverter shuts down on
+    faults; the PV1 (2) Reverse row itself says nothing about…'
 ---

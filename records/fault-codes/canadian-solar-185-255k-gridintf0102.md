@@ -68,7 +68,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: sec=9
     h: 1773bd293847
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Row requires intervention (restart, board replacement) implying
     fault, but the class is not explicitly stated.'
 - claim_id: c7

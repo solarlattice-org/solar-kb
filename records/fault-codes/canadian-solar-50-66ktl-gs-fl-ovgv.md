@@ -44,7 +44,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=9.r3
     h: 52c3fd63f040
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:grid-voltage-measurement

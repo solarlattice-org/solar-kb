@@ -38,7 +38,9 @@ claims:
   - src: src:csi-csi-installation-manual-50-66k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=14.r1
     h: dc004aa7f58f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:waveform-spectrum-analysis
@@ -81,7 +83,9 @@ claims:
   - src: src:csi-csi-installation-manual-50-66k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=14.r1
     h: dc004aa7f58f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_event_class
   target: ec:fault
@@ -92,7 +96,9 @@ claims:
   - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=8
     h: b80e6cf9a87a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - It is in the Table 8.1 Fault messages, but the passage does not
     state the device behavior (stops or needs…'
 ---

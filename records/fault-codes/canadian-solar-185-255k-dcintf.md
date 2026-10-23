@@ -83,7 +83,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: sec=9
     h: 1773bd293847
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Row is in a fault message table and implies a fault (overcurrent,
     intervention needed), but classification isn''t explicitly stated for…'
 - claim_id: c9
@@ -94,7 +96,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=12.r15
     h: eae16f7d5f0f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Restart inverter is listed first, then string removal, then power
     board change; but calling it manual-reset clearing is an inference,…'
 ---

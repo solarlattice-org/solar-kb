@@ -85,7 +85,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: sec=7.1.2
     h: 796c028bf931
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - The general text says the inverter shuts down automatically on
     faults like grid malfunction, but the row does not explicitly…'
 - claim_id: c9
@@ -96,5 +98,7 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=29.r2
     h: 104b0540aea5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
