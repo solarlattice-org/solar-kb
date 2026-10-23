@@ -12,4 +12,6 @@ Power supply replacement means removing a faulty internal power supply board fro
 - sentence 1: support check: partial - Titles show instructions for replacing the power supply board, but nothing states it means removing a faulty board to correct an internal power supply fault.
 - sentence 2: support check: partial - The instruction titles and part UTC001400 are present, but the passages never name Yaskawa Solectria as publisher.
 - sentence 7: support check: partial - Passage gives checks of internal/external supply switches and terminal tightness for the control power supply fault, but doesn't say 'before you replace anything' or that simple setting/wiring problems cause the same fault.
+- sentence 1: review: partial - The cited titles only describe replacing a power supply board; they say nothing about the board being faulty or the replacement fixing an internal power supply fault.
+- sentence 7: review: partial - The Sungrow row lists the switch and terminal checks for the control power supply fault, but it never says to do them before replacing anything or that a setting or wiring problem can cause the same fault.
 -->

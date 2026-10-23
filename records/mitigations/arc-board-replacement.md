@@ -7,4 +7,5 @@ Arc board replacement means swapping out the inverter's arc detection board, or 
 
 <!-- review notes
 - sentence 6: support check: partial - Passages say an arc board failure keeps the inverter off-grid until the board is OK and an arc fault can only be cleared manually, but not explicitly that replacing the board restores grid connection (only implied).
+- sentence 1: review: partial - The rows support replacing the arc board or wiring box as the last step for ARC Protect and Arcboard Err, but they never say the wiring box holds the board and never name Solectria (the sources are Yaskawa).
 -->

@@ -9,4 +9,5 @@ Replacing the control board is a corrective step for the CPLD fault, reported as
 
 <!-- review notes
 - sentence 6: support check: partial - The transcript says to disconnect from power, secure against re-switching on, and check absence of voltage with a suitable device, but it is for a KP Assembly Board replacement, not general SMA board-swap training.
+- sentence 1: review: partial - Every row lists replacing the Control Board (or the inverter) as the fix for Fault0060 CPLD Fault on CPS inverters, but the 'three-phase string' scope is not stated.
 -->

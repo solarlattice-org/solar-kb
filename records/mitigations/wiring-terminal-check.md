@@ -11,4 +11,5 @@ A wiring and terminal check means inspecting cable connections and terminal scre
 
 <!-- review notes
 - sentence 8: support check: partial - The passage says to contact SMA Service if the wiring check and fan test steps don't resolve the issue, but the generic claim that a check does not always clear the fault is only implied.
+- sentence 1: review: partial - The passages list PV, AC, communication and grounding terminals, AC tug/strand/torque checks, and tightening or repairing loose or damaged cables, but they do not mention correcting wrongly connected wiring.
 -->

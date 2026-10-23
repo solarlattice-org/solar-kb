@@ -10,4 +10,5 @@ SPD module reseating means pulling the plug-in surge protection module out of it
 - sentence 4: support check: partial - Red means replace the SPD module, but the passages never say reseating won't help.
 - sentence 5: support check: partial - The passages cover red LEDs with an audible alarm, a significant surge event or compromised protection as causes, and replacement as the fix. They don't say the condition applies only to stand-alone SPDs, and some rows describe it as a neutral/ground or phase condition.
 - sentence 7: support check: partial - The passages say to contact post-sales service if not corrected, but only some rows say this. Warn0100 in u21 and in the Warn0100 line of u17 omit it.
+- sentence 4: review: partial - The rows say a red indicator means replace the SPD module, but they never say that reseating will not help.
 -->

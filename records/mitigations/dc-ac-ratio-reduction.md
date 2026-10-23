@@ -8,4 +8,6 @@ DC to AC ratio reduction means designing or reconfiguring the array so that the 
 <!-- review notes
 - sentence 1: support check: partial - Passages say the recommended DC/AC ratio must be observed when sizing, but don't define 'DC to AC ratio reduction' as designing/reconfiguring to stay within the recommended ratio.
 - sentence 7: support check: partial - Diminishing value above 3% clipping is stated, but the passage doesn't say a lower ratio cuts clipping losses (implied only by the clipping/ratio relation).
+- sentence 1: review: partial - The passages say the recommended DC/AC ratio must be observed when sizing strings, but they never define the mitigation as designing or reconfiguring the array to stay within it.
+- sentence 7: review: partial - The diminishing value above 3% clipping is stated, but the passage never says outright that a lower ratio cuts clipping losses.
 -->

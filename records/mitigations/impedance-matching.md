@@ -11,4 +11,5 @@ Grid impedance matching means checking and correcting the impedance between the 
 - sentence 1: support check: partial - Passages discuss grid impedance limits and recommendations but never define 'grid impedance matching' as checking and correcting impedance so the inverter sees a stable grid; only GRID-INTF mentions an 'impedance matching adjustment or box'.
 - sentence 4: support check: partial - The steps are listed, but 'harmonic distortion' for THD is a paraphrase and the passage does not specify measuring AC voltage in either switch state or the exact ordering, so the sequence is somewhat inferred.
 - sentence 7: support check: partial - Internal damage and a loose wire are listed as separate causes or checks, but the passage does not say that impedance matching cannot fix them.
+- sentence 7: review: partial - The row lists internal damage and a wire loose from shipping as separate items, but it never says impedance matching cannot fix them.
 -->

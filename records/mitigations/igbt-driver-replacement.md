@@ -9,4 +9,5 @@ On Sungrow central inverters, a major Module Fault is raised when the drive boar
 - sentence 1: support check: partial - Passage gives the Module Fault explanation and Major severity, but doesn't mention replacing the driver board as the remedy, so that claim isn't stated.
 - sentence 2: support check: partial - The three checks are listed as measures, but the passage doesn't frame them as steps before board replacement, and 'visible damage' paraphrases 'appearances are normal'.
 - sentence 5: support check: partial - Two technicians (one holds, one secures from the front) is stated, but only some screws have torque values given and one snubber screw is explicitly not torqued, so 'every screw torqued' is overstated.
+- sentence 1: review: partial - The Module Fault row supports the first sentence (Major severity, drive board faulty or hardware overcurrent), but it never says that replacing the driver board addresses this fault.
 -->

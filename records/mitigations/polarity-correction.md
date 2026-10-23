@@ -11,4 +11,5 @@ String polarity correction means reconnecting a string whose positive and negati
 <!-- review notes
 - sentence 1: support check: partial - Sungrow, Huawei and Solis reverse-connection cases are in the passages, but the Huawei "warning" classification and the claim that correction clears the codes are not stated (they only give a symptom and suggestion).
 - sentence 8: support check: partial - The passage says equipment damage from reversed polarity with the DC switch on, and from unplugging or switching off immediately, is beyond the warranty scope; it does not say this about the whole procedure.
+- sentence 1: review: partial - The Sungrow string/MPPT reverse codes, the Huawei reversed-string symptom and the Solis Reve-DC alarm are all cited with polarity correction as the fix, but no passage calls the Huawei item a 'warning'.
 -->

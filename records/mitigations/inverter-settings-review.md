@@ -8,4 +8,5 @@ An inverter settings review means checking that the inverter's configured parame
 <!-- review notes
 - sentence 1: support check: partial - Passages support checking N-line setting against actual connection, but not a general definition of an inverter settings review covering wiring and operation.
 - sentence 2: support check: partial - The Modbus map lists Fault7030 at level 'Trip Fault 7', but nothing says a wrong setting can stop production.
+- sentence 1: review: partial - The passages support checking that the N-line connection setting matches the actual N-line wiring, but not a general definition that covers all configured parameters and how the site is operated.
 -->

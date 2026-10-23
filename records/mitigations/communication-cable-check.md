@@ -9,4 +9,5 @@ A communication cable check means inspecting the communication cable and its ter
 - sentence 3: support check: partial - Reconnecting the meter cable and contacting service if the alarm persists are stated, but the measure is to reconnect after the check (fixing any abnormality), not specifically 'if cable looks fine'; the sequence is broadly consistent but the condition is slightly reframed.
 - sentence 4: support check: partial - Warn0020 CAN Comm Abn with poor contact at internal communication wire terminal blocks is stated, but the passages do not mention CPS three-phase inverters by name.
 - sentence 6: support check: partial - The notice says cables over 10 m risk disconnection and a single inverter needs one RS485 cable, but the passages do not attribute the warning to Sungrow by name.
+- sentence 4: review: partial - The CPS row ties Warn0020 CAN Comm Abn to poor contact at the terminal blocks of internal communication wires, but nothing in the passages scopes it to 'three-phase' inverters.
 -->
