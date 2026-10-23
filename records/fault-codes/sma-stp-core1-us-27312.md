@@ -31,9 +31,17 @@ claims:
     h: 893ec12aeb75
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r13
+    h: 893ec12aeb75
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
-  note: Status confirmation that the update completed.
+  note: Update completed successfully.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=26.r13
@@ -41,5 +49,17 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r13
     h: 893ec12aeb75
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r13
+    h: 893ec12aeb75
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.103
+    h: 77af3e7f0688
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h570
+    h: b3b15fb60d17
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h571
+    h: 7670cc91e9b9
   review: drafted
 ---

@@ -31,24 +31,13 @@ claims:
     h: bca34e0cf6a4
   review: drafted
 - claim_id: c3
-  rel: has_event_class
-  target: ec:fault
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=18.r11
-    h: bca34e0cf6a4
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=18.r12
-    h: c4cb08b4f931
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=7.r11
-    h: bca34e0cf6a4
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=7.r12
-    h: c4cb08b4f931
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r11
+    h: 2c22964071d2
   review: drafted
-  review_note: 'support check: partial - Cause must be determined by Service; fault classification is
-    implied but not stated.'
 - claim_id: c4
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -65,6 +54,12 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r12
     h: c4cb08b4f931
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r11
+    h: 2c22964071d2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r12
+    h: 8527efe94394
   review: drafted
 - claim_id: c5
   rel: has_recovery
@@ -82,5 +77,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r12
     h: c4cb08b4f931
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r11
+    h: 2c22964071d2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r12
+    h: 8527efe94394
   review: drafted
 ---

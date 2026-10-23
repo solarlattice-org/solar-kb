@@ -31,14 +31,26 @@ claims:
     h: e0e401f55595
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r7
+    h: e0e401f55595
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
+  note: Reports measured disconnection time during a protection test run.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=26.r7
     h: e0e401f55595
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r7
+    h: e0e401f55595
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r7
     h: e0e401f55595
   review: drafted
 ---

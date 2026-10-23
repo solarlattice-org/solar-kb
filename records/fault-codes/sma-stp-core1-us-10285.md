@@ -38,4 +38,52 @@ claims:
     loc: sec=h238
     h: d3a655b7df20
   review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h312
+    h: 1ac9890a9d94
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h313
+    h: d3a655b7df20
+  review: drafted
+- claim_id: c4
+  rel: has_event_class
+  target: ec:informational
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h321
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h238
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h313
+    h: d3a655b7df20
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h497
+    h: a5ec30164225
+  review: drafted
+- claim_id: c5
+  rel: has_production_effect
+  target: ec:no-production-effect
+  note: Status message confirming Wi-Fi link establishment.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h321
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h238
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h313
+    h: d3a655b7df20
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h497
+    h: a5ec30164225
+  review: drafted
+  review_note: 'support check: partial - The passages say only that the connection was established, and
+    say nothing about production effect, though it is plausibly none.'
 ---

@@ -31,6 +31,14 @@ claims:
     h: 417f30a6fb06
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r10
+    h: 417f30a6fb06
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:firmware-update-failure
   cite:
@@ -40,10 +48,25 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r10
     h: 417f30a6fb06
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r10
+    h: 417f30a6fb06
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=18.r3
+    h: 2916d0bca0f3
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r4
+    h: 24fe6af1e29f
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h342
+    h: e75a5be9e1aa
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h367
+    h: e75a5be9e1aa
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c4
+- claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service
   cite:
@@ -53,18 +76,21 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r10
     h: 417f30a6fb06
-  review: drafted
-- claim_id: c5
-  rel: has_event_class
-  target: ec:fault
-  note: Cause must be determined by service, so intervention is needed.
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=19.r10
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r10
     h: 417f30a6fb06
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=8.r10
-    h: 417f30a6fb06
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=18.r3
+    h: 2916d0bca0f3
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r4
+    h: 24fe6af1e29f
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h344
+    h: 417f2f122215
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h369
+    h: 417f2f122215
   review: drafted
 - claim_id: c6
   rel: has_recovery
@@ -76,5 +102,26 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r10
     h: 417f30a6fb06
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r10
+    h: 417f30a6fb06
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=18.r3
+    h: 2916d0bca0f3
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r4
+    h: 24fe6af1e29f
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h343
+    h: cca77e1e7cd3
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h344
+    h: 417f2f122215
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h368
+    h: cca77e1e7cd3
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h369
+    h: 417f2f122215
   review: drafted
 ---

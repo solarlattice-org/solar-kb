@@ -38,4 +38,44 @@ claims:
     loc: sec=h185
     h: f30261362a74
   review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h269
+    h: 7813c2069e80
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h270
+    h: f30261362a74
+  review: drafted
+- claim_id: c4
+  rel: reports
+  target: symptom:firmware-update-failure
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h268
+    h: f30261362a74
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h185
+    h: f30261362a74
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h270
+    h: f30261362a74
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:retry-update
+  note: Contact service if the message reappears after retry.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h269
+    h: 2b6216ee121d
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h186
+    h: 2b6216ee121d
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h271
+    h: 2b6216ee121d
+  review: drafted
 ---
