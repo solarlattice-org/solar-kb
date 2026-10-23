@@ -51,7 +51,9 @@ claims:
   - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
     loc: tbl=17
     h: 2977d7d89391
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:cooling-fan

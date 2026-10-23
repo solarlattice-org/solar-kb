@@ -134,7 +134,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: tbl=19.r3
     h: 2ba4661036f5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Power cycle and firmware update are stated, but clearing by manual
     reset is only implied.'
 ---

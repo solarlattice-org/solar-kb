@@ -59,7 +59,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: tbl=37.r7
     h: 28f6dfb6f638
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-replacement

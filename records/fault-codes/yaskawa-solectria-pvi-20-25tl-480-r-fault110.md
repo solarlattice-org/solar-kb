@@ -43,6 +43,8 @@ claims:
     loc: tbl=38.r2
     h: 93045c3d2bf3
   review: drafted
+  review_note: 'review: partial - The row says only ''Bus imbalance'' and links it to impedance and voltage
+    imbalance between grid phases, so ''DC bus voltage'' adds…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-parameter-change

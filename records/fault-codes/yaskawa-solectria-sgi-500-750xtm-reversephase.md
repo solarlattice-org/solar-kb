@@ -51,7 +51,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=32.r13
     h: 1e53ae5f741f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:phase-sequence-correction
@@ -59,5 +61,7 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=32.r13
     h: 1e53ae5f741f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

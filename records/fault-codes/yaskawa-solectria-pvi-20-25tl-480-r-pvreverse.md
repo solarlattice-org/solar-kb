@@ -32,7 +32,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: tbl=37.r4
     h: 44bbc5349a34
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:pv-array

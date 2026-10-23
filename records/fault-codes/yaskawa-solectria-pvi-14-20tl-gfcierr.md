@@ -61,7 +61,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: tbl=36.r5
     h: 966dd7a51877
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: indicates
   target: fm:insulation-loss

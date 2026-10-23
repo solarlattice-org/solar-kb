@@ -66,6 +66,8 @@ claims:
     loc: sec=h151
     h: b0c738d81358
   review: drafted
+  review_note: 'review: partial - The cited sec 9.1.2 does say warning events always stop AC production,
+    but it is the non-1MW manual''s section (it introduces Table…'
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset

@@ -71,7 +71,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: sec=h151
     h: b0c738d81358
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset

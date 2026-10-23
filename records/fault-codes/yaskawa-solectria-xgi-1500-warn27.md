@@ -79,7 +79,9 @@ claims:
   - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
     loc: tbl=20.r1
     h: 1114cf32932e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Communication processor hardware fault implies an internal fault,
     but ''internal device fault'' is not explicit.'
 - claim_id: c6

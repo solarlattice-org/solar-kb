@@ -51,7 +51,9 @@ claims:
   - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
     loc: tbl=18.r1
     h: 97295ce050bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_production_effect
   target: ec:trip

@@ -55,6 +55,6 @@ claims:
     loc: tbl=31.r1
     h: ba25ddcd4c52
   review: drafted
-  review_note: 'support check: partial - Grid loss implies interruption, but the row does not state that
-    production stops or that the inverter trips.'
+  review_note: 'review: partial - The row says ''Temporary loss of grid'', which implies the inverter
+    stops feeding in, but it never says production stops or that…'
 ---

@@ -34,7 +34,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=32.r9
     h: ecedecd53baf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:inverter-bridge

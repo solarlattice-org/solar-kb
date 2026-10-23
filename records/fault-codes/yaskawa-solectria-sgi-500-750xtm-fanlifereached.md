@@ -46,7 +46,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=31.r10
     h: 77ffd9151c45
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:cooling-fan

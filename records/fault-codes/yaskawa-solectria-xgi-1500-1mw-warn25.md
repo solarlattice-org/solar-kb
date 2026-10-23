@@ -67,7 +67,9 @@ claims:
   - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
     loc: tbl=19.r8
     h: 3aba5cfd6070
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-restart
@@ -92,7 +94,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: sec=9.1.2
     h: 03d6c2913989
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: has_recovery
   target: ec:manual-reset

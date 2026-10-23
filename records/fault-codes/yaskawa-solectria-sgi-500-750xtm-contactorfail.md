@@ -42,7 +42,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=30.r1
     h: 3af90367bdf1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault
@@ -81,7 +83,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=30.r1
     h: 3af90367bdf1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Restart is the corrective action, but clearing by it isn''t explicitly
     stated.'
 ---

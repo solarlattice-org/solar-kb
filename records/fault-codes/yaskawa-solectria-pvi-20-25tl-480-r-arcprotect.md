@@ -34,6 +34,8 @@ claims:
     loc: tbl=14.r5
     h: 0a7c5910d375
   review: drafted
+  review_note: 'review: partial - The cited rows do describe a shutdown over a possible arc fault, but
+    they are the PVI-14-20TL table rows (tbl=20.r1, tbl=14.r5), while…'
 - claim_id: c3
   rel: indicates
   target: fm:arc-fault

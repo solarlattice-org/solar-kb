@@ -37,7 +37,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: sec=12.2
     h: 36342d216ed4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Informative section defines messages as status info, but the
     row itself isn''t explicitly stated as listed there; corrective action involves…'
 - claim_id: c3

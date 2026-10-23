@@ -48,7 +48,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: tbl=19.r7
     h: 2731f0fff08f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: indicates
   target: fm:power-stage-fault

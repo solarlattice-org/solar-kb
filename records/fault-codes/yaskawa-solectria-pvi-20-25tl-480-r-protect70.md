@@ -43,6 +43,8 @@ claims:
     loc: tbl=35.r2
     h: 2f120d311abe
   review: drafted
+  review_note: 'review: partial - The row names the code ''Bus imbalance'' but never says DC bus voltage;
+    it only mentions impedance and voltage imbalance between grid…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-parameter-change

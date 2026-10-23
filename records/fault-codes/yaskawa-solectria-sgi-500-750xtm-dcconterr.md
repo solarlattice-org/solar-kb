@@ -38,8 +38,8 @@ claims:
     loc: sec=12.2
     h: 36342d216ed4
   review: drafted
-  review_note: 'support check: partial - The row is in informative messages, but a contactor failure needing
-    service reads as a fault, so the informational class…'
+  review_note: 'review: partial - The vendor files this under Informative messages (sec 12.2, status information),
+    but the row describes a contactor failure that needs a service…'
 - claim_id: c3
   rel: reports
   target: symptom:dc-contactor-stuck
@@ -47,7 +47,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=31.r3
     h: 2c57a7643e44
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:dc-contactor

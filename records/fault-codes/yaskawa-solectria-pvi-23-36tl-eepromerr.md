@@ -45,7 +45,9 @@ claims:
   - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
     loc: tbl=11.r4
     h: 3ae09badb452
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:memory-unit
@@ -68,7 +70,9 @@ claims:
   - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
     loc: tbl=11.r5
     h: 7dcca451f1c1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_recovery
   target: ec:auto-reset

@@ -55,8 +55,8 @@ claims:
     loc: tbl=31.r6
     h: 1e507912a458
   review: drafted
-  review_note: 'support check: partial - Waiting for DC power implies not feeding in, but production stop/trip
-    is not explicitly stated.'
+  review_note: 'review: partial - ''Inverter waiting for more DC power'', with no action needed, implies
+    it is not feeding in, but the row reads as a…'
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset
