@@ -114,7 +114,9 @@ claims:
   - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
     loc: tbl=35.r1
     h: 3f0a2a621e5d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-replacement

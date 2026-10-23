@@ -43,7 +43,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=69
     h: ea31ef6dd96a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Listed as hardware fault requiring restart, implying fault, but
     not explicitly classified.'
 - claim_id: c4

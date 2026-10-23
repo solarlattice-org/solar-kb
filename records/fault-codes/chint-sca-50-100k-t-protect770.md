@@ -52,7 +52,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=59.r3
     h: dd24c0d1f325
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Arc communication abnormal implies arc detection board but the
     component isn''t explicitly named.'
 - claim_id: c5

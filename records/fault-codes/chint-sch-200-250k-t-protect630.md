@@ -78,7 +78,9 @@ claims:
   - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
     loc: tbl=43.r6
     h: 6ba69e5e3533
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: mitigated_by
   target: mit:cable-replacement

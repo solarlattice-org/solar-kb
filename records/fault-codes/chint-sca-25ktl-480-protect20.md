@@ -57,7 +57,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=34.r3
     h: cee358a50948
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The code is labelled grid relay error, but relay failure as a
     failure mode is only implied by the label.'
 - claim_id: c4

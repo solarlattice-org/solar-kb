@@ -57,7 +57,9 @@ claims:
   - src: src:chint-cps-25kw-user-manual-rev-2-1
     loc: tbl=57.r6
     h: 70f2eb9f0ea2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages describe DCI sampling offset, which is approximately
     a current sensor offset, but the wording differs.'
 - claim_id: c4

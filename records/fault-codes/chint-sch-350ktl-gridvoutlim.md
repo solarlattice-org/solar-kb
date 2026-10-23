@@ -97,8 +97,8 @@ claims:
     loc: tbl=34.r12
     h: 44a791cf9744
   review: drafted
-  review_note: 'support check: partial - Restart instruction implies stoppage but passages never state
-    that feed-in stops or that it is a trip.'
+  review_note: 'review: partial - The cited row only says ''Restart the inverter again'' (Protection type
+    elsewhere), which suggests a stop but never says production stops or…'
 - claim_id: c6
   rel: has_recovery
   target: ec:manual-reset

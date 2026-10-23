@@ -63,7 +63,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=35.r1
     h: ffdec9ffbb70
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:cooling-fan

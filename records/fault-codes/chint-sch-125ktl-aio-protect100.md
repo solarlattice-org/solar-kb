@@ -60,7 +60,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=34.r6
     h: a24a0da56dc8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:ground-fault-detector
@@ -153,7 +155,8 @@ claims:
     loc: tbl=34.r6
     h: a24a0da56dc8
   review: drafted
-  review_note: 'support check: partial - The passages give no explicit stop or trip behaviour for Protect0100.'
+  review_note: 'review: partial - The rows require a restart and possibly a filter board or inverter replacement,
+    but none of them says that production stops or…'
 - claim_id: c9
   rel: has_recovery
   target: ec:manual-reset

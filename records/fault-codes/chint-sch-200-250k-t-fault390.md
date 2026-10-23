@@ -52,6 +52,8 @@ claims:
     loc: tbl=44.r5
     h: c7752bd65e8e
   review: drafted
+  review_note: 'review: partial - The row lists the code as a hardware fault that needs a power cycle
+    or inverter replacement, but it never says production…'
 - claim_id: c5
   rel: has_recovery
   target: ec:manual-reset

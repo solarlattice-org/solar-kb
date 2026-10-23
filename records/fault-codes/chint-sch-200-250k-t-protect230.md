@@ -135,7 +135,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=52
     h: a81a2643c1b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
     but nothing says it clears only by manual reset; plausibly implied…'
 ---

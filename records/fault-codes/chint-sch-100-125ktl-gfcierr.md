@@ -190,6 +190,6 @@ claims:
     loc: tbl=42.r8
     h: 22c9d8acfe1c
   review: drafted
-  review_note: 'support check: partial - The passages give no statement that production stops or the inverter
-    trips for GFCIErr; only a protection type and troubleshooting…'
+  review_note: 'review: partial - The passages give GFCIErr the Protection type and string-isolation troubleshooting
+    steps, but none of them says the inverter trips or that production…'
 ---

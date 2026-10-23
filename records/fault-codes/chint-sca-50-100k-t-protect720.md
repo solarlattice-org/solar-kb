@@ -43,8 +43,8 @@ claims:
     loc: tbl=58.r5
     h: 66d96188afa7
   review: drafted
-  review_note: 'support check: partial - Product model exception loosely suggests a configuration error
-    but it isn''t explicitly stated.'
+  review_note: 'review: partial - The row only says ''Product Model Exception'' with a restart remedy;
+    reading that as a configuration error is plausible, but the row…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-restart

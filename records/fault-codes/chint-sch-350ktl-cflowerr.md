@@ -43,7 +43,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: sec=h143
     h: 1a6d43333022
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Only a table title ''Warning Faults'' is cited, with no row showing
     CfLowErr in it; classification not clearly tied to…'
 - claim_id: c4

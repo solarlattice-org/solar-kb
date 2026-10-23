@@ -153,7 +153,8 @@ claims:
     loc: tbl=34.r6
     h: a24a0da56dc8
   review: drafted
-  review_note: 'support check: partial - The passages give no explicit stop or trip behaviour for Protect0100.'
+  review_note: 'review: partial - The rows give only the restart and replace-if-persistent fix and say
+    nothing explicit about tripping or production stopping.'
 - claim_id: c9
   rel: has_recovery
   target: ec:manual-reset

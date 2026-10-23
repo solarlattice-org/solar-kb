@@ -53,8 +53,8 @@ claims:
     loc: tbl=25.r1
     h: 3e69f4301b13
   review: drafted
-  review_note: 'support check: partial - Passages only say ''Internal alarm'' with the EepromErr label;
-    ''data storage failure'' is an inference, though the statement''s note admits this.'
+  review_note: 'review: partial - The passages give only ''Eeprom Fault'' / EepromErr with the definition
+    ''internal alarm'', so ''data storage failure'' is a reasonable inference from…'
 - claim_id: c4
   rel: has_recovery
   target: ec:auto-reset

@@ -54,7 +54,9 @@ claims:
   - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
     loc: tbl=26.r2
     h: 695c0ef30443
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:inverter

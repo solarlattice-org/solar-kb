@@ -35,7 +35,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=69
     h: ea31ef6dd96a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Row is in a Hardware Faults table and requires intervention (restart),
     implying fault, but no explicit classification is stated.'
 - claim_id: c3
@@ -46,6 +48,8 @@ claims:
     loc: tbl=70.r1
     h: eb8005ab1ad3
   review: drafted
+  review_note: 'review: partial - The row states a boost hardware overcurrent, but nothing in the passages
+    says the current is on the DC side, so ''DC…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-restart

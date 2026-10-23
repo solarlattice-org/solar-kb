@@ -43,6 +43,8 @@ claims:
     loc: tbl=68.r5
     h: 698eb7c22fe3
   review: drafted
+  review_note: 'review: partial - The row supports an SVG voltage stability alarm, but nothing in the
+    quoted passages says SVG means reactive compensation, so that reading…'
 - claim_id: c4
   rel: has_recovery
   target: ec:auto-reset

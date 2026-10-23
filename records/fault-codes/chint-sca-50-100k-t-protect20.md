@@ -107,8 +107,8 @@ claims:
     loc: tbl=34.r3
     h: cee358a50948
   review: drafted
-  review_note: 'support check: partial - Power cycle and replacement instructions imply stoppage, but
-    a trip is not stated.'
+  review_note: 'review: partial - The grid-relay-error rows prescribe a power cycle and inverter replacement,
+    which suggests the inverter stops, but no passage says production stops or…'
 - claim_id: c6
   rel: has_recovery
   target: ec:manual-reset

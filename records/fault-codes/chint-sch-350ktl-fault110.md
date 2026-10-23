@@ -58,8 +58,8 @@ claims:
     loc: tbl=36.r6
     h: 57ffb0fe11e4
   review: drafted
-  review_note: 'support check: partial - Fault0110 is ''Bus imbalance'' with grid phase imbalance mentioned,
-    but neutral point voltage imbalance isn''t explicitly stated.'
+  review_note: 'review: partial - The cited rows name the fault ''bus imbalance'' and mention impedance
+    and voltage imbalance between grid phases, but none of them say…'
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-parameter-change
@@ -83,7 +83,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=36.r6
     h: 57ffb0fe11e4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-replacement
