@@ -1,0 +1,156 @@
+---
+id: fc:abb-trio-20-27-6-tl-outd-e30
+type: FaultCode
+name: ABB / FIMER TRIO-20.0-27.6-TL E030
+aliases:
+- E030
+- e30
+- ABB / FIMER E030
+- Error Meas Ileak
+category: Inverters
+make: abb
+make_name: ABB / FIMER
+model_family: trio-20-27-6-tl-outd
+family_name: TRIO-20.0/27.6-TL-OUTD(-US)
+code: E030
+code_key: e30
+display_message: Error Meas Ileak
+vendor_severity: Error
+page: 113
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:fault
+  note: from the code prefix
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c3
+  rel: reports
+  target: symptom:leakage-current-measurement-error
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=55.r7
+    h: 14123f919578
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=48.r8
+    h: ac127ae8067a
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r3
+    h: 14bb49350fa0
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r3
+    h: 14bb49350fa0
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: 428110b38501
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c4
+  rel: affects
+  target: comp:inverter
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=55.r7
+    h: 14123f919578
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=48.r8
+    h: ac127ae8067a
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r3
+    h: 14bb49350fa0
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r3
+    h: 14bb49350fa0
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: 428110b38501
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:inverter-restart
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=55.r7
+    h: 14123f919578
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=48.r8
+    h: ac127ae8067a
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r3
+    h: 14bb49350fa0
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r3
+    h: 14bb49350fa0
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: 428110b38501
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=55.r7
+    h: 14123f919578
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=48.r8
+    h: ac127ae8067a
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r3
+    h: 14bb49350fa0
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r3
+    h: 14bb49350fa0
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: 428110b38501
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+- claim_id: c7
+  rel: has_recovery
+  target: ec:manual-reset
+  note: Power cycle first; contact service if it persists
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=55.r7
+    h: 14123f919578
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=48.r8
+    h: ac127ae8067a
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r3
+    h: 14bb49350fa0
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r3
+    h: 14bb49350fa0
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: 428110b38501
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
+  review_note: 'support check: partial - Power cycle then contact service is stated, but manual-reset
+    clearing isn''t.'
+---
