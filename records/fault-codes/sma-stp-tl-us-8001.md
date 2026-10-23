@@ -59,7 +59,7 @@ claims:
     doesn''t say the fan is affected.'
 - claim_id: c6
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: tbl=19.r4

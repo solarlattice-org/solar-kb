@@ -7,7 +7,7 @@ aliases:
 claims:
 - claim_id: c1
   rel: produces
-  target: meas:spd-alarm-status-active
+  target: meas:spd-alarm-status-register
   note: The SPD status menu shows the alarm as either 'Protected' or 'Active Alarm Replace SPD'. On the
     Power Xpert SPD, the alarm status is also available as a readable register that indicates protection
     status.

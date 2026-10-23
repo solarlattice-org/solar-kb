@@ -56,7 +56,7 @@ claims:
   verified_at: *id001
 - claim_id: c4
   rel: mitigated_by
-  target: mit:power-supply-replacement
+  target: mit:power-board-replacement
   note: Replace the 24 VDC power supply or power supply board for the inverter controls. An inverter specialist
     does this as needed, following the manufacturer's replacement instructions.
   cite:

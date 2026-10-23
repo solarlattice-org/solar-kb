@@ -28,6 +28,12 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=37
     h: ceb3e766d6c1
+  - src: src:iea-pvps-t13-19-2021
+    loc: sec=2.7
+    h: f7efa7d0f7bc
+  - src: src:iea-pvps-t13-19-2021
+    loc: tbl=5.r8
+    h: 794656bed1e1
   review: verified
   verified_by: joshuahamsa
   verified_at: &id001 2026-10-20
@@ -101,24 +107,6 @@ claims:
   review_note: 'support check: partial - The paper monitors mean DC power and voltage to detect ground
     faults as sequential changes, but the evidence does not say ground faults specifically showed abrupt
     changes in both quantities.'
-- claim_id: c6
-  rel: observed_as
-  target: meas:low-ground-fault-resistance
-  note: Ground fault resistance is listed as a monitored inverter parameter. Inverters include insulation
-    test circuits that check for ground leakage.
-  cite:
-  - src: src:iea-pvps-t13-19-2021
-    loc: sec=2.7
-    h: f7efa7d0f7bc
-  - src: src:iea-pvps-t13-19-2021
-    loc: tbl=5.r8
-    h: 794656bed1e1
-  review: verified
-  verified_by: joshuahamsa
-  verified_at: *id001
-  review_note: 'support check: partial - Inverters'' insulation test circuits are stated and u21 lists
-    Ground Fault Resistance, but the evidence doesn''t say it is a monitored inverter parameter indicating
-    a low value as a fault observation.'
 ---
 A ground fault happens when current leaks to ground through an unexpected connection or weakened insulation. This lowers efficiency and creates a safety hazard. It usually shows up at the inverter as a low insulation resistance alarm, a high leakage current alarm or a red fault light, and the inverter opens the circuit. If an inverter shows a ground fault light, put on the right PPE before touching any metal on the system. To find the faulted string, isolate all strings at the fuse holders. Then add one string at a time and restart the inverter until the alarm comes back. Trace that string for leakage to earth. Common causes are damaged cable insulation, a wire pinched between the module and the racking, or wire rubbing on a rough conduit edge as it expands and contracts. Connector defects can also cause it, especially poorly crimped or mismatched connectors. Check these by visual and tactile inspection, IR imaging under load and insulation resistance testing. Broken module glass or a cracked backsheet can also cause ground faults. With broken glass, the fault can be intermittent and appear mostly on rainy days. A clamp-meter check showing different current on the positive and negative conductors also points to a fault.
 

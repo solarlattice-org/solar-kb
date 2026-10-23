@@ -5,7 +5,7 @@ name: Setpoint and dispatch review
 claims:
 - claim_id: c1
   rel: produces
-  target: meas:export-below-available-power
+  target: meas:flat-output-below-available-power
   note: When setpoints and dispatch are reviewed, a flat or controlled output level below irradiance-supported
     available power is linked to an active limit. Inverter and tracker availability can still look normal.
   cite:

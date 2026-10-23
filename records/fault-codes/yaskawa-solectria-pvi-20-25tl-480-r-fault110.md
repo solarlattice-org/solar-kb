@@ -37,7 +37,7 @@ claims:
   review: drafted
 - claim_id: c3
   rel: reports
-  target: symptom:dc-bus-imbalance
+  target: symptom:neutral-point-voltage-imbalance
   cite:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: tbl=38.r2

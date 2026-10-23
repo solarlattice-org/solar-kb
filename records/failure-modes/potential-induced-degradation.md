@@ -188,7 +188,7 @@ claims:
   verified_at: 2026-10-16
 - claim_id: c15
   rel: presents_as
-  target: symptom:dark-cells-el
+  target: symptom:el-dark-regions
   note: PID-s cells near the frame show reduced luminescence, especially at low current bias.
   cite:
   - src: src:iea-pvps-t13-30-2025-annex

@@ -163,7 +163,7 @@ claims:
     explicitly say it is secondary.'
 - claim_id: c12
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   note: Clear filters and the heat dissipation path of obstructions
   cite:
   - src: src:iea-pvps-t13-23-2021

@@ -43,7 +43,7 @@ claims:
   review: drafted
 - claim_id: c3
   rel: affects
-  target: comp:residual-current-monitor
+  target: comp:ground-fault-detector
   cite:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: sec=11.1.27

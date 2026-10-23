@@ -9,6 +9,8 @@ aliases:
 - Bus high voltage differential fault
 - BUS voltage difference fault
 - Bus different high fault
+- symptom:dc-bus-imbalance
+- DC bus voltage imbalance
 claims:
 - claim_id: c1
   rel: observed_as

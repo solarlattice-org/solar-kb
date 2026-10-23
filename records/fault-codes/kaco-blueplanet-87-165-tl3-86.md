@@ -26,7 +26,7 @@ claims:
   review: drafted
 - claim_id: c2
   rel: reports
-  target: symptom:dc-bus-imbalance
+  target: symptom:neutral-point-voltage-imbalance
   cite:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=77.r7

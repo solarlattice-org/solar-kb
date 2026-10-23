@@ -77,7 +77,7 @@ claims:
     a corrective check, but not that the event is detected by…'
 - claim_id: c6
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-14
     loc: sec=h287

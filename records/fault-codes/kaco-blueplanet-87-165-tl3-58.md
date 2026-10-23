@@ -66,7 +66,7 @@ claims:
   review: drafted
 - claim_id: c7
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=75.r3

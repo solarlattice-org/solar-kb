@@ -7,7 +7,7 @@ aliases:
 claims:
 - claim_id: c1
   rel: produces
-  target: meas:export-below-available-power
+  target: meas:flat-output-below-available-power
   note: Available power is rebuilt from irradiance, temperature, inverter status, clipping state and modeled
     plant capability, then compared with meter output and plant controller limits. Curtailment shows up
     as exported power held below this estimate, even though availability and equipment health stay normal.

@@ -80,7 +80,7 @@ claims:
   review: drafted
 - claim_id: c4
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=11.1.44

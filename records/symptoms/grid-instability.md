@@ -5,6 +5,8 @@ name: Grid instability
 aliases:
 - Grid unstable
 - GRID-INTF
+- symptom:grid-interference
+- Grid interference
 claims:
 - claim_id: c1
   rel: observed_as
@@ -32,6 +34,24 @@ claims:
   review_note: 'support check: partial - Passage says to measure the grid and contact the utility if grid
     parameters exceed the set range, but doesn''t mention phase voltage or frequency specifically as outside
     limits.'
+- claim_id: c3
+  rel: observed_as
+  target: meas:inverter-fault-code-display
+  note: Solis and CSI inverters report this condition with the alarm message GRID-INTF01/02, described
+    as grid interference.
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=14.r12
+    h: 02f61ff2da17
+  - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
+    loc: tbl=12.r12
+    h: 02f61ff2da17
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r7
+    h: 08b308fe3d39
+  review: drafted
+  review_note: 'support check: partial - Alarm text GRID-INTF01/02 and ''Grid interference'' are stated,
+    but the passages don''t name Solis/CSI brands or say it is observed on the inverter fault code display.'
 ---
 Grid instability shows up as an inverter alarm. On Solis units it is GRID-INTF, which means the inverter has seen an unstable grid or high internal fault current. First measure the AC voltage and test the AC line for harmonic distortion with the DC switch off. Then repeat the distortion test with the DC switch on. If the distortion is already there with the DC side off, the cause is probably on the grid side. If several inverters share the line, switch one off to see whether they are interacting. An impedance matching adjustment or matching box may help. If the grid looks clean, look for internal damage in the inverter or a wire that came loose during shipping. Sungrow inverters show a similar Grid Abnormal fault and start again once the grid is back to normal. If the fault keeps coming back, measure the grid. Call the local utility if a grid parameter is outside the set range, or Sungrow service if those causes are ruled out.
 

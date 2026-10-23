@@ -37,7 +37,7 @@ claims:
     a device error was detected, but calling this a…'
 - claim_id: c3
   rel: affects
-  target: comp:residual-current-monitor
+  target: comp:ground-fault-detector
   cite:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=79.r15

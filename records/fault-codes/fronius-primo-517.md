@@ -100,7 +100,7 @@ claims:
   review: drafted
 - claim_id: c7
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=16.r5

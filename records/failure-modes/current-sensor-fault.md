@@ -48,7 +48,7 @@ claims:
   verified_at: *id001
 - claim_id: c3
   rel: affects
-  target: comp:residual-current-monitor
+  target: comp:ground-fault-detector
   note: The RCMU sensor is reported as faulty.
   cite:
   - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
@@ -57,14 +57,6 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r35
     h: 520bba37bd00
-  review: verified
-  verified_by: review-workflow
-  verified_at: *id001
-- claim_id: c4
-  rel: affects
-  target: comp:ground-fault-detector
-  note: The ground fault current sensor is reported as abnormal.
-  cite:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=54.r5
     h: 3a24d42b49b5

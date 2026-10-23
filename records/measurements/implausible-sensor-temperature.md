@@ -6,6 +6,8 @@ aliases:
 - TempSensorErr
 - Temperature Sensor Failure
 - Fault sensor interior temperature
+- meas:abnormal-temperature-display
+- Abnormal temperature display reading
 signals:
 - point: model_103.TmpCab
   unit: unit:DEG_C

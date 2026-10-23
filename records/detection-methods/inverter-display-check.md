@@ -53,7 +53,7 @@ claims:
   verified_at: *id001
 - claim_id: c4
   rel: produces
-  target: meas:abnormal-temperature-display
+  target: meas:implausible-sensor-temperature
   note: For TempSensorErr the manuals say to read the temperature on the display first. One manual lists
     a sensor reading of -25C as a possible cause.
   cite:
