@@ -9,4 +9,5 @@ Fan obstruction means foreign matter stops an inverter cooling fan from turning 
 
 <!-- review notes
 - sentence 5: support check: partial - The passage advises against areas with heavy ash, fallen leaves, or overgrown weeds and gives a plant-overgrowth example, but it does not state that the risk is 'highest' there.
+- sentence 1: review: partial - Blocked, non-rotating fans and ducts clogged by leaves, sand and weathered-wall debris are stated, but the passages describe animals as damaging fans (rodents biting cables), not as obstructing them.
 -->

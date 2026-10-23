@@ -13,4 +13,7 @@ Poor connector contact is a plug, socket or terminal that is not seated firmly o
 - sentence 4: support check: partial - CommErr cause (terminal block poor contact) is stated, but arc board passages only say to check the logic connector is secure, not that a loose connector causes the alarms.
 - sentence 6: support check: partial - Resistance rise with thermal dissipation found by thermography and ground fault/burst connector opening the string are stated, but 'contact resistance rises so connector heats up' is only roughly stated and these are described as second-phase, fine; mostly supported but the heating causal link is implied.
 - sentence 7: support check: partial - Reboot via AC disconnect applies only to TempSensorErr, arc test and call service for arc board; the generalized combined procedure (check connector then reboot) isn't stated for any single alarm.
+- sentence 1: review: partial - The passages name poor contact at sockets and terminal connectors and loose clamping or screws, but never give this definition of the term.
+- sentence 4: review: partial - CommErr is stated to be caused by poor contact at internal communication terminal blocks, but the arc board rows only say to check that the logic connector is secure; they never say a loose connector causes the alarms.
+- sentence 7: review: partial - Each step appears for some alarm (connector check, AC-disconnect reboot for TempSensorErr, arc fault test and service call for arc board), but no passage gives the combined check-then-reboot sequence.
 -->

@@ -12,4 +12,5 @@ A voltage surge is a short spike of excess voltage. It can arrive at an inverter
 <!-- review notes
 - sentence 4: support check: partial - Event 7801 'Fault overvoltage protector' is caused by tripped or incorrectly inserted arresters, but the passages never say surges cause the trips, and nothing in them says it is specific to SMA inverters.
 - sentence 6: support check: partial - The passages show phase indicators for low and medium surge events and a timestamp for medium events, but they show no timestamp for low events and no explicit log of both event types.
+- sentence 4: review: partial - Event 7801 Fault overvoltage protector is stated to come from tripped or incorrectly inserted surge arresters, but the passages never say that surges cause the trips.
 -->
