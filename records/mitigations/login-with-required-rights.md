@@ -2,5 +2,5 @@
 id: mit:login-with-required-rights
 type: Mitigation
 name: Login with required rights
-status: proposed
 ---
+This action means logging into the inverter user interface with a user group that has the rights the task needs. For the linked SMA events, that group is Installer. Use it for event 7349. That event means the user group currently logged in is not allowed to import a configuration file. Log in as Installer, then import the configuration file again. Use it for event 9003, which means the grid parameters are locked. To change them, log in as Installer and then enter the SMA Grid Guard code. To enter the code, open and log into the user interface. Then go to User Settings, choose SMA Grid Guard Login, type the code and press Login. Only installers can change parameters marked with a lock, and only after the Grid Guard login. Once logged in, open Device parameters, choose Edit parameters, make the changes and save them all. If a user group password is lost, request a PUK from SMA. Enter it in the password field to log in, then set a new password under User Rights, Access Control. If the login page does not open, a firewall may be blocking the connection. Change the firewall settings to allow it before trying again.

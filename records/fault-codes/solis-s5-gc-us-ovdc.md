@@ -53,11 +53,19 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-  review_note: 'support check: partial - High DC voltage with string configuration check implies PV array,
-    but not explicitly stated as affected component.'
 - claim_id: c5
   rel: mitigated_by
   target: mit:string-configuration-correction
+  note: When measured DC voltage is actually high.
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=14.r3
+    h: 4bc70d0f58e4
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:inverter-replacement
+  note: When the displayed reading is wrong, suggesting a bad measurement circuit.
   cite:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=14.r3
