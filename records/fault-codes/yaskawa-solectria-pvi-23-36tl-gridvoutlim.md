@@ -60,15 +60,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r7
     h: 63e0302d5223
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r8
-    h: 4750b1db994d
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r9
-    h: 3984d80b71b9
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r10
-    h: 863af6e45e45
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r7
+    h: 5446ad2f8947
   review: drafted
 - claim_id: c4
   rel: detected_by
@@ -77,9 +71,12 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r7
     h: 63e0302d5223
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r8
+    h: ffc9550a6b8b
   review: drafted
-  review_note: 'support check: partial - Grid voltage out of range is stated, but the passages never name
-    a grid voltage measurement as the detection method;…'
+  review_note: 'support check: partial - Passages say verify grid voltage within range but do not state
+    the fault is detected by grid voltage measurement.'
 - claim_id: c5
   rel: affects
   target: comp:ac-cable
@@ -90,37 +87,49 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r10
     h: 863af6e45e45
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r9
+    h: 1c59ae17c9bc
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r10
+    h: 27d31db0ef7c
   review: drafted
 - claim_id: c6
   rel: mitigated_by
   target: mit:ac-connection-check
-  note: When wiring is improper or connections loose
-  cite:
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r9
-    h: 3984d80b71b9
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r10
-    h: 863af6e45e45
-  review: drafted
-- claim_id: c7
-  rel: has_recovery
-  target: ec:auto-reset
-  note: Normally clears on its own; then check grid and wiring, then service
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r7
     h: 63e0302d5223
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r8
-    h: 4750b1db994d
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r9
-    h: 3984d80b71b9
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r10
-    h: 863af6e45e45
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r9
+    h: 1c59ae17c9bc
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=35.r4
+    h: 091fc2edb4f3
   review: drafted
-  review_note: 'support check: partial - Auto-clear observation for 10 min, then verify grid and wiring,
-    then service; ''normally'' is implied.'
+- claim_id: c7
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Final escalation if the alarm persists.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r7
+    h: 63e0302d5223
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r10
+    h: 27d31db0ef7c
+  review: drafted
+- claim_id: c8
+  rel: has_recovery
+  target: ec:auto-reset
+  note: Watch for automatic clearing first; then check grid and wiring, restart; then service.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r7
+    h: 63e0302d5223
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=12.r7
+    h: 5446ad2f8947
+  review: drafted
 ---

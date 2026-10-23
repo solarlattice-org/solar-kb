@@ -42,6 +42,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r1
     h: 77d009cbbe67
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r4
+    h: 690b78cb6b4c
   review: drafted
 - claim_id: c4
   rel: detected_by
@@ -50,28 +53,34 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r1
     h: 77d009cbbe67
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r5
+    h: 762159c58c71
   review: drafted
-  review_note: 'support check: partial - The solution says to verify DC open circuit input voltage, but
-    detection by Voc measurement is not stated.'
+  review_note: 'support check: partial - Passages say verify DC open circuit voltage is within range,
+    but not that detection is by Voc measurement.'
 - claim_id: c5
-  rel: affects
-  target: comp:pv-array
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Final escalation if the alarm persists after restart.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r1
     h: 77d009cbbe67
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r8
+    h: 994417da0769
   review: drafted
-  review_note: 'support check: partial - DC input over-voltage implies the PV input, but the PV array
-    is not explicitly named.'
 - claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
-  note: Normally clears on its own; then voltage check, power cycle, service
+  note: Watch for automatic clearing first; then verify Voc, power cycle; then service.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r1
     h: 77d009cbbe67
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r4
+    h: 690b78cb6b4c
   review: drafted
-  review_note: 'support check: partial - Observe 30 min for auto-clear, then voltage check, power cycle
-    and service; ''normally'' is implied.'
 ---

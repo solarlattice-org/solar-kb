@@ -49,14 +49,6 @@ claims:
   verified_by: review-workflow
   verified_at: &id001 2026-10-20
 - claim_id: c4
-  rel: affects
-  target: comp:inverter
-  cite:
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=20
-    h: 01dd772813e8
-  review: drafted
-- claim_id: c5
   rel: has_production_effect
   target: ec:trip
   cite:
@@ -66,19 +58,19 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-- claim_id: c6
+- claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service
-  note: If the error does not clear by itself
+  note: Only if the error does not clear automatically.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=20
     h: 01dd772813e8
   review: drafted
-- claim_id: c7
+- claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
-  note: Normally clears on its own; escalate to service if persistent
+  note: Watch for automatic clearing first; then contact service.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=20
