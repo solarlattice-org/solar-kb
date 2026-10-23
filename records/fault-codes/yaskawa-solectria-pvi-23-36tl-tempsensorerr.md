@@ -48,6 +48,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r1
+    h: 5c8379baf9d5
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
@@ -56,8 +59,14 @@ claims:
   target: fm:temperature-sensor-fault
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r1
+    h: ff301fa218bd
+  - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r2
     h: '498497530e79'
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r3
+    h: 17885a1434d4
   review: drafted
 - claim_id: c5
   rel: affects
@@ -66,9 +75,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=17.r2
-    h: '498497530e79'
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r1
+    h: 5c8379baf9d5
   review: drafted
 - claim_id: c6
   rel: detected_by
@@ -77,6 +86,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r1
+    h: 5c8379baf9d5
   review: drafted
 - claim_id: c7
   rel: mitigated_by
@@ -85,22 +97,29 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=17.r2
-    h: '498497530e79'
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r2
+    h: 9dc764385932
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r3
+    h: 17885a1434d4
   review: drafted
 - claim_id: c8
   rel: has_recovery
   target: ec:manual-reset
-  note: Restart via internal disconnects first; contact customer service if the error persists.
+  note: Switch off and back on first; contact service if the error persists.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r1
     h: ff301fa218bd
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=17.r2
-    h: '498497530e79'
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r2
+    h: 9dc764385932
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r3
+    h: 17885a1434d4
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r4
+    h: d30be26cefbf
   review: drafted
-  review_note: 'support check: partial - The restart via disconnects and the contact-service steps are
-    present, but the passages don''t state a manual reset classification.'
 ---

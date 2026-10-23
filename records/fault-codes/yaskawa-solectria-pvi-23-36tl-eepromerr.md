@@ -37,30 +37,52 @@ claims:
   review: drafted
 - claim_id: c3
   rel: reports
-  target: symptom:data-storage-failure
+  target: symptom:memory-error
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r1
     h: d226490d0b40
-  review: drafted
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r4
+    h: 3ae09badb452
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: If the alarm does not clear by itself
+  rel: affects
+  target: comp:memory-unit
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r1
     h: d226490d0b40
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r4
+    h: 3ae09badb452
   review: drafted
 - claim_id: c5
-  rel: has_recovery
-  target: ec:auto-reset
-  note: Normally clears on its own; escalate to service if persistent
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the alarm does not clear automatically.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r1
     h: d226490d0b40
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r5
+    h: 7dcca451f1c1
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+- claim_id: c6
+  rel: has_recovery
+  target: ec:auto-reset
+  note: Watch for automatic clearing first; then contact service.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r1
+    h: d226490d0b40
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r4
+    h: 3ae09badb452
   review: drafted
-  review_note: 'support check: partial - Observing for 5 min for automatic clearing and escalating to
-    service are stated, but ''normally clears'' is implied.'
 ---

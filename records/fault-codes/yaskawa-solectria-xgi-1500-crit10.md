@@ -27,6 +27,22 @@ claims:
     h: ca381f1f0949
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=19.r4
+    h: ca381f1f0949
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r4
+    h: ca381f1f0949
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   note: from the table header
@@ -37,38 +53,17 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=18
     h: bd286dd80521
-  review: drafted
-- claim_id: c3
-  rel: indicates
-  target: fm:ground-fault-detector-failure
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
     loc: tbl=19.r4
     h: ca381f1f0949
-  review: drafted
-- claim_id: c4
-  rel: affects
-  target: comp:ground-fault-detector
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r4
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=18
+    h: 0ec887918da1
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r4
     h: ca381f1f0949
-  review: drafted
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:inverter-restart
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r4
-    h: ca381f1f0949
-  review: drafted
-- claim_id: c6
-  rel: has_recovery
-  target: ec:manual-reset
-  note: Power cycle first; technical support if the error does not clear.
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r4
-    h: ca381f1f0949
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=15
+    h: bd286dd80521
   review: drafted
 ---

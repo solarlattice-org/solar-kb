@@ -27,6 +27,22 @@ claims:
     h: 8cc7b04502b0
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=19.r1
+    h: 8cc7b04502b0
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r1
+    h: 8cc7b04502b0
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   note: from the table header
@@ -37,48 +53,64 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=18
     h: bd286dd80521
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=19.r1
+    h: 8cc7b04502b0
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=18
+    h: 0ec887918da1
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r1
+    h: 8cc7b04502b0
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=15
+    h: bd286dd80521
   review: drafted
-- claim_id: c3
+- claim_id: c5
   rel: reports
   target: symptom:ground-fault
   cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r1
-    h: 8cc7b04502b0
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=17.r1
+    h: 7b61827d0a62
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=19.r6
+    h: 54aa331e6877
   review: drafted
-- claim_id: c4
-  rel: indicates
-  target: fm:leakage-current
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r1
-    h: 8cc7b04502b0
-  review: drafted
-- claim_id: c5
+- claim_id: c6
   rel: affects
   target: comp:pv-array
   cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r1
-    h: 8cc7b04502b0
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=17.r1
+    h: 7b61827d0a62
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=19.r6
+    h: 54aa331e6877
   review: drafted
-- claim_id: c6
-  rel: detected_by
-  target: method:fault-localization
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r1
-    h: 8cc7b04502b0
-  review: drafted
-  review_note: 'support check: partial - A qualified person must locate and repair the ground fault, but
-    the passage does not state a detection method called…'
+  review_note: 'support check: partial - The PV array disconnect, combiners and panels are mentioned,
+    but the passages do not state that the fault affects the…'
 - claim_id: c7
+  rel: mitigated_by
+  target: mit:contact-installer
+  cite:
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=17.r1
+    h: 7b61827d0a62
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=19.r6
+    h: 54aa331e6877
+  review: drafted
+- claim_id: c8
   rel: has_recovery
   target: ec:service-required
-  note: A qualified person must locate and repair the ground fault.
+  note: Qualified person must locate and repair the ground fault; equipment must not be touched.
   cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r1
-    h: 8cc7b04502b0
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=17.r1
+    h: 7b61827d0a62
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=19.r6
+    h: 54aa331e6877
   review: drafted
 ---

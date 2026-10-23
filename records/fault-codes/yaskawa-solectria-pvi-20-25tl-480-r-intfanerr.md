@@ -1,0 +1,109 @@
+---
+id: fc:yaskawa-solectria-pvi-20-25tl-480-r-intfanerr
+type: FaultCode
+name: Yaskawa Solectria PVI-25TL-R IntFanErr
+aliases:
+- IntFanErr
+- intfanerr
+- Yaskawa Solectria IntFanErr
+category: Inverters
+make: yaskawa-solectria
+make_name: Yaskawa Solectria
+model_family: pvi-20-25tl-480-r
+family_name: Solectria PVI 20/25TL-480-R
+code: IntFanErr
+code_key: intfanerr
+page: 79
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=33.r1
+    h: 563a1dce28e0
+  review: drafted
+- claim_id: c2
+  rel: reports
+  target: symptom:fan-fault-alarm
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r4
+    h: a7eb1991dfd5
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r9
+    h: dd6e1c42439a
+  review: drafted
+- claim_id: c3
+  rel: indicates
+  target: fm:fan-failure
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r4
+    h: a7eb1991dfd5
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r9
+    h: dd6e1c42439a
+  review: drafted
+- claim_id: c4
+  rel: affects
+  target: comp:cooling-fan
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r4
+    h: a7eb1991dfd5
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r5
+    h: 820d5c711ec3
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r9
+    h: dd6e1c42439a
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:inverter-restart
+  note: Used when the alarm does not clear on its own.
+  cite:
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r10
+    h: 723ace76c015
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r11
+    h: 2bf91b0d7393
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=33.r1
+    h: 563a1dce28e0
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Final escalation if the alarm persists after restart.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r5
+    h: 820d5c711ec3
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r12
+    h: de62313dc809
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=33.r1
+    h: 563a1dce28e0
+  review: drafted
+- claim_id: c7
+  rel: has_recovery
+  target: ec:auto-reset
+  note: Watch for automatic clearing first; then power cycle; then contact service.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r4
+    h: a7eb1991dfd5
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r9
+    h: dd6e1c42439a
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=33.r1
+    h: 563a1dce28e0
+  review: drafted
+  review_note: 'support check: partial - The row says to observe for automatic clearing first, but power
+    cycling and service are also required if it does…'
+---

@@ -42,22 +42,22 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r3
     h: 212b80f52fcc
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r5
+    h: 7d1bf3da26db
   review: drafted
 - claim_id: c4
-  rel: mitigated_by
-  target: mit:inverter-restart
-  cite:
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=17.r3
-    h: 212b80f52fcc
-  review: drafted
-- claim_id: c5
   rel: has_recovery
   target: ec:auto-reset
-  note: May clear on its own; otherwise restart via disconnects, then contact customer service.
+  note: Observe for automatic clearing first; then power cycle, then contact service.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r3
     h: 212b80f52fcc
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=10.r5
+    h: 7d1bf3da26db
   review: drafted
+  review_note: 'support check: partial - The row says to observe for 5 minutes to see whether the alarm
+    clears automatically, but a power cycle and…'
 ---

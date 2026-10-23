@@ -25,6 +25,22 @@ claims:
     h: 4ec7188456ad
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=22.r6
+    h: 4ec7188456ad
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=19.r6
+    h: 4ec7188456ad
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:warning
   note: from the table header
@@ -35,5 +51,17 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20
     h: fc50119e7e7e
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=22.r6
+    h: 4ec7188456ad
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20
+    h: a7be798a92ad
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=19.r6
+    h: 4ec7188456ad
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17
+    h: a7be798a92ad
   review: drafted
 ---

@@ -27,6 +27,22 @@ claims:
     h: c2e7279a7a24
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20.r3
+    h: c2e7279a7a24
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:warning
   note: from the table header
@@ -37,61 +53,113 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20
     h: fc50119e7e7e
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20
+    h: a7be798a92ad
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17
+    h: a7be798a92ad
   review: drafted
-- claim_id: c3
+- claim_id: c5
   rel: reports
   target: symptom:islanding-detected
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
+    h: c2e7279a7a24
   review: drafted
-- claim_id: c4
+- claim_id: c6
   rel: has_production_effect
   target: ec:trip
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
+    h: c2e7279a7a24
   review: verified
   verified_by: review-workflow
   verified_at: &id001 2026-10-20
-- claim_id: c5
+- claim_id: c7
   rel: has_recovery
   target: ec:auto-reset
-  note: Production resumes when the islanding event ends; support if AC present but no reconnection.
+  note: Production resumes once the event ends; service if AC is present but no grid connection
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
+    h: c2e7279a7a24
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: sec=9.1.2
     h: 03d6c2913989
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: sec=h151
+    h: b0c738d81358
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-- claim_id: c6
+- claim_id: c8
   rel: detected_by
   target: method:grid-voltage-measurement
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
+    h: c2e7279a7a24
   review: drafted
-- claim_id: c7
+- claim_id: c9
   rel: affects
   target: comp:ac-cable
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
     h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
+    h: c2e7279a7a24
   review: drafted
-- claim_id: c8
+- claim_id: c10
   rel: mitigated_by
   target: mit:ac-connection-check
+  note: Applies when no AC voltage is measured
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r3
+    h: c2e7279a7a24
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r3
     h: c2e7279a7a24
   review: drafted
 ---

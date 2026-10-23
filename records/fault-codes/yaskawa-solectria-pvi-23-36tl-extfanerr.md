@@ -40,9 +40,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r6
     h: 3c88374b8f57
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18
-    h: 97b941dabf7a
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
   review: drafted
 - claim_id: c4
   rel: indicates
@@ -51,9 +51,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r6
     h: 3c88374b8f57
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18
-    h: 97b941dabf7a
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
   review: drafted
 - claim_id: c5
   rel: affects
@@ -65,37 +65,36 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18
     h: 97b941dabf7a
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
   review: drafted
 - claim_id: c6
-  rel: detected_by
-  target: method:visual-inspection
-  note: Inspect fan blades for debris
-  cite:
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=17.r6
-    h: 3c88374b8f57
-  review: drafted
-- claim_id: c7
   rel: mitigated_by
   target: mit:clear-ventilation-blockage
-  note: When the fan is blocked
+  note: Applies when the fan is blocked by debris.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r6
     h: 3c88374b8f57
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
   review: drafted
-- claim_id: c8
+  review_note: 'support check: partial - The row says to check the fan blades for debris because the fan
+    is blocked, but it does not say…'
+- claim_id: c7
   rel: has_recovery
   target: ec:auto-reset
-  note: Normally clears on its own; otherwise power cycle and debris check, then service
+  note: Watch for automatic clearing first; then debris check and restart; then contact service.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=17.r6
     h: 3c88374b8f57
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18
-    h: 97b941dabf7a
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
   review: drafted
-  review_note: 'support check: partial - Auto-clear observation within 5 min and then power cycle, debris
-    check and contact service are given, but ''normally clears'' is…'
+  review_note: 'support check: partial - Passages say observe 5 min for automatic clearing, then check
+    debris, but no contact-service step appears and auto-reset is only implied.'
 ---
