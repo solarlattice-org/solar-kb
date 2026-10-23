@@ -30,7 +30,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=33.r4
     h: 958bb3d9a84b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:inverter
@@ -38,7 +40,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=33.r4
     h: 958bb3d9a84b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-replacement
@@ -47,7 +51,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=33.r4
     h: 958bb3d9a84b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: has_recovery
   target: ec:service-required
@@ -55,7 +61,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=33.r4
     h: 958bb3d9a84b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Replacement is required, which implies service-required, but
     the row doesn''t state a service/clearing classification explicitly.'
 ---

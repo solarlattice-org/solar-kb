@@ -31,7 +31,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=34.r5
     h: efb1b731f4b0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:network-cable
@@ -63,5 +65,7 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=34.r5
     h: efb1b731f4b0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

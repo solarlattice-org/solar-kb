@@ -39,7 +39,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=34.r4
     h: 5bae7206c17f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Phase wiring is implicated, but AC cable as the affected component
     is only implied, not stated.'
 - claim_id: c4
@@ -49,5 +51,7 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=34.r4
     h: 5bae7206c17f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

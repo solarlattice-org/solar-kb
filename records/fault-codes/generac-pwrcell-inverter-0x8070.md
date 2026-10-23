@@ -43,5 +43,7 @@ claims:
   - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
     loc: tbl=19.r15
     h: 5793a7ddcab1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

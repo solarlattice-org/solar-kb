@@ -54,4 +54,6 @@ claims:
     loc: tbl=19.r14
     h: ffcdec86c85c
   review: drafted
+  review_note: 'review: partial - The CT/current-sensor link is supported, but the note says CTs are ''on
+    all three lines'', while the row says Lines 1, 2…'
 ---

@@ -43,7 +43,9 @@ claims:
   - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
     loc: tbl=19.r2
     h: 1fb3f4866f78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:current-sensor
@@ -54,5 +56,7 @@ claims:
   - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
     loc: tbl=19.r2
     h: 1fb3f4866f78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
