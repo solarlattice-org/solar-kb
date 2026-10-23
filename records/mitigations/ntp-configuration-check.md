@@ -7,4 +7,5 @@ Use this check when the SMA Sunny Tripower CORE1-US inverter logs event 10110, w
 
 <!-- review notes
 - sentence 4: support check: partial - The passage says the Tesla System Controller needs an external time source to timestamp logged data correctly; it does not state this for site controllers in general.
+- sentence 4: review: partial - The passage says the Tesla System Controller needs an external time source to timestamp logged data correctly, not site controllers in general.
 -->

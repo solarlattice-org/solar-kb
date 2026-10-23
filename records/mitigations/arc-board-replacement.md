@@ -8,4 +8,5 @@ Arc board replacement means swapping out the arc detection board, or the wiring 
 <!-- review notes
 - sentence 6: support check: partial - The passages say the inverter won't connect to the grid until the arc board is OK, but they don't state that replacement restores production, which is an inference.
 - sentence 7: support check: partial - Passages say an arc fault can only be cleared manually and that ARCFaultClear clears it, but they don't explicitly say that command is the only manual method.
+- sentence 1: review: partial - The passages support replacing the arc board or wiring box, but they do not say the wiring box holds the board, and they do not name arc detection board failure as the condition.
 -->

@@ -9,4 +9,5 @@ DC fuse replacement means swapping out a damaged DC string fuse on the inverter 
 
 <!-- review notes
 - sentence 2: support check: partial - The ordering and the contact-manufacturer step are stated, but the codes differ: 548-595 checks shading, then wiring, then fuse, while PVx checks the string connection, then fuse, with no shading or dirt check.
+- sentence 1: review: partial - The passages support fuse replacement as a step for the PV Abnormal and PVx abnormal alarms, but the 'combiner input' scope and the 'string fuse' wording are not stated.
 -->

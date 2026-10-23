@@ -9,4 +9,5 @@ SPD module reseating means pulling the plug-in surge protection module out of it
 - sentence 3: support check: partial - Visual check first and red means replace are stated, but 'used up/exhausted' as the meaning of red is not stated.
 - sentence 4: support check: partial - Reinstall for green indicator is stated, but the purpose (investigating exhausted condition, correcting poor seating/contact) is not given.
 - sentence 6: support check: partial - Significant surge or extended TOV leads to Replace SPD, but the passages do not explicitly say reseating cannot restore the module.
+- sentence 4: review: partial - The passages back reseating when the indicator is green, but they never say it is for investigating a suspected exhausted condition or that it mainly fixes poor seating or contact.
 -->
