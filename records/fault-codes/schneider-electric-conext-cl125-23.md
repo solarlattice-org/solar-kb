@@ -44,7 +44,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=30.r2
     h: 75ab46f00c43
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array
@@ -91,5 +93,7 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=30.r2
     h: 75ab46f00c43
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

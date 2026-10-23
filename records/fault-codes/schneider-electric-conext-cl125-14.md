@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=29.r2
     h: 32d1dd5528cc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: mitigated_by
   target: mit:utility-consultation
@@ -80,8 +82,8 @@ claims:
     loc: tbl=29.r2
     h: 32d1dd5528cc
   review: drafted
-  review_note: 'support check: partial - The passages say the inverter can recover automatically but do
-    not state that it stops feeding in. The trip is…'
+  review_note: 'review: partial - The row says the inverter recovers automatically, which hints that operation
+    is interrupted, but it never says production stops, so the trip…'
 - claim_id: c7
   rel: has_recovery
   target: ec:auto-reset

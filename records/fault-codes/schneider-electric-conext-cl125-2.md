@@ -77,6 +77,6 @@ claims:
     loc: tbl=27.r1
     h: 031fce53e2af
   review: drafted
-  review_note: 'support check: partial - Protection time/thresholds are mentioned but nothing states that
-    production stops or the inverter trips.'
+  review_note: 'review: partial - The row''s mention of protection time and utility-defined thresholds
+    supports the note, but no passage says production stops or the inverter trips.'
 ---

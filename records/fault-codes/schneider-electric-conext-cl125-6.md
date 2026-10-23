@@ -41,7 +41,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=27.r5
     h: 4f63f2ad340a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_production_effect
   target: ec:trip

@@ -65,7 +65,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=28.r4
     h: 0917644a7127
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Measuring grid voltage is a troubleshooting step, not stated
     as the detection method.'
 - claim_id: c6

@@ -66,7 +66,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=31.r5
     h: 9feff9f175be
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c6
   rel: has_production_effect
   target: ec:trip
@@ -91,5 +93,7 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=31.r5
     h: 9feff9f175be
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

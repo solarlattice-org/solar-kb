@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=29.r4
     h: 1fd5270d23a4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault
@@ -55,8 +57,8 @@ claims:
     loc: tbl=29.r4
     h: 1fd5270d23a4
   review: drafted
-  review_note: 'support check: partial - The fault class is not stated, only implied by the alarm and
-    auto-recovery.'
+  review_note: 'review: partial - The row only gives the overload event and says to wait for auto-recovery,
+    so the fault class (device stops or needs intervention)…'
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset

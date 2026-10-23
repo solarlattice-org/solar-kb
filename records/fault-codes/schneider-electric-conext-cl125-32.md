@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=30.r9
     h: 96ddee851f12
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: has_recovery
   target: ec:auto-reset
@@ -52,6 +54,8 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=30.r9
     h: 96ddee851f12
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Auto recovery stated, but contact-support note is absent.'
 ---

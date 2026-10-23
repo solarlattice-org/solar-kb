@@ -44,8 +44,8 @@ claims:
     loc: tbl=32.r7
     h: bd042b332a90
   review: drafted
-  review_note: 'support check: partial - A grid frequency redundancy event with a range check suggests
-    out-of-range frequency, but the passages do not state it directly.'
+  review_note: 'review: partial - The row calls it a grid frequency redundancy event and says to measure
+    the frequency; it allows that the frequency may exceed…'
 - claim_id: c4
   rel: detected_by
   target: method:grid-frequency-measurement

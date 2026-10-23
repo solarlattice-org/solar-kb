@@ -45,8 +45,8 @@ claims:
     loc: tbl=30.r1
     h: 8a662aa97327
   review: drafted
-  review_note: 'support check: partial - The row says over current protection, and its solution mentions
-    grid or PV current. It does not say which side…'
+  review_note: 'review: partial - The row''s ''Over current protection'' supports an inverter overcurrent
+    symptom, but the note''s claim that grid-side or PV-side current exceeded the limit…'
 - claim_id: c4
   rel: has_event_class
   target: ec:fault

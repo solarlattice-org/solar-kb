@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=31.r4
     h: 7c22df9d7d73
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: detected_by
   target: method:insulation-resistance-test
@@ -69,8 +71,8 @@ claims:
     loc: tbl=31.r4
     h: 7c22df9d7d73
   review: drafted
-  review_note: 'support check: partial - Waiting for recovery implies stoppage but the passages do not
-    explicitly state production stops.'
+  review_note: 'review: partial - ''Wait for the inverter to recover automatically'' suggests the inverter
+    stopped, but no passage says production stops.'
 - claim_id: c6
   rel: has_recovery
   target: ec:auto-reset

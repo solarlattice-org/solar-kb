@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
     loc: tbl=53.r7
     h: 1b9733b511a6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:surge-protection-device

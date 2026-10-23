@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=29.r7
     h: 1a4c53e45506
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault
@@ -55,7 +57,8 @@ claims:
     loc: tbl=29.r7
     h: 1a4c53e45506
   review: drafted
-  review_note: 'support check: partial - The fault class is not explicitly stated.'
+  review_note: 'review: partial - The row says the inverter recovers automatically and does not say the
+    device stops or needs intervention, so the fault class is…'
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset
@@ -67,5 +70,7 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=29.r7
     h: 1a4c53e45506
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -57,7 +57,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=34.r2
     h: 8bad0403ce44
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:dc-wiring-check
@@ -69,7 +71,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=34.r2
     h: 8bad0403ce44
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: has_event_class
   target: ec:warning
@@ -81,5 +85,7 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=34.r2
     h: 8bad0403ce44
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -43,7 +43,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=33.r9
     h: 6f701d85f9af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: has_production_effect
   target: ec:trip
@@ -55,7 +57,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=33.r9
     h: 6f701d85f9af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Insufficient irradiation for operation implies stop, but a trip
     is not explicitly stated.'
 - claim_id: c5
@@ -70,7 +74,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=33.r9
     h: 6f701d85f9af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:string-configuration-correction
@@ -82,5 +88,7 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=33.r9
     h: 6f701d85f9af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

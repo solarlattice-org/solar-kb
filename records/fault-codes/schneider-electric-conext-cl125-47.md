@@ -74,7 +74,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=32.r1
     h: 790a3791e300
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Disconnecting from all power sources implies intervention, but
     ''fault'' is not explicitly stated.'
 ---

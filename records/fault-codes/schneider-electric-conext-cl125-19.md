@@ -56,7 +56,8 @@ claims:
     loc: tbl=29.r6
     h: f90663236cdc
   review: drafted
-  review_note: 'support check: partial - The fault class is not explicitly stated.'
+  review_note: 'review: partial - The row only says to wait for automatic recovery, so the ''stops or
+    needs intervention'' fault class is not stated in the…'
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset

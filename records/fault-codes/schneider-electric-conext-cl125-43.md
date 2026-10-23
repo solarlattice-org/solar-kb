@@ -76,7 +76,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=31.r8
     h: 1bbf529920ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-restart

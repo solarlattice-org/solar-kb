@@ -44,7 +44,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: tbl=31.r6
     h: dc826c7a1ef3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:ground-fault-detector
@@ -70,7 +72,8 @@ claims:
     loc: tbl=31.r6
     h: dc826c7a1ef3
   review: drafted
-  review_note: 'support check: partial - Trip is only implied by wait to recover; not explicit.'
+  review_note: 'review: partial - The rows only say to wait for the inverter to recover automatically,
+    which suggests output is interrupted, but no passage says production…'
 - claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
