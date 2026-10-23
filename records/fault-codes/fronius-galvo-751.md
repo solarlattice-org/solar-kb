@@ -40,7 +40,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=20.r12
     h: b25992d57ac3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: mitigated_by
   target: mit:clock-reset

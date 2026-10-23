@@ -48,5 +48,7 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: sec=h19
     h: 55856fbde1a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

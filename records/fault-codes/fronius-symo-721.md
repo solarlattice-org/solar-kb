@@ -70,5 +70,7 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=20.r2
     h: 0784ef42f21e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

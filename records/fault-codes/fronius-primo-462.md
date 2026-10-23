@@ -37,5 +37,7 @@ claims:
   - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
     loc: tbl=17.r31
     h: 0585ef1a1961
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

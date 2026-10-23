@@ -37,7 +37,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=17.r16
     h: 97667f973ec2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: has_event_class
   target: ec:fault
@@ -78,8 +80,8 @@ claims:
     loc: tbl=17
     h: 2e256223844f
   review: drafted
-  review_note: 'support check: partial - The 309 row has blank behavior and remedy cells; auto-clearing
-    is only implied by the 308 row and the class…'
+  review_note: 'review: partial - The 309 row''s behavior and remedy cells are blank in both tables, so
+    auto-clearing and ''escalate if persistent'' rest only on the…'
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service

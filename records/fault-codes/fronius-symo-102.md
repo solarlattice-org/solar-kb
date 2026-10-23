@@ -49,7 +49,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: sec=h19
     h: 55856fbde1a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say the inverter disconnects and no device fault occurs,
     but they never class 102 as a ''fault''. Class 1…'
 - claim_id: c4

@@ -38,8 +38,8 @@ claims:
     loc: tbl=17.r40
     h: 5f8241234463
   review: drafted
-  review_note: 'support check: partial - CAN transmission buffer full implies internal communication problem,
-    but not explicitly stated.'
+  review_note: 'review: partial - The cited row says the CAN transmission buffer is full, which points
+    to a communication problem, but no passage says the failure…'
 - claim_id: c3
   rel: has_event_class
   target: ec:fault

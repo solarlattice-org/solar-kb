@@ -71,7 +71,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=18.r7
     h: 8a1afc629cb9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Inverter will reconnect and ''resume'' feed-in, implying interruption,
     but no explicit statement that feed-in stops.'
 - claim_id: c5

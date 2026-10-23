@@ -37,7 +37,9 @@ claims:
   - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
     loc: tbl=15.r4
     h: 19619b91dfc9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: has_production_effect
   target: ec:trip
@@ -59,5 +61,7 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: sec=h19
     h: 55856fbde1a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

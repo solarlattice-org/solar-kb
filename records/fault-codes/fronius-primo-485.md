@@ -72,7 +72,9 @@ claims:
   - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
     loc: tbl=17.r40
     h: 5f8241234463
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart

@@ -52,8 +52,8 @@ claims:
     loc: sec=h22
     h: b16852f397f6
   review: drafted
-  review_note: 'support check: partial - The class 4 text is generic and does not tie 452 to class 4;
-    the row says it self-retries.'
+  review_note: 'review: partial - The cited sec=h22 passage is generic Class 4 text saying a technician
+    may be needed and does not name 452; the row…'
 - claim_id: c4
   rel: has_recovery
   target: ec:auto-reset

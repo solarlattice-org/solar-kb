@@ -68,7 +68,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: sec=h22
     h: b16852f397f6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - 406 appears in the class 4 list but the passages never state
     it is a fault; its behavior is blank.'
 ---

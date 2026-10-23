@@ -48,7 +48,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=16.r7
     h: e10fae29d087
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Code 242 needs an Enter reset and is an arc event, but the passages
     don''t state a fault classification.'
 - claim_id: c4
@@ -62,7 +64,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=16.r7
     h: e10fae29d087
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passages say the inverter restarts feeding after the reset,
     which implies feed-in was interrupted, but they don''t say so explicitly.'
 - claim_id: c5

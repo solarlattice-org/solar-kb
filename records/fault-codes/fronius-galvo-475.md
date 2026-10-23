@@ -52,7 +52,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=18.r18
     h: 11bfae8bf4c4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array
@@ -91,5 +93,7 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=18.r18
     h: 11bfae8bf4c4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
