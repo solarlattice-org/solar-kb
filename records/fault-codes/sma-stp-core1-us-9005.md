@@ -31,21 +31,16 @@ claims:
     h: 81f35c20bd2e
   review: drafted
 - claim_id: c3
-  rel: reports
-  target: symptom:configuration-error
-  note: Parameter change refused because parameters are protected or DC voltage is insufficient.
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=22.r4
-    h: 81f35c20bd2e
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=11.r4
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r4
     h: 81f35c20bd2e
   review: drafted
 - claim_id: c4
-  rel: mitigated_by
-  target: mit:enter-access-code
-  note: Applies when parameters are protected; otherwise ensure DC start voltage is present.
+  rel: reports
+  target: symptom:parameter-change-rejected
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r4
@@ -53,5 +48,50 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r4
     h: 81f35c20bd2e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r4
+    h: 81f35c20bd2e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h254
+    h: 2231dc9042c7
+  review: drafted
+- claim_id: c5
+  rel: reports
+  target: symptom:insufficient-dc-power
+  note: DC voltage too low to run the main CPU.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r4
+    h: 81f35c20bd2e
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r4
+    h: 81f35c20bd2e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r4
+    h: 81f35c20bd2e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h254
+    h: 2231dc9042c7
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=21.r2
+    h: c215834d0c43
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:enter-access-code
+  note: When the cause is protected parameters.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r4
+    h: 81f35c20bd2e
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r4
+    h: 81f35c20bd2e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r4
+    h: 81f35c20bd2e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h255
+    h: 5915aa3124df
   review: drafted
 ---

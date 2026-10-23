@@ -31,14 +31,26 @@ claims:
     h: 9d64e850811c
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r6
+    h: 9d64e850811c
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
+  note: Reports standard value during a protection test run.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=26.r6
     h: 9d64e850811c
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r6
+    h: 9d64e850811c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r6
     h: 9d64e850811c
   review: drafted
 ---

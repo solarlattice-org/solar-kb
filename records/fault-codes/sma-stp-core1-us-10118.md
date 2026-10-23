@@ -31,19 +31,17 @@ claims:
     h: 7765fe1a9c08
   review: drafted
 - claim_id: c3
-  rel: has_event_class
-  target: ec:informational
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=23.r9
-    h: 7765fe1a9c08
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=12.r9
-    h: 7765fe1a9c08
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r8
+    h: 6a7679f771a8
   review: drafted
 - claim_id: c4
-  rel: has_production_effect
-  target: ec:no-production-effect
+  rel: has_event_class
+  target: ec:informational
+  note: Confirms configuration file was loaded successfully.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=23.r9
@@ -51,6 +49,8 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=12.r9
     h: 7765fe1a9c08
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r8
+    h: 6a7679f771a8
   review: drafted
-  review_note: 'support check: partial - Row implies a status message but never states production effect.'
 ---

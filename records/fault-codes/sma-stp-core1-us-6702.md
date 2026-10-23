@@ -31,8 +31,16 @@ claims:
     h: bcf0d1913bc2
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  review: drafted
+- claim_id: c4
   rel: reports
-  target: symptom:communication-loss
+  target: symptom:internal-communication-failure
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=19.r2
@@ -40,8 +48,17 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r2
     h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h320
+    h: 425aae51d4ca
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h321
+    h: c766760ec4c5
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:communication-processor
   cite:
@@ -51,8 +68,32 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r2
     h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h321
+    h: c766760ec4c5
   review: drafted
-- claim_id: c5
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only when the message appears frequently.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=19.r2
+    h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=8.r2
+    h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h322
+    h: 9ae650369fe8
+  review: drafted
+- claim_id: c7
   rel: has_event_class
   target: ec:warning
   cite:
@@ -62,8 +103,14 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r2
     h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h321
+    h: c766760ec4c5
   review: drafted
-- claim_id: c6
+- claim_id: c8
   rel: has_production_effect
   target: ec:no-production-effect
   cite:
@@ -73,19 +120,13 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r2
     h: bcf0d1913bc2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r2
+    h: bcf0d1913bc2
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h321
+    h: c766760ec4c5
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c7
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only when the message recurs frequently
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=19.r2
-    h: bcf0d1913bc2
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=8.r2
-    h: bcf0d1913bc2
-  review: drafted
 ---

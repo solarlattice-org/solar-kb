@@ -31,20 +31,16 @@ claims:
     h: a5c2cad80410
   review: drafted
 - claim_id: c3
-  rel: reports
-  target: symptom:firmware-update-failure
-  note: Applies to the time zone database update.
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r6
-    h: a5c2cad80410
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=10.r6
-    h: a5c2cad80410
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r6
+    h: 3313c7d0fe28
   review: drafted
 - claim_id: c4
-  rel: mitigated_by
-  target: mit:firmware-update
+  rel: reports
+  target: symptom:timezone-database-update-failure
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r6
@@ -52,11 +48,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r6
     h: a5c2cad80410
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r6
+    h: 3313c7d0fe28
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h229
+    h: e8812949e30a
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h386
+    h: 07aa9e611a14
   review: drafted
 - claim_id: c5
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the message recurs after retrying.
+  target: mit:retry-update
+  note: First step; contact service if message recurs.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r6
@@ -64,11 +69,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r6
     h: a5c2cad80410
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r6
+    h: 3313c7d0fe28
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h230
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h387
+    h: 2b6216ee121d
   review: drafted
 - claim_id: c6
-  rel: has_recovery
-  target: ec:manual-reset
-  note: Operator retries update first; service only if failure repeats.
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the message appears again after retrying.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r6
@@ -76,7 +90,13 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r6
     h: a5c2cad80410
-  review: drafted
-  review_note: 'support check: partial - Operator retry is stated, but the passages don''t say the code
-    clears by manual reset or acknowledgement.'
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h230
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h387
+    h: 2b6216ee121d
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

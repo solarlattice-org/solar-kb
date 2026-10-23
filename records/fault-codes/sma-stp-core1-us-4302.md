@@ -31,6 +31,22 @@ claims:
     h: 941ab92a0300
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r4
+    h: 93c2d6ff802b
+  review: drafted
+- claim_id: c4
+  rel: defined_in
+  target: src:sma-kb-stp-us-41-events-4301-4302
+  cite:
+  - src: src:sma-kb-stp-us-41-events-4301-4302
+    loc: sec=h1
+    h: f9c7fab7dc47
+  review: drafted
+- claim_id: c5
   rel: indicates
   target: fm:arc-fault
   cite:
@@ -41,10 +57,10 @@ claims:
     loc: tbl=7.r4
     h: 941ab92a0300
   review: drafted
-- claim_id: c4
+- claim_id: c6
   rel: has_recovery
   target: ec:manual-reset
-  note: Applies only when the arc-fault interrupter has triggered operation inhibition.
+  note: Manual reset needed when operation inhibition is activated.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=18.r4

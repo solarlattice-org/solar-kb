@@ -38,4 +38,83 @@ claims:
     loc: sec=h231
     h: d241890c1ecd
   review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r5
+    h: 68438bf07570
+  review: drafted
+- claim_id: c4
+  rel: indicates
+  target: fm:wifi-module-failure
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h314
+    h: d241890c1ecd
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h231
+    h: d241890c1ecd
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r5
+    h: 68438bf07570
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h286
+    h: 28c64004ee11
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h488
+    h: 4bffee8554ae
+  review: drafted
+- claim_id: c5
+  rel: affects
+  target: comp:wifi-module
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h314
+    h: d241890c1ecd
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h231
+    h: d241890c1ecd
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r5
+    h: 68438bf07570
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h286
+    h: 28c64004ee11
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h315
+    h: c87e8fc90a2c
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h232
+    h: c87e8fc90a2c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r5
+    h: 68438bf07570
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h287
+    h: e01a67e73baf
+  review: drafted
+- claim_id: c7
+  rel: has_recovery
+  target: ec:service-required
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h315
+    h: c87e8fc90a2c
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h232
+    h: c87e8fc90a2c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r5
+    h: 68438bf07570
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h287
+    h: e01a67e73baf
+  review: drafted
 ---

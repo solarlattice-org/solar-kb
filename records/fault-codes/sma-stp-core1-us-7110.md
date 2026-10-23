@@ -31,6 +31,14 @@ claims:
     h: 3ad30218e05b
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r6
+    h: 3ad30218e05b
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:firmware-update-failure
   cite:
@@ -40,8 +48,28 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r6
     h: 3ad30218e05b
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r6
+    h: 3ad30218e05b
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r2
+    h: 11b040a18040
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h335
+    h: 4198141f1bcb
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h336
+    h: 97398f676660
   review: drafted
-- claim_id: c4
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:update-file-recopy
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r2
+    h: 11b040a18040
+  review: drafted
+- claim_id: c6
   rel: has_event_class
   target: ec:warning
   cite:
@@ -51,8 +79,16 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r6
     h: 3ad30218e05b
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r6
+    h: 3ad30218e05b
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h336
+    h: 97398f676660
   review: drafted
-- claim_id: c5
+  review_note: 'support check: partial - The update failed while the inverter continues feeding, which
+    implies a warning, but the class is not stated.'
+- claim_id: c7
   rel: has_production_effect
   target: ec:no-production-effect
   cite:
@@ -62,5 +98,13 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r6
     h: 3ad30218e05b
-  review: drafted
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r6
+    h: 3ad30218e05b
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h336
+    h: 97398f676660
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

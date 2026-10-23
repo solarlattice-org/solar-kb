@@ -31,9 +31,17 @@ claims:
     h: 985fbbab0d31
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r5
+    h: 7aa84c496d40
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:self-test-failure
-  note: Self-test applies to Italy only.
+  note: Self-test was aborted.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r5
@@ -41,13 +49,16 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r5
     h: 985fbbab0d31
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r5
+    h: 7aa84c496d40
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h734
+    h: ab2f8aa642a3
   review: drafted
-  review_note: 'support check: partial - Self-test was aborted (Italy only), which is not exactly a failure
-    but close.'
-- claim_id: c4
+- claim_id: c5
   rel: mitigated_by
   target: mit:ac-connection-check
-  note: Then rerun the self-test.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r5
@@ -55,7 +66,26 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r5
     h: 985fbbab0d31
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r5
+    h: 7aa84c496d40
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h735
+    h: 46c322cdc774
   review: drafted
-  review_note: 'support check: partial - AC connection check is stated, but the ''rerun the self-test''
-    note is not in the passages.'
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:grid-settings-check
+  note: Verify country data set before restarting the self-test.
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h735
+    h: 46c322cdc774
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h619
+    h: 46c322cdc774
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h452
+    h: 46c322cdc774
+  review: drafted
 ---

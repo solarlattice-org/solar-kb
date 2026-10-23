@@ -31,28 +31,28 @@ claims:
     h: ab83d466a536
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r7
+    h: ab83d466a536
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
+  note: Status message that clock time was adjusted, showing new time.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=23.r7
     h: ab83d466a536
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=12.r7
+    h: ab83d466a536
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r7
     h: ab83d466a536
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c4
-  rel: has_production_effect
-  target: ec:no-production-effect
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=23.r7
-    h: ab83d466a536
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=12.r7
-    h: ab83d466a536
-  review: drafted
-  review_note: 'support check: partial - No production effect is implied but not stated.'
 ---

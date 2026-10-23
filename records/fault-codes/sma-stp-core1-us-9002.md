@@ -31,19 +31,16 @@ claims:
     h: ac6479fb8aba
   review: drafted
 - claim_id: c3
-  rel: reports
-  target: symptom:configuration-error
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=22.r2
-    h: ac6479fb8aba
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=11.r2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r2
     h: ac6479fb8aba
   review: drafted
 - claim_id: c4
-  rel: has_event_class
-  target: ec:informational
+  rel: reports
+  target: symptom:invalid-access-code
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r2
@@ -51,9 +48,13 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r2
     h: ac6479fb8aba
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h249
+    h: e1adee9857f4
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h423
+    h: 7b9916244398
   review: drafted
-  review_note: 'support check: partial - Row describes an incorrect code with parameters still protected,
-    but does not state it is merely informational; plausible but not stated.'
 - claim_id: c5
   rel: mitigated_by
   target: mit:enter-access-code
@@ -64,5 +65,28 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r2
     h: ac6479fb8aba
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h250
+    h: 49e51ba280f0
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h424
+    h: 49e51ba280f0
   review: drafted
+- claim_id: c6
+  rel: has_event_class
+  target: ec:informational
+  note: Configuration message; parameters remain protected.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=22.r2
+    h: ac6479fb8aba
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=11.r2
+    h: ac6479fb8aba
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h249
+    h: e1adee9857f4
+  review: drafted
+  review_note: 'support check: partial - The row shows a status message with parameters still protected,
+    which suggests informational, but it never states the classification and…'
 ---

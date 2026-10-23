@@ -31,27 +31,41 @@ claims:
     h: fb36bcc7e0da
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r3
+    h: fb36bcc7e0da
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r3
-    h: fb36bcc7e0da
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r3
     h: fb36bcc7e0da
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r3
+    h: fb36bcc7e0da
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=19.r2
+    h: 576c7d273e37
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:wifi-module
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r3
-    h: fb36bcc7e0da
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r3
     h: fb36bcc7e0da
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r3
+    h: fb36bcc7e0da
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=19.r2
+    h: 576c7d273e37
   review: drafted
 ---

@@ -31,20 +31,17 @@ claims:
     h: fe3078fdd1c1
   review: drafted
 - claim_id: c3
-  rel: reports
-  target: symptom:firmware-update-failure
-  note: Applies to the user interface update.
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r8
-    h: fe3078fdd1c1
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=10.r8
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r8
     h: fe3078fdd1c1
   review: drafted
 - claim_id: c4
-  rel: mitigated_by
-  target: mit:firmware-update
+  rel: reports
+  target: symptom:firmware-update-failure
+  note: Update of the inverter web user interface failed.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r8
@@ -52,11 +49,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r8
     h: fe3078fdd1c1
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r8
+    h: fe3078fdd1c1
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h232
+    h: 6a64d12415ca
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h393
+    h: c10b2c8c64ac
   review: drafted
 - claim_id: c5
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the message recurs after retrying.
+  target: mit:retry-update
+  note: Retry first; contact service if the message recurs.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r8
@@ -64,11 +70,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r8
     h: fe3078fdd1c1
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r8
+    h: fe3078fdd1c1
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h233
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h394
+    h: 2b6216ee121d
   review: drafted
 - claim_id: c6
-  rel: has_recovery
-  target: ec:manual-reset
-  note: Operator retries update first; service only if failure repeats.
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the message reappears after a retry.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r8
@@ -76,7 +91,14 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r8
     h: fe3078fdd1c1
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r8
+    h: fe3078fdd1c1
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h233
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h394
+    h: 2b6216ee121d
   review: drafted
-  review_note: 'support check: partial - Operator retry is stated, but the passages don''t say the code
-    clears by manual reset or acknowledgement.'
 ---
