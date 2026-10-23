@@ -12,4 +12,5 @@ This status means the battery temperature has entered a critical range, and the 
 <!-- review notes
 - sentence 3: support check: partial - The warning at 5°C below the max and the switch-off are stated, but restarting once the battery has cooled is only in u9, and the passages do not say the warning is shown for the measured temperature on all Sunny Island systems; this is mostly stated, but the 'starts again' is supported by u9 only.
 - sentence 7: support check: partial - The sensor resistance check (about 2000 Ω at 20–25°C, replace if far off) is stated, but only as a corrective measure for the overtemperature fault, not for an implausible reading in general.
+- sentence 7: review: partial - The check (about 2000 ohms at 20-25°C, replace the sensor if it deviates strongly) is stated, but only as a corrective step for the overtemperature fault F206, not for an implausible reading.
 -->

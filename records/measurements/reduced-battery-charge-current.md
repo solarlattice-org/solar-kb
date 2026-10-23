@@ -12,4 +12,5 @@ The signature is a battery that charges at a low current instead of its maximum 
 - sentence 4: support check: partial - The passages say the inverter reduces battery charging current due to overheating under a "Derating occurred" message, but they don't say it logs the message when it overheats beyond that wording.
 - sentence 6: support check: partial - Negative values meaning charging are stated, but the claim that this signature appears as a smaller-magnitude negative current than expected is an inference not in the passages.
 - sentence 7: support check: partial - The passages support recalibrating the current sensor after reinstallation and the AC charging current setting influencing charging, but not the advice to check it before blaming the battery.
+- sentence 7: review: partial - Recalibrating the current sensor after reinstallation and the influence of the max AC charging current are both stated, but the advice to check that setting before blaming the battery is an added framing that the passages do not state.
 -->

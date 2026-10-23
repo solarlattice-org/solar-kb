@@ -13,4 +13,5 @@ A flashing red LED on a battery module means the battery has gone into a fault s
 - sentence 3: support check: partial - The steps match, but the article says 'emerging charging' rather than 'emergency charging', and it also says to contact the installer.
 - sentence 5: support check: partial - Rapid red blinking at 0.5 s is an error and a red strobe at 8 s is sleeping, but the passages don't name Generac PWRcell and 'only' is an added qualifier.
 - sentence 6: support check: partial - A steady red battery LED means state of charge below 20%, but the passages don't mention flashing red or say 'only'.
+- sentence 1: review: partial - The Enphase, SMA and Generac passages each tie a flashing red LED to an error or fault state with different patterns, but the general rule for all battery modules and the advice to read the pattern against that battery's LED…
 -->

@@ -11,4 +11,5 @@ An energy reset event is a log entry showing that the device energy registers we
 
 <!-- review notes
 - sentence 4: support check: partial - The menu function includes resetting energy values, but the passages don't say a logged reset may come from a deliberate operator action (an inference).
+- sentence 4: review: partial - The menu function does both display the last reset date/time and reset energy values, but the conclusion that a logged reset may come from a deliberate operator action is not stated.
 -->

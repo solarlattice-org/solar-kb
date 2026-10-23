@@ -18,4 +18,5 @@ Battery management continuously tracks battery temperature, and this message app
 - sentence 1: support check: partial - Continuous monitoring and F206 'Battery overtemperature' on display are stated, but the passages don't say the message appears in the event list, and the statement is vague about which message.
 - sentence 6: support check: partial - Cooling and the ~2000 Ω at 20–25°C sensor check with replacement on large deviation are stated, but 'if the message keeps coming back' is not in the passages.
 - sentence 8: support check: partial - Event 9313 says Service must determine the cause and to contact the battery manufacturer, but 'on some devices' is not stated.
+- sentence 1: review: partial - Continuous temperature monitoring and the F206 'Battery overtemperature' display entry are stated, but no passage says the message appears in the event list.
 -->

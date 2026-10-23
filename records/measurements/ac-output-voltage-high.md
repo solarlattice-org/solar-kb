@@ -17,4 +17,5 @@ The inverter measures an AC line voltage above its high-voltage setting for long
 
 <!-- review notes
 - sentence 7: support check: partial - The passages give a 2% voltage measurement accuracy on several models, but they don't say to confirm borderline readings with an independent meter.
+- sentence 7: review: partial - All three passages give about 2% AC voltage measurement accuracy, but none of them advises confirming a borderline reading with an independent meter.
 -->

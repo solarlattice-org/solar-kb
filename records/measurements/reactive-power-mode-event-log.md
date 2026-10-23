@@ -13,4 +13,6 @@ This signature is a record that the inverter's reactive power mode was set or ch
 - sentence 4: support check: partial - The five modes with different parameters are listed, but the passage doesn't say they belong to other inverters as opposed to this one.
 - sentence 6: support check: partial - The passage says feeding modes vary by country/state and grid company, but it doesn't mention comparing a logged change with required grid settings.
 - sentence 7: support check: partial - A Reactive AC Power Output (VAr) measurement exists, but nothing says to use it to confirm the inverter's behavior after a change.
+- sentence 1: review: partial - The menu path System and device control > Inverter > Reactive power mode is stated, but nothing in the passages says this signature records the mode being set or changed.
+- sentence 7: review: partial - The passage confirms a Reactive AC Power Output (VAr) measurement exists, but does not say to use it to confirm what the inverter did after a mode change.
 -->

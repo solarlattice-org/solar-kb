@@ -13,4 +13,5 @@ This signature is an inverter or battery inverter event that reports the battery
 
 <!-- review notes
 - sentence 4: support check: partial - Event 9314 with Service-determined cause and contacting battery manufacturer is stated, but 'other SMA inverters' is not named in the passages.
+- sentence 4: review: partial - The text of event 9314 (cause found by Service, contact the battery manufacturer) is stated, but the passages do not say which devices log it, so 'other SMA inverters' is not shown.
 -->
