@@ -1,0 +1,70 @@
+---
+id: fc:huawei-sun2000-45ktl-us-hv-d0-504
+type: FaultCode
+name: Huawei SUN2000-45KTL-US-HV-D0 504
+aliases:
+- '504'
+- Huawei 504
+- Software Version Unmatch
+category: Inverters
+make: huawei
+make_name: Huawei
+model_family: sun2000-45ktl-us-hv-d0
+family_name: Huawei SUN2000-45KTL-US-HV-D0
+code: '504'
+code_key: '504'
+display_message: Software Version Unmatch
+vendor_severity: Minor
+page: 120
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+  cite:
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=59.r2
+    h: 993b6fc1aaf9
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:warning
+  note: from the Type column
+  cite:
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=59.r2
+    h: 993b6fc1aaf9
+  review: drafted
+- claim_id: c3
+  rel: reports
+  target: symptom:software-version-mismatch
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=43.r4
+    h: 131d1beb27bc
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=59.r2
+    h: 993b6fc1aaf9
+  review: drafted
+- claim_id: c4
+  rel: mitigated_by
+  target: mit:firmware-update
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=43.r4
+    h: 131d1beb27bc
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=59.r2
+    h: 993b6fc1aaf9
+  review: drafted
+- claim_id: c5
+  rel: has_production_effect
+  target: ec:no-production-effect
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=43.r4
+    h: 131d1beb27bc
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: sec=8.2
+    h: db4d98f32335
+  review: drafted
+---
