@@ -19,7 +19,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=35.r5
     h: b91e58f0f23d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 Fuse inspection means checking a protection fuse in the inverter to see whether it has opened or blown, then replacing it if it has. For string protection fuses, use a multimeter to check each fuse on the fuse boards when the inverter reports a string current error, because damaged fuses can cause this alarm. If a string fuse is open, replace it and confirm that the string input current does not exceed the fuse rating, for example where strings have been paralleled outside the inverter. If no string fuse is damaged and the alarm stays on, check whether the configured settings match the strings actually connected. For a grounding fuse fault, wait until the capacitor has fully discharged, remove the negative grounding fuse and check whether it has blown. If it has, check the transformer neutral point connections and grounding. A sudden strong residual current from a ground fault destroys the grounding fuse, so find and clear the ground fault before you inspect or replace the fuse. Before you start, disconnect the inverter on the AC and DC sides. Opening the AC and DC switches can still leave DC input voltage on the fuse board, so wear suitable PPE and wait at least 30 minutes for stored energy to discharge.
 

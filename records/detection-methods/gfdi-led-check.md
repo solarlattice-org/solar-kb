@@ -35,7 +35,9 @@ claims:
   - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
     loc: tbl=46.r2
     h: 5ef23892e8c1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Passages show red LEDs (FIMER, Enphase, SMA) and yellow (a ground
     fault LED) for ground fault, but Yaskawa SGI is not named and ''blown ground fuse'' is only implied
     by SMA fuse fault.'
@@ -54,7 +56,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=35.r2
     h: c8d350ec3a48
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This check means looking at the ground fault indicator LED on the inverter or on its GFDI device to see whether the ground fault protection has tripped. If the GFDI LED is lit after a grounding fault alarm, the ground fuse has failed and should be replaced with a new one. A lit GFI LED means a ground fault was detected on the DC side of the PV array, and the inverter disconnects from the grid until the fault is cleared. LED colour varies by make: some inverters use a solid red LED, often together with a ground fuse message on the display, while others use yellow ground fault LEDs fitted in pairs so one still works if the other fails. After a GFDI trip, check the PV array for ground faults. Once the cause is fixed, the fault may need to be reset by hand. On some central inverters, the GFDI function and its signalling can be tested with the inverter switched off, by switching the GFDI breaker off and on and confirming the failure message appears and then clears. Replace the GFDI if it fails its mechanical or optical check, and in any case after at least 100 ground faults that tripped it. An indicator that is off does not prove the circuit is dead, because voltage may still be present in DC circuits, so follow electrical safety precautions.
 
