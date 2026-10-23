@@ -11,4 +11,5 @@ The medium voltage transformer steps up the low voltage AC output of the inverte
 <!-- review notes
 - sentence 2: support check: partial - Passages say a suitable transformer is needed, designers choose it, and the SHP 100-21 may not need one; they don't say inverter manuals generally set requirements, and 'some smaller inverters' is broader than the one model named.
 - sentence 7: support check: partial - Passage refers to 'ANSI C57.12.00.4' for detailed information on operation in different service conditions, which is not exactly C57.12.00, so the attribution is only loosely supported.
+- sentence 7: review: partial - The passage points to 'ANSI C57.12.00.4' for operation in different service conditions, so pinning the guidance on C57.12.00 is only loosely supported.
 -->

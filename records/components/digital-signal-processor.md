@@ -12,4 +12,5 @@ The digital signal processor, usually shortened to DSP, is a processor inside th
 - sentence 2: support check: partial - Code 460 with reference voltage source for the DSP outside tolerances is stated (u2, u3), but the passages don't name Fronius, and u1 says 'power source'.
 - sentence 3: support check: partial - Code 461 as an error in DSP data memory is stated, but the passages don't mention Fronius or Primo/Symo models.
 - sentence 4: support check: partial - Code 518 as an internal DSP malfunction with a warning message on the display is stated, but the Fronius Symo model isn't named in the passages.
+- sentence 1: review: partial - The passages only expand DSP as digital signal processor and never say it is a processor inside the inverter.
 -->

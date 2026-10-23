@@ -9,4 +9,5 @@ The residual current monitoring unit is a protective circuit built into the inve
 
 <!-- review notes
 - sentence 7: support check: partial - Datasheet rows show the RCMU as available or supported, including Huawei SUN2000 models, but the passages don't name Solis or clearly identify SMA, and don't say 'standard on many'.
+- sentence 7: review: partial - The SMA, Huawei and Solis datasheet rows list the RCMU as Available, Supported or Yes, but none of them says it is 'standard', and 'many string inverters' goes beyond the six rows cited.
 -->

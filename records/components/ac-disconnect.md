@@ -14,4 +14,6 @@ The AC disconnection unit separates the inverter's AC output from the medium vol
 - sentence 5: support check: partial - Alarm 2032 Grid Loss lists a disconnected AC circuit or AC switch off as causes and the check measure, but it also arises from grid outage, and 'string inverters' is not stated.
 - sentence 7: support check: partial - Inverter stopping when 24 V is applied without the option is stated, but the log note refers to an actual shunt trip event, not specifically the no-option case.
 - sentence 8: support check: partial - A built-in lockable AC disconnect switch and load-rated AC switch appear, but 'smaller string inverters' as a general class is not stated.
+- sentence 1: review: partial - The passages back manual disconnection and automatic opening on residual current between inverter and MV transformer, but 'or grid' and the claim that this applies to central inverters in general are not stated (the source covers only the SMA Sunny…
+- sentence 7: review: partial - The passage states that applying 24V without the option installed stops power production, but its log note is about a real shunt trip event (the inverter loses power), not the case where the option is missing.
 -->

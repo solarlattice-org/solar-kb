@@ -9,4 +9,5 @@ The choke is an inductor inside the inverter. SMA inverters monitor the area aro
 - sentence 1: support check: partial - Passages show overtemperature detected in the choke area, but not that the choke is an inductor or that SMA inverters monitor it generally (only the event text).
 - sentence 3: support check: partial - It is an overtemperature and corrective measures involve cleaning fins and ventilation, but a stated link to poor enclosure cooling as cause is only implied.
 - sentence 6: support check: partial - Some versions list not exposing the inverter to direct solar irradiation, but passages don't say 'manual' or which models; others omit it.
+- sentence 1: review: partial - The passages show SMA self-diagnosis detecting overtemperature in the choke area, but nothing in them says the choke is an inductor.
 -->

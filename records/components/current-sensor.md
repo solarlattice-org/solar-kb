@@ -13,4 +13,5 @@ A current sensor measures electrical current inside an inverter. Inverters inclu
 - sentence 4: support check: partial - Code 315 is AC current sensor fault, but the passage does not mention Symo models specifically.
 - sentence 7: support check: partial - Evidence mentions two nuts and a 7mm socket for AC current sensor replacement, but doesn't name Yaskawa or explicitly state field replaceability.
 - sentence 8: support check: partial - Report update adds alternate materials including AC current sensor, but the passage doesn't mention Solis by name.
+- sentence 1: review: partial - The status codes confirm that inverters have AC and arc-detector current sensors, but the definition that a current sensor measures current inside an inverter is not stated.
 -->

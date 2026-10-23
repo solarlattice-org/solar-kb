@@ -10,4 +10,5 @@ A DC boost converter is a power electronics stage that steps up DC voltage. One 
 <!-- review notes
 - sentence 1: support check: partial - The passage shows the topology is 'Boost converter' for a device, but doesn't state the definition of a boost converter or that it is module-level or from one manufacturer.
 - sentence 3: support check: partial - The solution lists inspect installation, restart, replace inverter, but the 'if the fault stays' condition is not stated.
+- sentence 1: review: partial - The row lists only 'Topology: Boost converter' for the S2502; the definition (steps up DC voltage) and the 'module-level PV device' description are not in the passage.
 -->

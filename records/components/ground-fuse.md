@@ -10,4 +10,5 @@ The PV ground fuse is the fuse that protects the solar module ground path in Fro
 <!-- review notes
 - sentence 1: support check: partial - Passages say the fuse for solar module ground is defective (codes 472/551) but don't name it 'PV ground fuse' or say it protects the ground path, nor mention Galvo specifically.
 - sentence 6: support check: partial - Passage says all three GND terminals must be tightened to the specified torque, but it doesn't link to a Galvo-specific context or the 'grounded array' beyond that; core is stated, so only minor detail missing.
+- sentence 1: review: partial - The rows describe a 'fuse for solar module ground', but the passage text does not say the fuse protects the ground path or name Fronius Galvo inverters.
 -->

@@ -10,4 +10,5 @@ The inverter bridge is the power-electronics stage inside an inverter, and SMA i
 <!-- review notes
 - sentence 1: support check: partial - The passage says the message indicates a disturbance in the power electronics, but it never defines the inverter bridge as the power-electronics stage.
 - sentence 2: support check: partial - The passage says the bridge in transformerless inverters can be damaged by sporadic ground faults and that the error can be caused by DC installation faults, but it does not say this is 'often' the cause.
+- sentence 1: review: partial - The passage says the SD-WR-Bruecke/SD-inv-bridge message indicates a disturbance in the power electronics, but it does not define the inverter bridge as the power-electronics stage.
 -->

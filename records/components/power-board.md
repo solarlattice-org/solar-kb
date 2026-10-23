@@ -12,4 +12,6 @@ In Yaskawa-Solectria inverters, the power board is a printed circuit board assem
 - sentence 1: support check: partial - The passage lists a replacement power supply board PCBA for aux power, implying field replacement, but doesn't say 'Yaskawa-Solectria inverters' or explicitly field-replaceable.
 - sentence 4: support check: partial - The passage shows a heading 'Replacing the Power Supply Board: Midpoint Filter Board Replacement' but does not say these are manufacturer customer-facing instructions or that they are listed together as separate procedures.
 - sentence 5: support check: partial - The passage defines NOTICE as indicating an equipment damage message, but doesn't state it's used in this service document or the instruction to follow cautions while handling the board.
+- sentence 1: review: partial - The row names a replacement auxiliary power PCBA, which implies it can be replaced, but the passage text does not say Yaskawa-Solectria inverters or field replacement.
+- sentence 4: review: partial - The row shows a combined heading pairing power supply board replacement with midpoint filter board replacement, but 'manufacturer's customer-facing instructions' comes only from the source id, not the passage text.
 -->

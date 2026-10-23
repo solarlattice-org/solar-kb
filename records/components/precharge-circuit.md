@@ -11,4 +11,5 @@ The DC link precharge circuit is a part of the inverter that pre-charges the DC 
 <!-- review notes
 - sentence 1: support check: partial - The passage says only that the DC link pre-charging circuit is defective; it doesn't say the circuit pre-charges the DC link before the inverter starts operating.
 - sentence 5: support check: partial - The article does ask about the Q at night function and whether its parameter is enabled, but the flow is conditional, with a 'contact SMA Service' branch. It doesn't plainly say to check this before calling service.
+- sentence 1: review: partial - The row says only that the DC link pre-charging circuit is defective; it never says the circuit pre-charges the DC link before the inverter starts operating.
 -->
