@@ -364,7 +364,9 @@ def rule_mapping_prefixes(corpus: Corpus, prefixes: dict[str, str]) -> list[Viol
 
 
 FAULT_CODE_REQUIRED = ("make", "make_name", "model_family", "family_name", "code", "code_key", "name", "category")
-DEFINED_IN_LOC_RE = re.compile(r"^(tbl=\d+(\.r\d+)?|sec=h\d+)$")
+# The defining row, table or heading unit. A numbered section counts when the finder took it as the code's own
+# heading unit (SMA eManual "6.2.1 Event 101", Enphase "5.1.2 DC Resistance Low - Power Off"); pages never do.
+DEFINED_IN_LOC_RE = re.compile(r"^(tbl=\d+(\.r\d+)?|sec=h\d+|sec=\d+(\.\d+)*)$")
 BASIS_RE = re.compile(r"^basis=(rated_power|current_power|absolute)\b")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.S)
 MAX_DISPLAY_MESSAGE_WORDS = 8
@@ -468,7 +470,7 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
                     loc = cite.get("loc")
                     if isinstance(loc, str) and not DEFINED_IN_LOC_RE.match(loc):
                         out.append(_v("fault-code", record, f"defined_in cites the defining row (tbl=N.rM), table (tbl=N) "
-                                                            f"or heading unit (sec=hK), not {loc!r}", claim))
+                                                            f"or heading unit (sec=hK or a numbered sec=N.M), not {loc!r}", claim))
                     if cite.get("src") != target:
                         out.append(_v("fault-code", record, f"defined_in cites the row of its own target {target}, not "
                                                             f"{cite.get('src')!r}", claim))
