@@ -10,4 +10,5 @@ An external fuse check confirms that the fuse feeding the device from outside is
 <!-- review notes
 - sentence 1: support check: partial - The corrective steps (reactivate pre-fuse, check AC2 voltage at master in main cluster) are stated, but the passages don't describe the external fuse check or its meaning.
 - sentence 3: support check: partial - The passages state the grid may not work within set system limits, but the inference that a healthy fuse doesn't rule out a grid cause is not stated.
+- sentence 1: review: partial - The corrective steps (reactivate the pre-fuse, check the voltage supply at AC2 of the master in the main cluster) are quoted, but defining the check as confirming the fuse is 'intact', and linking it to a 'matching event', go beyond…
 -->

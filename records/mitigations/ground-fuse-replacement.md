@@ -10,4 +10,5 @@ Ground fuse replacement means swapping out a defective fuse in the grounding pat
 <!-- review notes
 - sentence 2: support check: partial - Code 472 row states defective module ground fuse and no grid feed-in with replacement as the fix, but the passage does not mention the Fronius Galvo model.
 - sentence 4: support check: partial - Both rows say to contact the installer if the code keeps recurring, but they do not say 'after replacement' or 'instead of fitting another fuse'.
+- sentence 4: review: partial - Both rows say to contact the installer if the code keeps recurring, but they do not say 'after the fuse has been replaced' or 'instead of fitting another fuse'.
 -->

@@ -7,4 +7,5 @@ Downloading the update file again is the remedy when a Fronius inverter reports 
 
 <!-- review notes
 - sentence 2: support check: partial - 735 is described as stated, but its remedy is to check the file and download the correct one, not to download it again as 'the same action' for 745 implies; the wording is roughly consistent but slightly conflated.
+- sentence 4: review: partial - The passage supports the froxxxxx.upd name with xxxxx as the version number, but it never says the name helps confirm you have the right file.
 -->

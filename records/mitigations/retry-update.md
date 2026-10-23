@@ -13,4 +13,5 @@ Retrying the update means running a failed firmware or software update on the in
 
 <!-- review notes
 - sentence 7: support check: partial - Contact service when error persists/recurs is stated, but the claim that a retry only fixes one-off interruption is an unstated inference, and the manufacturer's Service/dealer/trained technician are covered separately.
+- sentence 7: review: partial - The passages support escalating to a Fronius-trained technician, the dealer or the Service when the error persists or repeats, but the claim that a retry only fixes a one-off interruption is not stated.
 -->

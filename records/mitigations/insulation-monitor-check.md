@@ -10,4 +10,5 @@ An insulation monitoring check means inspecting the inverter's insulation monito
 - sentence 2: support check: partial - Explanation matches and S1/S2 'W' suggests warning, but the passage doesn't name the SMA Sunny Central CP XT or define W explicitly.
 - sentence 3: support check: partial - Explanation and corrective action match, but the model (same inverter) isn't stated in the passage; also behavior (15 min) not mentioned though not required.
 - sentence 7: support check: partial - Ground fault detection by inverter or other devices at all times is stated, but fixing a non-working monitoring function promptly is not stated.
+- sentence 7: review: partial - The passage states ground fault detection by the inverter or other devices at all times, but the conclusion that a faulty monitoring function should be fixed promptly is not stated.
 -->

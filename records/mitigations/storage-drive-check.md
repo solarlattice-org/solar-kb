@@ -13,4 +13,5 @@ On Fronius Galvo, Primo and Symo inverters, checking the removable USB drive is 
 - sentence 2: support check: partial - Inserting or checking the drive, checking the file system and files, and replacing the drive are supported. 'Seated' and 'keeps failing' are not stated.
 - sentence 4: support check: partial - The 743 remedy (repeat the update, check the drive) is supported. For 745 the remedy lists downloading the file again and checking or replacing the drive, but the passages don't say the download must come before the check.
 - sentence 5: support check: partial - The OK and LED conditions for removal are supported by u8 and the 736 rows. 'Removing it earlier can lose data' is only implied by 'without losing data'.
+- sentence 1: review: partial - The codes, their descriptions and the on-display warnings match the rows, but nothing says checking the drive is the first step (738's first remedy is freeing memory), and 745 appears only in the Symo row.
 -->

@@ -12,4 +12,5 @@ Power board replacement means swapping out the inverter's power supply board. Ya
 <!-- review notes
 - sentence 1: support check: partial - Titles show Yaskawa-style customer-facing instructions for power supply board replacement on XGI 1500, but the passages don't define it as swapping the inverter's board beyond the title, and don't name Yaskawa Solectria.
 - sentence 3: support check: partial - Wire connection, #1 Phillips, 10.2 in-lbs and sub board caution are stated, but 'first' ordering is not clear (the list places this step before mounting, though the mount step is listed second) and 'screw terminals' only from the figure caption.
+- sentence 1: review: partial - The titles support customer-facing power supply board replacement instructions for the XGI 1500, but the passage text never names Yaskawa Solectria as the author (only the source id does).
 -->

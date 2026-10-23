@@ -10,4 +10,5 @@ An inverter clock reset means entering the correct time and date on the inverter
 <!-- review notes
 - sentence 4: support check: partial - The passages say Inverter Clock sets the system clock but don't mention CPS inverters or a menu item.
 - sentence 7: support check: partial - The steps match, but the passages don't name FIMER, and the battery replacement is for when the date has reset to 01/01/2000, which fits; the FIMER brand is the only gap.
+- sentence 4: review: partial - The rows show an 'Inverter Clock' item that sets the system clock, but the CPS brand appears only in the source IDs, and the quoted text never says it is a menu item.
 -->

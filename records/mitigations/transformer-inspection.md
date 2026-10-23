@@ -7,4 +7,6 @@ Transformer inspection means checking the medium-voltage transformer that a cent
 
 <!-- review notes
 - sentence 4: support check: partial - Noise/vibration, leaks and oil level checks and yearly DGA, dielectric strength and water content are stated, but nothing mentions 'pad-mounted' units, and the checks are every three weeks rather than just 'regularly'.
+- sentence 1: review: partial - Error 6440 says the MV transformer is no longer hermetically sealed and gives the corrective step 'Check the MV transformer', but no passage says the central inverter feeds that transformer.
+- sentence 4: review: partial - The GE table lists noise and vibration, oil leak and oil level checks plus yearly DGA, dielectric strength and water content tests, but the passage never says 'pad-mounted', so that scope is not supported.
 -->

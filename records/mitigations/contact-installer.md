@@ -9,4 +9,5 @@ Fronius tells users to contact the system installer when certain status codes ke
 
 <!-- review notes
 - sentence 1: support check: partial - Contact-installer advice for recurring 502, 475, 474 is stated, but the claim that both point to possible loss of electrical insulation (RCMU sensor faulty) is not stated in the passages.
+- sentence 1: review: partial - The rows support contacting the installer for recurring 502, 475 and 474, but they never say the faulty RCMU sensor (474) points to a possible loss of electrical insulation.
 -->

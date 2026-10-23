@@ -12,4 +12,6 @@ The ground fault detector and interrupter (GFDI) is the inverter's protection de
 <!-- review notes
 - sentence 1: support check: partial - Passages describe GFDI as ground-fault protection/disconnect on DC side, but nothing about an action replacing its interrupting element after operation or failure.
 - sentence 7: support check: partial - u3 supports continuous ground fault detection and regular inspections, but not the claim that replacing the part does not remove the cause.
+- sentence 1: review: partial - The passages describe the GFDI as DC-side ground-fault protection that disconnects the inverter, but nothing in them says this action replaces its interrupting element after it has operated or failed.
+- sentence 7: review: partial - The IEA row supports ground fault detection at all times and regular inspections, but not the claim that replacing the part does not remove the cause.
 -->
