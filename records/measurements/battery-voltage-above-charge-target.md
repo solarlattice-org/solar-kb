@@ -13,4 +13,5 @@ On Sunny Island battery inverters, event F 208 BatVtgHi means the measured batte
 <!-- review notes
 - sentence 2: support check: partial - Passages list BatVtg and BatChrgVtg as display values, but nothing states comparing them to confirm F 208 or mentions the parameter list.
 - sentence 4: support check: partial - Check of 120.02 BatVtg above 65.0 V and DC source settings is stated for F 201 and W 202, but not W 203, which has a different measure.
+- sentence 4: review: partial - The 65.0 V BatVtg check and the DC-source and battery-capacity advice appear for F 201 and W 202, but not for W 203 (the slave-2 message), which only says to check the DC source connection and configuration.
 -->

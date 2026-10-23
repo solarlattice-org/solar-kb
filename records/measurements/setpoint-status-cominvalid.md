@@ -8,4 +8,5 @@ ComInvalid is a status value that SMA Sunny Central CP XT inverters show for the
 <!-- review notes
 - sentence 1: support check: partial - The passages show ComInvalid as a display value for power setpoint functions, but they never name SMA Sunny Central CP XT as the device.
 - sentence 4: support check: partial - The ComFail and ComInvalid definitions are stated, but the claim that a setpoint arrives with invalid content is only an interpretation of the passages.
+- sentence 1: review: partial - The passages show ComInvalid as a display value for the power setpoint modes, but the quoted text never names SMA Sunny Central CP XT inverters (only the source id suggests it).
 -->

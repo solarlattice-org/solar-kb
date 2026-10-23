@@ -12,4 +12,5 @@ This signature is a warning flag in the inverter status data that sets when some
 <!-- review notes
 - sentence 1: support check: partial - Passages describe an unauthorized network access attempt, but nothing says it is a warning flag in status data (the code is only listed as 30).
 - sentence 4: support check: partial - The passage shows an event 'Login for NSD function on device failed' but does not mention SMA or state it is similar or logged as an event.
+- sentence 1: review: partial - The rows describe code 30 as an unauthorized attempt to access the network, but they do not say it is a warning flag or bit in the inverter status data.
 -->

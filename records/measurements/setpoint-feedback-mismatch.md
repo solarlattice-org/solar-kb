@@ -12,4 +12,5 @@ Some plant controllers expose feedback points that report back the real and reac
 - sentence 4: support check: partial - The retain-then-fallback-then-resume sequence is stated, but the retention time is described as configurable and the fallback only applies if activated and configured.
 - sentence 5: support check: partial - ComInvalid with invalid power setpoint content and checking the power specification settings is stated, but only when mode WCtlCom is selected, and 'some central inverters' isn't stated.
 - sentence 6: support check: partial - Events 8706 and 8707 for setpoint spec activated and deactivated exist, but the passages don't say they help identify the active setpoint source during a mismatch.
+- sentence 1: review: partial - The passages list real and reactive power setpoint feedback points, but they don't say these report the applied setpoints or should be compared with the dispatcher's setpoints.
 -->

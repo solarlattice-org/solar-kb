@@ -18,4 +18,5 @@ The inverter reports that the DC input voltage from the PV array is too low to f
 
 <!-- review notes
 - sentence 6: support check: partial - u21 says power is automatically reduced when input voltage is too high or too low, but it doesn't state that the inverter does not stop, nor that this applies to only some inverters.
+- sentence 4: review: partial - The Sungrow row supports Major severity and the Stop-mode check of displayed against measured DC voltage, but the passage never says these are central inverters.
 -->

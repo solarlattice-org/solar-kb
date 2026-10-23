@@ -9,4 +9,5 @@ This signature is an inverter event log entry saying that the login rights are i
 
 <!-- review notes
 - sentence 4: support check: partial - Insufficient user rights is stated, but nothing in the passages says it is not a hardware or PV array fault (only implied).
+- sentence 4: review: partial - The passages state that the logged-in user group lacks the rights to import, but they never say it does not point to a hardware or PV array fault.
 -->

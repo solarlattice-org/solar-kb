@@ -9,4 +9,5 @@ This signature means the inverter has measured too large a direct-current share 
 
 <!-- review notes
 - sentence 3: support check: partial - The passages show the OtherProtect menu sets thresholds for both leakage current and output DC component protection, but they don't say that several inverter models offer it; the evidence appears to come from CPS manuals.
+- sentence 4: review: partial - The quoted text gives no numeric limit or causal failure modes, but the CPS passage points to a protection-parameter table (Table 5-6) that probably holds threshold values, so 'no numeric limit' is not clearly true of the sources.
 -->

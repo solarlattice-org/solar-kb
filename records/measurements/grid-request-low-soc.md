@@ -11,4 +11,5 @@ This signature is an event message from a battery inverter. It reports that the 
 
 <!-- review notes
 - sentence 7: support check: partial - Passages list it as a grid request event without fault classification, but don't explicitly say it is not a hardware fault.
+- sentence 7: review: partial - The tables list E501 as an operating grid-request event next to other routine events, but they never say it does not indicate a hardware fault.
 -->

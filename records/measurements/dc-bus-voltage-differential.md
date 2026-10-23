@@ -14,4 +14,5 @@ This signature is a mismatch between the positive and negative halves of the inv
 - sentence 2: support check: partial - A writable half-bus differential protection difference value register exists (RW, 1000-6000), but the passage doesn't say the inverter trips when the difference exceeds it.
 - sentence 4: support check: partial - Protect0070 and Fault0110 are listed as bus imbalance with the impedance/voltage between grid phases in transient conditions text, but 'attribute to differences' is only implied by the remedy wording.
 - sentence 6: support check: partial - Event 024 is voltage imbalance at neutral point with automatic recovery when deviation falls within range, but the passages don't say it is the same condition as the bus difference.
+- sentence 1: review: partial - The BUS+ and BUS- registers sampled by the PID board are supported, but the cited rows never describe a mismatch or difference between the two halves.
 -->

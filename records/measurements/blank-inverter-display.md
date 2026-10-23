@@ -16,4 +16,5 @@ The inverter front display shows nothing at all, and the screen stays dark even 
 
 <!-- review notes
 - sentence 7: support check: partial - Complete failure, data log and visual/IRT inspection of burned parts are supported, but the passages don't link a blank display to complete failure.
+- sentence 7: review: partial - The IEA row supports complete inverter failure, the monitoring data log, and visual/IRT inspection for burned parts, but it never links a blank display to complete failure (it only says to check the display for fault codes).
 -->

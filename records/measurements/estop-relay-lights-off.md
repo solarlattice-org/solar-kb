@@ -10,4 +10,5 @@ On Sunny Central cabinets, the emergency stop relay has indicator lights at the 
 <!-- review notes
 - sentence 1: support check: partial - Passage says that, depending on design and version, the relay is installed with the indicator lights at the control unit, but doesn't state the alternative of being mounted elsewhere.
 - sentence 2: support check: partial - Passages say both lights must be lit in normal operation, but don't say that being off means the relay has dropped out.
+- sentence 1: review: partial - The passage says that, depending on design and production version, the relay is installed with the indicator lights at the control unit, but it never mentions the alternative of mounting it elsewhere.
 -->

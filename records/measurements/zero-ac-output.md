@@ -25,4 +25,5 @@ The inverter stops feeding power into the grid, so the AC output power reading d
 - sentence 1: support check: partial - Passage says Pac should be 0.0 since the inverter is OFF, but doesn't state that the inverter stops feeding the grid in general; mostly matches the display note.
 - sentence 6: support check: partial - Passage says it can no longer connect to the grid, but the stated 'not enough DC power' cause is given; 'cannot reconnect' is fine, though the statement is essentially supported with only minor wording differences.
 - sentence 7: support check: partial - Passage states the 10-minute disconnect/shutdown and powered interfaces under 'Off grid (LEDs off)', which is consistent, but 'some inverters' and LEDs turning off are only implied by the heading.
+- sentence 1: review: partial - The passage supports Pac reading 0.0 with the ON/OFF switch OFF, but it does not state the general claim that the inverter stops feeding power to the grid.
 -->

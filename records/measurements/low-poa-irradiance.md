@@ -19,4 +19,5 @@ This signature is a low reading of solar irradiance measured in the plane of the
 
 <!-- review notes
 - sentence 1: support check: partial - Passages define plane-of-array irradiance in W/m2, but nothing says this signature is a 'low reading' (the low-condition aspect is not stated).
+- sentence 1: review: partial - The passages define plane-of-array irradiance in W/m2 but say nothing about this signature being a low reading.
 -->

@@ -15,4 +15,5 @@ This signature shows up when a string's normalized DC current stays below a set 
 
 <!-- review notes
 - sentence 5: support check: partial - Shading, different orientation, fewer modules (in the 1548-1579 String Current Reflux row) and a removed string with string memory are all stated. The 1548-1579 row and the other alarm texts do not tie fewer modules to the same alarm, so the statement merges causes from different alarms.
+- sentence 1: review: partial - The ratio against the highest-performing string, normalized string DC current and the 0.8 default are all stated, but the source says 'same component' rather than 'same inverter or combiner'.
 -->

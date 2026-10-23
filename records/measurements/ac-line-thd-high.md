@@ -21,4 +21,6 @@ This signature is a total harmonic distortion reading on the AC line that sits a
 - sentence 1: support check: partial - The u13 alarm says to test the AC line for THD on grid instability and the datasheets give normal THD values, but no passage says the signature is a THD reading above what the inverter normally produces or tolerates.
 - sentence 4: support check: partial - Passages show THD below 1% and below 1.5%, and a grid-forming voltage THD limit, but nothing about battery inverters, and the 'grid-forming or battery inverters' wording is only partly backed (u12 lists output voltage THD for SI models without saying they are battery inverters).
 - sentence 5: support check: partial - The passages show a meter-style point named Total Harmonic Distortion, but nothing about revenue or power quality meters specifically or about trending it from monitoring data.
+- sentence 1: review: partial - The passages give normal THD specs of under 3% and say to test the AC line for THD on a GRID-INTF alarm, but none defines the signature as a reading above what the inverter normally produces or tolerates.
+- sentence 4: review: partial - The <1% and <1.5% limits and a grid-forming voltage THD limit are quoted, but no passage identifies the SI models (or any unit) as battery inverters.
 -->

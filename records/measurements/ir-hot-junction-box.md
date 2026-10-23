@@ -9,4 +9,5 @@ In an infrared image, this signature is a junction box that runs hotter than the
 
 <!-- review notes
 - sentence 7: support check: partial - The passages support the fire risk from arcing and replacing the module rather than repairing the box (u11). Safe isolation is supported by u5 only for arcing or burn evidence, not for every hot box.
+- sentence 7: review: partial - The passages support the fire risk from internal arcing and replacing the module rather than repairing the box, but they call for safety isolation only when there is arcing or burn evidence, not for every hot box.
 -->

@@ -10,4 +10,6 @@ The inverter logs an event saying time synchronization failed because it could n
 <!-- review notes
 - sentence 4: support check: partial - The corrective measures imply these checks, but passages do not state they are the likely causes or to check first; this is inference.
 - sentence 7: support check: partial - Bits TSNTPP/TSNTPB assert on successful sync, but the passage does not state that neither bit set means the meter is unsynchronized.
+- sentence 4: review: partial - The passages give the corrective measures, but calling a wrong NTP setting or missing network/Internet the likely causes to check first is an inference they do not state.
+- sentence 7: review: partial - The passage says TSNTPP or TSNTPB asserts on a successful sync, but it does not say that neither bit being set means the meter is unsynchronized.
 -->

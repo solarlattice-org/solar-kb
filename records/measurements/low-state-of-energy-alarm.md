@@ -7,4 +7,5 @@ This signature is a Low State of Energy alert raised by a Megapack battery syste
 
 <!-- review notes
 - sentence 3: support check: partial - A DNP3 point with this label and index is listed, but the passages don't say it's a status point in a controls/communications list or mention SCADA monitoring.
+- sentence 4: review: partial - P1 priority, the Critical path and possible permanent cell damage are all stated, but the passage does not say the priority or path is assigned because of the cell damage.
 -->

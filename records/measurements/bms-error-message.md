@@ -11,4 +11,6 @@ This signature is an error or warning on the battery inverter that the external 
 <!-- review notes
 - sentence 4: support check: partial - F208 and W209 are battery overvoltage errors, but the passages don't say the inverter detects them itself or that they are separate from SiCom.
 - sentence 5: support check: partial - Unconfigured BMS, timeout trigger, and out-of-range voltage are stated, but the passages describe the voltage as above or below range, and these are separate battery error variants rather than stated alternate meanings of a single error.
+- sentence 1: review: partial - The passages support errors (F9xx) and a warning (W947) sent via SiCom from battery management, but they never say the battery management system is external.
+- sentence 4: review: partial - The rows show F208 (level 3) and W209 (level 1) as battery overvoltage errors, but nothing says the inverter detects them itself or that they are separate from the SiCom codes.
 -->

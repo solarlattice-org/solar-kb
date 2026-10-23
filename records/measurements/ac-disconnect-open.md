@@ -14,4 +14,5 @@ This signature is the physical position of the AC disconnect, read on the handle
 <!-- review notes
 - sentence 1: support check: partial - Passages describe AC disconnect positions (closed/open/tripped) and that AC disconnect must be off, but don't say it is read on a handle or knob as a signature, though the position states open/closed status.
 - sentence 2: support check: partial - The three positions and meanings are stated for the ABB AC disconnection unit, but the passages don't mention SMA central inverters or a handle specifically.
+- sentence 1: review: partial - The switch positions show whether the AC disconnection unit is open or closed, but the passages never say the position is read on a handle or knob.
 -->

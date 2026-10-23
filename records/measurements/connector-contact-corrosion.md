@@ -9,4 +9,5 @@ Corrosion is usually found on the metal contacts once a DC connector is opened. 
 
 <!-- review notes
 - sentence 7: support check: partial - Detection VI with (IRT) in parentheses and the check/replace instruction are supported, but the instruction comes from a Sunny Central torque section, not a general connector-defect statement; 'supporting' IR is implied only by the parentheses.
+- sentence 1: review: partial - The passage says opened connectors 'can demonstrate corrosion', not that corrosion is 'usually' found; the melted, burned, brittle, broken, cracked or whitened appearance is supported.
 -->

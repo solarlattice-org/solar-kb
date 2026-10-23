@@ -11,4 +11,5 @@ On a meter's Modbus interface, a query with a format error is answered with an I
 <!-- review notes
 - sentence 3: support check: partial - PktCount is said to increment once per packet, but the passage doesn't say it differs from the counter or about 'normal operation'; the contrast is implied only.
 - sentence 4: support check: partial - The interface event 'package error rate [ok / high]' is stated, but the passages don't link it to the same kind of problem as Modbus format errors.
+- sentence 4: review: partial - The SMA passages confirm the interface event 'package error rate [ok / high]', but nothing in them links it to the same kind of problem as Modbus format errors.
 -->

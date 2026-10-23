@@ -17,4 +17,5 @@ This signature is a DC voltage of zero. The inverter measurement data screen sho
 - sentence 4: support check: partial - Equipment list gives a ≥1000 V DC range meter and current clamp for verifying no current, but the passage also allows an AC 690 V alternative and doesn't tie it specifically to this check with 'at least 1000 V' only.
 - sentence 5: support check: partial - The register description states 32768 means DC contactors open and no measurement available, but 'some central inverters' is not stated and 'not zero' is only implied.
 - sentence 6: support check: partial - Passages say compare meter to display and a bad measurement circuit may be the cause, with a 2% tolerance, but this is in the context of an overvoltage alarm, not zero-voltage.
+- sentence 1: review: partial - The rows show Vdc(V) as 0.0, but the cited table rows do not identify a measurement data screen or frame zero DC voltage as a signature.
 -->

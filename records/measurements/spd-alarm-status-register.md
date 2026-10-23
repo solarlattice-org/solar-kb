@@ -10,4 +10,5 @@ On Eaton Power Xpert SPD units, the alarm status is a read-only enumerated regis
 <!-- review notes
 - sentence 3: support check: partial - The menu shows Alarm Status as Protected or Active Alarm Replace SPD, but the passage doesn't explicitly say it's the same point as the register (implied by name).
 - sentence 4: support check: partial - Red LEDs, audible alarm, and protection compromised/lost are stated, but mapping to the 'surge protector exhausted' failure mode isn't in the passages.
+- sentence 4: review: partial - Red phase or N-G LEDs, the audible alarm and compromised or lost protection are all stated, but the link to a 'surge protector exhausted' failure mode is not in the passages.
 -->

@@ -10,4 +10,5 @@ On a Power Xpert SPD, the alarm status point shows the protection state of the d
 
 <!-- review notes
 - sentence 4: support check: partial - Red LED means loss of protection and audible alarm sounds on equipped units, but the passages do not mention an 'active alarm' on the display matching these; the link is inferred (and red LED is not specific to 'phase LEDs' for the Power Xpert).
+- sentence 4: review: partial - The passages say red LEDs mean loss of protection and an audible alarm sounds on units that have one, but nothing in them ties these to an 'active alarm' status point.
 -->

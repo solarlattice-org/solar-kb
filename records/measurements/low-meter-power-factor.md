@@ -9,4 +9,5 @@ A correctly wired revenue or production meter should show a power factor close t
 - sentence 2: support check: partial - Passage mentions checking phases against each other and PF when producing over 50% of rated output, but 'at the same time' and 'only while' are slightly stronger framing; core is present.
 - sentence 4: support check: partial - Check voltage ref and CTs matched phase-to-phase is stated, but 'swapped phases are a common cause' is not explicitly stated (only implied by the section title).
 - sentence 6: support check: partial - Per-phase PF L1-L3 is listed and true vs displacement PF is described for an SEL meter, but 'some meters give both' and 'check which one' advice are only implied.
+- sentence 4: review: partial - The check that voltage ref and CTs are matched phase-to-phase is stated, but the claim that swapped phases are a 'common' cause rests only on the section title.
 -->

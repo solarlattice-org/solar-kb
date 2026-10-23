@@ -15,4 +15,5 @@ A negative string current means that a string on a multi-string MPPT input reads
 <!-- review notes
 - sentence 1: support check: partial - Passages say negative string current before grid connection means voltage imbalance between two strings of one MPPT, not that the current flows the wrong way on a string per se; framing is slightly different.
 - sentence 7: support check: partial - Passages say a negative meter reading across a string indicates reverse polarity, but they do not explicitly contrast it with length imbalance.
+- sentence 7: review: partial - The passages say a negative indicator on the meter across a string's positive and negative cables means reverse polarity, but they never contrast this with a length imbalance.
 -->

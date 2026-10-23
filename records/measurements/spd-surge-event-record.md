@@ -12,4 +12,5 @@ The surge protection device keeps separate event logs for low, medium and high s
 
 <!-- review notes
 - sentence 7: support check: partial - Replace SPD is stated for significant surge events, but protection compromised or lost is stated only for the neu/gnd row, not generally.
+- sentence 7: review: partial - Every cited row says to replace the SPD after a significant surge event, but 'protection compromised or lost' appears only in the neu/gnd row, not in the phase-LED condition this sentence refers to.
 -->

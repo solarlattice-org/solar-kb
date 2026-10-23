@@ -14,4 +14,5 @@ This signature is a gap between the current you expected and the current you act
 
 <!-- review notes
 - sentence 1: support check: partial - The passage says low current is a variation between expected and measured current, but the cited text doesn't define 'this signature' as that gap, and the table doesn't state it.
+- sentence 7: review: partial - The SEL table supports expected-vs-measured magnitude comparison plus a negative-sequence check for a CT on the wrong tap, but it covers operating current error, not a 'metering circuit' specifically.
 -->

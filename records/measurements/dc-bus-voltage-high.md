@@ -11,4 +11,5 @@ This signature appears when the inverter detects excessive DC voltage on its int
 - sentence 2: support check: partial - Passages say measure DC and AC voltages and compare with LCD, but not explicitly 'at the inverter' or that it is a check procedure for the alarm per se.
 - sentence 3: support check: partial - Internal damage and wire loose during shipping are listed, though layout is ambiguous as causes versus solutions, and 'manuals' plural isn't explicit.
 - sentence 4: support check: partial - Replace Inverter is listed in the solution, but the passages do not explicitly condition it on a confirmed fault after testing.
+- sentence 4: review: partial - Replace Inverter is listed after the Test steps, but the rows never explicitly make replacement conditional on the fault being confirmed.
 -->

@@ -11,4 +11,5 @@ A phase angle deviation means the measured current or voltage phasor does not si
 <!-- review notes
 - sentence 1: support check: partial - Passages mention phase shift relative to the primary signal and angular comparison against a reference phase, but never define a phase angle deviation as such.
 - sentence 3: support check: partial - Passage shows a PT-path time shift producing a phase shift at meter terminals and a correction angle computed from it, but the text is fragmentary and does not explicitly say a compensation angle corrects it.
+- sentence 1: review: partial - The passages cover phase shift relative to the primary signal and angle comparison against a reference phase, but they never define 'phase angle deviation' in these terms.
 -->

@@ -12,4 +12,7 @@ This signature is a voltage between the neutral conductor and ground that is hig
 - sentence 1: support check: partial - Passages say excessive N-G voltage is detected, but not that it is on the AC side or defined as a signature; "higher than it should be" is a loose paraphrase of "excessive".
 - sentence 3: support check: partial - Differential circuit, resistor overheating, shrink wrap, and no effect from transients are stated, but "sustained" and "slowly" are only implied by "eventually".
 - sentence 7: support check: partial - The passages say to check absence of voltage with a voltage detector on the AC terminal blocks between those pairs, but do not say "before working on" them.
+- sentence 1: review: partial - The passage describes excessive N-G voltage detected by the SPD, but it does not say this is on the AC side of the system.
+- sentence 4: review: partial - A missing XO/N-G bonding jumper leaving the system ungrounded and leading to abnormally high L-G voltages is stated, but the passage never calls it a 'common' cause.
+- sentence 7: review: partial - The voltage-detector absence test between phase-ground, neutral-ground and phase-neutral on the AC terminals is stated, but 'before working on the AC terminals' is framing the passage does not give.
 -->

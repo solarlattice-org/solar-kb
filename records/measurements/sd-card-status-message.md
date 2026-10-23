@@ -11,4 +11,5 @@ On Sunny Island battery inverters, the SD card status is read from the parameter
 <!-- review notes
 - sentence 2: support check: partial - The passages say the Sunny Remote Control determines the SD card status, but don't say it applies only to some models or that it shows the status on its display.
 - sentence 7: support check: partial - The passages say 27108 is the inverter reading the card and 27109 is an update file already used, but nothing states that 27108 is 'only' a status message.
+- sentence 1: review: partial - The passages show CardStt as 312.07 and 312.11 (07) for the SD card status, but no quoted text names Sunny Island battery inverters, and the link from number to model is only implied by the source ids.
 -->

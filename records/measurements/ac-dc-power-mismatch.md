@@ -18,4 +18,5 @@ To see an AC vs DC power mismatch, the monitoring system has to log power on bot
 - sentence 3: support check: partial - Inverter #3 lists DC power, current and voltage per MPPT plus AC power per phase, but the passage doesn't state a direct DC-to-AC comparison is possible.
 - sentence 5: support check: partial - Row 14 lists Expected vs Real under performance data, but the passage does not say it serves as a reference for judging deviation.
 - sentence 6: support check: partial - The passage only shows a figure heading for AC output power versus DC input voltage; it doesn't say it's from one manual's chart usage or advise using it to judge faults.
+- sentence 1: review: partial - The table supports that inverter models differ in the parameters they report, but nothing says monitoring must log power on both sides to see a mismatch.
 -->

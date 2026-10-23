@@ -19,4 +19,5 @@ This signature shows up when the three phase-to-neutral voltages (A, B and C to 
 - sentence 3: support check: partial - Positive-sequence is defined as equal magnitude and 120° displacement, but the passage does not state that departures from equal magnitude indicate imbalance.
 - sentence 5: support check: partial - A GridVoltUnbalance parameter ('Unbalance rate of grid voltage') with a range is listed, but nothing says it is a tolerance setting or that it applies to string inverters.
 - sentence 7: support check: partial - The passage says zero-sequence voltage is usually less than 2% in a distribution line and that imbalance causes steady-state zero-sequence current, but it does not explicitly say the current flows through grounding banks as stated in general (it is a worst-case estimate for the grounding bank rating).
+- sentence 1: review: partial - The passages define the phase-to-neutral and phase-to-phase voltage quantities, but they never say that unequal values make up the signature.
 -->
