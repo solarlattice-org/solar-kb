@@ -54,15 +54,6 @@ claims:
     h: f0aa059080d1
   review: drafted
 - claim_id: c5
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the fault does not clear on its own.
-  cite:
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=20.r3
-    h: f0aa059080d1
-  review: drafted
-- claim_id: c6
   rel: has_production_effect
   target: ec:trip
   cite:
@@ -70,12 +61,21 @@ claims:
     loc: tbl=20.r3
     h: f0aa059080d1
   review: drafted
-  review_note: 'support check: partial - Shutdown is stated in the shared u5 row text, but the fault is
-    labeled non-critical and the restart text suggests…'
-- claim_id: c7
+  review_note: 'support check: partial - The row calls it a non-critical fault and says the inverter will
+    restart, but it does not clearly state production…'
+- claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
-  note: Inverter restarts once the fault clears; service is the escalation if it persists.
+  note: Restarts once the fault clears; if it persists, contact service
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=20.r3
+    h: f0aa059080d1
+  review: drafted
+- claim_id: c7
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the fault does not clear
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=20.r3

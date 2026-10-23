@@ -42,6 +42,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r2
     h: 0199c95676db
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r9
+    h: 0cd413e87041
   review: drafted
 - claim_id: c4
   rel: detected_by
@@ -50,15 +53,33 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r2
     h: 0199c95676db
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r9
+    h: 0cd413e87041
   review: drafted
-  review_note: 'support check: partial - The solution is to verify DC voltage polarity, but a polarity
-    measurement method is not clearly stated.'
+  review_note: 'support check: partial - Passages say verify DC polarity but do not state detection by
+    polarity measurement.'
 - claim_id: c5
   rel: mitigated_by
-  target: mit:dc-wiring-check
+  target: mit:polarity-correction
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=19.r2
     h: 0199c95676db
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r9
+    h: 0cd413e87041
+  review: drafted
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the error persists with correct polarity.
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=19.r2
+    h: 0199c95676db
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=13.r10
+    h: aeb5300bd1ed
   review: drafted
 ---

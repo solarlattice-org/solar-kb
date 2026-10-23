@@ -27,6 +27,22 @@ claims:
     h: dbb8e24a7219
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20.r2
+    h: dbb8e24a7219
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:warning
   note: from the table header
@@ -37,41 +53,83 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20
     h: fc50119e7e7e
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=20
+    h: a7be798a92ad
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17
+    h: a7be798a92ad
   review: drafted
-- claim_id: c3
+- claim_id: c5
   rel: reports
   target: symptom:grid-sync-failure
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r2
     h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r2
+    h: dbb8e24a7219
   review: drafted
-- claim_id: c4
+- claim_id: c6
   rel: has_production_effect
   target: ec:trip
+  note: Warning events stop AC production; the row says production is temporarily affected
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r2
     h: dbb8e24a7219
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: sec=9.1.2
     h: 03d6c2913989
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: sec=h151
+    h: b0c738d81358
   review: drafted
-- claim_id: c5
+- claim_id: c7
   rel: has_recovery
   target: ec:manual-reset
-  note: Power cycle first; contact technical support if the error persists.
+  note: Power cycle first; contact technical support if the error persists
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r2
     h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r2
+    h: dbb8e24a7219
   review: drafted
-- claim_id: c6
+  review_note: 'support check: partial - Power cycle advised, but manual reset as the clearing mode is
+    only implied; warnings self-recover.'
+- claim_id: c8
   rel: mitigated_by
   target: mit:inverter-restart
   cite:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=20.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=17.r2
+    h: dbb8e24a7219
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=18.r2
     h: dbb8e24a7219
   review: drafted
 ---

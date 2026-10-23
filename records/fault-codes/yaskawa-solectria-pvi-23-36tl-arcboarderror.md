@@ -48,9 +48,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r2
     h: 2c2e1fd47e9b
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r3
-    h: c279ec78fba0
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r6
+    h: b80bdc9bc5ba
   review: drafted
 - claim_id: c4
   rel: indicates
@@ -59,6 +59,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r3
     h: c279ec78fba0
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r7
+    h: 8333325a5a17
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
@@ -72,31 +75,35 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r3
     h: c279ec78fba0
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r6
+    h: b80bdc9bc5ba
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r7
+    h: 8333325a5a17
   review: drafted
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-manufacturer-service
-  note: If the error does not clear by itself
+  note: Only if the error does not clear automatically.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r2
     h: 2c2e1fd47e9b
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r3
-    h: c279ec78fba0
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r7
+    h: 8333325a5a17
   review: drafted
 - claim_id: c7
   rel: has_recovery
   target: ec:auto-reset
-  note: Normally clears on its own; escalate to service if persistent
+  note: Watch for automatic clearing first; then contact service.
   cite:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: tbl=18.r2
     h: 2c2e1fd47e9b
-  - src: src:yaskawa-solectria-pvi-23-28tl
-    loc: tbl=18.r3
-    h: c279ec78fba0
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r6
+    h: b80bdc9bc5ba
   review: drafted
-  review_note: 'support check: partial - Observe 5 min to see whether it clears automatically, then service;
-    ''normally'' is implied rather than stated.'
 ---

@@ -27,6 +27,22 @@ claims:
     h: db744e7edd62
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+  cite:
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=19.r2
+    h: db744e7edd62
+  review: drafted
+- claim_id: c3
+  rel: defined_in
+  target: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+  cite:
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r2
+    h: 2ceeaa69b895
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   note: from the table header
@@ -37,66 +53,17 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: tbl=18
     h: bd286dd80521
-  review: drafted
-- claim_id: c3
-  rel: reports
-  target: symptom:ground-fault
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
     loc: tbl=19.r2
     h: db744e7edd62
-  review: drafted
-- claim_id: c4
-  rel: reports
-  target: symptom:low-insulation-resistance
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
-  review: drafted
-- claim_id: c5
-  rel: indicates
-  target: fm:insulation-loss
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
-  review: drafted
-- claim_id: c6
-  rel: affects
-  target: comp:pv-array
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
-  review: drafted
-- claim_id: c7
-  rel: affects
-  target: comp:dc-cable
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
-  review: drafted
-  review_note: 'support check: partial - DC conductors are mentioned as the insulation resistance path,
-    but DC cable is not clearly named as the affected component.'
-- claim_id: c8
-  rel: detected_by
-  target: method:fault-localization
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
-  review: drafted
-  review_note: 'support check: partial - A qualified person must locate and repair the ground fault, but
-    the passage does not state a detection method called…'
-- claim_id: c9
-  rel: has_recovery
-  target: ec:service-required
-  note: A qualified person must locate and repair the ground fault.
-  cite:
-  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
-    loc: tbl=19.r2
-    h: db744e7edd62
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=18
+    h: 0ec887918da1
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r2
+    h: 2ceeaa69b895
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=15
+    h: bd286dd80521
   review: drafted
 ---
