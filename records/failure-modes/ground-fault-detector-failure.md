@@ -41,7 +41,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r2
     h: ae5777d7a0a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: affects
   target: comp:filter-board
@@ -58,6 +60,9 @@ claims:
     loc: tbl=9.r2
     h: ae5777d7a0a3
   review: drafted
+  review_note: 'review: partial - The passages name the filter board as a replacement option, but they
+    never say the fault affects the filter board or that the sensor is on it; the note only offers this
+    as a guess.'
 - claim_id: c3
   rel: presents_as
   target: symptom:internal-device-fault
@@ -79,7 +84,9 @@ claims:
   - src: src:chint-cps-275kw-800v-modbus-map-2026-01-28
     loc: tbl=53.r1
     h: 20878cf5cc23
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Codes Protect0100/Protect0310 are stated, but ''depending on
     the model'' and the classification as an internal device fault are not explicit.'
 - claim_id: c4
@@ -106,7 +113,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r2
     h: ae5777d7a0a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:filter-board-replacement
@@ -121,7 +130,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r2
     h: ae5777d7a0a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-replacement
@@ -142,7 +153,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r2
     h: ae5777d7a0a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -157,7 +170,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
     loc: tbl=9.r2
     h: ae5777d7a0a3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The inverter has a residual current circuit, required by UL 1741, that detects leakage from ground faults in the PV array, raises an alarm and stops the inverter. This failure mode means the leakage current (GFCI) sensor in that circuit has failed. It does not mean there is a ground fault in the array. Depending on the model, the inverter shows protection code Protect0100 or Protect0310. You can see the code on the inverter display. It is also flagged in the Modbus fault register. First, turn both the AC and DC switches off, wait one minute for the energy to discharge, and turn them back on. If the fault does not clear, contact the manufacturer's service team to replace the filter board or the whole inverter.
 
@@ -166,4 +181,5 @@ The inverter has a residual current circuit, required by UL 1741, that detects l
 - sentence 2: support check: partial - Passages say sensor abnormal/fault, but nowhere state that it does not indicate an array ground fault.
 - sentence 3: support check: partial - Both codes appear for the sensor fault, but the passages do not tie them to model differences.
 - sentence 4: support check: partial - The Modbus register bit and LCD display are shown, but the LCD display appears only for Protect0100, and the register is a fault register with Fault1 storage.
+- sentence 4: review: partial - All three rows place the fault at Modbus register 0x8402 Bit15 (two say Fault1), but only the 275kW map gives an LCD display value (Protect0100), so the passages do not show Protect0310 on the display.
 -->
