@@ -47,7 +47,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=29.r1
     h: 4e1fbd3f8aad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault

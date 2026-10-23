@@ -67,7 +67,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=30.r1
     h: 57332801a426
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Passages say the inverter reconnects after grid normal (implying
     it disconnected), but never state production stops or a trip explicitly.'
 - claim_id: c5
@@ -97,7 +99,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=30.r1
     h: 57332801a426
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say to measure the actual grid frequency as a check,
     but not that the inverter detects the fault by…'
 - claim_id: c7

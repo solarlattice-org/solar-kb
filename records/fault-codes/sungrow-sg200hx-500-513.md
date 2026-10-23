@@ -47,7 +47,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=34.r3
     h: '737750800967'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: detected_by
   target: method:visual-inspection
@@ -69,7 +71,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=34.r3
     h: '737750800967'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -78,5 +82,7 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=35.r2
     h: 82098a62864e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

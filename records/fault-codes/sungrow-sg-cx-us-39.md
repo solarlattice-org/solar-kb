@@ -58,7 +58,9 @@ claims:
   - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
     loc: tbl=37.r3
     h: 99f23921c8b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: has_event_class
   target: ec:fault
@@ -103,7 +105,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=33.r1
     h: 64dee7ae617e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say to check the resistance to ground of the string
     and DC cable and the ISO protection value, but…'
 - claim_id: c8

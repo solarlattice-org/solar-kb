@@ -46,7 +46,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=34.r3
     h: '737750800967'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: mitigated_by
   target: mit:wiring-terminal-check
@@ -58,7 +60,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=34.r3
     h: '737750800967'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -70,5 +74,7 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=35.r1
     h: 8c1754ff8b85
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

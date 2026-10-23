@@ -42,7 +42,9 @@ claims:
   - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
     loc: tbl=39.r4
     h: e3dfad5dad15
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-restart

@@ -34,7 +34,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=33.r5
     h: 10cc3fa20676
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: mitigated_by
   target: mit:ac-connection-check

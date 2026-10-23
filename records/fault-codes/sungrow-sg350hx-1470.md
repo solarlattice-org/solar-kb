@@ -31,7 +31,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=35.r6
     h: cb0e4271c5e1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The alarm is an MPPT connection unbalance and the fix is to connect
     strings to each MPPT, which roughly matches,…'
 - claim_id: c3

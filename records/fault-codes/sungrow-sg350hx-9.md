@@ -46,7 +46,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=30.r2
     h: f9e97e4c8044
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Row is called a fault and requires contacting Sungrow, but the
     passages do not classify it explicitly as fault vs…'
 - claim_id: c4

@@ -32,7 +32,9 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=49.r1
     h: 3f4642d9acdb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:grid-frequency-out-of-range
@@ -75,7 +77,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=30.r5
     h: 40e95c363a32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: detected_by
   target: method:grid-frequency-measurement

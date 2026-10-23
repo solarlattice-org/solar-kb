@@ -50,7 +50,9 @@ claims:
   - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
     loc: tbl=37.r3
     h: 99f23921c8b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault

@@ -155,7 +155,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=29.r2
     h: bf55335b853e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c11
   rel: affects
   target: comp:ac-cable

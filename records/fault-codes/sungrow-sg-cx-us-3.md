@@ -61,7 +61,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=29.r1
     h: 4e1fbd3f8aad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Fault code row with reconnection, but no explicit fault classification.'
 - claim_id: c5
   rel: has_production_effect

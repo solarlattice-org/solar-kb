@@ -38,7 +38,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=29.r1
     h: 4e1fbd3f8aad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: has_event_class
   target: ec:fault
@@ -69,7 +71,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=29.r1
     h: 4e1fbd3f8aad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: has_recovery
   target: ec:auto-reset
