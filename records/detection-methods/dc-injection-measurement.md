@@ -16,7 +16,9 @@ claims:
   - src: src:sma-kb-event-number-6-601
     loc: sec=h1
     h: a9018d679621
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Events 6/601, excessive DC in grid current, disconnect and reconnect
     after grid monitoring time are stated, but ''exceeds the set tripping threshold'' is only implied
     (threshold mentioned, not explicitly the trigger).'
