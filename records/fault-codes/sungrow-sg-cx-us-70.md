@@ -26,63 +26,92 @@ claims:
     h: 0282b01ad881
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:fan-fault-alarm
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: verified
   verified_by: review-workflow
   verified_at: &id001 2026-10-20
-- claim_id: c3
+- claim_id: c4
   rel: indicates
   target: fm:fan-failure
-  note: Applies when the fan does not run normally.
+  note: When a fan does not operate normally.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:cooling-fan
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: drafted
-- claim_id: c5
+- claim_id: c6
   rel: detected_by
-  target: method:visual-inspection
+  target: method:fan-function-check
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: drafted
-- claim_id: c6
+- claim_id: c7
   rel: mitigated_by
   target: mit:clear-ventilation-blockage
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: drafted
-- claim_id: c7
+- claim_id: c8
   rel: mitigated_by
   target: mit:fan-replacement
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
     h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
   review: drafted
-- claim_id: c8
+- claim_id: c9
   rel: has_event_class
   target: ec:warning
-  note: Labelled as an alarm rather than a fault.
+  note: Labelled as an alarm.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r5
+    h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
     h: 0282b01ad881
   review: verified
   verified_by: review-workflow

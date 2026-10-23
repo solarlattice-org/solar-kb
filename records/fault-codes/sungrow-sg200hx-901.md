@@ -1,0 +1,74 @@
+---
+id: fc:sungrow-sg200hx-901
+type: FaultCode
+name: Sungrow SG200HX 901
+aliases:
+- '901'
+- Sungrow 901
+- System Alarm
+category: Inverters
+make: sungrow
+make_name: Sungrow
+model_family: sg200hx
+family_name: Sungrow SG200HX-US
+code: '901'
+code_key: '901'
+display_message: System Alarm
+page: 94
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sungrow-sungrow-sg200hx-us-user-manual
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r2
+    h: 82098a62864e
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:warning
+  note: Inverter keeps running while the system alarm is flagged.
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r2
+    h: 82098a62864e
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r3
+    h: '737750800967'
+  review: drafted
+- claim_id: c3
+  rel: has_production_effect
+  target: ec:no-production-effect
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r2
+    h: 82098a62864e
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r3
+    h: '737750800967'
+  review: drafted
+- claim_id: c4
+  rel: mitigated_by
+  target: mit:wiring-terminal-check
+  note: Also check for foreign material or environmental abnormalities; contact service if it persists.
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r2
+    h: 82098a62864e
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r3
+    h: '737750800967'
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Escalation only, if the alarm persists after the checks.
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r2
+    h: 82098a62864e
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=35.r1
+    h: 8c1754ff8b85
+  review: drafted
+---

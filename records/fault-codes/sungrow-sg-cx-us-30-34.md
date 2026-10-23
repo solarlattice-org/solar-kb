@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-30-34
 type: FaultCode
-name: Sungrow SG-CX-US 30-34
+name: Sungrow SG-CX-US 030-034
 aliases:
+- 030-034
 - 30-34
-- Sungrow 30-34
+- Sungrow 030-034
 - Device anomaly
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: 30-34
+code: 030-034
 code_key: 30-34
 code_from: 30
 code_to: 34
@@ -27,37 +28,67 @@ claims:
     h: 53fe3ee9226d
   review: drafted
 - claim_id: c2
-  rel: reports
-  target: symptom:internal-device-fault
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=50.r4
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r4
     h: 53fe3ee9226d
   review: drafted
 - claim_id: c3
-  rel: has_event_class
-  target: ec:fault
+  rel: reports
+  target: symptom:internal-device-fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
-  review: drafted
-- claim_id: c4
-  rel: has_recovery
-  target: ec:auto-reset
-  note: 'Escalation: switch restart after 15 minutes, then service if persistent.'
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=43.r4
-    h: d22720cf1a21
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=50.r4
     h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
   review: drafted
+- claim_id: c4
+  rel: has_event_class
+  target: ec:fault
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=50.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
+  review: drafted
+  review_note: 'support check: partial - The row says device anomaly or System Fault requiring a restart,
+    which loosely implies a fault classification.'
+- claim_id: c5
+  rel: has_recovery
+  target: ec:auto-reset
+  note: 'Escalation: power-cycle after 15 minutes, then contact service.'
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=50.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
+  review: drafted
+  review_note: 'support check: partial - Waiting for recovery is implied, and the escalation is stated,
+    but auto-reset is not explicit.'
 ---

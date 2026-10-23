@@ -28,45 +28,69 @@ claims:
     h: 1e315c4e9ee2
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
+    h: 1e315c4e9ee2
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:internal-device-fault
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r4
     h: 1e315c4e9ee2
-  review: drafted
-- claim_id: c3
-  rel: affects
-  target: comp:inverter
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=52.r4
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
     h: 1e315c4e9ee2
   review: drafted
 - claim_id: c4
-  rel: has_recovery
-  target: ec:auto-reset
-  note: Normal case clears on its own; escalate to manual AC/DC power cycle, then manufacturer service.
+  rel: has_event_class
+  target: ec:fault
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r4
     h: 1e315c4e9ee2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
+    h: 1e315c4e9ee2
   review: drafted
 - claim_id: c5
+  rel: has_recovery
+  target: ec:auto-reset
+  note: First wait for self-recovery; then AC/DC power cycle restart; then manufacturer service if persistent.
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r4
+    h: 1e315c4e9ee2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
+    h: 1e315c4e9ee2
+  review: drafted
+  review_note: 'support check: partial - The sequence is stated, but the manual power cycle means auto-reset
+    is only partly supported.'
+- claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r4
     h: 1e315c4e9ee2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
+    h: 1e315c4e9ee2
   review: drafted
-- claim_id: c6
+- claim_id: c7
   rel: mitigated_by
   target: mit:contact-manufacturer-service
-  note: Only if the anomaly persists after restart.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r4
+    h: 1e315c4e9ee2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r4
     h: 1e315c4e9ee2
   review: drafted
 ---

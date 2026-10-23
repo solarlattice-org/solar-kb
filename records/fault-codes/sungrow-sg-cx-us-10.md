@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-10
 type: FaultCode
-name: Sungrow SG-CX-US 10
+name: Sungrow SG-CX-US 010
 aliases:
+- '010'
 - '10'
-- Sungrow 10
+- Sungrow 010
 - Grid power outage
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: '10'
+code: '010'
 code_key: '10'
 display_message: Grid power outage
 page: 91
@@ -25,76 +26,100 @@ claims:
     h: e37d4c329c9b
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:grid-loss
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
   review: drafted
-- claim_id: c3
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
-  review: drafted
-  review_note: 'support check: partial - The passages show it is a listed fault code in the troubleshooting
-    table, but they give no explicit fault classification.'
-- claim_id: c4
-  rel: has_production_effect
-  target: ec:trip
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
   review: drafted
-  review_note: 'support check: partial - A grid outage followed by reconnection implies the inverter stops
-    feeding in, but the passages don''t explicitly state a trip.'
+  review_note: 'support check: partial - Named a fault code and requires service if persisting, but explicit
+    fault classification not stated.'
 - claim_id: c5
+  rel: has_production_effect
+  target: ec:trip
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=48.r3
+    h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
+  review: drafted
+  review_note: 'support check: partial - Inverter reconnects after grid returns, implying disconnection,
+    but production stop is not explicitly stated.'
+- claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
   note: If repeated, check grid supply, AC wiring and breaker, then contact service.
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
   review: drafted
-- claim_id: c6
+- claim_id: c7
   rel: mitigated_by
   target: mit:ac-connection-check
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
   review: drafted
-- claim_id: c7
+- claim_id: c8
   rel: affects
   target: comp:ac-cable
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=39.r3
-    h: c338b4abeef8
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=48.r3
     h: e37d4c329c9b
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=34.r3
+    h: e30f402aecfe
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
   review: drafted
-  review_note: 'support check: partial - The AC cable check is a listed corrective step, but the passages
-    don''t say the fault affects the cable.'
 ---

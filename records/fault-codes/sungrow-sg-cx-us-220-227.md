@@ -27,59 +27,71 @@ claims:
     h: 95887f37002c
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:pv-input-abnormal
-  note: Codes map to PV inputs 5 to 12.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c3
+- claim_id: c4
   rel: affects
-  target: comp:pv-array
+  target: comp:pv-input-terminal
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: mitigated_by
   target: mit:dc-wiring-check
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
-  review: drafted
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:fuse-replacement
-  note: When the corresponding DC fuse is damaged.
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=54.r3
-    h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
   review: drafted
 - claim_id: c6
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if wiring and fuse checks do not resolve it.
+  target: mit:fuse-replacement
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
   review: drafted
 - claim_id: c7
   rel: has_event_class
   target: ec:warning
-  note: Row treats it as an alarm that may be ignored for unused inputs.
+  note: Treated as an alarm; may be ignored if the input is intentionally unused.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r3
     h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
   review: drafted
-  review_note: 'support check: partial - Row says ignore the alarm for unused strings, but does not state
-    the device continues operating, so the warning class…'
+  review_note: 'support check: partial - The row says to ignore the alarm if the string is not needed,
+    which supports the note, but nothing states…'
 ---

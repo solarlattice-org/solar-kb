@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-3
 type: FaultCode
-name: Sungrow SG-CX-US 3
+name: Sungrow SG-CX-US 003
 aliases:
+- '003'
 - '3'
-- Sungrow 3
+- Sungrow 003
 - Grid transient overvoltage
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: '3'
+code: '003'
 code_key: '3'
 display_message: Grid transient overvoltage
 page: 89
@@ -25,69 +26,72 @@ claims:
     h: 8a8b6ec00b3f
   review: drafted
 - claim_id: c2
-  rel: reports
-  target: symptom:grid-overvoltage
-  note: Transient grid overvoltage.
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=46.r2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=32.r2
     h: 8a8b6ec00b3f
   review: drafted
 - claim_id: c3
+  rel: reports
+  target: symptom:grid-overvoltage
+  note: Transient overvoltage event.
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=46.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=32.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r1
+    h: 4e1fbd3f8aad
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=46.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=32.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r1
+    h: 4e1fbd3f8aad
   review: drafted
-  review_note: 'support check: partial - Listed in a fault table but the passages never explicitly classify
-    it as a fault rather than a warning.'
-- claim_id: c4
+  review_note: 'support check: partial - Fault code row with reconnection, but no explicit fault classification.'
+- claim_id: c5
   rel: has_production_effect
   target: ec:trip
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=46.r2
     h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=32.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r1
+    h: 4e1fbd3f8aad
   review: drafted
-  review_note: 'support check: partial - Reconnection after the grid normalizes implies a disconnection,
-    but production stop is not explicit.'
-- claim_id: c5
+  review_note: 'support check: partial - Reconnection implies disconnection, but production stop is not
+    explicit.'
+- claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
-  note: Contact service only if the fault repeats.
+  note: Repeated occurrence escalates to manufacturer service.
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=46.r2
     h: 8a8b6ec00b3f
-  review: drafted
-- claim_id: c6
-  rel: detected_by
-  target: method:grid-voltage-measurement
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
-  review: drafted
-- claim_id: c7
-  rel: mitigated_by
-  target: mit:grid-settings-check
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r1
-    h: c4550b8a0ebe
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=32.r2
+    h: 8a8b6ec00b3f
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r1
+    h: 4e1fbd3f8aad
   review: drafted
 ---
