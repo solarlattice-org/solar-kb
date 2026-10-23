@@ -2,5 +2,9 @@
 id: mit:transformer-inspection
 type: Mitigation
 name: Transformer inspection
-status: proposed
 ---
+Transformer inspection means checking the medium-voltage transformer that a central inverter feeds. It is the corrective step when the inverter reports that the transformer is no longer hermetically sealed, a symptom of transformer seal loss. As routine maintenance, the transformer is inspected once a year by a master electrician. The inspection covers the oil and temperature gauges and the housing or concrete enclosure. O&M guidelines also list these tasks: thermographic inspection, functional checks of sensors and relays, checks of oil level and maximum temperature, and checks of cooling fans and MV surge arresters where fitted. For oil-filled pad-mounted units, check regularly for unusual noise or vibration, oil leaks and oil level. Once a year, test the oil for dissolved gases, dielectric strength and water content. Before any internal inspection, de-energize the transformer and vent the tank pressure. Then look for moisture, blown fuses, broken leads and loose parts, and take care that no moisture or dirt gets in. One manufacturer allows internal inspection only when its representative is present or has given written authorization. Dry-type units are de-energized, locked out and grounded first. They are checked for dirt on insulation, blocked airflow, loose connections and signs of overheating or tracking. Insulation trends recorded at each visit are more useful than any single reading. Inspect yearly in clean, dry locations, and more often where dust or chemical fumes are present. Periodic inspection finds abnormal conditions before the damage grows, which helps avoid the production losses of a transformer outage. It only works if equipment, repair and inspection logs are kept.
+
+<!-- review notes
+- sentence 4: support check: partial - Noise/vibration, leaks and oil level checks and yearly DGA, dielectric strength and water content are stated, but nothing mentions 'pad-mounted' units, and the checks are every three weeks rather than just 'regularly'.
+-->
