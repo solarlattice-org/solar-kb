@@ -31,8 +31,25 @@ claims:
     h: a3b3ba978302
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r1
+    h: a3b3ba978302
+  review: drafted
+- claim_id: c4
+  rel: defined_in
+  target: src:sma-kb-stp-us-41-events-8209-8212
+  cite:
+  - src: src:sma-kb-stp-us-41-events-8209-8212
+    loc: sec=h1
+    h: 35f6cfaf2a6f
+  review: drafted
+- claim_id: c5
   rel: reports
   target: symptom:self-test-failure
+  note: Arc fault detection self-test error, interference level too low.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r1
@@ -40,8 +57,14 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r1
     h: a3b3ba978302
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r1
+    h: a3b3ba978302
+  - src: src:sma-kb-stp-us-41-events-8209-8212
+    loc: sec=h1
+    h: 35f6cfaf2a6f
   review: drafted
-- claim_id: c4
+- claim_id: c6
   rel: affects
   target: comp:arc-fault-detector
   cite:
@@ -51,19 +74,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r1
     h: a3b3ba978302
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r1
+    h: a3b3ba978302
   review: drafted
-- claim_id: c5
-  rel: has_event_class
-  target: ec:fault
+- claim_id: c7
+  rel: mitigated_by
+  target: mit:firmware-update
+  note: 'Knowledge base: verify firmware is current before calling service.'
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=22.r1
-    h: a3b3ba978302
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=11.r1
-    h: a3b3ba978302
+  - src: src:sma-kb-stp-us-41-events-8209-8212
+    loc: sec=h1
+    h: 35f6cfaf2a6f
   review: drafted
-- claim_id: c6
+- claim_id: c8
   rel: mitigated_by
   target: mit:contact-manufacturer-service
   cite:
@@ -73,16 +97,26 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r1
     h: a3b3ba978302
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r1
+    h: a3b3ba978302
+  - src: src:sma-kb-stp-us-41-events-8209-8212
+    loc: sec=h1
+    h: 35f6cfaf2a6f
   review: drafted
-- claim_id: c7
+- claim_id: c9
   rel: has_recovery
   target: ec:service-required
+  note: Manual says service must determine cause; knowledge base suggests firmware update first.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r1
     h: a3b3ba978302
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r1
+    h: a3b3ba978302
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r1
     h: a3b3ba978302
   review: drafted
 ---

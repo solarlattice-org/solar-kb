@@ -1,0 +1,95 @@
+---
+id: fc:sma-shp-peak3-10250
+type: FaultCode
+name: SMA PEAK3-US 10250
+aliases:
+- '10250'
+- SMA 10250
+- '|tn4|: faulty data packages |tn8|'
+category: Inverters
+make: sma
+make_name: SMA
+model_family: shp-peak3
+family_name: Sunny Highpower PEAK3 (SHP 125-172-US)
+code: '10250'
+code_key: '10250'
+display_message: '|tn4|: faulty data packages |tn8|'
+page: 71
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sma-shpxxx-us-21-be-en-11
+  cite:
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=12.1.41
+    h: 9450c2f29f7c
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h475
+    h: 6462772a4fc3
+  review: drafted
+- claim_id: c2
+  rel: reports
+  target: symptom:high-packet-error-rate
+  cite:
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h217
+    h: a1c2873a3c05
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h463
+    h: 71b063208a30
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h476
+    h: 71b063208a30
+  review: drafted
+- claim_id: c3
+  rel: affects
+  target: comp:network-cable
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h301
+    h: 3b567be3082c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h303
+    h: 3b567be3082c
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h464
+    h: 2fd95b7595c5
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h477
+    h: 2fd95b7595c5
+  review: drafted
+- claim_id: c4
+  rel: mitigated_by
+  target: mit:network-connection-check
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h301
+    h: 3b567be3082c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h303
+    h: 3b567be3082c
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h464
+    h: 2fd95b7595c5
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h477
+    h: 2fd95b7595c5
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:network-load-reduction
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h301
+    h: 3b567be3082c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h303
+    h: 3b567be3082c
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h464
+    h: 2fd95b7595c5
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h477
+    h: 2fd95b7595c5
+  review: drafted
+---

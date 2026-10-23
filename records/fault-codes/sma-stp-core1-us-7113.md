@@ -31,8 +31,16 @@ claims:
     h: fa5d00a293af
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r8
+    h: fa5d00a293af
+  review: drafted
+- claim_id: c4
   rel: reports
-  target: symptom:data-storage-failure
+  target: symptom:memory-card-unwritable
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=19.r8
@@ -40,5 +48,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r8
     h: fa5d00a293af
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r8
+    h: fa5d00a293af
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h340
+    h: 8d2aa30d76e6
   review: drafted
 ---

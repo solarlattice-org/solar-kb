@@ -31,8 +31,16 @@ claims:
     h: beb2c8055c26
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r10
+    h: beb2c8055c26
+  review: drafted
+- claim_id: c4
   rel: reports
-  target: symptom:communication-loss
+  target: symptom:internal-communication-failure
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r10
@@ -40,8 +48,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r10
+    h: beb2c8055c26
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:io-module
   cite:
@@ -51,12 +62,16 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r10
+    h: beb2c8055c26
   review: verified
   verified_by: review-workflow
   verified_at: &id001 2026-10-20
-- claim_id: c5
-  rel: has_event_class
-  target: ec:fault
+- claim_id: c6
+  rel: has_production_effect
+  target: ec:trip
+  note: Inverter disconnects from the grid for safety.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r10
@@ -64,13 +79,15 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r10
     h: beb2c8055c26
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r10
+    h: beb2c8055c26
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-- claim_id: c6
-  rel: has_production_effect
-  target: ec:trip
-  note: Inverter disconnects from the grid for safety.
+- claim_id: c7
+  rel: has_event_class
+  target: ec:fault
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r10

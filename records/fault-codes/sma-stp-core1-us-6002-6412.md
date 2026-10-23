@@ -35,6 +35,14 @@ claims:
     h: 8f702697fd0e
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r6
+    h: 8f702697fd0e
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:internal-device-fault
   cite:
@@ -44,34 +52,23 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r5
     h: 8f702697fd0e
-  review: drafted
-- claim_id: c4
-  rel: has_event_class
-  target: ec:fault
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=18.r5
-    h: 8f702697fd0e
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=7.r5
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r6
     h: 8f702697fd0e
   review: drafted
 - claim_id: c5
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
+  rel: affects
+  target: comp:inverter
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=18.r5
     h: 8f702697fd0e
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=18.r6
-    h: 5694fc9103a2
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r5
     h: 8f702697fd0e
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=7.r6
-    h: 5694fc9103a2
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r6
+    h: 8f702697fd0e
   review: drafted
 - claim_id: c6
   rel: has_recovery

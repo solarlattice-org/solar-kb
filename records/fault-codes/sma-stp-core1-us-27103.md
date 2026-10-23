@@ -31,8 +31,17 @@ claims:
     h: c5550759f780
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r8
+    h: c5550759f780
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
+  note: Status message while parameter changes are being adopted.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=26.r8
@@ -40,8 +49,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r8
     h: c5550759f780
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r8
+    h: c5550759f780
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=21.r6
+    h: a6270650246e
   review: drafted
 ---
-<!-- review workflow 2026-10-20: dropped as unsupported
-- c4 has_production_effect ec:no-production-effect: Row reads only 'Set parameter. The parameter changes are being adopted'; nothing in any cited passage speaks to feed-in or production, unlike 7102's 'The inverter continues to feed in', so a no-production-effect attribute is not stated.
--->
