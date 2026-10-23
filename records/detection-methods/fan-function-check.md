@@ -36,7 +36,9 @@ claims:
   - src: src:schneider-conext-cl125-modbus-app-note
     loc: sec=h52
     h: eaf382949197
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: produces
   target: meas:fan-abnormal-noise
@@ -60,7 +62,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h205
     h: 62645edcd77e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: produces
   target: meas:no-fan-airflow
@@ -70,7 +74,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h205
     h: 62645edcd77e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A fan function check confirms that the inverter cooling fans run properly. It is used when the inverter reports a fan alarm, an over-temperature event, or derating caused by overheating. Look for a fan alarm in the app or on the display. Check that the fans turn freely and are not blocked by debris, and listen for abnormal noise. Some manufacturers schedule this check once a year. Many inverters can start a fan test from a menu or parameter. You then confirm by sound and feel that the fan runs and that air is drawn in at the bottom and leaves through the upper grids. On some inverters, the display does not report whether the fan is good. Only listening and feeling can confirm that it works. If the fans do not start, measure the voltage at the fan connector. Replace the fans if voltage is present. If there is no voltage, isolate the inverter at once and inspect it for damage, debris or burnt smells. The check detects fan failure, which can lead to inverter overheating and lower operating efficiency. Before replacing a fan, shut down and disconnect the inverter. If the fans work, also check the cause of the heat: the installation clearances, direct sunlight, ventilation and the condition of the air ducts.
 

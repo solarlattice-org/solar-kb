@@ -12,4 +12,5 @@ When CPS string inverters raise a PV Over current protection code, the first ste
 - sentence 2: support check: partial - Passages show Max PV Isc x 1.25 = 275A for the SCH125KTL model, but not the instruction to compare measured current, and only one CPS model is covered.
 - sentence 4: support check: partial - Passages give a max input connector current (30 A, 40 A optional) but only as a spec, not as a troubleshooting step for this fault, and they're not CPS-specific.
 - sentence 5: support check: partial - The passage shows a ±2% value for inverter-level DC measurement but doesn't say it is a recommendation (it appears to be a table of accuracy requirements).
+- sentence 4: review: partial - The Sungrow rows give a maximum input-connector current (30 A, 40 A optional) only as a spec value, not as a check to make, and they are not tied to the CPS overcurrent fault.
 -->
