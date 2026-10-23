@@ -2,6 +2,8 @@
 id: mit:inverter-settings-review
 type: Mitigation
 name: Inverter settings review
+aliases:
+- Parameter configuration
 ---
 An inverter settings review means checking that the inverter's configured parameters match the way the site is actually wired and operated. Fault7030 is listed in the Modbus map as a trip-level fault, so a wrong setting can stop production. If the alarm still occurs after the setting has been corrected, contact the manufacturer's after-sales service. Wrong parameter settings can cause inverter exceptions, so only qualified personnel should change them. Commissioning procedures include making any additional inverter settings that are needed, as described in the inverter manual. When several inverters share an external power management device, apply the same settings to every connected inverter.
 
