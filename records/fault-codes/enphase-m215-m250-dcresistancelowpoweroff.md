@@ -52,6 +52,8 @@ claims:
     loc: sec=h100
     h: c4f8a92bf35b
   review: drafted
+  review_note: 'review: partial - The record''s own section h47 says resistance from the PV inputs to
+    ground below a threshold raises this condition, but the passages…'
 - claim_id: c4
   rel: indicates
   target: fm:insulation-loss
@@ -72,7 +74,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c5
   rel: affects
   target: comp:pv-array
@@ -92,7 +96,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages tie the condition to PV inputs and module insulation,
     but they never state that it affects the PV array…'
 - claim_id: c6
@@ -114,7 +120,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Defective wiring is named as a possible cause, but DC cable is
     not explicitly identified as an affected component.'
 - claim_id: c7
@@ -136,7 +144,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Defective connectors are named as a possible cause, but the DC
     connector is not explicitly identified as an affected component.'
 - claim_id: c8
@@ -158,7 +168,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: has_production_effect
   target: ec:trip
@@ -178,7 +190,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: has_recovery
   target: ec:manual-reset
@@ -200,5 +214,7 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h100
     h: c4f8a92bf35b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

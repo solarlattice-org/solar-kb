@@ -38,7 +38,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h103
     h: 04a54f598668
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: has_event_class
   target: ec:fault
@@ -46,7 +48,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h103
     h: 04a54f598668
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: has_recovery
   target: ec:manual-reset
@@ -58,5 +62,7 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: sec=h104
     h: 5b2e22579115
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
