@@ -103,7 +103,7 @@ claims:
   verified_at: 2026-10-23
 - claim_id: c8
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=37.r17

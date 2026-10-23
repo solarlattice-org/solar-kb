@@ -23,7 +23,7 @@ claims:
     strings unequal'' and ''flat'' details is beyond it; core is stated.'
 - claim_id: c2
   rel: observed_as
-  target: meas:daily-power-plateau
+  target: meas:flat-output-below-available-power
   note: Spreading strings unevenly across MPPTs (for example 3:1 instead of 3:2) is not recommended and
     may cause unnecessary power clipping.
   cite:

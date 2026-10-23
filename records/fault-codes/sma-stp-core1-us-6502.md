@@ -78,7 +78,7 @@ claims:
     measure, not a detection method.'
 - claim_id: c7
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=18.r7

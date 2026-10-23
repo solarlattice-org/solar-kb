@@ -7,6 +7,8 @@ aliases:
 - Insulation resistance low
 - low insulation fault
 - PV ISO-PRO 01/02
+- meas:low-ground-fault-resistance
+- Low ground fault resistance
 signals:
 - point: model_103.W
   unit: unit:W

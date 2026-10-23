@@ -27,7 +27,7 @@ claims:
   review: drafted
 - claim_id: c2
   rel: reports
-  target: symptom:grid-interference
+  target: symptom:grid-instability
   cite:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=18.r14

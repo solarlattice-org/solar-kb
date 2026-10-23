@@ -93,7 +93,7 @@ claims:
   review: drafted
 - claim_id: c7
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=51.r1

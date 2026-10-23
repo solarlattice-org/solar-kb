@@ -51,7 +51,7 @@ claims:
   review: drafted
 - claim_id: c5
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   note: Clean fans first; replace fan if message persists
   cite:
   - src: src:sma-stptl-us-10-ia-xx-22

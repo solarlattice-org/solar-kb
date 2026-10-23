@@ -59,7 +59,7 @@ claims:
     which is loosely the inverter bridge, but they do…'
 - claim_id: c4
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=14.r3

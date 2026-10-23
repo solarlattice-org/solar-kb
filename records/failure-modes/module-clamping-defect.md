@@ -65,19 +65,7 @@ claims:
     clamps, but the clamp being affected is not clearly stated.'
 - claim_id: c5
   rel: presents_as
-  target: symptom:loose-module-fastening
-  cite:
-  - src: src:iea-pvps-t13-30-2025-annex
-    loc: tbl=30.r1
-    h: 442c2f7b2631
-  - src: src:iea-pvps-t13-23-2021
-    loc: tbl=48.r1
-    h: 442c2f7b2631
-  review: drafted
-- claim_id: c6
-  rel: presents_as
   target: symptom:clamp-damage
-  note: Damage to the module or frame caused by the clamp.
   cite:
   - src: src:iea-pvps-t13-30-2025-annex
     loc: tbl=30.r1

@@ -46,7 +46,7 @@ claims:
     fan is the affected component.'
 - claim_id: c4
   rel: mitigated_by
-  target: mit:clear-heat-dissipation-path
+  target: mit:clear-ventilation-blockage
   cite:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: tbl=16.r5

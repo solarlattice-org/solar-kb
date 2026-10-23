@@ -36,7 +36,7 @@ claims:
   review: drafted
 - claim_id: c3
   rel: reports
-  target: symptom:abnormal-string-current
+  target: symptom:pv-input-abnormal
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=55.r2

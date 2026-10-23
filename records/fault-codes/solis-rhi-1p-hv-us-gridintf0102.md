@@ -27,7 +27,7 @@ claims:
   review: drafted
 - claim_id: c2
   rel: reports
-  target: symptom:grid-interference
+  target: symptom:grid-instability
   cite:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=14.r12
