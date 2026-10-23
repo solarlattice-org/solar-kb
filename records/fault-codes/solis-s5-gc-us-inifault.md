@@ -32,19 +32,30 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=13.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=20.r2
+    h: 464e4c04a0f3
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=29.r1
+    h: d93410de94c2
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=29.r16
+    h: d93410de94c2
   review: drafted
 - claim_id: c3
   rel: affects
-  target: comp:control-board
+  target: comp:digital-signal-processor
   cite:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
-  review: verified
-  verified_by: review-workflow
-  verified_at: &id001 2026-10-20
-  review_note: 'support check: partial - DSP mismatch implies control board, but the component is not
-    named in the passage.'
+  review: drafted
 - claim_id: c4
   rel: mitigated_by
   target: mit:inverter-restart
@@ -52,10 +63,33 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=13.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=20.r2
+    h: 464e4c04a0f3
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=29.r1
+    h: d93410de94c2
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=29.r16
+    h: d93410de94c2
   review: verified
   verified_by: review-workflow
-  verified_at: *id001
+  verified_at: &id001 2026-10-20
 - claim_id: c5
+  rel: mitigated_by
+  target: mit:inverter-replacement
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r1
+    h: eed118aa3df4
+  review: drafted
+- claim_id: c6
   rel: has_event_class
   target: ec:fault
   cite:
@@ -68,15 +102,42 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
-  review_note: 'support check: partial - Listed under ''Fault messages'' table and requires intervention,
-    but the row doesn''t explicitly classify it; reasonably implied.'
-- claim_id: c6
+- claim_id: c7
   rel: has_recovery
   target: ec:manual-reset
-  note: Power-cycle first; replace inverter if it persists.
+  note: Restart first; replace inverter or contact installer if it persists.
   cite:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
-  review: drafted
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=13.r12
+    h: c1c91a972a3f
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=20.r2
+    h: 464e4c04a0f3
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=29.r1
+    h: d93410de94c2
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=29.r16
+    h: d93410de94c2
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
+- claim_id: c8
+  rel: affects
+  target: comp:control-board
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r1
+    h: eed118aa3df4
+  review: verified
+  review_note: 'support check: partial - DSP mismatch implies control board, but the component is not
+    named in the passage.'
+  verified_by: review-workflow
+  verified_at: *id001
 ---
