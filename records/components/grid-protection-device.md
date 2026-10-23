@@ -12,4 +12,5 @@ An external grid protection device is a separate protection unit that watches gr
 <!-- review notes
 - sentence 1: support check: partial - Passage says shutdown was triggered by grid plant protection when grid values are outside limits, but doesn't describe it as a separate unit or explicitly that it makes the inverter shut down in general terms (mostly implied).
 - sentence 4: support check: partial - The passage says to check the menu to see if the grid plant protection has been (text cut off), so 'turned on' is not stated; the rest matches.
+- sentence 4: review: partial - The 'External grid protection shutdown' message and the power, grid-parameter and cabling checks are stated, but the menu check is cut off in the row, so 'has not been turned on' is not in the passage.
 -->

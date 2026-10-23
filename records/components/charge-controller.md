@@ -11,4 +11,5 @@ In SMA Sunny Island battery systems, the Sunny Island Charger is the PV charge c
 <!-- review notes
 - sentence 1: support check: partial - Passages show Sunny Island Charger is a PV charge controller reporting PV power/voltage, but nothing states it sits between the PV array and the battery bank (battery values are reported though).
 - sentence 2: support check: partial - Chargers 1 to 4 each have their own data points, but the passages do not state they report to the Sunny Island or that a system can have several.
+- sentence 1: review: partial - The table names the Sunny Island Charger as a PV charge controller, but nothing states it sits between the PV array and the battery bank.
 -->

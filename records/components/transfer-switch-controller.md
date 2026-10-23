@@ -10,4 +10,5 @@ The transfer switch controller is the control unit inside an external automatic 
 
 <!-- review notes
 - sentence 1: support check: partial - NumTranSwtchs enabling transfer switch controls and setting number of external ATSs is stated, but the 'controller inside an ATS' definition is not in the passages.
+- sentence 1: review: partial - The cited rows support NumTranSwtchs setting the number of external ATSs and turning on transfer switch controls, but they do not define the controller as a control unit inside the ATS.
 -->

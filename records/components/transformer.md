@@ -9,4 +9,5 @@ In Sunny Island battery inverters the transformer is an internal part whose temp
 - sentence 2: support check: partial - Passages say the master/slave transformer temperature is too high due to overload or ambient temperature, but do not frame it as a form of 'inverter overheating' (minor classification).
 - sentence 4: support check: partial - Steps for F109–W112 match (reduce loads, clean fans/grids, restart after cooling, replace if persists), but W137–W140 derating advice differs (no replace; increase power capacity), so the claim over-applies to 'these events'.
 - sentence 8: support check: partial - Tests per ANSI C57.12.00/C57.12.90 and the listed checks are stated, but only for GE PROLEC distribution transformers, not distribution transformers generally.
+- sentence 4: review: partial - The steps match the F109 to W112 KB articles, but the W137 to W140 derating article (also among 'these events') says to increase inverter capacity rather than replace the inverter, so the sentence over-applies.
 -->

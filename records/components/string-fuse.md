@@ -15,4 +15,6 @@ A string fuse is an overcurrent device fitted on each PV string inside the inver
 - sentence 1: support check: partial - Passages support string fuses as extra module protection and the three decisive values (Isc, backfeed current IR, max string fuse value), but not 'overcurrent device on each string' or the 'size it from' framing; u3 mentions only Isc.
 - sentence 2: support check: partial - Criteria IN>1.5×ISC, VN>=max open circuit voltage, 10x38 mm and premature tripping prevention are stated, but attribution to 'Fronius' isn't in the passages (and 'at least equal' fits >=).
 - sentence 4: support check: partial - W017 String Err for damaged fuses on models with monitored string fuses and the multimeter check are stated, but 'main failure mode' and 'FIMER' are not in the passages.
+- sentence 1: review: partial - Extra protection for the modules and the three deciding data-sheet values are stated, but 'an overcurrent device on each PV string inside the inverter or its wiring box' is not.
+- sentence 4: review: partial - W017 String Err for damaged string fuses on models with monitored string fuses and the multimeter check on the fuse boards are stated, but the 'main failure mode' framing is not.
 -->

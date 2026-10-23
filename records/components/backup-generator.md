@@ -12,4 +12,5 @@ A backup generator is an external, grid-forming energy source that can be added 
 <!-- review notes
 - sentence 7: support check: partial - The passage lists checking the fuse, blocking until GnAck acknowledgement after reverse power and the manual start mode, but it does not say 'first' or define the order, and the blocking is for a set time.
 - sentence 8: support check: partial - u1 states the relay incorrectly stays closed on firmware below 3.015/3.010 and recommends a firmware update, but 'the generator is not protected' is implied and not stated, and 'older firmware' is specific versions.
+- sentence 7: review: partial - Checking the fuse first and the manual vs autostart setting are both stated, but the passage says the generator is blocked for a set time (with GnAck acknowledgement), not strictly until it is acknowledged.
 -->

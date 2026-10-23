@@ -10,4 +10,6 @@ The heat sink is the metal cooling body inside an inverter or battery inverter. 
 - sentence 3: support check: partial - Heat Sink #1, #2, #3 temperature measurements exist, but the passages don't say they belong to larger central inverters.
 - sentence 4: support check: partial - F113 (fault) and slave W114-116 warnings for heat sink overtemperature are listed, but 'main failure' and master/slave attribution of F113 are only implied by the slave labels.
 - sentence 7: support check: partial - Cleaning only after inverter failure and compressed air with vacuum not permissible are stated, though 'can be cleaned' is milder than 'clean it', and 'never' is a slight strengthening of 'not permissible'.
+- sentence 1: review: partial - The passages show heat sinks in the Sunny Island and Sunny Central, but they never call it a metal cooling body or say it carries heat away from the power electronics.
+- sentence 4: review: partial - F113 is listed as a level-3 heat sink overtemperature entry and W114-W116 as level-1 slave warnings, but the passages never say it is the 'main' failure or that F113 belongs to the master unit.
 -->

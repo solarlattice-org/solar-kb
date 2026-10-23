@@ -12,4 +12,5 @@ A voltage sensor measures voltage so that a monitoring system or an inverter can
 - sentence 4: support check: partial - The passage says to check the LCD reading because it may be a bad measurement circuit, but it doesn't name a 'voltage measurement sensor fault' and doesn't tie the alarm to Canadian Solar three-phase inverters in this passage.
 - sentence 5: support check: partial - The passage lists switching the DC off, checking AC at the test points and checking the LCD reading, with a possible bad measurement circuit; it doesn't state the comparison logic of a low display against a normal measured value.
 - sentence 6: support check: partial - The steps under DC switch ON are to check the grid standard and replace the inverter, but the passage doesn't say the alarm persisting after the grid check is the condition for replacement.
+- sentence 4: review: partial - The rows support that UN-G-V may come from a bad measurement circuit, but the passage text does not name Canadian Solar or three-phase inverters, and it does not use the label 'voltage measurement sensor fault'.
 -->

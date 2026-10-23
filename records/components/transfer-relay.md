@@ -11,4 +11,6 @@ The transfer relay is a relay built into SMA Sunny Island battery inverters, and
 - sentence 1: support check: partial - Passages show event messages for the internal transfer relay being open or closed, but nothing says it is built into SMA Sunny Island inverters, though that is implied by context.
 - sentence 3: support check: partial - The passages list the open/closed events as E-number event messages, but none of them says they are status messages or not faults.
 - sentence 4: support check: partial - F605 is level 4 'Transfer relay does not open', but the passages don't say it is the main failure mode or that it applies to the master unit.
+- sentence 1: review: partial - The events show the internal transfer relay reported as open or closed in SMA event tables, but 'built into SMA Sunny Island battery inverters' is only implied by the document IDs, not stated.
+- sentence 4: review: partial - F605 is listed as level 4 'Transfer relay does not open', but the 'main failure mode' and the master-unit attribution are only inferred from the slave-labelled W606-W608 rows.
 -->

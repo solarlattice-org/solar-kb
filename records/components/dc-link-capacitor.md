@@ -11,4 +11,5 @@ The DC link capacitor stores energy on the internal DC bus of an inverter. It ca
 - sentence 1: support check: partial - Passage shows residual voltage in the DC link after shutdown but never mentions a capacitor or that it stores energy on the internal bus.
 - sentence 5: support check: partial - Records list Bus Electrolytic Capacitor among alternate materials, but the inference about the bus capacitor type is only implied; the second record just says 'Capacitor'.
 - sentence 6: support check: partial - Passage lists the DC link recharge circuit with night time operation with restart capability for the PVS-166/175, but does not state that the circuit enables it as a causal relation, though it's strongly implied.
+- sentence 1: review: partial - The passage supports that a dangerous residual voltage (up to 1000 V) can remain in the DC link, but it never mentions a capacitor storing energy on the internal DC bus.
 -->
