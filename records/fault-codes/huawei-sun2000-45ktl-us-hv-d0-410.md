@@ -44,7 +44,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=58.r3
     h: ab1a62a388fa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The passages describe an abnormal voltage on the sampling control
     board from a faulty power chip or detection circuit, but…'
 - claim_id: c4

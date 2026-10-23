@@ -53,7 +53,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=53.r2
     h: 3cdeedc59a8a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: detected_by
   target: method:string-current-measurement

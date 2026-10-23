@@ -66,5 +66,7 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: sec=8.2
     h: db4d98f32335
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

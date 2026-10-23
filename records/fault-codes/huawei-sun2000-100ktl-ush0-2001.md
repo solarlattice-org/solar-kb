@@ -41,7 +41,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=54.r1
     h: adf353208ad7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:pv-array

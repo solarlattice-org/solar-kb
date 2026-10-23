@@ -84,7 +84,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=53.r4
     h: e68939271b75
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-restart

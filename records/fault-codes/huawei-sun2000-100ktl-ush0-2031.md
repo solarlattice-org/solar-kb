@@ -41,7 +41,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=55.r4
     h: 01ef2742bfad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:ac-cable
@@ -67,7 +69,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=55.r4
     h: 01ef2742bfad
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: has_production_effect
   target: ec:trip

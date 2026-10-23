@@ -68,7 +68,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=57.r3
     h: 5d3f9a245613
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: detected_by
   target: method:insulation-resistance-test

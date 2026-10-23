@@ -58,7 +58,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=58.r2
     h: 97d95a46812a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - Evidence says to check PV string to ground impedance when frequent
     or persistent, but does not name an insulation resistance…'
 - claim_id: c6
@@ -80,5 +82,7 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=58.r2
     h: 97d95a46812a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

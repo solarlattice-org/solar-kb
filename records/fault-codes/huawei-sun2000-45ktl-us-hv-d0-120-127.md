@@ -33,7 +33,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=53.r3
     h: f53d68c14ac1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:pv-array
@@ -71,7 +73,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: sec=9.2
     h: 37ed3fc315be
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Major (cause 1) is a shutdown fault, but cause 2 is a warning;
     fault class holds only for cause 1.'
 - claim_id: c7

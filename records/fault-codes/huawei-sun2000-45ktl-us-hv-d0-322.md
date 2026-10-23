@@ -44,7 +44,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=57.r5
     h: f3b36edacbb6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: affects
   target: comp:inverter
@@ -89,7 +91,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: sec=8.2
     h: db4d98f32335
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: has_recovery
   target: ec:manual-reset
@@ -101,5 +105,7 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=57.r5
     h: f3b36edacbb6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -44,7 +44,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=57.r2
     h: 641402213d00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: indicates
   target: fm:insulation-loss
@@ -55,7 +57,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=57.r2
     h: 641402213d00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: affects
   target: comp:pv-array
@@ -102,5 +106,7 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: sec=8.2
     h: db4d98f32335
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
