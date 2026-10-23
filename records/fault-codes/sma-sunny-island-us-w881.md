@@ -1,0 +1,53 @@
+---
+id: fc:sma-sunny-island-us-w881
+type: FaultCode
+name: SMA SI-US W881
+aliases:
+- W881
+- w881
+- SMA W881
+category: Inverters
+make: sma
+make_name: SMA
+model_family: sunny-island-us
+family_name: Sunny Island 4548-US / 6048-US
+code: W881
+code_key: w881
+vendor_severity: '1'
+page: 218
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sma-doc-si4548-6048-us-be-en-21w
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=154.r5
+    h: 65e49f3bff26
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:warning
+  note: from the Type column
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=154.r5
+    h: 65e49f3bff26
+  review: drafted
+- claim_id: c3
+  rel: reports
+  target: symptom:reverse-polarity
+  note: Row also allows a short circuit on the battery side.
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=154.r5
+    h: 65e49f3bff26
+  review: drafted
+- claim_id: c4
+  rel: affects
+  target: comp:charge-controller
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=154.r5
+    h: 65e49f3bff26
+  review: drafted
+---

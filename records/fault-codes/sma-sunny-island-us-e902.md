@@ -1,0 +1,37 @@
+---
+id: fc:sma-sunny-island-us-e902
+type: FaultCode
+name: SMA SI-US E902
+aliases:
+- E902
+- e902
+- SMA E902
+- SOC recalibration stopped
+category: Inverters
+make: sma
+make_name: SMA
+model_family: sunny-island-us
+family_name: Sunny Island 4548-US / 6048-US
+code: E902
+code_key: e902
+display_message: SOC recalibration stopped
+page: 209
+claims:
+- claim_id: c1
+  rel: defined_in
+  target: src:sma-doc-si4548-6048-us-be-en-21w
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=140.r4
+    h: 528aeed52e69
+  review: drafted
+- claim_id: c2
+  rel: has_event_class
+  target: ec:informational
+  note: Event row reporting the end of battery state-of-charge recalibration.
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=140.r4
+    h: 528aeed52e69
+  review: drafted
+---
