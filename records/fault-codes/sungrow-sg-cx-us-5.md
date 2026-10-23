@@ -1,17 +1,18 @@
 ---
 id: fc:sungrow-sg-cx-us-5
 type: FaultCode
-name: Sungrow SG-CX-US 5
+name: Sungrow SG-CX-US 005
 aliases:
+- '005'
 - '5'
-- Sungrow 5
+- Sungrow 005
 - Grid low voltage
 category: Inverters
 make: sungrow
 make_name: Sungrow
 model_family: sg-cx-us
 family_name: Sungrow SG36/60CX-US
-code: '5'
+code: '005'
 code_key: '5'
 display_message: Grid low voltage
 page: 90
@@ -25,98 +26,156 @@ claims:
     h: c50b0671bfd5
   review: drafted
 - claim_id: c2
-  rel: reports
-  target: symptom:grid-undervoltage
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=47.r2
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
     h: c50b0671bfd5
   review: drafted
 - claim_id: c3
-  rel: has_event_class
-  target: ec:fault
+  rel: reports
+  target: symptom:grid-undervoltage
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: sec=9.1
-    h: 7e543aeb5157
-  review: drafted
-  review_note: 'support check: partial - It is in a fault table, but the passages give no explicit fault-versus-warning
-    classification.'
-- claim_id: c4
-  rel: has_production_effect
-  target: ec:trip
-  cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
+- claim_id: c4
+  rel: has_event_class
+  target: ec:fault
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=47.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
+  review_note: 'support check: partial - No explicit fault classification; only implied.'
+- claim_id: c5
+  rel: has_production_effect
+  target: ec:trip
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=47.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
   review_note: 'support check: partial - Reconnection implies disconnection, but production stop is not
-    explicitly stated.'
-- claim_id: c5
+    explicit.'
+- claim_id: c6
   rel: has_recovery
   target: ec:auto-reset
   note: If repeated, check grid, settings and AC cable, then contact service.
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
-- claim_id: c6
+- claim_id: c7
   rel: detected_by
   target: method:grid-voltage-measurement
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
-- claim_id: c7
+- claim_id: c8
+  rel: detected_by
+  target: method:inverter-settings-review
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=47.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
+- claim_id: c9
+  rel: mitigated_by
+  target: mit:utility-consultation
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=47.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
+- claim_id: c10
   rel: mitigated_by
   target: mit:grid-settings-check
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
-- claim_id: c8
+- claim_id: c11
   rel: mitigated_by
   target: mit:ac-connection-check
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
-- claim_id: c9
+- claim_id: c12
   rel: affects
   target: comp:ac-cable
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=38.r2
-    h: 74f93b8997f3
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=47.r2
     h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
   review: drafted
-  review_note: 'support check: partial - The AC cable check is listed as a corrective step, but the passages
-    don''t say the fault affects the AC…'
+  review_note: 'support check: partial - AC cable is only a check item, not stated as affected.'
 ---

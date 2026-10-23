@@ -25,58 +25,85 @@ claims:
     h: 344b1ae4ad3d
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:grounding-cable-fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=42.r2
-    h: bb5f80409564
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r1
     h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=33.r2
+    h: 4b55ebede240
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
-- claim_id: c3
+- claim_id: c4
   rel: affects
   target: comp:ac-cable
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r1
     h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=33.r2
+    h: 4b55ebede240
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: detected_by
   target: method:insulation-resistance-test
-  note: Insulation between ground cable and live conductor is checked.
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=42.r2
-    h: bb5f80409564
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r1
     h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=33.r2
+    h: 4b55ebede240
   review: drafted
-  review_note: 'support check: partial - Insulation between ground cable and live wire is checked, but
-    no insulation resistance test is stated.'
-- claim_id: c5
+  review_note: 'support check: partial - Checking insulation between ground cable and live wire is stated,
+    but not insulation resistance testing specifically.'
+- claim_id: c6
   rel: mitigated_by
   target: mit:ac-connection-check
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r1
     h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=33.r2
+    h: 4b55ebede240
   review: drafted
-- claim_id: c6
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only after wiring and insulation causes are ruled out.
+- claim_id: c7
+  rel: has_event_class
+  target: ec:fault
   cite:
-  - src: src:sungrow-sg250hx-us-uen-ver17-202203
-    loc: tbl=42.r2
-    h: bb5f80409564
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r1
     h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r1
+    h: 344b1ae4ad3d
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=33.r2
+    h: 4b55ebede240
   review: drafted
 ---

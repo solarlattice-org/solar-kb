@@ -26,14 +26,25 @@ claims:
     h: ffc90862e4ba
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
+    h: ffc90862e4ba
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:spd-alarm
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r6
     h: ffc90862e4ba
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
+    h: ffc90862e4ba
   review: drafted
-- claim_id: c3
+- claim_id: c4
   rel: affects
   target: comp:surge-protection-device
   note: AC-side surge protector.
@@ -41,31 +52,34 @@ claims:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r6
     h: ffc90862e4ba
-  review: drafted
-- claim_id: c4
-  rel: detected_by
-  target: method:visual-inspection
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=52.r6
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
     h: ffc90862e4ba
   review: drafted
 - claim_id: c5
   rel: mitigated_by
   target: mit:spd-replacement
-  note: Only if the check finds it necessary.
+  note: If inspection shows the SPD is exhausted.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r6
+    h: ffc90862e4ba
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
     h: ffc90862e4ba
   review: drafted
 - claim_id: c6
   rel: has_event_class
   target: ec:warning
-  note: Labelled as an alarm rather than a fault.
+  note: Labelled as an alarm.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=52.r6
     h: ffc90862e4ba
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
+    h: ffc90862e4ba
   review: drafted
+  review_note: 'support check: partial - Labelled alarm, but no statement of device continuing operation;
+    warning is implied only by label.'
 ---

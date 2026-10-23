@@ -25,48 +25,60 @@ claims:
     h: e3dfad5dad15
   review: drafted
 - claim_id: c2
-  rel: reports
-  target: symptom:self-test-failure
-  note: Grid-side protection self-check.
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
   cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=53.r4
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r4
     h: e3dfad5dad15
   review: drafted
 - claim_id: c3
-  rel: affects
-  target: comp:inverter
+  rel: reports
+  target: symptom:self-test-failure
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r4
     h: e3dfad5dad15
-  review: drafted
-  review_note: 'support check: partial - Row doesn''t name a component; inverter restart is implied but
-    the affected component is only loosely implied.'
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r4
+    h: e3dfad5dad15
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c4
-  rel: has_recovery
-  target: ec:manual-reset
-  note: Restart or clear via app first; contact manufacturer if it persists.
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=53.r4
-    h: e3dfad5dad15
-  review: drafted
-- claim_id: c5
   rel: mitigated_by
   target: mit:inverter-restart
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r4
     h: e3dfad5dad15
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r4
+    h: e3dfad5dad15
   review: drafted
-- claim_id: c6
-  rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the failure persists after restart.
+- claim_id: c5
+  rel: has_event_class
+  target: ec:fault
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=53.r4
+    h: e3dfad5dad15
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r4
+    h: e3dfad5dad15
+  review: drafted
+  review_note: 'support check: partial - Self-check failure needing restart or clearing implies a fault,
+    but the classification is not explicit.'
+- claim_id: c6
+  rel: has_recovery
+  target: ec:manual-reset
+  note: Restart or clear via App first; contact service if it persists.
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=53.r4
+    h: e3dfad5dad15
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=39.r4
     h: e3dfad5dad15
   review: drafted
 ---

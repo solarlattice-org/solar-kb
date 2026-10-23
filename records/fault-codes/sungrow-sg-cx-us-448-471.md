@@ -27,61 +27,71 @@ claims:
     h: 4fb9f1339aab
   review: drafted
 - claim_id: c2
+  rel: defined_in
+  target: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+  cite:
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
+    h: 4fb9f1339aab
+  review: drafted
+- claim_id: c3
   rel: reports
   target: symptom:reverse-polarity
-  note: Codes map to strings 1 to 24.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r4
     h: 4fb9f1339aab
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
+    h: 4fb9f1339aab
   review: drafted
-  review_note: 'support check: partial - Reverse connection fault is stated, but the mapping is strings
-    1 to 24 for codes 448-471, which matches the note.'
-- claim_id: c3
+- claim_id: c4
   rel: affects
   target: comp:pv-array
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r4
     h: 4fb9f1339aab
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
+    h: 4fb9f1339aab
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: detected_by
   target: method:polarity-measurement
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r4
     h: 4fb9f1339aab
-  review: drafted
-  review_note: 'support check: partial - The row says to check whether the string is reverse polarity,
-    but does not state the detection method is a…'
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:string-configuration-correction
-  note: Correct polarity only at low irradiance with string current below 0.5 A and DC switch open.
-  cite:
-  - src: src:sungrow-sungrow-36-60cx-us-iom
-    loc: tbl=54.r4
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
     h: 4fb9f1339aab
   review: drafted
+  review_note: 'support check: partial - Check method has checking whether the string is reverse polarity,
+    but no explicit detection method of polarity measurement is stated.'
 - claim_id: c6
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if polarity is correct and the fault persists.
+  target: mit:polarity-correction
+  note: Correct only with DC switch open and string current below 0.5 A.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r4
     h: 4fb9f1339aab
-  review: drafted
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
+    h: 4fb9f1339aab
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: has_event_class
   target: ec:fault
-  note: Labelled as a fault, distinct from the alarm variant.
   cite:
   - src: src:sungrow-sungrow-36-60cx-us-iom
     loc: tbl=54.r4
     h: 4fb9f1339aab
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r4
+    h: 4fb9f1339aab
   review: drafted
-  review_note: 'support check: partial - Described as a ''fault'' in the description, but the row gives
-    no device behavior to confirm a fault classification.'
 ---
