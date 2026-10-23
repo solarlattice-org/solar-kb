@@ -31,14 +31,28 @@ claims:
     h: 69404e8b15b5
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r2
+    h: 69404e8b15b5
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r2
-    h: 69404e8b15b5
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r2
     h: 69404e8b15b5
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r2
+    h: 69404e8b15b5
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=19.r1
+    h: 69404e8b15b5
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h373
+    h: 8abdb9dc43b3
   review: drafted
 ---

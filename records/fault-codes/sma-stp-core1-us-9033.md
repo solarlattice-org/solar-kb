@@ -31,6 +31,14 @@ claims:
     h: eaf36c5b0c2a
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r6
+    h: 4d079dd65358
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:rapid-shutdown
   cite:
@@ -40,11 +48,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r7
     h: eaf36c5b0c2a
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=23.r6
+    h: 4d079dd65358
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h739
+    h: f4280bd32756
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h623
+    h: 7bf9fb38dceb
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: has_production_effect
   target: ec:trip
-  note: AC side of the inverter is disconnected.
+  note: AC side disconnected and PV inputs discharged.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=22.r7
@@ -52,5 +69,13 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=11.r7
     h: eaf36c5b0c2a
-  review: drafted
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h739
+    h: f4280bd32756
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h623
+    h: 7bf9fb38dceb
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

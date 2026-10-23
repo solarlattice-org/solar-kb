@@ -31,6 +31,14 @@ claims:
     h: ded27d4996a4
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r4
+    h: 93c2d6ff802b
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:dc-overcurrent
   cite:
@@ -40,8 +48,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r3
     h: ded27d4996a4
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h298
+    h: 41ca4ce6d7cb
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:pv-array
   cite:
@@ -52,10 +63,25 @@ claims:
     loc: tbl=7.r3
     h: ded27d4996a4
   review: drafted
-- claim_id: c5
+- claim_id: c6
+  rel: mitigated_by
+  target: mit:string-configuration-correction
+  note: Only when the message appears frequently.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=18.r3
+    h: ded27d4996a4
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=7.r3
+    h: ded27d4996a4
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h299
+    h: f2d5a3b20f78
+  review: drafted
+- claim_id: c7
   rel: has_production_effect
   target: ec:trip
-  note: Feed-in is interrupted briefly.
+  note: Brief interruption of feed-in.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=18.r3
@@ -63,11 +89,14 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r3
     h: ded27d4996a4
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h298
+    h: 41ca4ce6d7cb
   review: drafted
-- claim_id: c6
+- claim_id: c8
   rel: has_recovery
   target: ec:auto-reset
-  note: Interruption is brief, so feed-in resumes on its own.
+  note: Interruption is brief; resumes on its own.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=18.r3
@@ -75,19 +104,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r3
     h: ded27d4996a4
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h298
+    h: 41ca4ce6d7cb
   review: drafted
-  review_note: 'support check: partial - Brief interruption implies resumption, but self-resumption is
-    not explicitly stated.'
-- claim_id: c7
-  rel: mitigated_by
-  target: mit:dc-wiring-check
-  note: Applies when the message occurs frequently; also check that the array is sized correctly.
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=18.r3
-    h: ded27d4996a4
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=7.r3
-    h: ded27d4996a4
-  review: drafted
+  review_note: 'support check: partial - Brief interruption implies resumption, but not explicit.'
 ---

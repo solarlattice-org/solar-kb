@@ -31,9 +31,17 @@ claims:
     h: 3dddf82a1a43
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r9
+    h: 3dddf82a1a43
+  review: drafted
+- claim_id: c4
   rel: has_event_class
   target: ec:informational
-  note: Status confirmation that parameter changes were adopted.
+  note: Confirms parameter changes were adopted.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=26.r9
@@ -41,5 +49,11 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=15.r9
     h: 3dddf82a1a43
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r9
+    h: 3dddf82a1a43
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=21.r7
+    h: 39d4784652b5
   review: drafted
 ---

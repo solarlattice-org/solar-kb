@@ -31,28 +31,25 @@ claims:
     h: c0aa437efcaf
   review: drafted
 - claim_id: c3
-  rel: reports
-  target: symptom:rapid-shutdown
-  note: Successful discharge of DC inputs and AC output.
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=23.r3
-    h: c0aa437efcaf
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=12.r3
-    h: c0aa437efcaf
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r3
+    h: 2a9286ad8236
   review: drafted
-  review_note: 'support check: partial - Rapid Shutdown successful is stated, but ''triggered'' is not
-    explicitly stated in these passages.'
 - claim_id: c4
   rel: has_event_class
   target: ec:informational
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=23.r3
-    h: c0aa437efcaf
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=12.r3
-    h: c0aa437efcaf
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h747
+    h: 34622fba9498
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h631
+    h: 34622fba9498
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h632
+    h: 5e45647462cb
   review: drafted
 ---

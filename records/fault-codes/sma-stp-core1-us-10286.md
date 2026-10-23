@@ -39,21 +39,68 @@ claims:
     h: c03208dd7c40
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h314
+    h: 31aa4a940e19
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h315
+    h: c03208dd7c40
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:communication-loss
-  note: Inverter lost its Wi-Fi link to the selected network.
   cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: sec=h322
-    h: 31aa4a940e19
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: sec=h323
     h: c03208dd7c40
   - src: src:sma-stp33-62-us-41-ops-manual
-    loc: sec=h239
-    h: 31aa4a940e19
+    loc: sec=h240
+    h: c03208dd7c40
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h315
+    h: c03208dd7c40
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h500
+    h: 5b3b9a176516
+  review: drafted
+- claim_id: c5
+  rel: mitigated_by
+  target: mit:network-connection-check
+  note: Check router or access point status and range; add a repeater if the message recurs often.
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h324
+    h: 174f589044d1
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h241
+    h: 174f589044d1
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h316
+    h: 174f589044d1
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h501
+    h: 174f589044d1
+  review: drafted
+- claim_id: c6
+  rel: has_event_class
+  target: ec:warning
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h323
+    h: c03208dd7c40
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h324
+    h: 174f589044d1
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: sec=h240
     h: c03208dd7c40
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h241
+    h: 174f589044d1
   review: drafted
+  review_note: 'support check: partial - The passages give no warning classification; a lost connection
+    with corrective measures only loosely implies a warning.'
 ---

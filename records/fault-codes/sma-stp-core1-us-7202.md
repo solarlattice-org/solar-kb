@@ -31,6 +31,14 @@ claims:
     h: 7cb26957c156
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r9
+    h: 7cb26957c156
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:data-storage-failure
   cite:
@@ -39,6 +47,9 @@ claims:
     h: 7cb26957c156
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=8.r9
+    h: 7cb26957c156
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=20.r9
     h: 7cb26957c156
   review: drafted
 ---

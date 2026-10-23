@@ -31,6 +31,14 @@ claims:
     h: 622dc8a01f0e
   review: drafted
 - claim_id: c3
+  rel: defined_in
+  target: src:sma-stp33-62-us-41-ba-en-14
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r4
+    h: 622dc8a01f0e
+  review: drafted
+- claim_id: c4
   rel: reports
   target: symptom:firmware-update-failure
   cite:
@@ -40,8 +48,17 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r4
     h: 622dc8a01f0e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r4
+    h: 622dc8a01f0e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h225
+    h: 1a36338616cc
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h379
+    h: 07d07e0090ed
   review: drafted
-- claim_id: c4
+- claim_id: c5
   rel: affects
   target: comp:wifi-module
   cite:
@@ -51,22 +68,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r4
     h: 622dc8a01f0e
-  review: drafted
-- claim_id: c5
-  rel: mitigated_by
-  target: mit:firmware-update
-  cite:
-  - src: src:sma-stp33-62-us-41-ba-en-13
-    loc: tbl=21.r4
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r4
     h: 622dc8a01f0e
-  - src: src:sma-stp33-62-us-41-ops-manual
-    loc: tbl=10.r4
-    h: 622dc8a01f0e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h225
+    h: 1a36338616cc
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h379
+    h: 07d07e0090ed
   review: drafted
 - claim_id: c6
   rel: mitigated_by
-  target: mit:contact-manufacturer-service
-  note: Only if the message recurs after retrying.
+  target: mit:retry-update
+  note: First step; contact service if message recurs.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r4
@@ -74,11 +89,20 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r4
     h: 622dc8a01f0e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r4
+    h: 622dc8a01f0e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h226
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h380
+    h: 2b6216ee121d
   review: drafted
 - claim_id: c7
-  rel: has_recovery
-  target: ec:manual-reset
-  note: Operator retries update first; service only if failure repeats.
+  rel: mitigated_by
+  target: mit:contact-manufacturer-service
+  note: Only if the message appears again after retrying.
   cite:
   - src: src:sma-stp33-62-us-41-ba-en-13
     loc: tbl=21.r4
@@ -86,7 +110,14 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=10.r4
     h: 622dc8a01f0e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=22.r4
+    h: 622dc8a01f0e
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h226
+    h: b963762ed902
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h380
+    h: 2b6216ee121d
   review: drafted
-  review_note: 'support check: partial - Operator retry is stated, but the passages don''t say the code
-    clears by manual reset or acknowledgement.'
 ---
