@@ -11,4 +11,6 @@ This action replaces the small coin cell on the inverter communication board tha
 <!-- review notes
 - sentence 5: support check: partial - The passages support the wiring box cover, the plastic cover, extracting the board, and keeping the power module cover closed. They don't say the plastic-cover and wiring-box-cover routes are alternatives, and 'on some models' for the extraction is only implied.
 - sentence 7: support check: partial - The passages support reconnecting the strings and restarting the inverter, and replacing the plastic cover in one version. Refitting all the covers is not stated for the other versions.
+- sentence 1: review: partial - Both passages support a CR2032 battery on the communication (and control) board, but neither says it is a coin cell that keeps the clock running; that is only implied by the date/time reset trigger.
+- sentence 7: review: partial - Reconnecting the strings and restarting is supported, but only the plastic cover is said to be refitted (in one manual); refitting covers in general is not stated.
 -->

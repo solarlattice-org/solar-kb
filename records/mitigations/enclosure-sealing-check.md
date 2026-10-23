@@ -11,4 +11,5 @@ An enclosure sealing check confirms that an inverter or equipment cabinet still 
 <!-- review notes
 - sentence 1: support check: partial - Passages state NEMA 4X certification and the duty to maintain it, but don't define a 'sealing check' as confirming the enclosure still keeps out water and dust.
 - sentence 7: support check: partial - Below -5°C opening, moisture/precipitation, dust/debris from wind, and the weep-hole warranty void are stated, but the passages don't explicitly say high humidity or wind damages seals (humidity is mentioned only as a moisture risk, wind as debris).
+- sentence 1: review: partial - The passages establish the NEMA Type 4X rating on UNO-DM-PLUS and the duty to maintain it, but do not define a sealing check or say the rating means keeping out water and dust.
 -->

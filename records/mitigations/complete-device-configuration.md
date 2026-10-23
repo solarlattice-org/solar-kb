@@ -7,4 +7,5 @@ Complete device configuration means working through every required setup step fo
 
 <!-- review notes
 - sentence 1: support check: partial - Passage says to complete all required settings for inverters in the app, but not 'connected devices' broadly or the definition of complete configuration before normal operation.
+- sentence 1: review: partial - The passage supports completing all required settings for inverters connected through the data logger in the app, but not 'connected devices' in general or the 'before normal operation' definition.
 -->

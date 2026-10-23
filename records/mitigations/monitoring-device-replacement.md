@@ -7,4 +7,5 @@ Monitoring device replacement is a corrective action for flash memory failure in
 
 <!-- review notes
 - sentence 4: support check: partial - The passages show this action for the flash alarm, but the two passages cannot establish that the manuals give no other applicable conditions.
+- sentence 4: review: partial - The passages show the action for the flash alarm, but two quoted rows cannot show that the manuals give no other conditions where it applies.
 -->
