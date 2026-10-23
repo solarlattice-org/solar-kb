@@ -68,6 +68,6 @@ claims:
     loc: tbl=73.r2
     h: 290a7a24de3f
   review: drafted
-  review_note: 'support check: partial - The transformer is mentioned only as a diagnostic grid-inductance
-    check, not as a component affected by the fault.'
+  review_note: 'review: partial - The note correctly paraphrases the transformer short-circuit voltage
+    check, but the row uses the transformer only as a grid-inductance diagnostic, never says…'
 ---

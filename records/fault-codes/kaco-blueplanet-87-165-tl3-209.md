@@ -60,7 +60,9 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=81.r7
     h: 89bb2d6ff4a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart
@@ -68,5 +70,7 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=81.r7
     h: 89bb2d6ff4a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

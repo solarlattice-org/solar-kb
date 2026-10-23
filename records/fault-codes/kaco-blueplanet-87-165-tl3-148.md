@@ -32,8 +32,8 @@ claims:
     loc: tbl=79.r5
     h: 3d2fded5f7eb
   review: drafted
-  review_note: 'support check: partial - Display says External memory error 1 while description refers
-    to permanent internal memory; internal memory error is only loosely supported.'
+  review_note: 'review: partial - The row''s display text is ''External memory error 1'' and it never
+    describes an error condition, so a memory error fits loosely…'
 - claim_id: c3
   rel: affects
   target: comp:memory-unit

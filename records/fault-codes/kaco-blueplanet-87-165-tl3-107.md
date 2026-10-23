@@ -90,7 +90,9 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=78.r4
     h: a2d1f75b07bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The module must be checked and replaced if necessary, so service
     is only partly implied, and no KACO Service contact…'
 ---

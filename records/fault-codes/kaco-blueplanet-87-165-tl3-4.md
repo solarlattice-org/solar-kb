@@ -42,7 +42,9 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=71.r2
     h: 41289483e81c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Normal MPP feed-in and investigate only if insufficient power
     is stated; ''no production effect'' is implied but not explicit.'
 - claim_id: c4

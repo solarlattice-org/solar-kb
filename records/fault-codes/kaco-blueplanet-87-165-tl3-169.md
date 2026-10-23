@@ -33,8 +33,8 @@ claims:
     loc: tbl=79.r15
     h: 7df1fc309926
   review: drafted
-  review_note: 'support check: partial - AFI sensor demagnetisation failure is stated, but ''residual
-    current device failure'' is an inference.'
+  review_note: 'review: partial - Row 169 states that the AFI sensor could not be demagnetised and that
+    a device error was detected, but calling this a…'
 - claim_id: c3
   rel: affects
   target: comp:residual-current-monitor
@@ -50,5 +50,7 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=79.r15
     h: 7df1fc309926
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
