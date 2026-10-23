@@ -24,7 +24,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=14.r7
     h: a71ef8fdaeaf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:grid-voltage-rise-with-power
@@ -35,7 +37,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=h57
     h: '182922548211'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Positive slope, regression for impedance, 1.1 p.u. trip and hourly
     averages hiding trips are stated, but the passages don''t link high impedance to specific phase voltage/W
     signal patterns, and nothing is said about approaching the overvoltage limit at ''high output'' with

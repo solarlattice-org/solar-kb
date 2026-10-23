@@ -25,7 +25,9 @@ claims:
   - src: src:chint-cps-200-250kw-k-t-modbus-map-2026-01-30
     loc: tbl=43.r24
     h: d09f1fa0a03b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:spd-red-status-led
@@ -36,6 +38,9 @@ claims:
     loc: sec=h77
     h: a9091451d645
   review: drafted
+  review_note: 'review: partial - The red LED blinking and the cycling alarm on excessive N-G voltage
+    are stated, but the passage says only the resistor heating and shrink-wrap effect does not occur on
+    transient overvoltages, not the LED or alarm.'
 - claim_id: c3
   rel: observed_as
   target: meas:high-neutral-ground-voltage
@@ -48,7 +53,9 @@ claims:
   - src: src:siemens-siemens-im-surgeprotection-tps4
     loc: sec=h76
     h: acb8f9e5e8c6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 On CPS three-phase inverters this condition shows up as fault code Protect0790. The manual calls it a zero-to-ground or N2PE voltage anomaly, and it is also flagged as a bit in the Modbus fault register. The manufacturer's first step is to check that the grid connection is good. If the alarm comes back after that, contact after-sales service. The inverter's neutral connection only gives it a measurement reference close to ground potential. A loose neutral wire can make the inverter read the grid voltage wrongly. On site, measure neutral to ground on the AC side along with line to line, line to neutral and line to ground. Only do this with AC on if it is safe. Do not rely on the meter alone: a zero N-G reading can happen by chance. Look to confirm that the neutral-to-ground bond is actually installed. A missing neutral-to-ground bonding jumper at the service entrance or transformer is an installation error. It leaves the system ungrounded, which can push line-to-ground voltages abnormally high and wear out surge protectors over time. Surge protectors that have N-G monitoring blink a red LED and sound an alarm when N-G voltage is excessive, and this needs immediate attention. Do not fit a neutral-to-ground jumper inside the inverter while the neutral conductor is connected, because it can cause damage.
 

@@ -20,7 +20,9 @@ claims:
   - src: src:pv-root-cause-connector-defect
     loc: sec=front
     h: 27362abca33f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:visible-burn-marks
@@ -37,6 +39,9 @@ claims:
     loc: fig=1
     h: 4e82f7c0b6b2
   review: drafted
+  review_note: 'review: partial - The note matches the rows'' description of damaged connectors, but the
+    passages never say burn marks are how overtemperature specifically shows up; they list burned appearance
+    only as a general sign of damage.'
 - claim_id: c3
   rel: observed_as
   target: meas:connector-contact-corrosion
@@ -49,6 +54,8 @@ claims:
     loc: tbl=27.r1
     h: 64afea9d2672
   review: drafted
+  review_note: 'review: partial - The rows support the note that opened connectors can show corrosion,
+    but they do not tie corrosion to connector overtemperature as an observation of it.'
 ---
 First, watch the inverter for 5 minutes to see whether the alarm clears by itself. If it keeps coming back, contact after-sales service. Fault5020 and Fault5030 report a faulty connector temperature sensor rather than real heating. For those codes, check that the bulkhead connectors are properly connected. The most likely failure mode behind a hot connector is a connector defect. Resistance heating there can lead to arcing, ground faults and fire. These defects usually come from installation problems: poor crimping, mismatched or cross-mated connectors, or low-quality materials. Ageing from UV and humidity is a less common cause. An infrared scan under load usually shows an affected connector as a hotspot at an early stage. Compare string currents as well. Isolate the circuit safely before a visual and hands-on check. Look for melted, burned, brittle, cracked or whitened connectors, and for corrosion inside opened ones.
 

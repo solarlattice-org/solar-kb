@@ -10,4 +10,5 @@ The manual lists it in the warning faults table, not among the trip faults. Firs
 <!-- review notes
 - sentence 2: support check: partial - The passages say to check the input voltage deviation on the LCD, but they don't say it is between PV inputs or that this is the first step in a stated order beyond the numbering.
 - sentence 3: support check: partial - The passages say to remove the branch with the lowest input voltage and then restart the inverter, but they don't say 'clearly lower' or condition the step on one branch being lower than the rest.
+- sentence 1: review: partial - CfLowErr does appear in Table 7-2 Warning Faults, but the passage never mentions trip faults, so 'not among the trip faults' is not supported.
 -->

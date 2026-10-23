@@ -59,7 +59,9 @@ claims:
   - src: src:chint-cps-200-250kw-k-t-modbus-map-2026-01-30
     loc: tbl=42.r29
     h: 85ab36f417a8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:ac-instantaneous-overcurrent-event
@@ -71,7 +73,8 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passage supports the AC-side overcurrent disconnect, but
     the specific signal behaviors (current exceeding trip level then zero, power dropping to zero) are
-    not stated.'
+    not stated.; review: partial - The SMA passage supports an AC grid-side overcurrent detection followed
+    by grid disconnection, but the ''instantaneous'' qualifier in the observation label is not stated.'
 ---
 Inverter overcurrent is a protection event: the inverter detects too much current on its output and stops feeding the grid. On CPS inverters it appears as Protect0030 (inverter over current), or as Protect0240 or PFault0080 (inverter hardware overcurrent). Remote monitoring can read the same event over Modbus as a fault bit in the inverter status registers. For Protect0240, the manual says to watch for about five minutes first, because the alarm may clear by itself. If it stays, turn off both the AC and DC switches, wait one minute for stored energy to discharge, then switch both back on. If the fault comes back after the restart, the manuals point to an internal inverter problem: contact after-sales service or replace the inverter. Do not confuse this alarm with boost or PV input overcurrent codes. Those point to the DC side, so check the PV input current for them first.
 
@@ -79,4 +82,5 @@ Inverter overcurrent is a protection event: the inverter detects too much curren
 - sentence 3: support check: partial - Register addresses and bit positions for the overcurrent faults are given, but the passages don't say remote monitoring reads them over Modbus, and u15/u34 are the only ones with a fault level.
 - sentence 6: support check: partial - Contact after-sales service or replace the inverter if the fault persists is stated, but the passages don't say this indicates an internal inverter problem.
 - sentence 7: support check: partial - Passages show boost/PV overcurrent codes relate to the DC input and PV over current says to check PV input current, but nothing states to not confuse them with this alarm, and the check-PV-first advice applies only to the PV over current code, not boost.
+- sentence 7: review: partial - The passages tie the boost and PV overcurrent codes to the DC side, and only the PV over current code says to check PV input current; nothing says not to confuse them with this alarm or to check PV current…
 -->

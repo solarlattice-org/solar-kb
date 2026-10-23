@@ -10,4 +10,5 @@ Monitoring systems that read the Modbus alarm table show the same condition as a
 <!-- review notes
 - sentence 4: support check: partial - Codes 030, 031 and 033 are listed with the stated descriptions, but nothing says to check the event log or that together they show which clamp problem is occurring.
 - sentence 5: support check: partial - The note says to wait for automatic recovery and see the NOTE, but the passages don't say what to do if the event doesn't clear or advise against field fixes.
+- sentence 4: review: partial - Both tables list codes 030 (over-voltage), 031 (under-voltage) and 033 (pre-charge ground fault), but neither says to check the event log or that the codes together show which clamp problem is happening.
 -->

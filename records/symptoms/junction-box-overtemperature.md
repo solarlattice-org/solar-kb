@@ -19,7 +19,9 @@ claims:
   - src: src:pv-root-cause-junction-box-failure
     loc: sec=h7
     h: 0a38406de906
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 First, watch the inverter for about five minutes to see whether the alarm clears by itself. If it keeps coming back, contact the manufacturer's after-sales service. The same register uses separate codes for a junction box temperature sensor fault and for an abnormal junction box temperature, so check which code is actually active before assuming real overheating. On PV modules, bad contacts, corrosion or unreliable soldered joints raise the resistance inside the junction box and make it heat up, which points to junction box failure. An infrared camera can show a junction box running hotter than the others, which may indicate a loose connection or a cold solder joint. Some joint faults only heat up under shading or during a bypass diode test. A failed bypass diode can also overheat the box until it deforms or burns, and internal arcing can leave burn marks around it. Inspect suspect boxes by eye and with IR, check how the bypass diodes behave, and add IV tracing and insulation checks if you find damage. Replace the module rather than repairing the box, because repairs can easily lead to new fires.
 
