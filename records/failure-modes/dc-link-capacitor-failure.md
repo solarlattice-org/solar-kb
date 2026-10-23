@@ -23,7 +23,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=39.r8
     h: 2458486027cd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: presents_as
   target: symptom:internal-device-fault
@@ -42,7 +44,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=39.r8
     h: 2458486027cd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: detected_by
   target: method:inverter-display-check
@@ -60,7 +64,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=39.r8
     h: 2458486027cd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages show E015 displayed as Bulk Cap Fail/Cap. Fault, but
     don''t name ABB/FIMER or describe display checking as a detection method.'
 - claim_id: c4
@@ -82,7 +88,9 @@ claims:
     h: 2458486027cd
   review: drafted
   review_note: 'support check: partial - Passages say to switch off and on and see if the problem persists,
-    but a restart is a check, not stated to mitigate or fix the failure.'
+    but a restart is a check, not stated to mitigate or fix the failure.; review: partial - The rows say
+    to switch the inverter off and on and see whether the problem persists, but they present this as a
+    check before contacting support and never say a restart mitigates the capacitor failure.'
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -100,7 +108,9 @@ claims:
   - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
     loc: tbl=39.r8
     h: 2458486027cd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A DC link capacitor failure is a breakdown of the bulk capacitors inside the inverter. On ABB and FIMER string inverters it shows as error E015, labelled Bulk Cap Fail or Cap. Fault, with a yellow or alarm LED. The fault is inside the inverter and cannot be checked from outside. Switch the inverter off and back on. If the error comes back, contact the manufacturer's customer assistance. Before opening the inverter, wait for the internal capacitor to discharge. Then use a voltage detector to confirm there is no voltage on the bulk capacitor.
 

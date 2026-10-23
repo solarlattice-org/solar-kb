@@ -22,7 +22,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=35.r5
     h: b91e58f0f23d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: caused_by
   target: stressor:undersized-component
@@ -36,7 +38,9 @@ claims:
   review_note: 'support check: partial - The passages say incorrectly sized fuses can damage the fuse
     and that fuses protect against return currents. They don''t say a string fuse failure is caused by
     an undersized component. They also don''t say the sizing is for single-string current in a way that
-    links to this cause.'
+    links to this cause.; review: partial - The passage says fuses sized wrongly for single-string currents
+    can damage the fuse, and that fuses guard against return currents, but it never says the fuse is too
+    small, so the ''undersized'' cause goes beyond the text.'
 - claim_id: c3
   rel: caused_by
   target: stressor:installation-error
@@ -54,7 +58,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say to check whether input current exceeds the fuse
     rating if parallel strings were made outside the inverter. They don''t call this an installation error
-    or state outright that it causes fuse failure.'
+    or state outright that it causes fuse failure.; review: partial - The W017 rows tell you to check
+    that string current does not exceed the fuse rating when strings were paralleled outside the inverter,
+    which implies the cause, but they never state it as a cause or call it an installation…'
 - claim_id: c4
   rel: presents_as
   target: symptom:string-current-error
@@ -69,7 +75,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=35.r5
     h: b91e58f0f23d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:abrupt-production-drop
@@ -78,7 +86,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=2.5
     h: e99cf005beed
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:hotspot-ir-image
@@ -90,7 +100,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: fig=29
     h: 39c8e0698b73
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: detected_by
   target: method:fuse-check
@@ -105,7 +117,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=35.r5
     h: b91e58f0f23d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: detected_by
   target: method:ir-thermography
@@ -118,7 +132,9 @@ claims:
     h: 39c8e0698b73
   review: drafted
   review_note: 'support check: partial - IR imaging detects heated string fuses in combiner boxes, but
-    the passages do not say it detects a fuse failure (open or blown fuse).'
+    the passages do not say it detects a fuse failure (open or blown fuse).; review: partial - The IEA
+    passages say IR imaging detects heated or overheated string fuses in combiner boxes, but they never
+    say it detects a failed (open or blown) fuse.'
 - claim_id: c9
   rel: detected_by
   target: method:performance-monitoring
@@ -128,7 +144,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=2.5
     h: e99cf005beed
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:fuse-replacement
@@ -148,7 +166,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=35.r5
     h: b91e58f0f23d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: mitigated_by
   target: mit:safety-isolation
@@ -162,6 +182,9 @@ claims:
     loc: sec=4.8.5.2
     h: 6a584bf20b9a
   review: drafted
+  review_note: 'review: partial - Every step in the note (open the AC/DC disconnects, disconnect the strings,
+    wait for stored energy to discharge, confirm zero current with a clamp meter) is in the passages,
+    but only as safety prerequisites for replacing a fuse, not as…'
 - claim_id: c12
   rel: mitigated_by
   target: mit:inverter-settings-review
@@ -177,6 +200,9 @@ claims:
     loc: tbl=35.r5
     h: b91e58f0f23d
   review: drafted
+  review_note: 'review: partial - The rows do say to check the configured presence or absence of input
+    strings if no fuse is damaged and the alarm persists, but that step deals with a false alarm when
+    no fuse has failed, not with string fuse…'
 ---
 A string fuse failure is an open or damaged fuse that protects a single PV string. The string then stops contributing power. Fuses that are wrongly sized for the string current can be damaged. So can fuses that carry more current than their rating, for example when strings are paralleled outside the inverter. In monitoring data it can appear as a sudden output drop roughly equal to one string's power. On inverters with monitored fuses it raises a string current error warning. Thermal imaging can also find heated or overheated string fuses in combiner boxes. To confirm, check each fuse on the fuse boards with a multimeter. If no fuse is open but the alarm stays on, review the inverter's string configuration settings. Before replacing a fuse, open the AC and DC disconnects and disconnect the strings. Wait for stored energy to discharge, and check with a clamp meter that no current is flowing. Replace the open fuse, then check that the string input current does not exceed the fuse rating.
 
