@@ -18,7 +18,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=37.r10
     h: adcbdb84beb6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: affects
   target: comp:inverter
@@ -41,7 +43,9 @@ claims:
   - src: src:sma-kb-error-message-6456-precharging-circuit-defective
     loc: sec=h1
     h: ec77417e5497
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: detected_by
   target: method:fuse-check
@@ -61,7 +65,9 @@ claims:
   - src: src:sma-kb-error-message-6456-precharging-circuit-defective
     loc: sec=h1
     h: ec77417e5497
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -74,7 +80,9 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=37.r10
     h: adcbdb84beb6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 On SMA Sunny Central inverters, event 6456 means the circuit that pre-charges the DC link is defective. In the data log it can show up as a mismatch: the frequency of the AC voltage metering does not match the grid AC voltage. The manual lists the inverter behavior for this event as W. First check whether the inverter has the Q at night function and whether the QoDEna parameter is enabled. Next, check the pre-charging input fuses and the pre-charging feedback signal at SC20CONT terminals X14-8 and X14-9. If those checks find nothing wrong, contact SMA Service.
 

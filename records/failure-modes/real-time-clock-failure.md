@@ -75,7 +75,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=9.r7
     h: a4d4792734d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c4
   rel: presents_as
   target: symptom:clock-time-lost
@@ -93,7 +95,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=18.r21
     h: b024f9819b36
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:internal-communication-failure
@@ -108,7 +112,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=18.r20
     h: 2ee634d10a9c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: detected_by
   target: method:inverter-display-check
@@ -123,7 +129,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=18.r23
     h: 2161303340ea
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: caused_by
   target: stressor:extended-power-loss
@@ -133,7 +141,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=9.r7
     h: a4d4792734d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: mitigated_by
   target: mit:clock-reset
@@ -148,7 +158,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=9.r7
     h: a4d4792734d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:ntp-configuration-check
@@ -157,7 +169,9 @@ claims:
   - src: src:eaton-eaton-spd
     loc: tbl=9.r7
     h: a4d4792734d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - SNTP use to keep time stamps accurate is stated, but it is not
     a ''configuration check'' per se; mostly matches though.'
 - claim_id: c10
@@ -174,6 +188,8 @@ claims:
   - src: src:sma-sccpxt-e7-wa-en-37
     loc: tbl=36.r4
     h: d440ab114d46
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A real-time clock failure is a fault in the inverter's internal clock module, the part that keeps time and date. If the clock module has a hardware error, the display shows an error message and the inverter stops feeding current into the grid. If the clock module is in emergency mode, the time can drift or be lost, but the inverter keeps feeding the grid normally. Some inverters also report a communication error with the clock module. Wrong time stamps can also follow a long power outage that drains the clock's backup supply, or a clock that has not been synchronized. For time problems, reset the time and date on the inverter, and use network time sync where it is available to keep the clock accurate. If the hardware error stays active or the clock does not initialize, call a manufacturer-trained service technician.

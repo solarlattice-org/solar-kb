@@ -29,7 +29,9 @@ claims:
   - src: src:sungrow-sungrow-sg3425ud-mv-sg3600ud-mv-user-manual-ver113-202502
     loc: tbl=53.r7
     h: 28449a15fb93
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: affects
   target: comp:arc-fault-detector
@@ -41,7 +43,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=13.r11
     h: 92dfee4f30a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: affects
   target: comp:residual-current-monitor
@@ -53,7 +57,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r35
     h: 520bba37bd00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: affects
   target: comp:ground-fault-detector
@@ -62,7 +68,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=54.r5
     h: 3a24d42b49b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: presents_as
   target: symptom:inverter-shutdown
@@ -80,7 +88,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=15.r35
     h: 520bba37bd00
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: presents_as
   target: symptom:current-sensor-offset
@@ -98,7 +108,9 @@ claims:
   - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
     loc: tbl=14.r13
     h: c13abd994ee5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: detected_by
   target: method:inverter-display-check
@@ -107,7 +119,9 @@ claims:
   - src: src:chint-cps-275kw-800v-modbus-map-2026-01-28
     loc: tbl=53.r1
     h: 20878cf5cc23
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:inverter-restart
@@ -126,7 +140,9 @@ claims:
   - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
     loc: tbl=42.r6
     h: 3d032117a152
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:filter-board-replacement
@@ -135,7 +151,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: tbl=37.r3
     h: 6c5eaca7f93c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: mitigated_by
   target: mit:inverter-replacement
@@ -161,7 +179,9 @@ claims:
     h: bcb5d1bfef6f
   review: drafted
   review_note: 'support check: partial - u33 is only a fragment, ''for AC Current Sensor Replacement'',
-    which suggests replacement instructions but doesn''t say the manufacturer provides them.'
+    which suggests replacement instructions but doesn''t say the manufacturer provides them.; review:
+    partial - The passage is only the fragment ''for AC Current Sensor Replacement'', which suggests replacement
+    instructions exist but does not clearly say the manufacturer provides them.'
 - claim_id: c13
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -176,7 +196,9 @@ claims:
   - src: src:sungrow-sungrow-sg3425ud-mv-sg3600ud-mv-user-manual-ver113-202502
     loc: tbl=53.r7
     h: 28449a15fb93
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   rel: mitigated_by
   target: mit:contact-installer
@@ -191,4 +213,6 @@ A current sensor fault means the inverter has found one of its internal current 
 
 <!-- review notes
 - sentence 7: support check: partial - Filter board and inverter replacement are stated, and u33 only hints at current sensor replacement, so 'depending on the model's instructions' isn't established.
+- sentence 4: review: partial - Both calibration codes are cited, but only the timeout code (314) says feed-in is briefly interrupted; the Yaskawa offset-calibration row gives no behavior.
+- sentence 7: review: partial - The rows support replacing the filter board or the inverter, but current sensor replacement rests only on a bare heading fragment, and 'depending on the model's instructions' is inferred.
 -->

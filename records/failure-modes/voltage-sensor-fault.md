@@ -23,7 +23,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-iom-docr-070254-b
     loc: tbl=18.r7
     h: 9a224b5dfec7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: affects
   target: comp:voltage-sensor
@@ -42,7 +44,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-iom-docr-070254-b
     loc: tbl=18.r7
     h: 9a224b5dfec7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: presents_as
   target: symptom:measurement-signal-error
@@ -58,7 +62,9 @@ claims:
   - src: src:kb-sma-sbsxx-us-10-event-messages
     loc: sec=h1
     h: a056be6df42b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: detected_by
   target: method:inverter-display-check
@@ -67,7 +73,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=30.r11
     h: 251d0aca9ea4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -89,7 +97,9 @@ claims:
   - src: src:kb-sma-sbsxx-us-10-event-messages
     loc: sec=h1
     h: a056be6df42b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: mitigated_by
   target: mit:inverter-restart
@@ -98,7 +108,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-iom-docr-070254-b
     loc: tbl=18.r7
     h: 9a224b5dfec7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This fault means the inverter's internal voltage sensing circuit, or the sensor that measures DC voltage, has failed. SMA Sunny Central CP XT inverters report it as error 6427 or 6441, which mean a sensor error in DC voltage measurement. Yaskawa Solectria SGI-XTM inverters show Vsense Error on the user interface and record it in the event log. Other SMA inverters report a related measurement error when the DC or grid voltage reading deviates. On Yaskawa units, switch DC and AC off and restart the inverter. If the fault returns, turn the inverter off. This is an internal hardware fault, so contact the manufacturer's service line. An authorized service provider may need to inspect and service the inverter.
 

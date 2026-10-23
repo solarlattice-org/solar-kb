@@ -26,7 +26,9 @@ claims:
   - src: src:sungrow-sungrow-sg3150ud-mv-us-sg4400ud-mv-us-user-manual-ver23
     loc: tbl=45.r4
     h: 5c09b5ed0638
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: presents_as
   target: symptom:inverter-shutdown
@@ -35,7 +37,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=18.r17
     h: 21a2fd000df8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: presents_as
   target: symptom:ground-fault
@@ -53,7 +57,9 @@ claims:
   - src: src:sungrow-sungrow-sg3150ud-mv-us-sg4400ud-mv-us-user-manual-ver23
     loc: tbl=45.r4
     h: 5c09b5ed0638
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: detected_by
   target: method:inverter-display-check
@@ -62,7 +68,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=19.r4
     h: 17801abf0e61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: detected_by
   target: method:fuse-check
@@ -77,7 +85,9 @@ claims:
   - src: src:sungrow-sungrow-sg3150ud-mv-us-sg4400ud-mv-us-user-manual-ver23
     loc: tbl=45.r4
     h: 5c09b5ed0638
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: detected_by
   target: method:gfdi-led-check
@@ -89,7 +99,9 @@ claims:
   - src: src:chint-cps-100kw-legacy-user-manual
     loc: tbl=24.r2
     h: fb859c54d997
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:ground-fuse-replacement
@@ -106,7 +118,9 @@ claims:
   - src: src:chint-cps-100kw-legacy-user-manual
     loc: tbl=24.r2
     h: fb859c54d997
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: mitigated_by
   target: mit:contact-installer
@@ -118,7 +132,9 @@ claims:
   - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
     loc: tbl=19.r4
     h: 17801abf0e61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:contact-manufacturer-service
@@ -131,7 +147,9 @@ claims:
     h: fb859c54d997
   review: drafted
   review_note: 'support check: partial - The GFDIErr row says to contact the after-sales service center,
-    but it is a grounding fault entry and not clearly tied to a fuse failure.'
+    but it is a grounding fault entry and not clearly tied to a fuse failure.; review: partial - The CHINT
+    GFDIErr row does say to contact the after-sales service center, but that advice is for a general grounding
+    fault, not specifically for a ground fuse failure.'
 - claim_id: c10
   rel: mitigated_by
   target: mit:safety-isolation
@@ -140,7 +158,9 @@ claims:
   - src: src:sungrow-sungrow-sg3425ud-mv-sg3600ud-mv-user-manual-ver113-202502
     loc: tbl=51.r4
     h: bfc22e660bc0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: mitigated_by
   target: mit:ground-conductor-check
@@ -156,7 +176,9 @@ claims:
   - src: src:sungrow-sungrow-sg3150ud-mv-us-sg4400ud-mv-us-user-manual-ver23
     loc: tbl=45.r4
     h: 5c09b5ed0638
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 In this failure, the fuse that connects the PV array (solar module) to ground has blown or is faulty. Depending on the inverter, the inverter may stop feeding power into the grid, or it may only show a warning on its display. Ground fault protection alarms can also point to this fault, because a blown negative grounding fuse is one of the listed things to check. To confirm, let the capacitors discharge fully, take out the negative grounding fuse and check whether it has blown. On some units, a lit LED on the GFDI shows that the fuse needs replacing. Replace the ground fuse. Also check that the negative pole is securely grounded and, on medium-voltage units, that the transformer neutral is connected and grounded. If the fault keeps coming back, contact the system installer or the manufacturer's service team.
 
