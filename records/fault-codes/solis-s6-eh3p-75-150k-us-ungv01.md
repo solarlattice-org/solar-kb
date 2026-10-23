@@ -66,7 +66,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=27.r3
     h: 6e70862f89d9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Voltage range exceedance implies measurement but detection method
     isn''t stated.'
 - claim_id: c5

@@ -97,5 +97,7 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: tbl=14.r12
     h: 18c3ae415823
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---

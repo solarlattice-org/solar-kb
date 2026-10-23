@@ -98,7 +98,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=27.r9
     h: 47f5c9907eb4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:inverter-restart
@@ -113,5 +115,7 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=27.r9
     h: 47f5c9907eb4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

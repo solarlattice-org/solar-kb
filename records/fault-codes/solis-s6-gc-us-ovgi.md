@@ -128,7 +128,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: tbl=10.r4
     h: 6fb54cddc4d9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Restart then power board replacement is stated, but clearing
     by manual reset is not stated explicitly.'
 ---

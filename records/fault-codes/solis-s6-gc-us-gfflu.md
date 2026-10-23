@@ -35,7 +35,9 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: tbl=13.r4
     h: a0c22a49aae0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:grid-frequency-measurement

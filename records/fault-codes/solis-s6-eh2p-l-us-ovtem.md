@@ -137,6 +137,8 @@ claims:
     loc: tbl=15.r2
     h: 98bb900b2b7d
   review: drafted
+  review_note: 'review: partial - tbl=15.r2 says ''If temp is in range replace inverter'', which matches
+    the claim and its note, but no passage is marked as…'
 - claim_id: c10
   rel: has_event_class
   target: ec:fault

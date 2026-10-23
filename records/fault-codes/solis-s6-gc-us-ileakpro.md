@@ -58,7 +58,9 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: tbl=14.r1
     h: 1d19c0c43f5c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: affects
   target: comp:ac-cable

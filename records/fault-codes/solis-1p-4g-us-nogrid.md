@@ -126,7 +126,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=27.r8
     h: 6409372bacd1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: mitigated_by
   target: mit:grid-settings-check

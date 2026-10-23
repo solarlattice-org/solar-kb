@@ -47,7 +47,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: tbl=14.r13
     h: 661ca549c0f6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: detected_by
   target: method:insulation-resistance-test
@@ -143,7 +145,9 @@ claims:
   - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
     loc: tbl=13.r6
     h: 01092224fc3d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: mitigated_by
   target: mit:inverter-replacement

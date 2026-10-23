@@ -62,6 +62,6 @@ claims:
     loc: tbl=26.r11
     h: 2b2a678c83b7
   review: drafted
-  review_note: 'support check: partial - No action needed is stated, but ''no production effect'' is only
-    implied.'
+  review_note: 'review: partial - The row only says ''No need to deal with it''; it never says production
+    is unaffected, so ''no production effect'' is implied…'
 ---

@@ -38,7 +38,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=14.r14
     h: 674a8840593d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:inverter-bridge

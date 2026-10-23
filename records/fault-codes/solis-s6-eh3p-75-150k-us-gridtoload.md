@@ -54,6 +54,6 @@ claims:
     loc: tbl=26.r11
     h: 2b2a678c83b7
   review: drafted
-  review_note: 'support check: partial - No action needed is stated, but ''no production effect'' is only
-    implied.'
+  review_note: 'review: partial - The row says only ''Grid to load'' and ''No need to deal with it'',
+    so it reads as harmless, but it never…'
 ---

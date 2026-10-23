@@ -88,8 +88,8 @@ claims:
     loc: tbl=13.r5
     h: 32765dbfaba4
   review: drafted
-  review_note: 'support check: partial - Changing the power board is a listed solution, implying involvement,
-    but it is not stated as the affected component.'
+  review_note: 'review: partial - The cited rows list ''Change power board'' as a solution, which suggests
+    the power board is involved, but no row says the…'
 - claim_id: c5
   rel: mitigated_by
   target: mit:dc-wiring-check

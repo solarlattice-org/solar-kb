@@ -35,7 +35,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: tbl=10.r6
     h: 70cc8eb6b664
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: mitigated_by
   target: mit:ac-connection-check

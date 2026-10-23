@@ -44,7 +44,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=15.r10
     h: 8b1a0c30407d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:unbalanced-mppt-connection

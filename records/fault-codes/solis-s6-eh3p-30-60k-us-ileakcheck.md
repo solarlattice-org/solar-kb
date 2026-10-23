@@ -74,7 +74,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=18.r13
     h: e68b88f4d054
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c6
   rel: mitigated_by
   target: mit:ground-conductor-check

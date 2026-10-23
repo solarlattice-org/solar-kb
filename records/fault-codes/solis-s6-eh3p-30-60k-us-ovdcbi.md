@@ -74,6 +74,8 @@ claims:
     loc: tbl=16.r5
     h: 28e6c9b8fdb2
   review: drafted
+  review_note: 'review: partial - The code''s own rows only suggest a restart; ''Replace Inverter'' comes
+    from tbl=16.r5, a row that labels OV-DCB-I as DC1 rather than…'
 - claim_id: c7
   rel: has_event_class
   target: ec:fault

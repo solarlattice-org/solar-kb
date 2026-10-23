@@ -129,7 +129,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: tbl=13.r5
     h: 32765dbfaba4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c7
   rel: mitigated_by
   target: mit:string-isolation
@@ -190,6 +192,6 @@ claims:
     loc: tbl=13.r5
     h: 32765dbfaba4
   review: drafted
-  review_note: 'support check: partial - Restart then isolate string then replacement sequence is stated,
-    but nothing says the fault clears by manual reset.'
+  review_note: 'review: partial - The cited rows support the note''s order (restart, isolate the faulty
+    MPPT string, then replace the power board or inverter), but none…'
 ---

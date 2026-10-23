@@ -107,8 +107,8 @@ claims:
     loc: tbl=14.r1
     h: b7cb293629dc
   review: drafted
-  review_note: 'support check: partial - Replace inverter is listed as the last step, but the condition
-    only if restart fails is implied by order, not stated.'
+  review_note: 'review: partial - Replace inverter appears as the last solution step in tbl=15.r1/14.r1,
+    but no cited passage states the condition that it applies only when…'
 - claim_id: c7
   rel: has_event_class
   target: ec:fault

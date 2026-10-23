@@ -116,7 +116,9 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: sec=10.3.1
     h: 16fa984bf0d2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - The guide says failures stop feed-in or display alarms, but this
     row only gives cause and solution, so the fault…'
 - claim_id: c9

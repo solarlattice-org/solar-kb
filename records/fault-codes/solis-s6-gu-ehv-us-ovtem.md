@@ -47,7 +47,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=29.r2
     h: 028624c8cfa5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c3
   rel: reports
   target: symptom:high-ambient-temperature
@@ -97,7 +99,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: tbl=14.r9
     h: 2a0503369d68
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: mitigated_by
   target: mit:adequate-cooling
@@ -136,7 +140,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r2
     h: 98bb900b2b7d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: has_event_class
   target: ec:fault

@@ -41,7 +41,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=16.r14
     h: dedd0bd52bce
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c3
   rel: affects
   target: comp:surge-protection-device

@@ -143,7 +143,9 @@ claims:
   - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
     loc: tbl=13.r6
     h: 01092224fc3d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c9
   rel: mitigated_by
   target: mit:inverter-replacement

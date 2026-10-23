@@ -100,7 +100,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: tbl=13.r8
     h: 68109c9bccc4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c8
   rel: mitigated_by
   target: mit:inverter-replacement

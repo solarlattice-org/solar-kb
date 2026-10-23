@@ -94,7 +94,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r1
     h: eed118aa3df4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c7
   rel: has_event_class
   target: ec:fault
@@ -129,5 +131,7 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=29.r16
     h: d93410de94c2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---

@@ -66,7 +66,9 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: tbl=10.r3
     h: a2b4f75b9aab
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c5
   rel: mitigated_by
   target: mit:inverter-parameter-change
