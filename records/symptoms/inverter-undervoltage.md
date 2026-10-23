@@ -30,7 +30,9 @@ claims:
   - src: src:sma-kb-event-number-1710-f141-w142-w143-w144
     loc: sec=h1
     h: e6f6981b6981
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:ac-terminal-voltage-low
@@ -42,7 +44,9 @@ claims:
   - src: src:sma-kb-event-number-1710-f141-w142-w143-w144
     loc: sec=h1
     h: e6f6981b6981
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Sunny Island and Sunny Backup battery inverters report inverter undervoltage when the voltage on line conductor L1, L2 or L3 is too low. The master logs F141 or event 1710, and slaves 1, 2 and 3 log the warnings W142, W143 and W144. It means the voltage at the AC1 or AC2 terminal of that unit is too low, usually because of AC sources or large loads connected to the system. Check first that the battery type is not programmed as Other, because that setting alone causes F141. Next, de-energize the AC cables, disconnect all AC sources and loads from AC1 and AC2, and restart the unit with the lid mounted. If the unit starts, the likely cause is too much load or an installation error such as a short circuit; find it by measuring while you reconnect sources and loads one at a time. If the unit does not start with nothing connected, the device itself has failed and must be replaced.
 

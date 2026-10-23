@@ -21,7 +21,9 @@ claims:
     h: bc425c0c0c9f
   review: drafted
   review_note: 'support check: partial - Passages say the device is disconnected from the grid after the
-    procedure, but zero AC power/current and staying zero until reconnection are not stated (only implied).'
+    procedure, but zero AC power/current and staying zero until reconnection are not stated (only implied).;
+    review: partial - The passages say the device is disconnected from the grid after the procedure started
+    with the function button, but they never state that AC output reads zero.'
 ---
 The procedure starts when the right-hand function button is pressed. Afterwards the unit reports that it is disconnected from the grid. SMA battery inverters log a similar operator action as an event, 'Manual grid disconnection release' or 'Manual network disconnect release'. On Sunny Island units it appears as GdManOff, 'Manual grid release'. Do not confuse it with automatic disconnections. Grid protection trips the inverter after a set delay when voltage or frequency goes outside limits, and some inverters drop off the grid on a schedule to run an insulation test.
 

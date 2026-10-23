@@ -10,4 +10,5 @@ On SMA Sunny Island inverters, display message W402 is a level 1 warning that ge
 
 <!-- review notes
 - sentence 7: support check: partial - Generator interface (GenMan, SMA generator management box) and current/voltage thresholds sections exist, but nothing in the passages ties them as checks for this W402 problem, and the thresholds being in the generator management menu is only implied by section 7.8.
+- sentence 7: review: partial - The generator interface parameter (GenMan box) and the threshold-configuration section headings exist, but the passages do not present them as checks for this fault.
 -->

@@ -30,7 +30,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=36.r9
     h: e0a1f09213fe
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 Warning W023 is recorded when someone changes the inverter's date or time through the web interface, the advanced configuration software or the display. The manuals say this is not an error: no LED lights, and the change is only saved in the inverter's event history, so no repair is needed when the change was intended. Do not confuse it with W013 Clock Fail. W013 appears when the displayed time differs from the microprocessor's internal time by more than one minute, which points to a clock circuit malfunction (real-time clock failure); it comes with a flashing yellow or alarm LED. If the date reset, replace the clock battery with the inverter fully switched off, keeping the polarity correct; if the clock alarm keeps returning, contact customer assistance. On other devices, wrong timestamps can come from a clock that is not synchronized or from a backup supercap drained during a long power loss; set the clock and use SNTP to keep the time accurate.
 

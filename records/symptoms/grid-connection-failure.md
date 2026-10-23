@@ -23,7 +23,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=36.r2
     h: 89f7284ff292
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:zero-ac-grid-voltage
@@ -45,7 +47,8 @@ claims:
   review: drafted
   review_note: 'support check: partial - Missing grid is a logged cause of W046, but the passages give
     no voltage/power signal patterns or SMA ''waiting for grid voltage'' link (that''s in other passages
-    not cited here).'
+    not cited here).; review: partial - The rows support Missing grid as a logged cause of W046, but nothing
+    in the cited passages backs the SMA ''waiting for grid voltage'' sentence.'
 - claim_id: c3
   rel: observed_as
   target: meas:low-dc-input-voltage
@@ -63,7 +66,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=36.r2
     h: 89f7284ff292
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:grid-voltage-reading-out-of-limit
@@ -82,7 +87,10 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say voltage outside valid thresholds prevents connection
     and grid failure includes country-specific voltage/frequency deviation, but don''t explicitly say
-    SMA refuses connection or tie to this fault''s frequency.'
+    SMA refuses connection or tie to this fault''s frequency.; review: partial - The SMA passage says
+    connection is not possible when the voltage is outside the valid thresholds, but the cited passages
+    don''t tie the frequency part of the note, or the word ''country-specific'', to refusing connection;
+    those words only appear in…'
 ---
 A grid connection failure means the inverter tried to connect to the utility grid and did not succeed, so it is not feeding power. On FIMER/ABB string inverters this shows as warning W046 'Grid conn. fault', with the yellow or alarm LED lit. The manuals list three causes: no grid present, DC input undervoltage, or someone manually disconnecting the inverter during the connection sequence. SMA inverters report similar events ('Waiting for grid voltage' or 'Grid connection installation failure') and tell you to check the grid and fuses. To tell the causes apart, measure the AC grid voltage and frequency and compare them with the connection thresholds, and check the DC input voltage for an undervoltage condition. The inverter retries on its own. If the fault persists after several attempts, switch the inverter off and on again, and contact customer assistance if it still does not connect.
 

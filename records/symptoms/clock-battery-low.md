@@ -30,7 +30,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=36.r3
     h: 078ce4c16243
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:inverter-fault-indicator
@@ -52,7 +54,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
     loc: tbl=36.r3
     h: 078ce4c16243
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:clock-battery-voltage-low
@@ -75,4 +79,5 @@ This warning means the inverter has measured a voltage on its internal backup (b
 <!-- review notes
 - sentence 1: support check: partial - Passages state W012 Batt. Low/Batt. Flat for a too-low buffer battery voltage, but do not name FIMER as the manufacturer.
 - sentence 7: support check: partial - Passages show a clock battery voltage and a low-battery warning bit, but do not say this can confirm the problem remotely.
+- sentence 7: review: partial - The SEL-735 passages show a clock battery voltage measurement (BATT) and a LOWBAT warning bit, but they never say this can confirm the problem remotely.
 -->

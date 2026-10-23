@@ -36,7 +36,9 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=53.r5
     h: b5f38cadf359
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:reduced-battery-charge-current
@@ -58,4 +60,5 @@ Low battery temperature appears in the Sunny Island event list as warning W211. 
 - sentence 2: support check: partial - u20 states lead-acid below -10°C and NiCd below -20°C, but u14 only says below -10°C generally; the warning is not explicitly tied to W211, though the core is stated.
 - sentence 4: support check: partial - Passages give the corrective measures (warm battery room, check ambient temperature requirements, battery management settings), but don't say it is the 'usual' cause or set an order of checks.
 - sentence 5: support check: partial - Passages support the lead-acid sensor at master only and lithium-ion temperature from external battery management, but not the advice to check the measurement path before assuming the battery is cold.
+- sentence 4: review: partial - The passages give the corrective steps (make sure the battery room is warm enough, check ambient temperature requirements, check battery management settings), but they don't say a cold room is the 'usual' cause or require that order.
 -->

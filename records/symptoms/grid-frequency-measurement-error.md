@@ -32,7 +32,9 @@ claims:
   - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
     loc: tbl=55.r4
     h: c4f7b5c4417b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 The inverter reports code E028 on its display, shown as Error Meas F or Internal error, together with the yellow LED or the alarm LED. The code means the inverter's own grid frequency measurement failed. Regulations require two separate circuits to measure frequency for redundancy, and the error is tied to this check. The manuals say this is an error inside the inverter that cannot be checked from outside. The cause is in the inverter's measurement electronics, not in the grid itself. Do not confuse it with a grid over-frequency alarm. There, the grid frequency itself goes above the limit set by the operator, and you can check it both on the inverter and at the supply. For other brands' frequency alarms, the manuals say to measure frequency at the inverter test points and compare it with the display reading. A display reading that differs from the measurement may point to a bad measurement circuit. First, switch the inverter off and back on. If E028 comes back, contact customer assistance. A matching code, E027 (Error Meas V), covers the same redundant-measurement fault for grid voltage.
 

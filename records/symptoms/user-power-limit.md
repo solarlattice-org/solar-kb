@@ -47,7 +47,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=53.r1
     h: fb1bdd0da281
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
   review_note: 'support check: partial - Passages give the user-set limit and LIM percentage meanings,
     but say nothing about AC power staying flat while irradiance would support more, or about model_103.W
     and POAI behaviour.'

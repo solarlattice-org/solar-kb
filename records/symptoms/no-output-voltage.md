@@ -26,7 +26,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=152
     h: f038146b9de5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 This symptom appears on SMA Sunny Island battery inverters running as a multicluster system: the device reports that it cannot measure the output voltage of the main cluster. Code F758 is a level 2 event for the main cluster as a whole. Codes W759, W760 and W761 are level 1 warnings for slave 1, slave 2 and slave 3 of the main cluster. Another SMA manual names W759 as McNoVtgSv1 and says the main cluster voltage cannot be measured on line conductor L2, which slave 1 handles. The code number tells you which unit and line conductor to look at: a slave code points to one slave and its phase, while F758 covers the whole main cluster. The same event table also lists other multicluster faults on slaves: interrupted internal CAN communication, missing sync pulse, DSP reset and grid monitoring failure. Note any of these that appear alongside, but the source does not link them to this symptom.
 
@@ -35,4 +37,5 @@ This symptom appears on SMA Sunny Island battery inverters running as a multiclu
 - sentence 3: support check: partial - Levels 1 and slave assignments are stated, but the passages never call them 'warnings' (though W prefix is only implied).
 - sentence 4: support check: partial - Name McNoVtgSv1 and L2 (slave 1) are stated, but that slave 1 'handles' L2 is roughly implied; 'another SMA manual' is source detail not shown, mostly fine.
 - sentence 5: support check: partial - Slave codes pointing to a slave and F758 to whole main cluster are supported, and W759 maps to L2, but phase mapping for slaves 2 and 3 is not stated.
+- sentence 1: review: partial - F758 states that no output voltage is measured from the main cluster in a multicluster table, but the quoted passages never name Sunny Island or call the device a battery inverter.
 -->

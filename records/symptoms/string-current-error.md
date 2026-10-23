@@ -10,4 +10,5 @@ On FIMER inverters with monitored string fuses, this condition is reported as wa
 <!-- review notes
 - sentence 4: support check: partial - The passage says to check the webserver settings (presence or absence of input strings) if no fuse is damaged, but it never says a wrong setting is a configuration error rather than a hardware fault.
 - sentence 5: support check: partial - The passages support comparing string currents to the mean, and the 5% figure for identical strings under stable irradiance, but the 5% comes from commissioning test guidance rather than a monitoring-data criterion. The 'well short' framing is also not stated.
+- sentence 4: review: partial - The webserver settings check (presence or absence of input strings) after no damaged fuses is stated, but the passage never says a wrong setting means a configuration error rather than a hardware fault.
 -->

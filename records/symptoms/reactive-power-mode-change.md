@@ -30,7 +30,9 @@ claims:
   - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
     loc: tbl=51.r8
     h: 3cdae2f5a508
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 This message appears when someone changes the way the inverter manages reactive power. FIMER and ABB string inverters log it as warning code W022. The change is made by the customer or installer through the internal webserver, the Web User Interface, the display or the advanced configuration software, depending on the model. The manuals say it is not an error. The inverter only stores it in its event history, and no LED lights for it. On some UNO-DM models the code is not shown on the display, so look for it in the event log. If the entry is unexpected, check the reactive power control settings, such as Cosphi(P), Q Set, Cosphi Set and Q(V). Do not change these settings unless the grid operator asks for it. Some inverters can also switch to a reactive power mode chosen by the grid operator when the setpoint is lost, for example after a communication failure with the plant controller.
 
@@ -39,4 +41,5 @@ This message appears when someone changes the way the inverter manages reactive 
 - sentence 4: support check: partial - The passages say W022 is 'not visualised on display' with an asterisk, but do not name UNO-DM models; the event history is stated as where it's saved.
 - sentence 5: support check: partial - Passage lists the settings and says not to change them unless the grid operator requests, but does not say to check them when the entry is unexpected.
 - sentence 6: support check: partial - Passage says the grid operator can request switching to a specified mode when the setpoint is absent, but doesn't say 'some inverters' or that the inverter switches automatically.
+- sentence 1: review: partial - The ABB/FIMER manual rows tie W022 to a change in how reactive power is managed (listed as a Warning on the PVS-60), but the 'string inverters' scope is not stated.
 -->

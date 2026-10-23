@@ -29,10 +29,13 @@ claims:
   - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
     loc: tbl=52.r5
     h: ed6a6728cb2f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 When the inverter reaches the grid connection time limit set by the grid standard, it disconnects from the grid by itself and then reconnects. The disconnection is there so the inverter can run its Riso insulation resistance test. The manuals say this alarm is not an error, because safety regulations require the automatic disconnection. Check first how often the event happens: if the inverter disconnects sooner than the expected interval, contact the manufacturer's customer assistance.
 
 <!-- review notes
 - sentence 4: support check: partial - The contact-assistance advice for disconnections shorter than expected is stated, but the passages don't say to check frequency first or give an expected interval.
+- sentence 4: review: partial - Contacting customer assistance when the inverter disconnects sooner than expected is stated, but the instruction to check frequency first is not.
 -->

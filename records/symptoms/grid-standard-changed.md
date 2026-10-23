@@ -14,4 +14,5 @@ This event is logged when someone changes the inverter's grid standard. On FIMER
 <!-- review notes
 - sentence 3: support check: partial - Passages say the country standard can change U</U> values, grid connection thresholds and P-Q capability, but the explicit claim that a change alters when the inverter trips or connects is only loosely implied.
 - sentence 7: support check: partial - Passages support the event being a non-error record and checking the country standard against local requirements, but they don't state a procedure to check the event history first and confirm the change was intended.
+- sentence 7: review: partial - The passages support that the change is recorded in event history and that the standard must match the installation, but no passage gives a check-first procedure or says to confirm the change was intended.
 -->

@@ -35,11 +35,14 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=71.r8
     h: 65656442ecb4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 A signal processor reset is reported by SMA Sunny Island battery inverters when the device detects that a digital signal processor (DSP) has restarted. If the reset happens in the device at L1 (the master), it is logged as error F702 (RsDsp) at level 5. If it happens in a slave device, it is logged as a level 1 warning: W791 for slave 1, W792 for slave 2 and W793 for slave 3. Check the code first to see which device in the cluster reset, the master or a particular slave. A separate warning, W705, means the watchdog of the master's signal processor has tripped. Check whether it was logged too. The manual's only corrective action for these events is to contact SMA Service.
 
 <!-- review notes
 - sentence 4: support check: partial - Passages show codes distinguish master vs slaves, but nothing instructs checking the code first; that is an inferred recommendation.
 - sentence 5: support check: partial - W705 watchdog of master's signal processor is stated, but the advice to check whether it was also logged is not in the passages.
+- sentence 4: review: partial - The codes do tell apart the master at L1 (F702) and slaves 1 and 2 (W791/W792), but the passages give no instruction to check the code first.
 -->

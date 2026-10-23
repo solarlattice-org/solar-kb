@@ -29,7 +29,9 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=53.r7
     h: 5c7c8b953a25
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 - claim_id: c2
   rel: observed_as
   target: meas:deep-discharge-event-message
@@ -54,7 +56,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Rarely cycled batteries in winter leading to undervoltage is
     stated, but the claim that low SOC goes along with undervoltage as a reading is only loosely implied
-    (SOC too low triggers recharge).'
+    (SOC too low triggers recharge).; review: partial - The passages back winter under-cycling leading
+    to undervoltage, and both mention low SOC next to undervoltage (recharge when SOC is too low, shed
+    loads at low SOC), but neither says a low SOC reading is how undervoltage is observed.'
 - claim_id: c4
   rel: observed_as
   target: meas:battery-module-red-led-flashing
@@ -89,4 +93,5 @@ Battery undervoltage means the battery voltage seen by a battery inverter or hyb
 <!-- review notes
 - sentence 2: support check: partial - F922 and W938 via SiCom and a generic undervoltage message are supported, but the F213 row is labeled 'Warning low battery voltage' and the hybrid inverter statement is vague; mapping of F213 is supported loosely.
 - sentence 6: support check: partial - Load-shedding contactor for DC loads at low SOC is stated, but the 'prevents repeat events' purpose is not explicitly stated.
+- sentence 1: review: partial - Battery voltage too low raising an error or message is supported by the F213 and Solis rows, but no passage text says the Solis device is a 'hybrid inverter'.
 -->

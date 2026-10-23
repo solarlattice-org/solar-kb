@@ -28,6 +28,9 @@ claims:
     loc: sec=h804
     h: 259c05c526c3
   review: drafted
+  review_note: 'review: partial - W755, W756 and W757 for battery-preservation modes 1, 2 and 3 are supported,
+    and so is the ''Battery error/fault: protection mode 1, 2 or 3 activated'' message, but the passages
+    never say that this message comes from ''communication products''.'
 ---
 Battery protection mode is a Sunny Island function that keeps the battery from being drained when its state of charge falls below set thresholds. It shows on the display as warnings W755, W756 or W757, one for each of the three levels, and communication products report it as a battery error or battery fault. At levels 1 and 2 the unit goes into energy-saving mode during a set time window. At level 2 it starts up every 2 hours outside that window to try to charge the battery. At level 3 the unit switches itself off to prevent deep discharge, and it must be switched on and started manually before the battery can charge again. The unit only enters this mode after no charging current has flowed into the battery for a minimum time, which can be set and defaults to 5 minutes. Also check the state of charge thresholds and the start and end times for each level under Battery > Protection mode, because these settings decide when the mode starts.
 

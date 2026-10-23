@@ -21,4 +21,5 @@ Inverter overvoltage is reported by Sunny Island battery inverters as fault F121
 <!-- review notes
 - sentence 1: support check: partial - The table lists F121 as Inverter overvoltage and W122, W123 and W124 as slaves 1, 2 and 3 at level 1, but it doesn't say F121 is the master or that the device is a Sunny Island (F121 is level 3).
 - sentence 3: support check: partial - The passages give the removal of cables from AC1 and AC2, de-energized cables, restart, and the Sunny Backup disconnection, but 'check this first' is implied only by the step order, and the Sunny Backup also needs AC2 disconnected from voltage sources.
+- sentence 1: review: partial - The table gives F121 (level 3) and W122/W123/W124 (level 1, slaves 1-3) as inverter overvoltage, but the cited rows do not say F121 is the master or that the device is a Sunny Island battery inverter.
 -->

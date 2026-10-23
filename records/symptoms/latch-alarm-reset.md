@@ -29,7 +29,9 @@ claims:
   - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
     loc: tbl=52.r2
     h: 05b933b68f8a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-23
 ---
 Warning W027 means the customer or installer has manually cleared latched alarm conditions on the inverter. The manuals say it is not an error. The UNO-DM display has a Reset Latch parameter for clearing any latched alarms that are present. W027 lights no LED and is not shown on the UNO-DM display. It is only saved in the inverter's event history, so you have to look in the event log to find it. This entry does not point to any failure mode by itself. Check the event history for the latched alarms that came before the reset, and investigate those codes. If the alarm relay is set to latch mode, it stays switched while an alarm condition lasts. It returns to rest once the inverter is back in normal operation and reconnected to the grid.
 
@@ -37,4 +39,5 @@ Warning W027 means the customer or installer has manually cleared latched alarm 
 - sentence 2: support check: partial - Reset Latch parameter allowing manual reset of present Latch alarms is stated, but the passages don't say it is on the UNO-DM display specifically.
 - sentence 3: support check: partial - No LED, not displayed (u6/u9) and only in event history are stated, but UNO-DM is not named and 'look in the event log' is an inference; some manuals don't say display non-visibility.
 - sentence 4: support check: partial - Passages say it is not an error and is only recorded in history, but advice to check earlier latched alarms and investigate those codes is not stated.
+- sentence 4: review: partial - The rows say W027 is a manual reset and not an error, which supports 'no failure mode by itself', but they never advise checking the event history for the earlier latched alarms or investigating those codes.
 -->

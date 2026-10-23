@@ -55,4 +55,5 @@ This event occurs in multi-device Sunny Island setups where a slave unit does no
 - sentence 4: support check: partial - Names CANCom etc. and the communication-bus corrective measures suggest an internal communication link, but the passages do not explicitly say so.
 - sentence 5: support check: partial - The corrective measure is stated, but 'check first' ordering is not stated.
 - sentence 6: support check: partial - Terminator at both ends is mentioned in a truncated fragment, and the ordering 'then' is not stated.
+- sentence 4: review: partial - The names CANCom, CANComSlv1 and CANComSlv2 and the fixes for the communication cables and bus suggest a communication link, but the rows describe a 'device-internal' sync pulse and never state the interpretation in the sentence.
 -->

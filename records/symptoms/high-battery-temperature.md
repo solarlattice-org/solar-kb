@@ -68,4 +68,6 @@ The Sunny Island battery inverter watches battery temperature all the time throu
 <!-- review notes
 - sentence 4: support check: partial - The passages say the manufacturer's ambient conditions must be met and that a high ambient temperature may limit charging, but they don't call ambient temperature the usual cause of the fault. The charging remark is also about a different question.
 - sentence 7: support check: partial - Waiting for the battery to cool and keeping it below 25°C to prevent premature aging are stated. Checking ventilation and surroundings is not stated, though the manufacturer's ambient conditions are mentioned elsewhere.
+- sentence 4: review: partial - The passages tell the user to make sure the manufacturer's ambient conditions are met and say high ambient temperature may limit charging power, but nowhere call ambient temperature the usual cause.
+- sentence 7: review: partial - Waiting for the battery to cool and protecting it above 25°C to prevent premature aging are stated, but checking ventilation and surroundings is not.
 -->

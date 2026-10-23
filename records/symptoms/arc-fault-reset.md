@@ -31,7 +31,9 @@ claims:
   - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
     loc: tbl=47.r1
     h: 6d0b1668de77
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - W026 is only in event history with no LED and may not show on
     display, and reset is via webserver/display/software, but the ''UNO-DM'' model reference and the event-log
     measurement mapping are not stated in passages.'
@@ -60,7 +62,9 @@ claims:
   - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
     loc: sec=6.4
     h: 0f67995cf961
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say that if the inverter does not reconnect, service
     is needed to repair the array fault, but say nothing about AC output staying at zero with irradiance.'
 - claim_id: c4
@@ -88,4 +92,6 @@ This warning records that a customer or installer manually cleared an arc fault 
 <!-- review notes
 - sentence 4: support check: partial - Arc fault pending LED pattern and grid disconnection are stated, but 'each reset means an arc fault came before it' is an inference and the LED pattern is from a different model context.
 - sentence 7: support check: partial - Passages advise inspecting DC cables, connections and junction boxes after an arc fault, but do not mention repeated reset log entries as a trigger or a recurring arc.
+- sentence 4: review: partial - A reset following an arc fault, the LED pattern (POWER off, ALARM and GFI on) and the grid disconnection are all stated, but the LED pattern comes from the PVS-166/175 tables and the sentence applies it to every model's reset.
+- sentence 7: review: partial - The passages say to check cables, connections and panel junction boxes after an arc fault, but they never treat repeated reset entries in the log as the trigger or mention a recurring arc.
 -->

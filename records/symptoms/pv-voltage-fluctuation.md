@@ -8,4 +8,5 @@ Analytical monitoring records PV array output voltage and current together with 
 <!-- review notes
 - sentence 1: support check: partial - Measured quantities and the 'Fluctuation' loss category are listed, but the passages don't say voltage swings are tracked against weather data.
 - sentence 2: support check: partial - The passage only has a heading 'Variation 3 - Low voltage' with potential causes for voltage variation; it doesn't state it is a test result in a commissioning standard in detail, nor that causes need investigating beyond that.
+- sentence 1: review: partial - The measured quantities and the 'Fluctuation' loss category are in the table, but nothing in it says DC-side voltage swings are tracked against weather data.
 -->

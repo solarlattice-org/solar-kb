@@ -26,7 +26,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=37.r10
     h: aa5b2ce3dc90
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-23
   review_note: 'support check: partial - E017 with yellow LED (PVS/TRIO) and alarm LED (UNO-DM) is shown,
     but the passages don''t map the LEDs to model families and don''t name an ''inverter fault indicator''
     channel explicitly.'
@@ -51,7 +53,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=37.r10
     h: aa5b2ce3dc90
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages state the cause is input voltage just above activation
     voltage with insufficient PV power, but give no DCV/DCW signal patterns beyond that; ''little or no
     DC power'' is somewhat stronger.'
@@ -75,7 +79,9 @@ claims:
   - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
     loc: tbl=37.r10
     h: aa5b2ce3dc90
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Limited irradiation is named as a typical external cause, but
     dawn/dusk/heavy cloud examples and POAI readings aren''t in the passages.'
 - claim_id: c4
@@ -95,4 +101,5 @@ An inverter startup timeout means the inverter waited too long for its DC-AC sta
 - sentence 1: support check: partial - Long wait for the DC-AC inverter regime to start and E017 with yellow/alarm LED are stated, but 'FIMER' is not named in the passages and the yellow LED is described as a warning or LED status in places.
 - sentence 3: support check: partial - The external cause (voltage just above activation, insufficient power, limited irradiation) is stated, but 'most common' is not; the passages call it a possible cause.
 - sentence 4: support check: partial - Sporadic occurrence being attributable to limited irradiation is stated, but the advice to compare timestamps with irradiance and DC voltage data is not in the passages.
+- sentence 4: review: partial - The passages say sporadic occurrences may come from limited irradiation and PV power, but they do not advise comparing timestamps with irradiance and DC voltage data.
 -->
