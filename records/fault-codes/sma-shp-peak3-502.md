@@ -96,4 +96,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Grid monitoring then reconnect implies auto-resume, but the general
     section notes manual acknowledgment may be required depending on parameterization; 0502…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=12.1.2
+    h: 4db71f35648d
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h284
+    h: 354164b2f12c
+  review: drafted
 ---

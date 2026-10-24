@@ -137,4 +137,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Evidence says ''waiting for grid voltage'' but doesn''t explicitly
     state it stops feed-in/trips.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h251
+    h: 574964c0d29f
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h168
+    h: 574964c0d29f
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h253
+    h: 6e3aeebcc992
+  review: drafted
 ---

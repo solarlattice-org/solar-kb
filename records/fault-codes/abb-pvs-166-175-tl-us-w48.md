@@ -102,4 +102,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Automatic reconnection and contact only if disconnects sooner
     are stated; auto-reset is implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=52.r3
+    h: c86bbae59d8b
+  review: drafted
 ---

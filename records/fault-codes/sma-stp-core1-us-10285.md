@@ -86,4 +86,27 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say only that the connection was established, and
     say nothing about production effect, though it is plausibly none.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h320
+    h: 1ac9890a9d94
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h321
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h237
+    h: 1ac9890a9d94
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h238
+    h: d3a655b7df20
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h312
+    h: 1ac9890a9d94
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h313
+    h: d3a655b7df20
+  review: drafted
 ---

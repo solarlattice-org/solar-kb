@@ -56,4 +56,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - No action needed is stated, but ''no production effect'' is only
     implied.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=17.r11
+    h: 2b2a678c83b7
+  review: drafted
 ---

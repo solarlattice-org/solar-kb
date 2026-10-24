@@ -140,4 +140,12 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
     but nothing says it clears only by manual reset; plausibly implied…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-200-250k-t
+  cite:
+  - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+    loc: tbl=42.r4
+    h: 91a441492413
+  review: drafted
 ---

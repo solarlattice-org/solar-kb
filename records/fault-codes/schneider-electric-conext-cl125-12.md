@@ -81,4 +81,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Checking insulation is suggested, but insulation resistance testing
     as a detection method is not stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=49.r1
+    h: e0fa32436489
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=28.r6
+    h: f7dcd0f40d75
+  review: drafted
 ---

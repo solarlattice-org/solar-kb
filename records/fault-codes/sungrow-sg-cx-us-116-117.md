@@ -72,4 +72,15 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say wait for the inverter to return to normal (self-recovery),
     then power cycle, then contact service (u14), but they…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=54.r2
+    h: 6bdc7459089f
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r2
+    h: 747d97e2371d
+  review: drafted
 ---

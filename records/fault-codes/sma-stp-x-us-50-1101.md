@@ -89,4 +89,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Corrective measure is to connect the neutral conductor to N,
     which is a connection fix but not explicitly a check.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-x-us-50
+  cite:
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=11.1.14
+    h: 451630c05f83
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h437
+    h: a9dee14d1e72
+  review: drafted
 ---

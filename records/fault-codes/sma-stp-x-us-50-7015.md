@@ -141,4 +141,15 @@ claims:
     loc: sec=h570
     h: 417f2f122215
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-stp-x-us-50
+  cite:
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=11.1.41
+    h: feff490af79f
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h568
+    h: 43c32662cf90
+  review: drafted
 ---

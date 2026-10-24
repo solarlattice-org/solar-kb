@@ -53,4 +53,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 4 text is generic and does not tie 437 to class 4 or
     state a fault classification.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r15
+    h: f8a606bbb2be
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

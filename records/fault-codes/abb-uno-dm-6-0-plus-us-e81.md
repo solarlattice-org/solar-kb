@@ -98,4 +98,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reconnect and switch on after checks, contact assistance if persists,
     are stated, but manual reset is only implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=52.r1
+    h: 02b8eb3b3ed2
+  review: drafted
 ---

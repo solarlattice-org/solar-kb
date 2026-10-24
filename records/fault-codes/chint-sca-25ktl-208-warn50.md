@@ -121,4 +121,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A manual power-cycle reboot is recommended, but the passages
     don''t state that it clears the warning; u31 also mentions automatic elimination.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=48.r3
+    h: 92744a5bbe83
+  review: drafted
 ---

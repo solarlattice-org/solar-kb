@@ -73,4 +73,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for recovery is implied, and the escalation is stated,
     but auto-reset is not explicit.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=50.r4
+    h: 53fe3ee9226d
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r4
+    h: 53fe3ee9226d
+  review: drafted
 ---

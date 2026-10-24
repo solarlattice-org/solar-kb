@@ -116,4 +116,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say to check that the DC cables are well insulated,
     but not that the fault affects the DC cable.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sungrow-sg250hx
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=39.r4
+    h: 8b79a5df44df
+  review: drafted
 ---

@@ -73,4 +73,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row only says to see the note if the event persists. It does
     not name contacting manufacturer service.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=50.r4
+    h: d26d0ac29786
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=30.r1
+    h: 8a662aa97327
+  review: drafted
 ---

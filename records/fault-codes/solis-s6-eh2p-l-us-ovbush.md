@@ -85,4 +85,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Described as a ''hardware failure'' but the row doesn''t state
     device behavior; fault is only implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=18.r15
+    h: 0e5e55559815
+  review: drafted
 ---

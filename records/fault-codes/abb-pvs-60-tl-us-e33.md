@@ -87,4 +87,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for temperature to return and contacting support if it
     persists are stated, but auto-reset isn''t explicit.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=49.r1
+    h: 4bf39c01a85b
+  review: drafted
 ---

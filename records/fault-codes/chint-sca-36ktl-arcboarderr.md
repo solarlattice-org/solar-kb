@@ -82,4 +82,12 @@ claims:
   verified_by: joshuahamsa
   verified_at: 2026-10-20
   review_note: 'support check: partial - Operator actions stated, but manual reset clearing not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-36ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=10.r3
+    h: 99d70367a788
+  review: drafted
 ---

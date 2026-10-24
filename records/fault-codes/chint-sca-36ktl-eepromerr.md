@@ -73,4 +73,18 @@ claims:
     loc: tbl=5.r3
     h: 609d6ef144dc
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sca-36ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=5.r1
+    h: f94a58942f56
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=5.r2
+    h: e81c19300640
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=5.r3
+    h: 609d6ef144dc
+  review: drafted
 ---

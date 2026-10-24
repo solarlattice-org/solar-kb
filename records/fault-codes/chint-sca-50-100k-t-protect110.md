@@ -144,4 +144,12 @@ claims:
     loc: tbl=34.r5
     h: 2a8300288ac9
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=50.r2
+    h: 508dbb45a668
+  review: drafted
 ---

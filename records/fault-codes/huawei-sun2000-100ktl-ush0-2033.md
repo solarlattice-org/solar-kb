@@ -66,4 +66,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Auto recovery is stated, but the escalation to grid and AC circuit
     checks is truncated in the passage.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:huawei-sun2000-100ktl-ush0
+  cite:
+  - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
+    loc: tbl=55.r6
+    h: 9829b1f4d742
+  review: drafted
 ---

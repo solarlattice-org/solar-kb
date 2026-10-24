@@ -40,4 +40,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Shutdown is stated, implying trip, but the row mostly describes
     a grid management shutdown without explicit production detail.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=39.r10
+    h: 53f18afcee4a
+  review: drafted
 ---

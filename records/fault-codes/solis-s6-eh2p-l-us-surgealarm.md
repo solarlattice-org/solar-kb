@@ -88,4 +88,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then contact service is stated, but ''clears by manual
     reset'' is only loosely implied by a restart suggestion.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=19.r1
+    h: dbaf2768c8dc
+  review: drafted
 ---

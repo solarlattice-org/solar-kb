@@ -77,4 +77,15 @@ claims:
     loc: tbl=14.r3
     h: 4bc70d0f58e4
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-manual-s6-gc-25-60-k-us-v1-1-20251013
+    loc: tbl=13.r3
+    h: 4bc70d0f58e4
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=12.r3
+    h: 4bc70d0f58e4
+  review: drafted
 ---

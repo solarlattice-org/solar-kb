@@ -77,4 +77,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say 307 appears naturally and Class 3 codes resume
     automatically, but no row gives the installer note for…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=14.r7
+    h: 58762101bb0c
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h21
+    h: beb65823f4ab
+  review: drafted
 ---

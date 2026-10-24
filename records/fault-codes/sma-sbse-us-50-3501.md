@@ -208,4 +208,18 @@ claims:
     loc: sec=h1
     h: 05d7bba15124
   review: drafted
+- claim_id: c17
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.28
+    h: 49d487e1f0cf
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h558
+    h: 292e6cb83a1a
+  - src: src:sma-kb-event-3501-with-sunnyboy-smart-energy-sbse
+    loc: sec=h1
+    h: 05d7bba15124
+  review: drafted
 ---

@@ -115,4 +115,15 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Automatic reconnection and contact only if disconnects sooner
     are stated; auto-reset is implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=38.r4
+    h: c89977a731af
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=52.r5
+    h: ed6a6728cb2f
+  review: drafted
 ---

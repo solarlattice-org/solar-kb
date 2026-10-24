@@ -97,4 +97,15 @@ claims:
   review: drafted
   review_note: 'review: partial - The passages tell the operator to unplug the load and switch secure
     power supply operation back on, which implies a manual restart,…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.69
+    h: b9b025bafd0a
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h446
+    h: 0abd747128c4
+  review: drafted
 ---

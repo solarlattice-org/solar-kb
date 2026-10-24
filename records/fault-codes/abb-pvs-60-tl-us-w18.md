@@ -160,4 +160,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cartridge replacement and contact customer assistance are stated,
     but service-required classification applies mainly to the persistent case; replacement is an…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=44.r5
+    h: fce7cbf479d8
+  review: drafted
 ---

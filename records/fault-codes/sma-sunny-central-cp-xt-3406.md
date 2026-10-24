@@ -58,4 +58,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Check module wiring and system design suggests string configuration,
     but correction is not explicitly stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=34.r3
+    h: 37c2997eb420
+  review: drafted
 ---

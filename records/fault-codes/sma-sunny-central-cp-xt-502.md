@@ -91,4 +91,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Grid monitoring then reconnect implies auto-resume, but the general
     section notes manual acknowledgment may be required depending on parameterization; 0502…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r2
+    h: e11a6a6a6933
+  review: drafted
 ---

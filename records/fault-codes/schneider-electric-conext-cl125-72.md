@@ -99,4 +99,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Replacement of an expended SPD is implied by the split cell but
     service-required is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=53.r8
+    h: f850dfc0b1fa
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=33.r7
+    h: 3114d6eef976
+  review: drafted
 ---

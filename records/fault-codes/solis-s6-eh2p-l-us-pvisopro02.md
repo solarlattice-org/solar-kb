@@ -127,4 +127,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Called a ''PV positive ground fault'' but the row doesn''t state
     device behavior; fault is only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=18.r7
+    h: 873d0b209293
+  review: drafted
 ---

@@ -171,4 +171,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cartridge replacement and contact customer assistance are stated,
     but service-required classification applies mainly to the persistent case; replacement is an…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=35.r6
+    h: 56f4c661497a
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=46.r6
+    h: 0296a6930509
+  review: drafted
 ---

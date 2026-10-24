@@ -155,4 +155,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages mention the module and the string only as a cause
     and a check target; the PV array is…'
+- claim_id: c11
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=51.r3
+    h: 99f23921c8b9
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=37.r3
+    h: 99f23921c8b9
+  review: drafted
 ---

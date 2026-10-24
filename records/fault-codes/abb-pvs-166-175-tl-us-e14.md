@@ -132,4 +132,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say to wait for the inverter to cool and contact
     service if the problem persists. They never say…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=53.r8
+    h: 83e99572cea5
+  review: drafted
 ---

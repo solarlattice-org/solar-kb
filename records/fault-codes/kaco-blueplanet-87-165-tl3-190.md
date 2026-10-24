@@ -43,4 +43,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The semiconductor module is only implied to be part of the inverter
     bridge, and 189 refers to the filter relay…'
+- claim_id: c4
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=80.r10
+    h: 16b60c6be7f5
+  review: drafted
 ---

@@ -85,4 +85,12 @@ claims:
     loc: tbl=13
     h: 142f846b383e
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:canadian-solar-185-255k
+  cite:
+  - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
+    loc: tbl=13.r5
+    h: dcb57b87715b
+  review: drafted
 ---

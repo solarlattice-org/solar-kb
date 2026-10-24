@@ -77,4 +77,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Warning is defined as output power decreasing due to external
     factors, but this alarm''s own causes are shading or string…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:huawei-sun2000-45ktl-us-hv-d0
+  cite:
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=53.r2
+    h: 3cdeedc59a8a
+  review: drafted
 ---

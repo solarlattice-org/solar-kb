@@ -130,4 +130,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Switch off/on is an operator restart (manual reset) but only
     when grid is an island grid, and the passages don''t…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=37.r4
+    h: f3324fb791da
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=51.r4
+    h: 9041a81bf5ce
+  review: drafted
 ---

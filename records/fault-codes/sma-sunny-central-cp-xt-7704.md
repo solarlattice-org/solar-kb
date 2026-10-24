@@ -65,4 +65,15 @@ claims:
     loc: tbl=38.r15
     h: 6ba85e02f613
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=38.r15
+    h: 6ba85e02f613
+  - src: src:sma-kb-error-message-7704-dc-disconnection-point
+    loc: sec=h1
+    h: 3a7c628891d1
+  review: drafted
 ---

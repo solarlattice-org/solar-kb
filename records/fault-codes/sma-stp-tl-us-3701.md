@@ -190,4 +190,15 @@ claims:
     loc: sec=h466
     h: ceee8640eb7c
   review: drafted
+- claim_id: c15
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=15.r5
+    h: 38f49f27de55
+  - src: src:sma-kb-stp12000-24000tl-us-10-event-number-3701
+    loc: sec=h1
+    h: 4ec59787e34e
+  review: drafted
 ---

@@ -101,4 +101,12 @@ claims:
   verified_at: *id001
   review_note: 'support check: partial - It is in the Table 8.1 Fault messages, but the passage does not
     state the device behavior (stops or needs…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-75-100k-t480gl02
+  cite:
+  - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
+    loc: tbl=11.r5
+    h: dc004aa7f58f
+  review: drafted
 ---

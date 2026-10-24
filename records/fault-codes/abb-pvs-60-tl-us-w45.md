@@ -57,4 +57,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Disconnection from the grid is stated, which fits a trip, though
     it is classed as a warning and production stop…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=45.r5
+    h: af2f79106885
+  review: drafted
 ---

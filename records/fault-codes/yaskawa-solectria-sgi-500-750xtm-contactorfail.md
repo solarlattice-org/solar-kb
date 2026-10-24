@@ -88,4 +88,15 @@ claims:
   verified_at: *id001
   review_note: 'support check: partial - Restart is the corrective action, but clearing by it isn''t explicitly
     stated.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=30.r1
+    h: 3af90367bdf1
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.1
+    h: d40755519b21
+  review: drafted
 ---

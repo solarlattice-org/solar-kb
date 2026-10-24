@@ -105,4 +105,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-125k-t600gl02
+  cite:
+  - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
+    loc: tbl=10.r4
+    h: b12dcab6c84e
+  review: drafted
 ---

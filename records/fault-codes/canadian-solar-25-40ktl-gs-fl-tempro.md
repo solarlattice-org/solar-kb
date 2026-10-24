@@ -25,4 +25,12 @@ claims:
     loc: tbl=8.r3
     h: c82d4746cefc
   review: drafted
+- claim_id: c2
+  rel: applies_to
+  target: prod:canadian-solar-25-40ktl-gs-fl
+  cite:
+  - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
+    loc: tbl=8.r3
+    h: c82d4746cefc
+  review: drafted
 ---

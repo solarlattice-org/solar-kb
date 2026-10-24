@@ -114,4 +114,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle is an operator action, but the row doesn''t say the
     warning clears that way; the general text says…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-1mw
+  cite:
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=21.r8
+    h: 3aba5cfd6070
+  review: drafted
 ---

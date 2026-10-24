@@ -117,4 +117,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say to ensure the PV array is correctly rated and wired
     if the message is frequent, but do not…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: sec=h186
+    h: 19b8db713236
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: sec=h187
+    h: ce98c4366db9
+  review: drafted
 ---

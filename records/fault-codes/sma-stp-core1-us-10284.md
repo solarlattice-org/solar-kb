@@ -62,4 +62,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The condition is a lost Wi-Fi connection, but a warning classification
     is only implied, not stated.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h308
+    h: 4688e4f0fa57
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h310
+    h: 0390cded536c
+  review: drafted
 ---

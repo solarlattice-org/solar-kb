@@ -64,4 +64,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The firmware update remedy is stated, but the passage for 608
     does not say to contact a technician if the…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=17.r5
+    h: 31709a10086c
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h24
+    h: 4242ab97920a
+  review: drafted
 ---

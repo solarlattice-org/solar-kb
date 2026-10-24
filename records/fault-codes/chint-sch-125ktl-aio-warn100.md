@@ -86,4 +86,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say the alarm is reserved and can be ignored, but
     don''t explicitly state that it has no production effect.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=30.r5
+    h: 19d64f589251
+  review: drafted
 ---

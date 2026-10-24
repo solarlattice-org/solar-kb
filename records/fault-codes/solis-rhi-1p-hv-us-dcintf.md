@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then isolate string then replacement sequence is stated,
     but nothing says the fault clears by manual reset.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:solis-rhi-1p-hv-us
+  cite:
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r5
+    h: 32765dbfaba4
+  review: drafted
 ---

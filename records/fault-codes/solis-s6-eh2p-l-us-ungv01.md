@@ -98,4 +98,12 @@ claims:
     h: 6e70862f89d9
   review: drafted
   review_note: 'support check: partial - Classification as fault isn''t explicitly stated in the row.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=19.r3
+    h: 6e70862f89d9
+  review: drafted
 ---

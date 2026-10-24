@@ -82,4 +82,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cause must be determined by the Service is implied but the 6603
     row is split and truncated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=18.r10
+    h: 2cc675d4ac77
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=7.r10
+    h: 2cc675d4ac77
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r10
+    h: 1862a479c741
+  review: drafted
 ---

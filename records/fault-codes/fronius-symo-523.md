@@ -52,4 +52,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 5 text says codes generally do not impair feed-in,
     but 523 itself is not stated to be class 5.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=16.r10
+    h: 3d2e053b53ef
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h23
+    h: c4a64ba354f6
+  review: drafted
 ---

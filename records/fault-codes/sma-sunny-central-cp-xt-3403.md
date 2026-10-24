@@ -90,4 +90,15 @@ claims:
     loc: sec=h1
     h: 17910a6f1c18
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=34.r1
+    h: 403fe351ab02
+  - src: src:sma-kb-error-message-3403-dc-overvoltage
+    loc: sec=h1
+    h: 17910a6f1c18
+  review: drafted
 ---

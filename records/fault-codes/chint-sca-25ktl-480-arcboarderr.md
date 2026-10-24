@@ -114,4 +114,12 @@ claims:
     h: 29641da34bb0
   review: drafted
   review_note: 'support check: partial - Steps stated but manual reset classification not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-25ktl-480
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=60.r4
+    h: 38c2919b6b74
+  review: drafted
 ---

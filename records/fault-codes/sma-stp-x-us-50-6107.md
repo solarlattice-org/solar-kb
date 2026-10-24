@@ -135,4 +135,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Contact service line is stated if it occurs outside start-up/sunset
     after firmware update, but ''persists after update'' is roughly there;…'
+- claim_id: c11
+  rel: applies_to
+  target: prod:sma-stp-x-us-50
+  cite:
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=11.1.26
+    h: 336e0ccc0f7b
+  review: drafted
 ---

@@ -145,4 +145,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is advised, but the passages never say the fault
     clears by manual reset. The only follow-up stated…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=47.r7
+    h: c5630c6556a5
+  review: drafted
 ---

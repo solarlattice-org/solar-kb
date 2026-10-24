@@ -138,4 +138,12 @@ claims:
     state device behavior; classification only implied by table title.'
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c12
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r4
+    h: b4f347f61cee
+  review: drafted
 ---

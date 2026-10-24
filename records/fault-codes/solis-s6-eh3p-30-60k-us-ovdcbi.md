@@ -102,4 +102,15 @@ claims:
     h: d90fbe003f50
   review: drafted
   review_note: 'support check: partial - Restart then replace is stated, but not manual reset clearing.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=27.r15
+    h: c62c8a4dce48
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=27.r15
+    h: c62c8a4dce48
+  review: drafted
 ---

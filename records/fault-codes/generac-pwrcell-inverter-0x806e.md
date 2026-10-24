@@ -54,4 +54,15 @@ claims:
     loc: tbl=19.r13
     h: 90787148ab7a
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:generac-pwrcell-inverter
+  cite:
+  - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
+    loc: tbl=20.r13
+    h: 90787148ab7a
+  - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
+    loc: tbl=19.r13
+    h: 90787148ab7a
+  review: drafted
 ---

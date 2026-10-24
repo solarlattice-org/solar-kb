@@ -95,4 +95,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Complete pending updates, restart, contact support are stated;
     ''retry'' is implied by completing the update.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=36.r3
+    h: 0711ae43ba47
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=47.r4
+    h: bf8c7b8719ad
+  review: drafted
 ---

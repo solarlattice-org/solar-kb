@@ -68,4 +68,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages describe a degraded condition and nothing stops,
     which is consistent with a warning, but the passages never state…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h294
+    h: 383199b9accb
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h296
+    h: c208e7ec47d6
+  review: drafted
 ---

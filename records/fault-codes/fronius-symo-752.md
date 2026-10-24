@@ -57,4 +57,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A communication error with the RTC module is stated, but ''internal
     communication failure'' is an inference.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=18.r20
+    h: 2ee634d10a9c
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h25
+    h: 97ec1f8e556b
+  review: drafted
 ---

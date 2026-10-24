@@ -154,4 +154,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then replace is stated; manual-reset classification
     only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-350ktl
+  cite:
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=36.r4
+    h: d2bf39f802ad
+  review: drafted
 ---

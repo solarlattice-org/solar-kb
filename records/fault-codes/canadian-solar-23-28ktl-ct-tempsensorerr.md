@@ -92,4 +92,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power-cycling is recommended, but the passage doesn''t say it
     clears the alarm; a manual reset is implied.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:canadian-solar-23-28ktl-ct
+  cite:
+  - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
+    loc: tbl=27.r1
+    h: '769445e39817'
+  review: drafted
 ---

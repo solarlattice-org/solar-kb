@@ -101,4 +101,12 @@ claims:
     loc: tbl=42.r3
     h: ce5b66c1f3c3
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=58.r3
+    h: a329616ef69f
+  review: drafted
 ---

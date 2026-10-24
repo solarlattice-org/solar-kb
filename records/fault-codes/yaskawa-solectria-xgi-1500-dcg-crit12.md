@@ -85,4 +85,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle implies manual reset but clearing is not explicitly
     stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-dcg
+  cite:
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=17.r4
+    h: 4bd089b43293
+  review: drafted
 ---

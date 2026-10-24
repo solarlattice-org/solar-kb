@@ -109,4 +109,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is listed, but the passages do not say a manual
     reset clears the error.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=37.r6
+    h: fd1aa8ff3420
+  review: drafted
 ---

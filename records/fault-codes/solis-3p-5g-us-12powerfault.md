@@ -101,4 +101,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart or contact installer is stated, but clearing by manual
     reset is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-3p-5g-us
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r3
+    h: b620d3902110
+  review: drafted
 ---

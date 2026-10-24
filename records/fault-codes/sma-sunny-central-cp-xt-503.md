@@ -99,4 +99,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reconnection after grid monitoring implies auto-reset, but manual
     acknowledgment may be required depending on parameterization.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r3
+    h: 14fa443485b6
+  review: drafted
 ---

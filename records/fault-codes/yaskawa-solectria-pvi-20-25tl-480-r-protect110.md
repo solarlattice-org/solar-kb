@@ -71,4 +71,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart by power-cycling is stated, but ''manual reset'' clearing
     classification is implied only; fairly reasonable though not explicit that the…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-20-25tl-480-r
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=37.r2
+    h: 0c4fdd9197c2
+  review: drafted
 ---

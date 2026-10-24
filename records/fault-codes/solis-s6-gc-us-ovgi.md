@@ -133,4 +133,12 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Restart then power board replacement is stated, but clearing
     by manual reset is not stated explicitly.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=14.r6
+    h: 76ec6995f3a6
+  review: drafted
 ---

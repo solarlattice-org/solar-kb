@@ -75,4 +75,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Only checking for DC polarity reversal is mentioned, not a polarity
     measurement method per se.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=71.r2
+    h: 41289483e81c
+  review: drafted
 ---

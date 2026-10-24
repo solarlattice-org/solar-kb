@@ -100,4 +100,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Described as a ''disturbance'' with no stated device behavior;
     a fault classification is not clearly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=18.r14
+    h: 63b884f60708
+  review: drafted
 ---

@@ -64,4 +64,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c5
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=15.r4
+    h: 19619b91dfc9
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h18
+    h: 55856fbde1a5
+  review: drafted
 ---

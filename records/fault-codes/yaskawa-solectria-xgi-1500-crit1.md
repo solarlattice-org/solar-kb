@@ -139,4 +139,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle/firmware update then contact support is stated, but
     that it clears by manual reset is only implied, not stated.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500
+  cite:
+  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
+    loc: tbl=18.r1
+    h: ddfd206e8431
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=18.r1
+    h: e7019bfb8c05
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=15.r1
+    h: ddfd206e8431
+  review: drafted
 ---

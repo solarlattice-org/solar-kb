@@ -56,4 +56,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Observing for auto-elimination implies auto-reset, with service
     if persists; ''expected'' is slightly stronger.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=62.r3
+    h: 178ff94088e0
+  review: drafted
 ---

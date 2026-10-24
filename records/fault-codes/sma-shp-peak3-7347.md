@@ -73,4 +73,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=12.1.23
+    h: 6c8ad94421c0
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h385
+    h: 4861a86730e3
+  review: drafted
 ---

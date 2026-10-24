@@ -139,4 +139,12 @@ claims:
     loc: tbl=34.r12
     h: 44a791cf9744
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-100-125ktl
+  cite:
+  - src: src:chint-cps-sch100-125ktl-do-us-600-480-user-manual-rev-1-9
+    loc: tbl=36.r4
+    h: 800b94fc4b9a
+  review: drafted
 ---

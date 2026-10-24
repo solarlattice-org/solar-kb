@@ -71,4 +71,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says voltage must be under 1000 V and adjust, but doesn''t
     explicitly say string configuration correction.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=60.r3
+    h: 14fe271898ae
+  review: drafted
 ---

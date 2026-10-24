@@ -97,4 +97,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then contact assistance stated, but manual-reset
     clearing not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=56.r8
+    h: 0b9e31e8c689
+  review: drafted
 ---

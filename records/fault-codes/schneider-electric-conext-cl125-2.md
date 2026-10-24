@@ -79,4 +79,15 @@ claims:
   review: drafted
   review_note: 'review: partial - The row''s mention of protection time and utility-defined thresholds
     supports the note, but no passage says production stops or the inverter trips.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=47.r1
+    h: c01eaaedd782
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=27.r1
+    h: 031fce53e2af
+  review: drafted
 ---

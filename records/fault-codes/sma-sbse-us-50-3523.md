@@ -59,4 +59,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Inverter restarts once on its own during the test, implying automatic
     resumption, but this is not explicitly stated.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.29
+    h: 67395b7d9289
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h562
+    h: ed2a16179796
+  review: drafted
 ---

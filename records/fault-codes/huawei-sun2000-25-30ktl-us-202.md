@@ -133,4 +133,12 @@ claims:
     loc: tbl=54.r2
     h: f3ba906275f0
   review: drafted
+- claim_id: c11
+  rel: applies_to
+  target: prod:huawei-sun2000-25-30ktl-us
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=39.r1
+    h: 1b664a229ba3
+  review: drafted
 ---

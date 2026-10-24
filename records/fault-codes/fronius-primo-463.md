@@ -73,4 +73,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages imply the connector is wrongly plugged in but give
     no remedy, so a connection check is only implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r32
+    h: 2014e3ab07d3
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

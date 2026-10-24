@@ -102,4 +102,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reconnection after grid monitoring implies auto-reset, but manual
     acknowledgment may be required depending on parameterization.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=12.1.3
+    h: 3b2cd378567a
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h289
+    h: 354164b2f12c
+  review: drafted
 ---

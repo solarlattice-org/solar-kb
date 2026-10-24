@@ -118,4 +118,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say if AC is high at full power, cables between inverter
     and interconnect are too small; ''only at full…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=13.r3
+    h: 52c3fd63f040
+  review: drafted
 ---

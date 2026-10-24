@@ -73,4 +73,12 @@ claims:
     loc: tbl=17.r4
     h: c2b2e23365c6
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sb-us-40
+  cite:
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=17.r4
+    h: c2b2e23365c6
+  review: drafted
 ---

@@ -71,4 +71,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - 406 appears in the class 4 list but the passages never state
     it is a fault; its behavior is blank.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:fronius-galvo
+  cite:
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: tbl=18.r2
+    h: afc6426047d3
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: sec=h21
+    h: a5ea6671c1aa
+  review: drafted
 ---

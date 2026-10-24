@@ -68,4 +68,15 @@ claims:
     h: efb99bb3bec8
   review: drafted
   review_note: 'support check: partial - u31 says wait to recover automatically; escalation note not present.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=53.r5
+    h: 099769e75bd5
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=33.r4
+    h: efb99bb3bec8
+  review: drafted
 ---

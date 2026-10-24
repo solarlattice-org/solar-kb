@@ -73,4 +73,15 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - 406 appears in the class 4 list but the passages never state
     it is a fault; its behavior is blank.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r2
+    h: 6927b12a44d6
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

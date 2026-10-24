@@ -156,4 +156,18 @@ claims:
     loc: sec=h1
     h: 0bf710148ab2
   review: drafted
+- claim_id: c13
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h285
+    h: e387fca06bb3
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h286
+    h: 5d84ec3d5090
+  - src: src:sma-kb-event-8003-in-terms-of-sunny-tripower-core1-stp50-40-stp50-41
+    loc: sec=h1
+    h: 0bf710148ab2
+  review: drafted
 ---

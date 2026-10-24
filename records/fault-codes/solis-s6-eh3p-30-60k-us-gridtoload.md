@@ -64,4 +64,15 @@ claims:
   review: drafted
   review_note: 'review: partial - The row only says ''No need to deal with it''; it never says production
     is unaffected, so ''no production effect'' is implied…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=25.r11
+    h: 2b2a678c83b7
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=25.r11
+    h: 2b2a678c83b7
+  review: drafted
 ---

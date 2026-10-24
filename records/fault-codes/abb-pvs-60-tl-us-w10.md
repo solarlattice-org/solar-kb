@@ -153,4 +153,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Internal error that can''t be checked externally and contact
     assistance if repeating are stated, though ''clears by service required'' is…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=43.r6
+    h: f68c18540d32
+  review: drafted
 ---

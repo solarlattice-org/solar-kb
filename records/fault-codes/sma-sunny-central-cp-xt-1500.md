@@ -79,4 +79,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for reconnection conditions implies auto resumption,
     but manual acknowledgment may be required depending on parameterization.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r9
+    h: f829044168eb
+  review: drafted
 ---

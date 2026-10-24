@@ -109,4 +109,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for cool down and the contact-service-if-persists are
     stated, but auto-reset is only implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=50.r1
+    h: 18005e07fa44
+  review: drafted
 ---

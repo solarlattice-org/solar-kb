@@ -58,4 +58,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c5
+  rel: applies_to
+  target: prod:generac-pwrcell-inverter
+  cite:
+  - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
+    loc: tbl=20.r11
+    h: 46554694b404
+  - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
+    loc: tbl=19.r11
+    h: 46554694b404
+  review: drafted
 ---

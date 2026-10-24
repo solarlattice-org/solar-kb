@@ -165,4 +165,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then replacement stated; manual-reset classification
     only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-275ktl
+  cite:
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=29.r3
+    h: e17d4c1a5c6e
+  review: drafted
 ---

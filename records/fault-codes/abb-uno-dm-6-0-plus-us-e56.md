@@ -120,4 +120,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for cool down and the contact-service-if-persists are
     stated, but auto-reset is only implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=40.r2
+    h: 303e18b961e9
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=51.r8
+    h: 129daf3e629b
+  review: drafted
 ---

@@ -66,4 +66,12 @@ claims:
   verified_at: *id001
   review_note: 'support check: partial - Replacement is required, which implies service-required, but
     the row doesn''t state a service/clearing classification explicitly.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:generac-pwrcell-inverter
+  cite:
+  - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
+    loc: tbl=33.r4
+    h: 958bb3d9a84b
+  review: drafted
 ---

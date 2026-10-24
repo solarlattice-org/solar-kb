@@ -80,4 +80,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - No action needed is stated, but auto-clearing is not explicitly
     stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=25.r5
+    h: 8899000c3172
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=25.r5
+    h: 8899000c3172
+  review: drafted
 ---

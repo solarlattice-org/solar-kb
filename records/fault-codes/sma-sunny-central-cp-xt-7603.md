@@ -21,4 +21,12 @@ claims:
     loc: sec=h1
     h: e2ca25c8154c
   review: drafted
+- claim_id: c2
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-kb-error-message-7603-can-communication-fault
+    loc: sec=h1
+    h: e2ca25c8154c
+  review: drafted
 ---

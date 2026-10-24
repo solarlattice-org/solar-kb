@@ -70,4 +70,12 @@ claims:
   review: drafted
   review_note: 'review: partial - The note correctly paraphrases the transformer short-circuit voltage
     check, but the row uses the transformer only as a grid-inductance diagnostic, never says…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=73.r2
+    h: 290a7a24de3f
+  review: drafted
 ---

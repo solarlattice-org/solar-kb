@@ -36,4 +36,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Grid request due to exceeding the power limit is stated, but
     ''load'' power is not mentioned.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=136.r3
+    h: 6c6009451b12
+  review: drafted
 ---

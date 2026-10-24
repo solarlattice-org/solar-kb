@@ -68,4 +68,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Firmware update is stated, but the contact-technician-after-update
     note is not in the row.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=17.r1
+    h: f1f5dec6cab3
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h24
+    h: 4242ab97920a
+  review: drafted
 ---

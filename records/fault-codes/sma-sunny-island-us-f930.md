@@ -46,4 +46,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Short circuit via SiCom stated; ''by the battery management''
     not stated.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=155.r12
+    h: 5de9c9959559
+  review: drafted
 ---

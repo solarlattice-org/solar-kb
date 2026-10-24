@@ -45,4 +45,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Semiconductor module only implies the inverter bridge; it is
     not stated.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=80.r13
+    h: 48ec590a6c99
+  review: drafted
 ---

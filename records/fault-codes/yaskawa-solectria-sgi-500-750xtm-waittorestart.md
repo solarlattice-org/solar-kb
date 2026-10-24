@@ -59,4 +59,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A countdown with no action needed implies the state ends on its
     own. The row doesn''t explicitly say it clears automatically.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=33.r7
+    h: fe3241768089
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

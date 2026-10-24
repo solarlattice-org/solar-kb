@@ -126,4 +126,21 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c10
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=23.r2
+    h: a15113bcec60
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=12.r2
+    h: a15113bcec60
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r2
+    h: 7e25a82051cf
+  - src: src:sma-kb-stp-us-41-sb-us-41-event-9034
+    loc: sec=h1
+    h: 1ed454275821
+  review: drafted
 ---

@@ -83,4 +83,12 @@ claims:
     loc: tbl=21.r2
     h: 069df80c5ce8
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-1mw
+  cite:
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=23.r2
+    h: 069df80c5ce8
+  review: drafted
 ---

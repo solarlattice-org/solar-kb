@@ -132,4 +132,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say to wait for the inverter to cool and contact
     service if the problem persists. They never say…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=38.r2
+    h: b316943180a1
+  review: drafted
 ---

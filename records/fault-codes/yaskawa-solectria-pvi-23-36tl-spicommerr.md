@@ -60,4 +60,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row says to observe for 5 minutes to see whether the alarm
     clears automatically, but a power cycle and…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r3
+    h: 212b80f52fcc
+  review: drafted
 ---

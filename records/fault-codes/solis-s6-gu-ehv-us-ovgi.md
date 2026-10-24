@@ -131,4 +131,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then power board replacement is stated, but clearing
     by manual reset is not stated explicitly.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=13.r6
+    h: 5b962bf23c6f
+  review: drafted
 ---

@@ -76,4 +76,12 @@ claims:
     h: f73d799fd7e4
   review: drafted
   review_note: 'support check: partial - Steps are stated, but manual reset clearing is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=15.r8
+    h: f73d799fd7e4
+  review: drafted
 ---

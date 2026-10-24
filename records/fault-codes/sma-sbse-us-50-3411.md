@@ -143,4 +143,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Manual disconnect/reconnect is described, but no explicit reset
     clearing is stated.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.27
+    h: 9e77fcd7ad9a
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h553
+    h: 41676f7fb1bd
+  review: drafted
 ---

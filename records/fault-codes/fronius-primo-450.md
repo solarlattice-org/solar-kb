@@ -40,4 +40,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 4 text is generic and does not tie 450 to class 4;
     ''No guard found'' gives no behavior.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r21
+    h: e200153e9540
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

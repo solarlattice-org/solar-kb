@@ -99,4 +99,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row doesn''t state a fault classification explicitly; the
     device''s behavior is unspecified beyond a restart suggestion.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-eh3p-75-150k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=27.r2
+    h: cf3405067fd1
+  review: drafted
 ---
