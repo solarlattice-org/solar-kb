@@ -19,4 +19,5 @@ A torque wrench tightens bolts, screws and terminals to a set torque. Inverter m
 - sentence 5: support check: partial - Torque driver for terminals and wrench capacities of 5 and 26 in-lbs are stated, but a manual naming Yaskawa Solectria is not in the passages.
 - sentence 6: support check: partial - The tool list matches, but the passage refers to the SolarEdge Home Battery 400V, not the Home Hub inverter.
 - sentence 7: support check: partial - Passages show differing torque values and capacities by product and connection point, but do not explicitly advise checking the wrench covers each value.
+- sentence 1: review: partial - The tool tables do list a torque wrench for securing bolts and AC terminals and for tightening expansion bolts, but the passages never mention screws or tightening to a set torque.
 -->

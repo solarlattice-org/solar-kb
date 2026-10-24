@@ -18,4 +18,5 @@ A VLF hipot is a portable high-voltage AC source that runs at very low frequency
 <!-- review notes
 - sentence 1: support check: partial - Passages cover VLF AC source, low frequency, withstand testing and cable/splices/terminations, but "portable" is stated (quite portable) while "shielded medium-voltage" is only implied via MV class and the IEEE shielded cable guide title; mostly supported with minor gaps.
 - sentence 4: support check: partial - Acceptance/testing of new or repaired cable before reenergizing and wind farm cable are stated, but solar underground AC collection systems are not mentioned.
+- sentence 4: review: partial - Testing newly installed or repaired cable before reenergizing is stated, and wind farm cable testing is named, but the quoted text never mentions solar underground AC collection systems; that appears only in a source ID.
 -->

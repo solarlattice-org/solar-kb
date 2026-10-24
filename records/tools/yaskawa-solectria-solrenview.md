@@ -29,7 +29,9 @@ claims:
   - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
     loc: sec=7
     h: ca9b77b77664
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: uses_protocol
   target: proto:modbus
@@ -42,7 +44,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-36tl
     loc: sec=2.4.4
     h: 314a24ec8fcb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: uses_protocol
   target: proto:ethernet
@@ -57,7 +61,9 @@ claims:
   - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
     loc: sec=7
     h: ca9b77b77664
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: uses_protocol
   target: proto:rs485
@@ -66,7 +72,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-23-28tl
     loc: sec=14.2
     h: 60255fd61884
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 SolrenView is the Yaskawa Solectria web-based monitoring service, made up of a data logger or gateway that regularly collects operating values from the inverter and sends them to the SolrenView monitoring servers. It is an optional monitoring add-on for Solectria string inverters such as the PVI 3800-7600TL, PVI 14-20TL, PVI 23-28TL and PVI 50-60TL, and it is also used with SGI central inverters. To enable data logging, turn on SRV Mode in the inverter Config menu. If the logger cannot upload, it stores data in flash memory, and after a few weeks the oldest data is lost, so get internet working soon after commissioning. Customer Support must activate the monitoring site. An I in the upper right corner of the logger screen confirms a connection to the SolrenView servers. Leave SRV Mode off when a third-party monitoring service is used or when SolrenView service has not been purchased. Only qualified personnel should make SolrenView connections, and all DC and AC power must be disconnected first because of the risk of electric shock.
 

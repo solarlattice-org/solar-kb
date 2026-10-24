@@ -16,4 +16,5 @@ A voltage detector is a field instrument used to confirm that inverter terminals
 - sentence 4: support check: partial - Mid bulk test inside the power module is stated, but 'larger FIMER string inverters' is not stated in the passage.
 - sentence 5: support check: partial - Passages list the 2-pole detector as additionally required and some say not in scope of delivery, but the 'SMA service and board-exchange manuals' scope isn't stated and some passages don't say 'not supplied'.
 - sentence 6: support check: partial - Passage states detector up to 1000 V DC and verifying polarity and max voltage via open-circuit voltage, but doesn't name SMA or state it's for PV array work specifically beyond arrays mention.
+- sentence 4: review: partial - The mid bulk absence test inside the power module is stated, but the passage does not say it applies to larger FIMER string inverters.
 -->

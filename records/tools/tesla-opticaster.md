@@ -24,7 +24,9 @@ claims:
   - src: src:tesla-scada-design-manual-v3-4
     loc: sec=2.1.3
     h: 666d8a6d370b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages call Opticaster Tesla''s autonomous site control software,
     but none names Tesla Energy as the maker.'
 ---
