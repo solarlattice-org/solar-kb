@@ -21,7 +21,9 @@ claims:
   - src: src:enphase-enphase-verifying-inverter-protective-functions-iq8-commercial
     loc: sec=6.2
     h: 340b96b35ceb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 This method checks in the field that a grid-interactive inverter's protective functions work, mainly the enter service (reconnection) delay and the response to loss of a phase. Inverter protective functions are tested in the factory, but many utilities also want the reconnection delay timer checked in the field before the PV system may export power. You can check the enter service delay with a clamp-on ammeter, by watching the meter, or with more accurate power measurement equipment. Which you pick depends on your confidence in the equipment, the test gear you have, and whether there is sunlight. In the open phase test, one phase is opened and the inverters should stop producing power, because they monitor all three phases and trip on voltage or phase imbalance. An open phase can come from a faulty connection, a blown fuse or a damaged wire anywhere between the point of common coupling and the point of connection. Take the loss of phase measurement on the PV side of the PV disconnect at the point of connection, and isolate all other loads from the array first. Loads between the PV system and the open point can change the open phase voltage and mislead the test. The inverters' output filters load the line capacitively, so some stray voltage adaptors may not null the open phase voltage. A correctly sized shunt resistor shows whether power potential is present, but it does not remove it. Follow all standard field safety precautions and use measurement equipment suited to the test.
 

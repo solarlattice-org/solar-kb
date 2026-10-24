@@ -21,7 +21,9 @@ claims:
   - src: src:sma-kb-troubleshooting-steps-for-tigo-ts4-r-rapid-shutdown-devices
     loc: sec=h1
     h: 93a1d9e35f6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The STP-US-10 article identifies the faulty part by which inverter
     won''t communicate after swapping, and the TS4-R swap persists the fault, but the passages never state
     the generic ''fault follows swapped part'' result as such.'
@@ -31,4 +33,5 @@ A known-good swap test finds a faulty part by trading a suspect component with t
 <!-- review notes
 - sentence 5: support check: partial - The swap with a known-good TS4-R and re-running detection is stated, and the fault persisting indicates a faulty device, but the text does not describe confirming a device failure versus a bad module through the swap (the panel is checked separately by Voc measurement).
 - sentence 7: support check: partial - The up-to-90 Vdc and 10 A warning and the connect-TS4-R-to-panel-first notice with permanent damage are stated, but the passages tie the voltage and current to mating or de-mating and inadvertent current to ground, not to 'even with rapid shutdown'.
+- sentence 7: review: partial - The connect-to-panel-first notice and the permanent-damage warning are stated, but the passage ties the up-to-90 Vdc and 10 A warning to mating or de-mating with inadvertent current to ground, not to 'even with rapid shutdown' (it says no voltage should…
 -->

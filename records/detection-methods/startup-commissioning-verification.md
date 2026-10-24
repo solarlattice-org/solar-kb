@@ -23,7 +23,9 @@ claims:
   - src: src:kb-solis-44002848827-epm-configuration-and-validation-guide
     loc: sec=h17
     h: fb7154fdef50
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Procedure (inverters off, clamp meter per phase, compare with
     EPM, readings match) is stated, but the passage doesn''t say a mismatch points to CT orientation/measurement
     problems, though that is implied by the step''s purpose.'

@@ -20,6 +20,8 @@ claims:
     loc: sec=h6
     h: 6eba64aae6ab
   review: drafted
+  review_note: 'review: partial - The passage gives 0 VAC on the line side for L1-L2, L1-N and L2-N with
+    the Main breaker off, but it never says this confirms the grid is isolated.'
 - claim_id: c2
   rel: produces
   target: meas:backup-load-voltage-present
@@ -32,7 +34,9 @@ claims:
   - src: src:sma-doc-smabackupselect-ia-en-11
     loc: sec=h85
     h: d64eb21249a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: produces
   target: meas:transfer-switch-audible-click
@@ -42,6 +46,8 @@ claims:
   - src: src:sma-doc-smabackupselect-ia-en-11
     loc: sec=h85
     h: d64eb21249a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A backup transition test simulates a grid outage to confirm that a battery-backed system moves its backed-up loads onto backup power and later returns to the grid. To start it, switch off the main breaker, the pre-meter fuse or the breaker feeding the transfer switch, then wait for the configured grid-fault delay. After the wait, measure AC voltage at the backup interface: the line side should read zero, and the load side should show normal line-to-line and line-to-neutral voltage. The transfer switch should click as it changes over, and every load on the backup circuit should be powered. When the grid breaker is switched back on, it should click again as it returns to grid-parallel operation. Before the test, check that islanding is enabled, that the number of transfer switches is set correctly, that the protected loads breaker is on, and that a backup-capable system mode is selected. The test shows the owner how the system will behave in a real outage, reveals backed-up load demand that is too high, and confirms the system works properly. Electrical layouts vary from site to site, so the operator must adapt the procedure to each one. After the test the inverter may wait several minutes before it reconnects to the grid. For anti-islanding checks, switch off the solar backfeed breaker or the solar AC disconnect so that absence of voltage can be measured correctly.

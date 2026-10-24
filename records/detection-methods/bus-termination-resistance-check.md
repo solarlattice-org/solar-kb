@@ -23,4 +23,5 @@ This check confirms that the RS-485 communication bus is terminated correctly. O
 - sentence 1: support check: partial - Passages show termination selector/DIP switches on communication boards, but nothing says a 'check' confirms correct termination.
 - sentence 3: support check: partial - First and last device must be terminated is stated, but nothing says intermediate devices should not be terminated.
 - sentence 6: support check: partial - u35 lists termination of communication buses and electricity supply as test points, but not the purpose of locating wiring/termination faults.
+- sentence 1: review: partial - Many passages show RS485 termination selector or DIP switches on communication boards, but none says what a check is for or that it confirms correct termination.
 -->

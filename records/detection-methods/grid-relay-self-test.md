@@ -21,7 +21,9 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=79.r9
     h: 24eb0aab7317
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: produces
   target: meas:self-test-status-stuck
@@ -31,6 +33,8 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=71.r3
     h: 3007b4ba272a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Before it connects to the utility grid, the inverter tests its own grid relays automatically. If a relay has trouble opening or closing, the inverter runs the test again. If the relays still do not work correctly, it stays off the grid for safety reasons. If the disturbance keeps coming back, the inverter goes into permanent operation inhibition. If it stays in the self-test status even with enough DC voltage, that points to a device fault. The test can find a grid-side relay that is stuck, which means the relay is defective. One manufacturer notes that the test does not check whether the relay switches on. Relay test disturbances can also come from incorrect AC installation, so a failed test does not always mean a bad relay. First reset the message. If it comes back, check that L, N and PE are cleanly connected at the inverter and in the sub-distribution, and confirm with a voltage test, especially between N and PE.
