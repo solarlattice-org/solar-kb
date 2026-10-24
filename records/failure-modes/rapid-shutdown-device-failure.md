@@ -155,7 +155,9 @@ claims:
   - src: src:sma-kb-advanced-troubleshooting-steps-for-jms-f-sunspec-rapid-shutdown-devices
     loc: sec=h1
     h: 9f825260fb2d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c13
   rel: detected_by
   target: method:voc-measurement
@@ -195,7 +197,9 @@ claims:
   - src: src:sma-kb-troubleshooting-steps-for-tigo-ts4-r-rapid-shutdown-devices
     loc: sec=h1
     h: 93a1d9e35f6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c17
   rel: distinguished_from
   target: fm:rapid-shutdown-signal-misconfiguration
@@ -252,7 +256,9 @@ claims:
   - src: src:sma-kb-installing-tigo-ts4-r-f-rapid-shutdown-devices-onto-pv-panels
     loc: sec=h1
     h: 32d44e3827b9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c22
   rel: mitigated_by
   target: mit:proper-installation

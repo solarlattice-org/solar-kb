@@ -153,7 +153,9 @@ claims:
   - src: src:yaskawa-xgi-1500-configuration-limits-low-grid-scr
     loc: sec=h1
     h: 54850814edb5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c8
   rel: mitigated_by
   target: mit:line-reactor
@@ -182,7 +184,9 @@ claims:
     h: 610708c02005
   review: drafted
   review_note: 'support check: partial - Isolation transformer is listed as a mitigation for common-bus
-    resonance, not specifically low-SCR grid resonance.'
+    resonance, not specifically low-SCR grid resonance.; review: partial - The passages list an isolation
+    transformer as a mitigation for resonance between Megapack and inverters on a common 480 V AC bus,
+    but they never mention low short-circuit ratio or grid resonance as such.'
 - claim_id: c10
   rel: mitigated_by
   target: mit:equipment-relocation

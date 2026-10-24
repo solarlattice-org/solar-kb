@@ -34,7 +34,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=15.r6
     h: ae8f6533c032
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: presents_as
   target: symptom:string-reverse-current
@@ -53,7 +55,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reflux alarm is tied to fewer modules in a string and wiring/configuration
     checks, but ''wrong module wiring'' as a cause is only implied by a check step, and shading/orientation
-    are other causes.'
+    are other causes.; review: partial - The String Current Reflux rows tell you to check for a string
+    with fewer modules and to check module wiring and configuration, but they never say wrong wiring causes
+    the alarm, so that causal link is only implied.'
 - claim_id: c4
   rel: detected_by
   target: method:polarity-measurement

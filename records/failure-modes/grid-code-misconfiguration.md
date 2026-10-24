@@ -184,7 +184,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=24.r1
     h: 08b17e435759
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   rel: mitigated_by
   target: mit:utility-consultation
@@ -202,7 +204,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: sec=h402
     h: b6e62ef0fd02
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: mitigated_by
   target: mit:enter-access-code
@@ -239,11 +243,14 @@ claims:
   - src: src:sma-doc-278742
     loc: tbl=39.r7
     h: f466fb31510c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This fault happens when the inverter's grid code, country data set or grid type is missing or does not match the country, the local standards or the site. A wrong setting can disturb the PV system and cause problems with the grid operator. The grid code changes grid-related parameters such as the power factor and reactive power settings, so the inverter can run with the wrong protection and control behavior. To confirm, open the Grid monitoring parameter group and check the Set country standard parameter. To fix it, select the country data set or grid code that fits the site and its application. After the first 10 operating hours, SMA inverters need the installer's SMA Grid Guard code before grid parameters can be changed, and a wrong code leaves them locked. If you are not sure which standard applies, contact the grid operator before you change the setting.
 
 <!-- review notes
 - sentence 3: support check: partial - Passages show grid-code-dependent PF and Q(U) parameter defaults, but not that the inverter runs with wrong protection and control behavior.
 - sentence 7: support check: partial - Passages say to contact the grid operator if unsure, but do not specify doing so before changing the setting (though implied by the selection context).
+- sentence 1: review: partial - The passages support a country data set, grid type or grid code that is wrong for the country, its standards or the system, but say nothing about a missing or unset code.
 -->

@@ -29,7 +29,9 @@ claims:
   - src: src:sungrow-sungrow-sg3425ud-mv-sg3600ud-mv-user-manual-ver113-202502
     loc: tbl=51.r5
     h: fe9e6fc08424
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: affects
   target: comp:communication-cable
@@ -51,7 +53,9 @@ claims:
   - src: src:sma-kb-sunny-home-manager-continuous-0w-watt-grid-feed-in-measured
     loc: sec=h1
     h: c24f2ca4ce92
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: caused_by
   target: stressor:weak-wireless-signal

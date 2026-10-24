@@ -159,4 +159,5 @@ This failure happens when an inverter is connected to a grid earthing system or 
 
 <!-- review notes
 - sentence 7: support check: partial - The passages support contacting the manufacturer for non-standard topologies and never changing earthing without approval. Contacting the utility is only for exact connection specifications, not specifically for non-standard topologies.
+- sentence 7: review: partial - The passages support contacting the manufacturer for non-standard topologies and never changing earthing without authority or engineer approval, but they mention the utility only for exact connection specifications in delta IT networks, not for non-standard topologies in general.
 -->

@@ -95,7 +95,9 @@ claims:
   - src: src:sma-kb-troubleshooting-steps-for-tigo-ts4-r-rapid-shutdown-devices
     loc: sec=h1
     h: 93a1d9e35f6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Wiring, resistor and serial-number errors are implied installation
     faults, but the passages never label them ''installation error''.'
 - claim_id: c8
@@ -156,7 +158,9 @@ claims:
   - src: src:sma-kb-troubleshooting-steps-for-tigo-ts4-r-rapid-shutdown-devices
     loc: sec=h1
     h: 93a1d9e35f6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   rel: presents_as
   target: symptom:control-fallback-operation

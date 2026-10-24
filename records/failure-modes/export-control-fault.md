@@ -23,7 +23,9 @@ claims:
   - src: src:abb-fimer-export-limitation-app-note-revd
     loc: sec=h57
     h: d6e8f90be636
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: presents_as
   target: symptom:zero-feed-in-reading
@@ -70,7 +72,9 @@ claims:
   - src: src:abb-fimer-export-limitation-app-note-revd
     loc: sec=h38
     h: 8034e54fab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: caused_by
   target: fm:energy-meter-installation-error
@@ -127,7 +131,9 @@ claims:
   - src: src:abb-fimer-export-limitation-app-note-revd
     loc: sec=h38
     h: 8034e54fab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: affects
   target: comp:inverter
@@ -206,4 +212,5 @@ Export limitation control uses a site meter to hold the power fed to the grid at
 
 <!-- review notes
 - sentence 1: support check: partial - Passages state control limits export below a limit via a set point, but no mention of a site meter in u2/u9/u4 and the fault meaning is inferred.
+- sentence 1: review: partial - The passages describe holding export at a set point below the export limit, but none of the cited passages mention a site meter, and the meaning of the fault is only inferred.
 -->

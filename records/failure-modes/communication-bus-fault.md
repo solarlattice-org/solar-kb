@@ -202,7 +202,9 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=68.r8
     h: e3fb0c52c01d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c11
   rel: mitigated_by
   target: mit:correct-crimping
@@ -224,4 +226,5 @@ On an RS485 line with no termination, signals reflect back from the open ends, a
 
 <!-- review notes
 - sentence 4: support check: partial - Passages list testing the terminating resistor and checking communication bus termination, but give no detail on confirming the fault.
+- sentence 4: review: partial - The passages are only headings and checklist items for testing the terminating resistor and checking bus termination and wiring; nothing presents them as steps to confirm this fault.
 -->

@@ -137,7 +137,9 @@ claims:
   - src: src:kb-sma-sbsexx-us-50-event-messages
     loc: sec=h76
     h: 98737cac3bc3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c11
   rel: affects
   target: comp:inverter
@@ -246,7 +248,9 @@ claims:
   - src: src:chint-cps-single-phase-hybrid-inverter-user-manual-apr-2026
     loc: tbl=62.r6
     h: af1b9f4fd00a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c19
   rel: mitigated_by
   target: mit:communication-cable-check
@@ -327,7 +331,10 @@ claims:
     h: ee2da61a2b27
   review: drafted
   review_note: 'support check: partial - u24 lists firmware compatibility among the checks and u35 says
-    to update firmware if necessary, but neither says an update resolves the fault.'
+    to update firmware if necessary, but neither says an update resolves the fault.; review: partial -
+    SMA says to check the firmware and update it if needed as part of the CAN test, and Solis lists firmware
+    compatibility among the checks, but neither passage says a firmware update fixes the BMS communication
+    fault.'
 - claim_id: c25
   rel: mitigated_by
   target: mit:inverter-restart

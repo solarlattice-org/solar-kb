@@ -39,7 +39,9 @@ claims:
   - src: src:solis-service-bulletin-arc-fault-detection-and-troubleshooting
     loc: sec=h2
     h: 8d8ea2c308c7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: affects
   target: comp:arc-fault-detector
@@ -137,7 +139,9 @@ claims:
   - src: src:solis-service-bulletin-arc-fault-detection-and-troubleshooting
     loc: sec=h2
     h: 8d8ea2c308c7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: detected_by
   target: method:tactile-inspection

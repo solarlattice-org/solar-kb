@@ -245,4 +245,6 @@ This fault is in the network setup, not the PV hardware: the inverter or data lo
 - sentence 3: support check: partial - IGMP snooping and the firewall are stated as causes, but router LAN ports shutting down for energy saving is not clearly stated as a cause.
 - sentence 5: support check: partial - IGMP snooping deactivation, not deactivating LAN ports and opening firewall ports are all stated, but energy-saving shutdown of ports is not explicitly stated.
 - sentence 7: support check: partial - u11 states the affected firmware versions and the fix by firmware update, but never calls the cause a firmware bug.
+- sentence 1: review: partial - The passages say Webconnect or portal communication errors probably come from network settings, but they never say 'not the PV hardware' and never mention data loggers, only inverters.
+- sentence 7: review: partial - The affected STP50-41 firmware versions, the DNS failure over LAN and the fix by firmware update are all stated, but the article never calls the cause a firmware bug.
 -->

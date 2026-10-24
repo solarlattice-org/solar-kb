@@ -123,4 +123,5 @@ Power line communication interference happens when the data signal between devic
 - sentence 1: support check: partial - Passage covers EMF from AC cables interfering with network cable data, not specifically PLC signals between devices.
 - sentence 2: support check: partial - The no-valid-signal communication messages are present, but not linked to PLC interference or being 'usual'.
 - sentence 6: support check: partial - Same-transformer trench rule is stated, but trays from different transformers require 0.5 m horizontal distance, which is consistent with 'apart'; 'fed from' wording is minor.
+- sentence 1: review: partial - The passage says AC cable electromagnetic fields disturb data on network cables, but it does not frame this as power line communication (PLC) interference.
 -->

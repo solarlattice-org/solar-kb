@@ -47,7 +47,9 @@ claims:
   - src: src:sma-kb-stp-us-10-swdm-display-swap-troubleshooting-guidance-for-inverters-reporting-to-a-c
     loc: sec=h1
     h: d46a4d414b21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: affects
   target: comp:inverter-display
@@ -136,7 +138,9 @@ claims:
   - src: src:sma-kb-stp-us-10-swdm-display-swap-troubleshooting-guidance-for-inverters-reporting-to-a-c
     loc: sec=h1
     h: d46a4d414b21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: mitigated_by
   target: mit:communication-cable-check
@@ -207,4 +211,6 @@ A daisy-chain communication break happens when one link in a chain of networked 
 <!-- review notes
 - sentence 1: support check: partial - The passages cover inverters not reporting and a bad link interrupting the chain, but do not define it as a single failed link causing downstream inverters to stop reporting; that framing is a generalization.
 - sentence 7: support check: partial - Isolated repeaters and shielded twisted cable are suggested, but the passages do not tie them specifically to 'long' chains; they relate to multiple inverters and noise, with only a length limit stated.
+- sentence 1: review: partial - The passages cover inverters not reporting to the cluster controller and one unit interrupting the chain, but do not say outright that a single failed link makes the downstream inverters stop reporting.
+- sentence 7: review: partial - Isolated repeaters and well-twisted shielded cable are both recommended, but the passages tie repeaters to daisy-chaining multiple inverters and noise, not specifically to long chains (length is only covered by a 1000 ft limit).
 -->

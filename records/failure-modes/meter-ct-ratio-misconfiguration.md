@@ -42,7 +42,10 @@ claims:
     h: e808366309c0
   review: drafted
   review_note: 'support check: partial - Passages say the ratio must match the installed CT (e.g. 300/5A,
-    150A:5A), but do not say misconfiguration affects the current sensor component itself.'
+    150A:5A), but do not say misconfiguration affects the current sensor component itself.; review: partial
+    - The note (the ratio must match the installed CT, e.g. 150A:5A or 300/5A) is supported, but the passages
+    say only that wrong readings show on the meter, not that the misconfiguration affects the current
+    sensor itself.'
 - claim_id: c3
   rel: presents_as
   target: symptom:unrealistic-meter-values
@@ -91,7 +94,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
     loc: sec=h249
     h: ef5f70060277
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   rel: detected_by
   target: method:meter-configuration-check

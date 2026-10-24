@@ -173,7 +173,9 @@ claims:
   - src: src:solis-plc-transmitter-crosstalk-application-note-ginlong-solis-us-v5-0
     loc: sec=h6
     h: f0f3257eb884
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c14
   rel: mitigated_by
   target: mit:proper-cable-routing
@@ -198,11 +200,14 @@ claims:
   - src: src:solis-plc-transmitter-crosstalk-application-note-ginlong-solis-us-v5-0
     loc: sec=h7
     h: 0de98e74a54c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Crosstalk happens when a power line communication signal from one rapid shutdown transmitter is induced onto DC conductors that belong to another transmitter. It shows up on sites with several transmitters, often built into parallel inverters, where DC conductors from different transmitters are bundled or run close together. Module-level receivers then shut down even though no shutdown was commanded. This causes lost output, low production, inverter shutdowns and repeated arc-fault alarms. If the crosstalk is severe, receivers can overheat, and both transmitters and receivers can be damaged. On sites with several transmitters, test the rapid shutdown system during commissioning and watch inverter performance for several days afterward. The best fix is a single transmitter for the whole site. Otherwise, split the array into separated blocks, each with its own inverters, DC wiring and transmitter. Keep wiring for different transmitters well apart, keep shared runs short, and route each homerun's positive and negative conductors together with a light twist.
 
 <!-- review notes
 - sentence 3: support check: partial - Unintended receiver shutdown and lost output/low production are stated; inverter shutdowns and arc-fault alarms are listed as costs but not explicitly as crosstalk effects.
 - sentence 4: support check: partial - Severe crosstalk can overheat receivers is stated; damage to transmitters and receivers is mentioned but not explicitly conditioned on severity.
+- sentence 4: review: partial - Severe crosstalk causing receivers to overheat is stated, but damage to transmitters and receivers appears only as a possible cost and is not tied to severity.
 -->

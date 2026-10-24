@@ -134,7 +134,9 @@ claims:
   - src: src:kb-solis-44002860963-solis-inverters-and-grid-earthing-systems-general-connection-guidance
     loc: sec=h14
     h: a99e703fbd5d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c9
   rel: mitigated_by
   target: mit:earth-conductor-last-to-break
@@ -150,3 +152,7 @@ claims:
     earthing explicitly.'
 ---
 Inadequate earthing means the protective grounding conductor is missing, not connected correctly, or the site grounding does not meet code. Some inverters report it as an event saying the PE connection is missing and asking you to check the connection. A poor ground or a bonding violation can also stop surge protection devices from working as specified. At commissioning, confirm that the grounding conductor is tied to ground, for example at a grounding busbar or foundation electrode. On TN systems, measure to confirm that the neutral and grounding conductors are conductively connected. To fix it, make sure the grounding conductor is connected correctly, and check that all grounding and bonding meet NEC, CEC and local rules. Do not change earthing arrangements without approval from the electrical authority or a qualified engineer.
+
+<!-- review notes
+- sentence 4: review: partial - The test-point rows state that the grounding conductor must be grounded, for example via a grounding busbar or foundation ground electrode, but the passages never say this check is done at commissioning.
+-->

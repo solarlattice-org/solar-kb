@@ -164,7 +164,9 @@ claims:
   - src: src:chint-cps-3phs-inverter-site-design-guidelines
     loc: sec=h3
     h: ed1216ee4475
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c13
   rel: mitigated_by
   target: mit:full-rated-breaker
@@ -173,6 +175,8 @@ claims:
     loc: sec=h3
     h: ed1216ee4475
   review: drafted
+  review_note: 'review: partial - The passage lists 100% rated breakers as a design option to control
+    (lower) breaker rating and wire size, but does not say they reduce thermal nuisance tripping.'
 - claim_id: c14
   attr: temperature_rise
   value:
@@ -186,11 +190,14 @@ claims:
   - src: src:chint-cps-3phs-inverter-site-design-guidelines
     loc: sec=h1
     h: 6bc3042240d9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The AC breaker trips below its nominal current because it is too hot to shed heat, even though there is no real overcurrent. Common causes are a hot enclosure from sun and conductor heat, and breakers mounted close together while several inverters feed at full current. The temperature inside the enclosure can be well above the outside air temperature, especially in enclosures with large east- or west-facing surfaces. To confirm, measure the load current through the breaker against its rating and check the temperature inside the enclosure. Also check that the breaker rating is not below what the inverter manufacturer recommends. To fix it, size the breaker with the temperature derate applied, or space the breakers further apart. Other options are cooling or reorienting the enclosure, or using electronic trip or 100% rated breakers.
 
 <!-- review notes
 - sentence 1: support check: partial - Tripping below nominal current from heat is stated, but 'even though there is no real overcurrent' is not explicit.
 - sentence 4: support check: partial - Passages mention verifying current against rating and enclosure temperature vs OSAT, but don't explicitly prescribe checking enclosure temperature as a confirmation step.
+- sentence 4: review: partial - Solis supports checking the load current against the breaker rating, but the passages only describe the enclosure temperature as a design factor and never name measuring it as a confirmation step.
 -->

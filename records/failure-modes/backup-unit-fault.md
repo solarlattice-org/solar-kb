@@ -20,7 +20,9 @@ claims:
   - src: src:kb-sma-sbsxx-us-10-event-messages
     loc: sec=h1
     h: a056be6df42b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: affects
   target: comp:transfer-switch-controller
@@ -151,7 +153,9 @@ claims:
     h: 1f509fcb78de
   review: drafted
   review_note: 'support check: partial - OV-Vbackup backup overvoltage messages exist, but they are inverter
-    alarms and the passages do not tie them to the automatic backup unit fault.'
+    alarms and the passages do not tie them to the automatic backup unit fault.; review: partial - The
+    Solis rows describe a backup overvoltage (OV-VBackup) alarm on the inverter''s backup port, but none
+    of them connect it to an automatic backup unit or transfer switch fault.'
 - claim_id: c12
   rel: detected_by
   target: method:backup-transition-test
@@ -232,7 +236,9 @@ claims:
   - src: src:kb-sma-bu-slct-us-50-troubleshooting
     loc: sec=h1
     h: 5233ab3eb379
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c18
   rel: mitigated_by
   target: mit:wiring-terminal-check
@@ -291,6 +297,8 @@ claims:
   - src: src:kb-sma-sbsxx-us-10-event-messages
     loc: sec=h1
     h: a056be6df42b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 This fault covers problems in the automatic transfer switch or backup module that moves loads to the battery-backup supply when the grid fails. Typical signs are event messages for a faulty relay, the bimetal switch, N-PE monitoring, overtemperature, or lost communication with the backup unit controller. In the field, the switch may not transfer when the grid fails, or it may click over while the backup loads still get no power. To confirm, simulate a grid failure by switching off the pre-meter fuse, wait for the set delay and listen for the transfer click. Check the transfer switch fuses and the B6 pre-fuse, make sure the backup type is set to automatic backup operation, and make sure the SPS IN and SPS OUT cables are not swapped. Check that the communication cable meets its requirements, then run a communication test; for backup overvoltage, check the backup port wiring and restart. If the relay or other hardware in the transfer switch is faulty, contact the manufacturer of the switching device.

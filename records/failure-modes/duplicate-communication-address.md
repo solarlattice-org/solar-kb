@@ -109,4 +109,5 @@ Every inverter, meter or logger on a shared Modbus RS485 bus needs its own slave
 <!-- review notes
 - sentence 4: support check: partial - Passages say the default address is 01 and addresses are set for multi-inverter setups, but they don't say that units must be readdressed because they ship identical (that is implied only).
 - sentence 5: support check: partial - Passages say to check whether machines share an address, but reading each device's address setting on the bus isn't explicitly stated.
+- sentence 4: review: partial - The passages give the default address as 01 and say to set addresses when multiple inverters share one monitor, but they never say units must be readdressed because they ship with identical addresses; that is only implied.
 -->

@@ -79,7 +79,9 @@ claims:
   - src: src:sma-kb-event-9354-with-sbsx-x-10-us-10
     loc: sec=h1
     h: aaf5531ba5c2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: mitigated_by
   target: mit:contact-installer
@@ -91,6 +93,8 @@ claims:
   - src: src:sma-kb-event-9354-with-sbsx-x-10-us-10
     loc: sec=h1
     h: aaf5531ba5c2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The system that controls the battery's temperature has reported itself as defective. On SMA storage inverters it shows as event 9353, which points to a problem with the battery. A related event says the battery heating procedure did not succeed. The usual cause is the battery firmware, so first check whether newer battery firmware is available and install it. For BYD batteries, the firmware should be version 3.013.C or later. If the message comes back after the update, contact the Service or the battery manufacturer. Owners should contact their installer.

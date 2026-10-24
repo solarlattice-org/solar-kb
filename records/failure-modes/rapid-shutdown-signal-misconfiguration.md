@@ -131,4 +131,5 @@ This fault happens when the inverter's rapid shutdown operating mode does not ma
 - sentence 1: support check: partial - Mode must be selected in accordance with the disconnection unit used, but passages don't describe a fault occurring on mismatch.
 - sentence 5: support check: partial - Parameters and the requirement to connect an initiator to GSI are stated, but not a confirmation procedure for a fault.
 - sentence 6: support check: partial - Setting the mode parameter and a compatibility list are mentioned, but not that only listed devices should be used as a fix.
+- sentence 1: review: partial - The passages say the mode must be chosen to match the DC disconnection unit, but they never describe a mismatch as a fault that happens.
 -->

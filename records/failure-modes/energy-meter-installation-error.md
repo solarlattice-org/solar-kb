@@ -104,7 +104,9 @@ claims:
   - src: src:sma-kb-sunny-portal-energy-balance-graph-issues
     loc: sec=h1
     h: 671005070a40
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c8
   rel: detected_by
   target: method:phase-current-measurement
@@ -153,6 +155,9 @@ claims:
     loc: sec=h11
     h: 1eea811f0de1
   review: drafted
+  review_note: 'review: partial - The Solis passage supports correcting the meter''s phase rotation and
+    then checking that the inverter grid-port phases match, but it describes phase-rotation miswiring,
+    not an installation position error, so the link to this failure mode is not stated.'
 - claim_id: c12
   rel: distinguished_from
   target: fm:meter-ct-ratio-misconfiguration
@@ -177,4 +182,5 @@ This fault means the energy meter or its current transformers were installed wro
 <!-- review notes
 - sentence 2: support check: partial - Unrealistic values and night grid feed-in are both given as symptoms, but 'usual sign' ranking is not stated.
 - sentence 6: support check: partial - u35 says PF outside ±0.9 to ±1 means check voltage ref and CTs are matched phase-to-phase; 'suggests' is close, but it frames it as a check, not a diagnosis of swapped phases here.
+- sentence 7: review: partial - Reconnecting and recommissioning is supported, but the Solis phase-alignment check applies to hybrid systems in Unbalanced Mode, and the sentence generalizes it to all three-phase hybrid systems.
 -->

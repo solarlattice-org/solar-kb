@@ -72,15 +72,6 @@ claims:
     loc: sec=h194
     h: 3f7cf298cc7a
   review: drafted
-- claim_id: c5
-  rel: presents_as
-  target: symptom:ac-voltage-mismatch
-  note: A neutral connected to an inverter in 240 V high-leg operation causes erroneous measurements.
-  cite:
-  - src: src:solis-s6-gc-30k-lv-us-30k-high-side-connection
-    loc: sec=h3
-    h: '831606556e44'
-  review: drafted
 - claim_id: c6
   rel: detected_by
   target: method:inverter-display-check
@@ -134,7 +125,9 @@ claims:
   - src: src:chint-cps-xfmr-winding-compatibility-rev-2026-03-25
     loc: tbl=1.r2
     h: 4d88cb0108c9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A missing or floating neutral means the neutral conductor is absent or not referenced correctly where the inverter needs it, or it is connected where the inverter needs it left out. In most countries three-phase inverters need a neutral connection, and some high-leg delta setups also require a neutral conductor. Some large inverters cannot run on a wye service whose neutral is fully insulated. Check that the transformer winding type is one the inverter supports. If line or neutral is not connected, the inverter waits for grid voltage and reports an installation failure on the grid connection. The reverse also happens: in 240 V high-leg operation, a neutral connected to the inverter causes wrong measurements. Disconnect that neutral and remove it from the wire box, or tape and secure it if it stays inside. To fix the fault, check that the neutral and line conductors are on the correct terminals, check the grid and the fuses, and make sure the inverter's neutral setting matches the actual wiring.
 
@@ -142,4 +135,6 @@ A missing or floating neutral means the neutral conductor is absent or not refer
 - sentence 1: support check: partial - Both missing neutral and neutral wrongly connected are covered, but 'not referenced correctly' (floating) is only loosely supported, and the definition is synthesized.
 - sentence 3: support check: partial - XGI 1500 cannot run on wye with fully-insulated neutral is stated, but 'some large inverters' is generalized and the check advice is not stated.
 - sentence 6: support check: partial - Terminal checks and grid/fuse checks are supported, but the neutral setting only appears as a setting description, not as a fix step for this fault.
+- c5 dropped at review: The passage says erroneous measurements come from a neutral that IS connected in 240V high-leg operation, which is the opposite of a missing or floating neutral, so it does not support this failure mode presenting as a voltage mismatch.
+- sentence 1: review: partial - The passages cover a neutral that is required but not connected, and a neutral that must not be connected in 240V high-leg setups, but 'not referenced correctly' (floating) is not stated.
 -->

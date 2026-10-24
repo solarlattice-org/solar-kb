@@ -245,4 +245,5 @@ Module-level rapid shutdown receivers only stay on while they keep receiving a h
 
 <!-- review notes
 - sentence 4: support check: partial - Low voltage under 1 V per module is stated, but array producing nothing is not explicitly stated.
+- sentence 4: review: partial - Very low string voltage (under 1 V, or 0.6-0.7 V per module) is stated, but no passage says the array produces nothing.
 -->

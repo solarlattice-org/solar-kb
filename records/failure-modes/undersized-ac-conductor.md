@@ -55,7 +55,9 @@ claims:
   - src: src:sma-kb-background-information-about-grid-incidents
     loc: sec=h1
     h: af4516340071
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: caused_by
   target: stressor:poor-connector-contact
@@ -65,7 +67,9 @@ claims:
   - src: src:sma-kb-background-information-about-grid-incidents
     loc: sec=h1
     h: af4516340071
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: affects
   target: comp:ac-cable
@@ -143,7 +147,9 @@ claims:
   - src: src:sma-kb-background-information-about-grid-incidents
     loc: sec=h1
     h: af4516340071
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: detected_by
   target: method:grid-voltage-measurement
@@ -205,7 +211,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - SMA says to optimize connection conditions, naming trapped insulation,
     loose screws and poorly assembled connection points as causes, but it does not explicitly say to fix
-    them.'
+    them.; review: partial - SMA names trapped insulation, loose screws and poorly assembled AC connection
+    points as transition resistances that also affect voltage rise and says connection conditions must
+    be optimized, but it lists these as a separate cause from an undersized cross-section, so…'
 - claim_id: c15
   rel: mitigated_by
   target: mit:transformer-tap-adjustment
@@ -246,4 +254,5 @@ When the AC conductor between the inverter and the feed-in point is too small or
 <!-- review notes
 - sentence 4: support check: partial - The passages say to calculate voltage rise per component and to calculate and/or measure the drop at rated operation, but they do not say to compare it with the voltage at the feed-in point.
 - sentence 5: support check: partial - Correct conductor sizing and center-feeding are supported, but the passages do not say to tighten or remake terminals, only to optimize the connection conditions, and center-feeding is not limited to long branches.
+- sentence 4: review: partial - The passages back calculating voltage rise for each component or wire section and calculating and/or measuring the voltage drop at rated operation, but none of them say to compare that drop with the voltage at the feed-in point.
 -->

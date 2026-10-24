@@ -43,7 +43,9 @@ claims:
   - src: src:sma-kb-stpxx-50-communication-interrupt-with-ennexos-portal-after-fw-update
     loc: sec=h1
     h: 9baa54672267
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: presents_as
   target: symptom:spurious-fault-event
@@ -124,7 +126,9 @@ claims:
   - src: src:sma-doc-259761
     loc: tbl=71.r5
     h: acfa537571e5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: mitigated_by
   target: mit:retry-update
@@ -134,6 +138,9 @@ claims:
     loc: tbl=65.r5
     h: daed1a94a969
   review: drafted
+  review_note: 'review: partial - The row supports repeating the update when the update file is defective,
+    but a defective update file is a failed update, not clearly a defect in the device firmware, so the
+    mitigation link to this failure mode is only loosely…'
 - claim_id: c11
   rel: mitigated_by
   target: mit:inverter-restart
@@ -181,4 +188,6 @@ A firmware defect is a fault in the device software that makes an inverter behav
 - sentence 1: support check: partial - u38 and u35 show software problems and bugfixes that cause wrong behavior, but nothing says the hardware is fine or defines a firmware defect.
 - sentence 4: support check: partial - u9 and u22 support checking event logs and firmware version and toggling the Modbus TCP server before checking cabling, but the passages do not say that toggling shows whether the issue is software-side.
 - sentence 5: support check: partial - u38 gives an AC reset followed by a firmware update, and u4 says to repeat the update for a defective file, but calling this the usual fix for every firmware defect goes beyond the passages.
+- sentence 1: review: partial - The passages show software problems and firmware bugs causing false trips and no feed-in, but nothing says the hardware is fine or defines a firmware defect.
+- sentence 4: review: partial - The SMA article supports collecting event logs and the firmware version, and toggling Modbus TCP Server On before checking cabling, but it says the toggle tests whether the problem is only with Modbus TCP communications, not whether it is software-side.
 -->
