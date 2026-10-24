@@ -18,7 +18,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nabcep-pv-resource-guide-1
     loc: sec=4.2.1
     h: ca0cc49e5c64
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Working space clearance is the clear area that must be kept around electrical equipment so installers and maintenance staff can operate and service it safely. For PV systems, getting proper working space is the first priority when choosing where to put balance of system hardware, as NEC 110.26 requires. In general, the clearance in front of equipment that may be serviced while energized must be at least 3 ft deep. The width must be 30 in or the width of the equipment, whichever is greater. From 150 V to 600 V, more clearance is needed when live parts face grounded parts or when there are live parts on both sides of the space. For equipment running below 60 V dc, the authority having jurisdiction may grant special permission for smaller spaces, but you must get that permission before mounting the equipment. The working space must not be used for storage. The fire code also sets a minimum height of 78 inches in front of electrical service equipment.
 
