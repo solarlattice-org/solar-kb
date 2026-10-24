@@ -244,6 +244,10 @@ enums:
       web-page: {description: A knowledge-base article or other web page.}
       video: {description: A video or its transcript.}
       dataset: {description: "A table or list published as data (CEC lists, SAM libraries)."}
+      book: {description: A textbook or handbook.}
+      article: {description: "A knowledge-base or support article (one topic, short)."}
+      training: {description: "Training material: a course lesson, slides or a recorded session."}
+      other: {description: Any other kind of source.}
   OrgKind:
     permissible_values:
       manufacturer: {}
