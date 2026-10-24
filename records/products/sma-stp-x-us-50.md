@@ -65,4 +65,5 @@ The Sunny Tripower X US-50 is an SMA family of three-phase PV string inverters. 
 
 <!-- review notes
 - sentence 1: support check: partial - The four models are listed as a family, but 'three-phase' and 'PV string inverters' are not stated (only 'Inverter'/'PV inverter').
+- sentence 1: review: partial - The passages list the four models under Sunny Tripower X and call it an inverter, but they never say it is three-phase or a PV string inverter.
 -->

@@ -96,7 +96,9 @@ claims:
   - src: src:sma-doc-259463
     loc: tbl=10.r3
     h: 5c872b7c72fb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c8
   rel: incompatible_with
   target: prod:sma-sunny-boy-storage
@@ -116,7 +118,9 @@ claims:
   - src: src:sma-doc-275857
     loc: tbl=5
     h: 3616ff4f03a2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: uses_protocol
   target: proto:can-bus

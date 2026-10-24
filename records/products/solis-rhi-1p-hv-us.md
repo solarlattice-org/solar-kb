@@ -133,7 +133,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: tbl=16.r17
     h: '622578269471'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c10
   rel: uses_protocol
   target: proto:rs485
@@ -174,7 +176,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: tbl=13.r21
     h: 4c447048f16d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   rel: implements
   target: func:dc-arc-fault-protection
@@ -209,4 +213,5 @@ The Solis RHI-1P(5-10)K-HVES-5G-US is a family of single-phase hybrid inverters 
 
 <!-- review notes
 - sentence 1: support check: partial - Single-phase and the three models are shown, but hybrid and US market are not stated in the passages.
+- sentence 1: review: partial - The three models and single-phase operation (1Ф/PE) appear in the passages, but they do not state that the family is hybrid or that it is for the US market.
 -->

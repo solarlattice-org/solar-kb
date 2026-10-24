@@ -59,7 +59,9 @@ claims:
     h: e4d536c4ed79
   review: drafted
   review_note: 'support check: partial - Passage says classified under Class 4C2 per EN 60721-3-4, not
-    ''certified''; and cites EN, not IEC explicitly.'
+    ''certified''; and cites EN, not IEC explicitly.; review: partial - The passage says the inverter
+    is classified under Class 4C2 per EN 60721-3-4 and suits chemically active environments, but it does
+    not say the product is ''certified'', and it names EN rather than IEC 60721-3-4.'
 - claim_id: c5
   rel: compatible_with
   target: prod:sma-hybrid-controller

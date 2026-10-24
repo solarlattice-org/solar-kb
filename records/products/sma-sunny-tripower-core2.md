@@ -176,4 +176,5 @@ The Sunny Tripower CORE2, also called STP110-60, is a three-phase string inverte
 
 <!-- review notes
 - sentence 1: support check: partial - The passages show STP110-60 is the CORE2 and that it is an SMA string inverter, but they do not say it is three-phase.
+- sentence 1: review: partial - The passages confirm that STP110-60 is the CORE2 and that it is an SMA string inverter, but they never say it is three-phase.
 -->

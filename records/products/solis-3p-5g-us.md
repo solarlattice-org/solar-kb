@@ -34,7 +34,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: sec=h292
     h: 817103f1f8e5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Utility interactive PV inverter is stated, but no mention of
     absence of storage; grid-tied-without-storage is an inference.'
 - claim_id: c3
@@ -103,7 +105,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=17.r1
     h: a520668fac15
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   attr: nominal_voltage
   value:
@@ -188,7 +192,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=17.r17
     h: 4d752c79d763
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c13 (same source; check the conditions); possible conflict with
     c14 (same source; check the conditions); possible conflict with c15 (same source; check the conditions)
 - claim_id: c13
@@ -204,7 +210,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=19.r17
     h: c80f1cba003b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
     c14 (same source; check the conditions); possible conflict with c15 (same source; check the conditions)
 - claim_id: c14
@@ -217,7 +225,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=18.r17
     h: ac5bfc7d3abf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
     c13 (same source; check the conditions); possible conflict with c15 (same source; check the conditions)
 - claim_id: c15
@@ -236,7 +246,9 @@ claims:
   - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
     loc: tbl=16.r18
     h: c2c06e681553
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
     c13 (same source; check the conditions); possible conflict with c14 (same source; check the conditions)
 ---

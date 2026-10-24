@@ -45,7 +45,9 @@ claims:
   - src: src:kb-sma-shpxxxus21-modbus-function
     loc: sec=front
     h: 4ba2a3b689fc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Only a title of a ''Modbus function'' page for US-21 is given;
     the content isn''t shown, though it implies Modbus use.'
 - claim_id: c4
@@ -57,7 +59,9 @@ claims:
   - src: src:sma-kb-power-loss-of-the-sunny-highpower-peak3-when-q-on-demand-is-applied
     loc: sec=h1
     h: 3566da50be0f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: implements
   target: func:remote-firmware-update
@@ -70,7 +74,9 @@ claims:
   - src: src:kb-sma-shpxxxus21-automatic-firmware-update
     loc: sec=front
     h: 0fbb0ba90e0a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Automatic updates via Data Manager and manual update via UI or
     USB are stated, but ''remote'' and the US-21 automatic update claim rest only on a title; the Data
     Manager link isn''t specific to US-21.'
@@ -92,4 +98,5 @@ The Sunny Highpower PEAK3 is a family of SMA string inverters. It includes the S
 - sentence 1: support check: partial - The SHP 100/150-20, 100/150/172/180-21 and US-21 models are listed, but 'family of SMA string inverters' is only implied (string inverters category appears in the article footer for other docs, not in these passages).
 - sentence 3: support check: partial - Modbus TCP and the power cycle and toggle remedies are stated, but firmware update is not given as a fix for this specific link loss; it is only a general installer step.
 - sentence 6: support check: partial - Firmware 3.11.33.R check applies to sporadic occurrence and the DC check follows a persisting event after a 5-minute power cycle; the statement merges these and omits that the firmware check is for the sporadic case.
+- sentence 1: review: partial - All the listed -20, -21 and US-21 models appear under the Sunny Highpower PEAK3 name, but no passage calls them string inverters.
 -->

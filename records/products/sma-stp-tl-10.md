@@ -31,7 +31,9 @@ claims:
   - src: src:sma-doc-278405
     loc: tbl=39.r14
     h: 5e7a773094cc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: uses_protocol
   target: proto:speedwire
@@ -84,4 +86,5 @@ The Sunny Tripower 8000-17000TL-10 is an SMA three-phase PV inverter family made
 <!-- review notes
 - sentence 1: support check: partial - Passages list the five models as archived manuals from SMA, but 'three-phase' is not stated.
 - sentence 6: support check: partial - Spare-part sets for power, AC and DC filter assemblies and an SPD figure using the STP XX000TL-10 family are present, but the passages don't say SMA sells them or that it is a retrofit manual.
+- sentence 1: review: partial - The five models and their archived manuals are in the passages, but nothing calls the family three-phase.
 -->

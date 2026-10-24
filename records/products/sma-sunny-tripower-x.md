@@ -237,7 +237,9 @@ claims:
   - src: src:sma-doc-278883
     loc: tbl=1.r3
     h: a450206e07f1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c23
   attr: max_input_current
   value:
@@ -284,7 +286,9 @@ claims:
   - src: src:sma-doc-278883
     loc: tbl=1.r15
     h: bbd06427f99a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c27
   attr: efficiency
   value:
@@ -308,7 +312,9 @@ claims:
   - src: src:sma-doc-278883
     loc: tbl=1.r20
     h: f5796fa11b4f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - European efficiency values 97.6–98.0% are listed, but the rows
     are ambiguous about which value applies to which model; range plausible though.; possible conflict
     with c27 (same source; check the conditions)'
@@ -332,4 +338,5 @@ The Sunny Tripower X is a family of three-phase string inverters for the interna
 
 <!-- review notes
 - sentence 1: support check: partial - Type designations and four models are supported, but 'three-phase string inverters for the international market' is not clearly stated (only an output row '3 / 2').
+- sentence 1: review: partial - The four models and the STP 12-50 to 25-50 designations are stated, but 'three-phase' rests only on an unexplained '3 / 2' output row, and 'string inverters' and 'international market' are not in the passages.
 -->

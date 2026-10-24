@@ -36,7 +36,9 @@ claims:
   - src: src:sma-kb-ev-charger-how-to-add-the-sunny-home-manager-2-0-as-energy-meter
     loc: sec=h1
     h: 48786c69352f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - EV Charger is shown searching for SMA Speedwire devices to add
     the HM, implying Speedwire, but it''s not stated outright.'
 - claim_id: c4
@@ -107,7 +109,9 @@ claims:
   - src: src:sma-doc-259463
     loc: tbl=13.r3
     h: 174f0e41ed72
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: compatible_with
   target: prod:sma-sunny-tripower-smart-energy
@@ -145,7 +149,9 @@ claims:
   - src: src:sma-kb-sunny-home-manager-hm-20-functions-of-the-radio-controlled-socket
     loc: sec=h1
     h: 62efe9abed5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   rel: compatible_with
   target: prod:avm-fritz-dect-210

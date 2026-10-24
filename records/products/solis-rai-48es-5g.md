@@ -41,7 +41,9 @@ claims:
   - src: src:kb-solis-44002687170-solis-meter-and-ct-compatibility-guide
     loc: sec=h1
     h: 0caa9c940137
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: compatible_with
   target: prod:eastron-esct-ta16
@@ -59,7 +61,9 @@ claims:
   - src: src:kb-solis-44002687170-solis-meter-and-ct-compatibility-guide
     loc: sec=h1
     h: 0caa9c940137
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: compatible_with
   target: prod:acrel-acr10r-16dte4
@@ -86,7 +90,9 @@ claims:
   - src: src:kb-solis-44002687170-solis-meter-and-ct-compatibility-guide
     loc: sec=h1
     h: 0caa9c940137
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The compatible meters are described as providing export power
     limitation and RAI-3K-48ES-5G is listed with them. The guide doesn''t state the RAI itself implements
     export limitation, but the external meter/CT need is supported.'
@@ -122,7 +128,9 @@ claims:
   - src: src:kb-solis-44002485763-procedure-for-local-hmi-dsp-update
     loc: sec=h1
     h: 7bf9db597d18
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - u28 covers the update stick, 4-pin green port, installer-only
     sticks and HMI.bin only for RAI-3K-48ES-5G. It says the stick is needed for local updates but doesn''t
     say the inverter "requires" it as such.'
@@ -134,4 +142,5 @@ The Solis RAI-48ES-5G, printed as RAI-3K-48ES-5G, is a Solis AC-coupled storage 
 - sentence 3: support check: partial - The SDM120CTM with ESCT-TA16 100A/100mA, and the Acrel ACR10R16DTE/DTE4 with XH-SCT-T16/120, are listed with hybrid control, export limitation and consumption monitoring. The ACR10R16DTE4 entry doesn't name the CT explicitly, though the CT entry covers both Acrel meters.
 - sentence 5: support check: partial - u1 shows only the title and the kb_folder "Advanced Settings", with no body text. That suggests but doesn't state the menu location for enabling charging times.
 - sentence 6: support check: partial - u28 supports the update tool in the 4-pin green port, HMI.bin only for RAI-3K-48ES-5G, and doing DSP before HMI. DSP before HMI is only a recommendation, not a requirement.
+- sentence 1: review: partial - The passages list RAI-3K-48ES-5G as a hybrid inverter and mention RAI/S5 AC-coupled inverters, but they never call this model an AC-coupled storage inverter, and the front-matter passage is only a title.
 -->

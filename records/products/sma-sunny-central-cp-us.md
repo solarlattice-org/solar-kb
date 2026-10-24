@@ -91,4 +91,5 @@ The Sunny Central CP-US is a family of SMA central PV inverters for the US and C
 <!-- review notes
 - sentence 1: support check: partial - CP-US/CA models are listed as Sunny Central inverters from SMA, with US/CA in names, but 'family for US and Canadian markets' and central PV are not explicitly stated.
 - sentence 5: support check: partial - Source says 'Hybrid Controller (optional): ... Sunny Central' but it's unclear it's a data sheet listing optional devices; the text is ambiguous.
+- sentence 1: review: partial - The passage lists the SC 500CP-US/CA through 900CP-US/CA models among SMA's past Sunny Central inverters, but it never says they are PV inverters or that they target the US and Canadian markets.
 -->

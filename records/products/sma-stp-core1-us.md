@@ -80,3 +80,7 @@ claims:
   review: drafted
 ---
 The Sunny Tripower CORE1-US is an SMA inverter family for the US market, covering the STP 33-US-41, STP 50-US-41 and STP 62-US-41 models plus the earlier STP 50-US-40. Replacement assemblies, such as the communication assembly, come as SMA spare-part sets, and some sets are shared with the Sunny Tripower CORE1.
+
+<!-- review notes
+- sentence 1: review: partial - The passages list STP 33/50/62-US-41 and STP 50-US-40 as Sunny Tripower CORE1-US, but they do not say it is for the US market or that STP 50-US-40 is the earlier model.
+-->

@@ -50,7 +50,9 @@ claims:
   - src: src:sma-doc-259463
     loc: tbl=24.r2
     h: 48509a543e60
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c4
     (same source; check the conditions); possible conflict with c5 (same source; check the conditions)
 - claim_id: c4
@@ -98,7 +100,9 @@ claims:
   - src: src:sma-kb-can-devices-with-bluetooth-interface-communicate-with-the-sunny-boy-storage
     loc: sec=h1
     h: 9d9715693e01
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: uses_protocol
   target: proto:wifi

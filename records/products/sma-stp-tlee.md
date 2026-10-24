@@ -31,4 +31,6 @@ The Sunny Tripower TLEE is a family of SMA three-phase string inverters. The sou
 - sentence 2: support check: partial - The spare part set title and part numbers are present, but nothing says SMA sells it; the sale claim is implied only.
 - sentence 3: support check: partial - Rare occurrence of event 9011/message for STP-TLEE-JP-10/11 is stated, but 'Japanese-market' is only inferred from 'JP'.
 - sentence 4: support check: partial - Contacting SMA Service and clarifying next steps with them is stated, but the passage doesn't say no field fix is possible.
+- sentence 1: review: partial - The STP 15000TLEE and 20000TLEE models are named, but nothing says the family is three-phase (only a 'String Inverters' category tag appears).
+- sentence 4: review: partial - The passage says to contact SMA Service and clarify next steps with them, but does not say there is no field fix.
 -->

@@ -118,4 +118,5 @@ The S1-W4G-ST is a Solis external data logger stick that sends system data for r
 
 <!-- review notes
 - sentence 1: support check: partial - Wi-Fi with cellular backup and Solis logger are supported, but the passages do not state that it sends system data for remote monitoring beyond the manual title, which is close enough; the 'stick' form is not explicit.
+- sentence 1: review: partial - The passages back a Solis external Wi-Fi and cellular data logger for remote system monitoring with cellular as backup, but the cited text never calls it a 'stick'.
 -->

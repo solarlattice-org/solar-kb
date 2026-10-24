@@ -63,7 +63,9 @@ claims:
   - src: src:sma-kb-event-10265-with-sb240-10-and-sunny-multigate
     loc: sec=h1
     h: 36c2fdacb2c4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c5
   rel: uses_protocol
   target: proto:webconnect

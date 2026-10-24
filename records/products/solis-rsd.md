@@ -120,4 +120,5 @@ The Solis RSD is a module-level rapid shutdown device sold in single-channel and
 <!-- review notes
 - sentence 1: support check: partial - Models RSD1L-1G/RSD2L-1G and single/dual-channel configurations are stated, but mapping of models to channels and 'module-level' are not explicit.
 - sentence 3: support check: partial - AC closes relays in positive and negative circuits and removal opens them with shutdown in under 10 s, but 'first responders cut AC' is in the passage; 'safe low voltage' is 30 VDC, fine; mostly supported though relays 'AC control signal' phrasing is loose.
+- sentence 1: review: partial - The passages give the two model names and say single-channel and dual-channel versions exist, but they never say which model is which and never call the device 'module-level'.
 -->

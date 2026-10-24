@@ -23,7 +23,9 @@ claims:
   - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
     loc: sec=h1
     h: bb2931c108ba
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Manuals cover the model but the passages never name Solis as
     the maker explicitly beyond the title/model name.'
 - claim_id: c2
@@ -150,7 +152,9 @@ claims:
   - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
     loc: tbl=18.r34
     h: 11e760a952d0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: certified_to
   target: std:fcc-part-15
@@ -234,7 +238,9 @@ claims:
   - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
     loc: tbl=18.r9
     h: 4b9ce6e67bef
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c15 (same source; check the conditions); possible conflict with
     c17 (same source; check the conditions)
 - claim_id: c17
@@ -247,7 +253,9 @@ claims:
   - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
     loc: tbl=20.r9
     h: 7275a7482dc6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c15 (same source; check the conditions); possible conflict with
     c16 (same source; check the conditions)
 - claim_id: c18
@@ -351,4 +359,6 @@ The Solis-1P 4G-US is a family of single-phase grid-tied inverters made by Solis
 - sentence 1: support check: partial - Models 3.6K–10K and Solis name shown, but single-phase and grid-tied are only loosely implied (1P, grid inverter).
 - sentence 4: support check: partial - Transformerless stated for both, but LCD display only given for the 10K, not 7.6K.
 - sentence 6: support check: partial - AFCI self-check fault and reset/replace steps are stated, but DC arc-fault protection is only implied by the section title and 'if the fault returns' is an interpretation.
+- sentence 1: review: partial - The passages name the 3.6K to 10K models as '4G Series Grid Inverter', but single-phase is only implied by the '1P' in the model names.
+- sentence 4: review: partial - The passages say both the 7.6K and 10K are transformerless, but they list an LCD display only for the 10K, not the 7.6K.
 -->

@@ -41,7 +41,9 @@ claims:
   - src: src:sma-doc-swebbox-ba-en-36
     loc: sec=10.4.1
     h: 5a0ce2804d8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: uses_protocol
   target: proto:rs485
@@ -85,7 +87,9 @@ claims:
   - src: src:sma-doc-swebbox-ba-en-36
     loc: sec=2
     h: 326d4f4a98f0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Sunny WebBox is the SMA data logger and central communication interface between a PV plant and its operator. It collects and stores data from the connected devices and makes it available over the Internet. You can view the plant data locally with Flashview or online through Sunny Portal. For Sunny Portal access, the router must forward Sunny Portal data requests to the WebBox. The WebBox talks to the inverters over the RS485 bus and reaches a computer or local network over Ethernet. It can also use a modem connection, and one variant adds Bluetooth wireless technology. A Modbus server can be switched on, using port 502 by default. Once it is on, anyone without a password can read live values and change the system time. Firmware can be updated over the Internet, from an SD card, or through the user interface, and settings and data are kept. Do not disconnect the power during an update. A Sunny SensorBox can be added to record irradiation and temperature data, and with a Power Reducer Box connected, the WebBox passes grid operator requirements on to the inverters. If the user interface cannot be reached, check the network settings, cabling, firewall, Internet access and IPv6 support of the proxy server. If an SD card is not detected, use an SD card supplied by SMA.
 

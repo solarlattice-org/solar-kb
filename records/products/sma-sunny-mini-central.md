@@ -19,7 +19,9 @@ claims:
   - src: src:sma-kb-sunny-mini-central-manuals
     loc: sec=h1
     h: fe0a82e371b3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Passage says these are Sunny Mini Central inverters (string inverters)
     but does not explicitly state the class beyond ''inverters''; essentially supported.'
 - claim_id: c2
@@ -60,7 +62,9 @@ claims:
   - src: src:sma-doc-swebbox-ba-en-36
     loc: tbl=25
     h: 628b7b7a4c10
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: implements
   target: func:phase-balancing
@@ -152,7 +156,9 @@ claims:
   - src: src:sma-kb-change-in-service-concept-for-smc9-11000tl-rp-10
     loc: sec=h1
     h: 42c416c74c8b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c10 (same source; check the conditions); possible conflict with
     c11 (same source; check the conditions)
 - claim_id: c13
@@ -167,7 +173,9 @@ claims:
     h: 105cdf06f41f
   review: drafted
   review_note: 'support check: partial - Maximum output current of SMC 7000HV is 31 A, but it is labeled
-    maximum, not rated output current.'
+    maximum, not rated output current.; review: partial - The passage gives 31 A as the maximum output
+    current of the SMC 7000HV, but the claim calls it rated output current, which the passage does not
+    state.'
 ---
 The Sunny Mini Central (SMC) is a family of older SMA string inverters. It includes the SMC 9000TL-10 to 11000TL-10, the TLRP-10 versions, the 7000HV, the 6000TL to 8000TL and the 4600A to 6000A models. The SMC9000TL, SMC10000TL and SMC11000TL accept up to 700 V DC, with maximum PV input currents of 28 A, 31 A and 34 A. Each connects to a single phase with neutral and protective earth. Every unit has the SMA Power Balancer built in. It links three units on different phases and offers the Fault Guard, Phase Guard, Power Guard and Off modes. It is switched off at the factory, and you need the SMA Grid Guard code to change it. The Sunny WebBox lists all Sunny Mini Central devices as supported, both under its SMA-NET protocol setting and under its SMA-COM interface setting. Known issue: replacement SMC9000TL to 11000TL units ship without string fuses and stay dark until you move the fuses over from the failed unit. If the unit is still dark after that, check the ribbon cable with the strings disconnected. A flashing red LED on the SMC-TL-10 models goes with the display messages Check DC Fuse or Check Varistor. SMA now suggests replacing a failed SMC9-11000TL(-RP)-10 with a Sunny Tripower STPxx-50, and one such unit can often replace three SMCs. For RS485 systems this needs the MD.485-41 module and a minimum firmware version.
 

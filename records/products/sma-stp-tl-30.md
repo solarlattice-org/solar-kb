@@ -38,7 +38,9 @@ claims:
   - src: src:sma-doc-275857
     loc: tbl=3
     h: 63e5d75ca23e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: lacks
   target: func:system-manager
@@ -60,4 +62,6 @@ The Sunny Tripower 15000-25000TL-30 is an SMA family of three-phase PV inverters
 <!-- review notes
 - sentence 1: support check: partial - The four models are listed as PV inverters, but the passages never call them three-phase or describe the family as one group.
 - sentence 4: support check: partial - AC assembly and power assembly spare-part sets for the 15000TL / 20000TL / 25000TL are listed. The passages show only an English "Replacement Manual" entry, so the claim of separate multilingual manuals per set is not confirmed.
+- sentence 1: review: partial - The four TL-30 models appear as PV inverters and Sunny Tripower eManuals, but no passage says they are three-phase.
+- sentence 4: review: partial - Both spare-part sets for the 15000TL/20000TL/25000TL are cited, but only an English replacement manual entry is shown, so 'multilingual' is not confirmed.
 -->

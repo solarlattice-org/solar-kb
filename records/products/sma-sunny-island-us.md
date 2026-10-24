@@ -37,7 +37,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=159.r1
     h: fbbba79b245a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions)
 - claim_id: c3
@@ -112,7 +114,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=163.r2
     h: 35a2d6e3b672
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: uses_protocol
   target: proto:rs485
@@ -141,7 +145,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=16.1
     h: adb5b04fd881
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passage describes clusters with master and slaves, but compatibility
     with a battery inverter cluster architecture is implied rather than stated.'
 ---

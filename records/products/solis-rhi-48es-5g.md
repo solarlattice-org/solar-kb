@@ -88,7 +88,9 @@ claims:
   - src: src:kb-solis-44002687170-solis-meter-and-ct-compatibility-guide
     loc: sec=h1
     h: 0caa9c940137
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c9
   rel: compatible_with
   target: prod:puredrive-battery

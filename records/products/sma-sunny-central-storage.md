@@ -25,7 +25,9 @@ claims:
   - src: src:sma-video-sicherheitsunterweisung-f-r-sunny-central-wechselrichter-wbt-1-safety-instruction-86472045
     loc: sec=h1
     h: 6e003b43d936
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: instance_of
   target: comp:inverter
@@ -34,7 +36,9 @@ claims:
   - src: src:sma-video-sicherheitsunterweisung-f-r-sunny-central-wechselrichter-wbt-1-safety-instruction-86472045
     loc: sec=h1
     h: 6e003b43d936
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: compatible_with
   target: prod:sma-hybrid-controller
@@ -133,7 +137,9 @@ claims:
   - src: src:sma-video-sicherheitsunterweisung-f-r-sunny-central-wechselrichter-wbt-1-safety-instruction-86472045
     loc: sec=h1
     h: 6e003b43d936
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: requires
   target: tool:lockout-tagout-kit

@@ -33,7 +33,9 @@ claims:
   - src: src:kb-sma-stptl-10-us-activating-of-the-rapid-shutdown-dc-discharge-function
     loc: sec=front
     h: 2fb826526942
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The passage is only a title about activating a Rapid Shutdown
     DC discharge function. That implies the function exists, but it doesn''t state outright that the family
     implements PV rapid shutdown.'
@@ -56,4 +58,5 @@ The Sunny Tripower TL-US is an SMA family of three-phase string inverters for th
 <!-- review notes
 - sentence 1: support check: partial - The five model names are listed, and the family is Sunny Tripower TL-US. The passages don't say it is three-phase, a string inverter, or for the US market (though 'US' is in the name).
 - sentence 3: support check: partial - The title shows SMA documents 'Activating of the Rapid Shutdown DC discharge function'. It doesn't explicitly say the function must be activated on the inverter.
+- sentence 1: review: partial - The five TL-US-10 models are listed, but three-phase, string inverter and US-market are not stated.
 -->

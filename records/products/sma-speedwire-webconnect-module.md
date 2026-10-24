@@ -159,7 +159,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - u23 says the SB5000US to SB8000US series needs a minimum BFR/SRR
     of 1.12 for the SWPB-US-10 piggyback. The passages do not mention a US region scope or the SWDM module
-    itself.'
+    itself.; review: partial - The passage confirms that SB5000US through SB8000US work with the SWPB-US-10
+    piggyback only with firmware BFR/SRR of at least 1.12; that firmware condition is left out, and the
+    passage treats the piggyback as separate from the Speedwire-Webconnect Data Module (SWDM)…'
 - claim_id: c12
   rel: requires
   target: tool:sma-sunny-explorer
@@ -199,7 +201,9 @@ claims:
   - src: src:sma-stptl-us-10-ia-xx-22
     loc: sec=h335
     h: 59f3729d0203
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The SMA Speedwire/Webconnect data module is an SMA communication module. It adds an Ethernet-based Speedwire interface to SMA inverters that do not have one built in. Speedwire/Webconnect runs 10/100 Mbit data transfer to Sunny Explorer. Through the Webconnect function, a small system can report straight to Sunny Portal for up to 4 inverters. Larger plants report through the SMA Cluster Controller. The Sunny Tripower TL-US has the Webconnect data module with an RJ45 connection as standard. The Sunny Island uses its own Speedwire data module, which Sunny Explorer shows as a protocol converter. The SWPB-US-10 piggyback version mounts on the communication board of SB-US-12 and SB-US-TL12 inverters. Before you buy one, read the BFR/SRR stamp on the inverter's EPROM chip to confirm the minimum firmware: 1.12 for SB5000US to SB8000US and 2.00 for SB5000US-12 to SB8000US-12. Piggyback cards cannot be daisy-chained. Wire each inverter in a star pattern to its own Ethernet switch port using CAT5E or CAT6 cable with 568B wire order, and keep communication cables at least 2 inches from AC cables. A newly installed piggyback must get a firmware update over Speedwire with Sunny Explorer before it can communicate. Afterwards, a flashing amber LED means it is wired correctly, and a solid green LED means it has a good internet connection. On the Sunny Island, warning 848 PhsMtrComFail (communication with the SMA Energy Meter failed) calls for checking the data cables and installing the current firmware on the Speedwire data module.
 

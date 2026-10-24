@@ -22,7 +22,9 @@ claims:
   - src: src:solis-solis-manual-epm3-5g-pro-20250724
     loc: sec=1.1
     h: 92a1e237298d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: implements
   target: func:export-limitation
@@ -228,4 +230,5 @@ The Solis Export Power Manager (EPM) is a controller that watches how much power
 <!-- review notes
 - sentence 3: support check: partial - The ADL 3000 with three CTs is stated for three-phase systems and the AGF-AE-D/200 with two CTs for single-phase multi-inverter systems, but the pairing of the ADL 3000 specifically with 480/600 V is only implied.
 - sentence 7: support check: partial - Phase rotation matching voltage, P1 on grid side and positive active power meaning export are stated, but polarity is not stated as having to match the voltage connections.
+- sentence 7: review: partial - The source says phase rotation must match the voltage connections, that P1 goes on the grid side and that positive active power means export, but it does not say polarity must match the voltage connections.
 -->
