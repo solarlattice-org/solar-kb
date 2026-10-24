@@ -16,4 +16,5 @@ On SMA devices the Installer access level is unlocked by logging in with the ins
 <!-- review notes
 - sentence 1: support check: partial - Installer password activates the level and it resets after 15 minutes, but the passage doesn't say 'on some central inverters' or restrict it to SMA devices generally.
 - sentence 8: support check: partial - The passage covers the installer password being needed, changed at initial installation and obtainable from the operator, but doesn't mention Sunny Central UP specifically.
+- sentence 1: review: partial - The passage says the installer password activates the Installer level and that the level resets after 15 minutes, but it does not limit the reset to 'some central inverters' or extend the statement to SMA devices in general.
 -->

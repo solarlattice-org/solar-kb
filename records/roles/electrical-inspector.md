@@ -17,4 +17,5 @@ An electrical inspector is one kind of authority having jurisdiction (AHJ). This
 <!-- review notes
 - sentence 5: support check: partial - Example #4 names the Inspector of Wires as AHJ for minimum wiring requirements under the Massachusetts Electrical Code, and building/fire officials can share jurisdiction, but 'for wiring requirements under the state electrical code' is only shown in that smoke alarm example, not as a general rule.
 - sentence 7: support check: partial - Passages show a checklist item on wire inspector approval, plus table-of-contents entries for Inspection Certificates and Inspector of Wires information by city/town, but they don't show that these are in utility service checklists rather than a utility's service requirements document.
+- sentence 7: review: partial - One NSTAR row is a checklist item asking whether wire inspector approval was obtained, but the Inspection Certificates and Inspector of Wires by city/town entries come from the document's table of contents, so calling them part of the checklist goes…
 -->

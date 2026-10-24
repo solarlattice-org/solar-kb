@@ -15,4 +15,5 @@ The User access level is the basic login group on monitoring and inverter interf
 <!-- review notes
 - sentence 1: support check: partial - Passages show User, Installer and Administrator groups with User lacking service access, but don't state User is the basic login group or hierarchy ordering on monitoring/inverter interfaces.
 - sentence 2: support check: partial - Rights table shows User lacks and Administrator/Installer have service access activation, but passages don't name SMA Data Manager M, and 'only' is implied by the table.
+- sentence 1: review: partial - The rights tables show User lacks a right that Installer and Administrator have, but they do not say User is the basic login group across monitoring and inverter interfaces.
 -->

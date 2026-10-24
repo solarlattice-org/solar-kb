@@ -21,7 +21,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nabcep-pv-resource-guide-1
     loc: sec=h19
     h: b7f75e21a6dd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: subclass_of
   target: role:installer
@@ -36,7 +38,9 @@ claims:
   - src: src:trn-oandm-sandia-solar-pv-o-m-standards-and-best-practices
     loc: sec=h42
     h: dcb416274b7a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The NABCEP PV Installation Professional is a certification from the North American Board of Certified Energy Practitioners (NABCEP) for people who install PV systems. According to the Job Task Analysis job description, a certified professional specifies, adapts, installs, configures, inspects and maintains any type of PV system, whether grid-connected or stand-alone, with or without batteries, and follows all applicable codes, standards and safety requirements. The installer may not design systems, but must be able to read and review designs, evaluate site issues, find design or code discrepancies, and recommend and carry out corrective actions. To qualify for the exam, candidates must meet the education, training and installation-experience prerequisites listed in the NABCEP Certification Handbook, including installation experience in a responsible role. Exam content is based on the PV Installation Professional Job Task Analysis, which covers the job from verifying the system design through installation to commissioning and maintenance. The National Electrical Code is a primary reference for exam questions. The Job Task Analysis includes conducting maintenance and troubleshooting, but the credential is not an O&M-specific certification. An NREL O&M best-practices table lists NABCEP PV installer certification, or UL PV system installation certification, as a credential. It is separate from the NABCEP PV Technical Sales certification, which is intended for people who work in marketing and customer development for PV installations.
 

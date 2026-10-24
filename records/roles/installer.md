@@ -15,4 +15,5 @@ The installer is the solar professional who installs devices and configures the 
 <!-- review notes
 - sentence 4: support check: partial - The passage covers entering a new system password when 1111 is still set on all devices, but it also allows an existing uniform password or setting one for the Installer group; it doesn't state a flat 'must change 1111' rule.
 - sentence 8: support check: partial - The passage says the reset-password setting resets the user and installer passwords, but it doesn't mention SMA devices, so the scope is not confirmed.
+- sentence 4: review: partial - The passage makes changing 1111 conditional ('if the standard password 1111 is still set on all devices') and also allows an existing uniform password, so it does not support a flat instruction to change it.
 -->

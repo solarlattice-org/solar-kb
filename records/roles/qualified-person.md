@@ -14,4 +14,5 @@ SMA manuals mark some sections with a qualified person label, and only qualified
 
 <!-- review notes
 - sentence 4: support check: partial - The passage is under a qualified person label and describes the function for diesel generator off-grid use, but it doesn't explicitly say setting it is a qualified-person task beyond the label.
+- sentence 4: review: partial - The Discharge Cut-off voltage function for diesel-generator off-grid systems sits under a QUALIFIED PERSON label, but the passage does not say that setting it is the qualified-person task.
 -->

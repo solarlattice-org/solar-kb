@@ -15,4 +15,5 @@ On utility-scale battery projects, the site designer is the person responsible f
 <!-- review notes
 - sentence 1: support check: partial - Passages say the site designer is responsible for all technical decisions for the project, but do not mention utility-scale battery projects.
 - sentence 6: support check: partial - The passages support that Designer does the calculations, recommends inverter and optimizer selection per site size, and exports the layout to monitoring. They do not say designers often use design software such as SolarEdge Designer, and the 'runs calculations' claim is only loosely implied.
+- sentence 1: review: partial - The passages say the site designer is responsible for all technical decisions on the project, but they never limit this to utility-scale battery projects.
 -->

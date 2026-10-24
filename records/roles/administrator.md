@@ -18,4 +18,5 @@ In SMA Sunny Portal user management, the system administrator ranks above the gu
 <!-- review notes
 - sentence 1: support check: partial - The passages show the administrator holds rights that guest, standard user and installer lack (and all have login), but they never state an explicit ranking or hierarchy.
 - sentence 6: support check: partial - Tenant administrator rights, Technical Support naming them at first setup, and roles being created only by Technical Support are stated, but the passages never say Technical Support is the only party that can name tenant administrators.
+- sentence 1: review: partial - The tables show the system administrator holds rights (view user management, replace Sunny Home Manager) that guest, standard user and installer lack, but they never state an explicit ranking or hierarchy.
 -->

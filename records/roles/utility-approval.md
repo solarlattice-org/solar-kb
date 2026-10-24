@@ -14,4 +14,5 @@ The utility approver is the responsible grid operator, and it must agree before 
 
 <!-- review notes
 - sentence 4: support check: partial - Passages show the Grid Guard code is needed for utility-grid-related parameters, but don't state it is separate from utility approval, though both are listed as requirements.
+- sentence 4: review: partial - The passages back the main point that the personal SMA Grid Guard code is needed to change utility-grid-related parameters, but nothing in them says the code is separate from the utility's approval.
 -->
