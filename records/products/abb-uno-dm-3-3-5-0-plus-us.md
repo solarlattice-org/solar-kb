@@ -98,11 +98,12 @@ claims:
   - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
     loc: tbl=17.r20
     h: 5524bc870f66
-  review: disputed
-  review_note: possible conflict with c7 (same source; check the conditions)
-  conflicts_with:
-  - prod:abb-uno-dm-3-3-5-0-plus-us#c9
-  - prod:abb-uno-dm-3-3-5-0-plus-us#c10
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
+  review_note: 'possible conflict with c7 (same source; check the conditions); review: the compiler-flagged
+    conflict (prod:abb-uno-dm-3-3-5-0-plus-us#c9, prod:abb-uno-dm-3-3-5-0-plus-us#c10) is a scenario difference,
+    resolved at review'
 - claim_id: c9
   attr: rated_power
   value:

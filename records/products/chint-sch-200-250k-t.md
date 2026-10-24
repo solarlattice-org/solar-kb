@@ -65,7 +65,9 @@ claims:
   - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
     loc: tbl=45.r11
     h: 41a053f375ab
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   rel: implements
   target: func:dc-arc-fault-protection
@@ -85,7 +87,9 @@ claims:
     h: 73fa01820a3d
   review: drafted
   review_note: 'support check: partial - The map lists firmware V01.15 as applicable to both models, but
-    the passage doesn''t name Modbus as the protocol.'
+    the passage doesn''t name Modbus as the protocol.; review: partial - The row only lists applicable
+    models and firmware V01.15; Modbus appears only in the source document''s name (a Modbus map), not
+    in the passage text.'
 - claim_id: c8
   attr: rated_power
   value:
@@ -215,4 +219,6 @@ This CPS family has two transformerless three-phase string inverters, the SCH200
 <!-- review notes
 - sentence 1: support check: partial - Two transformerless models are shown, but 'three-phase' and 'string inverter' are not stated in the passages.
 - sentence 8: support check: partial - The passage lists V01.15 as applicable firmware for both models, but doesn't say it is a Modbus register map.
+- sentence 1: review: partial - The passages show both models and that they are transformerless, but they do not say three-phase or string inverter.
+- sentence 7: review: partial - The fault meanings and steps are supported, but the fan foreign-object check appears only for the fan errors, so 'for either' wrongly applies it to CommErr too.
 -->

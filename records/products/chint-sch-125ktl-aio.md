@@ -227,4 +227,5 @@ The CPS SCH125KTL-AIO/US-600 is a grid-tied, transformerless three-phase string 
 
 <!-- review notes
 - sentence 1: support check: partial - Transformerless, 125kW and SCH series supported, but three-phase and string inverter are not stated.
+- sentence 1: review: partial - Grid-tied, SCH Series, transformerless and 125kW rated output are supported, but 'three-phase string inverter' is not stated.
 -->

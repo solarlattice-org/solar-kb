@@ -54,7 +54,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=37
     h: 22ea46d494cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   attr: rated_output_current
   value:
@@ -126,7 +128,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=37
     h: 22ea46d494cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   attr: efficiency
   value:
@@ -241,4 +245,5 @@ The CPS SCH350KTL-DO/US-800 is a CHINT Power Systems three-phase string inverter
 
 <!-- review notes
 - sentence 1: support check: partial - 1500 V, three-phase, 800 Vac, 60 Hz are supported, but manufacturer CHINT and 'string inverter' are not stated.
+- sentence 1: review: partial - The table supports 3-phase, 1500 V, 800 Vac and 60 Hz, but it does not name CHINT Power Systems or say string inverter.
 -->

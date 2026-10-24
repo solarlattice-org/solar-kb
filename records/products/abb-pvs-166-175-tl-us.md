@@ -136,7 +136,9 @@ claims:
   - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
     loc: sec=7.5
     h: c4b5570a38df
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c13
   rel: implements
   target: func:voltage-trip
@@ -154,7 +156,9 @@ claims:
   - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
     loc: sec=7.5
     h: c4b5570a38df
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c15
   rel: implements
   target: func:constant-power-factor
@@ -196,4 +200,5 @@ The FIMER PVS-166/175-TL-US is a three-phase string inverter family made up of t
 
 <!-- review notes
 - sentence 1: support check: partial - The two models are evidenced, but 'three-phase' and 'string inverter' are not stated in the passages.
+- sentence 1: review: partial - The passages show the two models PVS-166-TL US and PVS-175-TL US, but they never say it is a three-phase string inverter.
 -->

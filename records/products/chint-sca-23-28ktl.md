@@ -32,4 +32,5 @@ The SCA23/28KTL is a PV inverter family. It appears in the CSI 23-28KTL-CT inver
 <!-- review notes
 - sentence 1: support check: partial - The caption shows the SCA23/28KTL name with derating, implying an inverter, but nothing names the CSI 23-28KTL-CT manual or calls it a family.
 - sentence 2: support check: partial - The caption states a derating curve of PV input voltage for SCA23/28KTL, but 'that manual' is not identified and the output derating is only implied.
+- sentence 1: review: partial - The derating-curve caption implies the SCA23/28KTL is a PV inverter, but no passage calls it a family or names the CSI 23-28KTL-CT installation manual (that name appears only in the source id).
 -->

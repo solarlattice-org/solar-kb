@@ -229,11 +229,14 @@ claims:
   - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
     loc: sec=h15
     h: 70edc0df020e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The CPS SCH275KTL-DO/US-800 is a transformerless string inverter family. Its AC output is rated at 800 Vac and 60 Hz. It accepts up to 1500 V DC input and operates between 500 and 1450 VDC. Maximum AC output current is 198.5 A at 800 Vac. Peak efficiency is 99.0 percent and CEC efficiency is 98.5 percent. Power factor is adjustable to plus or minus 0.8. It runs from -30 °C to 60 °C ambient and derates above 42 °C. Cooling is by variable speed fans. It communicates over Modbus RS-485, Ethernet, CAN and AC-PLC. AC-PLC needs the CPS AC-PLC kit accessory. Remote diagnostics and firmware upgrades use the FlexOM gateway. Alarm CommErr means communication inside the inverter failed, usually because of poor contact at the internal communication terminal blocks. Alarm ExtFanErr points to a blocked, worn-out or poorly connected fan. First wait five minutes, then check the fan blades for foreign objects. If it persists, reboot with the three-phase supply off and call CPS service.
 
 <!-- review notes
 - sentence 1: support check: partial - 800 Vac and 60 Hz supported, but transformerless string inverter is not stated in the passages.
 - sentence 6: support check: partial - Definition and poor-contact cause are stated, but 'usually' and the internal communication terminal blocks are slightly paraphrased; essentially supported.
+- sentence 1: review: partial - The 800 Vac and 60 Hz ratings are cited, but nothing cited says transformerless string inverter family.
 -->

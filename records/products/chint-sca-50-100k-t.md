@@ -86,7 +86,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=73.r7
     h: 71f0023a0a55
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c9
   attr: rated_power
   value:
@@ -132,7 +134,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=71.r17
     h: 5de092800b65
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c13 (same source; check the conditions)
 - claim_id: c13
   attr: nominal_voltage
@@ -207,4 +211,5 @@ This CHINT Power Systems (CPS) family of three-phase string inverters has two mo
 
 <!-- review notes
 - sentence 1: support check: partial - Two models are named, but 'CHINT Power Systems', 'three-phase string inverters' and 'has two models' are not stated in the passages.
+- sentence 1: review: partial - The two model names are supported, but CHINT Power Systems and three-phase string inverters are not stated in the passages.
 -->

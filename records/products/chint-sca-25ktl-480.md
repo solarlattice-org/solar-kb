@@ -84,4 +84,5 @@ The CPS SCA25KTL-DO-R/US-480 is a grid-tied PV string inverter in the CPS SCA Se
 
 <!-- review notes
 - sentence 1: support check: partial - Titles show it is a CPS SCA Series grid-tied PV inverter, but 'string inverter' is not stated.
+- sentence 1: review: partial - The title supports a CPS SCA Series grid-tied PV inverter, but 'string' is not stated.
 -->

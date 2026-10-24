@@ -121,4 +121,5 @@ The PVS-60-TL-US is a FIMER three-phase string inverter family rated at 60 kW ac
 
 <!-- review notes
 - sentence 1: support check: partial - The 60 kW, 60 kVA and 480 Vac values are stated, but "three-phase" is not stated in the passages.
+- sentence 1: review: partial - The 480 Vac, 60 kW, 60 kVA and 'string inverters' values are stated, but 'three-phase' (and the FIMER brand) are not in the quoted passages.
 -->

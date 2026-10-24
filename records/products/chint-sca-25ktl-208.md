@@ -55,7 +55,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=55.r15
     h: ef930493f62b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   attr: rated_output_current
   value:
@@ -66,7 +68,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=55.r18
     h: 073df7751015
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   attr: frequency
   value:
@@ -77,7 +81,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=55.r20
     h: 663609b77071
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   attr: efficiency
   value:
@@ -160,7 +166,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=57
     h: 542e2ebb3728
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c15
   rel: implements
   target: func:ramp-rate-control
@@ -231,4 +239,5 @@ The CPS SCA25KTL-DO/US-208 is a transformerless three-phase string inverter from
 <!-- review notes
 - sentence 1: support check: partial - Transformerless and 208VAC are supported, but 'three-phase', 'string inverter' and the full CHINT name are not stated.
 - sentence 6: support check: partial - RS485 is supported; the USB port caption for firmware upgrades supports the USB firmware loading, but only as a figure caption.
+- sentence 1: review: partial - The passages support transformerless and 208 VAC, but they never say three-phase, string inverter or CHINT Power Systems.
 -->

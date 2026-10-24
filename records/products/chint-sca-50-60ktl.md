@@ -185,4 +185,5 @@ The CPS SCA50KTL-DO/US-480 and SCA60KTL-DO/US-480 are three-phase string inverte
 <!-- review notes
 - sentence 1: support check: partial - Models, maker and 480 VAC are supported, but 'three-phase string inverter' is not stated in the passages.
 - sentence 6: support check: partial - Figure caption indicates a USB port for firmware upgrades, but 'on the unit' and the process are only implied.
+- sentence 1: review: partial - The model names, the CHINT POWER SYSTEMS maker and the 480VAC rated output are supported, but 'three-phase string inverters' is not stated in the passages.
 -->

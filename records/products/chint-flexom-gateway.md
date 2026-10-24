@@ -80,7 +80,9 @@ claims:
   - src: src:chint-cps-flexom-gateway-user-manual-2025-12-02
     loc: tbl=1.r15
     h: c2b49463aa44
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Only a table-of-contents entry ''Ethernet (FlexOM Gateway)''
     appears, implying an Ethernet interface but not stating usage.'
 - claim_id: c8
@@ -121,7 +123,9 @@ claims:
   - src: src:chint-cps-flexom-gateway-user-manual-2025-12-02
     loc: tbl=4
     h: 83e34a5fe105
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   rel: certified_to
   target: std:en-55035

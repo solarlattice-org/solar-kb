@@ -282,4 +282,6 @@ The CSI-50/60/66K-T480GL01-UB is a family of Canadian Solar three-phase grid-tie
 - sentence 1: support check: partial - Canadian Solar three-phase grid-tied inverters supported, but 'string' inverter type is not stated.
 - sentence 3: support check: partial - 1000 V is shown for all models, but nominal frequency and range are shown only for the 66K model.
 - sentence 7: support check: partial - RS485 and optional WiFi are shown only for the 66K model.
+- sentence 1: review: partial - Canadian Solar three-phase grid-tied inverters converting PV DC to AC for loads and grid are stated, but 'string' inverter is not.
+- sentence 7: review: partial - RS485 with optional WiFi is shown only for the 66K model, but the sentence applies it to every unit in the family.
 -->

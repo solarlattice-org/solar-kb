@@ -120,7 +120,9 @@ claims:
   - src: src:kb-enphase-does-the-iq-combiner-6c-include-integrated-monitoring-capabilities
     loc: sec=h1
     h: fa3d2419b1e6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c10
   rel: implements
   target: func:production-metering
@@ -156,7 +158,9 @@ claims:
   - src: src:kb-enphase-iq-gateway-software-release-notes-8-3-5289
     loc: sec=front
     h: ade7d6992843
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   rel: compatible_with
   target: fw:enphase-iq-gateway-8-3-5566
@@ -181,4 +185,5 @@ The Enphase IQ Combiner is a family of residential AC combiner panels. Each one 
 <!-- review notes
 - sentence 3: support check: partial - Gateway inclusion, same setup, and monitoring are stated, but 'every combiner' monitoring is only shown for 6C and general inclusion; mostly supported.
 - sentence 6: support check: partial - Passage says install the Communication Kit to enable wireless communication, but 'must' is slightly stronger than stated.
+- sentence 4: review: partial - The CT types for production, consumption and battery metering are stated, but the 5 in-lbs torque appears only in the IQ Combiner 5/5C/4 steps and is presented as a general rule for every combiner.
 -->

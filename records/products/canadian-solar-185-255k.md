@@ -173,7 +173,9 @@ claims:
   - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
     loc: tbl=15.r6
     h: f2b45c1d12b0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c14 (same source; check the conditions)
 - claim_id: c14
   attr: max_input_current
@@ -251,3 +253,8 @@ claims:
   review: drafted
 ---
 This family covers four Canadian Solar three-phase, grid-tied, transformerless string inverters: CSI-185K-T600GL02/03-U and CSI-255K-T800GL02/03-U. They convert PV array DC power into AC to supply local loads and feed the grid. The 185K models are rated for a 600 V grid and the 255K models for an 800 V grid, both at 60 Hz. The maximum DC input is 1500 V. Maximum output current is 178.0 A for the 185K models and 184.0 A for the 255K models. The manual lists a 250 A grid overcurrent protection device for each model. The GL02 models take 14 inputs of up to 26 A each and ship with 28 DC connectors. The 185K GL03 model takes 12 inputs of up to 30 A each, and the GL03 models ship with 24 DC connectors. The DC connectors are MC4 type. Maximum efficiency is 99.0 percent and EU efficiency is 98.5 percent. Communication is over RS485, with power line communication as an option. Each unit has a 2x20 LCD display and uses intelligent redundant cooling. The standard warranty is 5 years and can be extended to 20 years.
+
+<!-- review notes
+- sentence 1: review: partial - The four models, three-phase, grid-tied and the DC-to-AC function are stated, but 'string inverter' is not, and 'transformerless' is cited only for the CSI-185K-T600GL02-U.
+- sentence 4: review: partial - The 14*26 A, 12*30 A and 28/24 connector counts are supported, but MC4 is shown only for the CSI-255K-T800GL02-U, not for every model.
+-->

@@ -118,7 +118,9 @@ claims:
   - src: src:abb-fimer-trio-20-0-27-6-tl-outd-us-quick-installation-guide-revb
     loc: tbl=6.r27
     h: 055fd464146b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c10
   rel: implements
   target: func:surge-protection

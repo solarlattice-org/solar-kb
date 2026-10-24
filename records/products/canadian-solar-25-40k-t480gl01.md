@@ -99,7 +99,9 @@ claims:
   - src: src:csi-csi-installation-manual-25-40k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=7
     h: c4d2afa6924e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c5 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions); possible conflict with c8 (same source; check the conditions)
 - claim_id: c8
@@ -112,7 +114,9 @@ claims:
   - src: src:csi-csi-installation-manual-25-40k-t480gl01-ub-lsw-usa-v1-1
     loc: tbl=7
     h: c4d2afa6924e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c5 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions); possible conflict with c7 (same source; check the conditions)
 - claim_id: c9
@@ -246,4 +250,5 @@ The CSI-25/30/36/40K-T480GL01-UB is a Canadian Solar family of four three-phase 
 
 <!-- review notes
 - sentence 1: support check: partial - Four models, Canadian Solar, grid-tied manual and DC-to-AC function are stated, but 'string inverter' is not stated.
+- sentence 1: review: partial - Canadian Solar, four models, three-phase, grid-tied and the DC-to-AC function for loads and grid are stated, but 'string' inverter is not.
 -->

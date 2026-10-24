@@ -102,7 +102,9 @@ claims:
   - src: src:csi-csi-installation-manual-csi-125ktl-gs-e-usa-v1-3
     loc: tbl=12.r29
     h: 83e27d6aa879
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c12
   rel: certified_to
   target: std:ieee-1547
@@ -110,7 +112,9 @@ claims:
   - src: src:csi-csi-installation-manual-csi-125ktl-gs-e-usa-v1-3
     loc: tbl=12.r29
     h: 83e27d6aa879
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: certified_to
   target: std:fcc-part-15
@@ -221,7 +225,9 @@ claims:
   - src: src:csi-csi-installation-manual-csi-125ktl-gs-e-usa-v1-3
     loc: tbl=12.r23
     h: 006e7600084b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c23
   attr: max_count
   value:

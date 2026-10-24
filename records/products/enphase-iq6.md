@@ -62,4 +62,5 @@ The Enphase IQ6 family is a line of module-level microinverters made by Enphase,
 <!-- review notes
 - sentence 1: support check: partial - IQ6 and IQ6+ versions are shown, but the passages don't say Enphase makes them or that IQ6+ is higher-output (though the current per unit is higher).
 - sentence 3: support check: partial - Current and voltage-rise tables exist for IQ6 and IQ6+, but the passages don't mention a tech brief or say to use them for sizing conductors.
+- sentence 1: review: partial - The IQ6 and IQ6+ versions appear in the passages, but they don't say the units are module-level microinverters made by Enphase or that the IQ6+ is the higher-output version.
 -->

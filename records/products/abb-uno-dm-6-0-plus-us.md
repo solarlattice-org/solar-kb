@@ -18,7 +18,9 @@ claims:
     h: 3c113dace49f
   review: drafted
   review_note: 'support check: partial - The manual passage shows ''ABB'' but doesn''t say it is the manufacturer
-    (and ''ABB Ltd'' is not stated), though it is strongly implied by the branding.'
+    (and ''ABB Ltd'' is not stated), though it is strongly implied by the branding.; review: partial -
+    The manual heading shows ABB branding next to the product name, which implies ABB is the maker, but
+    it does not say so and does not name ABB Ltd.'
 - claim_id: c2
   rel: instance_of
   target: comp:inverter
@@ -44,4 +46,5 @@ The UNO-DM-6.0-TL-PLUS-US is a string inverter from ABB. Its product manual give
 
 <!-- review notes
 - sentence 4: support check: partial - The passage names the -QU variant but does not say a later manual covers it.
+- sentence 4: review: partial - The quoted passage is only the -QU variant name, and nothing in it says the manual is a later one; that comes only from the source id (rev B).
 -->

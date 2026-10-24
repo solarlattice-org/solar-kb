@@ -209,7 +209,9 @@ claims:
   - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=10.r26
     h: 195af83d6e8c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c18
   rel: certified_to
   target: std:fcc-part-15
@@ -228,6 +230,8 @@ claims:
     loc: tbl=10.r23
     h: 551493e55ebc
   review: drafted
+  review_note: 'review: partial - The passage lists WIFI as an interface only for the 36KTL and 40KTL
+    models, so the claim''s coverage of the 25/30 models is not shown.'
 - claim_id: c20
   rel: uses_protocol
   target: proto:cellular
@@ -242,4 +246,5 @@ The CSI-25/30/36/40KTL-GS-FL is a family of three-phase, grid-tied, transformerl
 
 <!-- review notes
 - sentence 5: support check: partial - NEMA4X and >20 years stated only for specific models' rows (NEMA 4X only for 36/40), not shown for 25/30.
+- sentence 1: review: partial - Canadian Solar, grid-tied, transformerless (all models) and the DC-to-AC function are stated, but three-phase is shown only for the 36/40 rows and 'string' inverter is never stated.
 -->

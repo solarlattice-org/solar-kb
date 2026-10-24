@@ -90,7 +90,8 @@ claims:
     h: 8bdf6fbb3f1f
   review: drafted
   review_note: 'support check: partial - The table gives a power factor of >0.99 and ±0.8 adjustable,
-    but it does not name a constant power factor mode.'
+    but it does not name a constant power factor mode.; review: partial - The table gives power factor
+    >0.99 and adjustable to ±0.8, which matches the note, but it never names a constant power factor mode.'
 - claim_id: c8
   attr: rated_power
   value:
@@ -155,7 +156,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=32
     h: 8bdf6fbb3f1f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c13
   attr: max_input_current
   value:
@@ -263,7 +266,9 @@ claims:
   - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
     loc: tbl=33.r2
     h: 37d602a68a89
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c21 (same source; check the conditions)
 - claim_id: c21
   attr: efficiency
@@ -283,4 +288,6 @@ The CSI 23/28KTL-CT/US-480 is a Canadian Solar transformerless three-phase strin
 <!-- review notes
 - sentence 5: support check: partial - The efficiencies and the adjustable power factor are stated, but the derating-curve caption only shows a high-temperature derating figure and does not state the derating behavior.
 - sentence 7: support check: partial - The Arcboard Err causes and the ARCFaultClear step are stated, but the passage does not say the Arcboard provides arc fault detection.
+- sentence 1: review: partial - Canadian Solar, transformerless and the 23 kW and 28 kW models are supported, but 'three-phase string inverter' is not stated in the cited passages.
+- sentence 7: review: partial - The Arcboard Err causes (poor contact or damage) and the ARCFaultClear step after checking the board are stated, but the row never says the Arcboard provides arc fault detection.
 -->

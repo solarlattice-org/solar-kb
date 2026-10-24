@@ -48,7 +48,9 @@ claims:
   - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
     loc: tbl=12.r1
     h: 3b4b33d5b5a9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   attr: rated_output_current
   value:
@@ -99,7 +101,9 @@ claims:
   - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
     loc: tbl=12.r16
     h: e8857e60adeb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   attr: efficiency
   value:

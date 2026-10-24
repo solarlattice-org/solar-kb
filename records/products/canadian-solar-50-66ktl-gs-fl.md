@@ -98,7 +98,9 @@ claims:
   - src: src:csi-csi-manual-50-66ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=4
     h: 9494d62ae21a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   attr: rated_output_current
   value:
@@ -143,7 +145,9 @@ claims:
   - src: src:csi-csi-manual-50-66ktl-gs-fl-v1-2-2017-09-07
     loc: tbl=10.r25
     h: b6c26b60f172
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: certified_to
   target: std:ul-1741
@@ -164,7 +168,9 @@ claims:
     h: e45b121aaf9c
   review: drafted
   review_note: 'support check: partial - IEEE1547 is listed as compliance for the 50 kW model; 60/66 passage
-    shows garbled ''IEEE1S47'', and ''certified'' is stronger than ''compliance'' listing.'
+    shows garbled ''IEEE1S47'', and ''certified'' is stronger than ''compliance'' listing.; review: partial
+    - IEEE1547 compliance is listed only for the 50KTL-GS-FL model, so the claim''s coverage of the 60/66
+    models is not shown in the quoted passage.'
 - claim_id: c13
   rel: certified_to
   target: std:csa-c22-2-no-107-1
@@ -206,7 +212,8 @@ claims:
     h: 8fdc3a52def5
   review: drafted
   review_note: 'support check: partial - WIFI listed as interface only for the 60/66 models in the passage,
-    not the -FL model.'
+    not the -FL model.; review: partial - WIFI is listed as an interface only for the 60KTL-GS and 66KTL-GS
+    models, not for the 50KTL-GS-FL model, so the claim''s coverage of the whole family is not fully supported.'
 - claim_id: c17
   rel: uses_protocol
   target: proto:cellular

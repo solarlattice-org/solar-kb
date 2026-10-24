@@ -69,7 +69,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=67.r28
     h: 8b1c54e66831
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: certified_to
   target: std:ul-1699b
@@ -85,7 +87,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=67.r28
     h: 8b1c54e66831
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: certified_to
   target: std:ieee-1547-2018
@@ -115,7 +119,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: tbl=44.r15
     h: 629c40f70c55
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   attr: max_input_voltage
   value:
@@ -153,7 +159,9 @@ claims:
   - src: src:chint-cps-36kw-usermanual-reduced
     loc: tbl=44.r16
     h: edeff6eb1664
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   attr: frequency
   value:

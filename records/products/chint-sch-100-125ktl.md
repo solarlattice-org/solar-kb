@@ -149,4 +149,5 @@ The CPS SCH100-125KTL family consists of three-phase string inverters from CHINT
 <!-- review notes
 - sentence 1: support check: partial - Three models are listed, but three-phase string inverter type isn't stated and the family naming is only implied.
 - sentence 5: support check: partial - The row is a merged label/value that lists standard with CPS Flex Gateway, but the values shown are certifications, so the remote diagnostics claim is only implied.
+- sentence 1: review: partial - The three models and the CHINT maker appear in the passages, but 'three-phase string inverters' and the family name are not stated.
 -->

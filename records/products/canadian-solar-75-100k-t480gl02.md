@@ -45,7 +45,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=14.r34
     h: b46bf1121b82
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: uses_protocol
   target: proto:wifi
@@ -180,7 +182,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=13.r6
     h: 5202fb3a9c78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   attr: max_input_current
   value:
@@ -257,7 +261,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=13.r17
     h: bee2d7422533
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c17 (same source; check the conditions); possible conflict with
     c19 (same source; check the conditions); possible conflict with c20 (same source; check the conditions)
 - claim_id: c19
@@ -270,7 +276,9 @@ claims:
   - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
     loc: tbl=15.r18
     h: 754268a04d85
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c17 (same source; check the conditions); possible conflict with
     c18 (same source; check the conditions); possible conflict with c20 (same source; check the conditions)
 - claim_id: c20
@@ -295,4 +303,5 @@ The CSI-75/80/90/100K-T480GL02-U is a family of Canadian Solar three-phase strin
 <!-- review notes
 - sentence 1: support check: partial - Three-phase Canadian Solar inverters converting DC to AC are stated, but 'string' inverter type is not stated.
 - sentence 7: support check: partial - MC4, 85 kg and ≤65 dB(A) are stated; the display is LCD,2x20Z, and 'two-line' is an inference from 2x20.
+- sentence 1: review: partial - Section 1.1 supports Canadian Solar three-phase inverters that convert DC to AC for loads and the grid, but it never calls them 'string' inverters.
 -->

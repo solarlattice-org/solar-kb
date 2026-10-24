@@ -121,7 +121,9 @@ claims:
   - src: src:kb-enphase-iq-gateway-software-release-notes-8-3-5566
     loc: sec=h1
     h: fa4802b86cb0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c9
   rel: compatible_with
   target: prod:enphase-iq-gateway
@@ -211,7 +213,9 @@ claims:
   - src: src:kb-enphase-iq-gateway-software-release-notes-8-3-5598
     loc: sec=h1
     h: 1738287721c6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   rel: compatible_with
   target: fw:enphase-iq-gateway-8-3-5290

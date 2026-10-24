@@ -103,7 +103,10 @@ claims:
     h: c735af634041
   review: drafted
   review_note: 'support check: partial - Risk of fire is stated, and the stripping and uncovered-connector
-    warnings appear, but the passage doesn''t explicitly tie them to fire risk.'
+    warnings appear, but the passage doesn''t explicitly tie them to fire risk.; review: partial - The
+    passage says ''Risk of fire'' and warns about damaged conductors and uncovered connectors, but it
+    never says those two conditions cause fire; it only says damaged wires may make the system not function
+    properly.'
 - claim_id: c8
   attr: rated_output_current
   value:
@@ -114,7 +117,9 @@ claims:
   - src: src:enphase-enphase-iq7-series-integrated-mc4-installation-guide
     loc: sec=h17
     h: bcd686e29a83
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c9
   attr: operating_temperature
   value:
@@ -132,4 +137,5 @@ The Enphase IQ Cable, earlier called the Q Cable, is a continuous 12 AWG, double
 
 <!-- review notes
 - sentence 1: support check: partial - The description is supported and the Q Cable name appears in the passages, but nothing says the Q Cable is the earlier name of the IQ Cable, and 'AC' isn't stated explicitly.
+- sentence 1: review: partial - The 12 AWG, double-insulated, outdoor-rated cable with preinstalled connectors is supported, but no passage says the Q Cable was its earlier name, and 'AC' is only implied.
 -->

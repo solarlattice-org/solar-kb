@@ -194,4 +194,5 @@ The Enphase IQ Gateway, formerly called the IQ Envoy or Envoy-S, is a communicat
 
 <!-- review notes
 - sentence 2: support check: partial - Power line reading and USB cellular modem are stated; Wi-Fi is supported only by a title about reconnecting to Wi-Fi.
+- sentence 1: review: partial - The IQ Envoy rename, the communications gateway role and sending data to the Enphase Cloud are supported, but no passage says Envoy-S was a former name; it only appears as a separate gateway model.
 -->
