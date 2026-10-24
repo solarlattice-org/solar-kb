@@ -100,4 +100,12 @@ claims:
     h: 6e70862f89d9
   review: drafted
   review_note: 'support check: partial - Classification as fault isn''t explicitly stated in the row.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-eh3p-75-150k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=27.r3
+    h: 6e70862f89d9
+  review: drafted
 ---

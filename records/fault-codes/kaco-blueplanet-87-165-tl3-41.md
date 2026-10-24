@@ -84,4 +84,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cabling is to be checked, but the row doesn''t say the AC cable
     is affected.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=73.r5
+    h: 1f2bfc69ce49
+  review: drafted
 ---

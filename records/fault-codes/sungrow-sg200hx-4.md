@@ -174,4 +174,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - AC cable security is a check item, but the passages don''t say
     the fault affects the cable.'
+- claim_id: c12
+  rel: applies_to
+  target: prod:sungrow-sg200hx
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
 ---

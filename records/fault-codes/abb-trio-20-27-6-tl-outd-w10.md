@@ -153,4 +153,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Internal error that can''t be checked externally and contact
     assistance if repeating are stated, though ''clears by service required'' is…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=36.r1
+    h: a45581a188f9
+  review: drafted
 ---

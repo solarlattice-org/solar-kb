@@ -169,4 +169,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=13.r4
+    h: cab3a7061bcd
+  review: drafted
 ---

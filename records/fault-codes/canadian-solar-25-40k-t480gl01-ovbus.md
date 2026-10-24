@@ -107,4 +107,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-25-40k-t480gl01
+  cite:
+  - src: src:csi-csi-installation-manual-25-40k-t480gl01-ub-lsw-usa-v1-1
+    loc: tbl=11.r4
+    h: d72ef23dec5b
+  review: drafted
 ---

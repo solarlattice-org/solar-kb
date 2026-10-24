@@ -115,4 +115,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle is an operator action implying manual reset, but
     the row does not explicitly state the clearing mechanism.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500
+  cite:
+  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
+    loc: tbl=19.r5
+    h: 2ea826cbedaa
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=19.r5
+    h: 2ea826cbedaa
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=16.r5
+    h: 2ea826cbedaa
+  review: drafted
 ---

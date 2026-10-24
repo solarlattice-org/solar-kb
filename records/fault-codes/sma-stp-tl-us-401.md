@@ -125,4 +125,12 @@ claims:
     loc: sec=h404
     h: a59ad34e5713
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=13.r2
+    h: 7a6d28b76793
+  review: drafted
 ---

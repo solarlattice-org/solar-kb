@@ -33,4 +33,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - It is a status message about insulation measuring, but the row
     shows behavior W (warning), not informational.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=35.r9
+    h: 3b647f7c40b9
+  review: drafted
 ---

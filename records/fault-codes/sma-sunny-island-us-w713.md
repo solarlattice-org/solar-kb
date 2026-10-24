@@ -46,4 +46,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Watchdog tripped is stated, but ''of the device controller''
     and internal device fault are not explicit in the passage.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=151.r6
+    h: aa0d4d291b15
+  review: drafted
 ---

@@ -109,4 +109,12 @@ claims:
     loc: tbl=17.r6
     h: 16f5c7fa5db0
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=17.r6
+    h: 16f5c7fa5db0
+  review: drafted
 ---

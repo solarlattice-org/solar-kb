@@ -173,4 +173,15 @@ claims:
     loc: sec=h373
     h: 9d464275e542
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h236
+    h: b078e0b636d4
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h237
+    h: 797da27ddf22
+  review: drafted
 ---

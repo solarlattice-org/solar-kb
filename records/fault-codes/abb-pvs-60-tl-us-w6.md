@@ -96,4 +96,12 @@ claims:
     loc: tbl=45.r4
     h: 3e4a0c96f15a
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=43.r4
+    h: d232479296d0
+  review: drafted
 ---

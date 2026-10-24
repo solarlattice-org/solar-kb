@@ -167,4 +167,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then replacement stated; manual-reset classification
     only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=35.r1
+    h: 3f0a2a621e5d
+  review: drafted
 ---

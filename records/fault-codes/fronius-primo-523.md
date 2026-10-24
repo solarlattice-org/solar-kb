@@ -52,4 +52,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 5 text says codes generally do not impair feed-in,
     but 523 itself is not stated to be class 5.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=18.r7
+    h: 3d2e053b53ef
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h21
+    h: a6a4378aca92
+  review: drafted
 ---

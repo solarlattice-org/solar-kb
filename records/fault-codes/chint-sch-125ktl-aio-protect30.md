@@ -163,4 +163,12 @@ claims:
     loc: tbl=26.r2
     h: 695c0ef30443
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=31.r3
+    h: 9af8329118ff
+  review: drafted
 ---

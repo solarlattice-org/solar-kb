@@ -114,4 +114,12 @@ claims:
     loc: tbl=20.r4
     h: 2083a226e468
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=14.r6
+    h: 391a0e888bc9
+  review: drafted
 ---

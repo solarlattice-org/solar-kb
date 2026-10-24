@@ -61,4 +61,12 @@ claims:
     loc: sec=9.1.2
     h: 03d6c2913989
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-20-25tl-480-r
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=34.r1
+    h: 56bd14b8774e
+  review: drafted
 ---

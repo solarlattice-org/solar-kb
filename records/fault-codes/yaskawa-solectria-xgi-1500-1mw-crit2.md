@@ -109,4 +109,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle and firmware update are stated, but clearing by manual
     reset is only implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-1mw
+  cite:
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=19.r2
+    h: 19341281f673
+  review: drafted
 ---

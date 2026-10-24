@@ -185,4 +185,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say to check the correct composition of the system if
     below Vstart and contact assistance if above, but do…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=35.r6
+    h: 1b3616770cd2
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=49.r6
+    h: 8cda59d0b020
+  review: drafted
 ---

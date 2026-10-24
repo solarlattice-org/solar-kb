@@ -111,4 +111,12 @@ claims:
     loc: sec=h627
     h: abc29332332d
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=37.r18
+    h: 7e495d3b84ea
+  review: drafted
 ---

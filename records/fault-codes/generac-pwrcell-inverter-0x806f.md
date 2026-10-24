@@ -56,4 +56,15 @@ claims:
   review: drafted
   review_note: 'review: partial - The CT/current-sensor link is supported, but the note says CTs are ''on
     all three lines'', while the row says Lines 1, 2…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:generac-pwrcell-inverter
+  cite:
+  - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
+    loc: tbl=20.r14
+    h: ffcdec86c85c
+  - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
+    loc: tbl=19.r14
+    h: ffcdec86c85c
+  review: drafted
 ---

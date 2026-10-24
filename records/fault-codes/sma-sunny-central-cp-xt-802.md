@@ -81,4 +81,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Auto reconnect implied, but manual acknowledgment may be needed
     depending on parameterization.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r7
+    h: b36691fd426f
+  review: drafted
 ---

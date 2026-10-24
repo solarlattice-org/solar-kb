@@ -89,4 +89,27 @@ claims:
     loc: sec=h472
     h: d7d9ebc45ca9
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h296
+    h: c86593bb9e0c
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h297
+    h: 059ce03933b4
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h213
+    h: c86593bb9e0c
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h214
+    h: 059ce03933b4
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h298
+    h: c86593bb9e0c
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h299
+    h: 059ce03933b4
+  review: drafted
 ---

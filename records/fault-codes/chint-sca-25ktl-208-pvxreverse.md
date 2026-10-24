@@ -89,4 +89,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passage gives no explicit stop or trip behaviour, only a
     protection-type fault.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=51.r6
+    h: 5ce1c03d127e
+  review: drafted
 ---

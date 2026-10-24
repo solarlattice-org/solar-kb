@@ -110,4 +110,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c8
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=16.r1
+    h: 69d75eb54160
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h23
+    h: c4a64ba354f6
+  review: drafted
 ---

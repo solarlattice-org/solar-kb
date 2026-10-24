@@ -101,4 +101,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart is the first step, but the passages do not say it clears
     by manual reset.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-3p-5g-us
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=14.r12
+    h: 02f61ff2da17
+  review: drafted
 ---

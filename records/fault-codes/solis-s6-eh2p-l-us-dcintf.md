@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then isolate string then replacement sequence is stated,
     but nothing says the fault clears by manual reset.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=16.r12
+    h: b0a286d4f4c4
+  review: drafted
 ---

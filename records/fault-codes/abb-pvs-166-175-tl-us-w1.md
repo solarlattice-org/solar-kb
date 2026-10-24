@@ -172,4 +172,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say to check the correct composition of the system if
     below Vstart and contact assistance if above, but do…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=49.r5
+    h: 5000cc5fbb13
+  review: drafted
 ---

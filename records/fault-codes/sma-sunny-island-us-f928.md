@@ -44,4 +44,12 @@ claims:
   review: drafted
   review_note: 'review: partial - The row supports a SiCom message that the battery charging current in
     charge mode is too high, but nothing in it says…'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=155.r10
+    h: 46116b699209
+  review: drafted
 ---

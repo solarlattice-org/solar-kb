@@ -163,4 +163,12 @@ claims:
     loc: tbl=16.r3
     h: 7f1f795c5adb
   review: drafted
+- claim_id: c13
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=16.r3
+    h: 7f1f795c5adb
+  review: drafted
 ---

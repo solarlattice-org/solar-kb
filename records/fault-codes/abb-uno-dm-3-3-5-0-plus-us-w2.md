@@ -153,4 +153,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Check of correct system composition is stated, but string configuration
     correction is not explicit.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=35.r7
+    h: ed85ff32322f
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=49.r7
+    h: 7e047f719311
+  review: drafted
 ---

@@ -79,4 +79,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Utility-defined thresholds and protection time stated, but no
     trip/production stop stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=47.r3
+    h: b63d6b6f6819
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=27.r3
+    h: d46a1865646f
+  review: drafted
 ---

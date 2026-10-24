@@ -144,4 +144,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Check of correct system composition is stated, but string configuration
     correction is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=42.r8
+    h: 44d5f8dc6501
+  review: drafted
 ---

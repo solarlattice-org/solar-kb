@@ -67,4 +67,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.65
+    h: da224bdfc1a8
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h738
+    h: '284843253247'
+  review: drafted
 ---

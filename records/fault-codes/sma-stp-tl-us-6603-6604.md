@@ -50,4 +50,12 @@ claims:
     loc: tbl=16.r7
     h: 970d7aaecf47
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=16.r7
+    h: 970d7aaecf47
+  review: drafted
 ---

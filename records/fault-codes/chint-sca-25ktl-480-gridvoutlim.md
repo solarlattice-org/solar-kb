@@ -126,4 +126,12 @@ claims:
     loc: tbl=34.r12
     h: 44a791cf9744
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:chint-sca-25ktl-480
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=57.r2
+    h: 6ec924c33315
+  review: drafted
 ---

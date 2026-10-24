@@ -110,4 +110,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages imply a fault through the destruction risk and disconnection,
     but the class is not stated explicitly, and the…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h258
+    h: 33883a354598
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h260
+    h: 587cea85589b
+  review: drafted
 ---

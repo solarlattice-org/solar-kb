@@ -91,4 +91,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says observe 10 minutes to see if the alarm clears automatically,
     then check grid/cable, then contact service; auto-clearing is…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:canadian-solar-23-28ktl-ct
+  cite:
+  - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
+    loc: tbl=29.r1
+    h: 8f7cb9b0424a
+  review: drafted
 ---

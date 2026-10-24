@@ -97,4 +97,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - It is in the Table 8.1 Fault messages, but the passage does not
     state the device behavior (stops or needs…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-25-40k-t480gl01
+  cite:
+  - src: src:csi-csi-installation-manual-25-40k-t480gl01-ub-lsw-usa-v1-1
+    loc: tbl=12.r1
+    h: dc004aa7f58f
+  review: drafted
 ---

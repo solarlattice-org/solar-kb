@@ -95,4 +95,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=35.r11
+    h: 33d87d607835
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=47.r1
+    h: 6d0b1668de77
+  review: drafted
 ---

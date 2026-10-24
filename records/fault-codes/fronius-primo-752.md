@@ -57,4 +57,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A communication error with the RTC module is stated, but ''internal
     communication failure'' is an inference.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=19.r13
+    h: 2ee634d10a9c
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h22
+    h: 8efd8641166b
+  review: drafted
 ---

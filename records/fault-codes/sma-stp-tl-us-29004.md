@@ -76,4 +76,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Message ''Grid parameter unchanged'' is stated but nothing in
     the passages identifies it as informational.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=22.r2
+    h: 9a60070f2b45
+  review: drafted
 ---

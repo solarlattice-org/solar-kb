@@ -109,4 +109,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for cool down and the contact-service-if-persists are
     stated, but auto-reset is only implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=41.r1
+    h: fa309d5be880
+  review: drafted
 ---

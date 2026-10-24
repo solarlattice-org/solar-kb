@@ -200,4 +200,12 @@ claims:
     passage doesn''t say reset is required to clear it or that…'
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c13
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r3
+    h: 7ee4aa6d1521
+  review: drafted
 ---

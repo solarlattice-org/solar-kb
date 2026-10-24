@@ -40,4 +40,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row says no action needed and u3 describes informative messages,
     but classification is not explicit.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=32.r2
+    h: 52237e81b413
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

@@ -118,4 +118,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Wait for cooldown and contact assistance if persists is stated,
     but auto-reset clearing isn''t explicitly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=52.r1
+    h: 61049c341a9f
+  review: drafted
 ---

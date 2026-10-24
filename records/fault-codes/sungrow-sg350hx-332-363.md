@@ -61,4 +61,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c6
+  rel: applies_to
+  target: prod:sungrow-sg350hx
+  cite:
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=35.r3
+    h: 840d89a5aed5
+  review: drafted
 ---

@@ -74,4 +74,15 @@ claims:
     loc: sec=h1
     h: ec77417e5497
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=37.r10
+    h: adcbdb84beb6
+  - src: src:sma-kb-error-message-6456-precharging-circuit-defective
+    loc: sec=h1
+    h: ec77417e5497
+  review: drafted
 ---

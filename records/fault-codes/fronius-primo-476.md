@@ -51,4 +51,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - u30 doesn''t state class; u4 is generic Class 4 text not tying
     476 to it, and fault is only loosely implied.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r35
+    h: 6316eb4991a3
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

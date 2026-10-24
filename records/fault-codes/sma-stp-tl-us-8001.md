@@ -73,4 +73,12 @@ claims:
     loc: tbl=19.r4
     h: 6b87d0ce4639
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=19.r4
+    h: 6b87d0ce4639
+  review: drafted
 ---

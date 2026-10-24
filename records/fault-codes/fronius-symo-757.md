@@ -122,4 +122,15 @@ claims:
     loc: sec=h25
     h: 97ec1f8e556b
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=18.r23
+    h: 2161303340ea
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h25
+    h: 97ec1f8e556b
+  review: drafted
 ---

@@ -75,4 +75,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A site visit is recommended, but the passage doesn''t state that
     the fault clears by service.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=30.r6
+    h: 3c0aa4eb4ab6
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.1
+    h: d40755519b21
+  review: drafted
 ---

@@ -47,4 +47,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say nothing about production effect, though it is
     plausibly none for enabling Webconnect.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=26
+    h: 9b627983164d
+  review: drafted
 ---

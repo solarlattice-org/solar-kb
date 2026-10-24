@@ -83,4 +83,15 @@ claims:
     h: 41ca4ce6d7cb
   review: drafted
   review_note: 'support check: partial - Brief interruption implies resumption, but not explicitly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.27
+    h: e45e5541211a
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h292
+    h: 073e91a4217c
+  review: drafted
 ---

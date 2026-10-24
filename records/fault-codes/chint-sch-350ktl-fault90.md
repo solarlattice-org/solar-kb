@@ -178,4 +178,12 @@ claims:
     loc: tbl=36.r7
     h: 10e9da6af778
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-350ktl
+  cite:
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=36.r7
+    h: 10e9da6af778
+  review: drafted
 ---

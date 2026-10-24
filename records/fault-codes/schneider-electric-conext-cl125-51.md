@@ -35,4 +35,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Hardware over voltage or over current protection is stated, but
     ''internal'' is not.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=32.r5
+    h: 1f55ce302711
+  review: drafted
 ---

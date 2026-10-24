@@ -208,4 +208,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Replacement and contacting assistance if persisting are stated,
     but service-required clearing is only implied for the persistent case.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=37.r7
+    h: bd1f9d50b28e
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=51.r7
+    h: a364c09b556e
+  review: drafted
 ---

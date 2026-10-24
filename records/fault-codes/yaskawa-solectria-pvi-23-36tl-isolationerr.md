@@ -86,4 +86,12 @@ claims:
     inspection is stated but the clearing is not purely service-required.'
   verified_by: review-workflow
   verified_at: 2026-10-20
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=19.r5
+    h: 96e51e5f36fe
+  review: drafted
 ---

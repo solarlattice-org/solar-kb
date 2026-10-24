@@ -54,4 +54,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 4 text is generic and does not tie 448 to class 4 or
     state its behavior.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=15.r21
+    h: 39e2bdb8cadd
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h22
+    h: b16852f397f6
+  review: drafted
 ---

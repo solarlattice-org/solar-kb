@@ -151,4 +151,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=14.r4
+    h: 13f3370757f3
+  review: drafted
 ---

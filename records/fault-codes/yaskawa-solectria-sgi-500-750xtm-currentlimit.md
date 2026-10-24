@@ -95,4 +95,15 @@ claims:
     loc: tbl=31.r2
     h: e11eeb592422
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=31.r2
+    h: e11eeb592422
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

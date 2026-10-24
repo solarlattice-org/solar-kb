@@ -190,4 +190,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then contact assistance is stated, but the passages
     don''t state that the code clears by manual reset.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r13
+    h: 7d7e6c35e11f
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=56.r5
+    h: 43a11c14d441
+  review: drafted
 ---

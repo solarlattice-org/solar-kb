@@ -104,4 +104,12 @@ claims:
     loc: tbl=46.r1
     h: 34f30afcef21
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:sungrow-sg250hx
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=38.r1
+    h: c4550b8a0ebe
+  review: drafted
 ---

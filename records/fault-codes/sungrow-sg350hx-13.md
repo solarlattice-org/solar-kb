@@ -94,4 +94,12 @@ claims:
     loc: tbl=49.r1
     h: 3f4642d9acdb
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:sungrow-sg350hx
+  cite:
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=30.r5
+    h: 40e95c363a32
+  review: drafted
 ---

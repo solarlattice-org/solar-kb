@@ -122,4 +122,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Rare occurrences needing no action hints at self-clearing, but
     auto-reset is not stated, and the table row shows a 30…'
+- claim_id: c12
+  rel: applies_to
+  target: prod:sma-stp-x-us-50
+  cite:
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=11.1.30
+    h: 550bb4ab6a77
+  - src: src:sma-stpxx-us-50-be-en-14
+    loc: sec=h515
+    h: 75f49e9e17fb
+  review: drafted
 ---

@@ -105,4 +105,12 @@ claims:
     loc: tbl=13.r4
     h: d72ef23dec5b
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-125ktl-gs-e
+  cite:
+  - src: src:csi-csi-installation-manual-csi-125ktl-gs-e-usa-v1-3
+    loc: tbl=10.r4
+    h: b12dcab6c84e
+  review: drafted
 ---

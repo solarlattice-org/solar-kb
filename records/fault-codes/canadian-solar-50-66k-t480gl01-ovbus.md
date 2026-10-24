@@ -103,4 +103,12 @@ claims:
     loc: tbl=13.r4
     h: d72ef23dec5b
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-50-66k-t480gl01
+  cite:
+  - src: src:csi-csi-installation-manual-50-66k-t480gl01-ub-lsw-usa-v1-1
+    loc: tbl=13.r4
+    h: d72ef23dec5b
+  review: drafted
 ---

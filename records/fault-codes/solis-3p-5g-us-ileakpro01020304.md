@@ -82,4 +82,12 @@ claims:
     loc: tbl=13.r11
     h: 04668f7557da
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:solis-3p-5g-us
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=15.r5
+    h: dcb57b87715b
+  review: drafted
 ---

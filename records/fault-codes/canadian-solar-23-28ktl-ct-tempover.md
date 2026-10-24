@@ -110,4 +110,15 @@ claims:
     loc: tbl=29
     h: 8dba70b44933
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:canadian-solar-23-28ktl-ct
+  cite:
+  - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
+    loc: tbl=28.r4
+    h: 70d67883e813
+  - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
+    loc: tbl=29
+    h: 8dba70b44933
+  review: drafted
 ---

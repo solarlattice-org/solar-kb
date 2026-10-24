@@ -86,4 +86,15 @@ claims:
     loc: tbl=17.r15
     h: a75e983ace3f
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:fronius-galvo
+  cite:
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: tbl=17.r15
+    h: a75e983ace3f
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 5571d6749f75
+  review: drafted
 ---

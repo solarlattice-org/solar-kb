@@ -140,4 +140,12 @@ claims:
     named in the passage.'
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=15.r1
+    h: eed118aa3df4
+  review: drafted
 ---

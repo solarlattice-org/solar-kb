@@ -88,4 +88,12 @@ claims:
     h: '176220009679'
   review: drafted
   review_note: 'support check: partial - Service/replacement implied but not explicit.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-50-60ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=3.r2
+    h: '176220009679'
+  review: drafted
 ---

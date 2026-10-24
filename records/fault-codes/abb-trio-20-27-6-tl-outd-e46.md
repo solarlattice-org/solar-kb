@@ -128,4 +128,12 @@ claims:
   verified_at: *id001
   review_note: 'support check: partial - Reactivating the system after correcting strings and contacting
     assistance are stated, but manual-reset classification is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r9
+    h: 2614d5aa1457
+  review: drafted
 ---

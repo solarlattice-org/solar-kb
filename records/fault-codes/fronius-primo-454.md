@@ -43,4 +43,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Code 454 is a short-term grid frequency error, but one variant
     is a grid frequency and power module mismatch; ''out…'
+- claim_id: c3
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r25
+    h: 9a685e0b2add
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---

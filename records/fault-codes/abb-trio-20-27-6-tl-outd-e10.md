@@ -78,4 +78,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Low bulk voltage in the DC-DC circuit and the sporadic/systematic
     split are stated, but the passages never name the boost converter.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=37.r9
+    h: fddb829589b0
+  review: drafted
 ---

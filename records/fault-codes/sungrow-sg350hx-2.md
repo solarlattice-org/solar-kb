@@ -157,4 +157,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - AC cable cross-section is a check item, but the passages don''t
     say the fault affects the cable; it is a…'
+- claim_id: c11
+  rel: applies_to
+  target: prod:sungrow-sg350hx
+  cite:
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=29.r1
+    h: 4e1fbd3f8aad
+  review: drafted
 ---

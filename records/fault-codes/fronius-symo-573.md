@@ -68,4 +68,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Class 5 codes display until acknowledged by key press, but the
     class membership of 573 is only implied and the…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=16.r17
+    h: 22790f0fb2c5
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h23
+    h: c4a64ba354f6
+  review: drafted
 ---

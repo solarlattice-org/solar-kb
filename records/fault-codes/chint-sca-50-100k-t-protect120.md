@@ -46,4 +46,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c4
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=50.r3
+    h: 3214e8e06ca9
+  review: drafted
 ---

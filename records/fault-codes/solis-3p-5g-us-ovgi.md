@@ -131,4 +131,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then power board replacement is stated, but clearing
     by manual reset is not stated explicitly.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-3p-5g-us
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=14.r13
+    h: da3a0c0f5b8d
+  review: drafted
 ---

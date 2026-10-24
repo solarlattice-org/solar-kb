@@ -103,4 +103,27 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages give no warning classification; a lost connection
     with corrective measures only loosely implies a warning.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h322
+    h: 31aa4a940e19
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h323
+    h: c03208dd7c40
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h239
+    h: 31aa4a940e19
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h240
+    h: c03208dd7c40
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h314
+    h: 31aa4a940e19
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h315
+    h: c03208dd7c40
+  review: drafted
 ---

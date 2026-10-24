@@ -169,4 +169,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say switch off/on and contact assistance if it persists,
     but never state it clears by a manual reset classification…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r7
+    h: b2bbc651b042
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r10
+    h: 07c805c45e9c
+  review: drafted
 ---

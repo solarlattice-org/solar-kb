@@ -124,4 +124,12 @@ claims:
     h: 29641da34bb0
   review: drafted
   review_note: 'support check: partial - Steps stated but manual reset classification not explicit.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52.r3
+    h: 99d70367a788
+  review: drafted
 ---

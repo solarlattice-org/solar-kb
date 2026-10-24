@@ -132,4 +132,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is listed as a step and then contact assistance,
     but the passages do not say that a…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=37.r3
+    h: 121fa71e7bc5
+  review: drafted
 ---

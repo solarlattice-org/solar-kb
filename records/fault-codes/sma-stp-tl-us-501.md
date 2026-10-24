@@ -199,4 +199,12 @@ claims:
     loc: sec=h281
     h: '371272301941'
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=13.r4
+    h: 5c74c3dbfd51
+  review: drafted
 ---

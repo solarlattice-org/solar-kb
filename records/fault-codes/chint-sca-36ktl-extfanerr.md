@@ -115,4 +115,15 @@ claims:
   review: verified
   verified_by: joshuahamsa
   verified_at: 2026-10-20
+- claim_id: c11
+  rel: applies_to
+  target: prod:chint-sca-36ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=2.r1
+    h: 2884c89a5021
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=4.r3
+    h: 432cb92c3d99
+  review: drafted
 ---

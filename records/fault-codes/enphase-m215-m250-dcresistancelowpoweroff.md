@@ -217,4 +217,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c11
+  rel: applies_to
+  target: prod:enphase-m215-m250
+  cite:
+  - src: src:enphase-enphase-m250-installation-and-operation-manual-60hz
+    loc: sec=h47
+    h: 7416f8b4ccd2
+  - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
+    loc: sec=h100
+    h: c4f8a92bf35b
+  review: drafted
 ---

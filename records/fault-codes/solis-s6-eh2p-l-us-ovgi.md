@@ -131,4 +131,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then power board replacement is stated, but clearing
     by manual reset is not stated explicitly.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=16.r13
+    h: e1de121d91c4
+  review: drafted
 ---

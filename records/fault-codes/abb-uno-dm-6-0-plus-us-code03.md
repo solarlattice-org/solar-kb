@@ -102,4 +102,12 @@ claims:
     loc: tbl=43.r1
     h: 9ae96d6226d6
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=53.r4
+    h: 33ad73be773c
+  review: drafted
 ---

@@ -142,4 +142,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Check of correct system composition is stated, but string configuration
     correction is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=35.r8
+    h: 397eafc39e02
+  review: drafted
 ---

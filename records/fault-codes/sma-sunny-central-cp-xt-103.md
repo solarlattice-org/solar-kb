@@ -120,4 +120,12 @@ claims:
     loc: sec=h384
     h: 60749c2f0bc9
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=32.r1
+    h: fcb1b5c1077d
+  review: drafted
 ---

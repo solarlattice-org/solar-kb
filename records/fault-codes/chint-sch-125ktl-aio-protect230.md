@@ -141,4 +141,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
     but nothing says it clears only by manual reset; plausibly implied…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=33.r5
+    h: 30dd11eda55c
+  review: drafted
 ---

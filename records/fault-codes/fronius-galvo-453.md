@@ -56,4 +56,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The class 4 text is generic and does not tie 453 to class 4 or
     state a fault.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-galvo
+  cite:
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: tbl=18.r12
+    h: 9a0d39dd1e80
+  - src: src:kb-fronius-fronius-galvo-208-240-emanual-status-codes
+    loc: sec=h21
+    h: a5ea6671c1aa
+  review: drafted
 ---

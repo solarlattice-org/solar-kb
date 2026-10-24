@@ -164,4 +164,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The power-cycle and contact-service sequence is stated, but the
     manual-reset clearing isn''t.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r1
+    h: a5a70a4f9522
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=55.r4
+    h: c4f7b5c4417b
+  review: drafted
 ---

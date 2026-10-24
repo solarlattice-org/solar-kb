@@ -21,4 +21,12 @@ claims:
     loc: sec=h1
     h: de9a366b7523
   review: drafted
+- claim_id: c2
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-kb-event-10433-with-stp-us-41stp-us-41-maximum-number-of-i-v-curve-measurement-reached
+    loc: sec=h1
+    h: de9a366b7523
+  review: drafted
 ---

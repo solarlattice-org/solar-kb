@@ -54,4 +54,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row says observe 5 minutes for automatic elimination, implying
     auto-clear, but not that it is expected, and service if persists…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=61.r4
+    h: d781b0c7f29e
+  review: drafted
 ---

@@ -159,4 +159,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say switch off/on and contact assistance if it persists,
     but never state it clears by manual reset; it''s an…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=57.r7
+    h: 356a321b60fb
+  review: drafted
 ---

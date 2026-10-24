@@ -121,4 +121,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Evidence says ''waiting for grid voltage'' but doesn''t explicitly
     state it stops feed-in/trips.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r7
+    h: b36691fd426f
+  review: drafted
 ---

@@ -62,4 +62,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says to measure DC terminal voltage and keep open-circuit
     PV voltage under 1000 V, but ''detected by'' DC voltage…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=57.r1
+    h: 626db0c0bece
+  review: drafted
 ---

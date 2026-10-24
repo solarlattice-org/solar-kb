@@ -72,4 +72,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart is recommended, but clearing by manual reset is not explicitly
     stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-20-25tl-480-r
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=39.r4
+    h: 6424449c71ad
+  review: drafted
 ---

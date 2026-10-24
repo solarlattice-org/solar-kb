@@ -151,4 +151,12 @@ claims:
     loc: tbl=11.r2
     h: a7423fff36ec
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=19.r8
+    h: 6409372bacd1
+  review: drafted
 ---

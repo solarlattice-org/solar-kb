@@ -82,4 +82,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row says to wait for the inverter to return to normal (self-recovery),
     but it also requires manual power cycling;…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sungrow-sg200hx
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=34.r4
+    h: e8a871c21e3c
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=35.r1
+    h: b64052214890
+  review: drafted
 ---

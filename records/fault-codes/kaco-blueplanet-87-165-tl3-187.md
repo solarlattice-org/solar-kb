@@ -90,4 +90,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The device continues operating, but the row is labelled ''Fault
     in fan'' and warning is not stated.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=80.r7
+    h: 1c87b6df8497
+  review: drafted
 ---

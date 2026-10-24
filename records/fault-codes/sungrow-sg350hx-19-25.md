@@ -55,4 +55,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row says wait for return to normal, but also requires manual
     power cycle; auto-reset is only the first step, not…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sungrow-sg350hx
+  cite:
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=34.r2
+    h: b24b52972256
+  review: drafted
 ---

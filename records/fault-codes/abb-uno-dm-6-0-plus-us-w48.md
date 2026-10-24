@@ -113,4 +113,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Automatic reconnection and contact only if disconnects sooner
     are stated; auto-reset is implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=36.r4
+    h: c89977a731af
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=47.r5
+    h: ed6a6728cb2f
+  review: drafted
 ---

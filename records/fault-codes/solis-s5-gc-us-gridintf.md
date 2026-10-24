@@ -92,4 +92,12 @@ claims:
     loc: tbl=28.r16
     h: f91351135bbf
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s5-gc-us
+  cite:
+  - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
+    loc: tbl=14.r5
+    h: dc004aa7f58f
+  review: drafted
 ---

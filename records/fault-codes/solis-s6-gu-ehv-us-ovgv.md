@@ -116,4 +116,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say if AC is high at full power, cables between inverter
     and interconnect are too small; ''only at full…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=10.r3
+    h: a2b4f75b9aab
+  review: drafted
 ---

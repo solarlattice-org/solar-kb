@@ -101,4 +101,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart or contact installer is stated, but clearing by manual
     reset is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-rhi-1p-hv-us
+  cite:
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=11.r4
+    h: fefea5f24846
+  review: drafted
 ---

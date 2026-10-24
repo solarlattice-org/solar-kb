@@ -105,4 +105,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages imply a fault through the destruction risk and disconnection,
     but the class is not stated explicitly, and the…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=34.r2
+    h: c18bd86c0be0
+  review: drafted
 ---

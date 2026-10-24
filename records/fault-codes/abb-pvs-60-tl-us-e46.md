@@ -124,4 +124,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reactivating the system after correcting strings and contacting
     assistance are stated, but manual-reset classification is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=49.r6
+    h: 8ca1a43bdeae
+  review: drafted
 ---

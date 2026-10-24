@@ -91,4 +91,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The sporadic case connects automatically once voltage drops,
     but the permanent case is not auto-reset, and ''service'' is only loosely implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=36.r10
+    h: 754756f09748
+  review: drafted
 ---

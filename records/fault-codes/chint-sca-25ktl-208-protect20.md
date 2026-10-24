@@ -180,4 +180,12 @@ claims:
     loc: tbl=34.r3
     h: cee358a50948
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=50.r6
+    h: 68c1dff1947b
+  review: drafted
 ---

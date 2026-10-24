@@ -128,4 +128,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Inability to start up is implied in some cases but a trip is
     not stated.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-25ktl-480
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=57.r6
+    h: 70f2eb9f0ea2
+  review: drafted
 ---

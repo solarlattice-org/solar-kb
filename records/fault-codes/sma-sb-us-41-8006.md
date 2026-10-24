@@ -52,4 +52,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The article says the event only displays an existing operating
     state and the behavior is unchanged by the firmware, but…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-kb-sbx-x-1sp-us-41-event-8006-string-x-is-in-derating-mode
+    loc: sec=h1
+    h: 2b63d5211f3b
+  review: drafted
 ---

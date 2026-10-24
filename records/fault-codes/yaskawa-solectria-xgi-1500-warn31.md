@@ -117,4 +117,18 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500
+  cite:
+  - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
+    loc: tbl=22.r5
+    h: a82464b1d23a
+  - src: src:yaskawa-xgi-1500-125-166-iom-docr-071015-ff
+    loc: tbl=22.r5
+    h: a82464b1d23a
+  - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
+    loc: tbl=19.r5
+    h: a82464b1d23a
+  review: drafted
 ---

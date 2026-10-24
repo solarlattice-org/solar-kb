@@ -119,4 +119,18 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-20
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r4
+    h: 0272c94b2138
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r5
+    h: aabec9e33b25
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=18.r6
+    h: aa0995381f56
+  review: drafted
 ---

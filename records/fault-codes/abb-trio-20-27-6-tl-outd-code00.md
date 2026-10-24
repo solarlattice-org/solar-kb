@@ -75,4 +75,12 @@ claims:
     loc: tbl=42.r1
     h: e437ee039933
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=42.r1
+    h: e437ee039933
+  review: drafted
 ---

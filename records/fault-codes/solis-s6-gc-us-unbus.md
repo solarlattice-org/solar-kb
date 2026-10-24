@@ -167,4 +167,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row says ''DC bus voltage too low for inverter to operate'' and
     suggests restart or replace, implying a stop, but…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-manual-s6-gc-25-60-k-us-v1-1-20251013
+    loc: tbl=12.r5
+    h: 7868f947bd08
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=11.r5
+    h: 7868f947bd08
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=14.r1
+    h: 2e74ad175265
+  review: drafted
 ---

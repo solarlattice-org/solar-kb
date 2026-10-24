@@ -110,4 +110,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle and then contacting support matches a manual reset,
     but section 9.1.2 also says warnings can self-recover, so…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-1mw
+  cite:
+  - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
+    loc: tbl=22.r3
+    h: d1c666db0e5b
+  review: drafted
 ---

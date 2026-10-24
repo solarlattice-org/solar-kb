@@ -94,4 +94,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row says wait for auto-clearing, then restart, check open-circuit
     PV voltage and call service; the classification as manual reset is…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=65.r1
+    h: 18eda6e39114
+  review: drafted
 ---

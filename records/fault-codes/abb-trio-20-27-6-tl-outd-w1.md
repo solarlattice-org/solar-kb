@@ -172,4 +172,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say to check the correct composition of the system if
     below Vstart and contact assistance if above, but do…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=35.r7
+    h: 898303b22cf6
+  review: drafted
 ---

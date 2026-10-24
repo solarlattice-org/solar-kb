@@ -50,4 +50,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The fault is in the power section (Leistungsteil), which approximately
     maps to power board, but the row doesn''t name a board.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=76.r4
+    h: f88e00390eb6
+  review: drafted
 ---

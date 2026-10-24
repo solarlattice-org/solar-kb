@@ -40,4 +40,12 @@ claims:
     loc: tbl=21.r14
     h: 57eb4f0403d6
   review: drafted
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=21.r14
+    h: 57eb4f0403d6
+  review: drafted
 ---

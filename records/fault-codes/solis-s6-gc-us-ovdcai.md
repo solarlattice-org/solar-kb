@@ -136,4 +136,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart, string removal and board replacement are stated, but
     not that it clears by manual reset; the replacement steps come…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=16.r4
+    h: 9bcc4c9ab9ac
+  review: drafted
 ---

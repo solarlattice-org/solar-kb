@@ -33,4 +33,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The fault was fixed and no action is needed, but the row shows
     behavior W rather than informational.'
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=35.r10
+    h: 3baec5b7187e
+  review: drafted
 ---

@@ -67,4 +67,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Idle waiting for more power with no action needed implies it
     resolves itself, but auto-reset is not explicitly stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=31.r14
+    h: 1215bd0134cd
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

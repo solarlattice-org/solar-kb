@@ -72,4 +72,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The table is titled ''Fault messages'' and lists IN I-PRO, but
     the row itself doesn''t state the device behavior; fault…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-50-66ktl-gs-fl
+  cite:
+  - src: src:csi-csi-manual-50-66ktl-gs-fl-v1-2-2017-09-07
+    loc: tbl=9.r2
+    h: 4c094ee77fda
+  review: drafted
 ---

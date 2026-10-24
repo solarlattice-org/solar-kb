@@ -69,4 +69,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c6
+  rel: applies_to
+  target: prod:huawei-sun2000-25-30ktl-us
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=43.r4
+    h: 131d1beb27bc
+  review: drafted
 ---

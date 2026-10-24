@@ -87,4 +87,15 @@ claims:
     loc: tbl=11.r4
     h: 3ae09badb452
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-14-20tl
+  cite:
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r4
+    h: 3ae09badb452
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r5
+    h: 7dcca451f1c1
+  review: drafted
 ---

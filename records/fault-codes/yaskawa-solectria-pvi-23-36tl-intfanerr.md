@@ -126,4 +126,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row says to observe for automatic clearing first, but power
     cycling and service are also required if it does…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r4
+    h: a7eb1991dfd5
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r5
+    h: 820d5c711ec3
+  review: drafted
 ---

@@ -82,4 +82,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Labelled alarm, but no statement of device continuing operation;
     warning is implied only by label.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r6
+    h: ffc90862e4ba
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r6
+    h: ffc90862e4ba
+  review: drafted
 ---

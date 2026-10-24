@@ -101,4 +101,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart or contact installer is stated, but clearing by manual
     reset is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s6-eh1p-h-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
+    loc: tbl=15.r4
+    h: fefea5f24846
+  review: drafted
 ---

@@ -96,4 +96,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The 309 row has no remedy; contact-service-if-persists is only
     inferred from the grouped 308 row.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=14.r10
+    h: c8ec92ca6ba9
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h21
+    h: beb65823f4ab
+  review: drafted
 ---

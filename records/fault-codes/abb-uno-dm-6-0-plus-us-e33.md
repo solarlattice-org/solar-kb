@@ -98,4 +98,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for temperature to return and contacting support if it
     persists are stated, but auto-reset isn''t explicit.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r6
+    h: 1a05df850357
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r9
+    h: 1e8781e01615
+  review: drafted
 ---

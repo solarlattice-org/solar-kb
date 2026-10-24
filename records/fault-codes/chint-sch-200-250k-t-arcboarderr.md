@@ -116,4 +116,12 @@ claims:
     h: 29641da34bb0
   review: drafted
   review_note: 'support check: partial - Steps stated but manual reset classification not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-200-250k-t
+  cite:
+  - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+    loc: tbl=43.r7
+    h: 29641da34bb0
+  review: drafted
 ---

@@ -44,4 +44,15 @@ claims:
     loc: sec=h351
     h: 1c5f43c056de
   review: drafted
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.43
+    h: 6b77cd59dedf
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h350
+    h: 8d52c942f514
+  review: drafted
 ---

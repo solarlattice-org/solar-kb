@@ -141,4 +141,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
     but nothing says it clears only by manual reset; plausibly implied…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-275ktl
+  cite:
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=26.r7
+    h: '535012272447'
+  review: drafted
 ---

@@ -105,4 +105,15 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say observe 5 min for automatic clearing, then check
     debris, but no contact-service step appears and auto-reset is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-14-20tl
+  cite:
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r1
+    h: 9e7339704f3a
+  - src: src:yaskawa-pvi-14-20tl-iom-docr-070351-g
+    loc: tbl=11.r2
+    h: 8528aeb9c303
+  review: drafted
 ---

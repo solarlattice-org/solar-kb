@@ -114,4 +114,12 @@ claims:
     loc: tbl=30.r3
     h: 1a3868fcd97b
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sungrow-sg200hx
+  cite:
+  - src: src:sungrow-sungrow-sg200hx-us-user-manual
+    loc: tbl=30.r3
+    h: 1a3868fcd97b
+  review: drafted
 ---

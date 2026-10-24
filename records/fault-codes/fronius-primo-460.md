@@ -53,4 +53,15 @@ claims:
     loc: tbl=18.r16
     h: d4d51e4531d2
   review: drafted
+- claim_id: c4
+  rel: applies_to
+  target: prod:fronius-primo
+  cite:
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: tbl=17.r29
+    h: b9bd723471f5
+  - src: src:kb-fronius-fronius-primo-208-240-emanual-status-codes
+    loc: sec=h20
+    h: 45088a5d7149
+  review: drafted
 ---
