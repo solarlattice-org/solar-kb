@@ -1,0 +1,47 @@
+id: https://solarlattice.org/kb/schema/communication
+name: solar_kb_communication
+title: Solar Lattice schema - communication
+description: Communication protocols and information models, and the registers of vendor maps.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Protocol:
+    is_a: Record
+    description: >-
+      A communication protocol, information model or interface (Modbus TCP/RTU, SunSpec models, CAN, RS485,
+      IEEE 2030.5, OCPP 1.6, Speedwire).
+    slots: [protocol_kind]
+  Register:
+    is_a: Record
+    description: >-
+      One register or point in a vendor map (CPS 350 kW register 0x1F40 fault bits; SMA 30513 total yield),
+      written deterministically from the map table. What it means is a maps_to claim.
+    slots: [make, product, address, data_type, scale, unit, access, sunspec_point]
+
+slots:
+  protocol_kind: {range: ProtocolKind}
+  address: {pattern: "^(0x[0-9A-Fa-f]+|[0-9]+)$", description: "Register address as the map prints it: decimal (30513) or hex (0x1F40)."}
+  data_type: {pattern: "^[a-z][a-z0-9_]*$", description: "Data type as the map names it, lowercased (uint16, int32, float32, bitfield16, string)."}
+  scale: {description: "Scale: a power-of-ten exponent (-2) or the name of the scale-factor point (W_SF)."}
+  access: {range: RegisterAccess}
+  sunspec_point: {pattern: "^model_[0-9]+\\.[A-Za-z0-9_]+$", description: "The SunSpec model point the register corresponds to (model_103.W)."}
+
+enums:
+  ProtocolKind:
+    permissible_values:
+      transport: {description: "Physical or transport layer (RS485, CAN, Ethernet)."}
+      information-model: {description: "SunSpec models, IEC 61850 logical nodes."}
+      application: {description: "Modbus, IEEE 2030.5, OCPP, DNP3."}
+  RegisterAccess:
+    permissible_values:
+      r: {description: Read only.}
+      rw: {description: Read and write.}
+      w: {description: Write only.}

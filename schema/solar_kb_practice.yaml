@@ -1,0 +1,40 @@
+id: https://solarlattice.org/kb/schema/practice
+name: solar_kb_practice
+title: Solar Lattice schema - practice
+description: Concrete procedures and the hazards of the work.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Procedure:
+    is_a: Record
+    description: >-
+      A concrete sequence of steps (commission STP CORE1; replace a BFS board; RSD standby-voltage check;
+      ground-fault location by pole-to-ground voltages). A Mitigation or DetectionMethod is performed_by it.
+    slots: [procedure_kind]
+  Hazard:
+    is_a: Record
+    description: >-
+      A danger and its mechanism (DC arc flash, shock from capacitors, battery thermal runaway, vented gas);
+      controlled_by mitigations, PPE and procedures.
+
+slots:
+  procedure_kind: {range: ProcedureKind}
+
+enums:
+  ProcedureKind:
+    permissible_values:
+      install: {}
+      commission: {}
+      configure: {}
+      maintain: {}
+      repair: {}
+      test: {}
+      update: {description: Firmware or software update.}

@@ -65,7 +65,10 @@ def render_index_pages(r: Renderer, corpus: Corpus, terms: list[Term]) -> None:
                         href(page, term_path(KB + t))) for t, p, d in PUBLIC_TYPES]
 
     total = len(corpus.records)
-    r.page("landing.html.j2", "index.html", title="Solar Lattice", types=rows("index.html"), total=total)
+    # The landing index shows the types that have records (schema 0.5.0 has 31 public types, most still empty); the KB
+    # home lists them all.
+    r.page("landing.html.j2", "index.html", title="Solar Lattice", types=[t for t in rows("index.html") if t.count],
+           total=total)
     downloads = [{"name": path.rsplit("/", 1)[1], "label": label, "href": href("kb/index.html", path)}
                  for path, label in DOWNLOADS]
     r.page("kb_index.html.j2", "kb/index.html", title="Knowledge base", types=rows("kb/index.html"), total=total,

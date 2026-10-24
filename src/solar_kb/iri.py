@@ -11,9 +11,17 @@ CURIE_RE = re.compile(r"^([A-Za-z][A-Za-z0-9_]*):(\S+)$")
 
 
 def load_prefixes(schema_path: Path) -> dict[str, str]:
-    """The `prefixes:` map of the LinkML schema, e.g. {"fm": "https://solarlattice.org/kb/fm/", ...}."""
-    data = yaml.safe_load(Path(schema_path).read_text(encoding="utf-8"))
-    return dict(data.get("prefixes") or {})
+    """The `prefixes:` map of the LinkML schema, e.g. {"fm": "https://solarlattice.org/kb/fm/", ...}: the root file's
+    map plus those of its local imports (schema/modules/*.yaml, schema 0.5.0), the root winning on a clash."""
+    path = Path(schema_path)
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    prefixes: dict[str, str] = {}
+    for module in data.get("imports") or []:
+        local = path.parent / f"{module}.yaml"
+        if isinstance(module, str) and ":" not in module and local.is_file():
+            prefixes.update(load_prefixes(local))
+    prefixes.update(data.get("prefixes") or {})
+    return prefixes
 
 
 def expand(value: str, prefixes: dict[str, str]) -> str:

@@ -1,11 +1,14 @@
 id: https://solarlattice.org/kb/schema
 name: solar_kb
 title: Solar Lattice knowledge schema
-version: 0.4.0
+version: 0.5.0
 license: CC-BY-4.0
 description: >-
   Typed records and cited claims for solar PV domain knowledge.
   Every relation and every quantity is a Claim that cites evidence.
+  The schema is split into modules (core, failure, equipment, events, control, communication, practice,
+  regulation, engineering, overlay); every term keeps its kb: IRI whichever module defines it.
+# Every prefix is declared here, in the root: solar_kb.iri.load_prefixes reads this map first.
 prefixes:
   linkml: https://w3id.org/linkml/
   skos: http://www.w3.org/2004/02/skos/core#
@@ -22,229 +25,39 @@ prefixes:
   ec: https://solarlattice.org/kb/ec/
   case: https://solarlattice.org/kb/case/
   dex: https://solarlattice.org/kb/dex/
+  org: https://solarlattice.org/kb/org/
+  region: https://solarlattice.org/kb/region/
+  role: https://solarlattice.org/kb/role/
+  prod: https://solarlattice.org/kb/prod/
+  fw: https://solarlattice.org/kb/fw/
+  tool: https://solarlattice.org/kb/tool/
+  state: https://solarlattice.org/kb/state/
+  func: https://solarlattice.org/kb/func/
+  param: https://solarlattice.org/kb/param/
+  profile: https://solarlattice.org/kb/profile/
+  proto: https://solarlattice.org/kb/proto/
+  reg: https://solarlattice.org/kb/reg/
+  proc: https://solarlattice.org/kb/proc/
+  hazard: https://solarlattice.org/kb/hazard/
+  std: https://solarlattice.org/kb/std/
+  req: https://solarlattice.org/kb/req/
+  prog: https://solarlattice.org/kb/prog/
+  concept: https://solarlattice.org/kb/concept/
+  metric: https://solarlattice.org/kb/metric/
+  calc: https://solarlattice.org/kb/calc/
+  arch: https://solarlattice.org/kb/arch/
   unit: http://qudt.org/vocab/unit/
 default_prefix: kb
 default_range: string
 imports:
   - linkml:types
-
-classes:
-  Record:
-    abstract: true
-    description: Common fields of every knowledge record.
-    slots: [id, type, name, aliases, category, status, close_mappings, exact_mappings, claims]
-  FailureMode:
-    is_a: Record
-    description: What went wrong.
-  Stressor:
-    is_a: Record
-    description: Why it went wrong (environmental, electrical, mechanical, workmanship).
-  Symptom:
-    is_a: Record
-    description: An observable condition.
-  Measurement:
-    is_a: Record
-    description: The data signature of a symptom.
-    slots: [signals]
-  DetectionMethod:
-    is_a: Record
-    description: How a cause is confirmed.
-    slots: [tool_ids]
-  Mitigation:
-    is_a: Record
-    description: A corrective or preventive action.
-  Component:
-    is_a: Record
-    description: A physical part of a PV system.
-  Source:
-    is_a: Record
-    description: A bibliographic source; doubles as its public manifest entry.
-    slots: [tier, license, tdm_ok, origin_url, sha256, publisher, edition_or_date, collection]
-    slot_usage:
-      tier: {required: true}
-      tdm_ok: {required: true}
-  FaultCode:
-    is_a: Record
-    description: >-
-      A vendor fault, warning or event code as one make and model family prints it. Identity slots are
-      written deterministically from the cited manual row; what the code means is carried by ordinary cited
-      claims (reports, indicates, event-axis relations), never by drafted prose. The body stays empty.
-    slots: [make, make_name, model_family, family_name, code, code_key, code_from, code_to, display_message,
-            vendor_severity, page]
-    slot_usage:
-      make: {required: true}
-      make_name: {required: true}
-      model_family: {required: true}
-      family_name: {required: true}
-      code: {required: true}
-      code_key: {required: true}
-      category: {required: true}
-  EventConcept:
-    is_a: Record
-    description: >-
-      A normalized value on one fault-event axis (event class, production effect or recovery), with its
-      reading rule in the body. Hand-written; a FaultCode points at it through has_event_class,
-      has_production_effect or has_recovery.
-    slots: [axis]
-    slot_usage:
-      axis: {required: true}
-  Case:
-    is_a: Record
-    description: One work order. Private overlay only.
-    slots: [observed, diagnosis, fix, outcome]
-  DataExample:
-    is_a: Record
-    description: Reserved. A labeled monitoring/register data window for ML training.
-    slots: [dataset, window, label, labeler, anonymized]
-
-  Claim:
-    description: One relation or quantity, with citations and review state.
-    slots: [claim_id, rel, target, by, attr, value, conditions, note, quote, cite,
-            review, verified_by, verified_at, review_note, keep, conflicts_with,
-            valid_from, valid_to, superseded_by]
-  Citation:
-    description: >-
-      A pointer to one evidence unit: source, locator, and the first 12 hex characters of the unit's
-      content hash, so a revised source can never silently re-point the citation at different text.
-    slots: [src, loc, h]
-  QuantityValue:
-    slots: [min, max, nominal, unit]
-    slot_usage:
-      unit: {required: true}
-  Signal:
-    description: A monitoring channel named by SunSpec model point.
-    slots: [point, unit, pattern]
-    slot_usage:
-      point: {required: true}
-      pattern: {required: true}
-
-slots:
-  id: {identifier: true, range: uriorcurie, required: true}
-  type: {designates_type: true, range: string, required: true}
-  name: {required: true}
-  aliases: {multivalued: true}
-  category: {description: "Coarse grouping for browsing and export (e.g. Modules, Wiring, Soiling, Grid, Inverters, Trackers); from the pv-root-cause taxonomy for compiled failure modes."}
-  status: {range: RecordStatus}
-  close_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:closeMatch}
-  exact_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:exactMatch}
-  claims: {range: Claim, multivalued: true, inlined_as_list: true}
-  signals: {range: Signal, multivalued: true, inlined_as_list: true}
-  tool_ids: {multivalued: true, description: IDs of deterministic tools (sub-project 2).}
-  tier: {range: SourceTier}
-  license: {}
-  tdm_ok: {range: TdmOk}
-  origin_url: {range: uri}
-  sha256: {pattern: "^[0-9a-f]{64}$"}
-  publisher: {}
-  edition_or_date: {}
-  collection: {}
-  observed: {multivalued: true, range: uriorcurie}
-  diagnosis: {range: uriorcurie}
-  fix: {}
-  outcome: {}
-  dataset: {}
-  window: {}
-  label: {range: uriorcurie}
-  labeler: {}
-  anonymized: {range: boolean}
-  make: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog manufacturer id (sma, chint, yaskawa-solectria)."}
-  make_name: {description: "Manufacturer display name (SMA, CPS, Yaskawa Solectria)."}
-  model_family: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog model-family slug (stp-core1-us, sca-50-60ktl)."}
-  family_name: {description: "Model-family display name (Sunny Tripower CORE1-US (STP 33/50/62-US-41))."}
-  code: {description: "The code as the manual prints it, trimmed (3701, Protect0090, CRIT-4, 6002-6412)."}
-  code_key:
-    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
-    description: >-
-      Lookup key of the printed code: lowercase, whitespace removed, zero padding stripped from the number,
-      vendor prefix kept, ranges start-end, codes without digits reduced to alphanumerics (solar_kb.codes).
-  code_from: {range: integer, description: First number of a printed range; only with code_to.}
-  code_to: {range: integer, description: Last number of a printed range; only with code_from.}
-  display_message: {description: "The text the device shows, at most 8 words, an exact span of the cited row."}
-  vendor_severity: {description: "The vendor's severity word as printed, at most 3 words; never normalized."}
-  page: {range: integer, description: "Page of the defining row, for the technician holding the PDF."}
-  axis: {range: EventAxis, description: Which fault-event axis this concept is a value of.}
-  claim_id: {required: true, pattern: "^c[0-9]+$"}
-  rel: {range: Relation}
-  target: {range: uriorcurie}
-  by: {range: uriorcurie}
-  attr: {pattern: "^[a-z][a-z0-9_]*$"}
-  value: {range: QuantityValue, inlined: true}
-  conditions: {}
-  note: {}
-  quote: {}
-  cite: {range: Citation, multivalued: true, inlined_as_list: true, required: true, minimum_cardinality: 1}
-  review: {range: ReviewState, required: true}
-  verified_by: {}
-  verified_at: {range: date}
-  review_note: {}
-  keep: {range: KeepState}
-  conflicts_with: {multivalued: true, pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
-  valid_from: {range: date}
-  valid_to: {range: date}
-  superseded_by: {pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
-  src:
-    range: uriorcurie
-    required: true
-    slot_uri: kb:cites_source
-    description: >-
-      The cited Source record. Its IRI is kb:cites_source because kb:src is the Source namespace.
-      Record YAML keeps the key `src`.
-  loc:
-    required: true
-    pattern: "^(sec=[0-9A-Za-z][0-9A-Za-z.]*|p=[0-9]+|tbl=[0-9]+(\\.r[0-9]+)?|fig=[0-9]+|t=[0-9]{1,3}:[0-5][0-9]-[0-9]{1,3}:[0-5][0-9])$"
-  h:
-    required: true
-    pattern: "^[0-9a-f]{12}$"
-    description: First 12 hex characters of the cited unit's content hash (from the evidence layer).
-  min: {range: float}
-  max: {range: float}
-  nominal: {range: float}
-  unit: {pattern: "^unit:[A-Za-z0-9_-]+$"}
-  point: {pattern: "^model_[0-9]+\\.[A-Za-z0-9_]+$"}
-  pattern: {}
-
-enums:
-  RecordStatus:
-    permissible_values:
-      proposed: {description: Stub created by the compiler; not yet approved.}
-      active: {}
-  Relation:
-    permissible_values:
-      caused_by: {}
-      affects: {}
-      presents_as: {}
-      observed_as: {}
-      produces: {}
-      detected_by: {}
-      mitigated_by: {}
-      leads_to: {}
-      distinguished_from: {}
-      reports: {description: FaultCode -> Symptom. The observation the code reports.}
-      indicates: {description: FaultCode -> FailureMode. The failed thing the manual names.}
-      has_event_class: {description: FaultCode -> EventConcept on the event_class axis.}
-      has_production_effect: {description: FaultCode -> EventConcept on the production_effect axis.}
-      has_recovery: {description: FaultCode -> EventConcept on the recovery axis.}
-      defined_in: {description: FaultCode -> Source. The manual whose row defines the code; the citation is that row.}
-  EventAxis:
-    permissible_values:
-      event_class: {description: "What kind of message it is (fault, warning, informational)."}
-      production_effect: {description: "What it does to energy (trip, derate, no production effect)."}
-      recovery: {description: "What clears it (auto-reset, auto-reset-limited, manual-reset, service-required)."}
-  ReviewState:
-    permissible_values:
-      drafted: {description: Passed automated checks; a lead.}
-      verified: {description: Approved by a human; a fact.}
-      disputed: {description: Flagged or conflicting; must be surfaced.}
-  KeepState:
-    permissible_values:
-      drafted: {description: Reviewer keeps the claim as drafted through merge.}
-  SourceTier:
-    permissible_values:
-      open: {}
-      reference: {}
-      private: {}
-  TdmOk:
-    permissible_values:
-      "yes": {}
-      "no": {}
-      unknown: {}
+  - solar_kb_core
+  - solar_kb_failure
+  - solar_kb_equipment
+  - solar_kb_events
+  - solar_kb_control
+  - solar_kb_communication
+  - solar_kb_practice
+  - solar_kb_regulation
+  - solar_kb_engineering
+  - solar_kb_overlay

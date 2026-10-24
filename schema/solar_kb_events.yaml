@@ -1,0 +1,71 @@
+id: https://solarlattice.org/kb/schema/events
+name: solar_kb_events
+title: Solar Lattice schema - events
+description: Vendor fault and event codes, the fault-event axes, and normal operating states.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  FaultCode:
+    is_a: Record
+    description: >-
+      A vendor fault, warning or event code as one make and model family prints it. Identity slots are
+      written deterministically from the cited manual row; what the code means is carried by ordinary cited
+      claims (reports, indicates, event-axis relations), never by drafted prose. The body stays empty.
+    slots: [make, make_name, model_family, family_name, code, code_key, code_from, code_to, display_message,
+            vendor_severity, page, firmware_min, firmware_max]
+    slot_usage:
+      make: {required: true}
+      make_name: {required: true}
+      model_family: {required: true}
+      family_name: {required: true}
+      code: {required: true}
+      code_key: {required: true}
+      category: {required: true}
+  EventConcept:
+    is_a: Record
+    description: >-
+      A normalized value on one fault-event axis (event class, production effect or recovery), with its
+      reading rule in the body. Hand-written; a FaultCode points at it through has_event_class,
+      has_production_effect or has_recovery.
+    slots: [axis]
+    slot_usage:
+      axis: {required: true}
+  OperatingState:
+    is_a: Record
+    description: >-
+      A normal (non-fault) device state or indication (MPP, Waiting, Derating, LimByEPM, Permanent Disable
+      Mode, a "no country data set" LED pattern). Generic, or scoped to a make and product. A FaultCode
+      reporting it points here with indicates_state.
+    slots: [make, product]
+
+slots:
+  make_name: {description: "Manufacturer display name (SMA, CPS, Yaskawa Solectria)."}
+  model_family: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog model-family slug (stp-core1-us, sca-50-60ktl)."}
+  family_name: {description: "Model-family display name (Sunny Tripower CORE1-US (STP 33/50/62-US-41))."}
+  code: {description: "The code as the manual prints it, trimmed (3701, Protect0090, CRIT-4, 6002-6412)."}
+  code_key:
+    pattern: "^[a-z0-9]+(-[a-z0-9]+)*$"
+    description: >-
+      Lookup key of the printed code: lowercase, whitespace removed, zero padding stripped from the number,
+      vendor prefix kept, ranges start-end, codes without digits reduced to alphanumerics (solar_kb.codes).
+  code_from: {range: integer, description: First number of a printed range; only with code_to.}
+  code_to: {range: integer, description: Last number of a printed range; only with code_from.}
+  display_message: {description: "The text the device shows, at most 8 words, an exact span of the cited row."}
+  vendor_severity: {description: "The vendor's severity word as printed, at most 3 words; never normalized."}
+  page: {range: integer, description: "Page of the defining row, for the technician holding the PDF."}
+  axis: {range: EventAxis, description: Which fault-event axis this concept is a value of.}
+
+enums:
+  EventAxis:
+    permissible_values:
+      event_class: {description: "What kind of message it is (fault, warning, informational)."}
+      production_effect: {description: "What it does to energy (trip, derate, no production effect)."}
+      recovery: {description: "What clears it (auto-reset, auto-reset-limited, manual-reset, service-required)."}

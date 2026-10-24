@@ -1,0 +1,61 @@
+id: https://solarlattice.org/kb/schema/regulation
+name: solar_kb_regulation
+title: Solar Lattice schema - regulation
+description: >-
+  Codes, standards and utility rules as editions, their clause-level requirements, and warranty, incentive,
+  certification, training and service programs.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Standard:
+    is_a: Record
+    description: >-
+      A code, standard or utility rule as one edition (NEC 2023, IEEE 1547-2018, UL 1741 SB, IEC 62446-1:2016,
+      AS/NZS 4777.2:2020, National Grid ESB756). issued_by its Organization; adopted_in Regions; supersedes
+      the previous edition.
+    slots: [designator, edition, jurisdiction, standard_kind]
+  Requirement:
+    is_a: Record
+    description: >-
+      One clause-level requirement of a Standard (NEC 2023 690.12(B)(2); IEEE 1547-2018 §6.4.1 Cat II), part_of
+      its Standard. Its claims may quote the clause text with quote_source attribution (spec B decision 2).
+    slots: [clause]
+  Program:
+    is_a: Record
+    description: >-
+      A warranty, incentive, certification, training or service program (SMA 10-year warranty; NJ SREC-II;
+      SolarEdge PCS course; Enphase RMA).
+    slots: [program_kind]
+
+slots:
+  designator: {description: "The publisher's designator without edition (NFPA 70, IEEE 1547, UL 1741)."}
+  edition: {description: "The edition as published (2023, 2018, SB, 2016)."}
+  jurisdiction: {range: uriorcurie, description: The Region where the standard is issued or binding (for grid codes and utility rules).}
+  standard_kind: {range: StandardKind}
+  clause: {description: "The clause designator as printed (690.12(B)(2), 6.4.1)."}
+  program_kind: {range: ProgramKind}
+
+enums:
+  StandardKind:
+    permissible_values:
+      code: {description: "An installation or electrical code (NEC, NFPA 70E)."}
+      product-standard: {description: "A product safety or performance standard (UL 1741, IEC 62109)."}
+      test-standard: {description: "A test or measurement standard (IEC 61724-1, IEC 62446-1)."}
+      certification-scheme: {description: "A certification or listing scheme (UL 1741 SB listing, CEC listing)."}
+      grid-code: {description: "An interconnection standard or grid code (IEEE 1547, AS/NZS 4777.2, VDE-AR-N 4105)."}
+      utility-requirement: {description: "A utility's own interconnection rule (CA Rule 21, National Grid ESB756)."}
+  ProgramKind:
+    permissible_values:
+      warranty: {}
+      incentive: {description: "Rebates, SRECs, feed-in tariffs."}
+      certification: {description: Installer certification programs.}
+      training: {}
+      service: {description: "RMA, replacement and service programs."}

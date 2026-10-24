@@ -100,7 +100,8 @@ def collisions(paths: Iterable[str]) -> list[tuple[str, ...]]:
     return sorted(clashes)
 
 
-_FORMER_ID = re.compile(r"^(fm|stressor|symptom|meas|method|mit|comp|fc|ec):[a-z0-9]+(-[a-z0-9]+)*$")
+# Every public record prefix but src: (sources are not renamed into other types).
+_FORMER_ID = re.compile(r"^(" + "|".join(p for _, p, _ in PUBLIC_TYPES if p != "src") + r"):[a-z0-9]+(-[a-z0-9]+)*$")
 
 
 def alias_ids(rid: str, aliases: Iterable[object]) -> list[str]:

@@ -1,0 +1,46 @@
+id: https://solarlattice.org/kb/schema/failure
+name: solar_kb_failure
+title: Solar Lattice schema - failure
+description: Failure modes and the triage chain around them (spec A slice A).
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  FailureMode:
+    is_a: Record
+    description: What went wrong.
+  Stressor:
+    is_a: Record
+    description: Why it went wrong (environmental, electrical, mechanical, workmanship).
+  Symptom:
+    is_a: Record
+    description: An observable condition.
+  Measurement:
+    is_a: Record
+    description: The data signature of a symptom.
+    slots: [signals]
+  DetectionMethod:
+    is_a: Record
+    description: How a cause is confirmed.
+    slots: [tool_ids]
+  Mitigation:
+    is_a: Record
+    description: A corrective or preventive action.
+  Signal:
+    description: A monitoring channel named by SunSpec model point.
+    slots: [point, unit, pattern]
+    slot_usage:
+      point: {required: true}
+      pattern: {required: true}
+
+slots:
+  signals: {range: Signal, multivalued: true, inlined_as_list: true}
+  point: {pattern: "^model_[0-9]+\\.[A-Za-z0-9_]+$"}
+  pattern: {}

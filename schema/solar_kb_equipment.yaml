@@ -1,0 +1,60 @@
+id: https://solarlattice.org/kb/schema/equipment
+name: solar_kb_equipment
+title: Solar Lattice schema - equipment
+description: >-
+  Generic part classes (Component), concrete products at family, model or variant level, their firmware
+  releases, and the tools used in field work.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Component:
+    is_a: Record
+    description: A physical part of a PV system.
+  Product:
+    is_a: Record
+    description: >-
+      A manufacturer's product at family, model or variant level (SMA Sunny Tripower CORE1 family; STP 62-US-41
+      model). A model is part_of its family and the family aggregates; a Product is instance_of its Component
+      class. Its make is the catalog slug; FaultCode make/model_family slugs become Product family ids.
+    slots: [make, product_level, model_number]
+  FirmwareRelease:
+    is_a: Record
+    description: >-
+      One released firmware version of a product line (SMA STP-US-41 3.12.20.R; Enphase IQ Gateway 8.3.6086),
+      written deterministically from release notes.
+    slots: [product, version, release_date]
+  Tool:
+    is_a: Record
+    description: >-
+      A field instrument, PPE item, software, app or platform used in work (insulation tester, I-V tracer,
+      Sunny Explorer, SetApp, PVsyst, PowerTrack).
+    slots: [tool_kind]
+
+slots:
+  product_level: {range: ProductLevel}
+  model_number: {description: "The model or part number as the manufacturer prints it (STP 62-US-41, IQ8M-72-2-US)."}
+  version: {description: "The firmware version as the vendor prints it (3.12.20.R)."}
+  release_date: {range: date}
+  tool_kind: {range: ToolKind}
+
+enums:
+  ProductLevel:
+    permissible_values:
+      family: {description: A product line; aggregates its models.}
+      model: {description: One orderable model; part_of its family.}
+      variant: {description: A regional or hardware variant of a model; part_of the model.}
+  ToolKind:
+    permissible_values:
+      instrument: {}
+      ppe: {description: Personal protective equipment.}
+      software: {}
+      app: {}
+      platform: {description: A monitoring or fleet platform.}
