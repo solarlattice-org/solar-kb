@@ -41,6 +41,9 @@ claims:
     loc: sec=h1
     h: 0c32d6f1c381
   review: drafted
+  review_note: 'review: partial - The passage says Modbus control of P_ref works through either the SunSpec
+    register 40349 (unit ID 125) or the SMA SSC register 1237 (unit ID 25), so SunSpec is one of two options
+    rather than a requirement, although the note…'
 - claim_id: c3
   rel: requires
   target: prod:sma-inverter-manager
@@ -52,7 +55,9 @@ claims:
   - src: src:sma-kb-sts60-10-batterie-ladung-entladung-steuern-via-modbus-register
     loc: sec=h1
     h: 0c32d6f1c381
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: requires
   target: func:peak-shaving
@@ -64,7 +69,9 @@ claims:
   - src: src:sma-kb-sts60-10-batterie-ladung-entladung-steuern-via-modbus-register
     loc: sec=h1
     h: 0c32d6f1c381
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: requires
   target: func:time-of-use-optimization

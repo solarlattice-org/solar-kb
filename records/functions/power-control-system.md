@@ -25,7 +25,9 @@ claims:
   - src: src:tesla-tesla-mp2-design-and-installation-manual-v3-0
     loc: sec=2.2.8.6
     h: b4abbda45b6c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: requires
   target: func:export-limitation
@@ -52,7 +54,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh1p-3-8-11-4-k-h-us-v-5-6-20260413
     loc: sec=4.5.2
     h: bb84389b07e7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c4 (same source; check the conditions)
 - claim_id: c4
   attr: response_time

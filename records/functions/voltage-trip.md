@@ -30,7 +30,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=18.r1
     h: 73372b6054b8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c7
     (same source; check the conditions); possible conflict with c11 (same source; check the conditions);
     possible conflict with c15 (same source; check the conditions)
@@ -87,7 +89,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=18.r2
     h: c1b4d59b7164
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c8 (same source; check the conditions); possible conflict with c12
     (same source; check the conditions)
 - claim_id: c5
@@ -105,7 +109,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=18.r2
     h: c1b4d59b7164
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c9
     (same source; check the conditions); possible conflict with c13 (same source; check the conditions)
 - claim_id: c6
@@ -180,7 +186,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=19.r4
     h: c4ac5639a44b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c5 (same source; check the conditions); possible conflict with c13
     (same source; check the conditions); possible conflict with c16 (same source; check the conditions)
 - claim_id: c10
@@ -243,7 +251,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=19.r3
     h: 62c793611f12
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c5
     (same source; check the conditions); possible conflict with c9 (same source; check the conditions);
     possible conflict with c16 (same source; check the conditions)
@@ -319,7 +329,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=3
     h: 55565681d7c1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c20 (same source; check the conditions); possible conflict with
     c24 (same source; check the conditions)
 - claim_id: c19
@@ -332,7 +344,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=3
     h: 55565681d7c1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c17 (same source; check the conditions); possible conflict with
     c21 (same source; check the conditions); possible conflict with c23 (same source; check the conditions)
 - claim_id: c20
@@ -358,7 +372,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=2
     h: 6b5ff525c1bf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c17 (same source; check the conditions); possible conflict with
     c19 (same source; check the conditions); possible conflict with c23 (same source; check the conditions)
 - claim_id: c22
@@ -436,7 +452,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=21
     h: 07e294ff20a2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c27
   attr: trip_time
   value:
@@ -451,7 +469,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=21
     h: 07e294ff20a2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c28
   attr: trip_time
   value:
@@ -527,7 +547,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=21
     h: 07e294ff20a2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c33
   attr: default_value
   value:

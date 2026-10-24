@@ -18,7 +18,9 @@ claims:
   - src: src:sma-kb-stp-110-60-core-2-export-limit-and-control
     loc: sec=h1
     h: 370ce31aa472
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: requires
   target: prod:sma-data-manager-m
@@ -32,7 +34,10 @@ claims:
     h: 370ce31aa472
   review: drafted
   review_note: 'support check: partial - Data Manager (EDMM-10) is required and master for CORE2, but
-    the passage never says the ''M'' variant is required (it cites EDMM-10 and the M/L articles only loosely).'
+    the passage never says the ''M'' variant is required (it cites EDMM-10 and the M/L articles only loosely).;
+    review: partial - The passage says export limitation (including zero export) on CORE2 needs the SMA
+    Data Manager (EDMM-10), which acts as master, but it never says EDMM-10 is the ''M'' variant; ''Data
+    Manager M'' appears only in the titles of linked articles.'
 - claim_id: c3
   rel: requires
   target: prod:sma-energy-meter
@@ -70,7 +75,9 @@ claims:
   - src: src:sma-kb-zero-feed-in-zero-export-with-stps60-and-battery
     loc: sec=h1
     h: 75ab8003eb08
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: requires
   target: func:active-power-setpoint

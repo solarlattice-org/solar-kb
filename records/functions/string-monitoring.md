@@ -24,7 +24,9 @@ claims:
   - src: src:alsoenergy-kb-string-performance-alerts
     loc: sec=h3
     h: d9fd72a0a2fa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   attr: setting_range
   value:
@@ -36,7 +38,9 @@ claims:
   - src: src:alsoenergy-kb-string-performance-alerts
     loc: sec=h3
     h: d9fd72a0a2fa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   attr: default_value
   value:
@@ -149,4 +153,6 @@ String monitoring tracks the current of each PV string, or of each input, so tha
 - sentence 1: support check: partial - Passages support per-string current monitoring and more precise troubleshooting than inverter level, but 'faster' flagging is only loosely supported and 'or of each input' and flagging underperforming strings are not clearly stated.
 - sentence 3: support check: partial - Alarm behavior, disable advice and Disable default are stated, but the default is from a generic table not tied to the 45KTL-US-HV-D0 specifically.
 - sentence 5: support check: partial - Per-string voltage/current display and fuse warning for S2F/S2X are stated, but Aurora Manager LITE is only said to enable monitoring; string settings are in a Fuse Control Board tab, not clearly Aurora Manager LITE for all FIMER equipment.
+- sentence 1: review: partial - Per-string current measurement, more precise troubleshooting than at inverter level, quick detection and alarms on yield drop are all supported, but the 'or of each input' alternative is not stated in the passages.
+- sentence 4: review: partial - All six string-failure detection parameters are listed in the cited SMA table, but the passage never names the Sunny Tripower CORE1-US model.
 -->

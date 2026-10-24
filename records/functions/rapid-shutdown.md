@@ -72,7 +72,9 @@ claims:
   - src: src:kb-sma-sbsexx-us-50-rapid-shutdown-equipment
     loc: sec=h1
     h: fbcb8e01281b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   attr: trip_threshold
   value:
@@ -130,7 +132,9 @@ claims:
   - src: src:kb-sma-sbsexx-us-50-rapid-shutdown-equipment
     loc: sec=h1
     h: fbcb8e01281b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   attr: trip_time
   value:
@@ -159,7 +163,9 @@ claims:
   - src: src:kb-sma-sbsexx-us-50-rapid-shutdown-equipment
     loc: sec=h1
     h: fbcb8e01281b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   attr: trip_threshold
   value:
@@ -193,7 +199,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=9
     h: 81b573c049b6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   attr: trip_threshold
   value:

@@ -49,7 +49,9 @@ claims:
   - src: src:kb-solis-44002638862-solis-cloud-remote-control-settings-desktop-version
     loc: sec=h50
     h: 2f904674e9d7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   attr: setting_range
   value:
@@ -67,7 +69,9 @@ claims:
   - src: src:sma-sbsexx-us-50-be-en-11
     loc: tbl=33.r1
     h: 50485e5136fe
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The 180–3600 s range for Cycle time of SMA ShadeFix is given,
     but the passages don''t tie it to the specific product sma-sbse-us-50.'
 - claim_id: c4
@@ -105,6 +109,8 @@ claims:
     loc: tbl=24.r26
     h: 2c4e8910eca9
   review: drafted
+  review_note: 'review: partial - The row gives MPPTTime = 3600 under IEEE-1547, Rule 21 and ISO-NE, but
+    it prints no unit, so ''seconds'' is an assumption, as the note admits.'
 ---
 A global MPP scan sweeps the PV operating range from time to time to find the true maximum power point. This matters when partial shading or modules at different angles create several power peaks on the curve. During each scan the inverter does not run at the maximum power point, so output drops briefly. Shorter scan intervals therefore cost more energy, and on ABB/FIMER units each scan takes roughly 2 seconds. On Solis inverters, SolisCloud has a switch that turns multi-peak scanning on or off and a scan interval setting of 600 to 10,800 seconds. SMA calls this function OptiTrac Global Peak on the Sunny Tripower TL-US, set with the parameters MPPShdw.IsOn and MPPShdw.CycTms. Its manual says the ideal interval is usually six minutes. Newer SMA inverters use SMA ShadeFix, which is enabled by default and usually checks the operating point every 6 minutes. On the Sunny Boy Smart Energy, its cycle time can be set from 180 s to 3600 s. ABB UNO-DM and FIMER TRIO inverters have a menu setting to enable or disable the scan and set the scan interval. The TRIO also lets you start a scan manually. On Yaskawa Solectria PVI inverters, MPPT scan is enabled by default with a 60 minute period. It searches in 5 V steps and can also be started from the MPPT SCAN menu.
 

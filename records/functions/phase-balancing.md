@@ -24,7 +24,9 @@ claims:
   - src: src:sma-kb-configuration-options-sma-power-balancer
     loc: sec=h1
     h: 83dff055fd96
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   attr: trip_time
   value:

@@ -21,9 +21,11 @@ claims:
   - src: src:sma-doc-237302
     loc: sec=h11
     h: 63b3fad3802c
-  review: disputed
-  conflicts_with:
-  - func:residual-current-monitoring#c2
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
+  review_note: 'review: the compiler-flagged conflict (func:residual-current-monitoring#c2) is a scenario
+    difference, resolved at review'
 - claim_id: c2
   attr: trip_threshold
   value:

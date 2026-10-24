@@ -68,4 +68,5 @@ Remote firmware update lets you load new inverter or logger firmware over a netw
 - sentence 1: support check: partial - Passages support remote firmware update of inverter over network, but nothing about logger firmware or the USB-drive-avoidance claim beyond USB being the local alternative for CPS.
 - sentence 2: support check: partial - CHECK then UPDATE in the web server is stated for FIMER/ABB servers, but the passages don't name UNO-DM and PVS models specifically.
 - sentence 4: support check: partial - CSI-125KTL-GS-E OTA is stated and Generac's advice is stated for PV Link, but the passage doesn't explicitly say PV Link supports OTA by name beyond 'PV Links' updates; fairly implied, though the advice is about PWRcell systems.
+- sentence 1: review: partial - The passages support updating inverter firmware remotely over a network, but they say nothing about logger firmware, and the point that nobody has to bring a USB drive is only inferred from CPS offering USB as the local alternative.
 -->

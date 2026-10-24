@@ -91,7 +91,9 @@ claims:
   - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
     loc: tbl=16
     h: 345e14c9f741
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   attr: default_value
   value:
@@ -168,7 +170,10 @@ claims:
     h: f6bdfb0bdc56
   review: drafted
   review_note: 'support check: partial - Cellular is listed as the standard connection for diagnostics
-    and dispatch, but VPN or jump server is an alternative, so cellular is not strictly required.'
+    and dispatch, but VPN or jump server is an alternative, so cellular is not strictly required.; review:
+    partial - The passages list cellular as the standard connection for diagnostics and dispatch with
+    VPN/jump server as an alternative, so ''requires'' overstates it, though the note correctly mentions
+    the alternative.'
 - claim_id: c11
   rel: requires
   target: proto:modbus
@@ -189,4 +194,5 @@ Remote dispatch lets an outside controller, such as monitoring or SCADA software
 <!-- review notes
 - sentence 1: support check: partial - Remote monitoring software can adjust ActivePower and PowerFactor, but the passages do not mention reactive power or SCADA or say it replaces locally stored values.
 - sentence 3: support check: partial - LCD and remote software setting of ActivePower and PowerFactor is stated, but the passages never mention 100kW units or that they are older.
+- sentence 1: review: partial - Remote setting of active power, power factor and reactive power through monitoring software is supported, but SCADA is not mentioned and no passage frames remote dispatch as replacing locally stored values.
 -->

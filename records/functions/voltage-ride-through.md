@@ -50,7 +50,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: sec=h12
     h: d057eb0e1b32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c4 (same source; check the conditions); possible conflict with c8
     (same source; check the conditions)
 - claim_id: c3
@@ -71,7 +73,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: sec=h12
     h: d057eb0e1b32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c5
     (same source; check the conditions); possible conflict with c7 (same source; check the conditions)
 - claim_id: c4
@@ -111,7 +115,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: sec=h12
     h: d057eb0e1b32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c7 (same source; check the conditions)
 - claim_id: c6
@@ -178,7 +184,9 @@ claims:
   - src: src:sma-doc-265222
     loc: sec=4
     h: 40e2303a672a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   attr: default_value
   value:

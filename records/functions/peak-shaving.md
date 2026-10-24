@@ -83,6 +83,8 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says the system charges the battery with the available
     difference below baseline and grid charging can be enabled or disabled, but doesn''t state peak shaving
-    requires grid charging (the on/off switch suggests it doesn''t).'
+    requires grid charging (the on/off switch suggests it doesn''t).; review: partial - The passage says
+    the system charges the battery up to baseline SOC using headroom under the grid import limit, and
+    that grid charging is a separate on/off switch, but it never says peak shaving requires grid charging.'
 ---
 Peak shaving discharges the battery when demand is high, which cuts peaks in grid import and so lowers demand charges. On Solis systems, Max Usable Grid Power sets the most power that may be drawn from the grid while peak shaving runs. A peak-shaving switch turns the mode on or off, and it works only with lithium batteries that have communication. The Peak Shaving Baseline SOC is the lowest charge level that peak shaving may discharge to. It applies only in peak shaving mode, while Reserve SOC applies in every operating mode and holds energy back for backup. Once the battery reaches the baseline SOC, peak shaving stops and the grid supplies any extra load. If self-consumption is enabled, it can keep discharging down to the Reserve SOC. If the charge falls below the baseline and grid import is still under the limit, the system uses the spare headroom to recharge the battery up to the baseline.

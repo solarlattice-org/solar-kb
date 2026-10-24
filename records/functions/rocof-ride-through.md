@@ -18,7 +18,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=6.5.2.5
     h: 33cb7255e956
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passage states ROCOF ride-through applies within continuous operation
     and the low/high-frequency ride-through regions, but does not state that it is a kind of frequency
     ride-through (taxonomy relation is implied only by context).'

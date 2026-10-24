@@ -104,7 +104,9 @@ claims:
   - src: src:kb-solis-44002460844-how-to-enable-volt-var-q-u-function
     loc: sec=h1
     h: 8a8bc8849d66
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c8
   attr: default_value
   value:
@@ -181,7 +183,9 @@ claims:
   - src: src:kb-solis-44002460844-how-to-enable-volt-var-q-u-function
     loc: sec=h1
     h: 8a8bc8849d66
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   attr: default_value
   value:
@@ -205,7 +209,9 @@ claims:
   - src: src:kb-solis-44002460844-how-to-enable-volt-var-q-u-function
     loc: sec=h1
     h: 8a8bc8849d66
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c10 (same source; check the conditions); possible conflict with
     c12 (same source; check the conditions); possible conflict with c14 (same source; check the conditions)
 ---

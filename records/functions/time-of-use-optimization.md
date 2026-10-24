@@ -74,7 +74,9 @@ claims:
   - src: src:sma-kb-optimale-einstellungen-f-r-die-nutzung-dynamischer-strompreise-mit-dem-sunny-home-m
     loc: sec=h1
     h: 83824a4ed36b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   rel: requires
   target: func:battery-grid-charging
@@ -84,6 +86,9 @@ claims:
     loc: sec=h1
     h: f0aea101b8c9
   review: drafted
+  review_note: 'review: partial - The passage says grid charging is ''strongly recommended'' for Solis
+    AI to function properly, which matches the note, but it does not say time-of-use optimization in general
+    ''requires'' grid charging.'
 ---
 Time-of-use optimization charges the battery when electricity is cheap and discharges it when prices are high, which lowers the customer's energy costs. On Generac PWRcell systems, the REbus Beacon provides TOU energy management. It needs a PWRcell Battery and an Ethernet Internet connection, and the Beacon should be enabled only when TOU scheduling is used. To set up the Generac TOU schedule, open Mod. Settings on the Beacon device page, enter the access code, then set the TOU Schedule code and the time zone and save. The display then shows when the next mode change will happen. Solis TOU-SCD pulls day-ahead prices from Nordpool or Octopus. It charges the battery from the grid when the price is below a user-set threshold and discharges it when the price is above another threshold. It is off by default and is switched on through a support ticket. Solis advises that if feed-in power earns no payment in your territory, the system should be set never to discharge based on price. Some older 5G and S5 single-phase low-voltage models do not support TOU-SCD. Solis AI and the semi-automatic Peak-Valley Arbitrage mode in SolisCloud control the battery from dynamic tariffs. They respect the set import and export limits and limit export when prices are negative. With the SMA Sunny Home Manager 2.0, price-optimised charging is set up in Sunny Portal: choose the Economical optimisation target and enable predictive battery charging. Time-slot charging, load peak capping, Modbus battery control and EEBUS communication switch off or restrict this function. CPS single-phase hybrid inverters have a TOU function that selects a different running mode for each day and hour of the year.
 

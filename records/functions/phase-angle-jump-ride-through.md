@@ -14,4 +14,5 @@ Voltage phase angle change ride-through means the DER keeps operating when the g
 <!-- review notes
 - sentence 1: support check: partial - The passage gives the ride-through requirement (remain in operation for angle changes) but does not define it generically or say 'instead of tripping offline'; the meaning is largely implied.
 - sentence 4: support check: partial - Type tests required for DER system is stated, but for composite the type tests are 'L' and commissioning 'D', design 'R'; 'may be needed' for commissioning is not clearly supported by the codes, which are undefined in passages.
+- sentence 4: review: partial - The rows show type tests R for the DER system and design evaluation R for composite systems, but reading commissioning 'D' as 'may be needed' relies on a code meaning the passages never define.
 -->

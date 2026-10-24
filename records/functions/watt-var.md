@@ -48,4 +48,5 @@ Watt-VAr makes the inverter or battery absorb or inject reactive power according
 
 <!-- review notes
 - sentence 1: support check: partial - Passages say the response follows a programmable curve based on real power measured at the POI meter, not the inverter's own output.
+- sentence 1: review: partial - The passages back absorbing or injecting reactive power along a programmable curve, but they say the response follows the system's real power dispatch measured at the POI meter, not the device's own output, and they mention only the battery, not…
 -->

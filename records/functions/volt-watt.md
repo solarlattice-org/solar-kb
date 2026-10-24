@@ -25,7 +25,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: sec=h155
     h: 6479cb047e94
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   attr: default_value
   value:
@@ -57,7 +59,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: sec=h155
     h: 6479cb047e94
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   attr: default_value
   value:
@@ -72,7 +76,9 @@ claims:
   - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
     loc: sec=h155
     h: 6479cb047e94
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions)
 - claim_id: c5
   attr: setting_range
@@ -89,7 +95,9 @@ claims:
   - src: src:csi-csi-installation-manual-25-40k-t480gl01-ub-lsw-usa-v1-1
     loc: sec=h201
     h: 53e82fd98f0b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   attr: default_value
   value:
