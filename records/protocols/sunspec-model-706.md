@@ -23,7 +23,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 706 is the DER Volt-Watt information model, also called P(U). It belongs to the SunSpec 700 series, which is intended to meet IEEE 1547:2018 requirements. SunSpec information models are standard data models carried over Modbus to monitor and control DER devices. In SunSpec profile 2.0, model 706 replaces the older model 132 Volt-Watt. SMA no longer supports model 132 in that profile. SMA's SunSpec Modbus notes for its US inverter firmware list the 700 series, including 706, as planned for a future firmware version. The older 100 series can still be used but is marked as outdated.
 

@@ -28,11 +28,14 @@ claims:
   - src: src:eq-equip-inverters-yaskawa-yaskawa-solectria-xgi-1500-programming-docr-071063-xgi-1500-modbus-map-d
     loc: sec=h4
     h: 8a537b6f00cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 129 (LVRTD) is an information model: a fixed group of registers within the SunSpec register map, read and written over Modbus. SunSpec sorts registers into models, and each model opens with a header that gives its ID and its length. The model includes read-only scale factors. Tms_SF at 40325 is -2 and scales durations, and V_SF at 40326 is -1 and scales the voltage values given as a percentage of VRef. Not every register in a model is supported. Unsupported ones are marked Reserved and should not be used.
 
 <!-- review notes
 - sentence 1: support check: partial - The passages show that models are groups of registers in the SunSpec map and that Model 129 exists, but they never say the model is read and written over Modbus (the 'Modbus' framing comes only from the statement).
 - sentence 2: support check: partial - The passages say registers are organized into models and each model begins with a header identifying it and its length; they don't state that the header gives an ID specifically, though 'identify it' implies this.
+- sentence 1: review: partial - The passages show model 129 LVRTD as a register group in the SunSpec map, but none mentions it being read and written over Modbus.
 -->

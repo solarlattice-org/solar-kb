@@ -26,7 +26,9 @@ claims:
   - src: src:eq-equip-inverters-yaskawa-yaskawa-solectria-xgi-1500-programming-docr-071063-xgi-1500-modbus-map-d
     loc: sec=h4
     h: 8a537b6f00cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 121 Basic Settings is one of the SunSpec information models. SunSpec groups registers into models, and each model starts with a header that gives its identity and length. SolarEdge describes SunSpec as an application-layer protocol that lets distributed energy resources work with smart grid applications. The first register at 40212 is a read-only uint16 ID, and its value is 121. The XGI 1500 model 121 block includes read-only scale factors such as VAMax_SF, VArMax_SF, PFMin_SF and ECPNomHz_SF. Unsupported registers are marked Reserved and should not be used. The model also has a ClcTotVA enumerated field, which is documented in its own table. SMA inverter firmware supports model 121 but recommends model 702 instead. The 100 series still works, but SunSpec designates it as outdated. One SMA firmware release changed how MaxRmpRte maps in model 121: it is now given in percent of WGra instead of WMax.
 

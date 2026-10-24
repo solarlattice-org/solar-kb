@@ -24,6 +24,8 @@ claims:
   - src: src:eq-equip-inverters-solectria-xgi-1500-docr-071063-xgi-1500-modbus-map-c
     loc: sec=h4
     h: c413147499ae
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 123 Immediate Controls is one of the SunSpec information models, which group device registers into models that each start with a header giving the model ID and length. The first register at 40290 is a read-only uint16 holding the model number 123. The block also carries a read-only reactive power percent scale factor, VArPct_SF, at 40315 with a value of -1. On the XGI 1500, not every register in a model is supported; unsupported ones are marked Reserved and should not be used.

@@ -13,4 +13,5 @@ SunSpec sorts device registers into defined groups called models, and each model
 
 <!-- review notes
 - sentence 4: support check: partial - DID values 101/102/103 for single/split/three phase are stated, but the passage doesn't state that model 101 is the integer single-phase model.
+- sentence 4: review: partial - The 101/102/103 DID values are stated, but nothing in the passage says model 101 is the integer-valued single-phase model.
 -->

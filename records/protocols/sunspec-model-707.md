@@ -22,6 +22,8 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 707, DER Trip LV, is one of the 700 series SunSpec information models. SunSpec information models are standard Modbus-based data definitions from the SunSpec Alliance for monitoring and controlling DER devices. SMA's SunSpec documentation says a future firmware will extend SunSpec profile 2.0 to meet IEEE 1547:2018. It names the 700 series as the replacement for the older 100 series, which SunSpec now marks as outdated. In SunSpec profile 2.0, model 707 replaces the older model 129 Trip LV, which SMA no longer supports. On SMA products, the SunSpec Modbus profile starts at register number 40001.

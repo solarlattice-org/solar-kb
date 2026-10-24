@@ -24,5 +24,8 @@ claims:
     loc: sec=h47
     h: 59132b557ead
   review: drafted
+  review_note: 'review: partial - The passages support the four SunSpec meter models (single, split, wye,
+    delta) sharing one Modbus map, but none of the cited passages links the number 202 to the split-phase
+    meter.'
 ---
 SunSpec model 202 is the SunSpec information model for a split single phase meter, wired as two lines plus neutral (ABN). It shares one Modbus register map with the single phase, wye and delta meter models. The C_SunSpec_DID register tells them apart: 202 means a split single phase meter. Registers that do not apply to a given meter type return the unsupported value. In the SolarEdge SunSpec implementation, the meter's identification register follows the common block at base-0 address 40188. Further meters appear at 40362 and 40537. For SolarEdge three phase inverters with Synergy technology, add 50 to the default meter addresses on 2-unit models and 70 on 3-unit models. On the Accuenergy Acuvim II power meter, the SunSpec meter ID is a read-only uint16 at decimal address 50069. It is read with function 03H, and the following registers hold currents, voltages, scale factors and frequency. The Veris E51C meters report the meter model ID in register 40070, with a range of 201 to 204.

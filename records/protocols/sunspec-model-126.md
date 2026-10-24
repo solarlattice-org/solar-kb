@@ -21,7 +21,9 @@ claims:
   - src: src:yaskawa-xgi-1500-modbus-map-docr-071063-rev-h
     loc: tbl=7.r15
     h: a80bbc7d1a63
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 126 Static Volt-VAR is a SunSpec information model. It is a defined group of Modbus registers that holds the points of a volt-VAR curve. The curve is set with read-write register pairs: V1, V2 and so on hold point voltages in percent of Vref, and VAr1, VAr2 and so on hold the reactive power at each point. The default voltage points are 920, 967, 1030 and 1070 for points 1, 2, 3 and 6. The default VAr values are 300 at point 1, 0 at points 2 and 3, and -300 at points 4 and up. Two read-only scale factor registers turn the raw values into real ones: V_SF scales the percent-Vref voltages and DeptRef_SF scales the dependent variable. Both default to -1. Not every register in a model is supported. Registers marked Reserved should be left alone, and only the registers the map lists as supported should be written.
 

@@ -16,4 +16,5 @@ SunSpec model 204 is the SunSpec information model for a delta-connected three-p
 - sentence 3: support check: partial - Unsupported value return for non-applicable registers is stated, but the advice that such readings should not be taken as a fault is not in the passages.
 - sentence 5: support check: partial - Passages show a common block with manufacturer, model, serial and C_SunSpec_DID at 40188 (base 0), but nothing in them names SolarEdge inverters as the device.
 - sentence 7: support check: partial - The ID at 50069 with 03H read, the phase currents, phase voltages and line voltages AB/BC/CA with scale factors are shown, but the passages do not name the Accuenergy Acuvim II. Also the scale factors are per group (current, voltage), not per individual quantity.
+- sentence 7: review: partial - The table shows the ID at 50069 (03H read), then phase currents, phase voltages and line voltages AB/BC/CA, but phase and line-to-line voltages share one Voltage Scale Factor (50084), so 'each group with its own scale factor' overstates it, and…
 -->

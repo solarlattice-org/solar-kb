@@ -21,7 +21,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 703, Enter Service, is one of the 700-series SunSpec information models. The 700 series is meant to replace the older 100 series of models so the SunSpec profile meets IEEE 1547:2018. The 100 series still works but SunSpec now marks it as outdated. SMA's SunSpec Modbus technical information lists model 703 among the 700-series models planned for a future inverter firmware version. SunSpec groups registers into models. Each model starts with a header that gives its identity and length, and a device may not support every register in a model. On SMA inverters the Modbus interface is turned off by default. To use it, select Modbus as the communication type and set the TCP port in the installation assistant. In SMA products, the SunSpec Modbus profile starts at register number 40001.
 

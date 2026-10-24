@@ -21,7 +21,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 709, DER Trip LF, belongs to the SunSpec 700 series of information models. It sits next to 707 Trip LV, 708 Trip HV and 710 Trip HF. SMA's SunSpec Modbus documents say the 700 series is meant to replace the older 100 series so that SunSpec profile 2.0 meets IEEE 1547-2018. Those documents say this will come in a future firmware version. SunSpec is an application-layer protocol that lets DER equipment work with smart grid applications. Its information models are carried over Modbus to monitor and control DER devices. SunSpec groups registers into models, and each model starts with a header that gives its ID and its length. For Solectria XGI 1500 inverters, only the models listed in the Modbus map are supported, and registers that are not supported are marked Reserved. Use only the supported registers. On supported SMA products, the SunSpec Modbus profile starts at register number 40001.
 

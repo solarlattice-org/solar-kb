@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 702, DER Capacity, belongs to the SunSpec 700 series of information models. That series is meant to replace the older 100 series so devices can meet IEEE 1547:2018. SMA SunSpec Modbus documentation recommends model 702 in place of model 120 (inverter nameplate ratings) and model 121 (inverter nameplate settings). SunSpec now marks the 100 series as outdated, but it can still be used. SMA says the 700 series will arrive with a future firmware version, when its SunSpec profile 2.0 is extended. Check which models the inverter firmware actually supports before relying on model 702. SunSpec groups registers into models. Each model starts with a header that gives its identity and length, and registers a device does not support are marked Reserved. The SunSpec Alliance defines these Modbus-based information models for monitoring and controlling DER devices. SunSpec itself is described as an application-layer protocol. On SMA products, the SunSpec Modbus profile starts at register number 40001.
 

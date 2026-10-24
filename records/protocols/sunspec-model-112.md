@@ -13,4 +13,5 @@ SunSpec arranges device registers into defined groups called models, and each mo
 
 <!-- review notes
 - sentence 4: support check: partial - Passage says only listed models and supported registers are supported, unsupported ones are Reserved, and to use only supported registers; 'check the map before polling' is advice implied but the claim is for a specific vendor (SOLECTRIA) generalized to inverters.
+- sentence 4: review: partial - The passage covers only SOLECTRIA XGI 1500 inverters (listed models only, unsupported registers marked Reserved), so applying it to all inverters and their vendor maps widens the scope.
 -->

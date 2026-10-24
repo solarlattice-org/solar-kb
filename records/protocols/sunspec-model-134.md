@@ -13,4 +13,5 @@ SunSpec arranges device registers into numbered groups called models, and each m
 
 <!-- review notes
 - sentence 4: support check: partial - Passages state model 127 is replaced by 711 in profile 2.0, but nothing attributes this to SMA documentation or advises checking firmware profile before mapping.
+- sentence 4: review: partial - The SMA passages state 127 Frequency-Watt is replaced by 711 in profile 2.0, but the advice to check the firmware profile before mapping registers is not in them.
 -->

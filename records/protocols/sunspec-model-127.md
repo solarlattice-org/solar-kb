@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=6
     h: 9cb9794eff5d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 127 is the SunSpec information model for frequency-watt, or P(f), settings. SunSpec is an application-layer protocol that lets DER components work with smart grid applications. It groups registers into models, and each model starts with a header that gives its identity and length. In the same model, register 40464 (WGra) is the read-write active power gradient in percent, with a range of 10 % to 130 % and a default of 40 %. Its scale factor is in register 40470. SMA SunSpec documentation says model 127 is no longer supported in SunSpec profile 2.0, where model 711 replaces it. Vendors mark the registers they do not support as Reserved. Read or write only the supported ones.
 

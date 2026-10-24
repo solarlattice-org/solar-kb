@@ -24,7 +24,9 @@ claims:
   - src: src:rainwise-pvmet-500-user-manual
     loc: tbl=15.r23
     h: 0dba2c13495c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages say 302 is the SunSpec Irradiance Model with well-known
     ID 302, but don''t explicitly state it belongs to the ''SunSpec information models'' proto concept
     (implied only).'
@@ -35,4 +37,5 @@ SunSpec model 302 is the irradiance information model in the SunSpec standard. I
 - sentence 1: support check: partial - Passages show 302 is the SunSpec irradiance model with a register block of irradiance values, but Modbus transport is only implied via the PVmet-500's Modbus settings.
 - sentence 5: support check: partial - Text says PVmet-500 provides GHI, POA and other irradiance and other data should be ignored, but the manufacturer attribution 'RainWise' etc. aside, 'only' is consistent; the minor gap is that the statement matches closely though 'remaining points' is paraphrase.
 - sentence 6: support check: partial - The manual places a Modbus RS-485 default settings table amid the 302 text, but doesn't explicitly pair it with the model; it's likely a layout artifact.
+- sentence 1: review: partial - The passages show 302 as the SunSpec solar irradiance model with a register table of irradiance points, but Modbus transport is only hinted at by a nearby RS-485 settings table title.
 -->

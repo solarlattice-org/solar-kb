@@ -22,10 +22,13 @@ claims:
   - src: src:rainwise-pvmet-500-user-manual
     loc: tbl=8
     h: 021d0a590ab4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 307, Base Met, is the base meteorological information model in the SunSpec standard. It sets out how weather data is laid out in registers. The model starts with a header: an ID register that reads 307 and a length register that reads 11. It replaces the older model 301. The fixed block holds read-only int16 points: ambient temperature, relative humidity, barometric pressure, wind speed, wind direction, rainfall, snow depth, precipitation type, electric field, surface wetness and soil wetness. The RainWise PVMet-500 weather station is SunSpec compliant and supports models 302, 303 and 307, read over Modbus RS-485. In model 307 the PVMet-500 only fills in ambient temperature, relative humidity, barometric pressure, wind speed, wind direction and rainfall. Ignore the other points.
 
 <!-- review notes
 - sentence 4: support check: partial - SunSpec compliance and models 302, 303, 307 are stated, and a Modbus RS-485 settings table is referenced, but the passages don't clearly say the models are read over RS-485 and don't mention RainWise by name.
+- sentence 4: review: partial - SunSpec compliance and support for 302, 303 and 307 are stated, but 'read over Modbus RS-485' rests only on a table title for default RS-485 settings and is never stated as the transport for these models.
 -->

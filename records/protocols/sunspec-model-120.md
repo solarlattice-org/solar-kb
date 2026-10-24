@@ -29,7 +29,9 @@ claims:
   - src: src:eq-equip-inverters-yaskawa-yaskawa-solectria-xgi-1500-programming-docr-071063-xgi-1500-modbus-map-d
     loc: sec=h4
     h: 8a537b6f00cb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 120 Nameplate is a SunSpec information model. SunSpec sorts device registers into models, and each model starts with a header that gives its ID and length. The model also contains scale factor registers. One example is VARtg_SF at 40190, which scales the output volt-ampere rating. Read only the registers the device supports. Registers it does not support are marked Reserved in the map. SMA lists model 120 as Inverter Nameplate ratings among the models its SunSpec Modbus interface supports, and it recommends model 702 instead. SMA says the 700 series of models is meant to replace the 100 series to meet IEEE 1547:2018. The 100 series still works, but SunSpec marks it as outdated.
 

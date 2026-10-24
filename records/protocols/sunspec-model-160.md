@@ -20,7 +20,9 @@ claims:
   - src: src:eq-equip-inverters-solaredge-sunspec-implementation-technical-note
     loc: tbl=8.r2
     h: 62b50a67e448
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Model 160 ID value and name in SolarEdge''s map are stated, but
     the passages don''t say it is part of the SunSpec information models family explicitly (implied only).'
 ---
@@ -29,4 +31,6 @@ SunSpec model 160 is the Multiple MPPT Inverter Extension Model. It is an inform
 <!-- review notes
 - sentence 1: support check: partial - Name and ID are given, but the passages don't state it reports data per MPPT input of an inverter beyond the name implying it.
 - sentence 4: support check: partial - Synergy Unit #0 and #1 blocks with ID and 8-size IDStr are shown, but the passages don't say the model repeats a block per unit or that only two exist; the IDStr of unit #1 isn't shown.
+- sentence 1: review: partial - The name and model ID 160 are stated, but that it reports data for each MPPT input is only implied by the name.
+- sentence 4: review: partial - The rows show ID registers for Synergy Unit #0 and #1 and an 8-register IDStr, but they don't state that the model repeats one block per unit, and an IDStr is shown only after Unit #0.
 -->

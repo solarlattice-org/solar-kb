@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 710, DER Trip HF, is one of the information models in the SunSpec 700 series. The 700 series is meant to replace the older 100 series so devices can meet IEEE 1547:2018. The 100 series still works, but SunSpec now treats it as outdated. SMA's SunSpec Modbus documentation says a future firmware version will extend SunSpec profile 2.0 with the 700 series. Model 710 is on that list, alongside the trip models 707 (LV), 708 (HV) and 709 (LF). SunSpec is an application-layer protocol that lets distributed energy resource equipment work with smart grid applications. SunSpec groups registers into models. Each model starts with a header that gives its identity and length. Registers a device does not support are marked Reserved and should not be used. On SMA products, the SunSpec Modbus profile begins at register number 40001.
 

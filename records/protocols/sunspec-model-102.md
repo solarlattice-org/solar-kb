@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 102 is the split-phase inverter AC monitoring model. It is one of the SunSpec information models, alongside model 101 for single phase and model 103 for three phase. It works at the information-model layer and is read over Modbus. SolarEdge inverters base their read-only Modbus monitoring map on the SunSpec inverter models. On SolarEdge inverters the model ID register C_SunSpec_DID sits at address 40069 (base 0) or 40070 (base 1). A value of 102 there means split phase, and the next register gives the block length. SolarEdge supports model 102 only in split-phase configurations: the Japanese grid and the 240V grid in North America. SMA SunSpec Modbus documentation also lists model 102 as supported, but recommends model 701 instead. SunSpec designates the 100 series as outdated and intends the 700 series to replace it to meet IEEE 1547:2018 requirements. The 100 series can still be used.
 

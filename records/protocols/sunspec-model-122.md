@@ -21,11 +21,14 @@ claims:
   - src: src:eq-equip-inverters-solectria-xgi-1500-docr-071063-xgi-1500-modbus-map-c
     loc: sec=h4
     h: c413147499ae
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 122 is a SunSpec information model that carries measurement and status data. Like every SunSpec model, it starts with a header giving its ID and its length. SolarEdge describes SunSpec as an application-layer protocol for interoperability between distributed energy resource components and smart grid applications. The XGI 1500 maps say to use only the supported registers, because unsupported ones are marked Reserved. SMA inverter firmware notes say the status mapping for PVConn, StorConn and ECPConn in model 122 was adjusted.
 
 <!-- review notes
 - sentence 2: support check: partial - The passage describes SunSpec as an application-layer protocol for DER/smart grid interoperability, but nothing attributes it to SolarEdge.
 - sentence 4: support check: partial - The passages say the status mapping for PVConn, StorConn and ECPConn in model 122 was adjusted, but they don't name SMA or firmware notes.
+- sentence 1: review: partial - The header (ID 122, model length) and the PVConn status field are supported, but nothing in the passages says the model carries measurement data.
 -->

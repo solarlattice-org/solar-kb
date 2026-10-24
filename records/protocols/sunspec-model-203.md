@@ -26,7 +26,9 @@ claims:
   - src: src:eq-equip-inverters-solaredge-sunspec-implementation-technical-note
     loc: tbl=13.r11
     h: 66f56e78a6c7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages list 203 as Wye-Connect three-phase meter in a shared
     map, but ''four of 201-204'' and ''proto:sunspec-information-model'' classification are only implied.'
 ---
@@ -35,4 +37,5 @@ SunSpec model 203 is the SunSpec information model for a wye-connected, four-wir
 <!-- review notes
 - sentence 4: support check: partial - Address 40188 (base 0) for DID and the +50/+70 offsets are stated, but the 'follows the common block' ordering is only shown by table, and the offsets apply to the meters' base address on Synergy inverters; mostly fine though the SolarEdge attribution is not explicit.
 - sentence 7: support check: partial - u11 states three-phase four-wire needs Form 9 wye with 3 PTs and 3 CTs, and u4 shows 203 is wye, but the instruction to check wiring before setting is not stated (and the register is read-only).
+- sentence 7: review: partial - The Tesla row ties three-phase four-wire wiring to a Form 9 wye meter with 3 PTs and 3 CTs, but no passage gives the instruction to check wiring before setting 203, and the Veris register is read-only.
 -->

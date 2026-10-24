@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 711 is an information model in the SunSpec 700 series. Its name there is DER Frequency Droop P(f). The 700 series is meant to replace the older 100 series so that SunSpec profile 2.0 meets IEEE 1547-2018. The 100 series can still be used, but SunSpec marks it as outdated. In profile 2.0, model 711 takes the place of model 127 Frequency-Watt P(f), which is no longer supported. The SMA SunSpec Modbus technical information lists model 711 among the 700-series models planned for a future firmware version. The models supported now are 100-series models such as 101 to 103, 120 to 123 and 160. SunSpec groups registers into models. Each model starts with a header that gives its identity and length, and you should only use the registers a device marks as supported.
 

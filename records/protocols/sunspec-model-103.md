@@ -23,7 +23,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-sunspecmodbus-ti-en-11
     loc: sec=5
     h: 7d26697c862c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SunSpec model 103 is the SunSpec information model for three-phase inverter AC monitoring data. Its device ID register reads 103, which marks a three-phase inverter, while 101 marks single phase and 102 split phase. SolarEdge inverters support the model 101, 102 and 103 register maps for read-only Modbus monitoring data, based on the SunSpec inverter models. In the SolarEdge map the model 103 block is 50 registers long. It carries total and per-phase AC current, a current scale factor, and the AB, BC and CA line voltages. SMA SunSpec Modbus documentation lists model 103 as supported but recommends model 701 instead, because SunSpec marks the 100 series as outdated and the 700 series replaces it.
 
