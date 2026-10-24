@@ -121,7 +121,9 @@ claims:
     h: 0427f923eb22
   review: drafted
   review_note: 'support check: partial - Parallel-mode firmware and ≤3 units match, but the passages don''t
-    name Sunny Tripower Smart Energy for that table.'
+    name Sunny Tripower Smart Energy for that table.; review: partial - The table supports parallel mode
+    with up to 3 units, BMU 3.16 / BMS 3.24 and inverter firmware 3.04.16.R or later, but the quoted passage
+    does not name Sunny Tripower Smart Energy.'
 - claim_id: c8
   rel: incompatible_with
   target: prod:sma-sunny-tripower-smart-energy
@@ -148,7 +150,9 @@ claims:
   - src: src:sma-doc-275666
     loc: tbl=17
     h: bbdccfb7b51c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - The passage shows CAN L/H as twisted pair at least CAT5e for
     the SBS cabling plan, but doesn''t explicitly say the battery uses CAN bus.'
 - claim_id: c10
@@ -194,7 +198,9 @@ claims:
     h: 292835b9cbbe
   review: drafted
   review_note: 'support check: partial - Modules 2-4 for HVS 5.1-10.2 are stated; Sunny Boy Storage isn''t
-    named and the number is a module range, not a maximum count.'
+    named and the number is a module range, not a maximum count.; review: partial - Both rows state 2-4
+    modules for HVS 5.1-10.2, but they give a range rather than a maximum of 2-4, and neither passage
+    names Sunny Boy Storage.'
 - claim_id: c13
   attr: rated_output_current
   value:
@@ -231,7 +237,9 @@ claims:
   - src: src:sma-kb-sunny-tripower-smart-energy-stpxx-3se-40-no-charging-discharging-when-three-byd-bat
     loc: sec=h1
     h: dff3fe8005e3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   attr: nominal_voltage
   value:
@@ -300,4 +308,6 @@ The BYD Battery-Box Premium HVS and HVM is a family of high-voltage battery stor
 - sentence 2: support check: partial - Minimum battery and inverter firmware are given, but the u3/u6 rows list BMU = 3.16 exact, and the passages don't name the inverters or the word 'approved'.
 - sentence 3: support check: partial - CAN L/H on twisted pair of at least CAT5e is shown, but only for the SBS cabling plan.
 - sentence 4: support check: partial - The module ranges and ≤3 parallel units are stated, but the inverter names are not in the passages.
+- sentence 1: review: partial - The rows name Battery-Box Premium HVS and HVM by BYD Company Limited, but nothing calls them high-voltage storage systems.
+- sentence 4: review: partial - The module ranges (HVM 3-8, HVS 2-4) and up to 3 parallel units are in the tables, but the passages never name Sunny Boy Storage or Sunny Tripower Smart Energy.
 -->

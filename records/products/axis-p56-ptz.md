@@ -24,7 +24,8 @@ claims:
     h: 2c2a6368be46
   review: drafted
   review_note: 'support check: partial - Passages show P56 series models and P5654-E camera, but nothing
-    states Axis Communications as maker explicitly (only the AXIS brand name).'
+    states Axis Communications as maker explicitly (only the AXIS brand name).; review: partial - The
+    passages show AXIS-branded P56 series models but never name Axis Communications as the manufacturer.'
 - claim_id: c2
   rel: implements
   target: func:ptz-control
@@ -45,7 +46,9 @@ claims:
     h: 3e0265d02345
   review: drafted
   review_note: 'support check: partial - The P5655-E lists IEC/EN/UL 62368-1, but this covers only the
-    P5655-E, not clearly the whole P56 family, and ''certified'' is not stated.'
+    P5655-E, not clearly the whole P56 family, and ''certified'' is not stated.; review: partial - Only
+    the P5655-E cut sheet lists IEC/EN/UL 62368-1, so the passage does not show it applies to the whole
+    P56 family.'
 - claim_id: c4
   rel: certified_to
   target: std:iec-60950-22
@@ -74,4 +77,5 @@ The AXIS P56 Series is a family of outdoor PTZ network cameras from Axis, and it
 <!-- review notes
 - sentence 1: support check: partial - The P56 Series includes P5654-E and P5655-E, but 'outdoor PTZ' is only partly shown (IP66/NEMA is not in these passages; the P5655-E is called a PTZ camera, the P5654-E only a network camera).
 - sentence 4: support check: partial - The table shows 4 ports for P5655-E and '-' for P5654-E, but 'configurable' is only in a different passage, and '-' is read as none.
+- sentence 1: review: partial - The table shows the P56 Series includes the P5654-E and P5655-E, but 'outdoor' is not in the passages, and only the P5655-E is called a PTZ camera.
 -->

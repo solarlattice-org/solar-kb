@@ -57,7 +57,9 @@ claims:
   - src: src:eq-equip-relays-reclosers-beckwith-recloser-relay-m-7679-ib
     loc: sec=h8
     h: 7ce99b295f5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: compatible_with
   target: prod:tavrida-osm-recloser
@@ -96,7 +98,9 @@ claims:
   - src: src:eq-equip-relays-reclosers-beckwith-recloser-relay-beckwith-m-7679-qrg
     loc: fig=16
     h: f695ce255d6d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: compatible_with
   target: prod:yaskawa-load-break-switch

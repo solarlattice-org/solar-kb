@@ -61,7 +61,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-plcs-202112-plcs-400-installation-guide
     loc: sec=h13
     h: 7182e97cca68
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: uses_protocol
   target: proto:ethernet
@@ -117,7 +119,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-plcs-202112-plcs-400-installation-guide
     loc: sec=h13
     h: 7182e97cca68
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Revenue-grade meter, 400A solid-core CTs and 5-minute granularity
     are stated, but the passages do not say it does production metering specifically.'
 - claim_id: c10
@@ -157,7 +161,9 @@ claims:
   - src: src:alsoenergy-kb-attachments-assets-powerlcs400installationmanualv5booklet
     loc: sec=h32
     h: eaa29ce95499
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   attr: frequency
   value:
@@ -187,7 +193,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-plcs-202202-plcs-400-cut-sheet
     loc: sec=h4
     h: e58cf9d38599
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The AlsoEnergy PLCS (PowerLCS) is a preconfigured, prewired monitoring enclosure that combines a datalogger, revenue-grade meter, irradiance sensor and module temperature sensor, and offers a cell modem as an option. The PowerLCS 400 connects to up to 16 inverters over Modbus RTU or Modbus TCP and uploads compressed 5-minute data to AlsoEnergy PowerTrack over Ethernet every 2 hours. The PowerLCS 400 enclosure is rated for up to 325 kW AC at 480 VAC, ships with solid-core 400 A CTs, logs data only in daylight hours, and is not recommended for demand metering. The control power supply is auto-ranging from 100 to 277 VAC at 50 to 60 Hz. It needs a neutral, must not be fed from two hot phases, and should be protected by a breaker rated up to 20 A, wired with 12 to 14 AWG. Remote access is not supported on the PowerLCS 400, and its enclosure has no further configuration options. On the PLCS 600, wire RS-485 as a daisy chain without star or branch runs, and keep stubs as short as possible. The installation guides are written for licensed electricians. Except for the irradiance sensor and cell modem, the PowerLCS 400 parts carry the standard AlsoEnergy 5-year warranty.
 

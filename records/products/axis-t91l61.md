@@ -30,6 +30,8 @@ claims:
     loc: tbl=1.r2
     h: 3c2caf9ed28c
   review: drafted
+  review_note: 'review: partial - AXIS P56 Series appears in the supported-products row, but the passage
+    never calls these ''PTZ network cameras'', so that label is extra detail.'
 - claim_id: c3
   rel: compatible_with
   target: prod:axis-q60-series
@@ -38,7 +40,9 @@ claims:
   - src: src:eq-equip-cameras-axis-axis-t91l61-wall-pole-mount-cut-sheet
     loc: tbl=1.r2
     h: 3c2caf9ed28c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: compatible_with
   target: prod:axis-q61-series
@@ -119,7 +123,9 @@ claims:
   - src: src:eq-equip-cameras-axis-axis-t91l61-wall-pole-mount-cut-sheet
     loc: sec=h2
     h: 33981dbfd5f5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: certified_to
   target: std:iec-60721
@@ -173,10 +179,13 @@ claims:
   - src: src:eq-equip-cameras-axis-axis-t91l61-wall-pole-mount-cut-sheet
     loc: sec=h2
     h: 33981dbfd5f5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The AXIS T91L61 is a wall-and-pole mount from Axis for its security cameras. The cut sheet lists the AXIS Q60, Q61, P55, P56 and Q37 Series as supported products. For safety it carries approvals to IEC, EN and UL 60950-1 and 60950-22. It is also listed as RoHS and WEEE compliant. Axis gives it a three-year warranty.
 
 <!-- review notes
 - sentence 1: support check: partial - Wall-and-pole mount and supported camera series are shown, but Axis as maker and 'security cameras' are not explicit in these passages.
+- sentence 1: review: partial - The passages show an AXIS T91L61 wall-and-pole mount, but they never say it is for security cameras and only imply Axis is the maker through the product name and axis.com links.
 -->

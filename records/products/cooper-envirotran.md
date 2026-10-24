@@ -45,7 +45,9 @@ claims:
   - src: src:eq-equip-transformers-cooper-3p-pad-mount-compartmental-type-21012
     loc: sec=h36
     h: fbeda3f2b924
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: certified_to
   target: std:fm-3990

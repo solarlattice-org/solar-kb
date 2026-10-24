@@ -206,13 +206,13 @@ claims:
   - src: src:eq-connectors-amphenol-h4-assembly-instructions
     loc: sec=h1
     h: 6680d05e01a8
-  review: disputed
-  conflicts_with:
-  - prod:amphenol-helios-h4#c9
-  - prod:amphenol-helios-h4#c10
-  - prod:amphenol-helios-h4#c11
-  review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
-    c13 (same source; check the conditions); possible conflict with c15 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
+  review_note: 'possible conflict with c12 (same source; check the conditions); possible conflict with
+    c13 (same source; check the conditions); possible conflict with c15 (same source; check the conditions);
+    review: the compiler-flagged conflict (prod:amphenol-helios-h4#c9, prod:amphenol-helios-h4#c10, prod:amphenol-helios-h4#c11)
+    is a scenario difference, resolved at review'
 - claim_id: c15
   attr: rated_output_current
   value:
@@ -244,7 +244,9 @@ claims:
   - src: src:eq-connectors-amphenol-ids-17-helios-h4
     loc: tbl=1.r13
     h: 2f29da8bbb28
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c17
   attr: operating_temperature
   value:

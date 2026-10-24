@@ -43,7 +43,9 @@ claims:
   - src: src:eq-equip-a-d-converters-adam-6000-adam-6050-cutsheet
     loc: sec=h16
     h: '289392e87654'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: uses_protocol
   target: proto:tcp-ip
@@ -93,7 +95,9 @@ claims:
   - src: src:eq-equip-a-d-converters-adam-6000-adam-6050-6051-6052-ds-102622-20221027
     loc: sec=h16
     h: 4144c2724580
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: uses_protocol
   target: proto:dhcp
@@ -101,7 +105,9 @@ claims:
   - src: src:eq-equip-a-d-converters-adam-6000-adam-6050-cutsheet
     loc: sec=h16
     h: '289392e87654'
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: implements
   target: func:communication-loss-fallback

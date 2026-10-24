@@ -36,6 +36,8 @@ claims:
     loc: tbl=2
     h: 75803a3f98e3
   review: drafted
+  review_note: 'review: partial - Table 2 lists standard three-phase 50 or 60 Hz ratings from 45 to 12000
+    kVA, but the passage says nothing about custom ratings (the footnote marker 1 is not quoted).'
 - claim_id: c3
   attr: frequency
   value:
@@ -81,7 +83,9 @@ claims:
   - src: src:eq-equip-transformers-cooper-3p-pad-mount-compartmental-type-21012
     loc: sec=h2
     h: 09e9ac97bfe2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c7
   rel: certified_to
   target: std:doe-10-cfr-431-2010
@@ -115,3 +119,7 @@ claims:
   review: drafted
 ---
 This is Cooper Power Systems' family of three-phase pad-mounted, compartmental-type distribution transformers, built in the United States. Standard ratings run from 45 kVA up to 12000 kVA at 50 or 60 Hz, and custom ratings can be ordered. High-voltage ratings range from 2400 V to 46 kV. Units are filled with either electrical grade mineral oil or Envirotemp FR3, a less-flammable, biodegradable fluid suited to fire-sensitive sites. Applicable units are designed to meet or exceed the DOE 2010 efficiency values under 10 CFR Part 431, and the transformer products are ISO 9001 compliant. A VFI version pairs the transformer with a resettable vacuum fault interrupter that gang-trips all three phases on a fault or overload, so three-phase loads are never left single-phased. An optional sealed visible break window lets the operator check whether the loadbreak switch contacts are open or closed before starting maintenance.
+
+<!-- review notes
+- sentence 1: review: partial - The passages support Cooper Power Systems three-phase pad-mounted compartmental transformers made in the USA, but the word 'distribution' is not in the cited passages.
+-->

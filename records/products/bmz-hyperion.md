@@ -59,6 +59,8 @@ claims:
     loc: tbl=6.r3
     h: 8e572757de37
   review: drafted
+  review_note: 'review: partial - The row gives item 41871 with Helios 1.5 modules, 3-6 modules and both
+    firmware minimums, but the quoted passage never names Sunny Boy Storage as the compatible inverter.'
 - claim_id: c5
   rel: compatible_with
   target: prod:sma-sunny-boy-storage
@@ -118,4 +120,5 @@ BMZ Hyperion is a modular high-voltage lithium-ion home battery made by BMZ GmbH
 <!-- review notes
 - sentence 4: support check: partial - Conversion to Helios VE since September 2021 and item-number distinction are stated, but 'replaced' is slightly stronger than 'converting'.
 - sentence 6: support check: partial - Table row for Hyperion 10.0/12.5/15.0 with Helios VE and the Sunny Tripower Smart Energy figure with manufacturer's cable are present, but the row doesn't name the inverter explicitly and compatibility with STP SE is implied.
+- sentence 1: review: partial - The passages give modular, lithium-ion, high-voltage and BMZ GmbH, but nothing says it is a 'home' battery.
 -->

@@ -29,7 +29,9 @@ claims:
   - src: src:eq-equip-cameras-axis-axis-t8144-60w-midspan-cut-sheet
     loc: sec=h2
     h: 08bde1a7d49e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   attr: max_input_voltage
   value:

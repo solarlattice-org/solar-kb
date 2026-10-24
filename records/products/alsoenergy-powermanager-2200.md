@@ -38,4 +38,5 @@ The cut sheet lists the MC-1111, MC-1121 and MC-1122 hardware versions. The MC-1
 
 <!-- review notes
 - sentence 1: support check: partial - Evidence only shows the model labels, with no statement that a cut sheet lists them as hardware versions; MC-1112 also not listed separately.
+- sentence 1: review: partial - The cut sheet shows MC-1111, MC-1121 and MC-1122 only as bare section headings, so nothing in the passages says they are hardware versions.
 -->

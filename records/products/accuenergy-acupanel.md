@@ -79,7 +79,9 @@ claims:
   - src: src:eq-equip-bess-tesla-using-acuvim-ii-meters-with-tesla-products
     loc: tbl=8
     h: 14ad946b8972
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c5 (same source; check the conditions)
 ---
 The Accuenergy AcuPanel 9100 series is an enclosure that comes pre-wired at the factory, so it arrives as a complete energy metering package that installs next to the switchgear. It is built to hold Acuvim II and Acuvim-L series multifunction power and energy meters. It suits retrofit jobs where the distribution panel has no space set aside for a meter. The AcuPanel 9104 is a steel indoor panel rated NEMA 4 or NEMA 3. The AcuPanel 9104X is a waterproof polycarbonate panel rated NEMA 4X for indoor or outdoor use. The standard enclosure contains labelled terminal blocks for the CT and voltage inputs, a CT shorting block, three industrial-grade fuses and a high-voltage label. No neutral is needed near the terminal block. The ordering options cover several CT input types: 5 A or 1 A, Rogowski coil, 333 mV, and milliamp. They also cover several power supplies: P1 for AC or DC, P2 for low-voltage DC, P3 for 480 Vac and P4 for 600 Vac. With the IIBN meter option, the panel holds a revenue-grade meter with BACnet-IP built in. Tesla lists AcuPanel 9104X part numbers with an Acuvim IIR meter for its products. The voltage options are 480 Vac line-line or 120 to 415 Vac line-line, with either Rogowski coil or 5 A CT inputs.

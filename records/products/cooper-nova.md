@@ -116,4 +116,5 @@ The Cooper NOVA is a three-phase, microprocessor-controlled vacuum-interrupting 
 
 <!-- review notes
 - sentence 1: support check: partial - Three-phase, vacuum, through 34.5 kV, microprocessor-controlled and NOVA 15/27/38 are stated, but 'offered as' is only via title; acceptable core though microprocessor-controlled is only in the title. Models listed in title; mostly supported but the 'recloser itself microprocessor-controlled' is slightly loose.
+- sentence 4: review: partial - The two interface options and the 120/240 VAC, 48/125/250 VDC supplies at 150 VA are quoted, but the table rows never say they belong to the auxiliary-powered interface.
 -->

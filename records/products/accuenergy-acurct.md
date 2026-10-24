@@ -42,7 +42,9 @@ claims:
   - src: src:eq-equip-cts-pts-accuenergy-docs-rog-coils-acuct-flex-series-rogowski-coil-ct-datasheet
     loc: tbl=4.r3
     h: c95e01f8be16
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: certified_to
   target: std:eu-rohs

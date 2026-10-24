@@ -79,7 +79,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-epc-resource-library-backup-power-resources-05-data-sheet-7
     loc: tbl=2
     h: 1450582cae90
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   rel: uses_protocol
   target: proto:modbus-tcp
@@ -148,7 +150,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-acuvim-ii-power-meter-user-manual-1040e130
     loc: tbl=241
     h: 09aaf6653463
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: certified_to
   target: std:iec-61557-12
@@ -172,7 +176,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-acuvim-ii-advanced-power-and-energy-meter
     loc: tbl=13.r2
     h: 273608bf9a40
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   rel: certified_to
   target: std:eu-rohs
@@ -289,7 +295,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-acuvim-ii-advanced-power-and-energy-meter
     loc: tbl=1
     h: a1545cc167ac
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c26 (same source; check the conditions)
 - claim_id: c26
   attr: frequency

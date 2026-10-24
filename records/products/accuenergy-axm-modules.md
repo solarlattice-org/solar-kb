@@ -82,7 +82,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-axm-web2-user-manual
     loc: sec=1.2
     h: f8d5b8cf22b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: uses_protocol
   target: proto:iec-61850
@@ -135,7 +137,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-axm-web2-user-manual
     loc: sec=1.2
     h: f8d5b8cf22b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: uses_protocol
   target: proto:snmp
@@ -246,3 +250,7 @@ claims:
   review: drafted
 ---
 The Accuenergy AXM-WEB2 and AXM-WEB-PUSH are add-on communication modules that plug into the back of Acuvim II meters. The AXM-WEB2 series also fits Acuvim-L meters. The WEB2 series comes in three versions: AXM-WEB2 with two Ethernet ports and Wi-Fi, AXM-WEB2-FOLC with one fiber optic LC port, one Ethernet port and Wi-Fi, and AXM-WEB2-D with two Ethernet ports and no Wi-Fi. The WEB2 modules support Modbus TCP, IEC 61850, BACnet-IP, DNP3, MQTT, SNMP, SMTP email, FTP and sFTP, NTP and EtherNet/IP. WEB-PUSH covers a smaller set built around Modbus TCP, a web server, email, SNMP, HTTP push and FTP. Modbus TCP works in slave mode only and uses port 502 by default. Datalogging memory is 8GB on the WEB2 versions and 4GB on WEB-PUSH. You can update firmware remotely, by uploading a .aup file by hand, or with the auto-update feature. The manual's compatibility table lists firmware v6.13 to v6.16 as compatible with bootloader v6.07. Only install or remove the module while the meter is powered off, to avoid injury or damage to the equipment. You can download a diagnostic file and send it to Accuenergy Technical Support to help troubleshoot the module.
+
+<!-- review notes
+- sentence 1: review: partial - The passages support AXM-WEB2 as a communication module that plugs into the back of Acuvim II and Acuvim-L meters, but for AXM-WEB-PUSH they give only a manual title, with no statement that it is a communication module that plugs into…
+-->

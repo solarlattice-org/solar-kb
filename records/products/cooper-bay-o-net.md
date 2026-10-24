@@ -85,4 +85,5 @@ The Cooper Bay-O-Net is a field-replaceable expulsion fuse family made by Eaton'
 - sentence 1: support check: partial - Field-replaceable, Eaton Cooper Power series and protection of distribution transformers are stated, but 'expulsion' fuse type is not mentioned.
 - sentence 2: support check: partial - Passage says 500 kVA applies to single-phase transformers and other apparatus, and 1500 kVA to three-phase equipment; the statement matches essentially, though the 500 kVA limit's scope is slightly different in wording (u16 gives no limits).
 - sentence 3: support check: partial - Current sensing and dual sensing links and 3-140 A ratings appear, but the link between versions and ratings by catalog number is not fully stated; the table shows only one catalog series.
+- sentence 1: review: partial - The passages support field-replaceable, the Eaton Cooper Power series and protection of distribution apparatus, but never call the fuse an 'expulsion' type.
 -->

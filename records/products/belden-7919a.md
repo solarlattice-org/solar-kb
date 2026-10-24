@@ -18,7 +18,8 @@ claims:
     h: bcdb3a3c0427
   review: drafted
   review_note: 'support check: partial - Only a ''© 2025 Belden, Inc'' notice is given, which implies
-    Belden but doesn''t explicitly state it makes the 7919A.'
+    Belden but doesn''t explicitly state it makes the 7919A.; review: partial - The only evidence is a
+    ''© 2025 Belden, Inc'' notice, which implies Belden makes the 7919A but never says so directly.'
 - claim_id: c2
   rel: instance_of
   target: comp:network-cable
@@ -31,7 +32,9 @@ claims:
   - src: src:eq-equip-cable-belden-7919a-cat5e
     loc: tbl=5.r7
     h: 6e44a1e68b2f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: certified_to
   target: std:ansi-tia-568-2-d
@@ -40,7 +43,9 @@ claims:
   - src: src:eq-equip-cable-belden-7919a-cat5e
     loc: tbl=5.r8
     h: 7315c8234ad8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: certified_to
   target: std:nema-wc-63-1
@@ -48,7 +53,9 @@ claims:
   - src: src:eq-equip-cable-belden-7919a-cat5e
     loc: tbl=5.r6
     h: 5606f8b2457e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: certified_to
   target: std:ukca-marking

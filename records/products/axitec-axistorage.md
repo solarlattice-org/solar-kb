@@ -20,7 +20,9 @@ claims:
   - src: src:sma-doc-275666
     loc: tbl=6.r1
     h: bf6baa905b27
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: instance_of
   target: comp:battery-storage

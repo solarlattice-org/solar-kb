@@ -102,7 +102,9 @@ claims:
   - src: src:eq-equip-telemetry-ase-ase-info-billygambao-30264-5-mar-2023-option2-v1
     loc: sec=h13
     h: e653ef2ac1c7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c9
   rel: implements
   target: func:remote-firmware-update

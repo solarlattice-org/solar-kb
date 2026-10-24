@@ -49,7 +49,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-alsoenergy-installation-manual-pv-rev-14-1
     loc: sec=4.2.2
     h: 58aac43aca61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: uses_protocol
   target: proto:modbus-tcp
@@ -153,7 +155,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-alsoenergy-ch-e0-1000-powerlogger1000-datasheet-v2
     loc: sec=h2
     h: cb3a85689752
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   attr: max_count
   value:
@@ -170,7 +174,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-alsoenergy-installation-manual-pv-rev-14-1
     loc: sec=4.2.2
     h: 58aac43aca61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   attr: warranty_term
   value:

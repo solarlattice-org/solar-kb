@@ -49,4 +49,5 @@ The Advidia M-series are i-PRO network cameras. The M-200-P is an outdoor networ
 <!-- review notes
 - sentence 1: support check: partial - M-200-P as outdoor PTZ dome and 2MP 33x Lighthunter PTZ dome are stated, but the passages don't explicitly say the M-200-P is the 2MP 33x model or that M-series are i-PRO cameras beyond context.
 - sentence 3: support check: partial - Passages state VPN is needed, a plugin is needed, and a web browser is deprecated/Edge setup is needed, but the 'IE mode' detail and explicit plugin+deprecated browser pairing are only loosely stated.
+- sentence 1: review: partial - The passages support the M-200-P as an outdoor network PTZ dome and give the 2MP 33x Lighthunter title from its cut sheet, but no passage says the Advidia M-series are i-PRO cameras; they only say Advidia Guard accesses i-PRO cameras.
 -->

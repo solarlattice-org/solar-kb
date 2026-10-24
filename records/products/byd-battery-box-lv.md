@@ -47,4 +47,5 @@ The BYD Battery-Box LV is BYD's family of low-voltage battery storage. SMA docum
 
 <!-- review notes
 - sentence 1: support check: partial - Variants Premium LVS, B-BOX, LV Flex, LV Flex Lite appear, but nothing states it's BYD's low-voltage family or that SMA lists them under it.
+- sentence 1: review: partial - The passages name the Premium LVS, B-BOX, LV Flex and LV Flex Lite variants, but nothing calls Battery-Box LV a BYD low-voltage family or says SMA groups these variants under that name.
 -->

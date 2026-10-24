@@ -124,7 +124,9 @@ claims:
   - src: src:eq-equip-rs485-serial-converters-advantech-eki-1222-ce-eki-122x-series-cut-sheet
     loc: sec=h15
     h: 1f05b844b58b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c8
   rel: uses_protocol
   target: proto:ethernet
@@ -195,7 +197,9 @@ claims:
   - src: src:eq-equip-rs485-serial-converters-advantech-eki-1222-ce-eki-122x-series-cut-sheet
     loc: sec=h15
     h: 1f05b844b58b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   attr: max_count
   value:
@@ -213,4 +217,5 @@ The Advantech EKI-1200 series is a family of two-way Modbus gateways. They conne
 <!-- review notes
 - sentence 4: support check: partial - Client/server (master/slave) per port and 16/64 limits are stated, but 64 sessions is not stated as gateway-wide versus per port.
 - sentence 8: support check: partial - CI models have isolation and surge protection, but the isolation is serial-to-Ethernet/power and Ethernet-to-power, not specifically port-to-port between serial ports, and surge protection is line-to-line/ground rather than stated 'on serial lines'.
+- sentence 4: review: partial - Client/server (master/slave) mode per serial port and the 16 and 64 limits are stated, but the source does not say the 64 server-mode sessions apply to the whole gateway rather than to each port.
 -->

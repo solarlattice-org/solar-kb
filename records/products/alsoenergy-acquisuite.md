@@ -42,7 +42,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-hardware-cut-sheets-acquisuite-a8810-manual-2
     loc: sec=h11
     h: a8a3fa679929
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: uses_protocol
   target: proto:modbus-tcp
@@ -75,7 +77,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-hardware-cut-sheets-acquisuite-datasheet-a8810-emb-1
     loc: tbl=1.r13
     h: dd7008dc80bf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: uses_protocol
   target: proto:ftp

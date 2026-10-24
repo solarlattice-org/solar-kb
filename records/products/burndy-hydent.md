@@ -76,4 +76,5 @@ Burndy HYDENT is a family of compression connectors and terminals, including Med
 
 <!-- review notes
 - sentence 1: support check: partial - Medium and Large HYDENT terminals and crimping are supported, but 'family of connectors and terminals' is only loosely implied.
+- sentence 1: review: partial - Crimp instructions for Medium and Large HYDENT terminals are shown, but the compression-connector passage is generic Burndy text and never calls HYDENT a family of connectors and terminals.
 -->

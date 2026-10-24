@@ -46,4 +46,5 @@ The DuraTrack HZ v3 is a solar tracker product family made by Array Technologies
 <!-- review notes
 - sentence 1: support check: partial - Array Technologies, Inc. in Albuquerque NM and the DuraTrack HZ v3 guides are shown, but 'product family' is not stated.
 - sentence 3: support check: partial - Passage says leaving cross-rods installed can damage structural components during stow, but the fragment doesn't explicitly instruct removal before stow (implied) and is truncated.
+- sentence 1: review: partial - The passages show DuraTrack HZ v3 guides from Array Technologies, Inc. in Albuquerque, NM, but none of the quoted text calls it a solar tracker or a product family.
 -->

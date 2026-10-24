@@ -56,7 +56,9 @@ claims:
   - src: src:eq-equip-bess-stem-metering-procurement-guidance
     loc: sec=h19
     h: 120632d7fb14
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: certified_to
   target: std:iec-60044-1
@@ -68,7 +70,9 @@ claims:
   - src: src:eq-equip-cts-pts-accuenergy-docs-split-core-acuct-split-core-5a-1a-output-current-tranformer-brochur
     loc: tbl=5
     h: 6fe0ff89afd0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The datasheets list IEC 60044-1 as the standard for the 400-1600
     A series, but they don''t say it is certified; they list it only as a ''Standard''.'
 - claim_id: c5
@@ -91,7 +95,9 @@ claims:
   - src: src:eq-equip-cts-pts-accuenergy-docs-split-core-acuct-split-core-5a-1a-output-current-tranformer-brochur
     loc: tbl=5
     h: 6fe0ff89afd0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   attr: frequency
   value:
@@ -176,4 +182,5 @@ AcuCT is Accuenergy's family of current transformers. It includes split-core, hi
 <!-- review notes
 - sentence 1: support check: partial - Split-core, hinged split-core and the AcuCT S77 solid-core are supported, but the passages don't call AcuCT the whole family, and AcuSplitCT is named only for split-core series.
 - sentence 3: support check: partial - Single-click installation and a compact size for limited-space panels are stated, but 'close with a single click' is a mild paraphrase.
+- sentence 1: review: partial - Split-core (AcuSplitCT), hinged split-core and AcuCT S77 solid-core CTs appear, but no passage calls AcuCT Accuenergy's overall CT family or names the hinged type as AcuCT.
 -->
