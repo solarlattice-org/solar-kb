@@ -53,7 +53,9 @@ claims:
     h: 1ca1f7bac673
   review: drafted
   review_note: 'support check: partial - RS485 is listed for six models, but S6-GC50K-US has no communication
-    row in the passages, so ''every model'' is not fully covered.'
+    row in the passages, so ''every model'' is not fully covered.; review: partial - Six model rows list
+    RS485 as a communication connection, but the passages never call it the standard connection for every
+    model, and no row covers S6-GC50K-US.'
 - claim_id: c3
   rel: uses_protocol
   target: proto:wifi

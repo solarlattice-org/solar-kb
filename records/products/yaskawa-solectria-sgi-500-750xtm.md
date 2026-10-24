@@ -73,7 +73,9 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=35.r9
     h: 5ce5e62443b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c4 (same source; check the conditions)
 - claim_id: c6
   attr: rated_output_current
@@ -140,11 +142,15 @@ claims:
   - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
     loc: tbl=35.r4
     h: 02143691d29f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Solectria SGI 500/750XTM is a utility-scale grid-tied central inverter family from Yaskawa Solectria Solar, made up of the SGI 500XTM and SGI 750XTM. The SGI 500XTM delivers 500 kW continuous and the SGI 750XTM 750 kW, at a nominal AC voltage of 380 V with an operating range of 335 to 418 VAC. Both models accept up to 1000 VDC and operate on the DC side from 545 to 1000 VDC. The inverter connects through an external isolation transformer, and the manual points to a separate transformer specification. Output current is limited so it matches nameplate power at nominal AC voltage, so full power is not reached when grid voltage is low; current and power limiting behaviour can be configured. Cooling is automatic forced convection, and the default power factor is 1.0. Fault messages include DC GND Fault, Contactor Fail, CT Failure and DC Cont. Err. If you see a ground fault, do not touch any equipment and call a qualified person.
 
 <!-- review notes
 - sentence 1: support check: partial - The passages support the two models and the maker, but 'utility-scale' and 'central inverter' are not stated in them.
 - sentence 4: support check: partial - The passages point to an isolation transformer specification, but they do not say the inverter connects through an external transformer. The datasheet URL contains 'externaltransformer', which only hints at this.
+- sentence 1: review: partial - The passages support the two models, Yaskawa Solectria Solar as maker and grid-tied operation, but the quoted text never says utility-scale or central inverter.
+- sentence 4: review: partial - The manual does point to an isolation transformer specification, but no passage says the inverter connects through an external transformer; only a datasheet URL slug hints at it.
 -->

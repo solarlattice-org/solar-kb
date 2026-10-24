@@ -37,4 +37,5 @@ The Logger1000 is a Sungrow monitoring and communications logger, and technician
 <!-- review notes
 - sentence 1: support check: partial - A local Web interface for Logger1000 is evident, but nothing describes it as a monitoring and communications logger or that technicians set it up there.
 - sentence 2: support check: partial - FAQ gives default account maintain/pw1111 for logging into the local Web interface, but doesn't state it's for local maintenance login generally; mostly supported.
+- sentence 1: review: partial - The passages show that Logger1000 is a Sungrow device with a local Web interface, but they never call it a monitoring and communications logger or say that technicians set it up there.
 -->

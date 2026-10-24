@@ -146,7 +146,9 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: tbl=19.r13
     h: c4a124be0979
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c9 (same source; check the conditions); possible conflict with c10
     (same source; check the conditions)
 - claim_id: c9
@@ -249,11 +251,14 @@ claims:
   - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
     loc: tbl=18.r26
     h: 43727cb5300d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Solis S6-GU(250-350)K-EHV-US is a family of three-phase string inverters made by Solis, with four models: 250K-M12, 300K-M12, 350K-M12 and 350K-M16. The certification listing describes them as transformerless, grid-support, utility-interactive PV inverters that are permanently connected. Every model accepts up to 1500 V DC. The 350K-M12 is rated at 1080 V DC and operates from 480 to 1500 V. Rated output current is 240.6 A on the 250K, 251 A on the 300K and 252.6 A on the 350K-M12. The 300K is rated for a 60 Hz grid. Efficiency is listed as 98.9% maximum and 98.5% CEC. The permitted ambient temperature range is -30 to +60 °C. Integrated AFCI (DC arc-fault protection) and PID recovery are built in. Communication is over RS-485, and PLC is available as an option. A DRM LINK Fail alarm points to a fault on the DRM link. To fix it, restart the inverter, check the DRM cables inside and outside the unit, and confirm the signal is normally closed.
 
 <!-- review notes
 - sentence 1: support check: partial - The four models are listed, but 'three-phase string inverters' and Solis as maker are not explicitly stated beyond the name.
 - sentence 6: support check: partial - AFCI is YES for all four models, but PID recovery evidence omits the M16 model.
+- sentence 1: review: partial - The four model names and the Solis brand are in the passages, but nothing quoted calls them three-phase string inverters.
 -->

@@ -87,7 +87,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=41.r9
     h: a4584af8cea9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c8
   rel: certified_to
   target: std:ul-1741-sb
@@ -127,7 +129,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=41.r9
     h: a4584af8cea9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: certified_to
   target: std:heco-srd-v2-0
@@ -159,7 +163,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=40
     h: b57a1a527249
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   rel: implements
   target: func:ground-fault-protection
@@ -179,7 +185,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=40
     h: b57a1a527249
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c18
   rel: implements
   target: func:night-reactive-power
@@ -211,7 +219,9 @@ claims:
   - src: src:sungrow-sungrow-sg350hx-us-user-manual
     loc: tbl=40
     h: b57a1a527249
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c21
   rel: requires
   target: prod:sungrow-emu200

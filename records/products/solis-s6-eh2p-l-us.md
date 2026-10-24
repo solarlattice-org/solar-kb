@@ -96,7 +96,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=5.r5
     h: 99e9d09c38c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions);
     possible conflict with c5 (same source; check the conditions)
@@ -128,7 +130,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=18.r1
     h: 69c05042a23a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Solis S6-EH2P(9.6-16)K-SV-YD-L-US is a Solis inverter family. The applicable models listed are the 9.6, 11.4, 12, 14 and 16 kW versions. Each model's nameplate rating is also its maximum AC output power, shared between the grid and backup ports. According to the datasheet table, the inverter can carry two times its rated power for 10 seconds. The inverter runs an AFCI self-test. If the test fails it shows AFCI-Check, and the first step is to restart the system and see whether the fault comes back. DCInj-FAULT means the DC component of the output current is over the limit. Check the grid and the AC cable connections, then restart. BatName-FAIL means the battery brand selected does not match the battery actually installed. 12Power-FAULT is a 12 V undervoltage failure, so check the grounding and look for wires leaking current to ground. The manual includes an SGS certificate of compliance, number SGSNA/25/GZ/00140.
 

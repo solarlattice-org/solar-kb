@@ -73,7 +73,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: sec=h19
     h: 26c85640e61d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   rel: certified_to
   target: std:ieee-1547-1-2020
@@ -293,7 +295,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: tbl=26.r13
     h: 0d2125033199
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c21 (same source; check the conditions); possible conflict with
     c22 (same source; check the conditions); possible conflict with c23 (same source; check the conditions);
     possible conflict with c25 (same source; check the conditions); possible conflict with c26 (same source;
@@ -329,7 +333,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: tbl=26.r13
     h: 0d2125033199
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c21 (same source; check the conditions); possible conflict with
     c22 (same source; check the conditions); possible conflict with c23 (same source; check the conditions);
     possible conflict with c24 (same source; check the conditions); possible conflict with c25 (same source;
@@ -371,6 +377,8 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: tbl=26.r11
     h: 9213964658bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Solectria XGI 1500-1MW is a family of US-built utility-scale modular central inverters from Yaskawa Solectria Solar, offered in six models. Continuous real output ranges from 0.498 MW up to 1 MW depending on model, at a nominal 600 VAC three-phase output, and several models come in a 1 MVA version. The family uses 3-level power conversion with a CEC weighted efficiency of 98.5% and a maximum efficiency of 99.0%, housed in a UL Type 3R outdoor enclosure. The DC side is negative grounded, and the inverters are meant to pair with Solectria CR1500 remote PV combiners. Grid functions include adjustable reactive power, adjustable power factor, and remote power curtailment, and firmware can be updated either remotely or locally. Communication is over two Ethernet ports or a Wi-Fi user interface, and the inverters work with SolrenView monitoring without additional hardware. Listings include UL 1741 (2021) and UL 1741 SB, IEEE 1547-2018 with IEEE 1547.1-2020, UL 1998, CSA C22.2 No. 107.1, and FCC Part 15 Class A, with IEEE 1547 Category B normal and Category III abnormal performance.

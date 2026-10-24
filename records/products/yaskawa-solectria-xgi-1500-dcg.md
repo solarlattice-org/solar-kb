@@ -48,7 +48,9 @@ claims:
   - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
     loc: tbl=23.r2
     h: 3d32069aa45b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   attr: mppt_voltage_range
   value:

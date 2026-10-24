@@ -21,7 +21,9 @@ claims:
   - src: src:yaskawa-xgi-1500-1mw-iom-docr-071091-h
     loc: sec=h172
     h: 8eb56217ad74
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Passages show Yaskawa Solectria Solar offers/documents XGI 1500
     inverters, but never explicitly state it makes them (title only implies).'
 - claim_id: c2
@@ -139,7 +141,9 @@ claims:
     h: b7e97bacc851
   review: drafted
   review_note: 'support check: partial - CSA C22.2 No. 107.1-16 is listed, but TÜV Rheinland as testing
-    agency is not in the cited passage (u2).'
+    agency is not in the cited passage (u2).; review: partial - CSA C22.2 No. 107.1-16 is listed for every
+    XGI 1500 model, but the note''s claim that TÜV Rheinland is the testing agency does not appear in
+    the cited row.'
 - claim_id: c10
   rel: compatible_with
   target: arch:functionally-grounded-pv-array
@@ -191,7 +195,9 @@ claims:
   - src: src:yaskawa-xgi-1500-powerrack-design-guide-docr-071096-d
     loc: tbl=2.r7
     h: f7b81b344bd0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   attr: mppt_voltage_range
   value:
@@ -271,7 +277,9 @@ claims:
   - src: src:yaskawa-xgi-1500-powerrack-design-guide-docr-071096-d
     loc: tbl=2.r19
     h: 1b3aedf4cd59
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c20
   attr: rated_power
   value:
@@ -282,7 +290,9 @@ claims:
   - src: src:yaskawa-xgi-1500-powerrack-design-guide-docr-071096-d
     loc: sec=h5
     h: 22cc42e5db8c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c21 (same source; check the conditions); possible conflict with
     c22 (same source; check the conditions); possible conflict with c23 (same source; check the conditions)
 - claim_id: c21
@@ -295,7 +305,9 @@ claims:
   - src: src:yaskawa-xgi-1500-powerrack-design-guide-docr-071096-d
     loc: sec=h5
     h: 22cc42e5db8c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c20 (same source; check the conditions); possible conflict with
     c22 (same source; check the conditions); possible conflict with c23 (same source; check the conditions)
 - claim_id: c22
@@ -308,7 +320,9 @@ claims:
   - src: src:yaskawa-xgi-1500-powerrack-design-guide-docr-071096-d
     loc: sec=h5
     h: 22cc42e5db8c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c20 (same source; check the conditions); possible conflict with
     c21 (same source; check the conditions); possible conflict with c23 (same source; check the conditions)
 - claim_id: c23
@@ -329,4 +343,5 @@ The Solectria XGI 1500 is a family of 1500 V three-phase inverters made by Yaska
 
 <!-- review notes
 - sentence 1: support check: partial - Models, DCG variants and 1MW utility-scale modular central series are shown, but 1500 V three-phase and manufacturer explicitly aren't fully stated for the family.
+- sentence 1: review: partial - The passages support the maker, the 125-250 kW models, the DCG variants and the 1MW utility-scale modular central series, but never state that the family is 1500 V three-phase.
 -->

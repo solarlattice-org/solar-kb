@@ -86,4 +86,5 @@ The Solis S6-EH3P(30-60)K-NV-YD-H-US is a family of three-phase hybrid inverters
 
 <!-- review notes
 - sentence 1: support check: partial - Three-phase hybrid inverters by Solis are supported by the model names and title, but 'US market' is only implied by the -US suffix and 'three-phase' by EH3P naming, not stated.
+- sentence 1: review: partial - The passages back a Solis hybrid inverter family with these models, but 'three-phase' and 'for the US market' are not stated and are only suggested by the model naming.
 -->

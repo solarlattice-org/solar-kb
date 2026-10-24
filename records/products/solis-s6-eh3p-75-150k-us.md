@@ -58,7 +58,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=31.r39
     h: c1bba7fd57a7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   attr: efficiency
   value:
@@ -108,7 +110,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=31.r40
     h: 22214aa9a922
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c5 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions); possible conflict with c7 (same source; check the conditions)
 - claim_id: c9
@@ -121,7 +125,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=31.r32
     h: b606f824522e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c10 (same source; check the conditions); possible conflict with
     c11 (same source; check the conditions)
 - claim_id: c10
@@ -134,7 +140,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: tbl=31.r32
     h: b606f824522e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c9 (same source; check the conditions); possible conflict with c11
     (same source; check the conditions)
 - claim_id: c11
@@ -157,4 +165,6 @@ The Solis S6-EH3P(75-150)K10 US family is a series of three-phase hybrid inverte
 - sentence 1: support check: partial - Five models listed with LV/NV, but 'three-phase hybrid inverters' is not explicitly stated in the passage (only implied by model name).
 - sentence 2: support check: partial - Apparent power for 100K/125K/150K is given as 100, 125, 150 kVA (row ordering) and currents match, but 'datasheet' mapping is by row layout; largely supported.
 - sentence 5: support check: partial - AFCI and self-test failure with restart are supported, but 'check whether the fault comes back' is a paraphrase of 'confirm the fault continues'; acceptable, though the 100K/125K AFCI is supported.
+- sentence 1: review: partial - The five models (60K and 75K LV; 100K, 125K and 150K NV) are supported, but 'three-phase hybrid inverters' is not stated in the passage.
+- sentence 4: review: partial - The table gives 60 Hz as the rated input frequency only for the 75K, 100K and 125K models, so the general claim for the whole family is not fully covered.
 -->

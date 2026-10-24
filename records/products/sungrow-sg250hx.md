@@ -77,7 +77,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=47
     h: 980c7f82774f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c7 (same source; check the conditions); possible conflict with c8
     (same source; check the conditions)
 - claim_id: c7
@@ -152,7 +154,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=47
     h: 980c7f82774f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   attr: frequency
   value:
@@ -202,7 +206,9 @@ claims:
   - src: src:sungrow-sg250hx-us-uen-ver17-202203
     loc: tbl=48.r23
     h: 9afb7fef49e4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c17
   rel: implements
   target: func:mppt
@@ -226,4 +232,5 @@ The Sungrow SG250HX-US is a grid-connected PV string inverter for three-phase 80
 
 <!-- review notes
 - sentence 6: support check: partial - The passage is truncated and only shows checking ground cable insulation and contacting service, but the check of connection is only implied by the fragment '...connected.'
+- sentence 1: review: partial - Grid-connected PV inverter and nominal AC voltage 3/PE, 800 V are supported, but nothing in the cited passages calls it a string inverter.
 -->

@@ -35,7 +35,9 @@ claims:
   - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
     loc: tbl=43.r22
     h: 468cd74f9f9f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions)
 - claim_id: c3
@@ -161,4 +163,5 @@ The Sungrow SG36/60CX-US is a family of string inverters that includes the SG36C
 
 <!-- review notes
 - sentence 1: support check: partial - Both models appear in tables, but 'family of string inverters' isn't stated.
+- sentence 1: review: partial - Both the SG36CX-US and SG60CX-US models appear in the quoted rows, but nothing quoted calls them a family of string inverters.
 -->

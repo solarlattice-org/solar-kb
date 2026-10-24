@@ -126,7 +126,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=16.r13
     h: 6c3250a08603
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c9 (same source; check the conditions)
 - claim_id: c9
   attr: rated_output_current
@@ -138,7 +140,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=19.r13
     h: f212e99a964f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c8 (same source; check the conditions)
 - claim_id: c10
   attr: max_input_current
@@ -150,7 +154,9 @@ claims:
   - src: src:solis-solis-manual-s5-75-100-k-us-v2-3-20230623
     loc: tbl=16.r6
     h: f670065548d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   attr: nominal_voltage
   value:
@@ -167,4 +173,5 @@ The Solis S5 Series is a three-phase grid-tied string inverter family for the US
 
 <!-- review notes
 - sentence 1: support check: partial - Models listed, but three-phase, string inverter and US market are only implied by names/3/PE, not explicitly stated.
+- sentence 1: review: partial - The passage names the S5 Series Grid Inverter and the four models, but 'three-phase', 'string' and 'US market' are not stated (the US market is only hinted at by the -US suffix).
 -->

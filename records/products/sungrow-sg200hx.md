@@ -111,7 +111,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=41.r7
     h: 432d437d2742
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c10
   rel: uses_protocol
   target: proto:bluetooth
@@ -157,7 +159,9 @@ claims:
     loc: tbl=41.r10
     h: ce3d6fc3b078
   review: drafted
-  review_note: 'support check: partial - UL62109-1 listed as compliance; certification not explicit.'
+  review_note: 'support check: partial - UL62109-1 listed as compliance; certification not explicit.;
+    review: partial - UL62109-1 appears in the Compliance row, but the passage claims compliance, not
+    certification.'
 - claim_id: c15
   rel: certified_to
   target: std:ieee-1547-2018
@@ -165,7 +169,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=41.r10
     h: ce3d6fc3b078
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - IEEE1547-2018 listed as compliance; certification not explicit.'
 - claim_id: c16
   rel: certified_to
@@ -206,7 +212,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=40
     h: 33e7eb60c673
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c20
   rel: implements
   target: func:residual-current-monitoring
@@ -264,7 +272,9 @@ claims:
   - src: src:sungrow-sungrow-sg200hx-us-user-manual
     loc: tbl=40
     h: 33e7eb60c673
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c26
   rel: implements
   target: func:pid-recovery

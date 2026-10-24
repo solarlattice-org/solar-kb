@@ -143,7 +143,9 @@ claims:
   - src: src:yaskawa-solectria-solectria-pvi-3800-7600tl-manual-0527-2014-rev-d-feb2018
     loc: tbl=52.r1
     h: b4b66cc03d5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c16 (same source; check the conditions); possible conflict with
     c17 (same source; check the conditions); possible conflict with c18 (same source; check the conditions);
     possible conflict with c19 (same source; check the conditions)
@@ -200,7 +202,9 @@ claims:
   - src: src:yaskawa-solectria-solectria-pvi-3800-7600tl-manual-0527-2014-rev-d-feb2018
     loc: tbl=52.r2
     h: 457ec6ea8ed8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c15 (same source; check the conditions); possible conflict with
     c16 (same source; check the conditions); possible conflict with c17 (same source; check the conditions);
     possible conflict with c18 (same source; check the conditions)
@@ -226,7 +230,9 @@ claims:
   - src: src:yaskawa-solectria-solectria-pvi-3800-7600tl-manual-0527-2014-rev-d-feb2018
     loc: tbl=51.r2
     h: fefbd0daf618
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c22
   attr: mppt_voltage_range
   value:
@@ -273,6 +279,8 @@ claims:
   - src: src:yaskawa-solectria-solectria-pvi-3800-7600tl-manual-0527-2014-rev-d-feb2018
     loc: tbl=56
     h: 5a382f024a95
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The Solectria PVI 3800-7600TL is a family of transformerless, utility-interactive inverters for permanent connection. It comes in four models: PVI 3800TL, 5200TL, 6600TL and 7600TL. Nominal AC output runs from 3800 W to 7600 W. At 208 V the 3800TL is limited to 3300 W and the 7600TL to 6600 W. All models accept up to 600 V DC system voltage, with a full-power MPP range of 200 to 500 V. The 3800TL has one MPP tracker and the larger models have two. Maximum efficiency is 98.0 percent, and CEC efficiency is 97.5 percent at both 208 V and 240 V. The units have an internal DC disconnect, screw terminals for AC and DC wiring, convection cooling and an RS-485 communication interface. They are listed to UL 1741 and CSA 22.2 No. 107-01, have UL 1998 software approval, and meet IEEE 1547 and 1547.1 for anti-islanding. Arc-fault protection is to UL 1699B Type 1, and isolation monitoring is to NEC 690.35. EMC compliance covers FCC part 15 A and B and ICES-003. The standard warranty is 10 years.

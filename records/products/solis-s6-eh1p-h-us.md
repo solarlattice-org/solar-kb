@@ -98,4 +98,5 @@ The Solis S6-EH1P(3.8-11.4)K-H-US is a family of single-phase hybrid inverters f
 <!-- review notes
 - sentence 1: support check: partial - The passages support transformerless, bi-directional, grid support, utility-interactive and permanently connected, but 'single-phase hybrid inverters' is not stated (only the 'EH1P' model name hints at it), and 'solis' alone doesn't establish the maker.
 - sentence 3: support check: partial - Evidence covers only the 3.8, 5, 7.6, 9.9, 10 and 11.4 kW models, so 'every model' is overstated, as the 6 and 8 kW models are not covered.
+- sentence 1: review: partial - The CSA listing supports bi-directional, transformerless, grid support, utility interactive and permanently connected, but 'single-phase hybrid' is not stated in the passages.
 -->

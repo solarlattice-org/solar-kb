@@ -57,7 +57,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Ethernet Network Card is optional and needed for SolrenView,
     and YConnect Pro data goes via it, but the passages don''t explicitly say YConnect Pro needs it or
-    name Ethernet as a protocol.'
+    name Ethernet as a protocol.; review: partial - The passages say the optional Ethernet Network Card
+    is needed for SolrenView and lets data go to YConnect Pro, but they do not say YConnect Pro requires
+    the card.'
 - claim_id: c5
   rel: implements
   target: func:remote-firmware-update
@@ -66,7 +68,9 @@ claims:
   - src: src:yaskawa-pvi-25tl-208-36tl-v2-50-60tl-iom-docr-071086-c
     loc: sec=h123
     h: 4a03dc1042e7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   attr: rated_power
   value:
@@ -134,4 +138,5 @@ The Solectria PVI 50-60TL is a family of three-phase string inverters made up of
 
 <!-- review notes
 - sentence 1: support check: partial - Models 50TL-480 and 60TL-480 are listed, but 'three-phase string inverter' family is not stated in the passages.
+- sentence 1: review: partial - The passages list the PVI 50TL-480 and PVI 60TL-480 models, but none of them say these are three-phase string inverters.
 -->

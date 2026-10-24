@@ -120,7 +120,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: sec=2.1
     h: 141c9950a8e1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c10
   rel: compatible_with
   target: arch:ungrounded-pv-array
@@ -137,7 +139,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: sec=2.1
     h: 141c9950a8e1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   rel: compatible_with
   target: arch:carport-pv
