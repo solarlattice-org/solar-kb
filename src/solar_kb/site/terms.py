@@ -46,15 +46,15 @@ def load_ontology(schema_path: Path) -> Ontology:
     sv = SchemaView(str(schema_path))
     default_range = sv.schema.default_range or "string"
     terms = []
-    for name, cls in sv.all_classes(imports=False).items():
+    for name, cls in sv.all_classes(imports=True).items():
         terms.append(Term(name=name, kind="class", iri=sv.get_uri(name, expand=True, native=False),
                           description=cls.description or "", is_a=cls.is_a, abstract=bool(cls.abstract),
                           slots=tuple(sv.class_slots(name))))
-    for name, slot in sv.all_slots(imports=False).items():
+    for name, slot in sv.all_slots(imports=True).items():
         terms.append(Term(name=name, kind="slot", iri=sv.get_uri(name, expand=True, native=False),
                           description=slot.description or "", range=slot.range or default_range,
                           multivalued=bool(slot.multivalued)))
-    for name, enum in sv.all_enums(imports=False).items():
+    for name, enum in sv.all_enums(imports=True).items():
         terms.append(Term(name=name, kind="enum", iri=sv.get_uri(name, expand=True, native=False),
                           description=enum.description or "",
                           values=tuple((v, pv.description or "") for v, pv in enum.permissible_values.items())))

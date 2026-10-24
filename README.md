@@ -10,7 +10,24 @@ never copied. Each citation also records `h`, a 12-hex-character hash of the cit
 source can never silently re-point a citation at different text:
 `{src: "src:iea-pvps-t13-01-2014", loc: "sec=4.3", h: "ff7ac62c1dc0"}`.
 
-- `schema/solar_kb.yaml` — the LinkML schema (the open ontology). Exports to JSON Schema, OWL, JSON-LD.
+The one exception: a Requirement may quote the clause text of a code or standard verbatim, attributed by
+`quote_source` (designator, edition, clause); that text stays its publisher's copyright (see `LICENSE-CONTENT`).
+
+- `schema/solar_kb.yaml` — the LinkML schema (the open ontology), split into modules `schema/solar_kb_<module>.yaml`.
+  Exports to JSON Schema, OWL, JSON-LD. Record types by module:
+  - core: Source, Organization, Region, Role
+  - failure: FailureMode, Stressor, Symptom, Measurement, DetectionMethod, Mitigation
+  - equipment: Component, Product (family / model / variant), FirmwareRelease, Tool
+  - events: FaultCode, EventConcept, OperatingState
+  - control: Function, Parameter, GridProfile
+  - communication: Protocol, Register
+  - practice: Procedure, Hazard
+  - regulation: Standard (an edition), Requirement (a clause), Program
+  - engineering: Concept, Metric, CalculationMethod, Architecture
+  - overlay (private): Case, DataExample
+
+  Claims may carry a structured `scope` (products, firmware range, hardware revision, regions, applications,
+  architecture, standard edition, dates) and `negated: true` for an explicit negative statement.
 - `records/` — one markdown file per entity. Open `records/` as an Obsidian vault to browse the graph.
   Vendor fault codes (`fc:`) are records too: identity slots from the manual row, meaning as cited claims, no
   drafted prose (see `records/README.md`).

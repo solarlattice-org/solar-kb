@@ -8,6 +8,8 @@ from pathlib import Path
 from linkml.generators.jsonldcontextgen import ContextGenerator
 from linkml.generators.jsonschemagen import JsonSchemaGenerator
 from linkml.generators.owlgen import OwlSchemaGenerator
+from linkml_runtime.utils.rdf_canonicalize import canonicalize_rdf_graph
+from rdflib import SKOS, URIRef
 
 from solar_kb.iri import KB, expand, load_prefixes
 from solar_kb.records import Corpus, Record
@@ -18,7 +20,29 @@ EXPORT_FILES = ("solar_kb.schema.json", "solar_kb.owl.ttl", "solar_kb.context.js
 # instead of carrying strings. Absolute values also sidestep the context's key clashes: `src` and `unit` are
 # both a slot and a prefix, and a JSON-LD key can mean only one of them.
 IRI_TERMS = ("target", "by", "superseded_by", "conflicts_with", "src", "unit", "close_mappings",
-             "exact_mappings")
+             "exact_mappings", "product", "jurisdiction", "access_level", "products", "regions", "architecture",
+             "standard")
+RECORD_ID_SLOTS = ("product", "jurisdiction", "access_level")  # schema 0.5.0 identity slots holding a record id
+SCOPE_ID_SLOTS = ("products", "regions", "architecture", "standard")  # Claim.scope slots holding record ids
+SCHEMA_IRI = KB + "schema"
+
+
+def owl_turtle(schema: str) -> str:
+    """The OWL export. Every term stays in the one concept scheme kb:schema: linkml would put each term in its
+    defining module's scheme (kb:schema/core, ...), which only reflects how the source files are split (0.5.0)."""
+    gen = OwlSchemaGenerator(
+        schema,
+        use_native_uris=False,
+        skip_vacuous_min_zero_cardinality_axioms=True,
+        skip_vacuous_local_range_axioms=True,
+        consolidate_cardinality_axioms=True,
+    )
+    graph = gen.as_graph()
+    for s, o in list(graph.subject_objects(SKOS.inScheme)):
+        if str(o).startswith(SCHEMA_IRI + "/"):
+            graph.remove((s, SKOS.inScheme, o))
+            graph.add((s, SKOS.inScheme, URIRef(SCHEMA_IRI)))
+    return canonicalize_rdf_graph(graph, output_format="turtle")
 
 
 def jsonld_context(schema_path: Path) -> dict:
@@ -48,6 +72,15 @@ def _expand_claim(claim: dict, prefixes: dict[str, str]) -> dict:
     if isinstance(out.get("cite"), list):
         out["cite"] = [dict(c, src=expand(c["src"], prefixes)) if isinstance(c.get("src"), str) else c
                        for c in out["cite"]]
+    scope = out.get("scope")
+    if isinstance(scope, dict):
+        scope = dict(scope)
+        for key in SCOPE_ID_SLOTS:
+            if isinstance(scope.get(key), str):
+                scope[key] = expand(scope[key], prefixes)
+            elif isinstance(scope.get(key), list):
+                scope[key] = [expand(v, prefixes) if isinstance(v, str) else v for v in scope[key]]
+        out["scope"] = scope
     return out
 
 
@@ -58,6 +91,9 @@ def record_node(record: Record, prefixes: dict[str, str]) -> dict:
     for key in ("close_mappings", "exact_mappings"):
         if isinstance(data.get(key), list):
             data[key] = [expand(v, prefixes) for v in data[key]]
+    for key in RECORD_ID_SLOTS:
+        if isinstance(data.get(key), str):
+            data[key] = expand(data[key], prefixes)
     if isinstance(data.get("claims"), list):
         # Each claim is a node with its claim IRI (<record IRI>#<claim_id>), so superseded_by / conflicts_with land on it.
         data["claims"] = [dict(_expand_claim(c, prefixes), **{"@id": f"{data['id']}#{c['claim_id']}"})
@@ -80,13 +116,7 @@ def export_all(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[Path]:
         outputs = {
             "solar_kb.schema.json": JsonSchemaGenerator(schema).serialize(),
             # use_native_uris=False makes slot_uri count, so OWL and the JSON-LD context mint the same IRIs.
-            "solar_kb.owl.ttl": OwlSchemaGenerator(
-                schema,
-                use_native_uris=False,
-                skip_vacuous_min_zero_cardinality_axioms=True,
-                skip_vacuous_local_range_axioms=True,
-                consolidate_cardinality_axioms=True,
-            ).serialize(),
+            "solar_kb.owl.ttl": owl_turtle(schema),
         }
     prefixes = load_prefixes(schema_path)
     context = jsonld_context(schema_path)

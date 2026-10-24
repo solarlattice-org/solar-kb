@@ -1,0 +1,50 @@
+id: https://solarlattice.org/kb/schema/engineering
+name: solar_kb_engineering
+title: Solar Lattice schema - engineering
+description: Concepts and terms, defined metrics, worked calculation methods, and system architectures.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Concept:
+    is_a: Record
+    description: >-
+      An explanation of how something works, or a domain term (maximum power point, bifaciality, grid-forming,
+      DC/AC ratio, net metering, temperature coefficient).
+    slots: [concept_kind]
+  Metric:
+    is_a: Record
+    description: >-
+      A defined KPI or quantity with a formula (performance ratio, availability, degradation rate, specific
+      yield). The formula is in the body; tool_ids link to deterministic tools.
+    slots: [tool_ids]
+  CalculationMethod:
+    is_a: Record
+    description: >-
+      A worked engineering method with inputs and outputs (string Voc temperature correction per NEC 690.7,
+      voltage drop, backup bridging time). Inputs and outputs are claims; tool_ids link to tools.
+    slots: [tool_ids]
+  Architecture:
+    is_a: Record
+    description: >-
+      A system topology or configuration class (string vs central vs MLPE; DC- vs AC-coupled storage;
+      whole-home backup with ATS; microgrid).
+
+slots:
+  concept_kind: {range: ConceptKind}
+
+enums:
+  ConceptKind:
+    permissible_values:
+      physics: {}
+      electrical: {}
+      technology: {}
+      market: {}
+      finance: {}

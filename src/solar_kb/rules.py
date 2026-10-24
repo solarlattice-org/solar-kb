@@ -11,28 +11,108 @@ from collections.abc import Callable, Iterator
 
 from solar_kb.codes import code_key, parse_code
 from solar_kb.iri import expand
-from solar_kb.records import OVERLAY_ONLY_TYPES, TYPE_DIRS, Corpus, Record
+from solar_kb.records import OVERLAY_ONLY_TYPES, TYPE_DIRS, TYPE_PREFIX, Corpus, Record
 from solar_kb.violation import Violation
 
-# relation -> (allowed source types, allowed target types)
-RELATION_SIGNATURES: dict[str, tuple[frozenset[str], frozenset[str]]] = {
-    "caused_by": (frozenset({"FailureMode"}), frozenset({"Stressor", "FailureMode"})),
-    "affects": (frozenset({"FailureMode", "FaultCode"}), frozenset({"Component"})),
-    "presents_as": (frozenset({"FailureMode"}), frozenset({"Symptom"})),
-    "observed_as": (frozenset({"Symptom"}), frozenset({"Measurement"})),
-    "produces": (frozenset({"DetectionMethod"}), frozenset({"Measurement"})),
-    "detected_by": (frozenset({"FailureMode", "FaultCode"}), frozenset({"DetectionMethod"})),
-    "mitigated_by": (frozenset({"FailureMode", "FaultCode"}), frozenset({"Mitigation"})),
-    "leads_to": (frozenset({"FailureMode"}), frozenset({"FailureMode"})),
-    "distinguished_from": (frozenset({"FailureMode"}), frozenset({"FailureMode"})),
+ANY = "*"  # any record type
+SAME = "="  # (as a target) the same type as the source
+ALL_TYPES: frozenset[str] = frozenset(TYPE_PREFIX)
+# The one table of relation signatures (spec A §4.2, Plan 4d, spec B §4.3): relation -> rows of (allowed source
+# types, allowed target types). A claim is allowed when its (source type, target type) pair is in some row, so
+# pair-specific relations stay exact: instance_of is Product -> Component, Parameter -> Parameter or GridProfile ->
+# Standard, never Product -> Standard.
+RELATION_TABLE: dict[str, tuple[tuple[tuple[str, ...] | str, tuple[str, ...] | str], ...]] = {
+    # spec A slice A; caused_by widened in 0.5.0 (misconfiguration, firmware bugs, unsupported topologies)
+    "caused_by": ((("FailureMode",), ("Stressor", "FailureMode", "Parameter", "GridProfile", "FirmwareRelease",
+                                      "Architecture")),),
+    "affects": ((("FailureMode", "FaultCode"), ("Component",)),),
+    "presents_as": ((("FailureMode",), ("Symptom",)),),
+    "observed_as": ((("Symptom",), ("Measurement",)),),
+    "produces": ((("DetectionMethod",), ("Measurement",)),),
+    "detected_by": ((("FailureMode", "FaultCode"), ("DetectionMethod",)),),
+    "mitigated_by": ((("FailureMode", "FaultCode"), ("Mitigation",)),),
+    "leads_to": ((("FailureMode",), ("FailureMode",)),),
+    "distinguished_from": ((("FailureMode",), ("FailureMode",)),),
     # Plan 4d (schema 0.4.0): a FaultCode's meaning is carried by these claims, never by prose.
-    "reports": (frozenset({"FaultCode"}), frozenset({"Symptom"})),
-    "indicates": (frozenset({"FaultCode"}), frozenset({"FailureMode"})),
-    "has_event_class": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
-    "has_production_effect": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
-    "has_recovery": (frozenset({"FaultCode"}), frozenset({"EventConcept"})),
-    "defined_in": (frozenset({"FaultCode"}), frozenset({"Source"})),
+    "reports": ((("FaultCode",), ("Symptom",)),),
+    "indicates": ((("FaultCode",), ("FailureMode",)),),
+    "has_event_class": ((("FaultCode",), ("EventConcept",)),),
+    "has_production_effect": ((("FaultCode",), ("EventConcept",)),),
+    "has_recovery": ((("FaultCode",), ("EventConcept",)),),
+    "defined_in": ((("FaultCode",), ("Source",)),),
+    # spec B §4.3 (schema 0.5.0)
+    "subclass_of": ((ANY, SAME),),
+    "part_of": ((ANY, ANY),),
+    "instance_of": ((("Product",), ("Component",)), (("Parameter",), ("Parameter",)),
+                    (("GridProfile",), ("Standard",))),
+    "manufactured_by": ((("Product", "FirmwareRelease", "Tool"), ("Organization",)),),
+    "issued_by": ((("Standard", "Program"), ("Organization",)),),
+    "adopted_in": ((("Standard",), ("Region",)),),
+    "supersedes": ((("Product", "FirmwareRelease", "Standard"), SAME),),
+    "applies_to": ((("FaultCode", "Parameter", "GridProfile", "Register", "Procedure", "Requirement", "Program",
+                     "FirmwareRelease"), ("Product", "Region", "Architecture")),),
+    "implements": ((("Product", "FirmwareRelease"), ("Function",)),),
+    "lacks": ((("Product",), ("Function", "Protocol")),),
+    "requires": ((("Requirement", "Function", "Procedure", "Product"),
+                  ("Function", "Product", "Tool", "Role", "Protocol", "Requirement")),),
+    "configures": ((("Parameter", "GridProfile"), ("Function",)),),
+    "sets_value_of": ((("GridProfile", "Requirement"), ("Parameter",)),),
+    "compatible_with": ((("Product", "FirmwareRelease"), ("Product", "FirmwareRelease", "Architecture")),),
+    "incompatible_with": ((("Product", "FirmwareRelease"), ("Product", "FirmwareRelease", "Architecture")),),
+    "certified_to": ((("Product", "FirmwareRelease"), ("Standard", "Requirement")),),
+    "fixes": ((("FirmwareRelease",), ("FailureMode", "FaultCode", "Function")),),
+    "introduces": ((("FirmwareRelease",), ("FailureMode", "FaultCode", "Function")),),
+    "uses_protocol": ((("Product", "Tool"), ("Protocol",)),),
+    "exposes": ((("Product",), ("Register",)),),
+    "maps_to": ((("Register",), ("Parameter", "Measurement", "FaultCode")),),
+    "indicates_state": ((("FaultCode",), ("OperatingState",)),),
+    "performed_by": ((("Mitigation", "DetectionMethod"), ("Procedure",)),),
+    "uses_tool": ((("Procedure", "DetectionMethod"), ("Tool",)),),
+    "has_hazard": ((("Procedure", "Product", "Component", "FailureMode"), ("Hazard",)),),
+    "controlled_by": ((("Hazard",), ("Mitigation", "Tool", "Procedure")),),
+    "defines": ((("Standard", "Requirement"), ("Metric", "Concept", "CalculationMethod")),),
+    "explains": ((("Concept",), ANY),),
+    "related_to": ((("Concept",), ANY),),
 }
+
+
+def _expand_pairs(rows) -> frozenset[tuple[str, str]]:
+    pairs: set[tuple[str, str]] = set()
+    for sources, targets in rows:
+        for s in (ALL_TYPES if sources == ANY else sources):
+            for t in ((s,) if targets == SAME else ALL_TYPES if targets == ANY else targets):
+                pairs.add((s, t))
+    return frozenset(pairs)
+
+
+# relation -> every allowed (source type, target type) pair
+RELATION_PAIRS: dict[str, frozenset[tuple[str, str]]] = {rel: _expand_pairs(rows) for rel, rows in RELATION_TABLE.items()}
+# relation -> (allowed source types, allowed target types): the coarse view schema <= 0.4.0 callers read
+RELATION_SIGNATURES: dict[str, tuple[frozenset[str], frozenset[str]]] = {
+    rel: (frozenset(s for s, _ in pairs), frozenset(t for _, t in pairs)) for rel, pairs in RELATION_PAIRS.items()
+}
+# Relations a claim may negate (`negated: true`, spec B §4.4): an explicit negative where `lacks` does not fit.
+# Not implements (use lacks), incompatible_with (use compatible_with), lacks (a double negative), nor the
+# structural, vocabulary and fallback relations.
+NEGATABLE = frozenset({"compatible_with", "applies_to", "requires", "certified_to", "adopted_in", "uses_protocol",
+                       "caused_by", "indicates", "affects", "fixes"})
+NEGATION_HINTS = {"implements": "; use lacks", "incompatible_with": "; use compatible_with",
+                  "lacks": "; use implements"}
+# Claim.scope slots holding record ids -> the type they must have
+SCOPE_ID_TYPES = {"products": "Product", "regions": "Region", "architecture": "Architecture", "standard": "Standard"}
+# Identity slots holding one record id -> the type it must have (schema 0.5.0)
+REFERENCE_SLOTS = {"product": "Product", "jurisdiction": "Region", "access_level": "Role"}
+# Identity slots an active record of each new type must carry (proposed stubs carry only id, type, name, status)
+REQUIRED_IDENTITY: dict[str, tuple[str, ...]] = {
+    "Organization": ("org_kind",), "Role": ("role_kind",), "Product": ("make", "product_level"),
+    "FirmwareRelease": ("product", "version"), "Tool": ("tool_kind",), "Function": ("function_kind",),
+    "Protocol": ("protocol_kind",), "Register": ("make", "address"), "Procedure": ("procedure_kind",),
+    "Standard": ("standard_kind",), "Requirement": ("clause",), "Program": ("program_kind",),
+    "Concept": ("concept_kind",), "GridProfile": ("make", "profile_code"),
+}
+PART_LEVELS = frozenset({"model", "variant"})  # Product levels that are part_of another Product (decision 4)
+QUOTE_STANDARD_KIND = "standard"  # Source.source_kind of a code, standard or utility rule (spec B decision 2)
+UNCAPPED_QUOTE_TYPES = frozenset({"Requirement"})  # where a quote_source quote may exceed MAX_QUOTE_WORDS
 # axis relation -> the EventAxis its target must be on
 AXIS_RELATIONS: dict[str, str] = {
     "has_event_class": "event_class", "has_production_effect": "production_effect", "has_recovery": "recovery",
@@ -58,6 +138,18 @@ def _citations(claim: dict) -> Iterator[dict]:
     cite = claim.get("cite")
     if isinstance(cite, list):
         yield from (c for c in cite if isinstance(c, dict))
+
+
+def _scope_ids(claim: dict) -> list[object]:
+    """Every record id in a claim's scope (products, regions, architecture, standard)."""
+    scope = claim.get("scope")
+    if not isinstance(scope, dict):
+        return []
+    out: list[object] = []
+    for key in SCOPE_ID_TYPES:
+        value = scope.get(key)
+        out += value if isinstance(value, list) else [value] if value is not None else []
+    return out
 
 
 def _type_of(corpus: Corpus, rid: object) -> str | None:
@@ -116,9 +208,26 @@ def rule_claim_shape(corpus: Corpus) -> list[Violation]:
                 out.append(_v("claim-shape", record, "a claim with conflicts_with must be review: disputed",
                               claim))
             quote = claim.get("quote")
-            if isinstance(quote, str) and len(quote.split()) > MAX_QUOTE_WORDS:
-                out.append(_v("claim-shape", record, f"quote exceeds {MAX_QUOTE_WORDS} words", claim))
+            if isinstance(quote, str) and len(quote.split()) > MAX_QUOTE_WORDS \
+                    and not _uncapped_quote(corpus, record, claim):
+                out.append(_v("claim-shape", record, f"quote exceeds {MAX_QUOTE_WORDS} words (only a quote_source quote "
+                                                     "of a code or standard on a Requirement record may)", claim))
     return out
+
+
+def _cites_only_standards(corpus: Corpus, claim: dict) -> bool:
+    """Every citation of the claim is on a Source with source_kind standard (a code, standard or utility rule)."""
+    cites = list(_citations(claim))
+    return bool(cites) and all(
+        (s := corpus.records.get(c.get("src")) if isinstance(c.get("src"), str) else None) is not None
+        and s.type == "Source" and s.data.get("source_kind") == QUOTE_STANDARD_KIND for c in cites)
+
+
+def _uncapped_quote(corpus: Corpus, record: Record, claim: dict) -> bool:
+    """Spec B decision 2: a Requirement's claim may quote its clause in full, attributed by quote_source, when the
+    cited source is a code or standard. Everywhere else the 25-word cap stays."""
+    return record.type in UNCAPPED_QUOTE_TYPES and isinstance(claim.get("quote_source"), str) \
+        and _cites_only_standards(corpus, claim)
 
 
 def rule_sources_exist(corpus: Corpus) -> list[Violation]:
@@ -173,22 +282,25 @@ def rule_quantities(corpus: Corpus) -> list[Violation]:
 
 
 def rule_targets(corpus: Corpus) -> list[Violation]:
-    """4.5.5: relation targets exist and have the right types for the relation."""
+    """4.5.5: relation targets exist, and the (source type, target type) pair is one RELATION_PAIRS allows."""
     out = []
     for record in corpus.records.values():
         for claim in record.claims():
             rel = claim.get("rel")
-            if not isinstance(rel, str) or rel not in RELATION_SIGNATURES:
+            if not isinstance(rel, str) or rel not in RELATION_PAIRS:
                 continue  # schema reports unknown relations
-            sources, targets = RELATION_SIGNATURES[rel]
-            if record.type not in sources:
+            sources, _ = RELATION_SIGNATURES[rel]
+            source_ok = record.type in sources
+            if not source_ok:
                 out.append(_v("targets", record, f"{record.type} cannot have relation {rel}", claim))
             target = claim.get("target")
             target_type = _type_of(corpus, target)
             if target_type is None:
                 out.append(_v("targets", record, f"target {target!r} does not exist", claim))
-            elif target_type not in targets:
-                out.append(_v("targets", record, f"{rel} cannot point to a {target_type}", claim))
+            elif source_ok and (record.type, target_type) not in RELATION_PAIRS[rel]:
+                allowed = sorted(t for s, t in RELATION_PAIRS[rel] if s == record.type)
+                out.append(_v("targets", record, f"{rel} cannot point to a {target_type} from a {record.type} "
+                                                 f"(allowed: {', '.join(allowed)})", claim))
             if target == record.id:
                 out.append(_v("targets", record, "claim points to its own record", claim))
     return out
@@ -238,9 +350,10 @@ def rule_layers(corpus: Corpus) -> list[Violation]:
             out.append(_v("layers", record, f"{record.type} records are private (overlay only)"))
         if record.type == "Source" and record.data.get("tier") == "private":
             out.append(_v("layers", record, "private-tier Source in the public repo"))
-        refs: list[object] = []
+        refs: list[object] = [record.data.get(slot) for slot in REFERENCE_SLOTS]
         for claim in record.claims():
             refs += [claim.get("target"), claim.get("by")]
+            refs += _scope_ids(claim)
             conflicts = claim.get("conflicts_with")
             for ref in [*(conflicts if isinstance(conflicts, list) else []), claim.get("superseded_by")]:
                 m = CLAIM_REF_RE.match(ref) if isinstance(ref, str) else None
@@ -307,8 +420,10 @@ def rule_field_format(corpus: Corpus) -> list[Violation]:
         name = record.data.get("name")
         if isinstance(name, str) and not name.strip():
             out.append(_v("field-format", record, "name is blank"))
+        if any(_bad_text(record.data.get(slot)) for slot in REFERENCE_SLOTS):
+            out.append(_v("field-format", record, "a record-id slot has whitespace or a newline"))
         for claim in record.claims():
-            refs = [claim.get(k) for k in ID_FIELDS]
+            refs = [claim.get(k) for k in ID_FIELDS] + _scope_ids(claim)
             conflicts = claim.get("conflicts_with")
             refs += conflicts if isinstance(conflicts, list) else []
             value = claim.get("value")
@@ -380,6 +495,35 @@ OUTPUT_LIMIT = "output_limit"
 OUTPUT_LIMIT_UNITS = frozenset({"unit:PERCENT", "unit:KiloW", "unit:W"})
 
 
+def _slug(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+
+
+def firmware_suffix(data: dict) -> str:
+    """Schema 0.5.0: the id suffix of a firmware-scoped FaultCode, so one printed code can exist once per firmware
+    generation (fc:sma-stp-core1-us-3501-fw-3-12-20-r). Records without firmware scope keep their 0.4.0 ids."""
+    fmin, fmax = data.get("firmware_min"), data.get("firmware_max")
+    if isinstance(fmin, str) and _slug(fmin):
+        return f"-fw-{_slug(fmin)}"
+    if isinstance(fmax, str) and _slug(fmax):
+        return f"-fw-upto-{_slug(fmax)}"
+    return ""
+
+
+def _version_numbers(version: object) -> tuple[int, ...] | None:
+    numbers = re.findall(r"\d+", version) if isinstance(version, str) else []
+    return tuple(int(n) for n in numbers) if numbers else None
+
+
+def firmware_order_problem(fmin: object, fmax: object) -> str | None:
+    """firmware_min must not come after firmware_max, compared by their dotted numbers (3.12.20.R -> 3, 12, 20) when
+    both have numbers; vendor schemes without digits are not compared."""
+    lo, hi = _version_numbers(fmin), _version_numbers(fmax)
+    if lo is not None and hi is not None and lo > hi:
+        return f"firmware_min {fmin!r} is after firmware_max {fmax!r}"
+    return None
+
+
 def _words(value: object) -> int:
     return len(value.split()) if isinstance(value, str) else 0
 
@@ -422,9 +566,13 @@ def rule_fault_code(corpus: Corpus) -> list[Violation]:
             out.append(_v("fault-code", record, f"missing required slot(s): {', '.join(missing)}"))
         make, family, key, code = data.get("make"), data.get("model_family"), data.get("code_key"), data.get("code")
         if all(isinstance(x, str) for x in (make, family, key)):
-            expected = f"fc:{make}-{family}-{key}"
+            expected = f"fc:{make}-{family}-{key}{firmware_suffix(data)}"
             if record.id != expected:
-                out.append(_v("fault-code", record, f"id must be {expected} (fc:<make>-<model_family>-<code_key>)"))
+                out.append(_v("fault-code", record, f"id must be {expected} (fc:<make>-<model_family>-<code_key>, "
+                                                    "plus -fw-<firmware_min> or -fw-upto-<firmware_max> when firmware-scoped)"))
+        problem = firmware_order_problem(data.get("firmware_min"), data.get("firmware_max"))
+        if problem:
+            out.append(_v("fault-code", record, problem))
         if isinstance(code, str) and isinstance(key, str) and code_key(code) != key:
             out.append(_v("fault-code", record, f"code_key must be {code_key(code)!r} for code {code!r}"))
         # The public vendor text is exactly the code, display_message and vendor_severity: name and aliases are
@@ -527,8 +675,169 @@ def rule_event_axes(corpus: Corpus) -> list[Violation]:
     return out
 
 
+# --- Schema 0.5.0 (spec B §4.4, §6 item 6, decision 2) ------------------------------------------------------------
+
+def rule_scope(corpus: Corpus) -> list[Violation]:
+    """Claim.scope: every id exists (a proposed stub counts) and has the type its slot names; firmware and dates are
+    ordered; an empty scope is omitted."""
+    out = []
+    for record in corpus.records.values():
+        for claim in record.claims():
+            scope = claim.get("scope")
+            if scope is None:
+                continue
+            if not isinstance(scope, dict) or not scope:
+                out.append(_v("scope", record, "scope is empty; omit it", claim))
+                continue
+            for key, expected in SCOPE_ID_TYPES.items():
+                value = scope.get(key)
+                for rid in value if isinstance(value, list) else [value] if value is not None else []:
+                    rtype = _type_of(corpus, rid)
+                    if rtype is None:
+                        out.append(_v("scope", record, f"scope.{key} {rid!r} does not exist", claim))
+                    elif rtype != expected:
+                        out.append(_v("scope", record, f"scope.{key} {rid!r} is a {rtype}, not a {expected}", claim))
+            problem = firmware_order_problem(scope.get("firmware_min"), scope.get("firmware_max"))
+            if problem:
+                out.append(_v("scope", record, f"scope: {problem}", claim))
+            start, end = scope.get("valid_from"), scope.get("valid_to")
+            if start is not None and end is not None and str(start) > str(end):
+                out.append(_v("scope", record, "scope.valid_from is after scope.valid_to", claim))
+    return out
+
+
+def _claim_key(claim: dict) -> str:
+    """Relation, target and scope of a claim, as a hashable key (garbage shapes included)."""
+    scope = claim.get("scope")
+    scope_key = sorted((str(k), sorted(map(str, v)) if isinstance(v, list) else str(v)) for k, v in scope.items()) \
+        if isinstance(scope, dict) else ""
+    return repr((claim.get("rel"), claim.get("target"), scope_key))
+
+
+def rule_negated(corpus: Corpus) -> list[Violation]:
+    """negated: true only on a relation claim whose relation is NEGATABLE, and never against a non-disputed positive
+    claim of the same relation, target and scope in the same record (that is a contradiction, not a condition).
+    That the cited passage states the negative is checked by the compiler's support gate, which reads the evidence."""
+    out = []
+    for record in corpus.records.values():
+        asserted: dict[str, set[bool]] = {}
+        for claim in record.claims():
+            if "negated" not in claim:
+                if "rel" in claim and claim.get("review") != "disputed":
+                    asserted.setdefault(_claim_key(claim), set()).add(False)
+                continue
+            rel = claim.get("rel")
+            if claim.get("negated") is not True:
+                out.append(_v("negated", record, "write negated only as true; omit it otherwise", claim))
+                continue
+            if "rel" not in claim:
+                out.append(_v("negated", record, "negated applies to relation claims only", claim))
+            elif not isinstance(rel, str) or rel not in NEGATABLE:
+                hint = NEGATION_HINTS.get(rel, "") if isinstance(rel, str) else ""
+                out.append(_v("negated", record, f"{rel} cannot be negated{hint} "
+                                                 f"(negatable: {', '.join(sorted(NEGATABLE))})", claim))
+            elif claim.get("review") != "disputed":
+                asserted.setdefault(_claim_key(claim), set()).add(True)
+        for claim in record.claims():
+            key = _claim_key(claim)
+            if claim.get("negated") is True and claim.get("review") != "disputed" and asserted.get(key) == {True, False}:
+                out.append(_v("negated", record, f"{claim.get('rel')} {claim.get('target')} is both asserted and negated "
+                                                 "under the same scope; scope one of them or mark the pair disputed", claim))
+    return out
+
+
+def rule_quote_source(corpus: Corpus) -> list[Violation]:
+    """Spec B decision 2: quote_source attributes a verbatim code or standard quote, so it needs a quote and every
+    citation on a Source with source_kind standard. (rule_claim_shape lifts the 25-word cap for such a quote on a
+    Requirement record.)"""
+    out = []
+    for record in corpus.records.values():
+        for claim in record.claims():
+            if "quote_source" not in claim:
+                continue
+            attribution = claim.get("quote_source")
+            if not isinstance(attribution, str) or not attribution.strip():
+                out.append(_v("quote-source", record, "quote_source is blank", claim))
+            if not isinstance(claim.get("quote"), str):
+                out.append(_v("quote-source", record, "quote_source needs a quote", claim))
+            if not _cites_only_standards(corpus, claim):
+                others = sorted({str(c.get("src")) for c in _citations(claim)
+                                 if _type_of(corpus, c.get("src")) != "Source"
+                                 or corpus.records[c["src"]].data.get("source_kind") != QUOTE_STANDARD_KIND})
+                out.append(_v("quote-source", record, "quote_source is only for quotes of a code or standard: every "
+                                                      f"cited source needs source_kind {QUOTE_STANDARD_KIND} "
+                                                      f"({', '.join(others) or 'no citation'})", claim))
+    return out
+
+
+def rule_identity(corpus: Corpus) -> list[Violation]:
+    """Schema 0.5.0 identity slots: an active record carries its type's REQUIRED_IDENTITY slots; product, jurisdiction
+    and access_level name a Product, Region and Role; `make` on a new type names an Organization org:<make> (FaultCode is
+    exempt until B2 links its makes); an active Requirement is part_of a Standard and an active model or variant Product
+    has a model_number and is part_of a Product."""
+    out = []
+    for record in corpus.records.values():
+        data, active = record.data, record.data.get("status") != "proposed"
+        if active:
+            missing = [s for s in REQUIRED_IDENTITY.get(record.type or "", ()) if data.get(s) in (None, "")]
+            if missing:
+                out.append(_v("identity", record, f"an active {record.type} needs {', '.join(missing)}"))
+        for slot, expected in REFERENCE_SLOTS.items():
+            value = data.get(slot)
+            if value is None:
+                continue
+            rtype = _type_of(corpus, value)
+            if rtype != expected:
+                out.append(_v("identity", record, f"{slot} {value!r} is "
+                                                  f"{'missing' if rtype is None else 'a ' + rtype}, not a {expected}"))
+        make = data.get("make")
+        if isinstance(make, str) and record.type != "FaultCode" and _type_of(corpus, f"org:{make}") != "Organization":
+            out.append(_v("identity", record, f"make {make!r} needs the Organization org:{make} (a proposed stub is enough)"))
+        part_of = {_type_of(corpus, c.get("target")) for c in record.claims()
+                   if c.get("rel") == "part_of" and c.get("review") != "disputed"}
+        if active and record.type == "Requirement" and "Standard" not in part_of:
+            out.append(_v("identity", record, "an active Requirement is part_of its Standard"))
+        if active and record.type == "Product" and str(data.get("product_level")) in PART_LEVELS:
+            if not data.get("model_number"):
+                out.append(_v("identity", record, f"an active {data['product_level']} Product needs model_number"))
+            if "Product" not in part_of:
+                out.append(_v("identity", record, f"an active {data['product_level']} Product is part_of its family "
+                                                  "(or model) Product"))
+    return out
+
+
 ALL_RULES: list[Rule] = [
     rule_ids, rule_claim_shape, rule_sources_exist, rule_public_citations, rule_quantities,
     rule_targets, rule_distinguished_by, rule_claim_refs, rule_layers, rule_case_links,
     rule_body_links, rule_field_format, rule_locators, rule_fault_code, rule_event_axes,
+    rule_scope, rule_negated, rule_quote_source, rule_identity,
 ]
+
+
+# --- Lint: findings that are reported as warnings and never fail validation ------------------------------------------
+
+LOW_INFORMATION = frozenset({"related_to"})
+
+
+def lint_related_to(corpus: Corpus) -> list[Violation]:
+    """related_to is the low-information fallback (spec B §4.3): every use is reported, with the typed relations the
+    schema allows for that (source type, target type) pair."""
+    out = []
+    for record in corpus.records.values():
+        for claim in record.claims():
+            if not isinstance(claim.get("rel"), str) or claim["rel"] not in LOW_INFORMATION:
+                continue
+            target_type = _type_of(corpus, claim.get("target"))
+            typed = sorted(rel for rel, pairs in RELATION_PAIRS.items()
+                           if rel not in LOW_INFORMATION and (record.type, target_type) in pairs)
+            hint = f"; a typed relation fits: {', '.join(typed)}" if typed else ""
+            out.append(_v("lint-related-to", record, f"related_to is the low-information fallback{hint}", claim))
+    return out
+
+
+LINT_RULES: list[Rule] = [lint_related_to]
+
+
+def lint_corpus(corpus: Corpus) -> list[Violation]:
+    """Warnings: reported by `solar-kb validate`, never a failure."""
+    return [w for rule in LINT_RULES for w in rule(corpus)]

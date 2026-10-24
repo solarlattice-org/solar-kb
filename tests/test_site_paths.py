@@ -20,7 +20,9 @@ def test_record_type_and_term_paths():
     with pytest.raises(ValueError):
         term_path(KB + "fm/pid")
     assert [p for _, p, _ in PUBLIC_TYPES] == ["fm", "stressor", "symptom", "meas", "method", "mit", "comp", "fc", "ec",
-                                               "src"]
+                                               "src", "org", "region", "role", "prod", "fw", "tool", "state", "func", "param",
+                                               "profile", "proto", "reg", "proc", "hazard", "std", "req", "prog", "concept",
+                                               "metric", "calc", "arch"]  # schema 0.5.0 adds 21 types
 
 
 def test_iri_to_path_mirrors_pages():

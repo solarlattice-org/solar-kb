@@ -14,6 +14,7 @@ from solar_kb.export import export_all
 from solar_kb.graph import build_graph
 from solar_kb.query import Graph
 from solar_kb.records import load_corpus
+from solar_kb.rules import lint_corpus
 from solar_kb.validate import validate_corpus
 
 app = typer.Typer(no_args_is_help=True, help="Solar Lattice knowledge layer tools.")
@@ -56,7 +57,10 @@ def _validated(root: Path, overlay: Optional[Path]):
 def validate(root: Path = ROOT, overlay: Optional[Path] = OVERLAY) -> None:
     """Validate records against the schema and the §4.5 rules."""
     corpus = _validated(root, overlay)
-    typer.echo(f"ok: {len(corpus.records)} record(s), 0 violations")
+    warnings = lint_corpus(corpus)
+    for w in warnings:
+        typer.echo(f"warning: {w}", err=True)
+    typer.echo(f"ok: {len(corpus.records)} record(s), 0 violations" + (f", {len(warnings)} warning(s)" if warnings else ""))
 
 
 @app.command()

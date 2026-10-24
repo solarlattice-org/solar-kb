@@ -1,0 +1,54 @@
+id: https://solarlattice.org/kb/schema/control
+name: solar_kb_control
+title: Solar Lattice schema - control
+description: >-
+  Device and grid functions, the parameters that configure them, and the named settings bundles (grid
+  profiles, country data sets) that implement grid codes.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Function:
+    is_a: Record
+    description: >-
+      A capability a device or system performs (MPPT, anti-islanding, Volt-VAr, frequency-watt, AFCI, rapid
+      shutdown, zero export, backup transfer). A Standard requires it, a Product implements it, a Parameter
+      configures it.
+    slots: [function_kind]
+  Parameter:
+    is_a: Record
+    description: >-
+      A configurable setting, generic ("OV2 trip voltage") or vendor-specific (SMA
+      GridGuard.Cntry.VolCtl.ReconMax). A vendor parameter has a make and product scope and is instance_of a
+      generic one; range, default and unit are quantity claims.
+    slots: [make, product, vendor_id, display_name, menu_path, access_level]
+  GridProfile:
+    is_a: Record
+    description: >-
+      A named settings bundle implementing a grid code (SMA country data set "UL1741-SB/IEEE1547:2018 CA Rule
+      21"; Fronius setup "AU-AS4777"). instance_of the Standard it implements; sets_value_of its parameters.
+    slots: [make, product, profile_code]
+
+slots:
+  function_kind: {range: FunctionKind}
+  vendor_id: {description: "The vendor's parameter id as printed (GridGuard.Cntry.VolCtl.ReconMax, #312_02)."}
+  display_name: {description: The parameter name as the device or app shows it.}
+  menu_path: {description: "Where the parameter is found in the device or app menu, as printed."}
+  access_level: {range: uriorcurie, description: "The Role (role_kind access-level) needed to change it (role:installer, role:grid-guard-code-holder)."}
+  profile_code: {description: "The profile or country data set code as the vendor prints it."}
+
+enums:
+  FunctionKind:
+    permissible_values:
+      protection: {description: "Anti-islanding, AFCI, ground-fault protection, rapid shutdown."}
+      grid-support: {description: "Volt-VAr, frequency-watt, ride-through."}
+      control: {description: "MPPT, power limiting, zero export."}
+      energy-management: {description: "Self-consumption, backup transfer, load control."}
+      monitoring: {}

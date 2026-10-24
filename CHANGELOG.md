@@ -1,5 +1,75 @@
 # Changelog
 
+## 0.5.0 (unreleased)
+
+Phase B0 of the full Solar Lattice ontology (spec revision B, 2026-10-24): the type system for all solar knowledge,
+not only failure triage. Schema, validator and site only; no new records. Every 0.4.0 record validates unchanged and
+every 0.4.0 class, slot, enum, prefix and IRI is kept.
+
+### Schema
+- Split into ten LinkML modules imported by `schema/solar_kb.yaml`: `solar_kb_core` (Record, Claim, Citation,
+  QuantityValue, ClaimScope, Source, Organization, Region, Role, the Relation enum), `_failure`, `_equipment`,
+  `_events`, `_control`, `_communication`, `_practice`, `_regulation`, `_engineering`, `_overlay`. All prefixes stay
+  in the root file; the OWL export keeps every term in the one concept scheme `kb:schema`.
+- 21 record types, each with a prefix and a `records/` directory: Organization (`org:`), Region (`region:`), Role
+  (`role:`), Product (`prod:`), FirmwareRelease (`fw:`), Tool (`tool:`), OperatingState (`state:`), Function
+  (`func:`), Parameter (`param:`), GridProfile (`profile:`), Protocol (`proto:`), Register (`reg:`), Procedure
+  (`proc:`), Hazard (`hazard:`), Standard (`std:`), Requirement (`req:`), Program (`prog:`), Concept (`concept:`),
+  Metric (`metric:`), CalculationMethod (`calc:`), Architecture (`arch:`).
+- Identity slots for them (`org_kind`, `region_code`, `role_kind`, `make`, `product_level`, `model_number`, `product`,
+  `version`, `release_date`, `tool_kind`, `function_kind`, `vendor_id`, `display_name`, `menu_path`, `access_level`,
+  `profile_code`, `protocol_kind`, `address`, `data_type`, `scale`, `unit`, `access`, `sunspec_point`,
+  `procedure_kind`, `designator`, `edition`, `jurisdiction`, `standard_kind`, `clause`, `program_kind`,
+  `concept_kind`, `tool_ids`) and their enums (OrgKind, RoleKind, ProductLevel, ToolKind, FunctionKind, ProtocolKind,
+  RegisterAccess, ProcedureKind, StandardKind incl. `certification-scheme`, ProgramKind, ConceptKind). Relations stay
+  claims: a model is `part_of` its family, a requirement `part_of` its standard, never a slot.
+- 29 relations with domain and range in each description: `subclass_of`, `part_of`, `instance_of`,
+  `manufactured_by`, `issued_by`, `adopted_in`, `supersedes`, `applies_to`, `implements`, `lacks`, `requires`,
+  `configures`, `sets_value_of`, `compatible_with`, `incompatible_with`, `certified_to`, `fixes`, `introduces`,
+  `uses_protocol`, `exposes`, `maps_to`, `indicates_state`, `performed_by`, `uses_tool`, `has_hazard`,
+  `controlled_by`, `defines`, `explains`, `related_to`. `caused_by` also reaches Parameter, GridProfile,
+  FirmwareRelease and Architecture.
+- Claim gains `scope` (ClaimScope: `products`, `firmware_min`, `firmware_max`, `hardware_rev`, `regions`,
+  `applications` (enum Application: on-grid, backup, off-grid, self-consumption), `architecture`, `standard`,
+  `valid_from`, `valid_to`), `negated` and `quote_source`. FaultCode gains optional `firmware_min`/`firmware_max`.
+  Source gains optional `source_kind` (enum SourceKind; `standard` marks a code, standard or utility rule).
+- Slot IRIs never differ from a class IRI only by case: `product` is `kb:of_product`, scope `architecture` and
+  `standard` are `kb:scope_architecture` and `kb:scope_standard`, the scope class is `ClaimScope`.
+
+### Validation
+- The relation signatures are one table of allowed (source type, target type) pairs (`rules.RELATION_TABLE`,
+  expanded to `RELATION_PAIRS`; `RELATION_SIGNATURES` is derived), so `instance_of` is exactly Product -> Component,
+  Parameter -> Parameter and GridProfile -> Standard, and `subclass_of`/`supersedes` stay within one type.
+- New rule `scope`: scope ids exist (a proposed stub counts) and have their slot's type; firmware and dates are
+  ordered; no empty scope. Public records cannot name private records in a scope or identity slot (`layers`).
+- New rule `negated`: only `true`, only on relation claims, only for compatible_with, applies_to, requires,
+  certified_to, adopted_in, uses_protocol, caused_by, indicates, affects and fixes (`implements` -> use `lacks`), and a
+  record cannot assert and negate the same relation, target and scope unless one claim is disputed.
+- New rule `quote-source` (spec B decision 2): `quote_source` needs a `quote` and every citation on a
+  `source_kind: standard` Source. The 25-word quote cap is lifted only for such a quote on a Requirement record; it
+  stays for everything else. FaultCode claims still carry no quote.
+- New rule `identity`: an active record of a new type carries its identity slots (Product `make`, `product_level`;
+  FirmwareRelease `product`, `version`; Requirement `clause`; ...); `product`, `jurisdiction` and `access_level` name
+  a Product, Region and Role; `make` on a new type needs the Organization `org:<make>`; an active Requirement is
+  `part_of` a Standard and an active model or variant Product has `model_number` and is `part_of` a Product.
+- `fault-code`: a firmware-scoped code's id carries `-fw-<firmware_min>` (or `-fw-upto-<firmware_max>`), so one
+  printed code can exist once per firmware generation; unscoped ids are unchanged.
+- Lint (`rules.lint_corpus`): every `related_to` claim is a warning naming the typed relations that fit. `solar-kb
+  validate` prints warnings and still exits 0.
+- The schema check merges the modules once, so validation time is unchanged.
+
+### Website
+- Every new type gets its type index (`kb/<prefix>/`), term page and record pages through the generic templates.
+  Record pages list identity slots (record ids linked; `make` links to `org:<make>` once it exists), print a claim's
+  scope, "not" for a negated claim and the attribution under a quoted code or standard, and list the records that are
+  `part_of` this one ("Models and variants" on a Product, "Requirements" on a Standard).
+- The landing index lists only types that have records; the KB home lists all of them. Former ids of every record
+  type get redirect stubs. The schema modules are published beside `kb/solar_kb.yaml`.
+
+### Licence
+- `LICENSE-CONTENT` carve-out: quoted code and standard text remains its publisher's copyright, reproduced with
+  attribution; CC BY 4.0 covers the rest.
+
 ## 0.4.0 (unreleased)
 
 Plan 4d step FC0 (a): fault-code records from manufacturer manuals. Additive: every 0.3.0 record validates unchanged.
