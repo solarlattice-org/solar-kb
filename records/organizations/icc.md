@@ -13,4 +13,5 @@ The International Code Council (ICC) is a code organization. Equipment manuals n
 - sentence 1: support check: partial - The passage lists ICC codes alongside NFPA as guides for localities recognizing NFPA and ICC, but it never states that ICC is a code organization or that local jurisdictions adopt them.
 - sentence 2: support check: partial - The passage says the listed publications may be used as a guide where no local laws or standards apply, in localities recognizing NFPA and ICC, but nothing identifies the manual as being for a three-phase storage inverter.
 - sentence 6: support check: partial - The passage says to check with the AHJ for applicable local codes or standards, but it doesn't mention editions or say 'always'.
+- sentence 1: review: partial - The manual lists ICC codes next to NFPA for localities that recognize NFPA and ICC, but it never calls ICC a code organization or says local jurisdictions adopt its codes; it offers them as a guide where no local laws…
 -->

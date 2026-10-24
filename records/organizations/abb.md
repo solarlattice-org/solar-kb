@@ -16,4 +16,5 @@ ABB is a manufacturer that publishes product manuals for its solar inverters und
 <!-- review notes
 - sentence 1: support check: partial - Passages only show the title 'ABB solar inverters'; they don't state that ABB is a manufacturer or that manuals are published under that name.
 - sentence 6: support check: partial - The passage says HE-11 units use ABB switching units and a 24-month interval applies in deviation from ABB's. It doesn't say SMA sets that interval itself.
+- sentence 1: review: partial - The passages show only the title 'ABB solar inverters' on the manuals; they do not say ABB is a manufacturer or that it publishes manuals under that name.
 -->

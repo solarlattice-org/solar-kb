@@ -14,4 +14,6 @@ CSA Group, often shortened to CSA, is the Canadian Standards Association, a stan
 - sentence 1: support check: partial - Passages give CSA as abbreviation for Canadian Standards Association and 'CSA Group' name, but don't explicitly say it is a standards and certification organization equated with CSA Group (certification implied by certificates).
 - sentence 3: support check: partial - ISO/IEC 17065 accreditation with SCC is stated and a CSA certificate issued to Ginlong (Solis) is shown, but the passages don't state that Solis manuals include CSA certificates.
 - sentence 4: support check: partial - Passages state the symbol meaning for SUN2000, but nothing says it appears on labels.
+- sentence 1: review: partial - The passages give CSA as the Canadian Standards Association and show CSA Group certification documents, but do not say outright that CSA Group is CSA or that it is a standards and certification organization.
+- sentence 4: review: partial - The Huawei tables give the meaning of the CSA America and Canada certification symbol, but do not say the symbol appears on inverter labels.
 -->

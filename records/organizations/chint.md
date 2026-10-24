@@ -16,4 +16,5 @@ CHINT POWER SYSTEMS, branded CPS, makes inverters and publishes their installati
 
 <!-- review notes
 - sentence 1: support check: partial - Passages show CHINT Power Systems/CPS branding and 'Installation and Operation Manual' documents, but never state that they make inverters.
+- sentence 1: review: partial - The passages show CHINT Power Systems, the CPS branding and Installation and Operation Manuals, but never say the company makes inverters.
 -->

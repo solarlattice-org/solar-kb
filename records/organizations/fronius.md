@@ -15,4 +15,5 @@ Fronius is an inverter manufacturer. Its parent company, Fronius International G
 <!-- review notes
 - sentence 1: support check: partial - Addresses in Pettenbach and Wels are shown for Fronius International GmbH, but the passages don't say it is the parent company or that Fronius is an inverter manufacturer (only implied).
 - sentence 2: support check: partial - Fronius USA LLC Solar Electronics Division in Portage, IN is listed, but the passages don't say it is how Fronius operates in the US (subsidiary relationship not stated explicitly).
+- sentence 1: review: partial - The passages show Fronius International GmbH addresses in Pettenbach and Wels, Austria, but they do not say Fronius is an inverter manufacturer or that Fronius International GmbH is the parent company.
 -->

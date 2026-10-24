@@ -14,4 +14,5 @@ Huawei Technologies Co., Ltd. is the manufacturer named in the user manuals and 
 <!-- review notes
 - sentence 1: support check: partial - The SUN2000-100KTL-USH0 user manual lists Huawei Technologies Co., Ltd., but the passages cover no quick guides and no other SUN2000 models, and they don't call it the manufacturer.
 - sentence 3: support check: partial - The passages show the Huawei App Store, Apple Store and Google Play and a SUN2000 App troubleshooting section. They don't say outright that the app is available there or that it is used for setup.
+- sentence 1: review: partial - Huawei Technologies Co., Ltd. appears in the SUN2000 user manuals and quick guide, but no passage calls it the manufacturer or describes the products as string inverters.
 -->

@@ -12,4 +12,5 @@ Enphase Energy is a manufacturer of residential and commercial solar and storage
 <!-- review notes
 - sentence 1: support check: partial - Passages mention the Enphase Energy System and storage products but don't state Enphase is a manufacturer of residential and commercial solar and storage sold together as that system.
 - sentence 5: support check: partial - Commercial commissioning with the Installer App is stated, but the passages don't say owners view their system in the Enphase App.
+- sentence 1: review: partial - The passages mention the Enphase Energy System, Enphase storage products and commercial commissioning, but they never say Enphase is a manufacturer of residential and commercial solar and storage equipment sold together as that system.
 -->

@@ -12,4 +12,5 @@ NETA, the International Electrical Testing Association, publishes standards for 
 <!-- review notes
 - sentence 1: support check: partial - Passages mention NETA-ATS for acceptance testing and NETA-MTS for maintenance testing and NETA's insulation values, but never state that NETA publishes these standards (nor the 'standards' framing explicitly).
 - sentence 3: support check: partial - NETA provides representative test voltages and minimum insulation values per voltage rating when manufacturer data is unavailable, but 'typical' is a paraphrase of 'representative/recommended' and 'each' rating is stronger than 'various'.
+- sentence 4: review: partial - The 100-megohm typical acceptable value under NETA-ATS/MTS for new installations is stated by Encore Wire, but the passage never says Encore Wire is a cable maker.
 -->

@@ -12,4 +12,5 @@ KACO new energy GmbH is an inverter manufacturer and owns the operating manual f
 
 <!-- review notes
 - sentence 1: support check: partial - Passages show KACO owns the document's information and the manual covers blueplanet TL3 models, but they don't state KACO is an inverter manufacturer or that the series is three-phase PV inverters.
+- sentence 1: review: partial - The passages show that KACO new energy GmbH owns the manual's contents and that the manual covers the blueplanet TL3 models, but they do not say KACO is an inverter manufacturer or that the series is three-phase PV inverters.
 -->

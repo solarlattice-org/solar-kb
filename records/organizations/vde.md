@@ -16,4 +16,5 @@ VDE is a German standards body that issues application rules for connecting gene
 - sentence 1: support check: partial - Passages show VDE-AR-N 4105 and 4110 as grid standards, but do not state that VDE is a German standards body issuing application rules for connecting generators and storage.
 - sentence 3: support check: partial - VDE 0126 grid settings are listed for Germany, but nothing says the inverters are older.
 - sentence 4: support check: partial - Passage says strict German safety standard for small houses/residential BESS with lithium batteries, but does not say 'small buildings' exactly; it's close, though 'stationary' is stated; mostly supported with minor paraphrase.
+- sentence 1: review: partial - The passages show VDE-AR-N 4105 and 4110 as grid codes and practice codes, but they never say VDE is a German standards body or that it issues rules for connecting generators and storage.
 -->

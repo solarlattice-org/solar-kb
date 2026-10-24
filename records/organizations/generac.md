@@ -16,4 +16,5 @@ Generac Power Systems, Inc. is an equipment manufacturer based in Waukesha, Wisc
 - sentence 3: support check: partial - Operational modes are selected via the inverter control panel, but nothing states single-phase and three-phase versions.
 - sentence 5: support check: partial - Passages show an About PWRmanager entry, Circuit Groups, and a Testing & Troubleshooting section, but not that there are separate owner's and install manuals.
 - sentence 6: support check: partial - Section headings for Location Requirements and Grid Support Functions appear, but nothing ties them to the PWRmicro installation manual.
+- sentence 1: review: partial - The manual back pages give Generac Power Systems, Inc. at a Waukesha, WI address and show its copyright on install and owner's manuals, but no passage calls it an equipment manufacturer.
 -->

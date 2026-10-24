@@ -11,4 +11,5 @@ ASTM International, formerly the American Society for Testing and Materials, is 
 
 <!-- review notes
 - sentence 5: support check: partial - WK43549 ICOMP is described as in development covering installation, commissioning, O&M of commercial PV, but 'draft practice' by ASTM is fine; the passages say it is in development, so mostly supported, though 'developed a draft' is slightly beyond.
+- sentence 1: review: partial - The passages give the former name and call ASTM a US standards organization and SDO, but neither cited passage says it publishes consensus standards.
 -->

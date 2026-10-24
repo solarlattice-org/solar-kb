@@ -13,4 +13,5 @@ Tesla Energy is the energy products arm of Tesla, Inc. It makes battery energy s
 <!-- review notes
 - sentence 1: support check: partial - Passages say the SCADA document covers Tesla BESS, Tesla-supported PV, and the Tesla System Controller, but don't state that Tesla Energy is the energy arm of Tesla, Inc. (only the copyright line names Tesla, Inc.).
 - sentence 2: support check: partial - Megapack 2, Megapack 2 XL and Powerhub are named, and Megapack 2/2 XL have design and installation manuals and Powerhub a user manual, but the passages don't show each has its own design, installation, and O&M manuals or that this is a utility-scale/commercial lineup.
+- sentence 1: review: partial - The SCADA manual mentions Tesla BESS, the Tesla System Controller and Tesla-supported PV, but nothing says Tesla Energy is the energy products arm of Tesla, Inc. (the copyright line only names Tesla, Inc.).
 -->

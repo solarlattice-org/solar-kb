@@ -12,4 +12,5 @@ The first-generation HEM UL datasheet lists the models FS4200M, FS4201M and FS42
 <!-- review notes
 - sentence 1: support check: partial - The models and temperature range/derating are stated, but nothing identifies the datasheet as the first-generation HEM UL one.
 - sentence 2: support check: partial - The voltage ranges for FS5004MU and FS5075MU are stated, but the passage doesn't identify the datasheet as GEN3.
+- sentence 1: review: partial - The table gives the models and the -40 to +60 °C range with derating above 40 °C, but nothing in it identifies the datasheet as the first-generation HEM UL datasheet.
 -->

@@ -13,4 +13,5 @@ Schneider Electric is a manufacturer that publishes the Conext CL125 inverter do
 
 <!-- review notes
 - sentence 1: support check: partial - Passages show Schneider Electric publishing documents (part number 975-0798, 975-0796, etc.) but do not name the owner's guide, quick install guide, EasyConfig guide, or Modbus note as a set.
+- sentence 1: review: partial - The passages show Schneider Electric copyright and contact text across CL125 documents, but only the source ids, not the passage text, identify the owner's guide, quick install guide, EasyConfig guide, NA solution guide and Modbus note, and no passage calls…
 -->
