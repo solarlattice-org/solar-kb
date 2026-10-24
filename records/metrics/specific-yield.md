@@ -25,7 +25,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: tbl=2.r37
     h: ecf4a0d71b30
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Specific yield is the total energy a plant generates over a given period, divided by its installed peak DC power. Formula: specific yield for a period equals the plant energy produced or metered in kWh divided by the plant's nominal peak DC power in kWp. The result is stated in kWh/kWp or in peak sun hours. The period can be chosen freely, for example one month or one year. Because the energy is normalised to nominal power, you can compare plants of different sizes or technologies, and also individual inverters with different nominal powers. Its value depends on the irradiation at the site, ambient temperature, shading, the tilt and azimuth of the modules, and the module and inverter types. To judge a system's efficiency, compare its specific yield with the specific annual yield for its location. The specific annual yield is an average taken from irradiation maps. Expected yield is the reference yield multiplied by the expected performance ratio. It gives the specific yield that was expected for a period. Monitoring portals such as Sunny Portal let you switch the display between absolute yield and specific yield.
 

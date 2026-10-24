@@ -14,4 +14,5 @@ Levelized cost of energy is a finance metric, usually shortened to LCOE. Some gu
 - sentence 1: support check: partial - Passages give LCOE = levelized cost of energy, but none says it is a finance metric (the Delta text only implies a cost measure).
 - sentence 2: support check: partial - The spelling 'levelized/levelised cost of electricity' appears, but the passages don't attribute it to NREL, IEA PVPS, SunSpec and SolarPower Europe specifically.
 - sentence 3: support check: partial - The title 'Proforma Modeling vs. LCOE' suggests they are contrasted, but it doesn't mention financial analysis training or evaluating an investment.
+- sentence 1: review: partial - The passages support LCOE as the abbreviation for levelized cost of energy, but none calls it a finance metric.
 -->

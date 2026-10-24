@@ -14,4 +14,5 @@ Array capture loss is a performance quantity from the IEA PVPS analytical monito
 - sentence 1: support check: partial - Symbols lC and LC are given, but the passages don't say it comes from the IEA PVPS framework (that attribution isn't visible) beyond the parameter table.
 - sentence 4: support check: partial - Array yield vs reference yield is said to represent PV array conversion efficiency, and capture losses are mentioned, but the passage doesn't explicitly say capture loss is derived from that comparison; it is derived by comparing both relationships.
 - sentence 5: support check: partial - The passage says array yield requires measuring PV array output power and PDC is measured DC power, but it doesn't explicitly state capture loss calculation needs it, though this is implied.
+- sentence 4: review: partial - The passage says array yield versus reference yield shows the PV array's conversion efficiency, but it says capture and system losses are separated by comparing both relationships, not that capture loss comes from the array-versus-reference comparison alone.
 -->

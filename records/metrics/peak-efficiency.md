@@ -14,4 +14,5 @@ Peak efficiency is a single percentage on an inverter datasheet. Some datasheets
 - sentence 3: support check: partial - SHP 150 values (99.1/99.0) are shown, and the 97.30/96.50 figures appear, but the passages never name the product as Fronius Symo.
 - sentence 4: support check: partial - Sunny Island 95.3–95.8% and M250 typical peak 96.5 at 208 VAC three phase are stated, but the passages don't say Sunny Island is a battery inverter or M250 a microinverter beyond its title (microinverter is in the title); the battery inverter point is not stated.
 - sentence 5: support check: partial - EN 50530 for peak efficiency of SHP 75-10 and STP 60-10 is stated, but the passages don't say SMA names it or explicitly say they give only rated values and not the calculation.
+- sentence 4: review: partial - The SI maximum efficiencies (95.3-95.8%) and the M250 typical peak of 96.5 at 208 VAC three phase are stated, but the passages never say the SI (Sunny Island) units are battery inverters, or even use the name Sunny Island.
 -->

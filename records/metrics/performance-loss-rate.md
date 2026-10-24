@@ -11,4 +11,5 @@ Performance loss rate tracks how the performance of a PV module or a whole PV sy
 <!-- review notes
 - sentence 2: support check: partial - DC preferred with AC fallback and the two-year minimum are stated, but the two-year figure is only a definition note (calculated using at least two years), not stated as a 'should' requirement.
 - sentence 4: support check: partial - The passage describes a linear model with slope β1, intercept β0 and a scaling t (12 monthly, 52 weekly), but the equations are missing, so 'slope divided by intercept' is not explicitly stated.
+- sentence 4: review: partial - The passage gives a linear model between time and the metric, with slope beta1, intercept beta0 and a yearly scaling t (12 monthly, 52 weekly), but the equations are missing, so 'slope divided by intercept' for relative PLR is never…
 -->

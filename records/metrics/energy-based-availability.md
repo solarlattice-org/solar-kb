@@ -18,7 +18,9 @@ claims:
   - src: src:trn-oandm-nrel-best-practices-for-om-of-photovoltaic-and-ess
     loc: sec=6.1.1
     h: 581ffc57a0ee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: part_of
   target: std:iec-61724-3
@@ -33,7 +35,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=h31
     h: b42fec7c7f7c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say IEC 61724-3 defines energy availability and provides
     a method to determine it, but the method itself isn''t given in the passages.'
 ---

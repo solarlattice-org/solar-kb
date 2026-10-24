@@ -27,7 +27,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: sec=h180
     h: af1a5029e7ee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The temperature-corrected performance ratio is a performance ratio adjusted to show the yield the plant would have had if its modules ran at an agreed reference temperature. That reference is often the STC value of 25 °C. It removes most of the normal seasonal swing in plain PR, which reads higher in cold months and lower in hot months because hot modules are less efficient. Formula: take the specific yield for the period, divide it by the reference yield times a temperature factor of one minus the module temperature coefficient multiplied by the average module temperature minus 25 °C, then multiply by 100. The inputs are the plant specific yield, the reference yield, the plant peak DC power, the temperature coefficient of the installed modules in percent per °C, and the measured module temperature. Log module temperature at intervals of 15 minutes or shorter. Average it over the period weighted by the specific yield of each interval (or by irradiance), so the hottest, most productive hours count the most. It is the recommended practice when PR has to be measured over a short window, such as two weeks or a month during a commissioning test or a handover between O&M providers. The correction should follow IEC procedures, and IEC 61724-1 gives the preferred form of the equation. Some seasonal variation remains because of angle-of-incidence and spectral effects, and a biased temperature coefficient can add its own seasonal pattern.
 
