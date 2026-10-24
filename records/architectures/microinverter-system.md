@@ -14,4 +14,5 @@ A microinverter system puts a small inverter at each PV module. Each unit mounts
 <!-- review notes
 - sentence 1: support check: partial - Passages say install under the PV module and mention IQ Cable with microinverter connectors, but not that a small inverter is at each module or that AC output runs on a trunk cable as a general definition.
 - sentence 5: support check: partial - Gateway required and included in the Combiner are stated, and it collects and transmits data to the cloud, but 'required to collect data' is slightly reframed; essentially supported though.
+- sentence 1: review: partial - The passages support mounting under the PV module and the IQ Cable carrying microinverter connections, but they never say there is one small inverter at each module or call the IQ Cable an AC trunk cable.
 -->

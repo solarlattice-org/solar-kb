@@ -17,4 +17,5 @@ A grid-tied PV system turns sunlight into DC power in the PV modules. Inverters 
 - sentence 3: support check: partial - Passages say power can supply local loads and surplus goes to the grid, but do not state that loads are served first, though this is implied.
 - sentence 6: support check: partial - The passage says the inverter shuts down on grid failure, but it also says it is capable of backup with only PV, so 'gives no backup' is not stated.
 - sentence 8: support check: partial - The passage says there is no Solis limit on parallel inverters and a battery can be added later, but it does not say hybrid inverters specifically; 'this inverter' is unspecified.
+- sentence 7: review: partial - The passages support adding export control and say Solis hybrid inverters ship with meters and CTs while grid-tied-only units need extra components, but they do not say those components are a meter and CTs, and they leave out the North…
 -->

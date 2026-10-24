@@ -12,4 +12,5 @@ Module-level power electronics (MLPE) are electronic devices fitted to individua
 
 <!-- review notes
 - sentence 3: support check: partial - u5 states MLPEs control circuits to 30 V or less within 30 s outside the array boundary for 690.12 compliance, but it doesn't say this use is common.
+- sentence 1: review: partial - IEC 62446-1 gives this definition for 'module integrated electronics' and the Chint table only expands the MLPE acronym, so no passage states that MLPE are these devices.
 -->

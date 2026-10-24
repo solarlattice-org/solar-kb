@@ -12,4 +12,5 @@ A 480 V delta service is a three-phase, three-wire supply that is usually ungrou
 
 <!-- review notes
 - sentence 7: support check: partial - u10 shows Symo 480 output as 480 V Delta +N, but nothing in the passages says to check each datasheet for requirements (the ** footnote isn't given).
+- sentence 7: review: partial - The datasheet row shows Symo 480 output as 480 V Delta +N, but nothing in the passage supports the advice to check each datasheet before connecting.
 -->

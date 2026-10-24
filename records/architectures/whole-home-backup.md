@@ -15,4 +15,6 @@ Whole-home backup is a storage topology that keeps the entire property powered d
 - sentence 2: support check: partial - Heading names a topology using EPS and ATS, but the passages don't say the hybrid inverter's EPS output is combined with an ATS that moves the home between sources, or that it is the Solis design.
 - sentence 4: support check: partial - The four conditions are listed, but 'only' is stronger than the 'When' list, and load management 'considered' is paraphrased from 'addressed'.
 - sentence 5: support check: partial - Headings show whole-home backup in SolarEdge Home Hub (combined main panel) and two other documents, but the passages don't identify them as Generac PWRcell/PWRmanager or Enphase CT guidance.
+- sentence 1: review: partial - The passages back keeping the entire property running during outages with no essential/non-essential split, but 'storage topology' and the contrast with a separate panel of selected circuits are only implied by headings.
+- sentence 4: review: partial - All four conditions appear in the 'Use ... When' list, but the word 'only' makes it stricter than the source's guidance.
 -->

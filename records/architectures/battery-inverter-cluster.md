@@ -14,4 +14,5 @@ A battery inverter cluster groups Sunny Island battery inverters on one battery.
 <!-- review notes
 - sentence 4: support check: partial - Same device type requirement is stated and the SI 4548-US-10/6048-US-10 arbitrary combination incl. SI 5048U is stated, but these conflict in the passages (u20 is in a multicluster context) and the statement's 'mixed freely within a cluster' is not clearly reconciled.
 - sentence 8: support check: partial - Causes (differing capacities, nominal voltage/frequency, failed cells) and remedies of even capacity and same master settings are stated, but for failed cells the remedy is disconnecting defective cells and setting new rated values, not merely prevention; also temporary SOC differences exist.
+- sentence 4: review: partial - Both halves are quoted, but the 'arbitrarily combined' note sits under multicluster technology, not within a cluster, so presenting free mixing next to the same-device-type rule merges two scopes and leaves the apparent conflict unresolved.
 -->

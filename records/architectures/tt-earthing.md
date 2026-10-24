@@ -12,4 +12,5 @@ A TT earthing system earths the power source directly. The consumer installation
 
 <!-- review notes
 - sentence 4: support check: partial - The Solis table shows TT supported for every model, some with IT unsupported and some with TN-C not recommended. For SMA, u21 only shows 'TN or TT system' for the utility grid in a table row, and the passage doesn't say it is a backup configuration.
+- sentence 4: review: partial - The Solis table backs the IT/TN-C/TT statements, but the SMA row only lists 'TN or TT system' for the utility grid and the passage text never says this is a backup configuration.
 -->
