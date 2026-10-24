@@ -21,7 +21,9 @@ claims:
   - src: src:rainwise-pvmet-500-user-manual
     loc: sec=h15
     h: 0978991050be
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: part_of
   target: prod:alsoenergy-weather-station
@@ -43,7 +45,9 @@ claims:
   - src: src:man-alsoenergy-alsoenergy-integrated-weather-station-supplement-r2
     loc: tbl=2.r1
     h: 3b83dcc8f1fc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 An anemometer is a sensor that measures wind speed and wind direction at a PV site weather station. On the RainWise PVmet-500 Series it is attached to the top of the station in place of the supplied top cap, and both the Mini Aervane and an optional ultrasonic type are supported, with the type selected in a configuration register. On AlsoEnergy and Stem integrated weather stations, assemble the sensor per its own instructions, point the mount north, and land the speed, direction and ground wires on the matching station terminals. The anemometer is normally mounted about 10 m above ground. Buildings, trees and other obstructions create turbulence, so keep the sensor more than ten times the obstruction height away from it, and treat this as an absolute minimum. During tracker commissioning, check the wind reading by confirming the anemometer values are consistent and match the actual wind; on these trackers the reading is taken through the NCU with its PC software.
 

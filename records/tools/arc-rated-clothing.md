@@ -26,7 +26,9 @@ claims:
   - src: src:powin-powin-pi-s360e-stack360e-install-procedure-rev-5
     loc: tbl=6
     h: f4589db4b4c7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Arc-rated clothing is protective garments, such as long-sleeve shirts, pants, coveralls, flash suit jackets, pants and hoods, worn to protect against arc flash. The clothing is chosen by arc-flash PPE category, and each category sets a minimum arc rating, given in cal/cm2. If an incident energy analysis is used, the clothing's arc rating must be equal to or greater than the calculated incident energy at the working distance for the task. Arc-rated layers can be worn together to reach the required system arc rating. Garments that are not arc-rated should not be counted toward the rating. All arc-rated clothing is fire resistant, but not all fire-resistant clothing is arc rated. Neither type protects against electric shock. Inspect arc-rated apparel before each use. Do not use it if it is damaged, or contaminated with grease, oil or flammable material, to the point that its protection is impaired. Follow the garment manufacturer's instructions for cleaning and care. Repair it only with the same arc-rated materials, and store it away from moisture, dust and combustibles. Some equipment manuals list arc-rated clothing with a minimum arc rating of 8 cal/cm2 to prevent skin burns and clothing fires from arc flash.
 

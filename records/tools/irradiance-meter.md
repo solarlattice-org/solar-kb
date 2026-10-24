@@ -28,7 +28,10 @@ claims:
   review: drafted
   review_note: 'support check: partial - The 8-10% upper bound for Si with unknown reporting-condition
     spectrum, its dependence on atmospheric factors, and the calibration note are stated, but ''up to
-    10%'' as a handheld meter''s accuracy is not stated; the passage concerns reference cells generally.'
+    10%'' as a handheld meter''s accuracy is not stated; the passage concerns reference cells generally.;
+    review: partial - The passage supports the 8-10% error for Si devices when the reporting-condition
+    spectrum is unknown, its atmospheric dependencies, and the calibration/matched-cell note, but it describes
+    spectral error of reference cells in general, not the overall accuracy of a handheld irradiance…'
 ---
 A handheld irradiance meter measures solar irradiance. Many models use a small PV cell as the sensor. A PV cell sensor gives better readings than a pin diode sensor, because a pin diode may not respond to sunlight the same way a PV cell does. Commissioning to IEC 62446 calls for an irradiance reading along with the continuity, open-circuit voltage, short-circuit current and insulation tests. The irradiance reading shows how much solar power is available at that time. Multifunction models also measure compass bearing, inclination, and module and ambient temperature, which makes them useful for site surveys. Some can send readings wirelessly to a PV tester, so irradiance is logged during the electrical tests. During O&M sensor checks, set a clean, recently calibrated handheld sensor at the same pitch and orientation as the site's global horizontal or plane-of-array sensor. Compare the two readings and replace the fixed sensor if it is out of range. O&M tool lists put it alongside a temperature sensor, inclinometer, compass and clamp meter. Accuracy depends on calibration. A reference cell that is not calibrated to the local spectrum can be off by as much as 8-10 % on silicon devices.
 

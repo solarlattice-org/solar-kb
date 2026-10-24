@@ -19,7 +19,9 @@ claims:
   - src: src:eq-equip-inverters-chint-comm-gateway-cps-connect-app-user-manual
     loc: sec=1
     h: 41465d718b87
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: uses_protocol
   target: proto:wifi
@@ -32,7 +34,9 @@ claims:
   - src: src:eq-equip-inverters-chint-100-125-kw-inverter-chint-cps-sch100-125ktl-do-us-600-manual
     loc: tbl=6.r8
     h: bef7f8cbba1f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say the Wi-Fi module creates a local Wi-Fi network for
     the app, but they don''t mention a phone joining it or that the module attaches to an inverter as
     well as the Flex Gateway.'

@@ -23,7 +23,9 @@ claims:
   - src: src:abb-fimer-pvs-60-tl-us-quick-installation-guide-revc
     loc: sec=11.1
     h: b1d4806f08bb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The FIMER Installer app is FIMER's mobile app for commissioning, setting parameters on and troubleshooting FIMER string inverters, especially when a large solar plant has many inverters. FIMER recommends it as the commissioning tool for both multi-inverter plants and single-inverter installations. The app can set system settings on several inverters at once and update inverter firmware. It is one of the routes for remote firmware updates, along with the inverter's built-in web interface and Aurora Vision. For export limitation setup, you use the app to add devices and to turn on and configure the fallback plan. With the fallback plan active, each inverter holds a fallback setpoint if it loses communication with the export meter or cannot reach the export limit. The app runs on Android 6.0.1 or later and is installed from the Play Store. The manuals say iOS support is planned but not yet available. FIMER manuals warn not to do anything to the inverter while a firmware update is running, because interrupting it could damage the inverter.
 

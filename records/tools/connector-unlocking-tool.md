@@ -24,4 +24,5 @@ A PV connector unlocking tool is a hand tool for releasing the latch on mated DC
 - sentence 1: support check: partial - Passages show an MC4 spanner removes MC4 connectors from the SUN2000 and an unlocking tool for DC connectors exists, but don't describe releasing a latch on mated connectors generally.
 - sentence 3: support check: partial - Evidence lists an IQ Disconnect Tool Q-DISC-10 for IQ Cable Connectors, but doesn't state Enphase makes it or that it's for microinverter systems.
 - sentence 5: support check: partial - Grounding requirement is stated, but 'never open a connector while current flows' is only implied by the clamp-meter check step, not explicitly prohibited.
+- sentence 1: review: partial - The passages back an unlocking tool for DC connectors and a spanner that removes MC4 connectors from the SUN2000, but they never describe releasing a latch on mated connectors so they can be pulled apart.
 -->

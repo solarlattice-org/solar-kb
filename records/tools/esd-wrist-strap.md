@@ -22,7 +22,9 @@ claims:
   - src: src:eq-equip-inverters-sungrow-sungrow-st2752ux-us
     loc: sec=h47
     h: a5ade4883ac4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 An ESD wrist strap is personal protective equipment worn to keep electrostatic discharge from damaging printed circuit boards and other static-sensitive parts inside inverters. Electrostatic discharge can damage these devices permanently, so avoid touching circuit boards when you do not need to and follow all ESD safety instructions. SMA repair training tells technicians to wear an ESD wrist strap for all work on inverter assemblies, during the preparation steps for repair. In the same preparation, make sure the inverter is disconnected, confirm there is no voltage at the measuring points, and check that the DC link capacitors are discharged. Only use spare parts that arrive in sealed packaging, because that is the only way to be sure they have not been damaged by ESD.
 

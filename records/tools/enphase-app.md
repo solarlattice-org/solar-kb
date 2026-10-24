@@ -23,7 +23,9 @@ claims:
   - src: src:kb-enphase-how-does-the-enphase-energy-system-work
     loc: sec=front
     h: 87f534d48c82
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages show Enphase App documents with make Enphase, but never
     state that Enphase Energy makes the app explicitly; it''s implied by metadata only.'
 ---
@@ -34,4 +36,5 @@ The Enphase App is Enphase's monitoring app for system owners. It was previously
 - sentence 4: support check: partial - Generator modes exist in the Enphase App and the article is tagged with IQ Battery and IQ8 Series, but the passages don't say the modes are for systems with that equipment.
 - sentence 5: support check: partial - Improved error messages and expanded characters are stated for Wi-Fi configuration via both apps, but passages don't explicitly say the IQ Gateway's Wi-Fi is set up from them, and the 'recent releases' framing is implied.
 - sentence 6: support check: partial - Renames are stated and the Installer App is used for commissioning, but the passages don't say Fleet management is done in the Installer Portal (only the Enlighten Manager rename and its managing multiple systems in u28, which isn't cited here).
+- sentence 4: review: partial - The passages confirm the Enphase App has generator modes, but the link to IQ Battery and IQ8 Series systems comes only from the article's model tags, not from any stated text.
 -->

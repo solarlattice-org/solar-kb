@@ -15,7 +15,9 @@ claims:
   - src: src:generac-generac-pwrmanager-owners-manual
     loc: sec=h28
     h: 4f81d534acc2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passage calls it the Generac PWRview app but does not state that
     Generac makes it (only implied by the name).'
 ---
@@ -24,4 +26,5 @@ Generac PWRview is a mobile app that system owners use to manage circuits connec
 <!-- review notes
 - sentence 1: support check: partial - Passage supports using the app to manage circuits with a PWRmanager, but does not say 'system owners' explicitly.
 - sentence 4: support check: partial - Automatic control and direct load control are stated, but the passages only list figure/screen titles and don't state that loads are switched from the Circuits List screen and circuit control panel.
+- sentence 4: review: partial - The passage supports configuring automatic control and controlling loads directly from the app, but the Circuits List screen and circuit control panel appear only as figure titles, so they are not stated as the places where loads are switched.
 -->

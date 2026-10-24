@@ -15,4 +15,5 @@ An I-V curve tracer is a portable field instrument that measures the current-vol
 <!-- review notes
 - sentence 5: support check: partial - The listed characteristics match, but the passages call them important to accuracy and productivity, not specifically for choosing a tracer for commissioning.
 - sentence 7: support check: partial - The passages name the PVA-1000 with its wireless SolSensor reference sensor and the compact PV200, but the PV200 is not tied to Seaward.
+- sentence 7: review: partial - The passages name the Solmetric PVA-1000 with the SolSensor wireless reference sensor and the very compact PV200, but the quoted text never says Seaward makes the PV200; only the source identifier does.
 -->
