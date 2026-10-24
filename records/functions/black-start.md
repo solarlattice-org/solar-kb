@@ -64,4 +64,5 @@ Black start lets a battery system bring the inverter and the site back up when t
 
 <!-- review notes
 - sentence 1: support check: partial - The passages say the battery is used to black start with no grid, but the SMA text says an auxiliary battery supplies the start energy. Neither passage says the whole site is brought back up, and the second passage says not all batteries support black start.
+- sentence 1: review: partial - The passages say the inverter can use the battery to black start with no grid, but SMA says an auxiliary battery supplies the start energy and nothing says the whole site is brought back up.
 -->

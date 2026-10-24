@@ -24,7 +24,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=4.6.1
     h: 16f92e29ae87
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   attr: trip_time
   value:

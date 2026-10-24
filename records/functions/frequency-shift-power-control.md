@@ -47,7 +47,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - The article says to set the country standard with your Grid Guard
     Code ''if needed'', which supports the note. It does not clearly state that FSPC requires a Grid Guard
-    code holder.'
+    code holder.; review: partial - The SMA article says to set the Country Standard with your Grid Guard
+    Code ''if needed'', which supports the note, but it does not say frequency-shift power control always
+    requires a Grid Guard code holder.'
 - claim_id: c4
   attr: default_value
   value:
@@ -80,7 +82,9 @@ claims:
   - src: src:sma-kb-frequency-shift-power-control-p-f
     loc: sec=h1
     h: d227cdd0a9b2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c4 (same source; check the conditions)
 - claim_id: c6
   attr: default_value
@@ -96,7 +100,9 @@ claims:
   - src: src:sma-kb-frequency-shift-power-control-p-f
     loc: sec=h1
     h: d227cdd0a9b2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Frequency-shift power control lets a battery inverter curtail AC-coupled PV inverters by raising the frequency of the stand-alone grid, so the battery does not overcharge when PV output exceeds the loads. On the Sunny Island 4548-US / 6048-US, the Sunny Boy starts limiting power once the frequency rises above f0 by fAC Start delta, and its output falls to 0 W at fAC Limit delta. If the frequency drops below fAC Delta- or rises above fAC Delta+, the Sunny Boy inverters disconnect from the stand-alone grid. When a diesel generator is running, the generator sets the frequency, so in most cases the Sunny Boys keep feeding their full power. On newer SMA PV inverters, set the country standard to Island Mode 60 or Offgrid. By default, curtailment then starts at 61Hz and falls linearly to zero active power at 62Hz. On firmware below 4.0, the start and end points are under Device Parameters, AC Side, Island Mode. On firmware above 4.0, and on SBSE or STPX, search for P(f) in the inverter or ennexOS. Once a Sunny Boy has stand-alone grid parameters, it no longer complies with IEEE 1547. Only use these settings on inverters that are disconnected from the utility grid, and check with the power company.
 

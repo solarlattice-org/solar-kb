@@ -100,7 +100,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=32
     h: 34660d291706
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   attr: default_value
   value:
@@ -120,7 +122,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=32
     h: 34660d291706
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   attr: setting_range
   value:
@@ -140,7 +144,9 @@ claims:
   - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
     loc: tbl=32
     h: 34660d291706
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   attr: default_value
   value:

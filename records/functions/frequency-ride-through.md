@@ -56,7 +56,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=4.r4
     h: 3392dc7c64a1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c5
     (same source; check the conditions); possible conflict with c7 (same source; check the conditions)
 - claim_id: c4
@@ -72,7 +74,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=4.r4
     h: 3392dc7c64a1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions)
 - claim_id: c5

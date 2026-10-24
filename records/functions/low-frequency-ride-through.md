@@ -84,7 +84,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: sec=h16
     h: 10cf6c57a237
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c3 (same source; check the conditions)
 - claim_id: c6
   attr: setting_range

@@ -58,7 +58,9 @@ claims:
   - src: src:tesla-mp-utility-controls-and-communications-manual-v1-7
     loc: tbl=179.r1
     h: 3b623da6a9ac
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Closed-loop plant control measures real and reactive power at the plant meter or point of interconnection. It uses that feedback to correct the plant's power commands so the requested value is actually met at the meter. Open-loop control does not feed back the actual value. Closed-loop control uses the values measured at the point of interconnection, so it can also make up for line and transformer effects. SMA recommends closed-loop control for active power limitation in systems with self-consumption, and for reactive power control in most systems. Open-loop control is preferred where heavy reactive loads without compensation would leave the inverters unable to hold the setpoints. The SMA Cluster Controller and SMA Data Manager M offer a closed-loop operating mode. It needs the measured active power at the grid connection point, and Data Manager M can run it with Sunny Tripower CORE2 inverters. With Data Manager M, slow the meter reading to keep the loop stable. For an SMA meter, change the update cycle from 200 ms to 600 ms or 1000 ms. Janitza meters need a custom Modbus profile. Also set the active power gradient on every inverter. In Tesla Megapack sites, the Tesla System Controller adds the closed-loop correction in its Combiner. On co-located plants, the correction only applies at each metered battery sub-site. On Tesla sites, closed-loop control is off by default at commissioning so that wiring errors in the meter's current or potential transformers do not cause wind-up. Turn it on with the Closed Loop Control Enable setting only after the meter readings match the battery power command. For large or complex SMA plants, the SMA Hybrid Controller or a Data Manager L can control the Power Plant Manager. If both are connected, only one of them may be set up as the active controller.
 

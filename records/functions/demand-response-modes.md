@@ -60,7 +60,9 @@ claims:
   - src: src:kb-solis-44002583082-how-do-i-connect-a-ripple-control-receiver-to-the-drm-port
     loc: tbl=1.r3
     h: 4eb2a83fc75d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c6
     (same source; check the conditions)
 - claim_id: c5
@@ -123,11 +125,14 @@ claims:
   - src: src:kb-solis-44002583082-how-do-i-connect-a-ripple-control-receiver-to-the-drm-port
     loc: sec=h1
     h: 6ad7f1571bc0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Demand response modes let the utility or grid operator command an inverter remotely through contact signals, as required in Australia by AS/NZS 4777.2. DRM0 disconnects the inverter from the grid, DRM1 brings grid import to zero and DRM5 brings export to zero on utility command. On FIMER UNO-DM PLUS inverters, DRM0 uses the REM terminal block and is enabled with a jumper; if it is enabled without correct wiring, the inverter cannot connect to the grid. Solis inverters have an RJ45 DRM port: pins 5 and 6 switch the inverter on or off, and pins 1 to 4 limit output in stages, for example from a ripple control receiver. DRM is off by default on Solis inverters. If it is turned on while the contact is open or not wired, the display reads Limit by DRM and output is limited to zero. You can enable DRM from the inverter display, over Bluetooth in the SolisCloud app under Grid Code Settings, or in SolisCloud, and it must be set on each inverter separately. KACO blueplanet inverters sold in Australia need a DRM 0 safety label fixed next to the nameplate.
 
 <!-- review notes
 - sentence 3: support check: partial - REM terminal block and jumper and grid-connection failure are stated, but passages do not mention UNO-DM PLUS model name.
 - sentence 7: support check: partial - Label next to nameplate in Australia is stated, but the passage does not name KACO blueplanet (only Powador-protect mention).
+- sentence 1: review: partial - The passages support remote utility control under AS/NZS 4777.2 in Australia, but do not state that the commands arrive through contact signals.
 -->

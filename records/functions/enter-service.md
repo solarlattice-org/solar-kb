@@ -91,7 +91,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=11.r1
     h: 7c087d142026
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c7 (same source; check the conditions)
 - claim_id: c6
   attr: default_value
@@ -119,7 +121,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=11.r2
     h: 59f76a365a77
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c5 (same source; check the conditions)
 - claim_id: c8
   attr: default_value
@@ -149,7 +153,9 @@ claims:
   - src: src:generac-generac-pwrcell-1ph-inverter-install-and-owners-manual-rev-j
     loc: tbl=35.r1
     h: fbc96e32d234
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   attr: default_value
   value:
@@ -163,7 +169,9 @@ claims:
   - src: src:generac-generac-pwrcell-2-smart-disconnect-switch-install-manual
     loc: tbl=21.r1
     h: c08277a94c33
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   attr: setting_range
   value:
@@ -178,7 +186,9 @@ claims:
   - src: src:generac-generac-pwrcell-2-smart-disconnect-switch-install-manual
     loc: tbl=21.r1
     h: c08277a94c33
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   attr: setting_range
   value:

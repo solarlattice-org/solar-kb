@@ -70,7 +70,9 @@ claims:
   - src: src:sma-doc-smabackupselect-ia-en-11
     loc: sec=h82
     h: 1d812b1f2054
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c3 (same source; check the conditions); possible conflict with c5
     (same source; check the conditions)
 - claim_id: c5

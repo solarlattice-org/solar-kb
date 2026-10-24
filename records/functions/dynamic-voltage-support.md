@@ -24,7 +24,9 @@ claims:
   - src: src:book-nrel-pv-integration-handbook-for-dist-n-engineers-63114
     loc: sec=3.2.2.3.7
     h: 2b9e8e36858e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 During low-voltage and high-voltage ride-through, dynamic voltage support has the inverter inject current, mostly fast reactive current, into the grid to hold up or pull down the voltage. On SMA inverters the dynamic grid support mode can be set to Off, Limited or Complete (full). Limited mode stops current feed-in while staying connected to the grid. Full mode feeds reactive current along a droop when the voltage leaves a band or jumps suddenly. Full mode sets the size of its response with gradient K parameters for undervoltage, overvoltage and negative sequence. Each K gives extra reactive current, relative to nominal current, per unit of voltage deviation. Start voltages set where each droop begins. Other SMA settings cover hysteresis voltage, zero-current thresholds and delays, voltage-leap height, and whether detection uses the nominal or an averaged grid voltage. Default thresholds come from the selected country data set. The NREL handbook describes dynamic reactive current support as a fast response to short voltage fluctuations and flicker. Its curve can include hysteresis and a dead band.
 

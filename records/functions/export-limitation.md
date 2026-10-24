@@ -59,7 +59,9 @@ claims:
   - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
     loc: sec=h120
     h: c0453e93ffaf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: requires
   target: func:consumption-metering
@@ -74,7 +76,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Enphase uses Consumption CTs and Solis uses a meter with CTs
     measuring consumed and imported power, but the passages don''t say they measure export or that consumption
-    metering is required generally.'
+    metering is required generally.; review: partial - Enphase checks export against its Consumption CT
+    readings and Solis curtails based on its meter''s CT data, but the Solis meter is described as measuring
+    consumed and imported power (not export), and neither passage says metering is required in general.'
 - claim_id: c5
   rel: requires
   target: prod:enphase-iq-gateway

@@ -35,7 +35,9 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: sec=h12
     h: d057eb0e1b32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - UV1 0.88 p.u. with overlapping curves is stated, but the region
     (PA) and effective date 11/30/2023 are only partly evidenced (PPL EU, rev 04 effective 11/30/2023;
     PA not stated).; possible conflict with c4 (same source; check the conditions)'
@@ -207,7 +209,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=12.r7
     h: 44db7998dcb2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Default 88 % for LVRTVolt (7,8) under IEEE1547-2018 and Rule21,
     and 88 for ISO-NE point 8, are in the table; the products are not named.; possible conflict with c8
     (same source; check the conditions); possible conflict with c9 (same source; check the conditions)'
@@ -229,7 +233,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=36
     h: f8e320e808dc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - IEEE1547-2018 default of 20 s for LVRTTime (7,8) is in the table;
     the products are not named.'
 - claim_id: c12
@@ -294,7 +300,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-dous-480-user-manual-rev-4-0
     loc: tbl=36
     h: f8e320e808dc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - ISO-NE default of 3.25 s for point 8 is in the table; the products
     are not named.; possible conflict with c13 (same source; check the conditions)'
 ---

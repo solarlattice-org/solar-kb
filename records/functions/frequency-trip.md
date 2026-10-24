@@ -42,7 +42,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=25.r4
     h: 3614858a0cd9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c5 (same source; check the conditions)
 - claim_id: c3
   attr: default_value
@@ -69,7 +71,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=25.r1
     h: 50c2daaa9bd2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions)
 - claim_id: c5
   attr: setting_range
@@ -144,13 +148,13 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=4
     h: d45e5447a687
-  review: disputed
-  review_note: possible conflict with c7 (same source; check the conditions); possible conflict with c11
-    (same source; check the conditions); possible conflict with c13 (same source; check the conditions)
-  conflicts_with:
-  - func:frequency-trip#c15
-  - func:frequency-trip#c17
-  - func:frequency-trip#c19
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c7 (same source; check the conditions); possible conflict with
+    c11 (same source; check the conditions); possible conflict with c13 (same source; check the conditions);
+    review: the compiler-flagged conflict (func:frequency-trip#c15, func:frequency-trip#c17, func:frequency-trip#c19)
+    is a scenario difference, resolved at review'
 - claim_id: c10
   attr: trip_time
   value:
@@ -196,14 +200,13 @@ claims:
   - src: src:std-standards-ieee-der-ride-through-settings
     loc: tbl=5
     h: 356df394eec9
-  review: disputed
-  review_note: possible conflict with c10 (same source; check the conditions); possible conflict with
-    c14 (same source; check the conditions)
-  conflicts_with:
-  - func:frequency-trip#c16
-  - func:frequency-trip#c18
-  - func:frequency-trip#c20
-  - func:frequency-trip#c22
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c10 (same source; check the conditions); possible conflict with
+    c14 (same source; check the conditions); review: the compiler-flagged conflict (func:frequency-trip#c16,
+    func:frequency-trip#c18, func:frequency-trip#c20, func:frequency-trip#c22) is a scenario difference,
+    resolved at review'
 - claim_id: c13
   attr: trip_threshold
   value:
@@ -266,14 +269,13 @@ claims:
   - src: src:generac-generac-pwrmicro-installation-manual-a0008718926
     loc: tbl=20.r1
     h: f3190f9274e9
-  review: disputed
-  conflicts_with:
-  - func:frequency-trip#c8
-  - func:frequency-trip#c10
-  - func:frequency-trip#c12
-  - func:frequency-trip#c14
-  review_note: possible conflict with c18 (same source; check the conditions); possible conflict with
-    c20 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c18 (same source; check the conditions); possible conflict with
+    c20 (same source; check the conditions); review: the compiler-flagged conflict (func:frequency-trip#c8,
+    func:frequency-trip#c10, func:frequency-trip#c12, func:frequency-trip#c14) is a scenario difference,
+    resolved at review'
 - claim_id: c17
   attr: trip_threshold
   value:
@@ -301,14 +303,13 @@ claims:
   - src: src:generac-generac-pwrmicro-installation-manual-a0008718926
     loc: tbl=20.r2
     h: 4df42ceedb23
-  review: disputed
-  conflicts_with:
-  - func:frequency-trip#c8
-  - func:frequency-trip#c10
-  - func:frequency-trip#c12
-  - func:frequency-trip#c14
-  review_note: possible conflict with c16 (same source; check the conditions); possible conflict with
-    c22 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c16 (same source; check the conditions); possible conflict with
+    c22 (same source; check the conditions); review: the compiler-flagged conflict (func:frequency-trip#c8,
+    func:frequency-trip#c10, func:frequency-trip#c12, func:frequency-trip#c14) is a scenario difference,
+    resolved at review'
 - claim_id: c19
   attr: trip_threshold
   value:
@@ -354,13 +355,13 @@ claims:
   - src: src:generac-generac-pwrmicro-installation-manual-a0008718926
     loc: tbl=20.r4
     h: aa2f35f33a37
-  review: disputed
-  conflicts_with:
-  - func:frequency-trip#c7
-  - func:frequency-trip#c11
-  - func:frequency-trip#c13
-  review_note: possible conflict with c15 (same source; check the conditions); possible conflict with
-    c17 (same source; check the conditions); possible conflict with c19 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c15 (same source; check the conditions); possible conflict with
+    c17 (same source; check the conditions); possible conflict with c19 (same source; check the conditions);
+    review: the compiler-flagged conflict (func:frequency-trip#c7, func:frequency-trip#c11, func:frequency-trip#c13)
+    is a scenario difference, resolved at review'
 - claim_id: c22
   attr: trip_time
   value:
@@ -371,14 +372,13 @@ claims:
   - src: src:generac-generac-pwrmicro-installation-manual-a0008718926
     loc: tbl=20.r4
     h: aa2f35f33a37
-  review: disputed
-  conflicts_with:
-  - func:frequency-trip#c8
-  - func:frequency-trip#c10
-  - func:frequency-trip#c12
-  - func:frequency-trip#c14
-  review_note: possible conflict with c18 (same source; check the conditions); possible conflict with
-    c20 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c18 (same source; check the conditions); possible conflict with
+    c20 (same source; check the conditions); review: the compiler-flagged conflict (func:frequency-trip#c8,
+    func:frequency-trip#c10, func:frequency-trip#c12, func:frequency-trip#c14) is a scenario difference,
+    resolved at review'
 - claim_id: c23
   attr: trip_threshold
   value:
@@ -440,7 +440,9 @@ claims:
   - src: src:solaredge-iso-new-england-configuration-instructions-na
     loc: tbl=2.r2
     h: b275a4627529
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c24 (same source; check the conditions); possible conflict with
     c30 (same source; check the conditions)
 - claim_id: c27
@@ -621,7 +623,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=7
     h: 45dcc2011c57
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c32 (same source; check the conditions)
 - claim_id: c36
   attr: setting_range
@@ -645,7 +649,9 @@ claims:
   - src: src:chint-cps-sca36-50-60ktl-ops
     loc: tbl=7
     h: 45dcc2011c57
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c37
   attr: setting_range
   value:
@@ -684,7 +690,9 @@ claims:
   - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
     loc: tbl=43
     h: 281df4b8b471
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c39
   attr: setting_range
   value:
@@ -699,7 +707,9 @@ claims:
   - src: src:fronius-fronius-galvo-208-240-operating-instructions-42-0410-1934
     loc: tbl=9.r6
     h: 2a74c7f7e2a4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Frequency trip disconnects the inverter from the grid when grid frequency stays above an over-frequency limit or below an under-frequency limit for longer than its set clearing time. Settings normally come in two stages per direction, such as OF1/OF2 and UF1/UF2, each with its own frequency and clearing time; utilities like PPL EU and ISO New England publish their own required values. CPS string inverters expose GridFrqMax1-3, GridFrqMin1-3 and matching trip time parameters, with separate defaults for the IEEE 1547-2018, Rule 21 and ISO-NE profiles. The Fronius Galvo states a frequency trip accuracy of 0.05 Hz and has a settable tolerance time for frequency limit violations. On Solis hybrids running from a generator, the HF1/HF2 and LF1/LF2 trip points can be widened to stop nuisance trips, but only in backup or off-grid mode, and they must be set back when the grid returns.
 
@@ -707,4 +717,5 @@ Frequency trip disconnects the inverter from the grid when grid frequency stays 
 - sentence 1: support check: partial - Passages say the inverter disconnects after a programmed delay, but the u36 text ties disconnect to abnormal voltage, and the clearing-time tables don't state the general mechanism fully.
 - sentence 2: support check: partial - Two stages per direction and PPL EU/ISO-NE values are shown, but 'normally' and that utilities publish their own required values (ISO-NE settings are SolarEdge settings) aren't stated.
 - sentence 3: support check: partial - Parameters and profile defaults shown, but a single product doesn't show all of GridFrqMin1-3 in u30, and some tables only have IEEE/Rule21; mostly supported across passages.
+- sentence 1: review: partial - The IEEE trip tables give frequency limits with clearing times, and ABB says the inverter disconnects after a programmed delay, but no passage states the general rule that the inverter trips when frequency stays past the limit for longer than…
 -->

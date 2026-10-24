@@ -47,7 +47,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=27
     h: fad5475d5f94
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   attr: default_value
   value:

@@ -77,7 +77,9 @@ claims:
   - src: src:abb-fimer-export-limitation-app-note-revd
     loc: sec=h31
     h: 07524ffc6b81
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   attr: setting_range
   value:

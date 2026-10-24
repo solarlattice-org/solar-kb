@@ -80,7 +80,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: tbl=26.r2
     h: 4adf0ad1c7cd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   attr: setting_range
   value:
@@ -135,11 +137,14 @@ claims:
   - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
     loc: tbl=9.r33
     h: ec1fe0973d6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Constant power factor mode makes the inverter run at a fixed power factor, so its reactive power follows its active output at a set ratio. In FIMER Aurora Manager LITE, you pick cos-phi fixed as the reactive power regulation mode, enter the over- or under-excited value and confirm with SET. CPS SCH125KTL-AIO, SCH200K/SCH250K-T, SCA25KTL-DO and CSI 23/28KTL-CT inverters list power factor adjustable to plus or minus 0.8. The FIMER PVS-166 adjusts to 0.75 lead or lag, the PVS-175 to 0.8, and the UNO-DM-3.3/3.8-PLUS to plus or minus 0.8.
 
 <!-- review notes
 - sentence 1: support check: partial - Constant PF operation is stated, but the reactive power following active output at a set ratio is an inference not explicitly stated.
 - sentence 2: support check: partial - Selecting cos-phi fixed, entering over/under-excited value and confirming with SET are stated, but the passages don't name Aurora Manager LITE.
+- sentence 1: review: partial - The passages state operation at a constant or fixed power factor, but the claim that reactive power follows active output at a set ratio is an inference the passages do not state.
 -->

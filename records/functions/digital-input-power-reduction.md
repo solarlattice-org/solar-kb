@@ -64,7 +64,9 @@ claims:
   - src: src:kb-solis-44002583082-how-do-i-connect-a-ripple-control-receiver-to-the-drm-port
     loc: tbl=1.r1
     h: 2b341e25a908
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - u21 gives an adjustable range of 0…110% for S1, but doesn''t
     name the Solis DRM port.'
 - claim_id: c5

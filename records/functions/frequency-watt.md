@@ -86,7 +86,9 @@ claims:
   - src: src:yaskawa-modbus-level-9-sgi-xtm-docr-071003-a
     loc: tbl=31
     h: ff0870582f8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   attr: setting_range
   value:
@@ -116,7 +118,9 @@ claims:
   - src: src:yaskawa-modbus-level-9-sgi-xtm-docr-071003-a
     loc: tbl=31
     h: ff0870582f8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   attr: setting_range
   value:

@@ -73,7 +73,9 @@ claims:
   - src: src:csi-csi-installation-manual-csi-125ktl-gs-e-usa-v1-3
     loc: sec=7
     h: 37c4a2c23c61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c5
   attr: setting_range
   value:
