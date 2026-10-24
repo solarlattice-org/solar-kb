@@ -72,4 +72,5 @@ Register data encoding is the set of rules a device uses to pack numbers and tex
 <!-- review notes
 - sentence 3: support check: partial - Passages describe the word-order difference and reversal option but never explicitly state that a mismatch yields wrong decoded values.
 - sentence 6: support check: partial - Null padding/termination and Not Implemented 0xFFFF for uint16 are stated, and ASCII fills MSB then LSB (two chars per register), but 'many' packing is only implied by the example.
+- sentence 4: review: partial - The scale-factor mechanism and the 3895 with scale factor -1 = 389.5 V example are stated, but only for Chint's CPS protocol, so 'many inverters and meters' goes beyond the passage.
 -->

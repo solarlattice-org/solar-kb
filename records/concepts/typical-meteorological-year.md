@@ -61,7 +61,9 @@ claims:
   - src: src:alsoenergy-kb-hourly-report-creation
     loc: sec=front
     h: 62ba5b7d5da9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: tool:alsoenergy-powertrack
@@ -101,7 +103,9 @@ claims:
   - src: src:enphase-enphase-iq8-pairing-with-imp-over-12a-modules
     loc: sec=h4
     h: 134a0a82052c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - u25 says TMY data sets derive from the NSRDB and u30 uses NSRDB
     TMY3 weather file, but u25 refers specifically to the 1961-1990 NSRDB; the general claim is roughly
     supported.'

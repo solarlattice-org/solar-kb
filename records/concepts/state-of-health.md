@@ -40,7 +40,9 @@ claims:
   - src: src:sma-doc-278742
     loc: sec=h914
     h: cef6dae20c1d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: meas:battery-soh-reading-low
@@ -48,7 +50,9 @@ claims:
   - src: src:sma-doc-278742
     loc: sec=h914
     h: cef6dae20c1d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: method:battery-capacity-test
@@ -74,4 +78,5 @@ State of health (SOH) describes how much of its original capability a battery st
 
 <!-- review notes
 - sentence 7: support check: partial - The 70% battery error is stated and SOC/SOH are paired in a section heading, but 'normally shown next to SOC in battery menus' and 'some SMA devices' are only loosely supported.
+- sentence 7: review: partial - The battery error below 70% SOH is stated, but the passages only pair SOC and SOH in a section heading and do not say SOH is normally shown next to SOC in battery menus.
 -->

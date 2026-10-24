@@ -98,7 +98,9 @@ claims:
   - src: src:sma-doc-260329
     loc: sec=4
     h: 8ed186212a25
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c8
   rel: related_to
   target: concept:lead-acid-battery
@@ -145,3 +147,7 @@ claims:
   review: drafted
 ---
 SoC estimation methods are the algorithms a battery inverter or BMS uses to work out how full a battery is, because state of charge cannot be measured directly. Ampere-hour counting, also called Coulomb counting, integrates the battery current over time. On its own it drifts, because the starting SoC is usually unknown and the DC current measurement is not accurate enough. To limit this drift, SMA's version also estimates the battery's internal leakage current and uses full-charge detection, which looks at temperature, voltage, charging current and time and lets the algorithm learn and adjust its parameters. The Sunny Island reports its estimated SoC error as BatSocErr. The error is lowest right after a full or equalization charge and grows again over the following cycles. Small SoC jumps during recalibration are normal. Large or fast jumps suggest wrong settings, early battery aging or a battery error, and the first step SMA recommends is an equalization charge. Wrong installation or parameter settings make SoC and state of health estimates less accurate. Only a capacity test gives the true values, and most field sites cannot run one.
+
+<!-- review notes
+- sentence 1: review: partial - The passages say SOC cannot be measured directly and is estimated by algorithms in the Sunny Island, but they never mention a BMS.
+-->

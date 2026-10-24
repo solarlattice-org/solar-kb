@@ -67,7 +67,9 @@ claims:
   - src: src:yaskawa-xgi-1500-175-250-iom-docr-071074-dd
     loc: sec=h156
     h: ebc54ead1327
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: related_to
   target: prod:yaskawa-solectria-xgi-1500
@@ -85,7 +87,9 @@ claims:
   - src: src:yaskawa-xgi-1500-configuration-limits-low-grid-scr
     loc: tbl=5.r1
     h: 9bc470babdfa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: prod:sma-sunny-central-up-us
@@ -117,4 +121,5 @@ The short-circuit ratio (SCR) is a figure for how strong the grid is where an in
 - sentence 1: support check: partial - The passages show SCR stated at the POI and at AC terminals, but never define SCR as a measure of grid strength.
 - sentence 5: support check: partial - The >2 minimum SCR at the AC terminals is stated, but the passages don't name the model as SMA Sunny Central UP-US or say it is a feature of some central inverters.
 - sentence 6: support check: partial - u32 shows grid short-circuit power at the MV connection used to compute LV-side grid impedance, but it doesn't mention SCR or say they are closely tied.
+- sentence 1: review: partial - The passages show SCR stated at the POI and at the AC terminals, but they never describe SCR as a measure of grid strength.
 -->

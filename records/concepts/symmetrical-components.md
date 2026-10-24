@@ -104,4 +104,5 @@ Symmetrical components is a method that breaks an unbalanced three-phase system 
 <!-- review notes
 - sentence 6: support check: partial - Passages cover fault analysis, switching/lightning surges and harmonic resonance, but 'main tool for fault studies' is not explicitly stated; u16 calls it a very important method.
 - sentence 7: support check: partial - Grounding classes defined by symmetrical component ratios are shown, and transformer neutral and grounding bank headings exist, but the passages don't explicitly tie this to PV plants or say the method matters for them.
+- sentence 7: review: partial - The table defines grounding classes by ratios of symmetrical component parameters, and the figures show PV plant grounding through a transformer neutral or a grounding bank, but the passages never draw the causal 'so the method matters' link.
 -->

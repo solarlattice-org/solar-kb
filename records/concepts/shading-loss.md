@@ -56,11 +56,12 @@ claims:
   - src: src:trn-training-utility-scale-power-plants-a-guide-for-investors-and-developers
     loc: sec=7.2.3
     h: e4ddc70cfb8d
-  review: disputed
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Passage says less than 1% annual loss may deem row spacing acceptable,
-    but not specifically ''utility-scale'' or ''generally'' considered; roughly matches.'
-  conflicts_with:
-  - concept:shading-loss#c2
+    but not specifically ''utility-scale'' or ''generally'' considered; roughly matches.; review: the
+    compiler-flagged conflict (concept:shading-loss#c2) is a scenario difference, resolved at review'
 - claim_id: c4
   rel: related_to
   target: concept:ground-coverage-ratio
@@ -104,7 +105,9 @@ claims:
   - src: src:alsoenergy-kb-energy-loss-waterfall
     loc: sec=front
     h: b18a92c492b3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: concept:plane-of-array-irradiance
@@ -115,7 +118,9 @@ claims:
   - src: src:man-alsoenergy-pv-model-powertrack-additional-info-on-pv-system-model-processing
     loc: sec=h4
     h: 8327a5f077ba
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: related_to
   target: concept:clear-sky-model
@@ -169,7 +174,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=2.2
     h: 97a00d084029
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   rel: explains
   target: fm:bypass-diode-failure

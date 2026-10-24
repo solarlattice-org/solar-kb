@@ -29,7 +29,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: sec=h112
     h: 7b3b441daaf6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:om-contract
@@ -42,7 +44,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: sec=h23
     h: 6affbb7c86c9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: mit:inverter-replacement
@@ -55,7 +59,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: sec=7.3
     h: 1f547ba4523f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: mit:module-replacement

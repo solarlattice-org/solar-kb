@@ -26,7 +26,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-ca-rate-changes-ebook-energ
     loc: sec=h23
     h: 7c370b56f126
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:demand-response
@@ -39,7 +41,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-ca-rate-changes-ebook-energ
     loc: sec=h30
     h: c21bb7df886f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: concept:net-metering
@@ -52,7 +56,9 @@ claims:
   - src: src:eq-equip-bess-tesla-opticaster-overview
     loc: sec=front
     h: 6f38a75b0d21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: func:peak-shaving
@@ -62,7 +68,9 @@ claims:
   - src: src:eq-equip-bess-tesla-opticaster-overview
     loc: sec=front
     h: 6f38a75b0d21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: tool:tesla-opticaster

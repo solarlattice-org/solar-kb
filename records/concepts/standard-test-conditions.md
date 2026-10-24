@@ -26,7 +26,9 @@ claims:
   - src: src:schneider-conext-cl125-solution-guide-na
     loc: tbl=8.r3
     h: 59aca9e89766
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:ptc-rating
@@ -57,7 +59,9 @@ claims:
   - src: src:trn-training-utility-scale-power-plants-a-guide-for-investors-and-developers
     loc: sec=2.3.6
     h: 22ab721b2405
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: std:iec-61646
@@ -75,7 +79,9 @@ claims:
   - src: src:test-cx-manuals-seaward-pv-system-commissioning-and-testing-guide
     loc: sec=h52
     h: a35633edf001
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Standard test conditions (STC) are the universal reference rating condition used to state the electrical output of PV modules and arrays. STC means an irradiance of 1000 W/m2 with an AM 1.5 spectral distribution and a cell temperature of 25°C. Module qualification standards such as IEC 61215 for crystalline silicon and IEC 61646 for thin film include performance tests at STC. STC ratings say little about how a module performs in the field, where irradiance and temperature vary from site to site. Ratings closer to real operation also exist, such as PVUSA test conditions (PTC), which use a 45°C cell temperature and a 1 m/s wind speed, and nominal operating cell temperature (NOCT). In the field, I-V curve measurements are translated back to STC so they can be compared with the datasheet, following methods such as ASTM E1036. For best results, take those measurements under steady clear skies near solar noon, with irradiance above 800 W/m2 and little wind.
 

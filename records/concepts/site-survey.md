@@ -26,7 +26,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-expansion-fittings-sunspec
     loc: sec=h157
     h: 6f3ea7438a96
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: comp:mounting-structure

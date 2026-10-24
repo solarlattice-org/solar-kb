@@ -49,7 +49,9 @@ claims:
   - src: src:pv-root-cause-tracker-wind-stow-losses
     loc: sec=h4
     h: 65b80c7f6952
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: mit:tracker-stow-strategy
@@ -97,7 +99,9 @@ claims:
   - src: src:eq-equip-trackers-valmont-kt084677mn-user-manual
     loc: sec=12.1
     h: 5a0513d92837
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: tool:anemometer
@@ -106,7 +110,9 @@ claims:
   - src: src:iea-pvps-t13-33-2025
     loc: sec=3.5
     h: 7040eca2cd0a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: related_to
   target: concept:p50-p90
@@ -138,7 +144,9 @@ claims:
   - src: src:eq-equip-trackers-terrasmart-terratrak-client-documents-90032-000-terratrak-tt2-o-m-manual-101220
     loc: sec=4.3
     h: e637a3569cea
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passage describes a tracker''s stow details but never names
     TerraSmart TerraTrak.'
 - claim_id: c12
@@ -183,4 +191,5 @@ Tracker stow means moving a tracker to a safety position so that weather does no
 - sentence 2: support check: partial - Triggers match the list, but the passage doesn't name the product as TerraTrak.
 - sentence 3: support check: partial - Presets and Modbus enable-stow registers with stow angle are stated, but the passages don't name DuraTrack HZ v3 or GameChange for these.
 - sentence 4: support check: partial - The 10-15 and 0-10 recommendations and the never-stow-near-limits advice are present, but the 'never near limits' advice appears only in the first source, not both, and 'per site' is not stated.
+- sentence 4: review: partial - Both recommendations (10-15 and 0-10 degrees) are present, but only the first source warns against stowing at or near the limits, and 'set per site' is not stated.
 -->

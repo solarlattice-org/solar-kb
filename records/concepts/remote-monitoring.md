@@ -77,4 +77,5 @@ Remote monitoring means watching a PV or storage system's performance from off s
 - sentence 1: support check: partial - Off-site monitoring and cloud platform are supported, but the data logger/gateway mechanism and storage systems are not stated.
 - sentence 5: support check: partial - Passages list site list, alert emails, fleet report and monitoring platform troubleshooting, but only as headings, with no explicit statement about remote troubleshooting before on-site testing.
 - sentence 6: support check: partial - Read/write access for service is stated for CPS, and remote firmware updates appear in tables, but pushing updates by the manufacturer over such links is not explicit.
+- sentence 1: review: partial - Off-site performance monitoring through a cloud platform is supported, but the data logger or gateway mechanism and the explicit mention of storage systems are not in the passages.
 -->

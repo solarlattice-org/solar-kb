@@ -58,4 +58,5 @@ A unit certificate is a document showing that a device model was tested and foun
 
 <!-- review notes
 - sentence 1: support check: partial - The passages mention unit certificates and full test reports, but they don't define a certificate as showing a model was tested and found compliant, or say the report holds the detailed results.
+- sentence 1: review: partial - The passages mention unit certificates, whole device test reports and type test reports, but do not define a certificate as proof that a model was tested and found compliant, or say the report holds the detailed results behind it.
 -->

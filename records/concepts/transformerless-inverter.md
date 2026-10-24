@@ -41,7 +41,9 @@ claims:
   - src: src:eq-equip-inverters-sma-stp-20000-stp20000tl-us-10-installation
     loc: sec=h29
     h: 2e2bd8701114
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: arch:ungrounded-pv-array
@@ -54,7 +56,9 @@ claims:
   - src: src:eq-equip-inverters-delta-m60u-m80u-20190806-m80-60u-manual-old
     loc: sec=h11
     h: 488dfcb7f5ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages state PV circuits must be isolated from ground and E34
     appears, but they don''t name Delta; the brand is not stated.'
 ---
@@ -63,4 +67,5 @@ A transformerless inverter has no isolation transformer between its DC input and
 <!-- review notes
 - sentence 4: support check: partial - Passages show transformerless topology for several products, but no manufacturer names appear for Fronius, Huawei, Yaskawa; only SMA (STP) and CPS (SCH) model codes suggest brands; 'many' not established.
 - sentence 8: support check: partial - Values 99.0% max and 98.5% CEC are listed, but 'peak' vs max and that they are from one example are not confirmed; 'can reach high efficiency' is interpretive.
+- sentence 4: review: partial - The cited rows show transformerless topology for SMA, Fronius, Huawei, CPS and Yaskawa Solectria models, but none of them say these are string inverters or that 'many' of each brand's inverters use this topology.
 -->

@@ -41,4 +41,6 @@ Voltage levels are classes of nominal system voltage, such as low voltage (LV) a
 - sentence 3: support check: partial - Ranges match, but the passages do not mention Tesla Megapack manuals as the source.
 - sentence 5: support check: partial - Table rows show 3-phase 4-wire at 4,160 V and 13,200 V, but 'larger customers' is only implied by load minimums (500 kVA and up).
 - sentence 7: support check: partial - Passage says nominal inverter voltage is specified as line-to-line, but not the 'usually' or the advice about comparing with service voltage.
+- sentence 1: review: partial - The passages define LV and MV as nominal voltage classes, but nothing says they are used to group equipment, test requirements and grid rules.
+- sentence 7: review: partial - SMA states nominal inverter voltage is given line-to-line, but the 'usually' qualifier and the advice to check before comparing with service voltage are not in the passage.
 -->

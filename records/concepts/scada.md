@@ -38,7 +38,9 @@ claims:
     h: 1784ec82ac3e
   review: drafted
   review_note: 'support check: partial - Passage says SCADA is used as an example Modbus master system,
-    but it does not name SMA; the manufacturer attribution is not in the passage.'
+    but it does not name SMA; the manufacturer attribution is not in the passage.; review: partial - The
+    row says SCADA is control center software used as an example Modbus master system, but the quoted
+    text does not name SMA, so that attribution rests only on the source id.'
 - claim_id: c4
   rel: related_to
   target: concept:automatic-reclosing

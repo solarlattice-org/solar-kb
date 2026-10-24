@@ -62,7 +62,9 @@ claims:
   - src: src:sma-doc-262660
     loc: sec=h70
     h: 71a353f01bdb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: func:self-consumption-optimization
@@ -112,7 +114,9 @@ claims:
   - src: src:sma-doc-278879
     loc: sec=h92
     h: f77755baab0a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: prod:sma-sunny-home-manager
@@ -123,6 +127,8 @@ claims:
   - src: src:sma-kb-pv-energy-for-internal-power-supply-and-self-consumption
     loc: sec=h1
     h: f7d9b949428a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Self-consumption means that PV power is used at the same site where it is generated. It includes energy used directly by loads and energy used to charge a battery. PV energy goes to active household loads first, and only the surplus is exported to the utility grid. For this reason, energy meters must be placed so that loads draw PV energy before the feed-in point. Self-consumption is different from internal power supply, also called self-sufficiency. Internal power supply counts battery discharging instead of battery charging. In systems without a battery, the two values are the same. The self-consumption quota, or rate, compares self-consumption with PV power or yield. Monitoring can show it for a day, a month, a year or the whole system lifetime. High self-consumption pays off when the feed-in tariff is well below the price of grid electricity. It also lowers energy costs and reduces the load on the grid. Energy managers such as the Sunny Home Manager raise self-consumption by switching controllable loads on when there is enough PV power. Battery storage raises it further. In an SMA example home with a natural self-consumption of 30%, load control raised the quota to about 45%. A 5 kWh battery system raised it to about 65%.

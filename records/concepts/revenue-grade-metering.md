@@ -71,7 +71,9 @@ claims:
   - src: src:enphase-enphase-envoy-s-installation-and-operation-manual
     loc: tbl=4.r2
     h: 7bd9971bc4aa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Revenue-grade metering means measuring PV power and energy with a meter accurate enough for billing or reporting, typically at the AC output of the inverter. Accuracy is usually stated against ANSI C12.20, for example Class 0.2 for one DIN-rail meter, or plus or minus 0.5% for an integrated production meter. Some inverters offer an optional factory-integrated revenue grade meter whose lifetime energy and power can be read on the inverter display and through the vendor monitoring service. On such inverters the RG Meter menu item is hidden unless the meter is actually installed. Revenue-grade production data can feed agency reporting services offered with the monitoring platform. Other products add revenue-grade metering as a kit with its own current transformers, installed in the factory or in the field, and only for certain applications. Utility revenue metering cabinets and service metering follow the utility's own requirements, so check the local utility specification before installing. Revenue-grade production metering differs from consumption monitoring, which is often less accurate and needs extra CTs.
 
@@ -81,4 +83,6 @@ Revenue-grade metering means measuring PV power and energy with a meter accurate
 - sentence 6: support check: partial - The Generac kit includes CTs, is factory or field installed, and is restricted to specific applications, but 'other products' in the plural is only evidenced by one product.
 - sentence 7: support check: partial - Metering cabinets 'per utility requirements' is stated, but the advice to check the local utility specification and service metering detail are not in the passages.
 - sentence 8: support check: partial - Consumption monitoring is optional, less accurate (+/-2.5% vs 0.5%) and needs additional CTs for the Envoy-S, but 'often' generalization is from one product.
+- sentence 1: review: partial - Measuring power and energy at the inverter AC output is stated, but the passages never say the meter is accurate enough for billing or reporting, and 'typically' generalizes from one vendor.
+- sentence 7: review: partial - Metering cabinets 'per utility requirements' is stated, but service metering appears only as a section heading, and the advice to check the local utility specification before installing is not in the passages.
 -->

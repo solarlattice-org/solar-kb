@@ -50,7 +50,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-misc-collateral-the-stem-pa
     loc: sec=h7
     h: 7609af7ab4aa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A virtual power plant, or VPP, is a group of many small distributed systems that together act like one larger power plant. For example, small residential PV systems in some neighborhoods add up to virtual power plants of several megawatts. Commercial sites with battery storage can join a VPP and earn demand response revenue without disrupting their operations. VPPs are promoted as a way to avoid building new carbon-emitting generation, improve reliability and cut emissions across a community. Good monitoring and fault detection matter for a VPP: they help the grid manager forecast what the neighborhood will produce, raise its availability and lower its forced outage rate. Related concepts include demand response and distributed energy resources.
 

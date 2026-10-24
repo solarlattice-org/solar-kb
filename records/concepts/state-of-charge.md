@@ -45,7 +45,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=h640
     h: 1238d4052c9b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:battery-charging-stages
@@ -114,4 +116,5 @@ State of charge is the amount of charge that can still be drawn from a battery, 
 - sentence 5: support check: partial - BMS-equipped batteries send SoC to the inverter, and the BMS adapts limits depending on SOC, but the passage does not say the BMS uses the sent SoC in that way beyond this.
 - sentence 6: support check: partial - Passage supports approaching the upper limit periodically to stop cells drifting and to resync the displayed SOC, but it is about lithium-ion batteries and doesn't say the display stops matching otherwise.
 - sentence 7: support check: partial - Conservation ranges are stated, but backup reserve and DoD being expressed against SOC is only loosely implied.
+- sentence 7: review: partial - The conservation ranges are stated exactly, but the SolarEdge passage frames backup reserve and depth of discharge as minimum state of energy, so it does not clearly say they are expressed against state of charge.
 -->

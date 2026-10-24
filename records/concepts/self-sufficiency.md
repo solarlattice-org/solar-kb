@@ -35,6 +35,8 @@ claims:
     loc: sec=h75
     h: 8fb2d082397d
   review: drafted
+  review_note: 'review: partial - The passages define the self-sufficiency quota as internal power supply
+    over consumption on a current, yearly or total basis, but never mention daily or monthly periods.'
 - claim_id: c2
   rel: related_to
   target: concept:self-consumption
@@ -79,7 +81,9 @@ claims:
   - src: src:sma-kb-pv-energy-for-internal-power-supply-and-self-consumption
     loc: sec=h1
     h: f7d9b949428a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c5
   rel: related_to
   target: concept:feed-in-tariff

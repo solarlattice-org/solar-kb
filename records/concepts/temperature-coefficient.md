@@ -118,22 +118,10 @@ claims:
   review_note: 'support check: partial - The 25 °C rating reference and datasheet STC data are stated,
     but explicit translation of STC values to other temperatures via coefficients is only implied through
     the Voc low-temperature equation.'
-- claim_id: c8
-  rel: related_to
-  target: concept:single-diode-model
-  note: Performance models such as the Sandia array model use four separate temperature coefficients (Isc,
-    Imp, Voc, Vmp).
-  cite:
-  - src: src:man-nrel-sandia-photovoltaic-array-performance-model-sand2004-3535-2004
-    loc: sec=h18
-    h: 88505e777c47
-  review: drafted
-  review_note: 'support check: partial - The four coefficients (Isc, Imp, Voc, Vmp) are described for
-    a performance model, but the passages do not name it the Sandia model or link it to the single-diode
-    model.'
 ---
 A temperature coefficient describes how much a PV cell's voltage, current or power changes for each degree of change in cell temperature. For crystalline silicon, a hotter cell gives noticeably lower voltage and power and a slightly higher current, so the voltage and power coefficients are negative. Typical crystalline silicon values are about -0.4 %/°C for voltage, +0.04 %/°C for short-circuit current and -0.45 %/°C for maximum power, and thin-film modules have different values. Datasheets list these coefficients next to the STC ratings, for example -0.32 %/°C for open-circuit voltage or -0.41 %/°C for Pmpp on some products. Modules reach their highest voltage at the lowest temperature, so the Voc coefficient is used to find the cold-weather string voltage and to check it stays below the maximum system voltage when sizing strings. Detailed models such as the Sandia array model use separate coefficients for Isc, Imp, Voc and Vmp, because the Voc and Isc values do not correctly describe Vmp and Imp.
 
 <!-- review notes
 - sentence 4: support check: partial - The -0.32 %/°C Voc and -0.41 %/°C Pmpp values appear, and the datasheet lists STC data and coefficients, but 'next to STC ratings' for those specific values is only loosely supported.
+- c8 dropped at review: The passage supports the note about four separate temperature coefficients (Isc, Imp, Voc, Vmp) in the Sandia performance model, but never mentions the single-diode model, so the relation's core target is not supported.
 -->

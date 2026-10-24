@@ -42,7 +42,9 @@ claims:
   - src: src:sma-video-derating-und-k-hlung-von-sunny-central-wechselrichtern-wbt-4-cooling-derating-909953620
     loc: sec=h1
     h: 29bb5fd6708c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:inverter-cooling

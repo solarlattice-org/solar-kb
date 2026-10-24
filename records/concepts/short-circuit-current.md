@@ -106,7 +106,9 @@ claims:
   - src: src:iec-62446-1
     loc: sec=6.5.2.2
     h: e78cd394ec93
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Short-circuit current, written Isc, is the current a PV module or string delivers when its output terminals are shorted together. It is one of the main values on the I-V curve, along with open-circuit voltage, maximum power voltage, maximum power current and maximum power. Module datasheets state Isc at standard test conditions, and conductor ampacity for PV source circuits is sized from this rated value, using 125% of the summed parallel Isc ratings. Isc is proportional to the irradiance on the array, so field measurements should be taken in clear sky on clean, unshaded modules, and strings compared with each other should agree within 5%. To test, the string is isolated and briefly shorted with a rated PV tester, shorting cable or switch box. The current is read with a rated clip-on or in-line ammeter, and the short is interrupted with a load break device before anything else is changed. Isc is also used to work out the fill factor, which is maximum power divided by the product of Voc and Isc. A low fill factor can point to faults that cost energy yield. For amorphous silicon modules, the ratio of Isc to irradiance changes with air mass and with the direct and diffuse light components because of spectral response.
 

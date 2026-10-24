@@ -39,7 +39,9 @@ claims:
   - src: src:alsoenergy-kb-pvsyst-or-single-diode-model-configuration-in-powertrack
     loc: sec=h1
     h: fa62a42caad1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:open-circuit-voltage
@@ -68,4 +70,5 @@ The single-diode model is an equivalent-circuit model of a solar cell or module 
 <!-- review notes
 - sentence 1: support check: partial - Passages show it is a solar cell model used for PV modelling and simulated data, but 'equivalent-circuit' is not stated.
 - sentence 6: support check: partial - Passage says some systems use simulated data from single/double diode models, but 'train on' and 'instead of field data' are not stated.
+- sentence 1: review: partial - The passages call it a solar cell model that the PVsyst model is built on and that is used to simulate data, but they do not say it is an equivalent circuit or that it calculates electrical behavior.
 -->

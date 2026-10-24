@@ -122,7 +122,9 @@ claims:
   - src: src:kb-sma-sma-america-kb-pv-arc-fault-circuit-interrupter
     loc: sec=h5
     h: a958fac316ce
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c10
   rel: related_to
   target: comp:dc-connector

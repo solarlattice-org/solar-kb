@@ -16,7 +16,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6
     h: 0660da2db10d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:heterojunction
@@ -60,7 +62,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6.1
     h: b51dcb452e5b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: mit:alternative-encapsulant
@@ -78,7 +82,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=2.6
     h: 0660da2db10d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   attr: typical_power_loss
   value:

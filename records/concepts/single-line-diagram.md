@@ -52,4 +52,5 @@ A single-line diagram, also called a one-line diagram or SLD, is a simplified dr
 - sentence 3: support check: partial - Passages say device numbers are necessary per ANSI C37.2 but don't say each protective and switching device must carry one.
 - sentence 5: support check: partial - Sample diagram title shows behind-the-meter solar+storage with line-side tap POI, but nothing on 'storage projects' generally or showing how it ties in beyond the title.
 - sentence 6: support check: partial - Passages show manuals with typical single-line diagrams and a communication table figure, but not their purpose of showing where meters and data equipment connect.
+- sentence 1: review: partial - The passages confirm the names one-line diagram and SLD (single-line drawing), but they give no definition of a simplified drawing that uses one line for circuits.
 -->

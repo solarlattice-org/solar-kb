@@ -59,7 +59,9 @@ claims:
   - src: src:tesla-tesla-mp2-design-and-installation-manual-v3-0
     loc: fig=107
     h: f3d09107b9ef
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: mit:transformer-configuration-check

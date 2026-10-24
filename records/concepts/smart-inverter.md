@@ -57,7 +57,9 @@ claims:
   - src: src:eq-equip-inverters-delta-m36u-m42u-20191015-m42-36u-manual
     loc: tbl=34.r1
     h: ea5ce33291a4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: std:ul-1741-sb
@@ -121,7 +123,9 @@ claims:
   - src: src:book-nrel-pv-integration-handbook-for-dist-n-engineers-63114
     loc: sec=3.2.2.3.1
     h: 49d0e514c815
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: related_to
   target: func:voltage-ride-through
@@ -160,7 +164,9 @@ claims:
   - src: src:std-manuals-sce-rule-21
     loc: sec=h85
     h: 595988bd997f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: related_to
   target: concept:power-factor
@@ -185,6 +191,8 @@ claims:
   - src: src:yaskawa-pvi-25tl-208-36tl-v2-50-60tl-iom-docr-071086-c
     loc: tbl=7.r7
     h: 6fd4084777b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 A smart inverter is an inverter with functions that, once activated, can support the grid on their own when voltage or frequency moves outside normal conditions. Besides converting DC to grid-compliant AC and disconnecting when grid limits are exceeded, it can modulate its output, for example by changing its power factor, to help keep the grid stable. Typical smart inverter functions include power factor adjustment, low- and high-voltage ride-through, volt-watt control, dynamic reactive current support and volt-var control. In product documentation these devices are called grid support utility interactive inverters, and they are tested to UL 1741 SA or, more recently, UL 1741 SB with IEEE 1547-2018. Inverters certified this way need no extra grid monitoring equipment to connect to the utility grid. Some manuals give a default state for each function per grid profile, with ride-through and soft-start reconnection enabled under IEEE 1547-2018, Rule 21 and ISO-NE.

@@ -113,4 +113,5 @@ Voltage rise is the increase in voltage at an inverter's AC terminals that happe
 
 <!-- review notes
 - sentence 1: support check: partial - Passage says voltage rises at the AC terminals because inverters generate electricity, but does not explicitly say current is pushed through wiring resistance, though it mentions conductor resistance.
+- sentence 1: review: partial - The passage says voltage rises at each inverter's AC terminals because inverters generate electricity, but it does not state the mechanism of current pushed through wiring resistance.
 -->

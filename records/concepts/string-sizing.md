@@ -78,4 +78,6 @@ String sizing means choosing how many PV modules to wire in series in each strin
 - sentence 4: support check: partial - The wide 200-500 V range allowing many string combinations is stated, but the passage does not explicitly say the string should operate within the MPP range.
 - sentence 5: support check: partial - Passages say to refer to specifications and use industry-standard techniques per local code, and that Yaskawa Solectria offers a tool; 'some vendors' generalization and 'check the inverter specifications' are close but acceptable, with the manufacturers-in-general claim slightly stronger.
 - sentence 6: support check: partial - Passage says differing module counts per string may be intended by design, but it doesn't say explicitly that mismatched curves are not a fault, though this is implied.
+- sentence 1: review: partial - The passages support modules in series limited by the system maximum voltage and a modules-per-string field, but nothing in them says the string voltage must suit the inverter.
+- sentence 4: review: partial - The wide 200-500 V MPP range allowing many string combinations is stated, but the passage never says the string should operate inside the MPP voltage range.
 -->
