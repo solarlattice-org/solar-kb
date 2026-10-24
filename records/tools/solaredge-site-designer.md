@@ -21,7 +21,9 @@ claims:
   - src: src:se-academy-solaredge-designer-basics-na-technical
     loc: sec=h1
     h: 3b2f4438af46
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SolarEdge Designer is a free web application from SolarEdge for designing PV systems. Installers use it to plan, build and validate SolarEdge systems from first concept through installation. It accounts for SolarEdge-specific design options, for example modules facing different directions in one string and strings of different lengths. Based on site size, it recommends which inverters and power optimizers to use, and it can produce reports. A finished site design, including the string layout, can be exported to the SolarEdge monitoring platform. A new project starts with a choice between a residential and a commercial site, and then you draw the site layout. The tool also offers simulation, financial analysis and collaboration features, and its energy de-rating factors can be changed. Learn the application's icons and main menu before you start your first project.
 

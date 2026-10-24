@@ -14,4 +14,6 @@ Sunny Portal powered by ennexOS is an online monitoring and management portal. I
 - sentence 2: support check: partial - Only a section heading 'PV system with SMA inverter powered by ennexOS' is shown; that the user manual covers setting up such systems is implied but not explicitly stated.
 - sentence 5: support check: partial - Passage states performance ratio calculation and alert when thresholds exceeded, but not that the user sets the thresholds.
 - sentence 7: support check: partial - System-wide parameter adjustment of suitable devices is stated, but the advice to check affected devices before pushing a change is not in the passage.
+- sentence 1: review: partial - The passages confirm the portal works with EDMM-10 / EDMM-US-10 (Data Manager M) and EDMM-10.A (Data Manager M Lite), but they never call it an online monitoring and management portal.
+- sentence 7: review: partial - The row supports system-wide parameter adjustment of suitable connected devices, but the advice to check affected devices before pushing a change is not in the passage.
 -->

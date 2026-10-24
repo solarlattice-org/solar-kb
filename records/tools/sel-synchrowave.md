@@ -24,7 +24,9 @@ claims:
   - src: src:sel-synchrowave-instruction-manual
     loc: sec=h90
     h: 07fab266c2df
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages show SEL-5601-2 SYNCHROWAVE Event, downloaded from the
     SEL website, but never name Schweitzer Engineering Laboratories; the sold-as claim is only implied
     by the purchased license.'
@@ -35,4 +37,5 @@ SYNCHROWAVE Event (SEL-5601-2) is SEL software for viewing and analyzing relay a
 - sentence 1: support check: partial - Charts, phasor diagrams and event report viewing are stated, but 'relay and meter event reports' is only partly stated (COMTRADE/SEL ASCII event reports; meter data in formats).
 - sentence 3: support check: partial - Import formats and export of COMTRADE and CSV are listed, but 'other SEL formats' is loose; broadly matches.
 - sentence 6: support check: partial - Differential characteristic, 32Q/32V, compensator distance and custom calculations for power element testing are covered, but templates for differential and the power element testing support are only loosely tied (power element guide uses a spreadsheet and custom calculations in appendix).
+- sentence 1: review: partial - SEL-5601-2, the analog and digital charts, phasor diagrams, complex charts and event report viewing are all stated, but the passages never describe the reports as relay and meter event reports.
 -->

@@ -15,4 +15,6 @@ A phase rotation tester is a field instrument for checking the order in which th
 - sentence 3: support check: partial - Passages state both brands need no specific rotation and utility may require it or a record; the advice to 'write the result down' is an inference, though reasonable.
 - sentence 4: support check: partial - The passage says improper rotation won't damage and the inverter won't operate until corrected, but it's an unnamed inverter, not tied to 'that inverter' (Solis/Canadian Solar, which don't require rotation).
 - sentence 5: support check: partial - u12 supports the wrong PF and active power from mismatched CT pairing, but 'smart meters and CTs need the same check' is only loosely implied by the Solis guide.
+- sentence 1: review: partial - The passages describe a recommended phase rotation test that confirms phase connection order, but never mention a dedicated tester instrument or call it a field instrument.
+- sentence 4: review: partial - The Yaskawa passage supports 'no damage, but it won't operate until corrected'; 'that inverter' in context refers back to Solis/Canadian Solar, which this passage does not cover.
 -->

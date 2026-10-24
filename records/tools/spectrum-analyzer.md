@@ -14,4 +14,5 @@ A spectrum analyzer, or a software-defined radio (SDR) doing the same job, is a 
 - sentence 1: support check: partial - Passages show spectrum analyzers/SDRs used to view wideband captures, but don't define it as a field instrument showing signal levels across a wide frequency range.
 - sentence 4: support check: partial - Initial verification before investigating the inverter is stated, and visibility on analyzer/SDR is a question, but the passage doesn't say this check confirms whether interference is visible at all.
 - sentence 5: support check: partial - The questions about affected bands and noise type are listed, but the passage doesn't say the instrument readings are used to answer them.
+- sentence 1: review: partial - The passages mention wideband spectrum captures from an SDR or spectrum analyzer, but they never define it as a field instrument that shows signal levels across a wide frequency range.
 -->

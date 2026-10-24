@@ -18,6 +18,9 @@ claims:
     loc: sec=h5
     h: e43b75cbdfa3
   review: drafted
+  review_note: 'review: partial - The terms define the Locus Platform as the websites and API Locus Energy,
+    Inc offers for energy monitoring and asset management, so the note holds, but the passage never names
+    LOCUS Fleet as one of its products.'
 - claim_id: c2
   rel: uses_protocol
   target: proto:https-rest-api
@@ -31,6 +34,8 @@ claims:
     loc: sec=h5
     h: e43b75cbdfa3
   review: drafted
+  review_note: 'review: partial - The HTTPS endpoint prefix, JSON responses and the two-calls-per-second
+    limit are all stated for the Locus API, but no passage ties that API to the LOCUS Fleet product.'
 ---
 The Locus platform is a web and API service from Locus Energy for monitoring PV energy production and managing assets. It is made up of the LocusNOC and SolarNOC website, a client site, the Locus API, and extra features such as Virtual Irradiance. End-users have more limited access, for example through the Client Portal. Fleet reports are covered in the Locus knowledge base. Virtual Irradiance data can be used to evaluate system and fleet performance, either through Locus reports or through the API. The v3 API gives programmatic access to much of the LocusNOC data and returns JSON. The license allows no more than two data calls per second. For incentive reporting, the LGate production meter records generation every 5 minutes. The platform then aggregates this data and submits it each month to programs such as Mass CEC PTS and PJM GATS. Set component-level alerts so you know when a site goes offline. The LGate can only hold about two months of production data in its internal memory. Locus does not warrant the accuracy of platform or Virtual Irradiance data. Check any action based on Virtual Irradiance data independently, and expect gaps in the data when source data is missing.
 

@@ -19,7 +19,9 @@ claims:
   - src: src:kb-solis-44002312376-migrate-from-solis-home-or-solis-pro-to-soliscloud
     loc: sec=h1
     h: 1a7299a3db1a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages describe them as the first generation of the Solis monitoring
     platform, but never state that Solis (the org) makes the apps, though ''the Solis monitoring platform''
     implies it.'

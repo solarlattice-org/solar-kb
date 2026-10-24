@@ -24,7 +24,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-stem-overview-booklet-c-i-9-2
     loc: sec=h7
     h: 8747d55069e6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: uses_protocol
   target: proto:ethernet
@@ -36,7 +38,9 @@ claims:
   - src: src:eq-equip-bess-stem-metering-procurement-guidance
     loc: tbl=3.r9
     h: 5b7bb9e3bfd4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: uses_protocol
   target: proto:tcp-ip
@@ -48,7 +52,9 @@ claims:
   - src: src:eq-equip-bess-stem-metering-procurement-guidance
     loc: tbl=3.r9
     h: 5b7bb9e3bfd4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Stem Athena is Stem's artificial intelligence platform for energy storage, using big data and machine learning to time energy use and cut energy bills. Athena software optimizes storage operation both behind and in front of the meter, across several applications. It is delivered as Athena Apps, including Utility Bill Optimization, Export Optimization and Solar Self-Consumption apps, and which apps are available depends on the market and tariff. Athena can link facilities into virtual power plants that earn demand response revenue. On site, the Athena Power Controller is an industrial PC inside the Stem enclosure, and it talks to the Stem CommLink over TCP-IP/Ethernet with PoE. During Athena Setup, Stem configures and tests the Athena Apps that control the storage system through the Stem Edge Controller, and Stem experts verify performance before permission to operate. Stem certifies all of the storage hardware it supplies to run with Athena in control. Stem says it calibrated the Energy Toolbase simulation to match how Athena performs in the field, and every Athena App comes with a performance guarantee.
 

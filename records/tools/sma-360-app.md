@@ -17,7 +17,9 @@ claims:
   - src: src:sma-kb-registering-for-the-sma-360-app
     loc: sec=h1
     h: d46d793debed
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The SMA 360° App is a mobile app from SMA. Installers use it to commission, register and troubleshoot SMA inverters and related products. Once each component is connected, the app can configure the whole system. SMA recommends doing the system configuration this way. Commissioning runs through the app's commissioning wizard, as described in the procedure Configuring the System with the SMA 360° App. Download the latest version from the Apple App Store or Google Play. Sign in with a Sunny Portal account, or create one through the app if you do not have one. SMA is moving toward one SMA ID for ennexOS Sunny Portal, Sunny Design, the SMA Energy App and the SMA 360° app. Credentials from any of these work in the 360° app. System owners should not use the app themselves. They should contact their installer.
 

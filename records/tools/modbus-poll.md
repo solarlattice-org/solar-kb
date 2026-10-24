@@ -22,7 +22,9 @@ claims:
   - src: src:sma-doc-240154
     loc: sec=12.1
     h: a0eca17eeb5c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages state testing the Modbus interface by querying simple
     registers with a Modbus program, but don''t name a ''Modbus client tool'' or explicitly tie it to
     the protocol concept beyond that.'

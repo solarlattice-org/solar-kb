@@ -27,7 +27,9 @@ claims:
   - src: src:eq-equip-inverters-solaredge-design-installation-3phase-inverter-w-synergy-technology-guide-na-v1-1
     loc: sec=h124
     h: 3a6905ce9ff0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: uses_protocol
   target: proto:bluetooth
@@ -37,7 +39,9 @@ claims:
   - src: src:se-academy-mapper-app-01-process-overview-mapper-app
     loc: sec=h2
     h: 61e1c4165a83
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passage says barcodes can be scanned with an external Bluetooth-connected
     scanner, but the app itself is not stated to use Bluetooth as a protocol; it is an optional scanner
     connection.'

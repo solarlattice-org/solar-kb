@@ -19,7 +19,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-powerscope-stem-powerscope-2
     loc: sec=10
     h: c3dfd89f1707
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Stem PowerScope is Stem's cloud-based energy intelligence software for viewing, understanding and forecasting a site's energy use and costs. It shows past, current and expected future energy use, and customers use it to find costly usage and capture extra savings. The quick start guide covers login, the Dashboard with a live report of today's energy use, Load Explorer, Heatmap, Energy Trend Reports, Real Time views, and Alerts and Notifications. Screens in the guides show demand values, maximum and minimum demand, optimized utility demand and PowerStore charge. Users reach it with a subscription from any web browser, and it always runs the latest version. In Hawaii, a PowerScope Program was offered through a partnership between the Energy Excelerator and the Hawaiian Electric Companies. For help with the software, contact Stem support.
 
