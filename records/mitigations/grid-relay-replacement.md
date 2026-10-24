@@ -16,4 +16,6 @@ Replacing the AC relay assembly is a service procedure for SMA inverters, includ
 <!-- review notes
 - sentence 1: support check: partial - Passages show AC-RLY assembly replacement/removal/installation sections and a spare part set for Sunny Island X and Sunny Tripower Storage X, but don't state it's a service procedure across SMA inverters generally or name dedicated manuals for Sunny Tripower and Sunny Island broadly.
 - sentence 4: support check: partial - Air duct transfer to the new assembly is stated and touchable areas are mentioned, but the instruction to touch only the touchable areas is not explicitly stated (only 'these are the touchable areas').
+- sentence 1: review: partial - The passages show AC-RLY replacement manuals and a spare part set for Sunny Island X and Sunny Tripower Storage X/STP50, but not that this is a service procedure for SMA inverters in general.
+- sentence 4: review: partial - Moving the air duct onto the new assembly is stated, but the transcript only says 'these are the touchable areas' and never tells you to touch the assembly only there.
 -->

@@ -21,4 +21,5 @@ Backup reserve configuration sets the share of battery capacity that is held bac
 - sentence 3: support check: partial - The trade-off and 30% default are stated, but the passage doesn't name Generac, so attributing the default to Generac isn't supported.
 - sentence 4: support check: partial - The considerations and the 2000 Wh / 1660 W = 1.2 hours example are given, but the passage doesn't say to consider how much power the backed-up loads draw, though the 1660 W figure implies it.
 - sentence 5: support check: partial - The 10–100% range with the reserve switch and the grid-charging option are stated, but the passages never name Solis.
+- sentence 4: review: partial - The outage-timing considerations and the 2000 Wh / 1660 W = 1.2 hours example on roughly 10 kWh at 20% are stated, but load power draw is not named as a consideration; it is only implied by the 1660 W…
 -->

@@ -23,4 +23,7 @@ A factory reset returns a communication board, data logger, cluster controller o
 - sentence 4: support check: partial - About 30 s on SMA, over 10 s on Solis-type loggers, and menu/software/Modbus register methods are shown, but the passages do not name Generac PWRmanager or Solis (the 10 s button is unattributed).
 - sentence 6: support check: partial - SMA says to check the router for a new IP and reapply settings, and network reconfiguration is required, but 'reconnect the logger' and verifying communication are only loosely implied.
 - sentence 7: support check: partial - SMA says persistent failure may indicate hardware issues and to contact service, and DLS-W says to contact service for replacement if not broadcasting, but the replacement is conditioned on warranty and the general claim 'reset cannot fix faulty hardware' is only implied.
+- sentence 1: review: partial - The passages cover factory resets of a communication board, a Cluster Controller, an inverter and an Eaton device, but none of them mentions a data logger.
+- sentence 4: review: partial - The 30 s SMA hold, the over-10 s Solis hold and the menu and Modbus register methods are supported, but the Generac manual says to hold for 10 seconds, not more than 10.
+- sentence 7: review: partial - SMA links a failed reset to possible hardware trouble and says to contact service, and Solis offers a replacement only within the 2-year warranty, a condition the sentence leaves out.
 -->

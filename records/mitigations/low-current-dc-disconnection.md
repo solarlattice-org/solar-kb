@@ -13,4 +13,5 @@ This action means opening the inverter DC switch only after the string current h
 - sentence 4: support check: partial - Reverse polarity case (leave disconnected until corrected) and the next-day PV energy reason are stated, and ground fault says do not reinsert strings until cleared, but the passages do not combine them as the statement does; the next-day secondary failure rationale is tied to disconnecting after switch-off, not to the ground fault.
 - sentence 5: support check: partial - The shutdown sequence and the 0.25 A fuse holder rule are stated, but the MPPT limit is 24 A or 125 A depending on model, and passages do not name Yaskawa (only CPS marked in one).
 - sentence 7: support check: partial - The order (AC shutoff, DC switch, then PV combiners) and the never-disconnect-a-combiner rule are stated, but the passages do not say they apply to large central inverters.
+- sentence 7: review: partial - The order (AC shutoff, then DC switch, then combiners) and the rule against disconnecting a combiner during operation are stated, but the passage never says this applies to large central inverters.
 -->

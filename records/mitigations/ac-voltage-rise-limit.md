@@ -24,7 +24,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-external-transformer-app-note
     loc: tbl=7.r2
     h: 4ea6e2b5d5af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c2 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c2
@@ -40,7 +42,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-external-transformer-app-note
     loc: tbl=7.r2
     h: 4ea6e2b5d5af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c3
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c3
@@ -53,7 +57,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-external-transformer-app-note
     loc: tbl=8
     h: 19bec35af480
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c4 (same source; check the conditions)
 - claim_id: c4
@@ -67,7 +73,9 @@ claims:
   - src: src:yaskawa-sgi-500xt-external-transformer-app-note
     loc: tbl=8
     h: 19bec35af480
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c1 (same source; check the conditions); possible conflict with c2
     (same source; check the conditions); possible conflict with c3 (same source; check the conditions)
 ---
@@ -75,4 +83,5 @@ This action means sizing the AC conductors and laying out the branch circuits so
 
 <!-- review notes
 - sentence 7: support check: partial - Standard guidelines possibly being insufficient for fully populated branches is stated, but the passages do not say wiring changes can't fix grid-resistance overvoltage; they only name grid resistance as a separate cause.
+- sentence 7: review: partial - The passages say standard guidelines may not be enough for fully populated branches, but none says wiring changes cannot fix overvoltage caused by distribution-grid resistance.
 -->

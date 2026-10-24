@@ -18,4 +18,5 @@ Close every unused or not-yet-mated DC connector or input with the sealing plug,
 <!-- review notes
 - sentence 6: support check: partial - u9 says provided seals and a separately purchasable kit, but spare-part availability is shown only for optimizer seals and as part numbers, not for all equipment.
 - sentence 8: support check: partial - u16 says the cover connector is not watertight and the installer must add waterproofing, but only when inverter replacement is not immediately available; the general claim that not every cover seals is implied.
+- sentence 1: review: partial - The passages back sealing unused inverter inputs, optimizer inputs and cable connectors with the supplied plugs or caps, but none of the cited passages covers the 'not-yet-mated' case.
 -->

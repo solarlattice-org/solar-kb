@@ -17,4 +17,5 @@ Battery SOC recalibration corrects the estimated state of charge so that it matc
 <!-- review notes
 - sentence 6: support check: partial - The causes are stated (wrong settings, aging, poor maintenance, pole connection problems, installation errors), but no passage says that recalibration does not fix these causes.
 - sentence 7: support check: partial - The passages mention checking the battery capacity, an equalization charge with observation, and contacting the Service Line or the battery manufacturer, but they give no order, and the manufacturer step is only 'in some cases', not 'if the problem continues'.
+- sentence 7: review: partial - Checking capacity, running an equalization charge and contacting the manufacturer are all in the passages, but no order is given, and the manufacturer step applies 'in some cases', not 'if the problem continues'.
 -->

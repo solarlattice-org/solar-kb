@@ -19,4 +19,5 @@ Wireless range extension improves a weak radio link between the inverter and the
 - sentence 2: support check: partial - Passages cover not identifying network, not connecting, and often-displayed messages with router checks, but the 'connection-loss' messages and the ordering after checks are only loosely stated; the repeater is recommended for frequent messages, while not-found/not-connect cases recommend moving the router.
 - sentence 3: support check: partial - Moving the router close, considering materials, and the antenna tip dead zone are stated, but 'simplest step' is not stated and 'as close as you can' is merged with the materials guidance.
 - sentence 5: support check: partial - Antenna Extension Kit installed in the inverter, retrofittable, expands radio range are stated, but 'some SMA inverters' is not specifically stated, though implied by the product-specific accessory.
+- sentence 1: review: partial - The passages back improving a weak inverter-to-router signal so the inverter can find and connect to the network, but they do not mention staying connected or access points.
 -->

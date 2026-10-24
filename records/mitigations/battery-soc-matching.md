@@ -13,4 +13,5 @@ Before you replace a battery module or add new modules, bring the existing batte
 <!-- review notes
 - sentence 6: support check: partial - The module balancing article supports uneven charge, the averaged SOC display and charging blocked by a full module. It does not say that matching SOC at replacement is important for this reason.
 - sentence 7: support check: partial - The passages say firmware 1.1.3x.B eliminates manual module balancing and that balancing is automatic. They do not say manual SOC matching is still done on module replacement or extension; the u1 article only describes it as the manufacturer advice.
+- sentence 7: review: partial - Automatic balancing in newer SMA Home Storage firmware is supported, but no passage says manual SOC matching is still done on replacement or extension despite that balancing; the manual-charging article only gives it as manufacturer advice.
 -->

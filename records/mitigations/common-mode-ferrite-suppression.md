@@ -19,4 +19,6 @@ Common-mode ferrite suppression means fitting ferrite cores or common mode choke
 - sentence 4: support check: partial - The measures are listed (filters as customer-tested, baluns, grounding, routing as checks), but not that they're often used at the same time or that routing 'keeps apart' as an applied measure.
 - sentence 5: support check: partial - Battery operation is listed as a measure to eliminate conducted interference via the radio power supply; it is not said to diagnose whether interference enters that way.
 - sentence 7: support check: partial - Passages show ferrite beads/rings listed with positions in parts lists, but nothing about spare-part kits or refitting them on replacement.
+- sentence 4: review: partial - EMC filters, balun checks, grounding/bonding and cable routing are all listed, but nothing says they are often used at the same time.
+- sentence 7: review: partial - The parts tables do list ferrite beads and rings as separate positioned items, but nothing mentions spare-part kits or says to refit them when replacing an assembly.
 -->
