@@ -61,7 +61,9 @@ claims:
   - src: src:iea-pvps-t13-01-2014
     loc: sec=3
     h: ac0f157068c8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: concept:accelerated-life-testing
@@ -72,7 +74,9 @@ claims:
   - src: src:iea-pvps-t13-16-2021
     loc: sec=h22
     h: acd307545bb5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: metric:levelized-cost-of-energy
@@ -122,4 +126,5 @@ PV module end of life is the point where a module is no longer considered fit fo
 <!-- review notes
 - sentence 1: support check: partial - Passages say no generally applicable definition exists and that EoL is context-dependent, but they don't define it as 'no longer fit for use'.
 - sentence 8: support check: partial - The 84-90% by weight recycling figure is stated, but decommissioning plans are said to include financial mechanisms for recycling or disposal, not explicitly money set aside.
+- sentence 1: review: partial - The passages say no definition of end of life applies in every situation, but they never define it as the point where a module is 'no longer considered fit for use'.
 -->

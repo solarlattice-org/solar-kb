@@ -63,7 +63,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nrel-best-practices-solar
     loc: tbl=2.r23
     h: 0b2caa0ce27e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Forms show virtual net metering for multi-tenant, multi-meter
     and affordable housing under NEM and Rule 21, but the passages don''t define it as a net metering
     variant explicitly; mostly implied.'

@@ -74,7 +74,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h6
     h: d98419e6bd80
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: related_to
   target: mit:validated-module-files
@@ -85,7 +87,9 @@ claims:
   - src: src:pv-root-cause-flawed-pan-file-losses
     loc: sec=h2
     h: 10747fe38d64
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: mit:model-input-documentation

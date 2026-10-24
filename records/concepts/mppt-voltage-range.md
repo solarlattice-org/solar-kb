@@ -40,7 +40,9 @@ claims:
   - src: src:eq-equip-inverters-huawei-huawei-sun2000-45ktl-us-hv-manual
     loc: tbl=41
     h: 5a371028eb38
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:maximum-power-point
@@ -58,4 +60,6 @@ The MPPT voltage range is the band of DC input voltage in which an inverter's ma
 <!-- review notes
 - sentence 1: support check: partial - The passages show MPPT voltage range values (per MPPT and per model) but never define it as the band in which the tracker works.
 - sentence 4: support check: partial - The Sungrow gives the full-power range at 40 °C, but the passage does not state that the range depends on temperature in general.
+- sentence 1: review: partial - The datasheets show MPPT voltage range values given per MPPT and for the model, but never define the range as the band in which the tracker works.
+- sentence 4: review: partial - The Sungrow table gives the full-power MPP voltage range at 40 °C, but the general claim that the range depends on temperature is only implied, not stated.
 -->

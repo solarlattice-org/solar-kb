@@ -69,7 +69,9 @@ claims:
   - src: src:se-academy-home-hub-technical-essentials-na-technical-02-home-hub-overview
     loc: sec=h6
     h: c778f65a11eb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages say improper bonding can electrify equipment chassis
     and metal piping, but they never mention touch voltage on an enclosure as a symptom by name; the relation
     is implied.'
@@ -80,4 +82,5 @@ A neutral-ground bond is the connection between the neutral conductor and the gr
 - sentence 1: support check: partial - The 'only at main service panel' part is stated, but the passages do not define a neutral-ground bond as the neutral-to-grounding-system connection (though it is implied).
 - sentence 6: support check: partial - Passages warn against a neutral-to-ground jumper when the neutral is connected, with damage and warranty voiding, but do not say the products are string inverters.
 - sentence 7: support check: partial - Passages say to follow jurisdictional rules and consult the AHJ or master electrician with questions, but not 'always' before every addition or removal.
+- sentence 7: review: partial - The passages say to follow jurisdictional rules and code and to consult the AHJ or a master electrician with questions, but not to check every time before adding or removing a bond.
 -->

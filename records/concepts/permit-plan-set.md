@@ -52,7 +52,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nabcep-pv-resource-guide-1
     loc: sec=2.10
     h: 99e939b1a312
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A permit plan set is the package of drawings and documents an installer submits so the local jurisdiction can approve a PV system before it is built. A good package has a title page, the forms the jurisdiction requires, a site plan with the array layout, access pathways and setbacks, and a detailed electrical diagram. The electrical diagram must show how the array is configured, where the overcurrent protection and disconnects are and how they are rated, and the conduit and wire sizes, types and ratings, plus the content of the required labels. The package also includes mounting structure details and spec sheets for major equipment such as modules, inverters and combiner boxes. More complex projects need more detailed plan sets, which can include structural drawings and fuller electrical drawings. Simple residential systems can use fill-in templates for string inverter, microinverter and AC module designs. The authority having jurisdiction reviews the drawings and then inspects the installation during construction to check that it matches the permit set. Information that is relevant and well organized makes plan review faster, and talking with the building department early helps you learn what it expects the package to contain.
 

@@ -44,7 +44,9 @@ claims:
   - src: src:std-manuals-jersey-power-and-light-customer-interconnection-guide-three-phase
     loc: sec=2.0
     h: d26db103fe48
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:local-electric-power-system
@@ -55,7 +57,9 @@ claims:
   - src: src:std-manuals-jersey-power-and-light-customer-interconnection-guide-three-phase
     loc: sec=2.0
     h: d26db103fe48
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: concept:reference-point-of-applicability
@@ -91,7 +95,9 @@ claims:
     h: 51d38b6fdf9b
   review: drafted
   review_note: 'support check: partial - Passages show SCR values at the POI for inverter configurations,
-    but do not clearly state weak-grid limits; the tables are fragmentary.'
+    but do not clearly state weak-grid limits; the tables are fragmentary.; review: partial - The table
+    rows tie SCR values at the POI to inverter configurations, but no quoted passage says these are configuration
+    limits or that they apply to weak grids.'
 - claim_id: c6
   rel: related_to
   target: comp:energy-meter
@@ -100,7 +106,9 @@ claims:
   - src: src:tesla-mp-utility-controls-and-communications-manual-v1-7
     loc: sec=h179
     h: a205806a98f4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: concept:islanding

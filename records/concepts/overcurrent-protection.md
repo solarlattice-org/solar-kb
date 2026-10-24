@@ -27,7 +27,9 @@ claims:
   - src: src:ref-reference-short-circuit-calcs-bussman-sht-ckt-calcs-book
     loc: sec=h6
     h: 0ace453bcb69
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:busbar-rule
@@ -49,7 +51,9 @@ claims:
   - src: src:ref-standards-nec-2014-solar-pv-systems-2014nec
     loc: sec=h49
     h: 0f64065acf47
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: concept:continuous-load
@@ -103,7 +107,9 @@ claims:
   - src: src:std-standards-nec-2017-nec-2017-690-solar
     loc: sec=h8
     h: f17153ed396e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: req:nfpa-70-2017-690-9-c
@@ -117,7 +123,9 @@ claims:
   - src: src:std-standards-nec-2017-nec-2017-690-solar
     loc: sec=h8
     h: f17153ed396e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: comp:string-fuse

@@ -16,7 +16,9 @@ claims:
   - src: src:se-academy-solaredge-home-battery-certification-na-technical-01-brush-up-on-solar-batteries-25-minutes
     loc: sec=h17
     h: a2f18368ef45
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:lithium-iron-phosphate
@@ -36,4 +38,5 @@ NMC stands for nickel manganese cobalt, a lithium battery chemistry. Some equipm
 - sentence 3: support check: partial - NMC and LFP are listed together as lithium battery chemical makeups, but the passage doesn't say 'main' or 'used in solar storage'.
 - sentence 4: support check: partial - The abbreviation lists give NCA, LMO and NMC, but only u17 shows NMC next to NCA, and nothing says they are lithium chemistries or that storage safety reports list LMO with them.
 - sentence 5: support check: partial - The passage gives NMC as 'Net maximum capacity' (reference 5.1), but doesn't mention IEEE or say it isn't the battery chemistry.
+- sentence 4: review: partial - The DNV report's abbreviation tables list NCA, NMC and LMO, but they do not call them lithium chemistries or show that NMC is listed together with LMO.
 -->

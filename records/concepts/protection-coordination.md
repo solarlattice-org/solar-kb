@@ -87,4 +87,6 @@ Protection coordination, also called selectivity or selective coordination, mean
 - sentence 1: support check: partial - Passages discuss coordination and fault clearing sequence, but none state the definition that the closest device clears the fault while upstream devices wait, nor the synonyms selectivity.
 - sentence 4: support check: partial - The 0.4 s and 0.3 s coordination times and error sources are supported, but the 'relaying seminar' attribution is not in the passages.
 - sentence 7: support check: partial - High PV changing fault current and requiring coordination review is supported, but the utility reviewing before approving interconnection is not explicitly stated.
+- sentence 1: review: partial - The passages say downstream devices clear first, with the breaker opening before the primary fuse and upstream devices operating only if downstream ones fail, and NETA uses 'selective coordination', but the bare synonym 'selectivity' and the general definition are not…
+- sentence 7: review: partial - NREL says high PV penetration can change fault current levels and require a review of protection coordination, but it does not say the review happens before the utility approves an interconnection.
 -->

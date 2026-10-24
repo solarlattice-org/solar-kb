@@ -51,7 +51,9 @@ claims:
   - src: src:std-standards-ieee-ieee762-ieee-standard-definitions
     loc: sec=5.8
     h: bc5c09b3cf66
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:standard-test-conditions

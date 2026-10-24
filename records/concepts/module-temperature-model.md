@@ -21,7 +21,9 @@ claims:
   - src: src:iea-pvps-t13-ir-el-imaging-2018
     loc: sec=2.2.2
     h: d5c12dd63efd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:ptc-rating
@@ -30,7 +32,9 @@ claims:
   - src: src:man-nrel-sandia-photovoltaic-array-performance-model-sand2004-3535-2004
     loc: sec=h19
     h: 0afd83588cac
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: metric:temperature-corrected-performance-ratio

@@ -59,6 +59,8 @@ claims:
   - src: src:solarpower-europe-om-guidelines
     loc: sec=11.1
     h: f9d7ab6b793b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 An O&M contract is an agreement between the asset owner and an O&M service provider to manage, operate and maintain a solar PV power plant. Together with the EPC contract it is a key project finance document, and it should limit financial risk by allocating operational risk appropriately. The scope usually covers the whole plant, including modules, mounting or trackers, inverters, cabling, combiner boxes, monitoring and SCADA, the substation, security and vegetation control. Most contracts set a fixed fee for operations, preventive maintenance and an agreed response time. Corrective maintenance and services outside the scope are charged separately, for example per service action, at hourly rates or as time and materials. Best practice is a fixed fee plus escalation, and the basic fee is often priced per kWp installed. Performance-based contracts are tied to KPIs such as availability, energy yield or performance ratio. Each KPI must be defined in enough detail that all parties calculate the same value. Current guidance prefers availability guarantees and response time price adjustments over PR guarantees. The fee is reduced when the provider misses its agreed response times to plant alarms. The contract should state its effective date, term, renewal options and termination rights. It should also make sure the maintenance it requires keeps the component warranties valid.

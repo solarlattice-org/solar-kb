@@ -69,4 +69,5 @@ Modbus addressing is how a master picks out one device on a shared Modbus link, 
 <!-- review notes
 - sentence 3: support check: partial - Master has no address and slave addresses must be unique are stated; installers programming unique addresses is only implied by a heading, and the causal 'that is why' is not stated.
 - sentence 6: support check: partial - Range 0 to 0xFFFF with 65536 addresses is stated for registers, but 'separate layer' and 'within a device' are not explicitly stated.
+- sentence 1: review: partial - The passages say slaves have unique addresses on the bus and that the unit ID is a superordinate addressing type, but they never say the slave address and the unit ID are the same thing.
 -->

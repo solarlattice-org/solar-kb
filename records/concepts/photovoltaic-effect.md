@@ -23,7 +23,9 @@ claims:
   - src: src:se-academy-solaredge-gtec-solar-pv-components-08-how-do-solar-cells-work-video
     loc: sec=h1
     h: e6551044cc86
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:crystalline-silicon
@@ -33,7 +35,9 @@ claims:
   - src: src:se-academy-solaredge-gtec-solar-pv-components-08-how-do-solar-cells-work-video
     loc: sec=h1
     h: e6551044cc86
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: concept:open-circuit-voltage

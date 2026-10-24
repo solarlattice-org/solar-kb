@@ -150,7 +150,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says ''almost 10%'' relative degradation from the front,
     not ''up to 10%''; conditions otherwise match.; possible conflict with c13 (same source; check the
-    conditions)'
+    conditions); review: partial - The passage gives ''almost 10%'' relative degradation from one combined-accelerated
+    stress test at -1200 V, flash tested from the front, so a 10% ceiling fits that result, but calling
+    it a ''typical'' power loss for PERC cells goes beyond a…'
 - claim_id: c13
   attr: typical_power_loss
   value:

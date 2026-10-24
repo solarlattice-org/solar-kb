@@ -38,7 +38,9 @@ claims:
   - src: src:std-standards-nfpa-855-20-pdf
     loc: sec=B.5.3
     h: fc042d7c5225
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: hazard:toxic-smoke

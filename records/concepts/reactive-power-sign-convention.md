@@ -72,7 +72,9 @@ claims:
   - src: src:tesla-mp-utility-controls-and-communications-manual-v1-7
     loc: sec=2.3.10
     h: 42a5bb2bf830
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: std:ieee-1547-2018
@@ -82,7 +84,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=h30
     h: c47e00cd11af
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: org:iec
@@ -118,7 +122,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-nsm-gg10-ti-en-16
     loc: sec=3.2
     h: a37a1edffb15
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: related_to
   target: prod:sel-735

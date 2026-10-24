@@ -63,7 +63,9 @@ claims:
   - src: src:man-alsoenergy-pv-model-powertrack-additional-info-on-pv-system-model-processing
     loc: sec=h9
     h: 51a013571760
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:irradiance-transposition

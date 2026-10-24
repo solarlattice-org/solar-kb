@@ -44,7 +44,9 @@ claims:
   - src: src:eq-equip-meters-ge-kv2c-meters-geh-7285
     loc: sec=h98
     h: 8a0d3daeea45
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: explains
   target: concept:voltage-rise

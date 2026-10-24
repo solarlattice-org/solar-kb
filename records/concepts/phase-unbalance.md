@@ -40,7 +40,9 @@ claims:
   - src: src:eq-equip-meters-accuenergy-acuvim-ii-docs-acuvim-ii-meter-acuvim-ii-power-meter-user-manual-1040e130
     loc: sec=h115
     h: 9988fc3d8734
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Zero-sequence ratio is mentioned within the unbalance factor,
     though not as a distinct zero-sequence imbalance measurement.'
 - claim_id: c4
@@ -87,7 +89,9 @@ claims:
   - src: src:std-utilities-nat-grid-ma-ny-shared-constr-esb756
     loc: sec=h200
     h: 718fdbc3b9cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: std:eversource-ma-requirements-for-electric-service
@@ -112,7 +116,9 @@ claims:
   - src: src:sungrow-sungrow-sg3425ud-mv-sg3600ud-mv-user-manual-ver113-202502
     loc: tbl=50.r6
     h: cb0ca7cf1f72
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: related_to
   target: meas:grid-voltage-imbalance-fault

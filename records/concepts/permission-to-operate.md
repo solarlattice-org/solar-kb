@@ -16,7 +16,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-sgip-documents-sgip-partner
     loc: tbl=6.r3
     h: 78ea594dc6f0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - The passage shows a PTO letter emailed from utility interconnection
     as proof of authorization to interconnect, but does not name the interconnection process concept explicitly
     beyond this.'
@@ -28,7 +30,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-sgip-documents-sgip-partner
     loc: tbl=6.r3
     h: 78ea594dc6f0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: func:export-limitation
@@ -59,7 +63,10 @@ claims:
     h: a012a9f52942
   review: drafted
   review_note: 'support check: partial - The two pre-PTO states are described, and the heading on activating
-    post-PTO appears, but the activation steps are not given in the passages.'
+    post-PTO appears, but the activation steps are not given in the passages.; review: partial - Both
+    Generac passages describe the two allowed states while awaiting PTO, but the note''s claim that they
+    explain how to activate the system after PTO rests only on a section heading and a table-of-contents
+    line; no activation steps are quoted.'
 - claim_id: c5
   rel: related_to
   target: role:area-eps-operator
@@ -84,7 +91,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-nsm-gg10-ti-en-16
     loc: tbl=19.r8
     h: 565db8fcf0bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: proto:sunspec-rapid-shutdown-signal

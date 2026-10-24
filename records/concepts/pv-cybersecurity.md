@@ -59,7 +59,9 @@ claims:
   - src: src:sma-doc-259761
     loc: sec=h529
     h: 39f05a575c95
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: mit:firmware-update
@@ -83,7 +85,9 @@ claims:
   - src: src:trn-oandm-spe-o-and-m-best-practice-guidelines-v-5-0-a07c44238b
     loc: sec=9.9
     h: 41a24fc00085
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: role:administrator

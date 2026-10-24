@@ -64,7 +64,9 @@ claims:
   - src: src:sma-doc-240154
     loc: sec=h201
     h: 41daf4831d8d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: concept:self-consumption
@@ -95,7 +97,9 @@ claims:
   - src: src:tesla-mp-utility-controls-and-communications-manual-v1-7
     loc: sec=2.3.4
     h: 3b39d623a8e7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: stressor:reactive-power-demand
@@ -168,4 +172,5 @@ Open-loop control sends power setpoints to the inverters without any feedback of
 <!-- review notes
 - sentence 1: support check: partial - Definitions of feedback vs no feedback are stated, but 'corrects the commands' is from Tesla, not the SMA article cited, and 'sends setpoints to inverters' is not stated.
 - sentence 2: support check: partial - Meter feedback and adjustment added to command are stated, but an explicit comparison against the total command is only implied.
+- sentence 1: review: partial - The SMA passage defines open-loop as without feedback and closed-loop as with feedback of the values measured at the point of interconnection, but it does not say that setpoints are sent to inverters or that commands are corrected.
 -->

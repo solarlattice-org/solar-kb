@@ -80,4 +80,5 @@ No-load losses are the power a device draws just to stay energized, even when it
 
 <!-- review notes
 - sentence 4: support check: partial - Sum of no-load and load losses and the 510–1100 W values are given, but 'depending on loss class' is only implied by the A0–E0 labels; the table doesn't explicitly say loss class.
+- sentence 1: review: partial - The passages define no-load loss only for transformers (the power to keep the core energized while not supplying load), so widening it to any device goes beyond them.
 -->

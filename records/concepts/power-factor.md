@@ -59,7 +59,9 @@ claims:
   - src: src:book-nrel-pv-integration-handbook-for-dist-n-engineers-63114
     loc: sec=4.2.1
     h: 3eed03bbd339
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: func:watt-power-factor
@@ -83,11 +85,14 @@ claims:
   - src: src:book-nrel-pv-integration-handbook-for-dist-n-engineers-63114
     loc: sec=4.2.1
     h: 3eed03bbd339
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Power factor is the cosine of the angle by which phase current leads or lags phase voltage in an AC circuit. It equals 1.0 when power flows into a purely resistive load. It can also be written as active power divided by apparent power, that is kW over kVA. Meters and protective relays report power factor for each phase and for all three phases together, with a flag showing whether it is leading or lagging. Inverter datasheets such as the Fronius Symo list an adjustable power factor range from 0 to 1, inductive or capacitive. Changing an inverter's power factor setpoint changes its reactive power output. Running PV at an absorbing power factor helps hold down the voltage rise that comes with more real power export. Other control options are power factor scheduling and the PF(P) curve mode, where the power factor changes as the active power changes. If the operating range is limited to 0.85 inductive through 0.85 capacitive, the inverter's MVA rating has to be based on the plant's maximum MW output at 0.85 power factor.
 
 <!-- review notes
 - sentence 3: support check: partial - The passages show per-phase and three-phase power factor with leading/lagging, and a lead/lag indication point, but they never say meters and protective relays report it, and a flag is only partly shown.
 - sentence 4: support check: partial - The passages show 0-1 ind./cap., but they don't name the Fronius Symo or call the range adjustable (the footnote 3 is not given).
+- sentence 4: review: partial - The Fronius Symo manual rows give '0-1 ind./cap.', but the passages do not say the range is adjustable (the footnote 3 is not quoted) and the source is an operating manual, not a datasheet.
 -->

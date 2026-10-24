@@ -59,7 +59,9 @@ claims:
   - src: src:eq-equip-inverters-sma-inverter-firmware-fw4-01-05-r-stpxx-us-41-info-nsm-gg10-ti-en-16
     loc: tbl=8
     h: 18c2158c983f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Passages show the P/Q diagram is in the generator reference-arrow
     system, but do not attribute it to SMA specifically or discuss sign convention explicitly.'
 - claim_id: c5
@@ -73,7 +75,9 @@ claims:
   - src: src:abb-fimer-pvm-75-155-tl-us-user-product-manual-reva
     loc: sec=3.7.5
     h: baec1cd17f8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: concept:power-factor
@@ -82,7 +86,9 @@ claims:
   - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
     loc: sec=3.8
     h: e03e98eb97db
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: prod:abb-pvs-166-175-tl-us
@@ -97,4 +103,5 @@ A P-Q capability diagram plots an inverter's active power against its reactive p
 
 <!-- review notes
 - sentence 1: support check: partial - Passages state maximum P-Q capability under specified operating conditions with P and Q axes, but the explicit definition of plotting P against Q as an operating area is only implied.
+- sentence 4: review: partial - The passage has PVS-175 curves labelled up to 40°C and up to 30°C and shows cosphi lines, but it never says the temperature is ambient, and the garbled labels do not clearly show the same model has both curves.
 -->

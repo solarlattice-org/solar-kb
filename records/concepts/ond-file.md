@@ -57,7 +57,9 @@ claims:
   - src: src:chint-using-cps-inverters-with-pvsyst-2024
     loc: sec=h3
     h: 7daad258c631
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 An OND file is the inverter definition file that PVsyst uses when it simulates a PV project. Project financiers want the OND file used as published, with no edits, so project-specific changes are made in PVsyst instead. A manufacturer may publish several OND files for one base model to cover its variants, such as different kW and kVA ratings or string input counts. Picking the file that matches the installed configuration matters. The file name can include the datasheet version, which helps with configuration management. If the interconnection requires a fixed power factor and the agreement allows kVA overhead, simulate with the model whose apparent power is higher than its active power. The power factor and any active power limits for the simulation are then set with the PVsyst Energy Management function, not by editing the OND file.
 
