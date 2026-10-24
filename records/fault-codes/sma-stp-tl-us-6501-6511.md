@@ -76,4 +76,12 @@ claims:
     loc: tbl=16.r5
     h: cea4d1332e3a
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=16.r5
+    h: cea4d1332e3a
+  review: drafted
 ---

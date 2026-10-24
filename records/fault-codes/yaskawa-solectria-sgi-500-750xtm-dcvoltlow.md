@@ -67,4 +67,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for more DC power implies automatic resumption, but not
     explicitly stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=31.r6
+    h: 1e507912a458
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

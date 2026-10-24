@@ -143,4 +143,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator disconnects, checks DC voltage and reconnects, which
     suggests manual intervention, but no explicit reset or clearing is stated.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.26
+    h: 2acf54ed35f8
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h548
+    h: 41676f7fb1bd
+  review: drafted
 ---

@@ -95,4 +95,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - It is in the Table 8.1 Fault messages, but the passage does not
     state the device behavior (stops or needs…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-25-40ktl-gs-fl
+  cite:
+  - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
+    loc: tbl=8.r1
+    h: 9305ab247836
+  review: drafted
 ---

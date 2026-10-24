@@ -89,4 +89,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Replace SPD/contact service implies service required, but not
     explicitly stated for this row.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-50-60ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=2.r4
+    h: f5dbb90220ad
+  review: drafted
 ---

@@ -76,4 +76,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then monitor frequency is listed, but clearing by manual
     reset is not stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=14.r4
+    h: a0c22a49aae0
+  review: drafted
 ---

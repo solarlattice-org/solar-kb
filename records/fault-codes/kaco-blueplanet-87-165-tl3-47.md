@@ -82,4 +82,12 @@ claims:
     loc: tbl=74.r3
     h: 597610d0fbde
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=74.r3
+    h: 597610d0fbde
+  review: drafted
 ---

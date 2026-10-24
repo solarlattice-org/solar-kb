@@ -179,4 +179,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages give no statement that production stops or the inverter
     trips for GFCIErr; only a protection type and troubleshooting…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-350ktl
+  cite:
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=35.r4
+    h: 2747c5d1bd14
+  review: drafted
 ---

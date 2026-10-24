@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'review: partial - The passages give GFCIErr the Protection type and string-isolation troubleshooting
     steps, but none of them says the inverter trips or that production…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-100-125ktl
+  cite:
+  - src: src:chint-cps-sch100-125ktl-do-us-600-480-user-manual-rev-1-9
+    loc: tbl=36.r9
+    h: 146db02bba62
+  review: drafted
 ---

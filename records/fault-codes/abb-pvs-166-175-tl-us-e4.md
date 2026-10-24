@@ -180,4 +180,12 @@ claims:
     loc: tbl=37.r4
     h: e32f501b3271
   review: drafted
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=52.r9
+    h: 1a919ff20390
+  review: drafted
 ---

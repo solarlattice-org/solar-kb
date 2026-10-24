@@ -80,4 +80,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: 2026-10-23
+- claim_id: c7
+  rel: applies_to
+  target: prod:huawei-sun2000-100ktl-ush0
+  cite:
+  - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
+    loc: tbl=54.r4
+    h: 82f3b5a828cf
+  review: drafted
 ---

@@ -89,4 +89,12 @@ claims:
     loc: sec=h336
     h: 97398f676660
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=18.r2
+    h: 11b040a18040
+  review: drafted
 ---

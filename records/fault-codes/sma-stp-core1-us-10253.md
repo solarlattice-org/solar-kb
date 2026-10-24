@@ -99,4 +99,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - It is a status change notification and the corrective action
     applies only for 10 Mbit, but informational is not stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r1
+    h: 5fc6799b7f4c
+  review: drafted
 ---

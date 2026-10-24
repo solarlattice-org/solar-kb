@@ -70,4 +70,12 @@ claims:
     h: d4b37f841572
   review: drafted
   review_note: 'support check: partial - Steps are listed, but manual reset clearing is not explicit.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=16.r7
+    h: d4b37f841572
+  review: drafted
 ---

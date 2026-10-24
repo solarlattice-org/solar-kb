@@ -136,4 +136,12 @@ claims:
     loc: sec=h537
     h: 2b783c31e6c7
   review: drafted
+- claim_id: c11
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-kb-event-6438-with-shp-xx-20-peak3
+    loc: sec=h1
+    h: 85870a1edee0
+  review: drafted
 ---

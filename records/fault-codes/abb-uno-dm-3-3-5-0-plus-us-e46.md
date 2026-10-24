@@ -135,4 +135,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reactivating the system after correcting strings and contacting
     assistance are stated, but manual-reset classification is only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=41.r10
+    h: cfabca3d10ea
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=56.r2
+    h: 7071c88636b1
+  review: drafted
 ---

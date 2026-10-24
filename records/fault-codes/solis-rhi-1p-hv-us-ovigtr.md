@@ -90,4 +90,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart and repair/replace are stated, but manual reset clearing
     is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-rhi-1p-hv-us
+  cite:
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=10.r6
+    h: 70cc8eb6b664
+  review: drafted
 ---

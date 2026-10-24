@@ -24,4 +24,12 @@ claims:
     loc: sec=h268
     h: cd6d3ad1e73a
   review: drafted
+- claim_id: c2
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h268
+    h: cd6d3ad1e73a
+  review: drafted
 ---

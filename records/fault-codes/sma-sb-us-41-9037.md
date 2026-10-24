@@ -82,4 +82,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say the PV generator was not connected, but do not state
     the device trips or stops production.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.67
+    h: bffcb96841f0
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h438
+    h: 09568097bfe0
+  review: drafted
 ---

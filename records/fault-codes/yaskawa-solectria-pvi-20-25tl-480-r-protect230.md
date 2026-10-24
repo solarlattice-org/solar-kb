@@ -87,4 +87,15 @@ claims:
     h: 28f6dfb6f638
   review: drafted
   review_note: 'support check: partial - Power-cycle then replace stated; manual-reset clearing only implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-20-25tl-480-r
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=37.r6
+    h: 881719b38210
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=37.r7
+    h: 28f6dfb6f638
+  review: drafted
 ---

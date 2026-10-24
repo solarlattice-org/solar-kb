@@ -54,4 +54,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Service by an authorized provider is stated, but contacting the
     manufacturer is not.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=32.r3
+    h: 694c76d00b47
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

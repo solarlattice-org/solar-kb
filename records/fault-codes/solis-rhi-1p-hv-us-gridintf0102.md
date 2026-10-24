@@ -103,4 +103,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart is the first step, but the passages do not say it clears
     by manual reset.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-rhi-1p-hv-us
+  cite:
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r7
+    h: 08b308fe3d39
+  review: drafted
 ---

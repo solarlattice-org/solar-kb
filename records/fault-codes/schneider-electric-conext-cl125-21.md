@@ -67,4 +67,15 @@ claims:
     loc: tbl=29.r8
     h: 54a09f44ce42
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=50.r3
+    h: 7ee05476d019
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=29.r8
+    h: 54a09f44ce42
+  review: drafted
 ---

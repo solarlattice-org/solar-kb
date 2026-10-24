@@ -73,4 +73,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Waiting for higher irradiation implies it resolves once conditions
     are met, but auto-reset is not explicitly stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=16.r2
+    h: 751ce4fac423
+  review: drafted
 ---

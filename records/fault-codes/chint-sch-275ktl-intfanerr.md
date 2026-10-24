@@ -158,4 +158,12 @@ claims:
     loc: tbl=24.r7
     h: 49943c6ea785
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:chint-sch-275ktl
+  cite:
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=24.r7
+    h: 49943c6ea785
+  review: drafted
 ---

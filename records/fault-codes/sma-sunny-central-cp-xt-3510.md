@@ -48,4 +48,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Check PV array for ground faults implies localization but not
     explicitly.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=35.r5
+    h: 2010696eba68
+  review: drafted
 ---

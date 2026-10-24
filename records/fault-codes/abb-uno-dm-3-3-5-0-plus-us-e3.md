@@ -143,4 +143,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is listed as a step and then contact assistance,
     but the passages do not say that a…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=38.r9
+    h: 7a8709e38c19
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=52.r10
+    h: 053483b1416e
+  review: drafted
 ---

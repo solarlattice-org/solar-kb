@@ -46,4 +46,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - F314 ''External voltage failure'' supports grid loss loosely,
     but the note about the source being utility grid or generator is…'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=144.r5
+    h: a0e4b36670f0
+  review: drafted
 ---

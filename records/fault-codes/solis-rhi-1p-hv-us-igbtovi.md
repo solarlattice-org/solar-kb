@@ -130,4 +130,12 @@ claims:
     loc: tbl=18.r2
     h: 52a8701fe4ed
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-rhi-1p-hv-us
+  cite:
+  - src: src:solis-solis-manual-rhi-1p-5-10-k-hv-usa-v1-1
+    loc: tbl=9.r8
+    h: 68109c9bccc4
+  review: drafted
 ---

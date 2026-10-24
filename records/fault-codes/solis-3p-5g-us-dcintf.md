@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then isolate string then replacement sequence is stated,
     but nothing says the fault clears by manual reset.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:solis-3p-5g-us
+  cite:
+  - src: src:solis-solis-manual-3p-125-255-k-5g-usa-v1-9-20230620
+    loc: tbl=14.r15
+    h: eae16f7d5f0f
+  review: drafted
 ---

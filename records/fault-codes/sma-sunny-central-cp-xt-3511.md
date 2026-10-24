@@ -49,4 +49,12 @@ claims:
     h: 99731eb66266
   review: drafted
   review_note: 'support check: partial - Implied by check for ground faults, not stated as a method.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=35.r6
+    h: 99731eb66266
+  review: drafted
 ---

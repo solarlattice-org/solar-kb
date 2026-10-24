@@ -58,4 +58,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row says grid voltage may not be present and the inverter
     waits. It doesn''t explicitly say there is no…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=33.r6
+    h: b099fdff73ea
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

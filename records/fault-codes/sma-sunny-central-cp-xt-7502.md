@@ -56,4 +56,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cleaning the fans is stated, but ventilation blockage clearing
     is only loosely implied.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=38.r7
+    h: 1bc32dcab511
+  review: drafted
 ---

@@ -217,4 +217,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c11
+  rel: applies_to
+  target: prod:enphase-iq7
+  cite:
+  - src: src:enphase-enphase-iq7-series-microinverters-installation-and-operation-manual
+    loc: sec=4.1.2
+    h: 85d421b9d5f6
+  - src: src:enphase-enphase-iq7-series-mc4-microinverter-installation-and-operation-manual
+    loc: sec=h47
+    h: 2994670ac7b6
+  review: drafted
 ---

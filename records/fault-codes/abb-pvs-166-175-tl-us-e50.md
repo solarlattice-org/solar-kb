@@ -207,4 +207,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - First occurrence: operator presses ESC and restarts; persistent:
     contact assistance; manual-reset is implied rather than stated.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=56.r7
+    h: e02c4b196d17
+  review: drafted
 ---

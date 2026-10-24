@@ -65,4 +65,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Name ''LmtBy'' suggests limiting but the row doesn''t explicitly
     state reduced output.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=25.r3
+    h: 260fe9806c06
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=25.r3
+    h: 260fe9806c06
+  review: drafted
 ---

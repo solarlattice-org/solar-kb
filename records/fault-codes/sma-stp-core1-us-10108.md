@@ -56,4 +56,18 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row shows ''Time adjusted / old time'' but the informational
     classification is only implied; the passage also shows a contact-Service…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=23.r6
+    h: 9f2513a35d22
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=12.r6
+    h: 9f2513a35d22
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=24.r6
+    h: 9f2513a35d22
+  review: drafted
 ---

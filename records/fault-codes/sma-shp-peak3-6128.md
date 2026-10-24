@@ -92,4 +92,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The sporadic case connects automatically once voltage drops,
     but the permanent case is not auto-reset, and ''service'' is only loosely implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-kb-shpxxx-xx-20-event-6128
+    loc: sec=h1
+    h: 9a7250093a96
+  review: drafted
 ---

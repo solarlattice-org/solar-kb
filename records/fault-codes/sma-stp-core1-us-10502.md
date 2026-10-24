@@ -39,4 +39,12 @@ claims:
     loc: tbl=26.r3
     h: 945dd6ee9a7b
   review: drafted
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=26.r3
+    h: 945dd6ee9a7b
+  review: drafted
 ---

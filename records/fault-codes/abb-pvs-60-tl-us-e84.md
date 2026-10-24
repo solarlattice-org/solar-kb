@@ -131,4 +131,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart under good irradiance and low-irradiance normal protection
     are stated, but ''manual reset'' clearing is only implied by the restart instruction.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=50.r9
+    h: 76f7a1a8cc76
+  review: drafted
 ---

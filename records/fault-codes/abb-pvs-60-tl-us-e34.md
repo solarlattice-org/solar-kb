@@ -160,4 +160,12 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Passages say switch off/on and contact assistance if it persists,
     but never state it clears by a manual reset classification…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=49.r2
+    h: 047f046564db
+  review: drafted
 ---

@@ -101,4 +101,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Brief interruption implies resumption, but not explicit; R column
     is ''-''.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=35.r12
+    h: 561137c8e396
+  review: drafted
 ---

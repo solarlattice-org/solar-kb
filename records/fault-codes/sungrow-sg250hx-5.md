@@ -119,4 +119,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The AC cable check is listed as a corrective step, but the passages
     don''t say the fault affects the AC…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:sungrow-sg250hx
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=38.r2
+    h: 74f93b8997f3
+  review: drafted
 ---

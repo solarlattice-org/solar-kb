@@ -146,4 +146,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart/reset is the stated solution, but ''manual reset'' clearing
     is implied; replace-inverter/installer escalation is stated, though clearing behavior isn''t explicit.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-1p-4g-us
+  cite:
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=15.r1
+    h: b7cb293629dc
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=14.r1
+    h: b7cb293629dc
+  review: drafted
 ---

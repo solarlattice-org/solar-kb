@@ -107,4 +107,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - u17 supports manual clearing via menu and contacting service
     if all strings fault, but the ''older manual: wait 5 minutes…'
+- claim_id: c11
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=57.r3
+    h: 7586abf681e2
+  review: drafted
 ---

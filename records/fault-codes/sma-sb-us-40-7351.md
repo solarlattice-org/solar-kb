@@ -50,4 +50,12 @@ claims:
     loc: tbl=19.r2
     h: 576c7d273e37
   review: drafted
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sb-us-40
+  cite:
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: tbl=19.r2
+    h: 576c7d273e37
+  review: drafted
 ---

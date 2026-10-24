@@ -116,4 +116,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c10
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=52.r5
+    h: 0282b01ad881
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=38.r5
+    h: 0282b01ad881
+  review: drafted
 ---

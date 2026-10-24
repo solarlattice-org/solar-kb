@@ -98,4 +98,15 @@ claims:
     loc: sec=h633
     h: 7ab490300d63
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.43
+    h: 5ebdfdeaca2a
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h631
+    h: 359fae7aa468
+  review: drafted
 ---

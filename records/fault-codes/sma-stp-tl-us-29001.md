@@ -52,4 +52,12 @@ claims:
     loc: sec=h580
     h: 85e1e30c57bb
   review: drafted
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=22.r1
+    h: feb329ccb9a2
+  review: drafted
 ---

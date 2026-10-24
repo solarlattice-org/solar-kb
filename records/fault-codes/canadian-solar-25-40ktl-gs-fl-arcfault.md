@@ -127,4 +127,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Row appears in the table titled Fault messages but doesn''t state
     device behavior; fault class only implied by table title.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:canadian-solar-25-40ktl-gs-fl
+  cite:
+  - src: src:csi-csi-manual-25-40ktl-gs-fl-v1-2-2017-09-07
+    loc: tbl=8.r5
+    h: b4f347f61cee
+  review: drafted
 ---

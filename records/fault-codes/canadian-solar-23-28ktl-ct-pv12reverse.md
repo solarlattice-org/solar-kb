@@ -80,4 +80,12 @@ claims:
   review: drafted
   review_note: 'review: partial - Only the general section 7.1.2 text says the inverter shuts down on
     faults; the PV1 (2) Reverse row itself says nothing about…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-23-28ktl-ct
+  cite:
+  - src: src:csi-csi-23-28ktl-ct-inverter-installation-manual
+    loc: tbl=30.r2
+    h: c58068a3df81
+  review: drafted
 ---

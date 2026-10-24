@@ -108,4 +108,12 @@ claims:
     loc: tbl=10.r2
     h: 3fc18463c15a
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-75-100k-t480gl02
+  cite:
+  - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
+    loc: tbl=11.r2
+    h: 3fc18463c15a
+  review: drafted
 ---

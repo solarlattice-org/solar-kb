@@ -155,4 +155,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then contact service is stated, but manual-reset
     clearing isn''t.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=40.r1
+    h: cbdbc4d77bf8
+  review: drafted
 ---

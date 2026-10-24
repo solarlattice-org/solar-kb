@@ -87,4 +87,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The remedy marker ''*)'' maps to ''if status code persists: contact
     a Fronius-trained service technician'', but the passages never link…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=14.r13
+    h: c13abd994ee5
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h21
+    h: beb65823f4ab
+  review: drafted
 ---

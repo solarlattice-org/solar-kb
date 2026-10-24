@@ -58,4 +58,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Alarm only implies no stop, but no production effect is not explicitly
     stated.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=32.r11
+    h: 038cb6458432
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

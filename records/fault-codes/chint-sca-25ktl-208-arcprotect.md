@@ -107,4 +107,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator steps and conditional replacement stated, but no explicit
     manual reset clearing mechanism.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=52.r2
+    h: bdd8e4eb27f4
+  review: drafted
 ---

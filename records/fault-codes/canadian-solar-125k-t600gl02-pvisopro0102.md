@@ -136,4 +136,12 @@ claims:
   review: drafted
   review_note: 'review: partial - The cited rows list ''Replace inverter'' as the last step after the
     insulation and cable checks, but they never say it applies…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:canadian-solar-125k-t600gl02
+  cite:
+  - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
+    loc: tbl=11.r4
+    h: 88d1079d14c4
+  review: drafted
 ---

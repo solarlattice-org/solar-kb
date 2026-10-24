@@ -66,4 +66,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Acknowledge and check devices are stated, but the contact-installer
     note is not in the passage.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=16.r15
+    h: 90247f520522
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h23
+    h: c4a64ba354f6
+  review: drafted
 ---

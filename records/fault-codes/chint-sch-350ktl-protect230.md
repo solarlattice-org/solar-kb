@@ -138,4 +138,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator power cycle and replacement if persisting are stated,
     but nothing says it clears only by manual reset; plausibly implied…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-350ktl
+  cite:
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=34.r9
+    h: a080e286e0b7
+  review: drafted
 ---

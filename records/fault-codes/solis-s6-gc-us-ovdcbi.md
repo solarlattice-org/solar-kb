@@ -92,4 +92,12 @@ claims:
     h: d90fbe003f50
   review: drafted
   review_note: 'support check: partial - Restart then replace is stated, but not manual reset clearing.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=16.r5
+    h: 28e6c9b8fdb2
+  review: drafted
 ---

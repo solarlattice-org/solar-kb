@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart then isolate string then replacement sequence is stated,
     but nothing says the fault clears by manual reset.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:solis-s6-gc-us
+  cite:
+  - src: src:solis-solis-s6-gc30k-lv-us-manual-v1-2
+    loc: tbl=14.r2
+    h: a97b8efd906c
+  review: drafted
 ---

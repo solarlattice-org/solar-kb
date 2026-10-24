@@ -162,4 +162,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then replacement stated; manual-reset classification
     only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-480
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=62.r3
+    h: a2eaee3a693f
+  review: drafted
 ---

@@ -84,4 +84,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Complete pending updates, restart, contact support are stated;
     ''retry'' is implied by completing the update.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=45.r7
+    h: 956cadd0c430
+  review: drafted
 ---

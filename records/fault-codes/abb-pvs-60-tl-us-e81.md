@@ -96,4 +96,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reconnect and switch on after checks, contact assistance if persists,
     are stated, but manual reset is only implied.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=50.r8
+    h: f0bb385ac1f5
+  review: drafted
 ---

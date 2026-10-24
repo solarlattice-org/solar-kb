@@ -46,4 +46,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Charge mode and SiCom stated; ''by the battery management'' not
     stated.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=156.r9
+    h: 4a366fe1c88b
+  review: drafted
 ---

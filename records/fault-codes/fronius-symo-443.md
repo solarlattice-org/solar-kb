@@ -71,4 +71,15 @@ claims:
     loc: tbl=17.r17
     h: 4888c7d85bab
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=15.r18
+    h: 3caa62bd2902
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h22
+    h: b16852f397f6
+  review: drafted
 ---

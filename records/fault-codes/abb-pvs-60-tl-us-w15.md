@@ -119,4 +119,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Switch off/on is an operator restart (manual reset) but only
     when grid is an island grid, and the passages don''t…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=44.r3
+    h: 7961c68b1b44
+  review: drafted
 ---

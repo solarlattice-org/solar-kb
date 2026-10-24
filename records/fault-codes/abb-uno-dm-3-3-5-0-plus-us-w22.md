@@ -90,4 +90,15 @@ claims:
     loc: tbl=46.r8
     h: 3cdae2f5a508
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=37.r8
+    h: 20d1f512c6e3
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=51.r8
+    h: 3cdae2f5a508
+  review: drafted
 ---

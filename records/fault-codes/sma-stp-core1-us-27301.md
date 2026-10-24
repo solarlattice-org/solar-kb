@@ -85,4 +85,18 @@ claims:
     loc: sec=h565
     h: 622fab418a3e
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=26.r11
+    h: 8b80a8cadd1e
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=15.r11
+    h: 8b80a8cadd1e
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=27.r11
+    h: 8b80a8cadd1e
+  review: drafted
 ---

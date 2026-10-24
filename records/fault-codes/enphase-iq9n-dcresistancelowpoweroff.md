@@ -217,4 +217,15 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c11
+  rel: applies_to
+  target: prod:enphase-iq9n
+  cite:
+  - src: src:enphase-enphase-iq9n-microinverter-installation-and-operation-manual
+    loc: sec=8.1.2
+    h: cafef1507658
+  - src: src:enphase-enphase-iq9n-hpb-microinverter-installation-and-operation-manual
+    loc: sec=8.1.2
+    h: 658f56a93fd4
+  review: drafted
 ---

@@ -70,4 +70,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle is a manual restart, but the passage doesn''t say
     the fault clears by it; only that replacement is…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-20-25tl-480-r
+  cite:
+  - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
+    loc: tbl=39.r2
+    h: a2eaee3a693f
+  review: drafted
 ---

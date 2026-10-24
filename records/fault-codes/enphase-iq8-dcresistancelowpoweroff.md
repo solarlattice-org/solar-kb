@@ -209,4 +209,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c10
+  rel: applies_to
+  target: prod:enphase-iq8
+  cite:
+  - src: src:enphase-enphase-iq8-series-mc4-microinverter-installation-and-operation-manual-na
+    loc: sec=5.1.2
+    h: d9666a3d9cee
+  review: drafted
 ---

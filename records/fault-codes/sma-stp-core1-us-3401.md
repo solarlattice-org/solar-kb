@@ -189,4 +189,27 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator disconnect/reconnect and service steps are present,
     but passages don''t state that it clears by manual reset.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h257
+    h: a2e90ce10f0b
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: sec=h258
+    h: 587cea85589b
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h174
+    h: a2e90ce10f0b
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: sec=h175
+    h: 587cea85589b
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h258
+    h: 33883a354598
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: sec=h260
+    h: 587cea85589b
+  review: drafted
 ---

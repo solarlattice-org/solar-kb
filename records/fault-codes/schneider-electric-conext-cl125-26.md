@@ -60,4 +60,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Auto recovery stated, but the contact-technical-support note
     is not in the passages.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=50.r8
+    h: fd543cae4e70
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=30.r5
+    h: 8295e1aaf337
+  review: drafted
 ---

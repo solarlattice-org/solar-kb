@@ -70,4 +70,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row names code 28 as a PV reverse connection fault, but it
     doesn''t state a fault classification beyond the…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sungrow-sg250hx
+  cite:
+  - src: src:sungrow-sg250hx-us-uen-ver17-202203
+    loc: tbl=40.r2
+    h: ef214f6e526a
+  review: drafted
 ---

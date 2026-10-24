@@ -158,4 +158,12 @@ claims:
     loc: tbl=34.r13
     h: fab15c9d6b4e
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:chint-sch-200-250k-t
+  cite:
+  - src: src:chint-cps-sch200-250k-t-us-user-manual-aug-2026
+    loc: tbl=43.r2
+    h: fab15c9d6b4e
+  review: drafted
 ---

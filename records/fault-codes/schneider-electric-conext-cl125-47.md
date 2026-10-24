@@ -79,4 +79,15 @@ claims:
   verified_at: 2026-10-23
   review_note: 'support check: partial - Disconnecting from all power sources implies intervention, but
     ''fault'' is not explicitly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=52.r3
+    h: 66703b315156
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=32.r1
+    h: 790a3791e300
+  review: drafted
 ---

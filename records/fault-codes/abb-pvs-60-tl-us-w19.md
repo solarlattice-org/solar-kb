@@ -199,4 +199,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Replacement and contacting assistance if persisting are stated,
     but service-required clearing is only implied for the persistent case.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=44.r6
+    h: 12de0561a1fc
+  review: drafted
 ---

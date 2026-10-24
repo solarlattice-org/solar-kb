@@ -73,4 +73,12 @@ claims:
     loc: tbl=56.r4
     h: 8d0d670b411c
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:huawei-sun2000-100ktl-ush0
+  cite:
+  - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
+    loc: tbl=56.r4
+    h: 8d0d670b411c
+  review: drafted
 ---

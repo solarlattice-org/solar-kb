@@ -43,4 +43,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Grid-condition cause and call-if-repeated are stated, but self-clearing
     is not explicitly stated.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=72.r7
+    h: 3386cfc45aca
+  review: drafted
 ---

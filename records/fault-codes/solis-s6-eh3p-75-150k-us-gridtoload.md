@@ -56,4 +56,12 @@ claims:
   review: drafted
   review_note: 'review: partial - The row says only ''Grid to load'' and ''No need to deal with it'',
     so it reads as harmless, but it never…'
+- claim_id: c4
+  rel: applies_to
+  target: prod:solis-s6-eh3p-75-150k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=26.r11
+    h: 2b2a678c83b7
+  review: drafted
 ---

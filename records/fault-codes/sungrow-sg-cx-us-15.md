@@ -150,4 +150,15 @@ claims:
     loc: tbl=35.r3
     h: 8ede75869601
   review: drafted
+- claim_id: c11
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=49.r3
+    h: 8ede75869601
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=35.r3
+    h: 8ede75869601
+  review: drafted
 ---

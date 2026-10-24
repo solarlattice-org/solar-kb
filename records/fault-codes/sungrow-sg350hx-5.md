@@ -170,4 +170,12 @@ claims:
     h: bf55335b853e
   review: drafted
   review_note: 'support check: partial - AC cable is only a check item, not stated as affected.'
+- claim_id: c12
+  rel: applies_to
+  target: prod:sungrow-sg350hx
+  cite:
+  - src: src:sungrow-sungrow-sg350hx-us-user-manual
+    loc: tbl=29.r2
+    h: bf55335b853e
+  review: drafted
 ---

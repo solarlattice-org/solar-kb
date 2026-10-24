@@ -160,4 +160,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cartridge replacement and contact customer assistance are stated,
     but service-required classification applies mainly to the persistent case; replacement is an…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-trio-20-27-6-tl-outd
+  cite:
+  - src: src:abb-fimer-trio-20-0-27-6-tl-outd-product-manual-revg
+    loc: tbl=36.r6
+    h: 0fa2e4f35b89
+  review: drafted
 ---

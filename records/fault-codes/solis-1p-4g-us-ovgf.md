@@ -89,4 +89,15 @@ claims:
     loc: tbl=12.r2
     h: 7a54860ecda0
   review: drafted
+- claim_id: c8
+  rel: applies_to
+  target: prod:solis-1p-4g-us
+  cite:
+  - src: src:solis-solis-manual-solis-1p-6-10-k-4g-us-plus-v2-1-20250804
+    loc: tbl=13.r2
+    h: 7a54860ecda0
+  - src: src:solis-solis-manual-3-6-5-k-4g-plus-lw-usa-03212023
+    loc: tbl=12.r2
+    h: 7a54860ecda0
+  review: drafted
 ---

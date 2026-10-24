@@ -97,4 +97,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passages say observe 5 min for automatic clearing, then check
     debris, but no contact-service step appears and auto-reset is only implied.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=17.r6
+    h: 3c88374b8f57
+  review: drafted
 ---

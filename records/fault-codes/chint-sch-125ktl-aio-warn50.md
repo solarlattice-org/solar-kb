@@ -124,4 +124,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A manual power-cycle reboot is recommended, but the passages
     don''t state that it clears the warning; u31 also mentions automatic elimination.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=30.r4
+    h: d151d754f8e6
+  review: drafted
 ---

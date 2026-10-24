@@ -50,4 +50,12 @@ claims:
     loc: tbl=153.r1
     h: 0f6cd4c4bc06
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=153.r1
+    h: 0f6cd4c4bc06
+  review: drafted
 ---

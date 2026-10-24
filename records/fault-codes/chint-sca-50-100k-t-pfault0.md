@@ -68,4 +68,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row refers to the DC terminals in the wire box, which only
     loosely implies the PV input terminal.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sca-50-100k-t
+  cite:
+  - src: src:chint-cps-sca100k-t-us-480-sca50k-t-us-208-user-manual-rev-1-0
+    loc: tbl=69.r1
+    h: 3937d376d785
+  review: drafted
 ---

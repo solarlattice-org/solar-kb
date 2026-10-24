@@ -79,4 +79,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - It is a serious overvoltage requiring disconnection, but no fault
     classification is stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=15.r2
+    h: 07b02001f8ac
+  review: drafted
 ---

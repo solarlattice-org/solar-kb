@@ -118,4 +118,12 @@ claims:
     loc: tbl=10.r5
     h: 7868f947bd08
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:canadian-solar-125k-t600gl02
+  cite:
+  - src: src:csi-csi-user-manual-125k-t600gl02-u-na-v1-1-20210518
+    loc: tbl=9.r5
+    h: 7868f947bd08
+  review: drafted
 ---

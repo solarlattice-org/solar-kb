@@ -55,4 +55,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Reconnect after monitoring time implies auto-reset, but manual
     acknowledgment may be needed depending on parameterization.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r4
+    h: cc57729321ae
+  review: drafted
 ---

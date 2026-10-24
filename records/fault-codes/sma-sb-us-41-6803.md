@@ -80,4 +80,15 @@ claims:
     loc: tbl=17.r4
     h: c2b2e23365c6
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.35
+    h: 8d1881043c6f
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h324
+    h: fadd96b1d787
+  review: drafted
 ---

@@ -143,4 +143,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say to wait for the inverter to cool and contact
     service if the problem persists. They never say…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r7
+    h: 7103a2f82d0a
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=53.r9
+    h: 15a67944b799
+  review: drafted
 ---

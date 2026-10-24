@@ -51,4 +51,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power reduction is required by the grid operator, but the row
     says it is a status message and doesn''t explicitly…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=75.r6
+    h: 357a0d086fb5
+  review: drafted
 ---

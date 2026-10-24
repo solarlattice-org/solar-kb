@@ -138,4 +138,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart, string removal and board replacement are stated, but
     not that it clears by manual reset; the replacement steps come…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-s6-eh3p-75-150k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
+    loc: tbl=28.r14
+    h: f50879706acc
+  review: drafted
 ---

@@ -139,4 +139,15 @@ claims:
     loc: tbl=14.r5
     h: 0a7c5910d375
   review: drafted
+- claim_id: c11
+  rel: applies_to
+  target: prod:yaskawa-solectria-pvi-23-36tl
+  cite:
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=20.r1
+    h: 785c73630b0d
+  - src: src:yaskawa-solectria-pvi-23-28tl
+    loc: tbl=20.r2
+    h: 437dc3430b87
+  review: drafted
 ---

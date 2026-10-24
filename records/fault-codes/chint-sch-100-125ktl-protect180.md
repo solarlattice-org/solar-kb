@@ -133,4 +133,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Inability to start up is implied in some cases but a trip is
     not stated.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-100-125ktl
+  cite:
+  - src: src:chint-cps-sch100-125ktl-do-us-600-480-user-manual-rev-1-9
+    loc: tbl=36.r7
+    h: a49b0fcf2476
+  review: drafted
 ---

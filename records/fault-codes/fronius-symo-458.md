@@ -68,4 +68,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The Class 4 passage says to contact a technician if the code
     persists, but it is not linked specifically to…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=15.r29
+    h: 528be01c279e
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h22
+    h: b16852f397f6
+  review: drafted
 ---

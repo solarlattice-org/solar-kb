@@ -100,4 +100,18 @@ claims:
     h: ded27d4996a4
   review: drafted
   review_note: 'support check: partial - Brief interruption implies resumption, but not explicit.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-13
+    loc: tbl=18.r3
+    h: ded27d4996a4
+  - src: src:sma-stp33-62-us-41-ops-manual
+    loc: tbl=7.r3
+    h: ded27d4996a4
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=19.r4
+    h: 93c2d6ff802b
+  review: drafted
 ---

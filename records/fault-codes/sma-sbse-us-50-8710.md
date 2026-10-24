@@ -96,4 +96,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Last values retained or fallback value is set, which implies
     operation continues, but no feed-in or production effect is stated.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.63
+    h: 5b6fee30d304
+  review: drafted
 ---

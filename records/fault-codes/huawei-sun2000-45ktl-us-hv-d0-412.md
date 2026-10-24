@@ -75,4 +75,12 @@ claims:
     loc: sec=8.2
     h: db4d98f32335
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:huawei-sun2000-45ktl-us-hv-d0
+  cite:
+  - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
+    loc: tbl=58.r5
+    h: 4d991c2dbd56
+  review: drafted
 ---

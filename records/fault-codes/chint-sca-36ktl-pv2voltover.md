@@ -64,4 +64,12 @@ claims:
     loc: tbl=9.r5
     h: eaece40dc7e2
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sca-36ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=9.r5
+    h: eaece40dc7e2
+  review: drafted
 ---

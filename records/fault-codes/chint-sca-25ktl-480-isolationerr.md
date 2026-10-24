@@ -168,4 +168,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The ISOResist parameter can be adjusted, but ''last step'' ordering
     and ''threshold'' are only implied by its position as item 6.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-25ktl-480
+  cite:
+  - src: src:chint-cps-25kw-user-manual-rev-2-1
+    loc: tbl=58.r2
+    h: 81c46507b9b5
+  review: drafted
 ---

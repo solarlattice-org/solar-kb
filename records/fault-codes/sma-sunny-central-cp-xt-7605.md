@@ -80,4 +80,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Article describes pressing Ack on the AST, then cable and AST
     replacement, but the classification as manual reset is only…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=38.r14
+    h: 9f9fdf56bcf5
+  - src: src:sma-kb-error-message-7605-communication-failure-stack
+    loc: sec=h1
+    h: c1f652a3594e
+  review: drafted
 ---

@@ -192,4 +192,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages give no statement that production stops or the inverter
     trips for GFCIErr; only a protection type and troubleshooting…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-125ktl-aio
+  cite:
+  - src: src:chint-cps-sch125ktl-aio-us-600-sep-2020
+    loc: tbl=32.r3
+    h: d12e0f8ca061
+  review: drafted
 ---

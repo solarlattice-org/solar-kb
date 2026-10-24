@@ -116,4 +116,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Replacing the monitoring board is service-required, but the passages
     say nothing about another model''s manual trying a power cycle first.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:huawei-sun2000-25-30ktl-us
+  cite:
+  - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
+    loc: tbl=43.r6
+    h: 8be6c57c93bc
+  review: drafted
 ---

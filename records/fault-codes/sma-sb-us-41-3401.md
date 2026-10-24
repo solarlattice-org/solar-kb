@@ -167,4 +167,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Operator disconnect/reconnect and service steps are present,
     but passages don''t state that it clears by manual reset.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:sma-sb-us-41
+  cite:
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=6.2.20
+    h: 58a42ec91edb
+  - src: src:sma-sbxx-us-1xp-41-ba-en-12
+    loc: sec=h264
+    h: 41676f7fb1bd
+  review: drafted
 ---

@@ -49,4 +49,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Corrective measure is to make sure all fuses are switched on,
     which is approximately a fuse check but not specifically external.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-central-cp-xt
+  cite:
+  - src: src:sma-sccpxt-e7-wa-en-37
+    loc: tbl=33.r8
+    h: 893caf77b61f
+  review: drafted
 ---

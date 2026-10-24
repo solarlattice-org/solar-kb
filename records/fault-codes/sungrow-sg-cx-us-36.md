@@ -125,4 +125,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Cooling fan is only referenced via the 070 fan anomaly check
     and replacement, not stated as directly affected by 036.'
+- claim_id: c10
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=50.r5
+    h: a74a3da25ad0
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=36.r5
+    h: a74a3da25ad0
+  review: drafted
 ---

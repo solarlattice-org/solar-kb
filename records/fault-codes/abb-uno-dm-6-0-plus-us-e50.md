@@ -220,4 +220,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - First occurrence: operator presses ESC and restarts; persistent:
     contact assistance; manual-reset is implied rather than stated.'
+- claim_id: c11
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=39.r12
+    h: 4aa26767d844
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=51.r4
+    h: edbd0ff9c5c0
+  review: drafted
 ---

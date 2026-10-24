@@ -113,4 +113,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Described as ''Inverter logic fault'' needing service/replacement,
     implying a fault, but not explicitly classed; plausible.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=13.r7
+    h: 16ab28c62001
+  review: drafted
 ---

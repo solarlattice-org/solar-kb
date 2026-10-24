@@ -57,4 +57,15 @@ claims:
   review: drafted
   review_note: 'review: partial - The row says ''Temporary loss of grid'', which implies the inverter
     stops feeding in, but it never says production stops or that…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:yaskawa-solectria-sgi-500-750xtm
+  cite:
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: tbl=31.r1
+    h: ba25ddcd4c52
+  - src: src:yaskawa-sgi-500-750xtm-iom-docr-070506-d
+    loc: sec=12.2
+    h: 36342d216ed4
+  review: drafted
 ---

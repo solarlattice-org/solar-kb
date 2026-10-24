@@ -94,4 +94,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row says to ignore the alarm if the string is not needed,
     which supports the note, but nothing states…'
+- claim_id: c8
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=54.r3
+    h: 95887f37002c
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=40.r3
+    h: f733aab9966e
+  review: drafted
 ---

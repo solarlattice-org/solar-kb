@@ -142,4 +142,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart under good irradiance and low-irradiance normal protection
     are stated, but ''manual reset'' clearing is only implied by the restart instruction.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=42.r8
+    h: e53a63aa377c
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=57.r2
+    h: b0925e880dad
+  review: drafted
 ---

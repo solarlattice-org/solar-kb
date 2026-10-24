@@ -222,4 +222,27 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages give no statement that production stops or the inverter
     trips for GFCIErr; only a protection type and troubleshooting…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sch-275ktl
+  cite:
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r20
+    h: 96b93ee16db5
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r21
+    h: cfce40c8d8f8
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r22
+    h: 256f5fb37000
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r23
+    h: 9bd05c6744d9
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r24
+    h: 6a5eccf0d8b6
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r25
+    h: e91718897b34
+  review: drafted
 ---

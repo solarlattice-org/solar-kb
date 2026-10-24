@@ -120,4 +120,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Wait for cooldown and contact assistance if persists is stated,
     but auto-reset clearing isn''t explicitly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=59.r1
+    h: 672af0ce9fd1
+  review: drafted
 ---

@@ -75,4 +75,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A restart or contacting the installer is stated, but it doesn''t
     say the fault clears by manual reset; restart is…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:canadian-solar-185-255k
+  cite:
+  - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
+    loc: tbl=13.r7
+    h: b8dccd8805ed
+  review: drafted
 ---

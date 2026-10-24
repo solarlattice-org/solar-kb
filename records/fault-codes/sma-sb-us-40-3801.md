@@ -96,4 +96,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Brief interruption implies resumption, but self-resumption is
     not explicitly stated.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sb-us-40
+  cite:
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h212
+    h: a17802b02abd
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h213
+    h: c6f15c03c258
+  review: drafted
 ---

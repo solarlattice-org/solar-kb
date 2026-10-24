@@ -95,4 +95,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A restart is suggested, which is an operator action, but the
     row doesn''t say it clears the fault.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=26.r10
+    h: 3f71b14c7283
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=26.r10
+    h: 3f71b14c7283
+  review: drafted
 ---

@@ -136,4 +136,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Restart, string removal and board replacement are stated, but
     not that it clears by manual reset; the replacement steps come…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:solis-s6-eh2p-l-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
+    loc: tbl=16.r14
+    h: dedd0bd52bce
+  review: drafted
 ---

@@ -97,4 +97,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Switching on secure power supply operation again is an operator
     action, but the passages don''t explicitly say it is a…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-sb-us-40
+  cite:
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h259
+    h: b21b2845209a
+  - src: src:sma-sbxx-us-1xp-40-ba-en-13
+    loc: sec=h260
+    h: a672af75e661
+  review: drafted
 ---

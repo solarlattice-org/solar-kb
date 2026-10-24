@@ -89,4 +89,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Low bulk voltage in the DC-DC circuit and the sporadic/systematic
     split are stated, but the passages never name the boost converter.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=37.r3
+    h: 2a5f8c4ec53e
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=48.r5
+    h: 26380b7fac19
+  review: drafted
 ---

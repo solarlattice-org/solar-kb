@@ -80,4 +80,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Low bulk voltage in the DC-DC circuit and the sporadic/systematic
     split are stated, but the passages never name the boost converter.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=46.r7
+    h: 6698d0568860
+  review: drafted
 ---

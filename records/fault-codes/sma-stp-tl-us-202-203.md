@@ -99,4 +99,12 @@ claims:
     loc: sec=h180
     h: da920c17bb08
   review: drafted
+- claim_id: c10
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: sec=h179
+    h: 06a2712e0fd4
+  review: drafted
 ---

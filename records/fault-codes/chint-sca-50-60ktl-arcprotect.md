@@ -79,4 +79,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Manual checks and test are stated, but reset/clearing mechanism
     is not explicit.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sca-50-60ktl
+  cite:
+  - src: src:chint-cps-sca36-50-60ktl-fault-and-troubleshooting
+    loc: tbl=10.r2
+    h: bdd8e4eb27f4
+  review: drafted
 ---

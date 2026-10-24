@@ -62,4 +62,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passage says the faults must be rectified for safe operation,
     but doesn''t explicitly class it as a fault.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=80.r1
+    h: a4615c726fe3
+  review: drafted
 ---

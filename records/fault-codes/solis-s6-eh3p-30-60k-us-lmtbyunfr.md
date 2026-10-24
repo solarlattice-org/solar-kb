@@ -61,4 +61,15 @@ claims:
     loc: tbl=26.r8
     h: c1ae475656c6
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:solis-s6-eh3p-30-60k-us
+  cite:
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20260908
+    loc: tbl=25.r8
+    h: c1ae475656c6
+  - src: src:solis-solis-manual-s6-eh3p-30-60-k-nv-yd-h-us-21a-v1-0-20251202
+    loc: tbl=25.r8
+    h: c1ae475656c6
+  review: drafted
 ---

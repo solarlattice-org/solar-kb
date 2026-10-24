@@ -52,4 +52,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say nothing about production effect, though it is
     plausibly none for a network status message.'
+- claim_id: c4
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-stp33-62-us-41-ba-en-14
+    loc: tbl=25.r3
+    h: b859db5b0b53
+  review: drafted
 ---

@@ -33,4 +33,12 @@ claims:
     loc: tbl=21.r10
     h: 1868e3dbf1f0
   review: drafted
+- claim_id: c3
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=21.r10
+    h: 1868e3dbf1f0
+  review: drafted
 ---

@@ -132,4 +132,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is listed as a step and then contact assistance,
     but the passages do not say that a…'
+- claim_id: c7
+  rel: applies_to
+  target: prod:abb-pvs-60-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-60-tl-us-product-manual-revb
+    loc: tbl=46.r1
+    h: bd06e0beb5d3
+  review: drafted
 ---

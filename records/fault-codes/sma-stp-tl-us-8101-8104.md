@@ -49,4 +49,12 @@ claims:
     loc: tbl=19.r5
     h: 1c48e4b89fc2
   review: drafted
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=19.r5
+    h: 1c48e4b89fc2
+  review: drafted
 ---

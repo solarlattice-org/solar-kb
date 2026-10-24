@@ -162,4 +162,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Power cycle then replacement stated; manual-reset classification
     only implied.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:chint-sca-25ktl-208
+  cite:
+  - src: src:chint-cps-sca25ktl-do-us-208-user-manual-rev-1-2
+    loc: tbl=53.r2
+    h: e263f88ecf19
+  review: drafted
 ---

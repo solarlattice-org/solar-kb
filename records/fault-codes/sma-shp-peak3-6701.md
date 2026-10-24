@@ -89,4 +89,15 @@ claims:
     loc: sec=h353
     h: c766760ec4c5
   review: drafted
+- claim_id: c7
+  rel: applies_to
+  target: prod:sma-shp-peak3
+  cite:
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=12.1.16
+    h: 6fa74dde73e4
+  - src: src:sma-shpxxx-us-21-be-en-11
+    loc: sec=h352
+    h: 425aae51d4ca
+  review: drafted
 ---

@@ -70,4 +70,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Auto recovery stated; escalation note for persistence not in
     passages.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:schneider-electric-conext-cl125
+  cite:
+  - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
+    loc: tbl=53.r4
+    h: 6b4eef1795bd
+  - src: src:schneider-conext-cl125-modbus-app-note
+    loc: tbl=33.r3
+    h: 202f4365fc17
+  review: drafted
 ---

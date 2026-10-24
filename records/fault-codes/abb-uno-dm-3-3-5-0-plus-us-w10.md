@@ -164,4 +164,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Internal error that can''t be checked externally and contact
     assistance if repeating are stated, though ''clears by service required'' is…'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-3-3-5-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-3-3-5-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=36.r6
+    h: 42b90af91b1b
+  - src: src:abb-uno-dm-3-3-5-0-tl-plus-us-product-manual-reva
+    loc: tbl=50.r6
+    h: e6003e990f3d
+  review: drafted
 ---

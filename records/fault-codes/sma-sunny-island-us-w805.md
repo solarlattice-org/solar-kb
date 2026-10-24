@@ -56,4 +56,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says generator operation not possible but does not state
     the backup generator component is affected, though implied.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-sunny-island-us
+  cite:
+  - src: src:sma-doc-si4548-6048-us-be-en-21w
+    loc: tbl=153.r3
+    h: d7e96c7a21f6
+  review: drafted
 ---

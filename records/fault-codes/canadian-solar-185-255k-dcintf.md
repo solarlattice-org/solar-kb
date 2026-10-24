@@ -101,4 +101,12 @@ claims:
   verified_at: *id001
   review_note: 'support check: partial - Restart inverter is listed first, then string removal, then power
     board change; but calling it manual-reset clearing is an inference,…'
+- claim_id: c10
+  rel: applies_to
+  target: prod:canadian-solar-185-255k
+  cite:
+  - src: src:csi-csi-installation-manual-185-255k-usa-v1-1-20211119
+    loc: tbl=12.r15
+    h: eae16f7d5f0f
+  review: drafted
 ---

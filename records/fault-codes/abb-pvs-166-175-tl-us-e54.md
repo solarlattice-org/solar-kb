@@ -142,4 +142,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The power-cycle-then-service sequence is stated, but the passages
     don''t say the fault clears by manual reset.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:abb-pvs-166-175-tl-us
+  cite:
+  - src: src:abb-fimer-pvs-166-175-tl-us-a-2-product-manual-reve
+    loc: tbl=57.r1
+    h: 9567bd31690a
+  review: drafted
 ---

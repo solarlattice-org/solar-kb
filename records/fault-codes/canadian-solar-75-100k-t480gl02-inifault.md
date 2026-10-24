@@ -123,4 +123,12 @@ claims:
   review: verified
   verified_by: review-workflow
   verified_at: *id001
+- claim_id: c8
+  rel: applies_to
+  target: prod:canadian-solar-75-100k-t480gl02
+  cite:
+  - src: src:csi-csi-installation-manual-75-100k-t480gl02-u-usa-v1-1-20211116
+    loc: tbl=10.r1
+    h: eed118aa3df4
+  review: drafted
 ---

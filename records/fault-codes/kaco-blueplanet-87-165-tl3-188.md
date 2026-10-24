@@ -68,4 +68,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Faulty semiconductor test implies a fault, but the class isn''t
     stated explicitly.'
+- claim_id: c7
+  rel: applies_to
+  target: prod:kaco-blueplanet-87-165-tl3
+  cite:
+  - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
+    loc: tbl=80.r8
+    h: 22d06f5f5b98
+  review: drafted
 ---

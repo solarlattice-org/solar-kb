@@ -108,4 +108,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - Protection alarm implies a fault but classification is not explicitly
     stated; plausible.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:solis-s6-gu-ehv-us
+  cite:
+  - src: src:solis-solis-manual-s6-gu-250-350-k-ehv-usa-pe-mn-0001-r00
+    loc: tbl=14.r1
+    h: 1d19c0c43f5c
+  review: drafted
 ---

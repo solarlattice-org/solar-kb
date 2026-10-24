@@ -65,4 +65,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Battery switched on and cable checks are present, but a ''battery
     connection check'' is only loosely implied via communication cable…'
+- claim_id: c6
+  rel: applies_to
+  target: prod:sma-sbse-us-50
+  cite:
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=11.1.75
+    h: 7564469d0705
+  - src: src:sma-sbsexx-us-50-be-en-11
+    loc: sec=h786
+    h: 5c402507d020
+  review: drafted
 ---

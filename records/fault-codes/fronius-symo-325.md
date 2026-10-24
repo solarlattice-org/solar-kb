@@ -83,4 +83,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The 325 row has no remedy; contacting service if it persists
     is only implied by the footnote.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=14.r16
+    h: d51961da985b
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h21
+    h: beb65823f4ab
+  review: drafted
 ---

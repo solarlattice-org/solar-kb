@@ -65,4 +65,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - The 313 row has no behavior or remedy; auto-clearing is only
     implied by the class 3 footnote.'
+- claim_id: c5
+  rel: applies_to
+  target: prod:fronius-symo
+  cite:
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: tbl=14.r12
+    h: 7bdb9a25fb31
+  - src: src:kb-fronius-fronius-symo-ul-emanual-status-codes
+    loc: sec=h21
+    h: beb65823f4ab
+  review: drafted
 ---

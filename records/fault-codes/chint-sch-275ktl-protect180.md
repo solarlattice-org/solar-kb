@@ -137,4 +137,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - Inability to start up is implied in some cases but a trip is
     not stated.'
+- claim_id: c8
+  rel: applies_to
+  target: prod:chint-sch-275ktl
+  cite:
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r12
+    h: e2afb015e016
+  - src: src:chint-cps-sch275ktl-do-us-800-v2-user-manual-rev-1-7
+    loc: tbl=27.r13
+    h: f2e08df11d6e
+  review: drafted
 ---

@@ -83,4 +83,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The passages say the alarm is reserved and can be ignored, but
     don''t explicitly state that it has no production effect.'
+- claim_id: c6
+  rel: applies_to
+  target: prod:chint-sch-350ktl
+  cite:
+  - src: src:chint-cps-sch350ktl-do-us-800-user-manual-rev-2-2
+    loc: tbl=33.r8
+    h: 358fe21ec377
+  review: drafted
 ---

@@ -73,4 +73,12 @@ claims:
   review: drafted
   review_note: 'support check: partial - The row shows a status message with parameters still protected,
     which suggests informational, but it never states the classification and…'
+- claim_id: c5
+  rel: applies_to
+  target: prod:sma-stp-tl-us
+  cite:
+  - src: src:sma-stptl-us-10-ia-xx-22
+    loc: tbl=20.r5
+    h: fead418d835a
+  review: drafted
 ---

@@ -178,4 +178,15 @@ claims:
     h: bf55335b853e
   review: drafted
   review_note: 'support check: partial - AC cable is only a check item, not stated as affected.'
+- claim_id: c13
+  rel: applies_to
+  target: prod:sungrow-sg-cx-us
+  cite:
+  - src: src:sungrow-sungrow-36-60cx-us-iom
+    loc: tbl=47.r2
+    h: c50b0671bfd5
+  - src: src:sungrow-sungrow-sg36-60cx-us-user-manual-ver17-202411
+    loc: tbl=33.r2
+    h: c50b0671bfd5
+  review: drafted
 ---

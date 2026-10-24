@@ -119,4 +119,15 @@ claims:
   review: drafted
   review_note: 'support check: partial - A power cycle is advised, but the passages never say the fault
     clears by manual reset.'
+- claim_id: c9
+  rel: applies_to
+  target: prod:abb-uno-dm-6-0-plus-us
+  cite:
+  - src: src:abb-fimer-uno-dm-6-0-tl-plus-us-q-product-manual-revb
+    loc: tbl=38.r6
+    h: e9de01145a94
+  - src: src:abb-uno-dm-6-0-tl-plus-us-product-manual-reva
+    loc: tbl=49.r7
+    h: d1565f862f5c
+  review: drafted
 ---

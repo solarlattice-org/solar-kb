@@ -118,4 +118,12 @@ claims:
     loc: sec=h1
     h: 4223b7d41d2f
   review: drafted
+- claim_id: c11
+  rel: applies_to
+  target: prod:sma-stp-core1-us
+  cite:
+  - src: src:sma-kb-stp-us-41-events-8206-8210
+    loc: sec=h1
+    h: 4223b7d41d2f
+  review: drafted
 ---

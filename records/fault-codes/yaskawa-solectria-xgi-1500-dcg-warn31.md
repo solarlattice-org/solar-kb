@@ -79,4 +79,12 @@ claims:
     loc: sec=9.1.2
     h: 03d6c2913989
   review: drafted
+- claim_id: c6
+  rel: applies_to
+  target: prod:yaskawa-solectria-xgi-1500-dcg
+  cite:
+  - src: src:yaskawa-xgi-1500-250-dcg-iom-docr-071081-dd
+    loc: tbl=20.r5
+    h: a82464b1d23a
+  review: drafted
 ---
