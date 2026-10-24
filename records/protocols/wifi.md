@@ -16,4 +16,6 @@ Wi-Fi is the IEEE 802.11 wireless network link. Inverters and data loggers use i
 - sentence 2: support check: partial - Standards and data rates are stated, but nothing in the passages ties them to the Delta DC1 controller by name.
 - sentence 5: support check: partial - AP mode broadcast for limited tasks and reconnect via Enphase App are stated, but the Installer App configuring Wi-Fi is only in a feature note about improved configuration, which loosely supports it; AP mode label is implied by the title.
 - sentence 7: support check: partial - FIMER firmware and parameter upgrade claims are supported, but the passage for SolarEdge only has a title about Wi-Fi configuration using SetApp, which weakly supports it.
+- sentence 1: review: partial - The passages support IEEE 802.11 Wi-Fi, local-network connection and a direct link to a smart end device, but they never mention data loggers.
+- sentence 7: review: partial - The FIMER firmware and SunSpec Modbus parameter upgrades over Ethernet/WLAN are stated, but the SolarEdge support is only a document title about Wi-Fi configuration with SetApp, and it does not say this applies to inverters.
 -->

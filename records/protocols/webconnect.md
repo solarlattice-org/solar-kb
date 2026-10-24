@@ -16,4 +16,5 @@ SMA Webconnect is an application-level function that sends data straight from SM
 
 <!-- review notes
 - sentence 6: support check: partial - Sunny Boy Storage standard Webconnect and retrofit via SWDM/piggyback are supported, and SB 240 with Multigate is listed, but Sunny Tripower CORE1 isn't mentioned and SB 240 isn't stated as built-in.
+- sentence 1: review: partial - The passages support direct data transmission to Sunny Portal (and Sunny Places in some manuals) through a router with internet access and without an extra communication device, but they never call Webconnect an 'application-level' function.
 -->
