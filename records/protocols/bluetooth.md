@@ -18,4 +18,5 @@ Bluetooth is a wireless link for exchanging data between devices. It uses the pu
 - sentence 5: support check: partial - Bluetooth+App display, fast blink with data communication, and red blink with fault are stated, but 'fast blink' is defined for no system fault and 'local setup' isn't stated.
 - sentence 6: support check: partial - BLE4.2 for S1-W4G-ST near-end is stated and a Bluetooth interface is listed, but the passage doesn't say it's the CPS FlexOM Gateway's or the Solis logger is Wi-Fi and cellular.
 - sentence 7: support check: partial - Bluetooth config tools and Sunny Boy Storage (Speedwire/WLAN) are supported, but Smart Energy only has Speedwire, not WLAN.
+- sentence 7: review: partial - The Bluetooth configuration tools and the Sunny Boy Storage's Speedwire/WLAN are supported, but the Sunny Boy Smart Energy has only Speedwire, not WLAN.
 -->

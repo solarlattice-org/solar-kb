@@ -12,4 +12,5 @@ Fronius Solar Net is a Fronius data network that links one or more inverters to 
 
 <!-- review notes
 - sentence 7: support check: partial - Protocol Type options, factory default and Interface requiring card removal are stated, but the passages do not name Symo, Primo or Galvo models.
+- sentence 1: review: partial - The passages say Solar Net is a Fronius data network linking several inverters to system add-ons, but they never give a datalogger or sensor box as examples.
 -->

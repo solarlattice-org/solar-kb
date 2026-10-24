@@ -27,6 +27,9 @@ claims:
     loc: sec=5
     h: 7d26697c862c
   review: drafted
+  review_note: 'review: partial - The SMA passages list 101 as single phase AC Monitoring in the 100 series
+    with 701 recommended, but they say the 100 series is designated outdated "in the SunSpec", not by
+    SMA as the note claims.'
 ---
 SunSpec model 101 is the SunSpec information model for AC monitoring data from a single-phase inverter. It is exposed as a block of Modbus registers. Like every SunSpec model, it starts with a header that gives the model ID and its length. Registers a device does not support are marked Reserved. SolarEdge inverters use model 101, 102 or 103 mappings for read-only Modbus monitoring data, based on the SunSpec inverter models specification. In the SolarEdge map, the model ID register C_SunSpec_DID sits at address 40069 (base 0) or 40070 (base 1). A value of 101 there means single phase, 102 split phase and 103 three phase. On SolarEdge inverters, the common block before the inverter model starts at 40000 (base 0) or 40001 (base 1). It holds the manufacturer, model, version, serial number and Modbus device ID. The Modbus list for the SMA Sunny Highpower PEAK3 maps the grid phase currents to model 101 registers 40189 to 40191. Their scale factor is in register 40192. SMA SunSpec Modbus documents still list model 101 as supported but recommend model 701. They describe the 100 series as outdated and the 700 series as its replacement for IEEE 1547-2018.
 

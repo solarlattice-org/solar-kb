@@ -14,4 +14,5 @@ A fiber optic link is a physical transport that carries communication data as li
 <!-- review notes
 - sentence 1: support check: partial - Passages show fiber used instead of wire for data transfer, but don't explicitly define a fiber optic link as carrying data as light over optical fibers.
 - sentence 2: support check: partial - One LC fiber interface, one Ethernet port and connection to a fiber optic network are stated, but passages say nothing about it being an expansion module or connecting 'the meter' (Accuenergy).
+- sentence 1: review: partial - The SEL passage supports using optical fibers instead of wire to carry data, but no passage says the data travels as light or that the wire it replaces is copper.
 -->

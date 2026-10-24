@@ -17,4 +17,5 @@ OCPP is the application-level protocol an EV charging station uses to talk to it
 - sentence 1: support check: partial - Passages show chargers use OCPP 1.6 JSON/OCPP-J to a backend, but none state that OCPP is an application-level protocol for station-to-backend communication in general terms.
 - sentence 5: support check: partial - The steps (Enable OCPP Whitelist On under Authorization, Save and Restart) are stated, but the purpose of authorizing RFID cards through the backend is only implied by the 'RFID Whitelist' heading.
 - sentence 6: support check: partial - PowerSupervisor shows OCPP status and error codes for CHAdeMO, CCS and GBT connectors, but the evidence says connector status is OCPP and error codes are listed (only labeled OCPP in the summary view), and does not explicitly say 'for each charging post on its charging stations' beyond post-level views; mostly supported.
+- sentence 1: review: partial - The passages show chargers using OCPP 1.6 JSON / OCPP-J 1.6 for backend communication, but they never describe OCPP in general as the application-level protocol between a station and its backend.
 -->

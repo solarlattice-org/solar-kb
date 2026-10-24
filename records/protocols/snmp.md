@@ -12,4 +12,5 @@ SNMP is an application-level network management protocol. An SNMP agent in a dev
 <!-- review notes
 - sentence 1: support check: partial - Passages mention an SNMP agent and manager and management stations, but none define SNMP as an application-level protocol or say the agent exchanges data with the manager (also called a management station).
 - sentence 3: support check: partial - Navigation, enable, version, port, community string and the save and reboot step are stated for the AXM-WEB2. However, the passages don't say the community string can be changed (only that it defaults to Public), and the reboot can be immediate or later.
+- sentence 1: review: partial - The passages mention communication between an SNMP agent and manager and reporting to a management station, but none call SNMP an application-level protocol or equate the manager with the management station.
 -->

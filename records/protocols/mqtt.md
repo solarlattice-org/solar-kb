@@ -10,4 +10,5 @@ MQTT is an application-level publish/subscribe messaging protocol in which clien
 <!-- review notes
 - sentence 1: support check: partial - Central broker and topic-subscription exchange are stated, but 'application-level' protocol is not stated in the passages.
 - sentence 3: support check: partial - Publishing via broker for Acuvim II/Acuvim-L is stated; MQTT appearing on datasheets is only hinted by bare 'MQTT' entries (u5, u10) with no datasheet context.
+- sentence 1: review: partial - The passages support publish/subscribe exchange through a central broker, but they never say MQTT is 'application-level'.
 -->

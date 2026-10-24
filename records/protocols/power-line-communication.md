@@ -15,4 +15,5 @@ Power line communication works at the transport layer. It puts a high-frequency 
 
 <!-- review notes
 - sentence 1: support check: partial - Passages say PLC superimposes a high-frequency signal on an existing power line, but nothing says it works at the 'transport layer'; that claim is not supported.
+- sentence 1: review: partial - Superimposing a high-frequency signal on an existing power line, with the line as the telecom medium, is supported, but nothing in the passages says PLC works at the transport layer.
 -->

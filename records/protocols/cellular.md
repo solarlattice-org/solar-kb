@@ -23,4 +23,5 @@ Cellular data is a transport link that sends monitoring and control traffic over
 - sentence 2: support check: partial - Pre-installed SIM, 5-year 4G plan, and Ethernet for the standard gateway are stated, and an antenna installation section exists, but nothing says the antenna is included or that the user must fit it.
 - sentence 3: support check: partial - The 4G stick ships with an external antenna, and a GPRS stick integration guide for Solis Cloud exists, but 'Solis offers GPRS sticks' is only implied.
 - sentence 6: support check: partial - GSM kit per device, the 15-minute sampling and 4-hour upload, and the Server > Cellular menu are stated, but 'every device' applies to the multi-device configuration while the single-device one needs a kit for its one device, and the menu path is given for the High BW cellular configuration.
+- sentence 1: review: partial - The passages list Cellular LTE/3G/4G (and 3G GSM) options on Locus dataloggers, but they never say it is a transport link carrying monitoring and control traffic over a mobile network.
 -->

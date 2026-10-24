@@ -18,4 +18,5 @@ The S0 interface is a simple electrical pulse link. An energy meter sends a set 
 - sentence 1: support check: partial - Passages mention S0 meters with a pulses/kWh rate and IEC 62053-31 requirements, but never describe S0 as a simple electrical pulse link or say the receiver counts pulses.
 - sentence 4: support check: partial - Passages state dynamic power reduction under DSO Editor and possible firmware update, but do not say it is a 'Fronius S0 meter' or that the reduction is tied to having one fitted; mostly supported though.
 - sentence 6: support check: partial - The diagram text lists S0 + and S0 - labels, but the passage does not explicitly say they mark the terminals in a wiring diagram.
+- sentence 1: review: partial - The S0 pulses/kWh field implies a set pulse rate per kWh, but the passages never call S0 a simple electrical pulse link or say the receiving device counts the pulses.
 -->

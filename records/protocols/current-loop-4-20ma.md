@@ -15,4 +15,5 @@ The 4-20 mA current loop is an analog signal link. A measured value or setpoint 
 <!-- review notes
 - sentence 1: support check: partial - Passages show a current loop interface of 4–20 mA and a 4–20 mA input terminal, but don't explicitly say it's an analog link carrying measured values or setpoints.
 - sentence 2: support check: partial - Passages list Interface: Current Loop 4–20 mA, but the device name (Ideematec SensorBox) isn't stated in the passages shown.
+- sentence 1: review: partial - The passages give a 4-20 mA current loop interface and a 4-20 mA analog input terminal, but they never say it carries a measured value or setpoint, or call it an analog signal link.
 -->
