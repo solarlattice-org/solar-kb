@@ -11,4 +11,5 @@ Standby is a normal waiting state. The inverter is ready but holds off operating
 
 <!-- review notes
 - sentence 6: support check: partial - Level 1 switching to standby below the SOC threshold in the time window is stated, and a manual stop into standby is evidenced only by headings or entries without detail.
+- sentence 1: review: partial - The passage supports that standby means waiting for an operating condition such as PV voltage, but it does not say that standby is a 'normal' state or that the inverter is 'ready'.
 -->

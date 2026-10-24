@@ -18,4 +18,5 @@ Start-up is the normal phase after an inverter is switched on or reconnects, whe
 <!-- review notes
 - sentence 6: support check: partial - Parameter, description and 100% default are stated, but passages don't name Solis explicitly and ranges vary (0-100 vs 1-100).
 - sentence 7: support check: partial - The CPS-style soft start timeout protection with fast-blinking fault LED is in the row, but the claim that start-up is a normal state needing no action is not stated there.
+- sentence 7: review: partial - The row supports the soft start timeout protection with a fast-blinking fault LED, but it does not say start-up is a normal state needing no action, and it never names CPS.
 -->

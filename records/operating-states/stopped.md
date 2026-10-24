@@ -18,4 +18,5 @@ Stopped means the inverter is not running. Some manuals call this state Stop or 
 - sentence 5: support check: partial - Message exists saying setting failed and device must be stopped first, but passages don't state that some parameters can only be changed when stopped or that this occurs during operation.
 - sentence 7: support check: partial - Red LED plus event message means operation stopped by error, but the passages don't contrast with commanded stop or say the error needs to be fixed.
 - sentence 8: support check: partial - Passages say cluster is stopped when a slave has a fault, but don't instruct to look for the fault on the slave (though implied).
+- sentence 7: review: partial - The rows support that a glowing red LED with an event message means operation stopped because of an error, but they do not say steady, do not contrast this with a commanded stop, and do not say the error needs…
 -->

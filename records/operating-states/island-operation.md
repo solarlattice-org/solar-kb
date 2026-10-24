@@ -17,4 +17,5 @@ In island operation, a battery inverter such as the Sunny Island supplies a stan
 - sentence 1: support check: partial - Grid operation (connected, identical voltage/frequency) is stated, but the passages never describe island operation as the Sunny Island supplying a stand-alone grid not connected to the utility, nor state it as the opposite; only an off-grid term definition is given.
 - sentence 3: support check: partial - Passage requires a data cable and parameters set per the document; RS485 is mentioned as necessary for communication with the utility grid as external source, but 'RS485 data cable' sharing is roughly implied, not exact.
 - sentence 6: support check: partial - Passages state the overvoltage, overfrequency, underfrequency and undesired voltage events at AC1 in the stand-alone grid, but not that they need checking or are not part of normal operation.
+- sentence 1: review: partial - The grid-operation half (grids connected, same voltage and frequency) is stated, but the passages never define island operation as the Sunny Island supplying an unconnected stand-alone grid, and never call it the opposite of grid operation.
 -->

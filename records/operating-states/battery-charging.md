@@ -13,4 +13,5 @@ Battery charging means energy from the PV system, or from the grid, is going int
 <!-- review notes
 - sentence 1: support check: partial - Passages say power is charged from the system into the battery and list 'Grid to Battery (Charging)', but don't explicitly say PV or grid energy or that SMA monitoring shows it as battery charging power.
 - sentence 2: support check: partial - Position D = active charging (BatChrgOp) is stated and E203, E204, E205, E207 are state changes for float, boost, full, equalization, but E206 (silent mode) is within the E203–E207 range and is not a charge method, and no 'charging symbol' is mentioned.
+- sentence 1: review: partial - The passages define battery charging as power going from the system into the battery and list Grid to Battery charging, but they never name PV as a source.
 -->

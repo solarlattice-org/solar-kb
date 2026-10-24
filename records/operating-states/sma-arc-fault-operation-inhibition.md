@@ -25,7 +25,9 @@ claims:
   - src: src:sma-stp33-62-us-41-ops-manual
     loc: tbl=7.r4
     h: 941ab92a0300
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Operation inhibition is a latched stop. The SMA inverter enters it when the arc-fault circuit interrupter is enabled with operation inhibition and detects an electric arc, and it stops feeding into the grid. The red LED glows and event 4301 appears on the display, in the inverter's event list or in a communication product such as Sunny Portal. Some three-phase models also report event 4302. The inverter does not restart by itself. Someone has to reset the inhibition manually before it will feed in again. On Sunny Tripower TL-US units the reset needs a communication product that matches the type of communication in use. If the AFCI is instead set to run without operation inhibition, no lockout happens. The inverter waits, restarts automatically and checks whether the arc is still there. Some models can also be set to lock out only after 5 arc detections within 24 hours.
 

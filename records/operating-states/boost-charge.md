@@ -21,7 +21,9 @@ claims:
   - src: src:sma-doc-260329
     loc: sec=2.2
     h: e012c72d98e3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Boost charge is a battery charging process in which the Sunny Island applies a high charging voltage so the battery reaches roughly 85% to 90% of its usable capacity quickly. It is the most common Sunny Island charging process. Battery management picks it, or a full or equalization charge, when charging moves into the constant voltage phase. During this constant voltage (absorption) phase the charging voltage stays fixed and the charging current falls steadily. With flooded lead-acid batteries, boost charge is meant to make the battery gas so the electrolyte is mixed and balanced again. Because it charges at a high voltage over a short time, it also keeps a generator heavily loaded. The parameter BatChrgOp shows Boost (1) while this process is active. The change into boost charge is logged as event 9320 or shown as display entry E204. Set the boost charging voltage (ChrgVtgBoost) and the absorption time (AptTmBoost) to match the battery maker's recommendations. The default cell voltage is 2.40 V and the default absorption time for flooded batteries is 90 min. A multifunction relay set to AptPhs switches while the battery charge is in the absorption phase.
 

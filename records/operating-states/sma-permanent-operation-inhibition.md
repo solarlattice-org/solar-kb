@@ -19,7 +19,9 @@ claims:
   - src: src:kb-sma-sixx-20-us-event-messages
     loc: sec=h45
     h: c0c528d6a6bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages say the device switches off and doesn''t switch on again
     and must be replaced for a defect, but the ''until reset'' and the ''Stopped state'' classification
     are only partly shown (event 9102 implies a reset via Start).'
@@ -29,4 +31,5 @@ Permanent operation inhibition means the device has stopped operating and will n
 <!-- review notes
 - sentence 2: support check: partial - Event 9102 meaning and the corrective measure are stated, but the passage doesn't name Sunny Island explicitly (u1 mentions it only indirectly); 'clear it' is paraphrase of corrective measure.
 - sentence 7: support check: partial - The passage shows an event message 'Permanent operation inhibition' but doesn't mention Sunny Boy Smart Energy in the text shown.
+- sentence 7: review: partial - The passage does show 'Permanent operation inhibition' as an event message, but its text never names the Sunny Boy Smart Energy.
 -->

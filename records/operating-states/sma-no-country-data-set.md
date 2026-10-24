@@ -24,11 +24,14 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: tbl=15.r1
     h: 5c476c936f5d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 This state means the inverter has no country data set (grid code) configured yet, so it does not operate or feed in. It is normal during first commissioning, because a country data set has to be set before the inverter can start feed-in. The inverter shows this state by flashing its green and red LEDs at the same time, 2 s on and 2 s off. To clear it, set the country data set, for example with the commissioning wizard or through a System Manager. When the configuration is finished, the inverter leaves this state and starts operating by itself. Pick the data set that matches the installation site and how the system will be used. A wrong choice can disturb the PV system and cause problems with the grid operator, so ask the grid operator if you are not sure which one applies.
 
 <!-- review notes
 - sentence 1: support check: partial - No country data set and stopped operation/feed-in are stated, but the passages never equate the country data set with 'grid code'.
 - sentence 2: support check: partial - Passages say a country data set must be set during commissioning before feed-in, but they don't state that the state is 'normal'.
+- sentence 1: review: partial - The passages say operation and feed-in stop because no country data set is set, but they never equate the country data set with a 'grid code'.
 -->

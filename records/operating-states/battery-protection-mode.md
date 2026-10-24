@@ -14,4 +14,6 @@ Battery protection mode is a normal Sunny Island function that protects the batt
 <!-- review notes
 - sentence 7: support check: partial - Battery > Protection mode menu is stated and BatPro SOC parameters on the Sunny Remote Control are shown, but the time-window parameters on the Remote Control are only listed as parameters, not explicitly stated as set there; menu is for communication product, not named as such.
 - sentence 8: support check: partial - Event text and W757 as battery-preservation mode 3 are present, but 'US models' and the advice for a technician to check charging and thresholds are not in the passages.
+- sentence 1: review: partial - The passages say protection mode protects the battery when SOC falls below thresholds, but nothing calls it a 'normal' function.
+- sentence 7: review: partial - The Battery > Protection mode menu sets both thresholds and time windows, but the cited Sunny Remote Control BatPro parameters cover only the SOC thresholds, not the time windows.
 -->

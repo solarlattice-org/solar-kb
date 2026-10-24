@@ -19,7 +19,9 @@ claims:
   - src: src:sma-doc-si30m-44m-60h-80h-be-en-33w
     loc: tbl=110.r8
     h: e0a3caa18621
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Equalization charge is a battery charging process that brings series-connected cells to a common, nearly full state of charge. Without regular equalization, cell charge levels slowly drift apart, which can weaken battery performance and cause early battery failure. The active charging process shows Equalize when this charge is running. The event log records a status change when the battery enters equalization charge. You can start a manual equalization charge, which runs only once and can be ended with Stop. With Idle, the device waits until the conditions for equalization are met. Automatic equalization charge is switched on or off under Battery > Charge, and its completion times, abort time for lithium-ion batteries and cycle time are set there. The generator request can be set to start the generator during equalization charge, or during both equalization and full charge. This is a normal maintenance state and needs no action unless you want to change its schedule or stop it.
 

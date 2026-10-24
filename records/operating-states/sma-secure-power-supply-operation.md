@@ -15,4 +15,5 @@ In secure power supply operation, the inverter powers a dedicated outlet using c
 <!-- review notes
 - sentence 1: support check: partial - Passage says inverter supplies the outlet with PV current in this mode, but 'dedicated' outlet is not stated (minor).
 - sentence 7: support check: partial - The messages and meanings are stated, but 'both need action' is not stated in the passages, and 'too high' load is only given as overload.
+- sentence 7: review: partial - The meanings of P: Overload and SPS AC overvoltage are stated, but nothing in the passages says that both need action.
 -->
