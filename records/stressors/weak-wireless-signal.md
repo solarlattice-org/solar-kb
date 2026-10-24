@@ -20,4 +20,5 @@ This stressor is a wireless link between the inverter and the Wi-Fi router or ac
 <!-- review notes
 - sentence 3: support check: partial - Reinforced cement walls and metal-covered surfaces reduce range, and metal reduction is up to 100%; but 'can block completely' is 'up to 100%', roughly fine, though the rows are short.
 - sentence 7: support check: partial - Router active, in range, signalling correct operation, and repeater are stated; 'switched on' is covered by 'active', but the repeater placement away from obstacles comes from u36, so mostly supported with the 'access point' and conditional framing slightly merged.
+- sentence 1: review: partial - The ABB rows say the signal between the inverter and the Wi-Fi or wireless router is too weak, but none of the cited passages mentions an access point.
 -->

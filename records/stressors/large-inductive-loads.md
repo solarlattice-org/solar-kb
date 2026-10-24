@@ -15,4 +15,5 @@ Large inductive loads such as motors and pumps can draw a very high startup powe
 
 <!-- review notes
 - sentence 1: support check: partial - Passages say inductive load startup power can be too large for the backup output, but not that motors/pumps specifically draw very high startup power.
+- sentence 1: review: partial - The Solis rows say an inductive load's startup power can be too large for the backup output, but they never name motors or pumps or call the startup power 'very high'.
 -->
