@@ -16,4 +16,5 @@ The MLPE communication gateway is a rooftop radio unit. It talks to module-level
 <!-- review notes
 - sentence 4: support check: partial - The passages describe troubleshooting for TS4-R devices not responding to detection or losing communication, but they do not call it the main failure mode.
 - sentence 5: support check: partial - The passages cover resistor placement, reverse polarity with the red LED, wire cross connections, loose connections, and EMI from shared conduit. They do not say a missing resistor is a cause, and they do not frame these as the common causes.
+- sentence 4: review: partial - The passage covers TS4-R devices that do not respond to detection during commissioning or lose contact with the gateway, but it never calls this the main failure mode.
 -->

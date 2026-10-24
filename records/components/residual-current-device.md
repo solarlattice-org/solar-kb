@@ -11,4 +11,5 @@ A residual-current device is a protective switch that disconnects a circuit auto
 - sentence 1: support check: partial - The passage says an RCD is required as primary fault protection in TT systems and that it guarantees automatic disconnection, but it doesn't define an RCD as a protective switch that disconnects when residual current occurs.
 - sentence 5: support check: partial - The passage says a type A RCD with 500 mA fulfills the requirement, but only when no other circuit breaker can be used, and the statement leaves out that condition.
 - sentence 7: support check: partial - The passages support the IEC 62109-2 monitoring unit and its ground-fault disconnection, but they don't say that many inverters have one, and the standard appears only in a single product's data line.
+- sentence 7: review: partial - The ABB row supports IEC 62109-2 residual current monitoring and the Schneider passage supports telling ground faults apart from leakage current and disconnecting, but the passages describe only two specific products, so the 'many inverters' scope is not stated.
 -->

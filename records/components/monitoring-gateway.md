@@ -25,4 +25,5 @@ A monitoring data logger gathers data from inverters, weather sensors, energy me
 - sentence 3: support check: partial - The SolarEdge gateway passage supports linking SolarEdge/non-SolarEdge inverters, sensors, meters, third-party loggers, power reduction devices and transferring data to the manufacturer's server, but it is a specific product, not communication gateways generally.
 - sentence 4: support check: partial - The listed interfaces (Ethernet, RS485, RS232, ZigBee, Wi-Fi, mini-USB for software upgrade) are stated, but for the SolarEdge gateway specifically, with ZigBee/Wi-Fi sold separately/optional, not as typical interfaces generally.
 - sentence 5: support check: partial - Passage says minimum one month (requirement) and best practice three months local plus cloud backup, and remote monitoring with alerts; but it does not say one month is best practice, and 'three months is preferred' is a mild rewording.
+- sentence 4: review: partial - The interfaces are listed for the SolarEdge gateway only, with ZigBee optional and ZigBee/Wi-Fi sold separately, so calling them typical of gateways in general goes beyond the passage.
 -->
