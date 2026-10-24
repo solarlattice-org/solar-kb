@@ -36,7 +36,9 @@ claims:
   - src: src:sma-video-sicherheitsunterweisung-f-r-sunny-central-wechselrichter-wbt-1-safety-instruction-86472045
     loc: sec=h1
     h: 6e003b43d936
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: controlled_by
   target: mit:rodent-protection
@@ -49,7 +51,9 @@ claims:
   - src: src:sma-video-sicherheitsunterweisung-f-r-sunny-central-wechselrichter-wbt-1-safety-instruction-86472045
     loc: sec=h1
     h: 6e003b43d936
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - u8 says rodent protection options exist and rodents cause ground
     faults, but the passage doesn''t mention a Sunny Central Storage scope beyond the overall talk; the
     ''common cause'' is stated, so core is supported, with product scoping loosely covered.'
@@ -62,7 +66,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: tbl=18.r1
     h: 5d31a54780d3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: controlled_by
   target: proc:venomous-bite-response
@@ -94,7 +100,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=h17
     h: da525f81bf0c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: controlled_by
   target: tool:insect-repellent
@@ -117,6 +125,13 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=h17
     h: da525f81bf0c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Animals and insects on solar and storage sites put workers at direct risk. Snake bites can kill, spider bites cause pain and swelling, tick bites can lead to tick bite fever, bee stings can trigger allergic reactions, and bugs can fly into the eyes. Snakes like to hide behind the bends of inverter doors, and wasps and other insects build nests there, so take care when opening equipment for service. Wildlife also damages equipment. Rodents chew cables once they get past unsealed gaskets, which commonly causes ground faults, and nesting insects and animals can cause short circuits or arc flashes. Ground-mounted plants in rural and farming areas are the most exposed. Termites, rats and snakes cause failures, mostly in solar cables and modules, and hot dry sites add poisonous snakes, spiders and scorpions. Inspect DC wiring boxes and inverter enclosures every year for pests, remove nests using safe sanitation, and repair any cracks or gaps that animals use to get in. Know the rapid response procedure for venomous bites before you go to site, keep anti-venom on site where required, and get first aid training. Do not kill these animals, because it is often illegal and makes a bite more likely. Handling pesticides, herbicides and rodent poisons is a hazard in itself. Plan every job with a risk assessment, proper training and the right PPE.
+
+<!-- review notes
+- sentence 1: review: partial - The listed bite and sting effects match the SolarPower Europe passage almost word for word, but the passages only talk about solar farms and plants, so the extension to 'storage sites' has no support.
+- sentence 4: review: partial - The IEA passages back termites, rats and snakes causing failures mostly in cables and modules, and poisonous snakes, spiders and scorpions on hot dry sites, but 'most exposed' is a comparison the source never makes (it says most O&M risks…
+-->

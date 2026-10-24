@@ -44,7 +44,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2018
     loc: sec=h102
     h: f967dde7ab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: controlled_by
   target: tool:chemical-apron
@@ -79,7 +81,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2018
     loc: sec=h102
     h: f967dde7ab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: controlled_by
   target: tool:rubber-boots
@@ -146,7 +150,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2018
     loc: sec=h102
     h: f967dde7ab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: controlled_by
   target: tool:eye-wash-station
@@ -159,7 +165,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2018
     loc: sec=h102
     h: f967dde7ab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: controlled_by
   target: tool:safety-glasses
@@ -168,7 +176,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2018
     loc: sec=h102
     h: f967dde7ab20
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: controlled_by
   target: proc:battery-risk-assessment
@@ -207,7 +217,9 @@ claims:
   - src: src:std-standards-nec-2017-nec2017-706
     loc: tbl=1.r3
     h: cb8bd34cc2ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: controlled_by
   target: mit:electrolyte-leak-alarm
@@ -220,7 +232,9 @@ claims:
   - src: src:std-standards-nec-2017-nec2017-706
     loc: sec=h24
     h: 490b98659fc1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: controlled_by
   target: mit:electrolyte-identification-signage
@@ -232,7 +246,9 @@ claims:
   - src: src:std-standards-nec-2017-nec2017-706
     loc: sec=h24
     h: 490b98659fc1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c12
   rel: controlled_by
   target: mit:battery-enclosure-protection
@@ -292,4 +308,5 @@ If a battery is handled wrongly, its electrolyte can leak out and irritate the e
 - sentence 3: support check: partial - The acidic, corrosive electrolyte and the burn and respiratory hazards are stated, along with the exposure-only-if-abused wording. The passages do not attribute that wording to the manufacturer, and they do not say it applies to only some cells.
 - sentence 4: support check: partial - Solid or immobilized electrolytes (most lithium, VRLA) are stated to present little or no hazard. The passages do not state that vented batteries with free liquid electrolyte carry the highest risk, nor give vented nickel-cadmium as the example, although they do describe corrosive potassium hydroxide electrolyte in Ni-Cad.
 - sentence 6: support check: partial - The PPE list is supported, and so are the eye wash for liquid electrolyte and safety glasses for non-electrolyte work. However, the passages say the eye wash is to be available and the PPE is to be worn, not that it is kept in the work area as a blanket instruction. The statement also leaves out face shield, and the PPE list is mixed with the liquid-electrolyte condition.
+- sentence 4: review: partial - NFPA 70E supports the little-or-no hazard of solid or immobilized electrolytes (lithium, VRLA), but no passage says vented free-liquid batteries such as vented Ni-Cd carry the highest risk.
 -->

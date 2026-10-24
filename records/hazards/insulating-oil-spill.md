@@ -19,6 +19,9 @@ claims:
     loc: sec=3.2
     h: ffe019a876f4
   review: drafted
+  review_note: 'review: partial - The passage covers leaks in tanks, radiators, pump piping and heat exchangers
+    and says to correct them, but it ties the periodic IR scan to finding plugged radiators rather than
+    leaks, and never says inspection catches leaks early.'
 - claim_id: c2
   rel: controlled_by
   target: mit:oil-leak-repair

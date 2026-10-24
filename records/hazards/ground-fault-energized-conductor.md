@@ -58,7 +58,9 @@ claims:
   - src: src:std-standards-nec-2011-2011-nec2011-690
     loc: sec=h9
     h: c0ef2aee7c7e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - u1 gives the label, but the 2011 NEC edition is not stated in
     the passage.'
 - claim_id: c4
@@ -78,7 +80,9 @@ claims:
   - src: src:yaskawa-solectria-yaskawa-customer-facing-instructions-full
     loc: sec=h21
     h: f992f523e67d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: controlled_by
   target: tool:personal-protective-equipment

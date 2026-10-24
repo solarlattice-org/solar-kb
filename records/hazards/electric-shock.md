@@ -63,6 +63,8 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=h48
     h: 87024b8a518c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Electric shock happens when someone touches live parts or cables. In inverters and at the grid connection point, the voltages present can be lethal. Damaged equipment, such as defective cables or a damaged enclosure, can put high voltage on parts you can reach. Only operate equipment that has no visible damage, check it regularly and keep its safety equipment accessible and working. Before any work, disconnect the device from all voltage sources, make sure it cannot be reconnected and confirm it is voltage-free. Capacitors can stay charged after the supply is disconnected. Wait the time the manufacturer specifies before opening the cover: 5 minutes for the CPS inverter and 15 minutes for the Sunny Island. During a ground fault, parts of the PV system may still be live. Touch PV cables only on their insulation, stay away from the array frame and substructure, and never connect a string with a ground fault to the inverter. On the Enphase Q and IQ Cable, unused AC connectors are live whenever the system is energized. Cover each one with a sealing cap, and never install the terminator while power is connected. Only qualified personnel should install, troubleshoot or replace microinverters and their cabling. Wear suitable personal protective equipment for all work on the product.

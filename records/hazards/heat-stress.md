@@ -61,4 +61,6 @@ Heat stress happens when workers do physical work in hot conditions. It can caus
 - sentence 2: support check: partial - The heavy work examples match, but the passages don't explicitly say heavy work raises the risk, though the work/rest example implies heavier work needs more rest.
 - sentence 4: support check: partial - The 20/40 example for heavy work at 104 °F is stated, but the passages don't call the work/rest schedule the main control, and attributing it to NIOSH is only loosely supported.
 - sentence 5: support check: partial - Hydration and team monitoring helped, and the workers recovered, but the passages don't say affected workers got care 'early'; they say only that coworkers noticed signs and workers were sent to the medical station.
+- sentence 1: review: partial - Heat illness and life-threatening heat stroke are stated, but no passage defines heat stress as arising from physical work in hot conditions.
+- sentence 4: review: partial - The example of 20 minutes of work and 40 minutes of rest for heavy work at 104 °F is stated, but no passage calls work/rest schedules the main control.
 -->

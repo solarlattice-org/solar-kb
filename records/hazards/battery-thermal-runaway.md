@@ -49,7 +49,9 @@ claims:
   - src: src:trn-training-bess-dnv-mcmickenfinaltechnicalreport
     loc: tbl=14
     h: b927736a3445
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: controlled_by
   target: mit:battery-compartmentalization
@@ -69,7 +71,9 @@ claims:
   - src: src:trn-training-bess-dnv-mcmickenfinaltechnicalreport
     loc: sec=6.3
     h: 9f4b4a9bddcd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: controlled_by
   target: mit:bess-ventilation
@@ -93,7 +97,9 @@ claims:
   - src: src:std-standards-nfpa-855-20-pdf
     loc: sec=h61
     h: 702216dd0fff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: controlled_by
   target: proc:bess-emergency-response

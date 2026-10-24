@@ -23,7 +23,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2009
     loc: sec=h108
     h: 54c337885cf9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: controlled_by
   target: mit:ignition-source-control
@@ -82,7 +84,9 @@ claims:
   - src: src:sma-doc-si44m-80h-13-bbf-ia-en-10
     loc: sec=h58
     h: 859a589beb2a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: controlled_by
   target: mit:battery-chemical-hazard-signage
@@ -93,7 +97,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2009
     loc: sec=h109
     h: d6cbddb6cd6a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: controlled_by
   target: tool:non-sparking-tools
@@ -119,7 +125,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2009
     loc: sec=h103
     h: 6914dda8d8c3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: controlled_by
   target: mit:ventilation-airflow-alarm
@@ -131,7 +139,9 @@ claims:
   - src: src:std-standards-nfpa-nfpa-70e-2009
     loc: sec=h108
     h: 54c337885cf9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: controlled_by
   target: mit:body-static-discharge
@@ -142,7 +152,9 @@ claims:
   - src: src:std-standards-neca-neca-90-15-comm-building-electrical-systems
     loc: sec=3.4.3
     h: d5cc3a7e4bb1
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passage states the static-discharge instruction, but it comes
     from a different document than the NECA 90 scope, which the passages do not show.'
 ---

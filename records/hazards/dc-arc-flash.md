@@ -16,7 +16,9 @@ claims:
   - src: src:book-practical-solution-guide-to-arc-flash-hazards-2nd-ed
     loc: sec=h80
     h: 032cb724d40d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: controlled_by
   target: proc:arc-flash-hazard-assessment
@@ -43,4 +45,5 @@ A DC arc flash is a sudden high-power discharge between conductors in a PV sourc
 - sentence 3: support check: partial - u7 says dc arcs are severely damaging, usually cause destructive fires, and are transient so hard to detect. 'Often' is a reasonable paraphrase of 'usually', but the evidence does not directly say that short-lived arcs are hard to detect for that reason in those words, which is close enough; the main gap is minor.
 - sentence 6: support check: partial - u5 says the IE calculation sets the PPE level and boundary, and that overly burdensome and inadequate PPE both carry risk. u33 says the PPE type depends on the assessed hazard. The imperative to do the assessment first is not stated explicitly.
 - sentence 7: support check: partial - u30 lists the three ways: avoid accidents via procedures, tools and maintenance, reduce arc energy, and use PPE. The specific 'arc-rated clothing' is only a typical PPE item from u33, not the third method itself.
+- sentence 7: review: partial - The three ways to limit exposure and the procedures/tools/maintenance detail are stated, but the source names the third way as proper use of PPE; arc-rated clothing appears only as the most common PPE, so the sentence narrows it.
 -->

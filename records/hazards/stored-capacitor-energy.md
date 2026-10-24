@@ -108,7 +108,9 @@ claims:
   - src: src:abb-fimer-pvm-75-155-tl-us-user-product-manual-reva
     loc: sec=8.2.4.8
     h: 5add25577173
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   rel: controlled_by
   target: mit:observe-safety-labels
@@ -135,7 +137,9 @@ claims:
   - src: src:abb-fimer-pvm-75-155-tl-us-user-product-manual-reva
     loc: sec=8.2.4.8
     h: 5add25577173
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passages say regulatory label indicates discharge time, but don''t
     frame it as a general observe-safety-labels control; core is present.'
 ---
@@ -145,4 +149,5 @@ Inverter capacitors can still hold a dangerous charge after the AC and DC source
 - sentence 3: support check: partial - Warning labels exist and Sunny Island/Yaskawa equipment are mentioned, but the passages don't explicitly categorize string, central and battery inverters.
 - sentence 5: support check: partial - 60 minutes or De-energy command is stated for CPS, but 'older' and 'central' inverters are not mentioned.
 - sentence 6: support check: partial - Passages give the label/wait instructions but do not name FIMER.
+- sentence 4: review: partial - The 5-minute waits (CPS, Huawei, Yaskawa-Solectria) and the 15-minute Sunny Island wait before opening are supported, but no passage calls the CPS/Huawei units 'string inverters'.
 -->

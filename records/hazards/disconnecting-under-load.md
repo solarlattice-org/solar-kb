@@ -26,7 +26,9 @@ claims:
   - src: src:yaskawa-solectria-power-supply-board
     loc: sec=h24
     h: adf8a72746bc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: controlled_by
   target: mit:safety-isolation
@@ -39,7 +41,9 @@ claims:
   - src: src:generac-generac-pwrmicro-installation-manual-a0008718926
     loc: sec=h23
     h: 8c250461e617
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: controlled_by
   target: tool:lockout-tagout-kit

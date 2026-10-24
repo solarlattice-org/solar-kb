@@ -91,4 +91,5 @@ Inverters, inverter parts and battery equipment are heavy, so lifting them the w
 
 <!-- review notes
 - sentence 5: support check: partial - The passages say at least two people or a hoist to install the Inverter and two persons for the roof, but not that it applies only to 'large' inverters.
+- sentence 1: review: partial - Heavy inverters and the risk of muscle strain or back injury from improper lifting are stated, but no cited lifting passage covers inverter parts or battery equipment specifically.
 -->

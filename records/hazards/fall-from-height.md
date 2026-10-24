@@ -24,7 +24,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nabcep-pv-resource-guide-1
     loc: fig=133
     h: 710d823abf9d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: controlled_by
   target: tool:personal-fall-arrest-system
@@ -61,7 +63,9 @@ claims:
   - src: src:ref-standards-osha-fy12-sh-23536-12-studentreferencematerials
     loc: tbl=8.r11
     h: af05f74620cf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: controlled_by
   target: mit:roof-opening-covers
@@ -86,7 +90,9 @@ claims:
   - src: src:ref-standards-osha-fy12-sh-23536-12-studentreferencematerials
     loc: sec=h9
     h: 505f91f04c1e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: controlled_by
   target: mit:safety-monitor
@@ -106,7 +112,9 @@ claims:
   - src: src:ref-standards-osha-fy12-sh-23536-12-studentreferencematerials
     loc: sec=h5
     h: 8d04810b75b3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Securing of ladders is named as an essential element reducing
     fall exposures, though the link is only loosely stated.'
 - claim_id: c8
@@ -121,7 +129,9 @@ claims:
   - src: src:iea-pvps-t13-25-2022
     loc: sec=h80
     h: 137eb941add2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   rel: controlled_by
   target: proc:job-hazard-analysis
@@ -129,7 +139,9 @@ claims:
   - src: src:ref-standards-osha-fy12-sh-23536-12-studentreferencematerials
     loc: sec=h9
     h: 505f91f04c1e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: controlled_by
   target: proc:fall-rescue
@@ -139,7 +151,9 @@ claims:
   - src: src:ref-standards-osha-fy12-sh-23536-12-studentreferencematerials
     loc: sec=h49
     h: 97ec155cf784
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Workers on rooftop and building-mounted PV systems can fall from roof edges, through roof openings, or from the structure the array is mounted on. High elevations, unprotected edges and steep slopes create the risk, and wind, wet surfaces, ladder misuse and unsafe behavior make it worse. Skylights, roof windows and smoke vents are a hidden danger because their glazing usually cannot hold a worker. Guard or cover them, or keep them clearly marked and well away from the PV equipment. A roof can also collapse if it can carry the PV equipment but not the added weight of maintenance staff, so check the roof structure before work starts. US construction rules require fall protection whenever a worker is 6 feet or more above a lower level. The main controls are guardrails or parapets at edges and a personal fall arrest system: a full-body harness, a shock-absorbing lanyard on the rear D-ring, and a roof anchorage. Safety nets, covers and safety monitors are also used. Most fatal falls happen when no fall protection is in place. Training, a job hazard analysis and a practiced rescue plan are therefore essential, and the rescue plan must include steps to relieve suspension trauma.
 

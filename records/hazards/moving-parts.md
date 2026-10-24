@@ -89,4 +89,5 @@ Moving parts of machinery can crush or cut off body parts when a person is close
 - sentence 1: support check: partial - Crush/sever from moving parts is stated, but not the generic 'machinery' or 'when close while they move' condition; examples are generator and HVAC frame.
 - sentence 2: support check: partial - Auto-start by Sunny Island is stated, but 'off-grid and backup systems' and 'without warning' are not in the passages.
 - sentence 6: support check: partial - Warning covers lifting and moving the HVAC-mounted frame and keeping clear, but 'heavy frames' generally and 'battery enclosure' are not stated.
+- sentence 1: review: partial - The passages say generator moving parts can crush or sever body parts and the HVAC frame warns of crushing by moving parts, but the general 'machinery' framing and the 'when close while they move' condition are not stated.
 -->

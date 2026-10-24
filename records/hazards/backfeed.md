@@ -14,4 +14,5 @@ Backfeed is the danger that a circuit you think is dead gets energized from anot
 <!-- review notes
 - sentence 1: support check: partial - Passages list generators, wind turbines, fuel cells, and the grid as other sources coupled with PV (and storage), but never define backfeed as the danger of a dead-seeming circuit being energized.
 - sentence 6: support check: partial - The passage says fused disconnects are suitable unless otherwise marked, a condition the statement omits, and the statement's 'only if' for line/load breakers is stronger than the passage.
+- sentence 1: review: partial - The passage lists storage, generators, wind turbines, fuel cells and the grid as other sources, but it never defines backfeed as a seemingly dead circuit being energized from another source.
 -->

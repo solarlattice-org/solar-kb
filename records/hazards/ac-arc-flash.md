@@ -50,7 +50,9 @@ claims:
   - src: src:book-practical-solution-guide-to-arc-flash-hazards
     loc: sec=1.10
     h: a08623843178
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: controlled_by
   target: proc:arc-flash-hazard-assessment
@@ -60,7 +62,9 @@ claims:
   - src: src:book-practical-solution-guide-to-arc-flash-hazards
     loc: sec=1.10
     h: a08623843178
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: controlled_by
   target: mit:current-limiting-devices

@@ -59,7 +59,9 @@ claims:
   - src: src:std-standards-neca-neca-90-15-comm-building-electrical-systems
     loc: sec=3.3
     h: 8fb0e8232bb0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: controlled_by
   target: tool:hard-hat
@@ -68,7 +70,9 @@ claims:
   - src: src:test-cx-manuals-seaward-pv-system-commissioning-and-testing-guide
     loc: sec=h6
     h: 2d04dbe72872
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: controlled_by
   target: tool:safety-glasses
@@ -76,7 +80,9 @@ claims:
   - src: src:test-cx-manuals-seaward-pv-system-commissioning-and-testing-guide
     loc: sec=h6
     h: 2d04dbe72872
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: controlled_by
   target: mit:rapid-shutdown
@@ -93,7 +99,9 @@ claims:
   - src: src:ref-standards-nec-2017-2017-nec-notes-may-26-2017-4-02-pm
     loc: sec=h122
     h: 7b8c30eed428
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Whenever light falls on PV modules, the array produces a dangerous DC voltage that can kill. That voltage is on the DC conductors and on live parts inside the inverter. Unlike an AC circuit, the array's DC circuits are live all through daylight and cannot be isolated at the source. Some tasks, such as insulation tests and I-V measurements, therefore have to be done on energized circuits. Microinverter systems carry the same warning: the DC conductors are ungrounded and may be energized when module leads are connected. Do not touch DC conductors, bare cable ends or live inverter parts. Disconnect the inverter from all voltage sources before working on it, and leave installation and fault repair to qualified persons. Work de-energized under lockout/tagout where you can. When you must work live, wear rubber insulating gloves, a Class E hardhat, EH-rated footwear and safety glasses, and use insulated tools. During live testing, keep other people out of the work area, and do not touch module frames, backsheets or terminals while the test is running. Rapid shutdown lowers the shock risk from conductors outside the array. Labels warn, however, that conductors inside the array stay energized in sunlight.
 
