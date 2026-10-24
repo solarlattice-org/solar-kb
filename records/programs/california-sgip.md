@@ -29,4 +29,5 @@ SGIP, the Self-Generation Incentive Program, is a California incentive for custo
 <!-- review notes
 - sentence 1: support check: partial - Passages list SGIP as a value stream next to ITC and name the program, but don't state it's a California incentive for customer-sited generation and storage.
 - sentence 2: support check: partial - Eligibility is listed as (IOU's, PG&E Delivery, SoCal Gas), but the passages don't say these are alternatives or define it as 'served by' an IOU.
+- sentence 1: review: partial - The passages name SGIP and list it as a value stream alongside the ITC, but they do not say it is a California incentive for customer-sited generation and storage.
 -->

@@ -21,7 +21,9 @@ claims:
   - src: src:sma-kb-how-many-solarcoins-can-be-earned-per-mwh
     loc: sec=h1
     h: 783990b3b6e3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages say the Foundation grants/rewards SolarCoin (1 per MWh),
     but never state it ''issues'' the coin in a way beyond granting; roughly supported by grants wording.'
 - claim_id: c2
@@ -47,34 +49,11 @@ claims:
     loc: sec=h1
     h: 4e77dd24d230
   review: drafted
-- claim_id: c4
-  attr: warranty_term
-  value:
-    nominal: 35
-    unit: unit:YR
-  conditions: Period over which the SolarCoin Foundation plans to keep distributing SolarCoin, as of the
-    November 2022 article
-  cite:
-  - src: src:sma-kb-solarcoin-claim-rejection-or-refusal-by-solarcoin-foundation
-    loc: sec=h1
-    h: c6dae177f01f
-  review: drafted
-  review_note: possible conflict with c5 (same source; check the conditions)
-- claim_id: c5
-  attr: warranty_term
-  value:
-    nominal: 40
-    unit: unit:YR
-  conditions: Overall length of the SolarCoin Foundation mission
-  cite:
-  - src: src:sma-kb-solarcoin-claim-rejection-or-refusal-by-solarcoin-foundation
-    loc: sec=h1
-    h: c6dae177f01f
-  review: drafted
-  review_note: possible conflict with c4 (same source; check the conditions)
 ---
 SolarCoin is a free reward that the SolarCoin Foundation grants to solar energy producers for the clean energy they generate. The grants are non-recourse. The Foundation grants 1 SolarCoin per 1 MWh, so a 5 kWp system earns about 5 coins a year. SMA plants connected to Sunny Portal through Webconnect, a Sunny Home Manager or a Sunny WebBox can claim SolarCoins. SMA does not advise claiming through systems that do not use WebConnect. To register, a user with admin rights logs in to Sunny Portal, fills in the plant address and the owner/operator and installer fields, then ticks the consent box for the SolarCoin program under Data Releases and saves. A system registered through Sunny Portal must not also be registered with the Foundation or the SolarCoin Explorer, because a duplicate registration blocks participation. You no longer need a wallet to claim, and the wallet ID field in Sunny Portal must stay empty. The Foundation holds the coins until the user redeems them. SolarCoin has moved to the Ethereum-based Energy Web Chain, and claims may take longer to process during the migration. The Foundation can refuse a grant without giving a reason. Possible reasons include unsupported countries, incomplete data, missing power of attorney documents, duplicate claims and suspected fraud.
 
 <!-- review notes
 - sentence 7: support check: partial - u2 says wallet software is replaced by Energy Web Chain (Ethereum-based) and u8 says claims take longer during migration, but 'has moved' is only implied.
+- c4 dropped at review: The passage gives 35 years only as the period the Foundation plans to keep distributing SolarCoin, and calling that a warranty term misreads the relation because the passage describes no warranty.
+- c5 dropped at review: The passage mentions a '40 year mission' but nothing about a warranty, so tagging it as a warranty term misreads the relation even though the number appears.
 -->

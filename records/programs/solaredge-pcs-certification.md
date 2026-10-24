@@ -14,7 +14,9 @@ claims:
   - src: src:se-academy-solaredge-pcs-certification-na-technical
     loc: sec=h1
     h: 8b8f15e4880e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The passage is a SolarEdge course that grants certification,
     but it never explicitly says SolarEdge issues it, though that is strongly implied.'
 - claim_id: c2

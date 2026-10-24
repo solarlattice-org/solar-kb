@@ -33,7 +33,9 @@ claims:
     h: 12afbb4cc7ac
   review: drafted
   review_note: 'support check: partial - The passage says the servicing schedule must be done by SMA Service,
-    but does not name the Sunny Central UP-US or an O&M services offering.'
+    but does not name the Sunny Central UP-US or an O&M services offering.; review: partial - The passage,
+    from the SC-UP-US manual, says the servicing schedule must be carried out by SMA Service, but it never
+    names an Operations & Maintenance Services program or links one to this product.'
 - claim_id: c3
   rel: applies_to
   target: region:fr
@@ -66,4 +68,5 @@ SMA provides service for its products through SMA Service, and SMA can have warr
 
 <!-- review notes
 - sentence 2: support check: partial - The passage states the SMA Service and as-needed/interval requirement, but the product (Sunny Central UP-US) is not named in the passage text itself, only implied by the section.
+- sentence 1: review: partial - The authorized-partner part is supported, but the cited passage only says SMA Service must do the maintenance-plan work for one product, not that SMA services all its products through SMA Service.
 -->

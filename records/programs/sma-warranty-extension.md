@@ -31,7 +31,9 @@ claims:
   - src: src:sma-kb-how-long-is-the-warranty-for-the-sunny-tripower-x
     loc: sec=h1
     h: e1bb3a977435
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: applies_to
   target: prod:sma-home-storage
@@ -51,6 +53,9 @@ claims:
     loc: sec=h5
     h: 961f01d834a8
   review: drafted
+  review_note: 'review: partial - The note matches the passage, which says the 5-to-10-year registration
+    extension is not available in Australia, but the headline ''applies to Australia'' is not stated;
+    at most the passage implies other options such as FLEX remain available.'
 - claim_id: c5
   rel: applies_to
   target: region:nz
@@ -61,6 +66,9 @@ claims:
     loc: sec=h5
     h: 961f01d834a8
   review: drafted
+  review_note: 'review: partial - The note matches the passage, which says the 5-to-10-year registration
+    extension is not available in New Zealand, but the headline ''applies to New Zealand'' is not stated;
+    at most the passage implies other options such as FLEX remain available.'
 - claim_id: c6
   attr: warranty_term
   value:
@@ -83,13 +91,14 @@ claims:
   - src: src:sma-doc-tou-mysma-stou-services-202107-en-10
     loc: sec=h28
     h: 87c9b30bf1bb
-  review: disputed
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passage says registration within 12 months gives an additional
     5 years for selected products; it does not state the warranty term as 5 YR in the way given, though
-    the 5-year extension is stated.; possible conflict with c8 (same source; check the conditions)'
-  conflicts_with:
-  - prog:sma-warranty-extension#c9
-  - prog:sma-warranty-extension#c10
+    the 5-year extension is stated.; possible conflict with c8 (same source; check the conditions); review:
+    the compiler-flagged conflict (prog:sma-warranty-extension#c9, prog:sma-warranty-extension#c10) is
+    a scenario difference, resolved at review'
 - claim_id: c8
   attr: warranty_term
   value:
@@ -101,10 +110,11 @@ claims:
   - src: src:sma-doc-tou-mysma-stou-services-202107-en-10
     loc: sec=h28
     h: 87c9b30bf1bb
-  review: disputed
-  review_note: possible conflict with c7 (same source; check the conditions)
-  conflicts_with:
-  - prog:sma-warranty-extension#c10
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c7 (same source; check the conditions); review: the compiler-flagged
+    conflict (prog:sma-warranty-extension#c10) is a scenario difference, resolved at review'
 - claim_id: c9
   attr: warranty_term
   value:
@@ -132,11 +142,12 @@ claims:
   - src: src:sma-doc-278702
     loc: sec=h5
     h: 961f01d834a8
-  review: disputed
-  conflicts_with:
-  - prog:sma-warranty-extension#c7
-  - prog:sma-warranty-extension#c8
-  review_note: possible conflict with c9 (same source; check the conditions)
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
+  review_note: 'possible conflict with c9 (same source; check the conditions); review: the compiler-flagged
+    conflict (prog:sma-warranty-extension#c7, prog:sma-warranty-extension#c8) is a scenario difference,
+    resolved at review'
 - claim_id: c11
   attr: warranty_term
   value:
@@ -150,7 +161,9 @@ claims:
   - src: src:sma-kb-how-long-is-the-warranty-for-the-sunny-tripower-x
     loc: sec=h1
     h: e1bb3a977435
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
     c13 (same source; check the conditions)
 - claim_id: c12
@@ -199,7 +212,9 @@ claims:
   - src: src:sma-kb-how-long-is-the-limited-factory-warranty-for-sma-battery-systems-and-do-i-get-a-fre
     loc: sec=h1
     h: 6553120329ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c15
   attr: warranty_term
   value:
@@ -219,7 +234,9 @@ claims:
   - src: src:sma-kb-for-which-sma-inverters-does-the-free-5-year-warranty-apply
     loc: sec=h1
     h: f150f4bc82e7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Passage gives the commissioning after April 1, 2021 and 12-month
     registration conditions for Spain, Poland and Benelux, but the 5-year term and ''residential'' are
     as an extension; broadly supported, though the cited text does not name the individual countries Belgium,

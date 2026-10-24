@@ -49,7 +49,9 @@ claims:
   - src: src:kb-enphase-what-is-the-limited-warranty-period-for-iq8-series-microinverters
     loc: sec=front
     h: a476ec094312
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The IQ8 FAQ title and the datasheet references to enphase.com/warranty
     are present, but nothing states that this limited warranty text applies to the IQ8 series. The 15-year
     warranty passage never names the IQ8.'

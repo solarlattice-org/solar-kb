@@ -26,7 +26,9 @@ claims:
   - src: src:eq-equip-inverters-solaredge-design-installation-power-optimizer-input-connector-compatibility-v1-3
     loc: sec=h10
     h: 7e367320cd7e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: applies_to
   target: prod:solaredge-commercial-gateway

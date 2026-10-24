@@ -43,7 +43,9 @@ claims:
   - src: src:se-academy-start-here-for-north-america-sales-training-01-solaredge-sales-training-journeys
     loc: sec=h4
     h: 397d85bcafff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: applies_to
   target: prod:solaredge-nexis

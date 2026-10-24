@@ -31,7 +31,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Passage says the Powerwall 3 battery is domestic content eligible
     but the inverter is not, but it does not say a ''bonus applies'' to the product as a whole; the bonus
-    claim is overstated.'
+    claim is overstated.; review: partial - The passage says the Powerwall 3 battery is domestic content
+    eligible and its inverter is not, but it never names a ''domestic content bonus'' program or says
+    the bonus applies to the product as a whole.'
 ---
 The domestic content bonus is an incentive tied to equipment that counts as domestic content. In third-party-ownership agreements, eligible equipment lets the customer benefit from it. SolarEdge Academy runs a training course on domestic content for commercial products. It covers product updates, power class selection for inverters made in America, and a recorded technical webinar. SolarEdge says its Nexis system is fully eligible for domestic content. According to SolarEdge, the Tesla Powerwall 3 battery is eligible for domestic content but its inverter is not.
 

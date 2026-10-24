@@ -46,7 +46,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: applies_to
   target: region:be
@@ -54,7 +56,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: applies_to
   target: region:ca
@@ -62,7 +66,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: applies_to
   target: region:cz
@@ -95,7 +101,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: applies_to
   target: region:hu
@@ -207,7 +215,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c25
   rel: applies_to
   target: region:za
@@ -215,7 +225,9 @@ claims:
   - src: src:sma-doc-278901
     loc: sec=h6
     h: 03f8266895ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c26
   rel: applies_to
   target: region:th

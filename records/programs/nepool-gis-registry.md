@@ -13,4 +13,5 @@ The NEPOOL GIS is the registry where renewable energy certificates (RECs) are cr
 
 <!-- review notes
 - sentence 1: support check: partial - Passage says data is submitted to the NEPOOL GIS for REC creation and RECs are created for production periods, but doesn't explicitly define the GIS as the registry where RECs are created.
+- sentence 1: review: partial - The passage says verified monthly data is sent to the NEPOOL GIS in line with REC creation deadlines and that RECs are created per period, but it never explicitly calls the GIS the registry where RECs are created.
 -->

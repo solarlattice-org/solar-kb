@@ -27,4 +27,5 @@ NABCEP offers professional certifications as a PV Installation Professional, a P
 
 <!-- review notes
 - sentence 7: support check: partial - The passage says continuing education credits toward certification or recertification can be earned at the Annual Continuing Education Conference, but it doesn't say that conference is NABCEP's.
+- sentence 7: review: partial - The passage says continuing education credits can be earned at the Annual Continuing Education Conference, but it does not say the conference is NABCEP's.
 -->

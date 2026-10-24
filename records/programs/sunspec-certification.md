@@ -33,7 +33,9 @@ claims:
   - src: src:sma-kb-installation-of-sunspec-certified-shutdown-receiver
     loc: sec=h1
     h: 0a53013adbc9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: applies_to
   target: prod:tigo-ts4
@@ -43,10 +45,15 @@ claims:
     loc: sec=h1
     h: 0a53013adbc9
   review: drafted
+  review_note: 'review: partial - The passage says the TS4-R-F line is an SMA-compatible SunSpec certified
+    rapid shutdown receiver, but it never names Tigo and does not extend certification to the whole TS4
+    platform, so the claim''s scope is wider than its source.'
 ---
 SunSpec certification shows that a device conforms to a SunSpec interoperability specification. The best-known example is rapid shutdown equipment that responds to the SunSpec shutdown signal. SunSpec interoperability specifications are normative documents, so a product has to conform to them to support interoperability. Each specification moves through draft, test, approved and superseded stages. SMA publishes a technical information document that lists which of its inverters are approved for use with SunSpec Certified rapid shutdown devices. Check it before pairing an inverter with shutdown hardware. SMA names the JMS-F devices and the Tigo TS4-R-F receiver line as SunSpec certified rapid shutdown equipment that works with its inverters. On SMA inverters, set the rapid shutdown mode to SunSpec Shutdown when you use a PV array disconnect switch under the SunSpec interoperability specification.
 
 <!-- review notes
 - sentence 1: support check: partial - Passages show SunSpec certified rapid shutdown devices and SunSpec interoperability specs, but don't explicitly say certification shows conformance or that this is the best-known example.
 - sentence 3: support check: partial - The titles show an SMA technical information document giving an overview of approved inverters with SunSpec Certified RSDs, but the advice to check it before pairing is not in the passages.
+- sentence 1: review: partial - The passages show that specifications are normative and require conformance, and that SunSpec certified rapid shutdown devices exist, but they never say certification shows conformance or that rapid shutdown is the best-known example.
+- sentence 4: review: partial - SMA calls the TS4-R-F line SMA-compatible SunSpec certified receivers and lists JMS-F SunSpec Certified Rapid Shutdown Devices, but the passage never names Tigo as the maker of the TS4-R-F line.
 -->

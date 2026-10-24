@@ -25,4 +25,5 @@ The ITC is a US federal tax credit. It came into force in 2005 and is set out in
 
 <!-- review notes
 - sentence 4: support check: partial - The quiz item marks the rebate claim as incorrect, but the passage doesn't explicitly state the ITC isn't a rebate or give the explanation beyond that.
+- sentence 4: review: partial - The quiz marks a response to the statement that the ITC is a rebate paying the homeowner a check as incorrect, which suggests it is not a rebate, but the passage never says so outright and the feedback is ambiguous…
 -->

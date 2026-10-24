@@ -29,4 +29,5 @@ The California Net Billing Tariff, also called NEM 3.0, covers metering of elect
 <!-- review notes
 - sentence 1: support check: partial - u5 defines NBT as metering for receipt and delivery of electricity between Producer and Distribution Provider, but the passages don't explicitly equate NBT with NEM 3.0 (u1 uses NEM 3.0 without the link) and say 'Producer' rather than 'customer generator'.
 - sentence 3: support check: partial - u1 says homeowners must move from existing tariffs to NEM 3.0 when adding PV, but it doesn't say 'the whole site' explicitly, though the existing system's credit is affected.
+- sentence 1: review: partial - Rule 21 defines NBT as metering for receipt and delivery of electricity between Producer and Distribution Provider, but neither passage says NBT is also called NEM 3.0.
 -->

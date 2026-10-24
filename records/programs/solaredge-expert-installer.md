@@ -24,7 +24,9 @@ claims:
   - src: src:se-academy-solaredge-commercial-expert-installer-training
     loc: sec=h1
     h: e5d8e8a55557
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages show SolarEdge courses on edgeacademy.solaredge.com
     and a SolarEdge certification program, but ''issued by'' is implied and not explicitly stated.'
 - claim_id: c2

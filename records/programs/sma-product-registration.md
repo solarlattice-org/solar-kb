@@ -31,6 +31,8 @@ claims:
   - src: src:sma-doc-tou-mysma-stou-services-202107-en-10
     loc: sec=h28
     h: 87c9b30bf1bb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 SMA runs the Product Registration Service under its mySMA terms of use, so owners can register SMA products and assign them to an SMA warranty. There are three registration options: register within 12 months of purchase to set the factory warranty start date, register within 12 months of purchase to extend the factory warranty on selected products, or enter extended warranty codes to activate an extended warranty. The options do not apply to every product, so check the eligibility details shown in the registration service. An SMA installer article says the system owner (recommended) or the installer can register within 12 months after commissioning, but the customer always has to confirm the registration. When an installer registers on the customer's behalf, SMA emails the customer for confirmation. If the customer has not confirmed within three weeks, after two reminder emails, the registration data is deleted. SMA can block a user who cannot show that the PV system operator authorized them to register the system. If there is any doubt, the operator's instructions take priority.

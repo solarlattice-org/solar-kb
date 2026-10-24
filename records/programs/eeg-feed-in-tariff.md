@@ -38,7 +38,9 @@ claims:
   - src: src:sma-doc-278879
     loc: sec=h93
     h: aa851dc0134d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 The EEG feed-in tariff is the payment guaranteed by law under Germany's Renewable Energy Sources Act (EEG) for electricity that PV systems feed into the grid. The funding runs for 20 years, so the earliest PV systems stopped receiving it at the end of 2020. Once a system is more than 20 years old, it no longer gets the usual guaranteed payment for the energy it exports. Such systems are often called UE20 systems. Under EEG 2021, these systems may keep running after their funding ends. SMA offers a German-language planning guide on options for them. A German FNN note says that systems eligible for EEG or KWKG remuneration must not feed energy from storage units into the public grid. On SMA systems, this means the Consumption Limit value must not be set to a negative number. In Sunny Portal with a Sunny Home Manager, the installer enters the feed-in tariff per kWh under the PV system properties. The portal uses this value for load control and recommended actions.
 

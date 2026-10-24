@@ -57,7 +57,9 @@ claims:
   - src: src:alsoenergy-kb-ma-cec-pts-reporting-setup-guide
     loc: sec=front
     h: 68c8060227a5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c5
   rel: applies_to
   target: region:pjm
@@ -79,5 +81,8 @@ claims:
     loc: sec=front
     h: df01fb209efa
   review: drafted
+  review_note: 'review: partial - The passage supports a 10-year contract as the longer of two subscription
+    options, renewable depending on the program and its enrollment rules, but it describes a service subscription
+    contract, not a warranty term, so the ''warranty term'' relation is not…'
 ---
 Locus Energy offers an automated incentive reporting service. It validates and submits SREC generation data for 11 incentive programs across the country and also answers questions about SRECs. Interval data from the revenue-grade production meter is combined into a monthly submission. The program checks the data and then issues SRECs to the account holder. To enroll, register the system with the program, such as Mass CEC PTS or PJM GATS. Name Locus Energy as System Representative or Third Party Reporter, then email the completed reporting setup form to the Locus reporting team. For Massachusetts you also send the Automated Incentive Reporting Contract. The setup form asks for system IDs, the LGate comm device ID, the date in service and installer contact details. Setup forms must arrive by the last business day of the month to be reported for that month. If a form is late, no SRECs are lost, because the next report covers both periods. The LGate stores about two months of data. If it stays offline longer than that, send the reporting team a recent inverter or backup meter reading so the missing generation can be accounted for. Contracts run for five or 10 years and can be renewed, depending on the program.

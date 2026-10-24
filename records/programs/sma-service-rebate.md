@@ -26,7 +26,9 @@ claims:
   - src: src:sma-kb-sma-service-rebate-process-for-us-puerto-rico-and-canada-customers
     loc: sec=h1
     h: 56986eb9c2d5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: applies_to
   target: region:pr
@@ -60,7 +62,9 @@ claims:
   - src: src:sma-kb-is-there-a-sma-service-rebate-for-the-ev-charger
     loc: sec=h1
     h: 4894dec4ba6f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: applies_to
   target: prod:sma-sunny-boy
@@ -114,7 +118,9 @@ claims:
   - src: src:sma-kb-sma-service-rebate-process-for-us-puerto-rico-and-canada-customers
     loc: sec=h1
     h: 56986eb9c2d5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: applies_to
   target: prod:sma-sunny-tripower
@@ -141,7 +147,9 @@ claims:
   - src: src:sma-kb-sma-service-rebate-process-for-us-puerto-rico-and-canada-customers
     loc: sec=h1
     h: 56986eb9c2d5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - CORE1 gets $250 per full unit or board replacement, but ''Sunny
     Tripower CORE1-US'' and the US-specific naming are not stated.'
 - claim_id: c13
