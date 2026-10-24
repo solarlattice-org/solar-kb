@@ -84,4 +84,5 @@ The Generac PWRmanager is a balance-of-system device sold as a unit under part n
 <!-- review notes
 - sentence 1: support check: partial - Part number G0080090 for PWRmanager Unit is stated, but 'balance-of-system device' classification isn't in the passage.
 - sentence 5: support check: partial - UL916 is listed in specs, though 'listed to' wording is not explicit.
+- sentence 1: review: partial - Part number G0080090 for the PWRmanager Unit is stated, but the 'balance-of-system device' classification is not in the passage.
 -->

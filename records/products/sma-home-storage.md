@@ -25,7 +25,9 @@ claims:
   - src: src:sma-kb-welche-energiekapazit-ten-stehen-f-r-den-sma-home-storage-zur-verf-gung
     loc: sec=h1
     h: 8bb1a5b9fc66
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: compatible_with
   target: prod:sma-sunny-tripower-smart-energy
@@ -54,7 +56,9 @@ claims:
     h: 36d4b5ea5264
   review: drafted
   review_note: 'support check: partial - Firmware minimums are listed for SMA Home Storage 6.5-16.4, but
-    the passage doesn''t explicitly tie them to the Sunny Tripower Smart Energy.'
+    the passage doesn''t explicitly tie them to the Sunny Tripower Smart Energy.; review: partial - The
+    table row supports the firmware conditions for SMA Home Storage 6.5-16.4, but nothing in the passage
+    names Sunny Tripower Smart Energy as the compatible inverter.'
 - claim_id: c5
   rel: compatible_with
   target: prod:sma-sbse-us-50
@@ -243,4 +247,5 @@ The SMA Home Storage is a modular battery system built for European markets. It 
 <!-- review notes
 - sentence 1: support check: partial - Modular, European design, 3.28 kWh modules and up to 16.4 kWh with five modules are stated, but 'stacked' is not.
 - sentence 7: support check: partial - All listed events appear, but the LED patterns differ and the short circuit event shows a continuous red LED rather than a pattern; the communication faults are also two separate events, and 'each event' is somewhat overgeneralized though broadly supported.
+- sentence 1: review: partial - European design, 3.28 kWh modules and 16.4 kWh with five modules are all stated, but the passages never say the modules are stacked.
 -->

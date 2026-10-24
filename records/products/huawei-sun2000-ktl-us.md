@@ -201,7 +201,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=45
     h: 6110484f2b78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c15
   attr: mppt_voltage_range
   value:
@@ -230,7 +232,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=45
     h: 6110484f2b78
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c17
   attr: max_count
   value:
@@ -282,7 +286,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=44.r2
     h: 81a97fa15fda
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c18 (same source; check the conditions)
 - claim_id: c20
   attr: efficiency

@@ -96,7 +96,9 @@ claims:
   - src: src:enphase-enphase-m250-installation-and-operation-manual-60hz
     loc: tbl=17
     h: e0a8e24f5b2a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   attr: nominal_voltage
   value:
@@ -236,7 +238,9 @@ claims:
   - src: src:enphase-enphase-m250-installation-and-operation-manual-60hz
     loc: tbl=23.r17
     h: a6ce518994d2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c17 (same source; check the conditions)
 - claim_id: c16
   attr: efficiency
@@ -335,4 +339,5 @@ The Enphase M215 and M250 are module-level microinverters made by Enphase, built
 <!-- review notes
 - sentence 1: support check: partial - Models M250-60, M250-72 and two M215-60 versions appear, but 'made by Enphase' and 'module-level' are only implied.
 - sentence 2: support check: partial - 240 W continuous and 250 W peak, both voltages and 60 Hz nominal are given, but power is not stated per service type; reasonably implied.
+- sentence 1: review: partial - The passages show Enphase M250-60, M250-72, M215-60-2LL-S22 and M215-60-2LL-S22-IG microinverters, but 'module-level' is not stated in them.
 -->

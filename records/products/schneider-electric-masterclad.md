@@ -13,4 +13,5 @@ None of the evidence units mention Masterclad MV switchgear by name, so this rec
 <!-- review notes
 - sentence 2: support check: partial - The passages show Square D series ratings, a chart, and QO breaker/panelboard data (NQOD note), but they don't say the chart covers low-voltage panelboards or that this is a different line from Masterclad.
 - sentence 3: support check: partial - The passage lists documents for LV and MV switchgear (datasheets, manuals, test reports, single line diagram), which supports checking them. It never mentions Masterclad or says to check them before doing work.
+- sentence 1: review: partial - The cited passages are Square D series-rating headings that do not mention Masterclad, which fits the sentence, but they cannot show that no evidence unit anywhere mentions it.
 -->

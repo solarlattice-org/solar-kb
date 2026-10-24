@@ -48,7 +48,9 @@ claims:
   - src: src:generac-generac-pv-link-snaprs-802-install-manual
     loc: sec=h30
     h: 34d782318c7d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: implements
   target: func:dc-arc-fault-protection
@@ -91,7 +93,9 @@ claims:
   - src: src:generac-generac-pv-link-snaprs-802-install-manual
     loc: tbl=3.r18
     h: c6022e9b824c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: certified_to
   target: std:csa-c22-2-no-107-1
@@ -123,7 +127,9 @@ claims:
   - src: src:generac-generac-pv-link-snaprs-802-install-manual
     loc: sec=h57
     h: 90fa1a608a46
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: incompatible_with
   target: arch:grounded-pv-array
@@ -181,7 +187,9 @@ claims:
   - src: src:generac-generac-pv-link-snaprs-802-install-manual
     loc: sec=h57
     h: 90fa1a608a46
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c18
   attr: efficiency
   value:

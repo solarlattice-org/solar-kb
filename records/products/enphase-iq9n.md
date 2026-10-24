@@ -186,7 +186,9 @@ claims:
   - src: src:enphase-enphase-iq9n-hpb-microinverter-installation-and-operation-manual
     loc: sec=2
     h: cf62ab044a50
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c13
   rel: implements
   target: func:ground-fault-protection
@@ -195,7 +197,9 @@ claims:
   - src: src:enphase-enphase-iq9n-hpb-microinverter-installation-and-operation-manual
     loc: sec=2
     h: cf62ab044a50
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c14
   attr: rated_power
   value:
@@ -209,7 +213,9 @@ claims:
   - src: src:enphase-enphase-iq9n-hpb-microinverter-installation-and-operation-manual
     loc: tbl=8.r13
     h: 82f5eba61eb3
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The table shows 440 and 415 and the headers show 240 V and 208
     V, but the power row''s columns are not labeled by voltage, so the 440-to-240 V mapping is only implied
     by order.; possible conflict with c15 (same source; check the conditions)'
@@ -346,4 +352,5 @@ The Enphase IQ9N is a family of GaN-based residential microinverters that includ
 <!-- review notes
 - sentence 1: support check: partial - Passages show IQ9N-A-US, IQ9N-A-DOM-US and an IQ9N-HPB manual with GaN architecture and residential use, but they don't explicitly say the HPB is a variant in the same family.
 - sentence 2: support check: partial - The currents are labeled by voltage, but the power values 440 and 415 are not explicitly labeled 240 V and 208 V, and 'up to' is only implied by 'maximum'.
+- sentence 1: review: partial - The release notes support GaN-based residential IQ9N-A-US and IQ9N-A-DOM-US, but the HPB variant is evidenced only by a manual title, with no passage stating it is GaN-based or part of the same family.
 -->

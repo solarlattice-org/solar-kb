@@ -242,6 +242,9 @@ claims:
     loc: sec=h48
     h: cf1354850431
   review: drafted
+  review_note: 'review: partial - The passage gives 380 VDC as the REbus nanogrid voltage that all PWRcell
+    products use, which matches the stated condition, but it never gives this as the battery''s own nominal
+    voltage.'
 ---
 The Generac PWRcell Battery is the storage part of the PWRcell system. It is a cabinet that holds compatible lithium ion battery modules. It connects directly to the PWRcell Inverter and to PV Links over the REbus DC nanogrid, which runs at 380 VDC and allows plug-and-play setup. It is meant for grid-connected solar applications: self supply, rate arbitrage and clean backup power. Nominal continuous power goes from 3.4 kW for the M3 to 6.7 kW for the M6, and nominal continuous DC current goes from 11.6 A to 23.3 A. DC-to-DC round-trip efficiency is 96.5 percent for every size from M3 to M6. The internal control electronics are preprogrammed for safe charging and discharging. They monitor system voltage, system current, cell voltage and cell temperature, and the modules communicate over RS-485.
 

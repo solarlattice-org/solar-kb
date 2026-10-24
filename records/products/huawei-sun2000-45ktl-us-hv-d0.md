@@ -70,7 +70,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=61.r8
     h: 27d406ec23b5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   attr: max_input_voltage
   value:
@@ -81,7 +83,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=61.r5
     h: 3972db5ca1ee
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   attr: max_input_current
   value:
@@ -92,7 +96,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=61.r2
     h: 33a34d596f48
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   attr: rated_output_current
   value:
@@ -171,7 +177,9 @@ claims:
   - src: src:huawei-huawei-sun2000-45ktl-us-hv-d0-user-manual
     loc: tbl=62.r10
     h: 5e1d22882e09
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c16
   rel: certified_to
   target: std:ul-1699b
@@ -217,3 +225,7 @@ claims:
   review: drafted
 ---
 The Huawei SUN2000-45KTL-US-HV-D0 is a Huawei string inverter. Its user manual covers installation, electrical connection, commissioning, maintenance and troubleshooting. It is rated for 45,000 W output on a 600 V AC three-wire plus PE connection, with a rated output current of 43.3 A and a maximum output current of 48 A. On the DC side, the full-power MPPT range is 800 to 1200 V, each MPPT accepts up to 22 A, and the maximum operating voltage is listed as 1500 V. Maximum efficiency is 98.70% and CEC efficiency is 98.50%. The power factor can be set from 0.8 leading to 0.8 lagging. Protection features include a DC input switch, anti-islanding, output overcurrent protection, input reverse polarity protection, PV string fault detection, insulation resistance detection, and a UL 1699B Type I AFCI. For communication you choose either RS485 or PLC mode. The enclosure is rated Type 4X, and the unit complies with FCC Part 15B.
+
+<!-- review notes
+- sentence 1: review: partial - The manual's purpose line supports the coverage list, but neither cited passage says the unit is a string inverter.
+-->

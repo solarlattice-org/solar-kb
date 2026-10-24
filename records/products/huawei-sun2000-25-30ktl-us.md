@@ -32,7 +32,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=5.r1
     h: d1545462f028
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: possible conflict with c3 (same source; check the conditions)
 - claim_id: c3
   attr: rated_power
@@ -109,7 +111,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=45.r8
     h: 8e18e0ea691e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   attr: max_input_current
   value:
@@ -120,7 +124,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=45.r8
     h: 8e18e0ea691e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   attr: max_input_current
   value:
@@ -212,7 +218,8 @@ claims:
     h: 00ee74fa8113
   review: drafted
   review_note: 'support check: partial - The passages say AFCI is to UL 1699B Type I. They do not say
-    the inverter is certified.'
+    the inverter is certified.; review: partial - The spec row lists AFCI to UL 1699B Type I for both
+    models, but it never says the inverters are certified to that standard.'
 - claim_id: c18
   rel: implements
   target: func:insulation-monitoring
@@ -249,7 +256,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: tbl=48.r6
     h: f985891402e0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c22
   rel: compatible_with
   target: prod:amphenol-helios-h4
@@ -264,4 +273,5 @@ The Huawei SUN2000-25KTL-US and SUN2000-30KTL-US are transformerless three-phase
 
 <!-- review notes
 - sentence 1: support check: partial - The passages give transformerless topology and the 25 kW and 30 kW ratings. They do not say three-phase or string inverter.
+- sentence 1: review: partial - The transformerless topology and the 25 kW and 30 kW ratings are supported, but no passage says three-phase or string inverter.
 -->

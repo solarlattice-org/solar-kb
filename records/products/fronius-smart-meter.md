@@ -20,7 +20,9 @@ claims:
     h: 625f68a6acf1
   review: drafted
   review_note: 'support check: partial - Passages refer to the ''Fronius Smart Meter'' and Fronius products,
-    which implies Fronius naming, but never state that Fronius manufactures it.'
+    which implies Fronius naming, but never state that Fronius manufactures it.; review: partial - Fronius
+    documents name the ''Fronius Smart Meter'' and the brand implies Fronius, but no passage says Fronius
+    makes it.'
 - claim_id: c2
   rel: compatible_with
   target: prod:fronius-datamanager
@@ -37,4 +39,5 @@ The Fronius Smart Meter is a Fronius energy meter family. A Fronius inverter's m
 <!-- review notes
 - sentence 1: support check: partial - Monitoring uses the Smart Meter to control the inverter, but the passages don't state it is an energy meter family.
 - sentence 2: support check: partial - The passage says the inverter has Data Manager 2.0 with meter control and dynamic power reduction, but it doesn't name the Primo specifically.
+- sentence 1: review: partial - The passage says the monitoring system can control the inverter through connected meters (Fronius Smart Meter), but it never calls the Smart Meter an energy meter family.
 -->

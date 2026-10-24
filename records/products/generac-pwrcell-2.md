@@ -64,7 +64,9 @@ claims:
   - src: src:generac-generac-pwrcell-2-smart-disconnect-switch-install-manual
     loc: sec=h103
     h: 86448dd33040
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: certified_to
   target: std:ul-3141
@@ -72,7 +74,9 @@ claims:
   - src: src:generac-generac-pwrcell-2-smart-disconnect-switch-install-manual
     loc: sec=h88
     h: 6d1cda0ffb8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: certified_to
   target: std:ul-1741-crd-pcs
@@ -136,4 +140,5 @@ Generac PWRcell 2 is a Generac inverter system family that pairs the PWRcell 2 I
 - sentence 1: support check: partial - The passages show a PWRcell 2 System figure, Inverter, and Battery Size, but not clearly that the family pairs the Inverter with a Smart Disconnect Switch and batteries; the SDS appears only elsewhere.
 - sentence 5: support check: partial - All four standards are listed as certified standards, but the passages don't say they appear in the SDS compliance table specifically.
 - sentence 6: support check: partial - The certification and the three named functions are in the passage, but it says 'several' functions rather than exactly three.
+- sentence 1: review: partial - The passages only give a system figure title, an SDS manual and a battery size row; none of them says the family pairs the inverter with the Smart Disconnect Switch and batteries.
 -->

@@ -46,7 +46,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: sec=5.3
     h: b2714b7f47bd
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: requires
   target: prod:staubli-mc4
@@ -139,4 +141,5 @@ The Huawei SUN2000-100KTL-USH0 is a string inverter from Huawei, and its user ma
 
 <!-- review notes
 - sentence 1: support check: partial - Manual calls it SUN2000 and it's by Huawei, but 'string inverter' is not stated in the passages.
+- sentence 1: review: partial - Huawei as maker and the SUN2000 name are supported, but no passage calls it a string inverter, and the name SUN2000 comes from the quick guide, not the user manual.
 -->

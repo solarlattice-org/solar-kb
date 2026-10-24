@@ -87,4 +87,5 @@ The SMA Energy Meter is SMA's family of energy meters. Variants include EMETER-1
 <!-- review notes
 - sentence 1: support check: partial - The passages list EMETER-10, EMETER-20, Energy Meter CT and EMETER-US-50, but they don't call these a family of SMA meters, and the model-to-variant mapping is only implied.
 - sentence 6: support check: partial - The 2–6 s reset and 9 s restart are stated, but the passage says to adjust the meter's serial number in the inverter or communication product, not merely 'check' it.
+- sentence 4: review: partial - The table gives the firmware versions for Energy Meter 10, 20 and CT, but the quoted passage never says these are the versions the Sunny Home Manager 2.0 works with.
 -->

@@ -50,4 +50,5 @@ The Fronius Tauro is a Fronius inverter family. The same operating instructions 
 
 <!-- review notes
 - sentence 6: support check: partial - Passage gives the cause 'An arc was detected at a specific point on the PV system' but doesn't show it is a status code entry or name the event.
+- sentence 1: review: partial - The passages show one set of operating instructions covering both the Tauro and Tauro Eco, but these cited passages never say the Tauro is an inverter.
 -->

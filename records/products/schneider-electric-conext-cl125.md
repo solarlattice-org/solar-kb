@@ -30,7 +30,9 @@ claims:
   - src: src:schneider-conext-cl125-owners-guide-975-0793-reva
     loc: sec=h4
     h: 7b910f38e7ea
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   attr: rated_power
   value:
@@ -268,4 +270,5 @@ The Conext CL125 is a three-phase string inverter family from Schneider Electric
 
 <!-- review notes
 - sentence 1: support check: partial - CL125E (IEC) and CL125A (NA) versions are shown, but 'string inverter' is not stated; three-phase is stated.
+- sentence 1: review: partial - The CL125E (IEC) and CL125A (NA) versions, Schneider Electric and the three-phase output are all stated, but 'string inverter' is not.
 -->

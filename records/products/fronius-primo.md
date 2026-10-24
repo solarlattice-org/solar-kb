@@ -34,7 +34,9 @@ claims:
   - src: src:fronius-fronius-primo-208-240-operating-instructions-42-0410-2116
     loc: tbl=51.r12
     h: e6dc6cf31763
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: implements
   target: func:anti-islanding
@@ -46,7 +48,9 @@ claims:
   - src: src:fronius-fronius-primo-208-240-operating-instructions-42-0410-2116
     loc: tbl=13.r22
     h: bf981d97f2ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: implements
   target: func:insulation-monitoring
@@ -182,7 +186,9 @@ claims:
   - src: src:fronius-fronius-primo-208-240-operating-instructions-42-0410-2116
     loc: tbl=53.r11
     h: 850aa8d77113
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: possible conflict with c12 (same source; check the conditions); possible conflict with
     c14 (same source; check the conditions)
 - claim_id: c14

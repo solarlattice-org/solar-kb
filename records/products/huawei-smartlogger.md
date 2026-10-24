@@ -23,7 +23,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: tbl=16
     h: 18f62f416e8e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: uses_protocol
   target: proto:rs485
@@ -48,7 +50,9 @@ claims:
   - src: src:huawei-huawei-sun2000-100ktl-ush0-user-manual
     loc: sec=h115
     h: 44a4652aef2c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: uses_protocol
   target: proto:ftp-push
@@ -97,7 +101,9 @@ claims:
   - src: src:huawei-huawei-sun2000-25-30ktl-us-user-manual
     loc: sec=h110
     h: 96255e2e2a9d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   attr: max_count
   value:

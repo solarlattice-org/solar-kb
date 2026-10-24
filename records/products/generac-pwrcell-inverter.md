@@ -28,7 +28,9 @@ claims:
   - src: src:generac-generac-pwrcell-inverter-x7602-installation-manual
     loc: tbl=4.r21
     h: 5562c27c261b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Only a REbus voltage rating is shown; it implies REbus use but
     doesn''t explicitly say the protocol is REbus DC nanogrid.'
 - claim_id: c3

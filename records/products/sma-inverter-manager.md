@@ -91,7 +91,9 @@ claims:
   - src: src:sma-doc-278879
     loc: sec=h343
     h: bac64c9aebcf
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c9
   rel: requires
   target: tool:sma-lcs-tool
@@ -133,7 +135,9 @@ claims:
   - src: src:sma-doc-278879
     loc: tbl=84
     h: a5bef107f01c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c13
   rel: uses_protocol
   target: proto:modbus-tcp
@@ -188,7 +192,9 @@ claims:
     h: a5bef107f01c
   review: drafted
   review_note: 'support check: partial - I/O Box is described as optional and receiving grid management
-    signals, but ''requires'' is not strictly stated beyond that function.'
+    signals, but ''requires'' is not strictly stated beyond that function.; review: partial - The passages
+    support that the I/O Box receives digital grid-management signals and relays setpoints, but they mark
+    the I/O Box interface as optional (''en option''), so the bare ''requires'' relation is not supported.'
 - claim_id: c18
   rel: certified_to
   target: std:ul-508
@@ -212,7 +218,9 @@ claims:
   - src: src:sma-doc-278879
     loc: tbl=84
     h: a5bef107f01c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c21
   rel: certified_to
   target: std:en-60950-1

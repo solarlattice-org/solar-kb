@@ -53,7 +53,9 @@ claims:
   - src: src:fronius-fronius-galvo-208-240-operating-instructions-42-0410-1934
     loc: tbl=13
     h: 1de42085b4ce
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Stand-alone operation protection is listed as integrated, which
     is islanding protection in effect, but the passages never say anti-islanding explicitly.'
 - claim_id: c5
@@ -108,7 +110,9 @@ claims:
   - src: src:fronius-fronius-galvo-208-240-operating-instructions-42-0410-1934
     loc: tbl=12
     h: 3cc5f08e70f0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c9
   attr: max_input_voltage
   value:
@@ -476,4 +480,5 @@ The Fronius Galvo 208-240 is a family of single-phase utility-interactive string
 - sentence 1: support check: partial - The passages support Fronius make, the four models and utility interactive inverter, but single-phase and string inverter are not stated; Phases is given as 2.
 - sentence 2: support check: partial - Output voltages, frequency and 3100 W for 3.1-1 are shown, but the 3100 W columns are inferred as 220/240 V from column order and the 'up to' phrasing is an assumption.
 - sentence 4: support check: partial - Internal GFDI, AFCI and reverse polarity protection are listed, but anti-islanding appears only as stand-alone operation protection, and AFCI is shown for all four models only via combined tables.
+- sentence 1: review: partial - The CSA passages support a Fronius utility-interactive inverter family with the four named models, but they never say 'single-phase' or 'string'.
 -->

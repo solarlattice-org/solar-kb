@@ -44,7 +44,9 @@ claims:
     h: e26efec2a04d
   review: drafted
   review_note: 'support check: partial - Passages say protection is Type 1 ''according to UL1699B:2024''
-    but do not state certification of the product.'
+    but do not state certification of the product.; review: partial - The tables say the arc-fault protection
+    is Type 1 ''according to UL1699B:2024'', which matches the note, but they never state that the product
+    is certified to UL 1699B.'
 - claim_id: c3
   rel: incompatible_with
   target: arch:it-earthing
@@ -115,4 +117,5 @@ The Fronius Primo GEN24 208-240 is a family of Fronius inverters. It includes 3.
 <!-- review notes
 - sentence 1: support check: partial - Size and variant listing is supported, but 'family of Fronius inverters' isn't stated and SC versions listed only for 3.8-6.0 implicitly.
 - sentence 7: support check: partial - Loxone incompatibility fixed in 1.14.110-1 and offline fix are listed, but the offline issue's fix version and 'known issues' framing differ slightly; the fixed-in column supports Loxone item mainly.
+- sentence 7: review: partial - Rows 8 and 9 support the Loxone/third-party API incompatibility and the roughly 2-minute AC/DC power-cycle fix for the Solar.web offline display, but the passages have no column headers, so reading 1.14.110-1 as the 'fixed in' version is an inference.
 -->

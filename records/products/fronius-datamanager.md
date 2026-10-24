@@ -26,7 +26,9 @@ claims:
   - src: src:fronius-fronius-galvo-208-240-operating-instructions-42-0410-1934
     loc: sec=h39
     h: 9a8cde0d2d97
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: compatible_with
   target: prod:fronius-symo
@@ -128,6 +130,9 @@ claims:
     loc: sec=h39
     h: 9a8cde0d2d97
   review: drafted
+  review_note: 'review: partial - The passage says the Data Manager can control the inverter through a
+    ripple control signal receiver (reactive power or power setting), but it never mentions digital inputs,
+    which is how the claim describes the mechanism.'
 - claim_id: c13
   rel: implements
   target: func:export-limitation

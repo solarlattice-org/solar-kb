@@ -107,4 +107,6 @@ The SMA Multicluster-Box is an AC distribution box that combines several Sunny I
 - sentence 1: support check: partial - The passages say the box links clusters and is an AC subdistribution, but do not explicitly say it combines clusters as an AC distribution box.
 - sentence 3: support check: partial - Up to twelve inverters and 100 kW is stated, and the Piggy-Back is an interface between Sunny Island and the box, but the passages don't say US units need it.
 - sentence 6: support check: partial - The passage says the Multicluster-Box specifies the maximum connectable PV inverter output in multicluster systems, in a stand-alone grid section, which is close but not explicitly limited to stand-alone grid.
+- sentence 1: review: partial - The passages call the Multicluster-Box an AC subdistribution and describe cluster masters talking to each other in a multicluster system, but they never say outright that it combines several clusters into one system.
+- sentence 4: review: partial - The fixed relays and the relay 1 vs relay 2 conflict for slave 1 are supported, but both passages come from sections of the same manual (sma-doc-259761), not two different Sunny Island manuals.
 -->

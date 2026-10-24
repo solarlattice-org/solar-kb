@@ -122,7 +122,9 @@ claims:
   - src: src:generac-generac-pv-link-snaprs-802-install-manual
     loc: tbl=4.r4
     h: da1ceda1917a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c9 (same source; check the conditions); possible conflict with c11
     (same source; check the conditions)
 - claim_id: c11
@@ -166,3 +168,7 @@ claims:
   review: drafted
 ---
 Generac SnapRS is an inline module-level rapid shutdown device. It comes in the RS801, RS801A and RS802 models. SnapRS has to be paired with the Generac S2502 PV Link to form a complete rapid shutdown system. Together they meet NEC 690.12 in the 2017 and 2020 editions. After rapid shutdown starts, conductors inside the array boundary drop to 80 VDC or less. The datasheet lists a shutdown time of under 10 seconds. Maximum input current is 13 A for the RS801, 14 A for the RS801A and 15 A for the RS802. All three models run from -40 to 70 °C. All models are certified to UL 1741 and CSA 22.2 #107.1. You cannot run a functional test on SnapRS in the field, but simple multimeter checks can confirm its general health. PV Link reports a PVRSS count mismatch or a high-input failure if SnapRS units are missing, failed, wrongly installed or entered with the wrong count. Never change the SnapRS count just to force PV Link to run.
+
+<!-- review notes
+- sentence 1: review: partial - The passages state that SnapRS is an inline PV rapid shutdown device in models RS801, RS801A and RS802, but 'module-level' is not stated.
+-->

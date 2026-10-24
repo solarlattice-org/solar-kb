@@ -29,7 +29,9 @@ claims:
     h: 8abdc4754ff9
   review: drafted
   review_note: 'support check: partial - Passage shows KACO blueplanet models but doesn''t state the manufacturer
-    as ''KACO new energy'' explicitly (only KACO brand name).'
+    as ''KACO new energy'' explicitly (only KACO brand name).; review: partial - The passage is a KACO
+    manual naming KACO blueplanet models, which supports KACO as the maker, but the full company name
+    ''KACO new energy'' is never stated.'
 - claim_id: c2
   rel: uses_protocol
   target: proto:modbus-tcp
@@ -127,7 +129,9 @@ claims:
   - src: src:kaco-kaco-blueplanet-87-0-165-tl3-operating-manual-en-2020-10-siemens-hosted-copy
     loc: tbl=16.r2
     h: e8c6944788ec
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: possible conflict with c8 (same source; check the conditions); possible conflict with c9
     (same source; check the conditions); possible conflict with c11 (same source; check the conditions);
     possible conflict with c12 (same source; check the conditions); possible conflict with c13 (same source;
@@ -183,4 +187,6 @@ The KACO blueplanet 87.0-165 TL3 is a family of three-phase string inverters mad
 - sentence 1: support check: partial - Models 87.0 to 165 TL3 and KACO name are listed, but 'three-phase string inverters' is not stated in the passage (TL3 only implied).
 - sentence 5: support check: partial - Overvoltage protection yes, no polarity safeguard, no string fuse are stated; the advice to check polarity is not in the passages.
 - sentence 7: support check: partial - Fault row supports the grid fuse/hardware damage/contact Service; the heading only shows the manual is for an authorised electrician, installation not explicitly stated.
+- sentence 1: review: partial - The heading lists KACO models from 87.0 TL3 to 165 TL3, but does not say they are three-phase string inverters.
+- sentence 7: review: partial - The fault row supports the grid fuse, possible hardware damage and contacting KACO Service, but the heading only labels the manual 'Authorised electrician' and never says installation must be done by one.
 -->
