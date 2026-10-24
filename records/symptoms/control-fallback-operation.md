@@ -41,7 +41,9 @@ claims:
   - src: src:kb-sma-stpxxus50-event-messages
     loc: sec=h47
     h: 3a8e65edf69d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
   review_note: 'support check: partial - Fallback setpoint hold and re-entry time are stated, but the
     passages say nothing about irradiance staying normal/rising or power staying flat regardless of irradiance;
     the ''last received values'' option is also covered.'
@@ -66,7 +68,9 @@ claims:
   - src: src:tesla-megapack-2-xl-operation-and-maintenance-manual-v1-1
     loc: tbl=21
     h: 9f93c2e2d466
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:fallback-event-message
@@ -91,7 +95,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: tbl=16.r1
     h: d6c30d03df80
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:inverter-fault-code-display
@@ -113,7 +119,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - The Failsafe alarm on the LCD is stated and a LimByEPM message
     is mentioned, but the passages do not say it appears when external power meter limiting is active
-    (only that it can occur when the setting is on).'
+    (only that it can occur when the setting is on).; review: partial - The Failsafe LCD alarm on CT/meter
+    disconnect with failsafe ON is stated, but the passages only say LimByEPM can occur when the external
+    power meter setting is on, not that it shows when meter limiting is active or that it…'
 - claim_id: c5
   rel: observed_as
   target: meas:inverter-fault-indicator
@@ -123,7 +131,9 @@ claims:
   - src: src:sma-stpxx-us-50-be-en-14
     loc: tbl=16.r1
     h: d6c30d03df80
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: observed_as
   target: meas:frozen-meter-readings
@@ -135,7 +145,9 @@ claims:
   - src: src:tesla-megapack-2-xl-operation-and-maintenance-manual-v1-1
     loc: tbl=21
     h: 9f93c2e2d466
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: observed_as
   target: meas:meter-invalid-alert
@@ -153,4 +165,5 @@ Fallback operation happens when an inverter or plant controller loses its energy
 - sentence 3: support check: partial - Event 8708, the fallback activated status, the red flashing LED and the Failsafe alarm are in the passages, and LimByEPM is mentioned; but the passages never say 'Solis displays' show these, and 8708 isn't tied to a fallback-activated status.
 - sentence 4: support check: partial - Passages support a damaged or unplugged communication cable to the system manager and a missing or invalid setpoint, but a meter that has failed or lost power is only implied by the 'verify meter is powered on' step, not stated as a cause.
 - sentence 5: support check: partial - Solis advice to turn the external and internal EPM fail safe settings off is stated, but 'when not needed' and the 'meter communicates normally' condition are not in the passages.
+- sentence 4: review: partial - The damaged or unplugged cable to the system manager and the missing or invalid setpoint are stated, but a failed or unpowered meter is only implied by Tesla's loss-of-meter-communication alert and its 'verify meter is powered on' step, not stated…
 -->

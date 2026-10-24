@@ -27,7 +27,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=h592
     h: 1c911f608962
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: observed_as
   target: meas:full-charge-status-event
@@ -48,7 +50,9 @@ claims:
     h: 71f3d966459d
   review: drafted
   review_note: 'support check: partial - Events 9321 and E205 mark the change to full charge, but the
-    passages do not say to use them to confirm a full charge before judging a capped SOC.'
+    passages do not say to use them to confirm a full charge before judging a capped SOC.; review: partial
+    - Events 9321 and E205 do mark the change to full charge, but the passages never say to use them to
+    confirm a full charge before treating a capped SOC as abnormal.'
 - claim_id: c3
   rel: observed_as
   target: meas:max-charge-soc-setpoint-reached
@@ -67,7 +71,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh3p-75-150-k10-nv-yd-h-us-v1-0
     loc: sec=h294
     h: fda63069986b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 The battery stops charging, or reports its state of charge, below full even when a full charge seems to have finished. On SMA Sunny Island systems, look in the event log for the change to full charge. If SOC is still below 100% afterwards, the loads may have drawn too much power before the full charge ended. For that case, set a longer full charge time, also called the absorption period. Check the charge limit settings first. A maximum or cut-off charge SOC, or a time-slot charge SOC, set below 100% makes the battery stop charging at that value. On the Sunny Boy Storage SBS2.5-1VL-10, older firmware does not allow the self-consumption range above 75%. Updating to firmware 3.11.10.R or later sets it to 90%. Seasonal self-consumption ranges also change automatically how much of the battery capacity is used through the year. Incorrect battery parameters can also be the cause, such as the battery type, the nominal capacity or the full and equalization charge settings, so compare them with the battery manufacturer's recommendations. The SOC shown is an estimate from ampere-hour counting plus voltage recalibration. The goal of a full charge is a state of charge of at least 95%, not exactly 100%.
 
@@ -77,4 +83,5 @@ The battery stops charging, or reports its state of charge, below full even when
 - sentence 4: support check: partial - Max/cut-off and time-slot SOC stopping charging are stated, but not the advice to check them first or that a value below 100% is the cause of a capped SOC.
 - sentence 7: support check: partial - u32 lists BatTyp, BatCpyNom, full and equalization charge parameters to check, and other passages say to set them per manufacturer recommendations, but the passages don't link the manufacturer comparison to this symptom.
 - sentence 8: support check: partial - The passages state the SOC method (Ah counting plus voltage recalibration) and the 95% minimum goal, but not 'estimate' or 'not exactly 100%'.
+- sentence 4: review: partial - The passages state that a max/cut-off charge SOC or a time-slot charge SOC stops charging at that value, but they do not support the instruction to check these settings first.
 -->

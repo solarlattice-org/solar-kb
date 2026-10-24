@@ -20,7 +20,9 @@ claims:
   - src: src:sma-kb-stpx-x-3se-40-no-battery-connection
     loc: sec=h1
     h: b824bf67f107
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: observed_as
   target: meas:com-supply-voltage-missing
@@ -30,7 +32,9 @@ claims:
   - src: src:sma-kb-stpx-x-3se-40-no-battery-connection
     loc: sec=h1
     h: b824bf67f107
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:rebus-voltage-low
@@ -43,7 +47,9 @@ claims:
   - src: src:generac-generac-pwrcell-3ph-inverter-install-and-owners-manual-a0001515563-rev-b
     loc: tbl=24
     h: 81626a967eb0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passages give the 360 V minimum between RE+ and RE- and say
     REbus voltage can be verified on the inverter control panel home screen. They don''t name Generac
     PWRcell, though the REbus and PLM terms point to it.'

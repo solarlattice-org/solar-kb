@@ -30,7 +30,9 @@ claims:
   - src: src:solaredge-solaredge-system-installation-guide-na-v4-3-unbound-mirror
     loc: sec=h253
     h: ae31bc2b5499
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: observed_as
   target: meas:zero-dc-voltage
@@ -50,7 +52,9 @@ claims:
     h: 2c6603d5788e
   review: drafted
   review_note: 'support check: partial - Passages say 0V string voltage means optimizer output disconnected,
-    but do not link it to a non-reporting optimizer or to the specific signal.'
+    but do not link it to a non-reporting optimizer or to the specific signal.; review: partial - The
+    tables say a 0V string voltage means an optimizer output is disconnected, but they never connect that
+    to an optimizer not reporting, which is the symptom claimed.'
 - claim_id: c4
   rel: observed_as
   target: meas:string-voltage-below-optimizer-count

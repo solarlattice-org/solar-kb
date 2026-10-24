@@ -19,7 +19,9 @@ claims:
   - src: src:sma-kb-rcd-tripping-with-sunny-tripower-smart-energy-stpxx-0-3se-40
     loc: sec=h1
     h: ffc1b0c17dbb
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passage says the inverter is disconnected and stops feeding in,
     but doesn''t mention AC power/voltage signal behavior or that phase voltage is lost; the signal details
     are inferred.'
@@ -31,4 +33,6 @@ When the RCD between the utility and the inverter trips, the inverter is disconn
 - sentence 4: support check: partial - Passage says a lower-rated RCD risks false tripping depending on system design, but the advice to check RCD type and rating against the datasheet first is not stated (type B compatibility is mentioned only loosely).
 - sentence 5: support check: partial - The article describes the 100 mA+ RCD with backup port condition and a firmware update fix, but only for specific firmware versions on the STP Smart Energy; 'some SMA Smart Energy inverters' and calling it a defect is a slight generalization.
 - sentence 7: support check: partial - The passage says to send pictures of the tripping device to Solis support if unresolved, but the statement generalizes to any manufacturer and omits the 'if the issue remains unresolved' condition.
+- sentence 4: review: partial - The false-tripping risk from a lower-rated RCD, depending on system design, is stated, and the datasheets list RCD type and rating, but no passage advises checking these against the datasheet first.
+- sentence 7: review: partial - The passage tells you to send pictures of the tripping device to Solis support if the problem stays unresolved, but the sentence widens this to any inverter manufacturer.
 -->

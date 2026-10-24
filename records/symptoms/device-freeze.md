@@ -21,7 +21,9 @@ claims:
   - src: src:se-academy-advanced-monitoring-platform-na-technical-02-remote-troubleshooting-inverters-using-the-monitoring
     loc: sec=h10
     h: 9f04da0ed3e5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: observed_as
   target: meas:repeated-startup-sequence
@@ -34,6 +36,8 @@ claims:
   - src: src:se-academy-advanced-monitoring-platform-na-technical-02-remote-troubleshooting-inverters-using-the-monitoring
     loc: sec=h10
     h: 9f04da0ed3e5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 In a boot loop the inverter keeps cycling through its startup screens or LED patterns and never reaches normal operation. It does not feed into the grid and its user interface cannot be reached. In monitoring, the inverter stays in Starting status with DC voltage present but no AC production. A startup loop like this points to an inverter error, so check the errors tab first. A boot loop that starts right after a replacement communication board or power unit is installed usually means the new part is still synchronizing with the rest of the inverter. In that case, disconnect WiFi and Ethernet and leave the unit powered with AC and DC connected. Make sure the DC input voltage is within the operating range, then wait for synchronization (typically about 30 minutes, in rare cases up to 2 hours) before commissioning through the Web UI. If a monitoring device's user interface cannot be called up after a firmware update, reset the device to default settings. If there was no update, check that the device can reach an internet time server. If no data shows after a long period without power, the real-time clock's buffer capacitor may have run down. If the device reports that the boot loader update failed, contact the manufacturer's service.

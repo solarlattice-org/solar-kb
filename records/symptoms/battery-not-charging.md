@@ -21,7 +21,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=14.2.9
     h: aabc484ce239
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: observed_as
   target: meas:soc-below-full-after-full-charge
@@ -31,7 +33,9 @@ claims:
   - src: src:sma-doc-278742
     loc: sec=h979
     h: 2a543f30380c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: observed_as
   target: meas:battery-voltage-low
@@ -41,7 +45,9 @@ claims:
   - src: src:sma-doc-260329
     loc: tbl=1.r3
     h: 7d523bce0c0f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: observed_as
   target: meas:battery-soc-reading-low
@@ -52,10 +58,14 @@ claims:
     loc: sec=h122
     h: 0e405355cdba
   review: drafted
+  review_note: 'review: partial - The passage supports the note that setting Charging from Grid to Not
+    Allow affects force-charging logic and can fully discharge the battery, but it never names a ''battery
+    not charging'' symptom or a low SOC reading as how it shows…'
 ---
 The battery in a hybrid or battery-inverter system does not charge, or charges at less than the expected power. Check the charging power and the battery state of charge first, then compare the battery's current state with what you expect and look for the cause of any difference. Charging below full power can come from ambient temperature that is too high or too low, from the lithium-ion battery management system limiting the charge, or from the inverter's set AC and DC charging current limits. On Enphase systems, check the production and consumption meter setup first, because disabled or wrongly configured meters stop the batteries from charging or discharging. Check the operating settings: some modes only charge when there is enough PV power, and blocking grid charging can leave the battery fully discharged. If the SOC stays below full after a full charge, high load demand during charging may be the cause, so consider a longer full charge time. Also check that the battery cables are thick enough, since voltage drop on long thin cables lowers the charging voltage at the battery, and check that the system is not too small to supply enough charging energy. Overcurrent events during charging point to a problem in the external battery management system, so refer to the battery manufacturer's documentation.
 
 <!-- review notes
 - sentence 2: support check: partial - Comparing the current state with the expected state is stated, but checking charging power and SOC first is only loosely implied by a display label.
 - sentence 8: support check: partial - Two passages say to fix the cause in the external BMS per the manufacturer's documentation, but the event 9392 passage only says the Service determines the cause and to contact the manufacturer, so the blanket claim for overcurrent events is stronger.
+- sentence 4: review: partial - The Enphase passage says disabled or misconfigured meters stop the batteries from charging or discharging, but it lists this as one of many reasons and never says to check it first.
 -->

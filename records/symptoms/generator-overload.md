@@ -33,7 +33,9 @@ claims:
   - src: src:sma-doc-278742
     loc: sec=h769
     h: 955e6bbcb046
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A typical sign is a battery inverter that connects to the running backup generator but drops it again after only a short time. The generator may be overloaded. In that case, set the rated generator current parameter to 75% of the generator's rated current and reduce the load power if possible. Other causes give the same short-connection behavior: generator voltage or frequency limits set too strictly, or the allowed reverse-power time being exceeded. Check the event log for a reverse power warning before blaming overload. The inverter detects overload by watching the generator frequency. When the frequency falls below the nominal value, it reduces the generator load by cutting battery charging, up to switching to discharge. When adjusting the frequency thresholds, watch and evaluate the measured frequency at the external grid connection during operation. Staggering load use over time also relieves the generator. With parallel inverters, only the total generator current is limited. The current can therefore be shared unevenly, and if one unit fails, more current flows through the others. If the generator current setting is too low for the loads, enhanced generator management draws extra current from the battery to cover the difference.
 
