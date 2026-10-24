@@ -20,7 +20,9 @@ claims:
   - src: src:alsoenergy-kb-additional-information-on-pv-system-model-processing
     loc: sec=front
     h: 53994d8c99ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: comp:single-axis-tracker

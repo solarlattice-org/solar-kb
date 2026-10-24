@@ -25,7 +25,9 @@ claims:
   - src: src:eq-equip-inverters-delta-m36u-m42u-20191015-m42-36u-manual
     loc: fig=124
     h: 7155fb7070b6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passages show a Country standard parameter group, a ''Changing
     the Grid Code'' section and Grid Code screens, implying a setting, but don''t explicitly state grid
     code is a setting.'

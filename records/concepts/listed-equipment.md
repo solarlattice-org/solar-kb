@@ -18,7 +18,9 @@ claims:
   - src: src:std-utilities-eversource-ct-ct-yellowbook
     loc: sec=h40
     h: cf7380980910
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: org:ul
@@ -146,4 +148,5 @@ Listed equipment is equipment that appears on a list published by an evaluation 
 - sentence 2: support check: partial - Passage says listed generally means evaluated by an independent third-party certification organization such as UL; NRTL is not named as the example in that passage.
 - sentence 4: support check: partial - 690.4(B) lists the equipment and says listed or evaluated for the application with a field label; the 'dc combiners' etc. match, but 'field-evaluated' is paraphrase and the other passage says listed for PV application only; acceptable but rapid shutdown etc. covered in u7.
 - sentence 7: support check: partial - Certified equipment speeds review and witness tests for non-UL 1741 listed equipment are stated, but the passages do not say 'UL 1741 inverters' specifically speed review beyond UL-1741 SA certified list approval.
+- sentence 7: review: partial - The passages support that certified equipment gets a faster review and that synchronization and harmonics witness tests apply to non-UL 1741 listed equipment, but none says UL 1741 or UL 1741 SA certification is what speeds the review, and 'not…
 -->

@@ -69,7 +69,9 @@ claims:
   - src: src:sma-video-derating-und-k-hlung-von-sunny-central-wechselrichtern-wbt-4-cooling-derating-909953620
     loc: sec=h1
     h: 29bb5fd6708c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: fm:fan-failure
@@ -95,7 +97,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: tbl=52.r5
     h: 46c42be6ee70
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: mit:installation-clearance
@@ -139,7 +143,9 @@ claims:
   - src: src:yaskawa-pvi-20-25tl-480-r-iom-docr-071030-a
     loc: sec=h164
     h: 43fdc21af7d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: related_to
   target: meas:inverter-temperature-high
@@ -172,7 +178,9 @@ claims:
   - src: src:sma-video-derating-und-k-hlung-von-sunny-central-wechselrichtern-wbt-4-cooling-derating-909953620
     loc: sec=h1
     h: 29bb5fd6708c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Inverter cooling is the way an inverter gets rid of the heat its power electronics produce while it runs. Datasheets usually list it as one of two methods: natural convection with no fans, or forced air from fans that may be variable speed or temperature controlled. Microinverters and many string inverters use natural convection. Larger string, hybrid and central inverters often use fans that help the convection. Large central inverters can use a sealed internal air loop that passes its heat to a filtered external air stream through an air-to-air heat exchanger. The hottest parts, such as the sine filter choke, are cooled last. If cooling cannot keep up, for example because a fan has failed, a filter is clogged, ambient heat is high or the site is at high altitude, the inverter derates and limits its output to protect its semiconductors. High internal temperature or abnormal fan noise with clean, unblocked vents points to a fan that needs replacing. At installation, leave the required clearances at the sides and top and avoid direct sunlight, or the inverter may overheat.
 

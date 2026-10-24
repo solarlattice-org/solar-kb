@@ -115,10 +115,13 @@ claims:
   - src: src:sma-doc-si-sbs-stpse-backup-pl-en-30
     loc: sec=h48
     h: 67876df41164
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A lithium-ion (Li-ion) battery is a rechargeable storage battery made of electrochemical cells. Each cell is nominally about 3.6 to 3.8 volts, compared with 2 volts per cell for lead-acid. The battery management system (BMS) of a lithium-ion battery controls how the battery operates. It must be connected to the battery inverter or hybrid inverter by a data cable. If the battery has its own BMS, the BMS sends the state of charge to the Sunny Island. The BMS values override the battery parameters set in the inverter, so changing those parameters there has no effect. With an unmanaged Li-ion battery, the Sunny Island acts as the BMS. It estimates state of charge by ampere-hour counting and voltage recalibration, using parameters set as the battery manufacturer recommends. Lithium-ion batteries use different state-of-charge range settings from lead-acid. For example, the deep discharge area is 0% to 3% for Li-ion, against 0% to 10% for lead-acid. Battery capacity and current rating must match the system setup, and three-phase systems usually need more than one battery. In backup systems, check with the manufacturer that the battery can supply the inverter's overload current.
 
 <!-- review notes
 - sentence 1: support check: partial - Cell voltages and rechargeable cells are supported by u24, but the definition of Li-ion as a rechargeable storage battery made of electrochemical cells is only loosely implied (u1 just expands the abbreviation).
+- sentence 1: review: partial - The 3.6-3.8 V versus 2 V per cell comparison is quoted directly, but no passage states that Li-ion batteries are rechargeable storage batteries; the storage-battery definition covers only lead-acid, nickel-cadmium and 'other' rechargeable types.
 -->

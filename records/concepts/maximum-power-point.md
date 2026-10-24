@@ -56,7 +56,9 @@ claims:
   - src: src:test-cx-manuals-seaward-pv-system-commissioning-and-testing-guide
     loc: sec=2.1
     h: 8864236b9c21
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:short-circuit-current

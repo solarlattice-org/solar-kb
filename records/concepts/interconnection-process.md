@@ -69,7 +69,9 @@ claims:
   - src: src:std-utilities-nat-grid-ma-ny-interconnect-stds-ma
     loc: sec=1.2
     h: c3fa7c056011
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - Passage defines Area EPS as the Company EPS and mentions the
     interconnection process, but doesn''t explicitly relate the process to Area EPS beyond the definition.'
 ---
@@ -78,4 +80,5 @@ Interconnection covers the technical and procedural steps needed before a PV sys
 <!-- review notes
 - sentence 3: support check: partial - Procedures based on state/utility policy, with application, schedule, agreements, permitting and inspection, and IEEE 1547 not covering procedures, are stated; fees, metering and billing are called contractual aspects, not procedures.
 - sentence 7: support check: partial - The written Authorization to Interconnect after satisfactory inspection, documentation and witness test is stated, but the passage doesn't equate it to permission to operate.
+- sentence 7: review: partial - The passage supports the written Authorization to Interconnect after a satisfactory inspection, documentation and witness test, but it never compares this to permission to operate.
 -->

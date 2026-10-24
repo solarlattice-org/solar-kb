@@ -39,4 +39,5 @@ A feed-in tariff is the payment the PV system operator gets for energy fed into 
 
 <!-- review notes
 - sentence 7: support check: partial - Passages show FIT means feed-in tariff in acronym keys, but not that it is common in O&M guidelines and inverter manuals specifically.
+- sentence 7: review: partial - One O&M guideline and one inverter manual each list FIT as Feed-in tariff, but two instances do not show the abbreviation is 'common' in those document types.
 -->

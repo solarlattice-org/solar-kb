@@ -36,4 +36,6 @@ Global horizontal irradiance, usually shortened to GHI, is the solar irradiance 
 - sentence 1: support check: partial - Passages give the GHI abbreviation expansion but not the definition of irradiance received on a horizontal surface.
 - sentence 4: support check: partial - The figure title shows guidance on distance from obstructions, but the shading-distorts-reading rationale is not stated.
 - sentence 5: support check: partial - GHI is listed as global horizontal insolation, but the 'energy accumulated over time' definition is not stated.
+- sentence 1: review: partial - The passages expand GHI to Global Horizontal Irradiance but never define it as the irradiance received on a horizontal surface.
+- sentence 4: review: partial - The figure titles show guidance on how far GHI sensors sit from nearby obstructions, but the claim that shading distorts the reading is not stated.
 -->

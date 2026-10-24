@@ -63,7 +63,9 @@ claims:
   - src: src:eq-equip-inverters-fronius-symo-operating-manual
     loc: tbl=38.r16
     h: 867e2e488da6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A distorted waveform can be broken down into a set of sine waves at whole multiples of the fundamental frequency. These higher-frequency parts are called harmonics, and the low-order odd ones (3rd, 5th, 7th and 9th) have traditionally been the most common. Inductive and capacitive impedance change with frequency. A system that behaves normally at 60 Hz can therefore behave very differently when harmonics are present. Total harmonic distortion (THD) is the rms value of the harmonic components divided by the rms value of the fundamental. Meters calculate it per phase for both currents and voltages. Instrument transformers pass almost no information above about 1200 Hz, so monitoring through CTs can hide higher-order harmonics. Not seeing distortion does not prove it is absent. Advanced meters offer waveform capture, which shows one or two cycles as a waveform, a harmonic spectrum or a table of harmonic magnitudes and phase angles. Inverter datasheets list THD as an output specification. Across Fronius Symo models the listed values range from below 1% to below 3.5%. Current distortion limits for distribution systems depend on the ratio of short-circuit current to load current. The total demand distortion limit rises from 5% in the lowest ratio band to 20% above a ratio of 1000.
 

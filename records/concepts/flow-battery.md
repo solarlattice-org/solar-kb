@@ -39,7 +39,9 @@ claims:
   - src: src:std-standards-nfpa-855-20-pdf
     loc: sec=B.4
     h: e4e8e43f7e1d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: hazard:moving-parts

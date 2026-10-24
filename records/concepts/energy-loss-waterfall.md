@@ -133,7 +133,9 @@ claims:
   - src: src:alsoenergy-powertrackuserguide-reva-1-25
     loc: sec=7.3
     h: cf46db96b935
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c10
   rel: related_to
   target: metric:performance-index

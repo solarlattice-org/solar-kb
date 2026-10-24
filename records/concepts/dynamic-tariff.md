@@ -28,7 +28,9 @@ claims:
   - src: src:kb-solis-44002688537-inverter-control-solis-ai-more
     loc: sec=h1
     h: f0aea101b8c9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: stressor:negative-pricing
@@ -38,7 +40,9 @@ claims:
   - src: src:kb-solis-44002688537-inverter-control-solis-ai-more
     loc: sec=h1
     h: f0aea101b8c9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: func:export-limitation
@@ -47,7 +51,9 @@ claims:
   - src: src:kb-solis-44002688537-inverter-control-solis-ai-more
     loc: sec=h1
     h: f0aea101b8c9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: concept:time-of-use-rate
@@ -92,4 +98,5 @@ A dynamic electricity tariff is an energy contract in which the price changes ev
 - sentence 4: support check: partial - Charging at low/negative prices and discharging/exporting at high prices is stated, but the passage does not call it the basis of energy arbitrage (only names the Peak-Valley Arbitrage mode).
 - sentence 5: support check: partial - Limiting export or shutting PV down under negative prices to avoid costs is stated, but the claim that a planned limit is not a fault is not stated.
 - sentence 7: support check: partial - Tariff values affect recommended actions and load control, but time-of-use rates and feed-in tariff/self-consumption as related concepts are only loosely supported (feed-in and self-consumption tariffs appear; TOU not).
+- sentence 7: review: partial - SMA says the tariff values entered drive recommended actions and Sunny Home Manager load control, and feed-in and self-consumption tariffs appear, but time-of-use rates as a related concept are not in the passages.
 -->

@@ -37,7 +37,9 @@ claims:
   - src: src:trn-training-utility-scale-power-plants-a-guide-for-investors-and-developers
     loc: sec=6
     h: 4e28239ad51c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:irradiance-transposition
@@ -83,7 +85,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=4.2
     h: 4dfe60445738
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: fm:soiling-losses
@@ -160,4 +164,5 @@ An energy yield assessment predicts how much electrical energy a PV plant will p
 <!-- review notes
 - sentence 4: support check: partial - The passages mention shading, soiling or snow, wiring, inverter, module degradation and downtime, and mismatch in u18, but they do not present these as one list of losses for yield assessment.
 - sentence 7: support check: partial - The passages support the quick estimate and the EPI comparison, but nothing says the PR can be used after commissioning to compare the model's expected yield with measured yield.
+- sentence 7: review: partial - The SMA example supports the quick estimate and the EPI passage supports comparing measured specific yield with model-expected yield, but 'after commissioning' and using the performance ratio as the comparison metric are not stated.
 -->

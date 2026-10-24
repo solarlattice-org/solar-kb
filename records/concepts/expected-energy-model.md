@@ -72,7 +72,9 @@ claims:
   - src: src:alsoenergy-kb-additional-information-on-pv-system-model-processing
     loc: sec=front
     h: 53994d8c99ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: related_to
   target: concept:irradiance-transposition
@@ -84,7 +86,9 @@ claims:
   - src: src:alsoenergy-kb-additional-information-on-pv-system-model-processing
     loc: sec=front
     h: 53994d8c99ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: concept:clear-sky-model
@@ -133,7 +137,9 @@ claims:
   - src: src:alsoenergy-kb-additional-information-on-pv-system-model-processing
     loc: sec=front
     h: 53994d8c99ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c11
   rel: related_to
   target: method:energy-ratio-analysis
@@ -164,4 +170,5 @@ An expected energy model works out how much energy or power a PV system should p
 - sentence 4: support check: partial - Inclusion/exclusion of losses is stated, and the waterfall detects snow, soiling etc. between expected and measured, but 'show up as gaps' is only loosely stated.
 - sentence 6: support check: partial - Energy ratio = produced/expected and should be 1.0, but the waterfall article defines performance index inversely, and EPI is defined as yield/expected; the passages are not fully consistent for 'performance index'.
 - sentence 7: support check: partial - Regression equation in irradiance and temperature is stated and applicable for O&M baselines, but 'simpler option' and commissioning use are only partly stated; fitted to measured data is supported.
+- sentence 7: review: partial - The SunSpec passage supports a regression equation in temperature and irradiance, developed from measured values and used for commissioning and long-term O&M baselines, but nothing calls it a 'simpler option'.
 -->

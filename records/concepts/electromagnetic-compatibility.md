@@ -42,7 +42,9 @@ claims:
   - src: src:trn-training-utility-scale-power-plants-a-guide-for-investors-and-developers
     loc: tbl=15
     h: 2526f3c7ae3c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: symptom:radio-frequency-interference
@@ -82,4 +84,5 @@ Electromagnetic compatibility (EMC) covers how electrical devices affect each ot
 <!-- review notes
 - sentence 4: support check: partial - Directive conformance and SMA's EC declaration listing standards are stated, but 'equipment sold in Europe' declaring conformance is a generalization not stated.
 - sentence 5: support check: partial - Passage supports many EMC issues stemming from installation not defects, but not the RFI example or the advice to check installation first.
+- sentence 4: review: partial - The SMA part (standards listed in the EC declaration shipped with every inverter) is supported, but the passages show only one Phoenix Contact product conforming to 2014/30/EU, not that all equipment sold in Europe declares it.
 -->

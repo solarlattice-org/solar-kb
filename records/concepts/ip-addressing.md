@@ -19,7 +19,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-locus-lgate-360-v-1-3
     loc: sec=h18
     h: bd33ca71158b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: proto:ethernet
@@ -109,4 +111,5 @@ Every networked device, such as an inverter, datalogger or gateway, needs an IP 
 - sentence 2: support check: partial - The router assigns a dynamic address and DHCP is the default in the inverter passages, but 'each time it joins' is only loosely supported and 'many inverters' is a generalization.
 - sentence 3: support check: partial - The needed fields, the IT administrator source and the optional secondary DNS are stated, but 'usually optional' and the LGate/inverter variations are slightly off.
 - sentence 5: support check: partial - The warning says duplicate IPs and intermittent connection problems 'may' result, whereas the statement says it definitely does, and it is Envoy-specific.
+- sentence 1: review: partial - DHCP or static addressing is stated for inverters and dataloggers, but the claim that every networked device, gateways included, needs an IP address goes beyond the passages.
 -->

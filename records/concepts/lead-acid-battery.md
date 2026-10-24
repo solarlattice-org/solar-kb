@@ -35,7 +35,9 @@ claims:
   - src: src:sma-doc-259761
     loc: tbl=45
     h: 5e488f822451
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:nickel-cadmium-battery
@@ -47,7 +49,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: tbl=158.r25
     h: ebcc391e8d61
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c3
   rel: related_to
   target: prod:sma-sunny-island
@@ -62,7 +66,9 @@ claims:
   - src: src:sma-doc-278303
     loc: sec=h8
     h: 8e08e205856e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: prod:sma-sunny-home-manager
@@ -71,7 +77,9 @@ claims:
   - src: src:sma-doc-246498
     loc: tbl=15.r1
     h: 133e20e3743a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: concept:state-of-charge

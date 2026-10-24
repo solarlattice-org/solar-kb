@@ -123,7 +123,9 @@ claims:
   - src: src:man-sel-synchrowave-application-guides-visualizing-the-32q-and-32v-directional-elements-in-the-compl
     loc: sec=h22
     h: 9afda1f25756
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - u28 lists positive-, negative- and zero-sequence source impedances
     in fault analysis, but it doesn''t call this ''grid impedance'' explicitly, though it is the utility
     source impedance.'
@@ -133,4 +135,5 @@ Grid impedance is the electrical impedance of the utility network as seen from t
 <!-- review notes
 - sentence 1: support check: partial - The passages tie ZPCC to short-circuit power at the PCC, but they don't define grid impedance as the utility network impedance seen from the connection point or say it is 'usually' derived that way.
 - sentence 8: support check: partial - Voltage rise, short-circuit power and transformer impedance, and sequence components are all discussed, but the passages don't state them as 'related concepts' of grid impedance; short-circuit ratio appears only as an Ssc/Splant requirement.
+- sentence 1: review: partial - The passages tie ZPCC to the short-circuit power available at the PCC, but they never define grid impedance as the utility network's impedance seen from the connection point, nor say it is 'usually' derived that way.
 -->

@@ -144,7 +144,9 @@ claims:
   - src: src:sma-sma-stp-33-us-iom
     loc: sec=h23
     h: df742a4857a7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   rel: related_to
   target: proto:rs485
@@ -160,4 +162,5 @@ Galvanic isolation means two parts of a circuit have no conductive connection to
 <!-- review notes
 - sentence 2: support check: partial - Isolation method Transformer is shown, but 'usually' provides isolation in inverters is only implied, not stated.
 - sentence 7: support check: partial - Both isolation figures appear, but the passages don't say these are meters or sensors; the 2500 V item isn't tied to a device type.
+- sentence 7: review: partial - Both isolation figures (1000 V between supply and RS485, and 2500 V for all inputs and outputs) are quoted, but the passages never say these are meters and sensors or call them signal ports.
 -->

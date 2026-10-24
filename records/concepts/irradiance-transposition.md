@@ -40,7 +40,8 @@ claims:
   review: drafted
   review_note: 'support check: partial - GHI is stated as calculated from available irradiance data, but
     the claim that GHI can be an input (horizontal pyranometer) is only implied; satellite data is not
-    mentioned.'
+    mentioned.; review: partial - The AlsoEnergy passage says GHI is calculated as an output and handles
+    a horizontally mounted pyranometer as an input case, but nothing mentions satellite data as an input.'
 - claim_id: c3
   rel: related_to
   target: concept:diffuse-irradiance
@@ -116,7 +117,9 @@ claims:
   - src: src:alsoenergy-kb-understanding-the-powertrack-pv-model
     loc: sec=front
     h: 1c0c0061a1d8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Irradiance transposition converts irradiance measured at one orientation into an estimate of the irradiance at another orientation, usually the plane of the PV array. The light reaching a surface is treated as the sum of three parts: direct beam, diffuse sky and ground-reflected albedo. A pyranometer measures only their combined total, so the split between them has to be estimated. In the PowerTrack method, the estimated diffuse irradiance comes from a clear-sky model and is subtracted from the measured value. The remaining direct beam is then scaled using the sun position and the orientations of the sensor and the module, and the diffuse part is added back. If the sun is below 2 degrees elevation, or the reading is lower than the calculated diffuse irradiance, the measured value is passed through unchanged. The method always adds some error. The error grows with the angle between the sensor and the target plane and also depends on the time of year and on atmospheric and ground conditions. The best practice is to mount POA and GHI sensors in the correct orientations so no transposition is needed. Using a sensor more than 30 degrees off the module plane is not recommended. The transposed POA irradiance feeds the expected energy model and the shading-loss calculation. When only GHI is available, a performance ratio calculated from it usually comes out higher, sometimes above unity.
 

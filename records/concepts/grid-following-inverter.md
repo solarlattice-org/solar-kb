@@ -55,7 +55,9 @@ claims:
   - src: src:yaskawa-solectria-pvi-36tl
     loc: sec=5.4
     h: 13dbd37919ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: func:dynamic-voltage-support
@@ -110,4 +112,5 @@ A grid-following inverter needs an external voltage source, normally the utility
 <!-- review notes
 - sentence 1: support check: partial - Requirement of an external voltage source is stated, but 'normally the utility grid' is not stated in the passages.
 - sentence 7: support check: partial - Definition from NEC with the alternative names is given, but the term is 'Interactive Mode' inverter; the wording matches mostly, though equating it to grid-following is implied rather than stated.
+- sentence 1: review: partial - The Tesla passages say grid-following mode needs an external voltage source to operate and produce power, but 'normally the utility grid' is not stated and the passages describe a battery system rather than inverters in general.
 -->

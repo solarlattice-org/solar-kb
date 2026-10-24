@@ -126,6 +126,8 @@ claims:
   - src: src:yaskawa-grounding-bank-design-guide-ieee-p1547-8
     loc: fig=12
     h: d43b060d84a6
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 A system is effectively grounded when its ground connection has low enough impedance that a ground fault cannot raise voltages above the limits set for the connected equipment. The IEEE definition uses sequence impedances: the ratio X0/X1 must be positive and below 3, and R0/X1 must be positive and below 1. Under these conditions the coefficient of grounding stays at or below 80%. If a phase faults to ground and the system is not effectively grounded, equipment on the healthy phases can see up to 173% of nominal voltage. Effective grounding keeps this to roughly 125% to 138%, depending on the utility system. Utilities expect distributed generation and storage sites to match their level of grounding, so the site does not weaken the utility's grounding. Some utilities therefore require AC-side grounding of PV inverters. Effective grounding can be provided in two ways. One is a grounding reactor in the transformer neutral. The other is a grounding bank, built from a zig-zag or wye-delta transformer, which passes zero-sequence current easily but blocks positive-sequence current. A single grounding bank at the point of common coupling can effectively ground a whole multi-inverter plant, so the inverters can be connected without a neutral. Grounding banks are usually rated only for short-term duty and need overcurrent protection. The inverters should be interlocked so they shut off when the grounding bank breaker opens. Effective grounding also gives fault current a low-impedance return path, so utility ground-fault protection can operate faster. Related topics are symmetrical components, transformer winding configuration and protection coordination.

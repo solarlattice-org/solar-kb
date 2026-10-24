@@ -23,7 +23,9 @@ claims:
   - src: src:sma-doc-259463
     loc: sec=h36
     h: 335e0ec8708d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:point-of-interconnection
@@ -70,7 +72,9 @@ claims:
   - src: src:sma-kb-sunny-portal-energy-balance-graph-issues
     loc: sec=h1
     h: 671005070a40
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: func:self-consumption-optimization
@@ -83,7 +87,9 @@ claims:
   - src: src:sma-doc-259463
     loc: sec=h36
     h: 335e0ec8708d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: func:export-limitation
@@ -93,7 +99,9 @@ claims:
   - src: src:sma-doc-278879
     loc: sec=5.2.7
     h: 05e66d8a958b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: func:zero-export
@@ -121,7 +129,9 @@ claims:
     h: 4187ba7a2f23
   review: drafted
   review_note: 'support check: partial - Self-sufficiency quota is defined, but no relation to the grid-connection
-    energy balance is stated.'
+    energy balance is stated.; review: partial - The table defines the self-sufficiency quota next to
+    grid feed-in and self-consumption totals, but it never ties the metric to the energy balance at the
+    grid-connection point.'
 - claim_id: c11
   rel: related_to
   target: func:consumption-metering
@@ -141,4 +151,5 @@ Energy balance means adding up the power flows at the grid-connection point (PV 
 <!-- review notes
 - sentence 1: support check: partial - Examples compute load from PV and grid power flows, but there is no explicit definition of energy balance as such.
 - sentence 5: support check: partial - Orientation causes are listed and checks of CT orientation, ratio and switching inverter are given, but 'usually' and the ratio check being for night feed-in are not directly stated.
+- sentence 1: review: partial - The SMA examples work out load consumption from PV production, feed-in and grid draw at the meter, but no passage defines 'energy balance' as that calculation.
 -->

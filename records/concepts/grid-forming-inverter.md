@@ -37,7 +37,9 @@ claims:
   - src: src:tesla-controls-and-comms-manual-ci-v1-3
     loc: sec=2.4.2
     h: 46138d6d5564
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: func:inertial-response
@@ -81,7 +83,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: sec=4.4.3
     h: 5b712bf9cb1a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: func:frequency-watt
@@ -108,7 +112,9 @@ claims:
   - src: src:solis-solis-manual-s6-eh2p-9-6-16-k-sv-yd-l-us-v2-7-20260305
     loc: sec=4.4.3
     h: 5b712bf9cb1a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: prod:enphase-iq8
@@ -141,10 +147,13 @@ claims:
     h: fc2b174a8b7d
   review: drafted
   review_note: 'support check: partial - u2 supports operation on grids without conventional generation
-    or other inverter sources, but black start is never mentioned.'
+    or other inverter sources, but black start is never mentioned.; review: partial - The note about running
+    on grids with no conventional generation and no other inverter sources is stated, but the passage
+    never mentions black start.'
 ---
 A grid-forming inverter acts as its own voltage and frequency source, so it can run without any other source setting the grid. A grid-following inverter is different: it needs an outside voltage and frequency reference and faults when that reference is lost. In grid-forming mode the inverter still follows real and reactive power commands, but it also tracks voltage and frequency setpoints. It reacts within a fraction of a cycle to hold them at its AC terminals. Because the mode resists sudden changes, it reaches power commands more slowly than grid-following mode. In exchange, it responds much faster to voltage and frequency disturbances. The industry uses two main approaches, machine-based and droop-based. Grid forming can be used off-grid, as backup during an outage, or on-grid to add virtual inertia. In a hybrid system that is grid-forming on PV alone, loads must stay below the available PV power. Otherwise the inverter trips on overload, and repeated trips can require a manual hard reset. Support depends on the product. Enphase supports grid forming only on 240 V IQ8 variants, not on the IQ8 H-208 or IQ8 Commercial systems.
 
 <!-- review notes
 - sentence 5: support check: partial - Two approaches and on/off-grid with virtual inertia are stated, but backup during an outage appears only for the Solis product, though u15 does support backup generally.
+- sentence 7: review: partial - The 240 V-only support and the lack of grid forming on IQ8 H-208 are stated, but the Commercial passage only says IQ8 Commercial would be grid-tied only 'upon release Spring 2023', and the sentence drops that time limit.
 -->

@@ -46,7 +46,9 @@ claims:
   - src: src:sma-doc-stpxx-us-41-iv-curve-ti-en-11
     loc: tbl=4
     h: dbeab86d1089
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:fill-factor

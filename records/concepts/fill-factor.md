@@ -40,7 +40,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-expansion-fittings-sunspec
     loc: sec=h34
     h: 10af29999ece
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:open-circuit-voltage

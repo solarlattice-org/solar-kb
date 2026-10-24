@@ -34,7 +34,9 @@ claims:
   - src: src:iea-pvps-t13-30-2025
     loc: sec=h15
     h: 1e249684bb32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:perc

@@ -21,7 +21,9 @@ claims:
   - src: src:iea-pvps-t13-d2-3-analytical-monitoring
     loc: sec=4.1.2
     h: d33eadee0e8d
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   attr: typical_power_loss
   value:
@@ -116,4 +118,5 @@ Mismatch loss is power lost because the modules in a string do not all have the 
 <!-- review notes
 - sentence 3: support check: partial - Passages say slightly lower modules limit string current, forcing lower operating point for others, and weak modules/substrings are bypassed losing all power; 'best operating point' is paraphrase, fine, but is from floating PV context only.
 - sentence 4: support check: partial - Capture loss and 0.98 factor are stated, but 'yield models usually apply' is not explicitly stated; the sources show a 0.98 typical value.
+- sentence 4: review: partial - IEA lists electrical mismatching as a capture loss, and two tables give 0.98 as the typical mismatch factor, but no passage says yield models usually apply it (the IEA table is of factors observed in the field).
 -->

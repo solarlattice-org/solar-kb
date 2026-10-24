@@ -20,7 +20,9 @@ claims:
   - src: src:ref-reference-sandia-islanding-risk
     loc: sec=h10
     h: 5d1ecbddde3c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:anti-islanding-detection-methods
@@ -109,7 +111,9 @@ claims:
   - src: src:ref-reference-sandia-islanding-risk
     loc: sec=h10
     h: 5d1ecbddde3c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c10
   rel: related_to
   target: state:island-operation
