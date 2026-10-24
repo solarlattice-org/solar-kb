@@ -5,7 +5,7 @@ import pytest
 
 from solar_kb.records import Record
 from solar_kb.schema_check import SchemaChecker
-from tests.helpers import SCHEMA
+from tests.helpers import SCHEMA, copy_schema
 
 H = "a1b2c3d4e5f6"
 
@@ -179,8 +179,7 @@ def test_obsidian_heading_and_block_links_resolve(tmp_path):
 
 def _repo(tmp_path):
     root = copy_fixture(tmp_path, "mini")
-    (root / "schema").mkdir()
-    (root / "schema" / "solar_kb.yaml").write_text((REPO / "schema" / "solar_kb.yaml").read_text())
+    copy_schema(root)
     return root
 
 

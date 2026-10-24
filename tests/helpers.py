@@ -15,6 +15,12 @@ def copy_fixture(tmp_path: Path, name: str) -> Path:
     return dest
 
 
+def copy_schema(root: Path) -> Path:
+    """Copy schema/ (the root file and its 0.5.0 modules) into root/schema."""
+    shutil.copytree(REPO / "schema", root / "schema")
+    return root / "schema" / "solar_kb.yaml"
+
+
 def write_record(root: Path, type_dir: str, slug: str, front_matter: str, body: str = "") -> Path:
     path = root / "records" / type_dir / f"{slug}.md"
     path.parent.mkdir(parents=True, exist_ok=True)

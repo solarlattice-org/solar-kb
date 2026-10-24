@@ -9,7 +9,7 @@ from solar_kb.records import load_corpus
 from solar_kb.rules import ALL_RULES
 from solar_kb.validate import validate_corpus
 from solar_kb.yamlio import load_yaml
-from tests.helpers import FIXTURES, SCHEMA, copy_fixture, write_record
+from tests.helpers import FIXTURES, SCHEMA, copy_fixture, write_record, copy_schema
 
 CITE = '    cite: [{src: "src:iea-t13-failures", loc: "sec=1", h: "a1b2c3d4e5f6"}]\n    review: drafted\n'
 
@@ -164,7 +164,6 @@ def test_differential_reports_truncation_and_disputed_matches(tmp_path):
 
 def test_cli_overlay_typo_fails(tmp_path):
     root = copy_fixture(tmp_path, "mini")
-    (root / "schema").mkdir()
-    (root / "schema" / "solar_kb.yaml").write_text(SCHEMA.read_text())
+    copy_schema(root)
     result = CliRunner().invoke(app, ["validate", "--root", str(root), "--overlay", str(tmp_path / "typo")])
     assert result.exit_code == 1

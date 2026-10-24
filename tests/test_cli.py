@@ -3,15 +3,14 @@ import json
 from typer.testing import CliRunner
 
 from solar_kb.cli import app
-from tests.helpers import REPO, copy_fixture, write_record
+from tests.helpers import REPO, copy_fixture, write_record, copy_schema
 
 runner = CliRunner()
 
 
 def _repo(tmp_path):
     root = copy_fixture(tmp_path, "mini")
-    (root / "schema").mkdir()
-    (root / "schema" / "solar_kb.yaml").write_text((REPO / "schema" / "solar_kb.yaml").read_text())
+    copy_schema(root)
     return root
 
 

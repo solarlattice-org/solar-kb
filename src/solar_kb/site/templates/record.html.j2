@@ -20,6 +20,9 @@
 {% if view.category %}
 <dt>Category</dt><dd>{{ view.category }}</dd>
 {% endif %}
+{% for label, values in view.identity %}
+<dt>{{ label }}</dt><dd>{% for v in values %}{{ link(v) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+{% endfor %}
 </dl>
 {% if view.prose %}
 <section class="prose">
@@ -45,6 +48,14 @@
 <dt>{{ label }}</dt><dd>{% if url %}<a href="{{ url }}">{{ value }}</a>{% else %}{{ value }}{% endif %}</dd>
 {% endfor %}
 </dl>
+{% endif %}
+{% if view.parts %}
+<h2>{{ view.parts_heading }}</h2>
+<ul class="parts">
+{% for ref in view.parts %}
+<li>{{ link(ref) }}</li>
+{% endfor %}
+</ul>
 {% endif %}
 {% include "_claims.html.j2" %}
 {% endblock %}

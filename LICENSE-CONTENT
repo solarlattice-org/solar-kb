@@ -1,3 +1,23 @@
+Solar Lattice content licence
+=======================================================================
+
+The schema (schema/) and the records (records/) of Solar Lattice are
+licensed under the Creative Commons Attribution 4.0 International
+licence reproduced below, with one exception:
+
+Quoted code and standard text. A claim may quote the text of a code,
+standard or utility rule verbatim (the claim's `quote`, attributed by
+its `quote_source`: designator, edition and clause, for example
+"NFPA 70 (NEC) 2023 §690.12(B)(2)"). That quoted text is not licensed
+by Solar Lattice. It remains the copyright of its publisher and is
+reproduced with attribution only so the exact requirement can be
+read; any reuse of it is subject to the publisher's terms. CC BY 4.0
+covers everything else in the schema and records, including the
+claims that carry such a quote, their citations and the original
+prose.
+
+=======================================================================
+
 Attribution 4.0 International
 
 =======================================================================

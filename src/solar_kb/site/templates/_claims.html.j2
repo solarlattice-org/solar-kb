@@ -6,10 +6,14 @@
 {% for c in claims %}
 <article class="claim" id="{{ c.claim_id }}">
 <p><a class="anchor" href="#{{ c.claim_id }}">{{ c.claim_id }}</a> <span class="badge {{ c.review }}">{{ c.review_label }}</span>
+{% if c.negated %} <strong class="negated">not</strong>{% endif %}
 {% if c.target %} {{ link(c.target) }}{% endif %}
 {% if c.value %} <span class="value">{{ c.value }}</span>{% if c.unit %} <a href="{{ c.unit_iri }}">{{ c.unit }}</a>{% endif %}{% endif %}
 {% if c.by %} — told apart by {{ link(c.by) }}{% endif %}
 </p>
+{% if c.scope %}
+<p class="scope"><span class="label">Scope:</span> {% for label, values in c.scope %}<span>{{ label }} {% for v in values %}{{ link(v) }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{% if not loop.last %}; {% endif %}{% endfor %}</p>
+{% endif %}
 {% if c.conditions %}
 <p><span class="label">Conditions:</span> {{ c.conditions }}</p>
 {% endif %}
@@ -17,7 +21,7 @@
 <p>{{ c.note }}</p>
 {% endif %}
 {% if c.quote %}
-<blockquote>{{ c.quote }}</blockquote>
+<blockquote>{{ c.quote }}{% if c.quote_source %}<footer>— {{ c.quote_source }}. Quoted with attribution; the text remains the publisher's copyright.</footer>{% endif %}</blockquote>
 {% endif %}
 <ul class="cites">
 {% for cite in c.citations %}
