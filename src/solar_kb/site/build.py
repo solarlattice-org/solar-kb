@@ -35,6 +35,10 @@ def build_site(corpus: Corpus, schema_path: Path, out_dir: Path) -> list[str]:
     written = [f"kb/{p.name}" for p in export_all(corpus, schema_path, kb_dir)]
     shutil.copyfile(schema_path, kb_dir / "solar_kb.yaml")
     written.append("kb/solar_kb.yaml")
+    # Schema 0.5.0 modules beside the root, where its imports name them, so the downloaded schema resolves.
+    for module in sorted(Path(schema_path).parent.glob("solar_kb_*.yaml")):
+        shutil.copyfile(module, kb_dir / module.name)
+        written.append(f"kb/{module.name}")
     ontology = load_ontology(schema_path)
     terms = list(ontology.terms)
     r = Renderer(out_dir, schema_version=ontology.version)

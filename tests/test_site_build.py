@@ -12,7 +12,7 @@ from solar_kb.site.build import SENTINEL, SiteError, build_site
 from solar_kb.validate import validate_corpus
 from solar_kb.site.linkcheck import broken_links
 from solar_kb.site.paths import iri_to_path
-from tests.helpers import FIXTURES, REPO, SCHEMA, copy_fixture, write_record
+from tests.helpers import FIXTURES, REPO, SCHEMA, copy_fixture, write_record, copy_schema
 
 runner = CliRunner()
 EXPORTS = ("solar_kb.owl.ttl", "solar_kb.context.jsonld", "solar_kb.schema.json", "solar_kb.yaml", "records.jsonld")
@@ -21,8 +21,7 @@ EXPORTS = ("solar_kb.owl.ttl", "solar_kb.context.jsonld", "solar_kb.schema.json"
 def _repo(tmp_path, fixture="mini"):
     root = copy_fixture(tmp_path, fixture) if fixture else tmp_path / "repo"
     (root / "records").mkdir(parents=True, exist_ok=True)
-    (root / "schema").mkdir()
-    (root / "schema" / "solar_kb.yaml").write_text((REPO / "schema" / "solar_kb.yaml").read_text())
+    copy_schema(root)
     return root
 
 

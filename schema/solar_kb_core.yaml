@@ -1,0 +1,265 @@
+id: https://solarlattice.org/kb/schema/core
+name: solar_kb_core
+title: Solar Lattice schema - core
+description: >-
+  Record, Claim, Citation, quantities and claim scope; the bibliographic Source; and the shared context types
+  Organization, Region and Role. The Relation enum lists every relation of every module.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  skos: http://www.w3.org/2004/02/skos/core#
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+
+classes:
+  Record:
+    abstract: true
+    description: Common fields of every knowledge record.
+    slots: [id, type, name, aliases, category, status, close_mappings, exact_mappings, claims]
+  Source:
+    is_a: Record
+    description: A bibliographic source; doubles as its public manifest entry.
+    slots: [tier, license, tdm_ok, origin_url, sha256, publisher, edition_or_date, collection, source_kind]
+    slot_usage:
+      tier: {required: true}
+      tdm_ok: {required: true}
+  Organization:
+    is_a: Record
+    description: >-
+      A company, standards body, utility, agency, certification or incentive body (SMA, IEEE, UL, CPUC,
+      National Grid, NABCEP). Its id slug is the catalog make slug where it is a manufacturer (org:sma).
+    slots: [org_kind]
+  Region:
+    is_a: Record
+    description: >-
+      A jurisdiction or market area (US, US-CA, PR, DE, AU, EU, ISO-NE). Nesting is a cited part_of claim.
+    slots: [region_code]
+  Role:
+    is_a: Record
+    description: >-
+      A person's role, qualification or access level that gates work (owner, installer, qualified person per
+      NEC 100, NABCEP PVIP, Grid Guard code holder).
+    slots: [role_kind]
+
+  Claim:
+    description: One relation or quantity, with citations and review state.
+    slots: [claim_id, rel, target, by, attr, value, conditions, scope, negated, note, quote, quote_source, cite,
+            review, verified_by, verified_at, review_note, keep, conflicts_with,
+            valid_from, valid_to, superseded_by]
+  Citation:
+    description: >-
+      A pointer to one evidence unit: source, locator, and the first 12 hex characters of the unit's
+      content hash, so a revised source can never silently re-point the citation at different text.
+    slots: [src, loc, h]
+  QuantityValue:
+    slots: [min, max, nominal, unit]
+    slot_usage:
+      unit: {required: true}
+  ClaimScope:
+    description: >-
+      Structured conditions under which a claim holds, in a form agents can filter on (free-text
+      `conditions` stays alongside). Carries conditional compatibility, per-standard parameter values,
+      firmware-scoped code meanings and region-limited or dated facts.
+    slots: [products, firmware_min, firmware_max, hardware_rev, regions, applications, architecture, standard,
+            valid_from, valid_to]
+
+slots:
+  id: {identifier: true, range: uriorcurie, required: true}
+  type: {designates_type: true, range: string, required: true}
+  name: {required: true}
+  aliases: {multivalued: true}
+  category: {description: "Coarse grouping for browsing and export (e.g. Modules, Wiring, Soiling, Grid, Inverters, Trackers); from the pv-root-cause taxonomy for compiled failure modes."}
+  status: {range: RecordStatus}
+  close_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:closeMatch}
+  exact_mappings: {multivalued: true, range: uriorcurie, slot_uri: skos:exactMatch}
+  claims: {range: Claim, multivalued: true, inlined_as_list: true}
+  tool_ids: {multivalued: true, description: IDs of deterministic tools (sub-project 2).}
+  tier: {range: SourceTier}
+  license: {}
+  tdm_ok: {range: TdmOk}
+  origin_url: {range: uri}
+  sha256: {pattern: "^[0-9a-f]{64}$"}
+  publisher: {}
+  edition_or_date: {}
+  collection: {}
+  source_kind:
+    range: SourceKind
+    description: >-
+      What kind of document the source is. `standard` (a code, standard or utility rule as published) is the
+      one value the validator reads: only claims citing such sources may carry quote_source.
+  make: {pattern: "^[a-z0-9]+(-[a-z0-9]+)*$", description: "Catalog manufacturer id (sma, chint, yaskawa-solectria); its Organization record is org:<make>."}
+  product:
+    range: uriorcurie
+    slot_uri: kb:of_product
+    description: >-
+      The Product (usually a family) a vendor-specific record belongs to: a FirmwareRelease's product line, a
+      vendor Parameter's, GridProfile's, Register's or OperatingState's scope. Its IRI is kb:of_product so it
+      cannot clash with the class kb:Product.
+  firmware_min: {description: "Lowest firmware version the record or claim applies to, as the vendor prints it (3.12.20.R)."}
+  firmware_max: {description: "Highest firmware version the record or claim applies to, as the vendor prints it."}
+  org_kind: {range: OrgKind}
+  region_code: {pattern: "^[A-Z]{2}(-[A-Z0-9]{1,3})?$", description: "ISO 3166-1 alpha-2 or ISO 3166-2 code, where one exists (US, US-CA, DE)."}
+  role_kind: {range: RoleKind}
+  claim_id: {required: true, pattern: "^c[0-9]+$"}
+  rel: {range: Relation}
+  target: {range: uriorcurie}
+  by: {range: uriorcurie}
+  attr: {pattern: "^[a-z][a-z0-9_]*$"}
+  value: {range: QuantityValue, inlined: true}
+  conditions: {}
+  scope: {range: ClaimScope, inlined: true, description: Structured conditions of the claim (spec B §4.4).}
+  negated:
+    range: boolean
+    description: >-
+      true for an explicit negative statement of an otherwise positive relation where `lacks` does not fit
+      ("not compatible with backup operation"). Allowed only on the relations the validator lists as negatable.
+  note: {}
+  quote: {}
+  quote_source:
+    description: >-
+      Attribution of a verbatim code or standard quote: designator, edition and clause (NFPA 70 (NEC) 2023
+      §690.12(B)(2)). Only with `quote`, and only when every cited source has source_kind standard.
+  cite: {range: Citation, multivalued: true, inlined_as_list: true, required: true, minimum_cardinality: 1}
+  review: {range: ReviewState, required: true}
+  verified_by: {}
+  verified_at: {range: date}
+  review_note: {}
+  keep: {range: KeepState}
+  conflicts_with: {multivalued: true, pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
+  valid_from: {range: date}
+  valid_to: {range: date}
+  superseded_by: {pattern: "^[a-z]+:[a-z0-9-]+#c[0-9]+$"}
+  products: {multivalued: true, range: uriorcurie, description: Product ids the claim is limited to.}
+  hardware_rev: {description: "Hardware revision the claim is limited to, as the vendor prints it."}
+  regions: {multivalued: true, range: uriorcurie, description: Region ids the claim is limited to.}
+  applications: {multivalued: true, range: Application, description: Applications the claim is limited to.}
+  architecture:
+    range: uriorcurie
+    slot_uri: kb:scope_architecture
+    description: The Architecture id the claim is limited to (IRI kb:scope_architecture, not the class).
+  standard:
+    range: uriorcurie
+    slot_uri: kb:scope_standard
+    description: The Standard edition id the claim holds under (IRI kb:scope_standard, not the class).
+  src:
+    range: uriorcurie
+    required: true
+    slot_uri: kb:cites_source
+    description: >-
+      The cited Source record. Its IRI is kb:cites_source because kb:src is the Source namespace.
+      Record YAML keeps the key `src`.
+  loc:
+    required: true
+    pattern: "^(sec=[0-9A-Za-z][0-9A-Za-z.]*|p=[0-9]+|tbl=[0-9]+(\\.r[0-9]+)?|fig=[0-9]+|t=[0-9]{1,3}:[0-5][0-9]-[0-9]{1,3}:[0-5][0-9])$"
+  h:
+    required: true
+    pattern: "^[0-9a-f]{12}$"
+    description: First 12 hex characters of the cited unit's content hash (from the evidence layer).
+  min: {range: float}
+  max: {range: float}
+  nominal: {range: float}
+  unit: {pattern: "^unit:[A-Za-z0-9_-]+$"}
+
+enums:
+  RecordStatus:
+    permissible_values:
+      proposed: {description: Stub created by the compiler; not yet approved.}
+      active: {}
+  Relation:
+    description: >-
+      Every relation a claim can carry, with its domain -> range ("*" is any record type). The validator's
+      RELATION_PAIRS table (solar_kb.rules) is the enforced form of these signatures.
+    permissible_values:
+      caused_by: {description: "FailureMode -> Stressor, FailureMode, Parameter, GridProfile, FirmwareRelease, Architecture. Misconfiguration, firmware bugs and unsupported topologies are causes too."}
+      affects: {description: "FailureMode, FaultCode -> Component."}
+      presents_as: {description: "FailureMode -> Symptom."}
+      observed_as: {description: "Symptom -> Measurement."}
+      produces: {description: "DetectionMethod -> Measurement."}
+      detected_by: {description: "FailureMode, FaultCode -> DetectionMethod."}
+      mitigated_by: {description: "FailureMode, FaultCode -> Mitigation."}
+      leads_to: {description: "FailureMode -> FailureMode. Progression (cracked cell -> hotspot -> backsheet burn)."}
+      distinguished_from: {description: "FailureMode -> FailureMode, with by: DetectionMethod. Symmetric; the basis of differential diagnosis."}
+      reports: {description: FaultCode -> Symptom. The observation the code reports.}
+      indicates: {description: FaultCode -> FailureMode. The failed thing the manual names.}
+      has_event_class: {description: FaultCode -> EventConcept on the event_class axis.}
+      has_production_effect: {description: FaultCode -> EventConcept on the production_effect axis.}
+      has_recovery: {description: FaultCode -> EventConcept on the recovery axis.}
+      defined_in: {description: FaultCode -> Source. The manual whose row defines the code; the citation is that row.}
+      subclass_of: {description: "* -> the same type. Taxonomy within a type (skos:broader): concept and component hierarchies."}
+      part_of: {description: "* -> *. Physical or document part: model part_of family, requirement part_of standard, component part_of component, region part_of region."}
+      instance_of: {description: "Product -> Component; Parameter (vendor) -> Parameter (generic); GridProfile -> Standard. Ties vendor-specific records to generic ones."}
+      manufactured_by: {description: "Product, FirmwareRelease, Tool -> Organization."}
+      issued_by: {description: "Standard, Program -> Organization."}
+      adopted_in: {description: "Standard -> Region. Code adoption by jurisdiction; dates in scope.valid_from / valid_to."}
+      supersedes: {description: "Product, FirmwareRelease, Standard -> the same type. Successor model, newer firmware, newer edition."}
+      applies_to: {description: "FaultCode, Parameter, GridProfile, Register, Procedure, Requirement, Program, FirmwareRelease -> Product, Region, Architecture. Scope of the record."}
+      implements: {description: "Product, FirmwareRelease -> Function. \"Supports\" in vendor wording."}
+      lacks: {description: "Product -> Function, Protocol. An explicit negative capability the documents state."}
+      requires: {description: "Requirement, Function, Procedure, Product -> Function, Product, Tool, Role, Protocol, Requirement. Generic dependency; attr-like detail goes in note or scope."}
+      configures: {description: "Parameter, GridProfile -> Function."}
+      sets_value_of: {description: "GridProfile, Requirement -> Parameter. The value in value, its conditions in scope."}
+      compatible_with: {description: "Product, FirmwareRelease -> Product, FirmwareRelease, Architecture. Conditions in scope; symmetric."}
+      incompatible_with: {description: "Product, FirmwareRelease -> Product, FirmwareRelease, Architecture. Symmetric."}
+      certified_to: {description: "Product, FirmwareRelease -> Standard, Requirement. Listing or certification; scope carries firmware."}
+      fixes: {description: "FirmwareRelease -> FailureMode, FaultCode, Function."}
+      introduces: {description: "FirmwareRelease -> FailureMode, FaultCode, Function. New features and new bugs alike."}
+      uses_protocol: {description: "Product, Tool -> Protocol."}
+      exposes: {description: "Product -> Register."}
+      maps_to: {description: "Register -> Parameter, Measurement, FaultCode. What the register means."}
+      indicates_state: {description: "FaultCode -> OperatingState. Status codes and LED patterns."}
+      performed_by: {description: "Mitigation, DetectionMethod -> Procedure. Generic action -> concrete steps."}
+      uses_tool: {description: "Procedure, DetectionMethod -> Tool."}
+      has_hazard: {description: "Procedure, Product, Component, FailureMode -> Hazard."}
+      controlled_by: {description: "Hazard -> Mitigation, Tool (PPE), Procedure. Hazard controls."}
+      defines: {description: "Standard, Requirement -> Metric, Concept, CalculationMethod."}
+      explains: {description: "Concept -> *."}
+      related_to: {description: "Concept -> *. The low-information fallback; linted wherever it is used."}
+  ReviewState:
+    permissible_values:
+      drafted: {description: Passed automated checks; a lead.}
+      verified: {description: Approved by a human; a fact.}
+      disputed: {description: Flagged or conflicting; must be surfaced.}
+  KeepState:
+    permissible_values:
+      drafted: {description: Reviewer keeps the claim as drafted through merge.}
+  SourceTier:
+    permissible_values:
+      open: {}
+      reference: {}
+      private: {}
+  TdmOk:
+    permissible_values:
+      "yes": {}
+      "no": {}
+      unknown: {}
+  SourceKind:
+    permissible_values:
+      standard: {description: "A code, standard or utility rule as its publisher issued it (NEC, IEEE 1547, UL 1741, ESB756)."}
+      manual: {description: "An installation, operation or service manual."}
+      datasheet: {description: A product datasheet or specification sheet.}
+      report: {description: "A technical report, paper or application note."}
+      web-page: {description: A knowledge-base article or other web page.}
+      video: {description: A video or its transcript.}
+      dataset: {description: "A table or list published as data (CEC lists, SAM libraries)."}
+  OrgKind:
+    permissible_values:
+      manufacturer: {}
+      sdo: {description: "Standards development organization (IEEE, UL, IEC, NFPA)."}
+      utility: {}
+      regulator: {description: "Regulator or government agency (CPUC, CEC)."}
+      test-lab: {description: Test laboratory or certification body (NRTL).}
+      program-operator: {description: "Operator of an incentive, certification or training program (NABCEP)."}
+  RoleKind:
+    permissible_values:
+      role: {description: "A person's role (owner, installer)."}
+      certification: {description: "A credential (NABCEP PVIP, qualified person)."}
+      access-level: {description: "A device access level (user, installer, Grid Guard code)."}
+  Application:
+    permissible_values:
+      on-grid: {}
+      backup: {}
+      off-grid: {}
+      self-consumption: {}

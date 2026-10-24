@@ -17,6 +17,18 @@ MANIFEST_FIELDS = (("publisher", "Publisher"), ("edition_or_date", "Edition or d
                    ("origin_url", "Origin"), ("sha256", "SHA-256"))
 DETAIL_FIELDS = (("verified_by", "verified by"), ("verified_at", "verified on"), ("review_note", "review note"),
                  ("keep", "keep"), ("valid_from", "valid from"), ("valid_to", "valid to"))
+# Record fields every type shares, or that a type's own section prints; the rest are identity slots (schema 0.5.0)
+COMMON_FIELDS = frozenset({"id", "type", "name", "aliases", "category", "status", "close_mappings", "exact_mappings",
+                           "claims", "signals"})
+ID_SLOTS = frozenset({"product", "jurisdiction", "access_level"})  # identity slots that name a record
+# Claim.scope slots in print order -> label; the id-valued ones link to their records
+SCOPE_FIELDS = (("products", "products"), ("firmware_min", "firmware from"), ("firmware_max", "firmware up to"),
+                ("hardware_rev", "hardware revision"), ("regions", "regions"), ("applications", "applications"),
+                ("architecture", "architecture"), ("standard", "standard"), ("valid_from", "valid from"),
+                ("valid_to", "valid to"))
+SCOPE_ID_FIELDS = frozenset({"products", "regions", "architecture", "standard"})
+# Section heading for the records that are part_of this one, by type (spec B §7)
+PARTS_HEADINGS = {"Product": "Models and variants", "Standard": "Requirements"}
 
 
 @dataclass(frozen=True)
@@ -64,6 +76,9 @@ class ClaimView:
     citations: tuple[CitationView, ...]
     details: tuple[tuple[str, str], ...]
     refs: tuple[tuple[str, Ref], ...]
+    negated: bool = False  # an explicit negative statement (schema 0.5.0)
+    scope: tuple[tuple[str, tuple[Ref, ...]], ...] = ()  # (label, values) from Claim.scope
+    quote_source: str | None = None  # attribution of a verbatim code or standard quote
 
 
 @dataclass(frozen=True)
@@ -94,6 +109,9 @@ class RecordView:
     jsonld_href: str
     records_jsonld_href: str
     fault_code: FaultCodeView | None = None  # FaultCode records only (Plan 4d)
+    identity: tuple[tuple[str, tuple[Ref, ...]], ...] = ()  # (label, values) of the type's identity slots (0.5.0)
+    parts_heading: str = ""  # "Models and variants", "Requirements", "Parts"
+    parts: tuple[Ref, ...] = ()  # records that are part_of this one
     referenced_by_make: tuple[tuple[str, tuple[ConceptUse, ...]], ...] = ()  # EventConcept records: codes by make
 
 
@@ -170,7 +188,52 @@ def _claim_view(corpus: Corpus, claim: dict, page: str, prefixes: dict[str, str]
                         for c in cites if isinstance(c, dict) and isinstance(c.get("src"), str)),
         details=tuple((label, str(claim[key])) for key, label in DETAIL_FIELDS if claim.get(key) is not None),
         refs=tuple(refs),
+        negated=claim.get("negated") is True,
+        scope=_scope_view(corpus, claim.get("scope"), page),
+        quote_source=claim.get("quote_source") if isinstance(claim.get("quote_source"), str) else None,
     )
+
+
+def _values(value: object) -> list[object]:
+    return value if isinstance(value, list) else [value] if value is not None else []
+
+
+def _scope_view(corpus: Corpus, scope: object, page: str) -> tuple[tuple[str, tuple[Ref, ...]], ...]:
+    if not isinstance(scope, dict):
+        return ()
+    return tuple((label, tuple(record_ref(corpus, v, page) if key in SCOPE_ID_FIELDS and isinstance(v, str)
+                               else Ref(str(v)) for v in _values(scope[key])))
+                 for key, label in SCOPE_FIELDS if scope.get(key) is not None)
+
+
+def identity_view(record: Record, corpus: Corpus, page: str) -> tuple[tuple[str, tuple[Ref, ...]], ...]:
+    """The identity slots of a schema 0.5.0 record, as (label, values): record ids link to their records, and `make`
+    links to its Organization org:<make> once that record exists. Source and FaultCode print their own sections."""
+    if record.type in ("Source", "FaultCode"):
+        return ()
+    out = []
+    for key, value in record.data.items():
+        if key in COMMON_FIELDS:
+            continue
+        refs = []
+        for v in _values(value):
+            if key in ID_SLOTS and isinstance(v, str):
+                refs.append(record_ref(corpus, v, page))
+            elif key == "make" and isinstance(v, str) and f"org:{v}" in corpus.records:
+                refs.append(Ref(v, href(page, record_path(f"org:{v}"))))
+            else:
+                refs.append(Ref(str(v)))
+        out.append((key.replace("_", " ").capitalize(), tuple(refs)))
+    return tuple(out)
+
+
+def parts_view(record: Record, corpus: Corpus, page: str, incoming_index: Index) -> tuple[str, tuple[Ref, ...]]:
+    """The records that are part_of this one (a family's models, a standard's requirements), sorted by name."""
+    ids = sorted({rid for rid, _, rel in incoming_index.get(record.id, []) if rel == "part_of"},
+                 key=lambda rid: (str(corpus.records[rid].data.get("name", rid)), rid) if rid in corpus.records else ("", rid))
+    if not ids:
+        return "", ()
+    return PARTS_HEADINGS.get(record.type or "", "Parts"), tuple(record_ref(corpus, rid, page) for rid in ids)
 
 
 def _incoming_views(corpus: Corpus, entries: list[tuple[str, str, str]], page: str) -> tuple[Incoming, ...]:
@@ -182,6 +245,7 @@ def record_view(record: Record, corpus: Corpus, prefixes: dict[str, str], incomi
                 cited_index: Index) -> RecordView:
     page = record_path(record.id)
     data = record.data
+    parts = parts_view(record, corpus, page, incoming_index)
     groups: dict[str, list[ClaimView]] = {}
     for claim in record.claims():
         heading = claim.get("rel") or claim.get("attr") or "claim"
@@ -210,6 +274,8 @@ def record_view(record: Record, corpus: Corpus, prefixes: dict[str, str], incomi
         records_jsonld_href=href(page, "kb/records.jsonld"),
         fault_code=fault_code_view(record, corpus, incoming_index) if record.type == "FaultCode" else None,
         referenced_by_make=_referenced_by_make(corpus, record, page, incoming_index),
+        identity=identity_view(record, corpus, page),
+        parts_heading=parts[0], parts=parts[1],
     )
 
 

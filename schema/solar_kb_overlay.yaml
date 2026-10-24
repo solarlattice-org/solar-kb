@@ -1,0 +1,34 @@
+id: https://solarlattice.org/kb/schema/overlay
+name: solar_kb_overlay
+title: Solar Lattice schema - overlay
+description: Private-overlay field evidence (Case) and the reserved DataExample.
+license: CC-BY-4.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  kb: https://solarlattice.org/kb/
+default_prefix: kb
+default_range: string
+imports:
+  - linkml:types
+  - solar_kb_core
+
+classes:
+  Case:
+    is_a: Record
+    description: One work order. Private overlay only.
+    slots: [observed, diagnosis, fix, outcome]
+  DataExample:
+    is_a: Record
+    description: Reserved. A labeled monitoring/register data window for ML training.
+    slots: [dataset, window, label, labeler, anonymized]
+
+slots:
+  observed: {multivalued: true, range: uriorcurie}
+  diagnosis: {range: uriorcurie}
+  fix: {}
+  outcome: {}
+  dataset: {}
+  window: {}
+  label: {range: uriorcurie}
+  labeler: {}
+  anonymized: {range: boolean}
