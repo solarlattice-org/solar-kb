@@ -79,7 +79,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Air mass is added as a model parameter for a-Si because of its
     spectral response, but the passages do not compare a-Si to other technologies as having a ''stronger''
-    response, and they do not say ''thin-film'' generally.'
+    response, and they do not say ''thin-film'' generally.; review: partial - The passage adds air mass
+    as a model parameter because of a-Si''s spectral response, but it calls this ''increased variability''
+    rather than a ''stronger'' response and covers only a-Si, not thin-film PV in general.'
 - claim_id: c7
   rel: related_to
   target: stressor:air-mass-variation

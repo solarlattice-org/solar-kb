@@ -19,7 +19,9 @@ claims:
   - src: src:std-standards-nec-2020-nec-2020-690
     loc: sec=h64
     h: 1ad7e6a2a61c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: req:nfpa-70-2017-690-12-b-2
@@ -80,4 +82,5 @@ The array boundary is a term from the NEC rapid shutdown rules: the zone extendi
 
 <!-- review notes
 - sentence 4: support check: partial - The listed or field-labeled rapid shutdown array option and the 80 V in 30 s option are stated, but the statement omits the third exemption, and the 80 V limit is tied to the boundary or 1 m from the penetration point.
+- sentence 4: review: partial - The listed or field-labeled rapid shutdown array option and the 80 V within 30 s limit are both stated, but 'otherwise' leaves out the third option (the exemption for arrays with no exposed wiring or conductive parts) and leaves out…
 -->

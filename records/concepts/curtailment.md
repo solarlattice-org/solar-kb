@@ -132,7 +132,9 @@ claims:
   review: drafted
   review_note: 'support check: partial - Saturation and curtailment are discussed and clipping state is
     an input to available power reconstruction, but the passages don''t state both produce capped output
-    as a relation.'
+    as a relation.; review: partial - The passages say saturation holds output at a maximum and list clipping
+    state as an input to reconstructing available power, but they never say curtailment itself produces
+    capped output.'
 - claim_id: c12
   rel: related_to
   target: metric:availability
@@ -149,7 +151,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h6
     h: 08e6be358742
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c14
   rel: related_to
   target: mit:curtailment-aware-kpis
@@ -176,7 +180,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h2
     h: 5fdb7733fc7c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c17
   rel: related_to
   target: arch:dc-coupled-storage
@@ -186,7 +192,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h5
     h: d55aa663f3f5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c18
   rel: related_to
   target: arch:ac-coupled-storage
@@ -195,7 +203,9 @@ claims:
   - src: src:pv-root-cause-grid-curtailment-losses
     loc: sec=h5
     h: d55aa663f3f5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c19
   rel: related_to
   target: meas:curtailed-energy-not-stored

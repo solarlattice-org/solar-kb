@@ -18,7 +18,9 @@ claims:
   - src: src:enphase-enphase-reliability-of-microinverters-tech-brief
     loc: sec=h10
     h: f1cdc4d28e32
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:weibull-distribution

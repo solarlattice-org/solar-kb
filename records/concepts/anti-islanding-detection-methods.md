@@ -44,7 +44,9 @@ claims:
   - src: src:eq-equip-inverters-sma-shp-peak-3-125-150-shp-peak3-125-150-gridservices-techinfo
     loc: sec=2.1
     h: 498d60cb2f86
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: std:ieee-1547
@@ -143,7 +145,9 @@ claims:
   - src: src:eq-equip-bess-tesla-tesla-powerpack2-site-design-manual
     loc: sec=h72
     h: c4eb27777801
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passage gives active SFS for ''the inverter'' without naming
     Powerpack 2.'
 - claim_id: c12

@@ -77,7 +77,9 @@ claims:
   - src: src:book-practical-solution-guide-to-arc-flash-hazards-2nd-ed
     loc: tbl=15.r1
     h: 019ca35cfa11
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c5
   rel: related_to
   target: tool:personal-protective-equipment
@@ -115,7 +117,9 @@ claims:
   - src: src:eq-equip-bess-powin-powin-stack750-dc-arc-flash-study-rev-c
     loc: sec=4.4
     h: 2ab51dd1ee3f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: concept:overcurrent-protection
@@ -136,7 +140,9 @@ claims:
   - src: src:eq-equip-bess-powin-powin-stack750-dc-arc-flash-study-rev-c
     loc: sec=4.4
     h: 2ab51dd1ee3f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 ---
 Incident energy is the heat energy a worker could receive at a given working distance from an arc flash, and it decides what level of PPE the worker must wear and how far the arc flash boundary sits. The clearing time of the upstream protective device is a key factor; clearing in the instantaneous range can keep incident energy below 8 cal/cm2 for many industrial conditions. Under NFPA 70E the arc flash boundary is the distance where incident energy falls to 1.2 cal/cm2, so higher incident energy pushes the boundary farther out. For DC equipment such as PV inverters and combiners, calculation methods have little test backing; EPRI field tests found that measured incident energy rose linearly with PV array size. In battery storage, a DC arc flash study found worst-case incident energy of 22.746 cal/cm2 at 18 inches on an unfused stack, which corresponds to PPE category 4. The equipment label shows the available incident energy or the PPE category, and the analysis must be reviewed at least every 5 years or whenever the system changes.
 

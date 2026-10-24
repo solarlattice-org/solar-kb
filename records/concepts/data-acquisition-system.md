@@ -64,7 +64,9 @@ claims:
   - src: src:iea-pvps-t13-19-2021
     loc: sec=4.5
     h: 0f5d2d05af82
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The titles mention performance data acquisition for commercial
     PV, and u27 mentions the data chain for fault detection. None of the passages names performance monitoring,
     and they do not say that DAS data supplies it.'
@@ -73,4 +75,5 @@ A data acquisition system (DAS) gathers performance data from PV plant equipment
 
 <!-- review notes
 - sentence 7: support check: partial - The SCADA expansion is supported. The titles of u5 and u6 only name a third-party DAS connection, so they do not say that large central inverters provide a dedicated one.
+- sentence 7: review: partial - The SCADA expansion is supported, but the Yaskawa section headings only name a third-party DAS connection and do not say that large central inverters in general provide a dedicated one.
 -->

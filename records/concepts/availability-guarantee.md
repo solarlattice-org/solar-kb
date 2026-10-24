@@ -26,7 +26,9 @@ claims:
   - src: src:solarpower-europe-om-guidelines
     loc: sec=10.5.1
     h: 6b3fb1a2164f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: metric:availability
@@ -111,4 +113,5 @@ An availability guarantee is a promise in an O&M contract that the PV plant will
 <!-- review notes
 - sentence 4: support check: partial - The 99% or higher recommendation and the grid being beyond operator control are in the passages, but the passages do not say the grid is the reason for the 99% level, and the IEA PVPS attribution is not stated.
 - sentence 7: support check: partial - The bonus split is stated, but the LD condition is garbled as 'Minimum Guaranteed Availability is less than measured', which is the reverse of the statement's below-guarantee trigger. The surrounding text implies compensation for lower-than-guaranteed availability.
+- sentence 4: review: partial - The passage gives the 'at least 99%' recommendation and says the grid is beyond the operator's control, but it uses the grid point to explain why plant-level availability is the KPI that matters, not why the level is set at…
 -->

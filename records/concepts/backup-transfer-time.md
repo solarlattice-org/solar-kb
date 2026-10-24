@@ -26,7 +26,9 @@ claims:
   - src: src:sma-doc-244194
     loc: sec=3.4
     h: e74f4f0530f0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: state:backup-operation
@@ -51,7 +53,9 @@ claims:
   - src: src:sma-doc-278742
     loc: sec=16.11
     h: 8699661c89e9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c4
   rel: related_to
   target: std:ieee-1547-2018

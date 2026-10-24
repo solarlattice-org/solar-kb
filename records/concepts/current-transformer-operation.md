@@ -12,19 +12,6 @@ aliases:
 category: Monitoring
 concept_kind: electrical
 claims:
-- claim_id: c1
-  rel: subclass_of
-  target: concept:transformer-winding-configuration
-  note: Not a subclass. The unit only shows that CT connections must reproduce the delta-wye phase shift
-    of the power transformer.
-  cite:
-  - src: src:std-standards-mv-committee-ieee-standards-mv-equipment-ieee-std-c37-91-2008-protecting-power-transfo
-    loc: sec=7.3.3
-    h: 501c89583fb2
-  review: drafted
-  review_note: 'support check: partial - Passage says CTs must be connected to reproduce the transformer''s
-    phase shift (delta-wye), but doesn''t state a kind-of relation to winding configuration; the note
-    says not a subclass, so only the note part is supported.'
 - claim_id: c2
   rel: explains
   target: fm:meter-ct-ratio-misconfiguration
@@ -87,4 +74,5 @@ A current transformer (CT) scales a large conductor current down to a small curr
 - sentence 2: support check: partial - Induction and proportionality are stated, but 'the meter' calculating is only the gateway using it for measurements.
 - sentence 4: support check: partial - The 1000:5 A entered as 200:1 example is stated, but 'must be set to the actually installed CT' is only implied, and the device isn't named an export power manager.
 - sentence 5: support check: partial - Gateway use of CT readings and the BAD.CT.RATIO alarm are stated, but the wrong-ratio-gives-wrong-readings link and the PV/battery scope are not stated.
+- c1 dropped at review: The passage only says CT connections must match the transformer's delta-wye phase shift; it never makes CT operation a kind of winding configuration, and the claim's own note says it is not a subclass.
 -->

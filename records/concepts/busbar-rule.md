@@ -19,7 +19,9 @@ claims:
   - src: src:std-standards-nec-2017-nec2017-705
     loc: sec=h9
     h: 6de44b94103f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:ampacity

@@ -66,7 +66,9 @@ claims:
   - src: src:sma-doc-244194
     loc: sec=h51
     h: fea781993341
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c5
   rel: related_to
   target: func:active-power-setpoint
@@ -103,4 +105,5 @@ Active power, also called real power, is the part of AC power that actually does
 
 <!-- review notes
 - sentence 1: support check: partial - The passages say active power is in watts and mention real power, but not that it is the part of AC power that does work.
+- sentence 1: review: partial - The passages back 'active power in watts' and use 'real power' for the same quantity, but none says active power is the part of AC power that does work.
 -->

@@ -74,4 +74,6 @@ DC injection is direct current that an inverter puts into the AC grid along with
 - sentence 3: support check: partial - Mode/trip value/trip time and per-grid-code enable flags are shown, but 'many inverters' is not established and the per-grid-code columns just list default values, not independent toggling.
 - sentence 4: support check: partial - Per-phase and total DC injection faults exist, but the passages do not say they are logged when the limit is exceeded.
 - sentence 5: support check: partial - IEEE 1547 conformance test is stated, but the commissioning advice to check settings against the applicable grid code is not in the passages.
+- sentence 1: review: partial - The IEEE 1547 passages only limit how much DC current a DER may inject; they never define DC injection as DC put into the grid alongside the normal AC output.
+- sentence 4: review: partial - The Delta fault rows list DC injection faults per phase (R, S, T) and as a total, but none of them says the fault is logged when a limit is exceeded.
 -->

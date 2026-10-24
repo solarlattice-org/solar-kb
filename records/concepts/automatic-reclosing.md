@@ -68,7 +68,9 @@ claims:
   - src: src:std-standards-ieee-ieee1547
     loc: sec=4.2.2
     h: f1f82d1a89f7
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c6
   rel: related_to
   target: concept:ansi-device-numbers
@@ -77,7 +79,9 @@ claims:
   - src: src:ref-standards-mv-committee-application-docs-overall-mv-design-eaton-power-system-design-basics-tb081
     loc: tbl=80.r1
     h: 8277956ab03b
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: comp:ac-circuit-breaker

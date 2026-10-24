@@ -32,7 +32,9 @@ claims:
   - src: src:man-nrel-sandia-photovoltaic-array-performance-model-sand2004-3535-2004
     loc: sec=h30
     h: 67b7cdd52848
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:plane-of-array-irradiance

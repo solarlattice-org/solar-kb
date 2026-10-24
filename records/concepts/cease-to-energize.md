@@ -54,7 +54,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=10.6.11
     h: ded63491f0a8
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: func:voltage-ride-through
@@ -69,7 +71,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: tbl=43.r2
     h: 79cd25c57bc0
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c5
   rel: related_to
   target: concept:ieee-1547-performance-categories
@@ -78,7 +82,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=h108
     h: a44acf481535
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: concept:area-eps
@@ -104,7 +110,9 @@ claims:
   - src: src:eq-equip-inverters-chint-cps-lost-application-note-012126
     loc: sec=4.5
     h: 03d015c97643
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: method:cease-to-energize-test

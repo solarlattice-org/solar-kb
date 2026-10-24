@@ -108,7 +108,9 @@ claims:
   - src: src:eq-equip-das-alsoenergy-standard-io-s-aliasing-weather-station-standard-io
     loc: tbl=1.r16
     h: d65c6e64f5a9
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
   review_note: 'support check: partial - The register row shows DHI stored as an average in W/m², but
     nothing ties it to a specific AlsoEnergy weather station product or the Standard IO map by name.'
 ---

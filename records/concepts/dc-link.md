@@ -57,4 +57,6 @@ The DC link is the internal DC stage of an inverter that feeds the inverter brid
 <!-- review notes
 - sentence 1: support check: partial - The passage mentions the DC link of the inverter bridge, but it does not say the DC link is an internal DC stage that feeds the bridge.
 - sentence 4: support check: partial - Both the defective pre-charging circuit and the DC link that could not be charged enough are flagged, but no passage says the DC link is charged through a pre-charging circuit before operation.
+- sentence 1: review: partial - The passage mentions 'the DC link of the inverter bridge' but does not say the DC link is an internal DC stage that feeds the bridge.
+- sentence 4: review: partial - Both faults (a defective pre-charging circuit and a DC link that could not be charged enough) are shown, but no passage says the DC link is charged through the pre-charging circuit before operation.
 -->

@@ -37,7 +37,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-energy-toolbase-energy-toolbase-user-guide-for-stem-partn
     loc: tbl=2
     h: 779ad8e3ac12
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: tool:stem-athena
@@ -60,7 +62,9 @@ claims:
   - src: src:eq-equip-bess-stem-partner-content-library-brochures-ebooks-infographics-ca-rate-changes-ebook-energ
     loc: sec=h24
     h: 714f66e3f0a4
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The passages list demand charges alongside time-of-use rates,
     capacity charges and critical peak rates, and u12 says they are part of the bill. Neither passage
     states that they are an element of a utility rate structure; u16 is only a list of topics.'

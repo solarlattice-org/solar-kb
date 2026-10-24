@@ -75,4 +75,5 @@ Cable management, also called wire management, means routing, securing and prote
 <!-- review notes
 - sentence 1: support check: partial - Content on routing, securing, and protecting module/string/main cables is stated, but the 'also called wire management' equivalence is only implied by the two differently-titled passages.
 - sentence 6: support check: partial - Caption says ties and grommets can break or pinch wires and are affected by sunlight, wind, ice and rodents, but doesn't explicitly say 'regular maintenance' is needed or that they 'degrade' from those.
+- sentence 1: review: partial - Routing, securing and protecting module, string and main DC cables is stated, but no passage says cable management is also called wire management; the two passages only carry different headings.
 -->

@@ -83,7 +83,9 @@ claims:
   - src: src:iea-pvps-t13-16-2021
     loc: sec=h30
     h: 0a52a379598e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c7
   rel: related_to
   target: stressor:moisture-exposure
@@ -96,7 +98,9 @@ claims:
   - src: src:iea-pvps-t13-16-2021
     loc: sec=3.3.1
     h: bdc8440255cc
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c8
   rel: related_to
   target: fm:cell-cracks

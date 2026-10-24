@@ -54,4 +54,5 @@ Daisy-chain and star are two ways of wiring devices such as inverters onto a com
 - sentence 5: support check: partial - Up to 32 devices, RSTP, one switch, and IP addressing are stated, but 'meter web module' is not identified in the passage and 'fewer switches' matches only loosely.
 - sentence 6: support check: partial - Figures of daisy chain wiring exist in several manuals, but vendor types and the advice to check the manufacturer drawing are not stated.
 - sentence 7: support check: partial - Passage shows conventional daisy chain wiring of modules in a series string versus leapfrog wiring, but does not say they are different in the stated terms or explicitly warn about confusion; the series-string-in-order claim is only implied.
+- sentence 4: review: partial - The ABB passage recommends a ring made by connecting the first and last inverters to the local switch so all inverters stay reachable even with a fault, but it never states that a single fault cuts off downstream devices; that…
 -->

@@ -61,7 +61,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=13.5
     h: 165b6683fb63
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c4
   rel: related_to
   target: state:equalization-charge
@@ -107,7 +109,9 @@ claims:
   - src: src:sma-doc-si4548-6048-us-be-en-21w
     loc: sec=h620
     h: f3802cb2769a
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: concept:lead-acid-battery
@@ -122,3 +126,7 @@ claims:
   review: drafted
 ---
 Battery charging stages are the sequence of phases a charge controller or battery inverter steps through to charge a battery fully without overcharging it. In the first stage, called the constant current or bulk phase, charging current is held at a set limit and the battery voltage rises as the battery takes on charge. When the voltage reaches its setpoint, the constant voltage or absorption phase begins: voltage is held steady and the current tapers off continuously for a set absorption time. During absorption, the battery management picks a boost, full or equalization charge process, and each one has its own voltage and time settings that should follow the battery maker's recommendations. Absorption is followed by float charge, which keeps the battery full at a much lower voltage to avoid early aging from overcharging. Float charge ends, and charging returns to the constant current phase, once discharges add up to 30% of nominal capacity or the state of charge drops below 70%. Equalization charge deliberately overcharges the battery under control, so that cells in a series string that have drifted apart all end up fully charged; this prevents early cell failure. Technicians can watch the stage in progress through the active charging process and remaining absorption time display values, and through event messages such as the change to float charge.
+
+<!-- review notes
+- sentence 1: review: partial - The passages show phased charging by the Sunny Island and multi-stage algorithms in chargers and controllers, but they never state that the overall purpose is to charge fully without overcharging; only float charge's purpose is described that way.
+-->

@@ -60,7 +60,9 @@ claims:
   - src: src:iea-pvps-t13-21-2022
     loc: sec=h89
     h: f25a1646a5d5
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c4
   rel: related_to
   target: concept:global-horizontal-irradiance

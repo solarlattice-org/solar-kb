@@ -22,7 +22,9 @@ claims:
   - src: src:schneider-conext-cl125-solution-guide-na
     loc: sec=h68
     h: dd07c575ad31
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: fm:inverter-clipping
@@ -87,7 +89,9 @@ claims:
   - src: src:yaskawa-solectria-xgi-1500-manual-rev-i-21-sep-2021
     loc: sec=h47
     h: ae2ccecbdb59
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c7
   rel: related_to
   target: arch:single-axis-tracker-plant

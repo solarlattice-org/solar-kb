@@ -77,4 +77,5 @@ Cycle life, which SMA documents call cycle stability, describes how long a batte
 - sentence 1: support check: partial - The SMA text defines cycle stability as the number of charge/discharge cycles before capacity falls below a manufacturer-specified value. Nothing in the passages equates cycle stability with the term cycle life.
 - sentence 5: support check: partial - The resistance-based definition with the 1.3 times example is stated. The passage does not say that this avoids taking the battery out of service, though it is implied by the contrast with the capacity test.
 - sentence 6: support check: partial - Specifying end-of-life capacity is stated. The claim that this matters for sizing and for judging replacement is not stated.
+- sentence 1: review: partial - The SMA rows support the definition of cycle stability as a service-life measure tied to a manufacturer-specified capacity threshold, but nothing in them equates it with the term 'cycle life'.
 -->

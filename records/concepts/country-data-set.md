@@ -201,4 +201,6 @@ The grid code setting, also called the country data set, country code or grid pr
 <!-- review notes
 - sentence 4: support check: partial - Passages cover LVRT, reactive power reference and frequency derating, but not that selection loads all these together as stated; reasonably implied but loose.
 - sentence 7: support check: partial - Passage supports the consequences of a wrong grid type, but not the 'check at commissioning' advice explicitly.
+- sentence 4: review: partial - Protective limits per country code and a reactive power reference preset by the country data set are supported, but frequency derating and LVRT appear as grid-code settings or user toggles, not as things the selection loads.
+- sentence 7: review: partial - The SMA passage supports that a wrong grid type disturbs the PV system and causes problems with the grid operator, but the advice to check it at commissioning is not stated.
 -->

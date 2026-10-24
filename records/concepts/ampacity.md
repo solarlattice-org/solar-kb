@@ -33,4 +33,5 @@ Ampacity is a conductor's current-carrying capacity: the current it can carry co
 <!-- review notes
 - sentence 1: support check: partial - Passages call ampacities 'current-carrying capacities' but do not state the 'carry continuously under conditions of use' definition.
 - sentence 5: support check: partial - u9 cites NEC Articles 240, 310, and 690 for confirming conductor ampacity calculations, but the article topics (overcurrent, conductors, PV) are not stated and the u2 passage cites Article 480.
+- sentence 1: review: partial - Passage equates ampacity with current-carrying capacity, but the 'carry continuously under its conditions of use' definition is not stated.
 -->

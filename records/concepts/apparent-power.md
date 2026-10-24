@@ -24,7 +24,9 @@ claims:
   - src: src:eq-equip-bess-enel-enel-x-der-os-site-modbus-server-manual-v1-1-2
     loc: tbl=14.r8
     h: 67aa74f29bc2
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:reactive-power
@@ -72,7 +74,9 @@ claims:
   - src: src:sma-doc-265222
     loc: sec=5.2.9
     h: 70ae6b2510ff
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: concept:nameplate-rating
@@ -107,7 +111,9 @@ claims:
   - src: src:sma-doc-275857
     loc: tbl=83
     h: a5a32dd7a3fa
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - Parameters for a maximum unbalanced apparent power threshold
     exist, but the passage does not name SMA.'
 ---
@@ -118,4 +124,5 @@ Apparent power, written S, is defined as the complex quantity P + jQ. It combine
 - sentence 3: support check: partial - One monitoring register uses sqrt(P²+Q²), but the passage does not support 'often' for monitoring platforms.
 - sentence 4: support check: partial - Per-phase and total apparent power and the arithmetic variant are stated, but the passages do not clearly give kVA units for both per-phase and total values (some show VA).
 - sentence 5: support check: partial - The kVA ratings are shown and a maximum apparent power limit exists, but the passages do not explicitly say the rating limits combined active and reactive output.
+- sentence 4: review: partial - The arithmetic apparent power definition and the per-phase L1-L3 values are stated, and kVA appears for one meter, but no passage shows a total apparent power value, and units vary between kVA and VA.
 -->

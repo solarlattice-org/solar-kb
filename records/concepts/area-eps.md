@@ -33,7 +33,9 @@ claims:
   - src: src:std-standards-ieee-ieee-1547-2018
     loc: sec=3.1
     h: 68ae59f1e15e
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c3
   rel: related_to
   target: concept:point-of-common-coupling

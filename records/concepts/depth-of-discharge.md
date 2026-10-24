@@ -31,7 +31,9 @@ claims:
   - src: src:trn-amrc-cx-everything-training-and-knowledge-raw-nec-general-information-nabcep-pv-resource-guide-1
     loc: sec=2.4
     h: bf405ed38474
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: &id001 2026-10-24
 - claim_id: c3
   rel: related_to
   target: comp:charge-controller
@@ -55,6 +57,9 @@ claims:
     loc: sec=h58
     h: 2aefb8692fb9
   review: drafted
+  review_note: 'review: partial - The passages support both the freezing protection and the 1.85-1.91
+    VPC to 70-80% DoD figure, but the note drops the source''s limit that this holds only at discharge
+    rates of C/20 and lower.'
 - claim_id: c5
   rel: related_to
   target: concept:usable-energy-capacity
@@ -66,7 +71,9 @@ claims:
   - src: src:se-academy-home-hub-technical-essentials-na-technical-06-home-hub-advanced-battery-concepts
     loc: sec=h21
     h: 58f7fdd29624
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
 - claim_id: c6
   rel: related_to
   target: func:backup-reserve
@@ -74,7 +81,9 @@ claims:
   - src: src:se-academy-home-hub-technical-essentials-na-technical-06-home-hub-advanced-battery-concepts
     loc: sec=h21
     h: 58f7fdd29624
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: *id001
   review_note: 'support check: partial - The u3 figure shows depth of discharge diagram with backup reserve
     and minimum state of energy, but no explicit relation is stated.'
 ---

@@ -83,4 +83,5 @@ Demand response, often shortened to DR, covers utility and market programs that 
 <!-- review notes
 - sentence 1: support check: partial - Passages discuss DR programs and earnings but never define DR as rewarding customers for changing grid draw when needed.
 - sentence 5: support check: partial - Passages list the tracking challenges and GE's DRMS management software, but don't say utilities use dedicated software generally.
+- sentence 1: review: partial - The passages discuss DR programs and DR earnings but never define DR as paying or rewarding customers for changing their grid draw when the grid needs it.
 -->

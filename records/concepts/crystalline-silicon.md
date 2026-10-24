@@ -145,7 +145,9 @@ claims:
   - src: src:iea-pvps-t13-23-2021
     loc: sec=h69
     h: bdc3ce4bcd6c
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 ---
 Crystalline silicon (c-Si) PV modules are built from silicon wafer cells. The cells are connected together and sealed between a transparent front, usually glass, and a plastic or glass backing. The technology comes in two types, monocrystalline and multi-crystalline (polycrystalline). The difference is whether the cell material has grain boundaries, which depends on the raw material and how the cells are made. Monocrystalline wafers are cut from one large single-crystal ingot, which is costly. Multi-crystalline wafers are cheaper, for example sliced from cast poly-silicon, but they are usually less efficient. Typical module efficiency is around 12 to 18 percent in one source and 15 to 20 percent in another. Poly-crystalline modules reach up to 17 percent. Silicon modules have a long field record. They usually lose under 1 percent per year and carry power warranties of about 25 to 30 years. As of January 2010, about 78 percent of installed PV plant capacity used c-Si. The rest used thin-film modules. Mainly p-type c-Si modules can lose power to light induced degradation (LID) and LeTID. Crystalline silicon modules are also tested for potential induced degradation (PID). Crystalline silicon reference sensors have the same spectral response as c-Si plant modules, so they are used to estimate a plant's STC power. Over a year they record about 2 to 4 percent less irradiation than pyranometers.
 

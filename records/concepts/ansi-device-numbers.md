@@ -21,7 +21,9 @@ claims:
   - src: src:ref-standards-ansi-device-numbers-short
     loc: sec=h1
     h: a440001bf934
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c2
   rel: related_to
   target: concept:single-line-diagram
@@ -53,4 +55,6 @@ ANSI device numbers are standard numeric codes. In North America they are the us
 - sentence 1: support check: partial - Protective relays are generally named by device numbers in North America, but 'other switchgear devices' and 'numeric codes' are not explicitly stated.
 - sentence 3: support check: partial - Codes 27, 59, 81 map to undervoltage, overvoltage, frequency relays, but the passages don't say they are the common codes for PV and storage grid protection.
 - sentence 4: support check: partial - National Grid requires standard device numbers on functional single-line diagrams, but 'for interconnection' and 'these' specific numbers are not stated; also 'utilities such as' generalizes.
+- sentence 1: review: partial - Passage says protective relays in North America are generally referred to by standard device numbers, but it does not mention other switchgear devices.
+- sentence 4: review: partial - National Grid passages require industry standard device numbers on functional single-line diagram submittals, but they do not say the submittals are for interconnection, and 'utilities such as' generalizes beyond the source.
 -->

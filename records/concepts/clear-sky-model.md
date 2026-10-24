@@ -70,7 +70,9 @@ claims:
   - src: src:alsoenergy-kb-definitions-data-names-kpis-etc
     loc: sec=front
     h: 95bd390c335f
-  review: drafted
+  review: verified
+  verified_by: review-workflow
+  verified_at: 2026-10-24
 - claim_id: c6
   rel: related_to
   target: tool:alsoenergy-powertrack
@@ -103,4 +105,5 @@ A clear-sky model calculates the irradiance a site would receive with no clouds,
 
 <!-- review notes
 - sentence 1: support check: partial - Passages give inputs and normal atmospheric conditions, but 'no clouds' is only implied by the name 'clear-sky', not stated for the model.
+- sentence 7: review: partial - The passages say modeled irradiance does not perform well in cloudy periods and that one gap-filling method (DSG1) works best on clear-sky data, but extending this to filtering methods in general is not stated.
 -->
